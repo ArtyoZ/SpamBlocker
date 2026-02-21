@@ -10,7 +10,6 @@ import androidx.core.net.toUri
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
-import spam.blocker.ui.theme.currentPalette
 import spam.blocker.util.SaveableLogger
 import spam.blocker.util.logi
 import spam.blocker.util.pdu.pdu.NotificationInd
@@ -95,7 +94,7 @@ class WapPushReceiver : SmsReceiver() {
 
                 processSms(
                     ctx, rawNumber = rawNumber, messageBody = messageBody,
-                    simSlot = simSlot, isTest = false, logger = SaveableLogger(currentPalette(ctx))
+                    simSlot = simSlot, isTest = false, logger = SaveableLogger()
                 )
 
                 break

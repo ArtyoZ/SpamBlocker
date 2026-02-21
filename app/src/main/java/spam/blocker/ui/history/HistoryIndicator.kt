@@ -9,6 +9,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import spam.blocker.Events
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.db.ContentRegexTable
 import spam.blocker.db.NumberRegexTable
@@ -35,7 +36,6 @@ import spam.blocker.service.checker.IChecker
 import spam.blocker.service.checker.toChecker
 import spam.blocker.ui.M
 import spam.blocker.ui.history.HistoryOptions.showHistoryIndicator
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.ui.widgets.ResIcon
 import spam.blocker.ui.widgets.RowVCenterSpaced
 import spam.blocker.util.spf
@@ -48,38 +48,38 @@ typealias Indicators = List<Indicator>
 
 @Composable
 fun IndicatorIcons(indicators: Indicators) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     RowVCenterSpaced(2) {
         // Db existence indicator
         indicators.sortedByDescending { it.priority }.forEach {
             when (it.type) {
                 RESULT_BLOCKED_BY_SPAM_DB -> {
-                    ResIcon(R.drawable.ic_db_delete, modifier = M.size(16.dp), color = C.block)
+                    ResIcon(R.drawable.ic_db_delete, modifier = M.size(16.dp), color = C.error)
                 }
 
                 RESULT_ALLOWED_BY_NUMBER_REGEX, RESULT_BLOCKED_BY_NUMBER_REGEX -> {
-                    ResIcon(R.drawable.ic_number_sign, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.block else C.pass)
+                    ResIcon(R.drawable.ic_number_sign, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.error else C.success)
                 }
                 RESULT_ALLOWED_BY_CONTACT_REGEX, RESULT_BLOCKED_BY_CONTACT_REGEX -> {
-                    ResIcon(R.drawable.ic_contact_square, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.block else C.pass)
+                    ResIcon(R.drawable.ic_contact_square, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.error else C.success)
                 }
                 RESULT_ALLOWED_BY_CONTACT_GROUP_REGEX, RESULT_BLOCKED_BY_CONTACT_GROUP_REGEX -> {
-                    ResIcon(R.drawable.ic_contact_group, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.block else C.pass)
+                    ResIcon(R.drawable.ic_contact_group, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.error else C.success)
                 }
                 RESULT_ALLOWED_BY_CNAP_REGEX, RESULT_BLOCKED_BY_CNAP_REGEX -> {
-                    ResIcon(R.drawable.ic_id_card, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.block else C.pass)
+                    ResIcon(R.drawable.ic_id_card, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.error else C.success)
                 }
                 RESULT_ALLOWED_BY_GEO_LOCATION_REGEX, RESULT_BLOCKED_BY_GEO_LOCATION_REGEX -> {
-                    ResIcon(R.drawable.ic_location, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.block else C.pass)
+                    ResIcon(R.drawable.ic_location, modifier = M.size(16.dp), color = if(isBlocked(it.type)) C.error else C.success)
                 }
 
                 RESULT_ALLOWED_BY_CONTENT_RULE -> {
-                    ResIcon(R.drawable.ic_sms_pass, modifier = M.size(14.dp), color = C.pass)
+                    ResIcon(R.drawable.ic_sms_pass, modifier = M.size(14.dp), color = C.success)
                 }
 
                 RESULT_BLOCKED_BY_CONTENT_RULE -> {
-                    ResIcon(R.drawable.ic_sms_blocked, modifier = M.size(14.dp), color = C.block)
+                    ResIcon(R.drawable.ic_sms_blocked, modifier = M.size(14.dp), color = C.error)
                 }
             }
         }

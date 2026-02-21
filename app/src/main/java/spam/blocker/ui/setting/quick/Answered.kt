@@ -15,8 +15,6 @@ import androidx.compose.ui.unit.sp
 import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.GreyButton
 import spam.blocker.ui.widgets.NumberInputBox
 import spam.blocker.ui.widgets.PluralStr
@@ -30,6 +28,7 @@ import spam.blocker.util.spf
 
 @Composable
 fun Answered() {
+    val C = G.palette
     val ctx = LocalContext.current
     val spf = spf.Answered(ctx)
 
@@ -93,7 +92,7 @@ fun Answered() {
         buttons = {
             StrokeButton(
                 label = Str(R.string.acknowledged),
-                color = Teal200
+                color = C.teal200
             ) {
                 spf.isWarningAcknowledged = true
                 warningTrigger.value = false
@@ -103,7 +102,7 @@ fun Answered() {
         title = {
             Text(
                 text = Str(R.string.warning),
-                color = DarkOrange,
+                color = C.warning,
                 fontSize = 20.sp,
                 fontWeight = FontWeight.SemiBold,
             )

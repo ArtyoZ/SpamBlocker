@@ -29,12 +29,9 @@ import spam.blocker.service.bot.executeAll
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.SettingRow
 import spam.blocker.ui.setting.api.tagOther
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.BalloonQuestionMark
-import spam.blocker.ui.widgets.DimGreyText
 import spam.blocker.ui.widgets.GreyLabel
+import spam.blocker.ui.widgets.Placeholder
 import spam.blocker.ui.widgets.PopupDialog
 import spam.blocker.ui.widgets.RowVCenterSpaced
 import spam.blocker.ui.widgets.Str
@@ -51,7 +48,7 @@ fun TestActionButton(
     botId: Long? = null, // is testing bot
 ) {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
 
     val logStr = remember { mutableStateOf(buildAnnotatedString {}) }
@@ -79,7 +76,7 @@ fun TestActionButton(
                 coroutine.launch {
                     withContext(IO) {
                         val aCtx = ActionContext(
-                            logger = JetpackTextLogger(logStr, C),
+                            logger = JetpackTextLogger(logStr),
                             rawNumber = content,
                             smsContent = content,
                             tagCategory = tagOther,
@@ -104,7 +101,7 @@ fun TestActionButton(
     PopupDialog(
         trigger = inputTrigger,
         buttons = {
-            StrokeButton(label = Str(R.string.ok), color = Teal200) {
+            StrokeButton(label = Str(R.string.ok), color = C.teal200) {
                 testActions(if (forCall) G.testingVM.phone.value else G.testingVM.sms.value)
             }
         }
@@ -113,7 +110,7 @@ fun TestActionButton(
         StrInputBox(
             text = if(forCall) G.testingVM.phone.value else G.testingVM.sms.value,
             label = { GreyLabel(Str(if (forCall) R.string.phone_number else R.string.sms_content))},
-            placeholder = { DimGreyText(if (forCall) "+12223334444" else "") },
+            placeholder = { Placeholder(if (forCall) "+12223334444" else "") },
             onValueChange = {
                 if (forCall)
                     G.testingVM.phone.value = it
@@ -123,7 +120,7 @@ fun TestActionButton(
         )
     }
 
-    StrokeButton(label = Str(R.string.test), color = Teal200) {
+    StrokeButton(label = Str(R.string.test), color = C.teal200) {
         if (testingRequireNumber) {
             inputTrigger.value = true
         } else {
@@ -165,6 +162,7 @@ fun ActionHeader(
     testingRequireNumber: Boolean = false,
     botId: Long? = null,
 ) {
+    val C = G.palette
     val newTrigger = remember { mutableStateOf(false) }
     PopupDialog(
         trigger = newTrigger,
@@ -200,7 +198,7 @@ fun ActionHeader(
             // New
             StrokeButton(
                 label = Str(R.string.new_),
-                color = SkyBlue,
+                color = C.infoBlue,
             ) {
                 newTrigger.value = true
             }

@@ -11,7 +11,6 @@ import spam.blocker.db.SmsTable
 import spam.blocker.service.checker.Checker
 import spam.blocker.service.checker.ICheckResult
 import spam.blocker.ui.NotificationTrampolineActivity
-import spam.blocker.ui.theme.currentPalette
 import spam.blocker.util.Contacts
 import spam.blocker.util.ILogger
 import spam.blocker.util.Notification
@@ -66,7 +65,7 @@ open class SmsReceiver : BroadcastReceiver() {
         val simSlot = getSimSlotFromSmsIntent(ctx, intent)
 
         processSms(ctx, rawNumber = rawNumber, messageBody = messageBody, simSlot = simSlot,
-            isTest = false, logger = SaveableLogger(currentPalette(ctx)))
+            isTest = false, logger = SaveableLogger())
     }
 
     fun processSms(

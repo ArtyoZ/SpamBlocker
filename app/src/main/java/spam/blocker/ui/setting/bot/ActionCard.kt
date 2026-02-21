@@ -11,10 +11,10 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.service.bot.IAction
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.ui.widgets.BalloonQuestionMark
 import spam.blocker.ui.widgets.GreyIcon16
 import spam.blocker.ui.widgets.OutlineCard
@@ -28,7 +28,7 @@ fun ActionCard(
     showDragIndicator: Boolean = true
 ) {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
     OutlineCard(
         containerBg = C.dialogBg,

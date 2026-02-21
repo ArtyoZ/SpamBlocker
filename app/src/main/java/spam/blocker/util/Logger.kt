@@ -9,12 +9,7 @@ import androidx.compose.ui.text.buildAnnotatedString
 import androidx.compose.ui.text.withStyle
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
-import spam.blocker.ui.theme.CustomColorsPalette
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.Emerald
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SilverGrey
-import spam.blocker.ui.theme.SkyBlue
+import spam.blocker.G
 
 // For showing detailed execution steps when testing
 interface ILogger {
@@ -77,7 +72,6 @@ class AdbLogger : ILogger {
 // It appends text to a `MutableState<AnnotatedString>` that used by a `@Composable Text()`
 class JetpackTextLogger(
     private val text: MutableState<AnnotatedString>,
-    private val palette: CustomColorsPalette,
 ) : ILogger {
     private fun output(message: String, defaultColor: Color) {
         text.value = buildAnnotatedString {
@@ -88,25 +82,15 @@ class JetpackTextLogger(
         }
     }
 
-    override fun debug(message: String) {
-        output(message, palette.textGrey)
-    }
+    override fun debug(message: String) = output(message, G.palette.textGrey)
 
-    override fun info(message: String) {
-        output(message, SkyBlue)
-    }
+    override fun info(message: String) = output(message, G.palette.infoBlue)
 
-    override fun warn(message: String) {
-        output(message, DarkOrange)
-    }
+    override fun warn(message: String) = output(message, G.palette.warning)
 
-    override fun success(message: String) {
-        output(message, palette.pass)
-    }
+    override fun success(message: String) = output(message, G.palette.success)
 
-    override fun error(message: String) {
-        output(message, palette.block)
-    }
+    override fun error(message: String) = output(message, G.palette.error)
 
     private fun outputAnnotated(message: AnnotatedString, color: Color) {
         text.value = buildAnnotatedString {
@@ -118,11 +102,11 @@ class JetpackTextLogger(
         }
     }
 
-    override fun debug(message: AnnotatedString) = outputAnnotated(message, palette.textGrey)
-    override fun info(message: AnnotatedString) = outputAnnotated(message, SkyBlue)
-    override fun warn(message: AnnotatedString) = outputAnnotated(message, DarkOrange)
-    override fun success(message: AnnotatedString) = outputAnnotated(message, palette.pass)
-    override fun error(message: AnnotatedString) = outputAnnotated(message, palette.block)
+    override fun debug(message: AnnotatedString) = outputAnnotated(message, G.palette.textGrey)
+    override fun info(message: AnnotatedString) = outputAnnotated(message, G.palette.infoBlue)
+    override fun warn(message: AnnotatedString) = outputAnnotated(message, G.palette.warning)
+    override fun success(message: AnnotatedString) = outputAnnotated(message, G.palette.success)
+    override fun error(message: AnnotatedString) = outputAnnotated(message, G.palette.error)
 }
 
 @Serializable
@@ -169,7 +153,6 @@ data class MarkupText(
 
 // Serializable logger class
 class SaveableLogger(
-    private val palette: CustomColorsPalette,
     val output : MarkupText = MarkupText()
 ) : ILogger {
     private fun add(message: String, color: Color) {
@@ -180,23 +163,23 @@ class SaveableLogger(
     }
 
     override fun debug(message: String) {
-        add(message, SilverGrey)
+        add(message, G.palette.textGrey)
     }
 
     override fun info(message: String) {
-        add(message, SkyBlue)
+        add(message, G.palette.infoBlue)
     }
 
     override fun warn(message: String) {
-        add(message, DarkOrange)
+        add(message, G.palette.warning)
     }
 
     override fun success(message: String) {
-        add(message, Emerald)
+        add(message, G.palette.success)
     }
 
     override fun error(message: String) {
-        add(message, Salmon)
+        add(message, G.palette.error)
     }
 
     private fun addAnnotated(message: AnnotatedString, defaultColor: Color) {
@@ -223,11 +206,11 @@ class SaveableLogger(
         }
     }
 
-    override fun debug(message: AnnotatedString) = addAnnotated(message, palette.textGrey)
-    override fun info(message: AnnotatedString) = addAnnotated(message, SkyBlue)
-    override fun warn(message: AnnotatedString) = addAnnotated(message, DarkOrange)
-    override fun success(message: AnnotatedString) = addAnnotated(message, palette.pass)
-    override fun error(message: AnnotatedString) = addAnnotated(message, palette.block)
+    override fun debug(message: AnnotatedString) = addAnnotated(message, G.palette.textGrey)
+    override fun info(message: AnnotatedString) = addAnnotated(message, G.palette.infoBlue)
+    override fun warn(message: AnnotatedString) = addAnnotated(message, G.palette.warning)
+    override fun success(message: AnnotatedString) = addAnnotated(message, G.palette.success)
+    override fun error(message: AnnotatedString) = addAnnotated(message, G.palette.error)
 }
 
 

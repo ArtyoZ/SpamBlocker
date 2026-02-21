@@ -11,9 +11,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.GreyButton
 import spam.blocker.ui.widgets.HtmlText
 import spam.blocker.ui.widgets.PopupDialog
@@ -50,6 +49,7 @@ class PermissionChain() {
     // Prepare UI elements, initialized once in MainActivity
     @Composable
     fun Compose() {
+        val C = G.palette
         val ctx = LocalContext.current
 
         popupTrigger = remember { mutableStateOf(false) }
@@ -57,7 +57,7 @@ class PermissionChain() {
             PopupDialog(
                 trigger = popupTrigger,
                 content = {
-                    HtmlText(curr.prompt!!, color = LocalPalette.current.textGrey)
+                    HtmlText(curr.prompt!!, color = G.palette.textGrey)
                 },
                 buttons = {
                     GreyButton("cancel") {
@@ -66,7 +66,7 @@ class PermissionChain() {
                     }
                     Spacer(modifier = M.width(10.dp))
 
-                    StrokeButton("ok", Teal200) {
+                    StrokeButton("ok", C.teal200) {
                         popupTrigger.value = false
                         handle(ctx)
                     }

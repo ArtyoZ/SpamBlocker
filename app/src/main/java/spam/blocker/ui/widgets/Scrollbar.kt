@@ -20,8 +20,7 @@ import my.nanihadesuka.compose.LazyColumnScrollbar
 import my.nanihadesuka.compose.ScrollbarSelectionActionable
 import my.nanihadesuka.compose.ScrollbarSelectionMode
 import my.nanihadesuka.compose.ScrollbarSettings
-import spam.blocker.ui.theme.DodgeBlue
-import spam.blocker.ui.theme.SkyBlue
+import spam.blocker.G
 import kotlin.math.max
 
 
@@ -32,7 +31,7 @@ fun Modifier.simpleVerticalScrollbar(
     scrollState: ScrollState,
     scrollBarWidth: Dp = 2.dp,
     minScrollBarHeight: Dp = 5.dp,
-    scrollBarColor: Color = SkyBlue,
+    scrollBarColor: Color = G.palette.infoBlue,
     cornerRadius: Dp = 2.dp,
     persistent: Boolean = false, // auto hide when not scrolling, set to `true` to always show
     offsetX: Int = 0
@@ -81,8 +80,8 @@ fun LazyScrollbar(
             alwaysShowScrollbar = false,
             thumbThickness = 4.dp,
             scrollbarPadding = 4.dp,
-            thumbUnselectedColor = SkyBlue,
-            thumbSelectedColor = DodgeBlue,
+            thumbUnselectedColor = G.palette.infoBlue,
+            thumbSelectedColor = G.palette.infoBlue,
             selectionMode = ScrollbarSelectionMode.Full,
             selectionActionable = ScrollbarSelectionActionable.Always,
             hideDelayMillis = 400,
@@ -104,8 +103,8 @@ fun NormalColumnScrollbar(
             alwaysShowScrollbar = false,
             thumbThickness = 4.dp,
             scrollbarPadding = 4.dp,
-            thumbUnselectedColor = SkyBlue,
-            thumbSelectedColor = DodgeBlue,
+            thumbUnselectedColor = G.palette.infoBlue,
+            thumbSelectedColor = G.palette.infoBlue,
             selectionMode = ScrollbarSelectionMode.Full,
             selectionActionable = ScrollbarSelectionActionable.Always,
             hideDelayMillis = 400,

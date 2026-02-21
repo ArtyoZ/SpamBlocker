@@ -5,7 +5,7 @@ import android.app.NotificationManager.IMPORTANCE_HIGH
 import android.content.ContentValues
 import android.content.Context
 import android.database.Cursor
-import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.lerp
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.buildAnnotatedString
@@ -28,13 +28,12 @@ import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.intOrNull
 import kotlinx.serialization.json.jsonPrimitive
 import org.json.JSONObject
+import spam.blocker.G
 import spam.blocker.db.Notification.CHANNEL_HIGH
 import spam.blocker.db.Notification.CHANNEL_LOW
 import spam.blocker.db.Notification.CHANNEL_NONE
 import spam.blocker.def.Def
-import spam.blocker.ui.theme.CustomColorsPalette
-import spam.blocker.ui.theme.DodgeBlue
-import spam.blocker.ui.theme.Salmon
+import spam.blocker.ui.lighten
 import spam.blocker.util.PermissiveJson
 import spam.blocker.util.TimeSchedule
 import spam.blocker.util.Util
@@ -148,26 +147,27 @@ data class RegexRule(
     fun colorfulRegexStr(
         ctx: Context,
         forType: Int,
-        palette: CustomColorsPalette,
     ): AnnotatedString {
+        val C = G.palette
+
         val regexColor = if (forType == Def.ForQuickCopy) {
             // QuickCopy rule color is based on flags(passed/blocked)
             val passed = flags.hasFlag(Def.FLAG_FOR_PASSED)
             val blocked = flags.hasFlag(Def.FLAG_FOR_BLOCKED)
             if (passed && blocked)
-                DodgeBlue
+                lerp(C.success, C.error, 0.5f) // mix green + red -> poop yellow
             else if (!passed && !blocked)
-                palette.textGrey
+                C.textGrey
             else
-                if (passed) palette.textGreen else Salmon
+                if (passed) C.success else C.error
         } else
-            if (isBlacklist) Salmon else palette.textGreen
+            if (isBlacklist) C.error else C.success
 
         return buildAnnotatedString {
             // 1. Time schedule
             val sch = TimeSchedule.parseFromStr(schedule)
             if (sch.enabled) {
-                withStyle(style = SpanStyle(fontSize = 12.sp, color = palette.schedule)) {
+                withStyle(style = SpanStyle(fontSize = 12.sp, color = C.infoBlue.lighten(0.5f))) {
                     append(sch.toDisplayStr(ctx))
                     append("\n")
                 }
@@ -180,7 +180,7 @@ data class RegexRule(
             withStyle(
                 style = SpanStyle(
                     fontSize = 12.sp,
-                    color = Color.Magenta
+                    color = C.regexFlags
                 )
             ) {
                 append(if (imdlc.isEmpty()) "" else "$imdlc ")
@@ -199,7 +199,7 @@ data class RegexRule(
 
             // 4. Particular Number
             if (patternExtra != "") {
-                withStyle(style = SpanStyle(color = palette.textGrey/*old: LightGrey*/)) {
+                withStyle(style = SpanStyle(color = G.palette.textGrey/*old: LightGrey*/)) {
                     append("   <-   ")
                 }
 
@@ -207,7 +207,7 @@ data class RegexRule(
                 withStyle(
                     style = SpanStyle(
                         fontSize = 12.sp,
-                        color = Color.Magenta
+                        color = C.regexFlags
                     )
                 ) {
                     append(if (imdlcEx.isEmpty()) "" else "$imdlcEx ")

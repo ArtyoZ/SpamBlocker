@@ -7,6 +7,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.platform.LocalContext
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.db.IApi
 import spam.blocker.db.QueryApi
@@ -14,7 +15,6 @@ import spam.blocker.db.ReportApi
 import spam.blocker.def.Def
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.SkyBlue
 import spam.blocker.ui.widgets.ConfigImportDialog
 import spam.blocker.ui.widgets.DividerItem
 import spam.blocker.ui.widgets.GreyIcon
@@ -30,6 +30,7 @@ fun ApiHeader(
     vm: ApiViewModel,
     presets: List<ApiPreset>,
 ) {
+    val C = G.palette
     val ctx = LocalContext.current
 
     val tappedPreset = remember { mutableStateOf<ApiPreset?>(null) }
@@ -148,7 +149,7 @@ fun ApiHeader(
     ) {
         MenuButton(
             label = Str(R.string.new_),
-            color = SkyBlue,
+            color = C.infoBlue,
             items = dropdownItems,
         )
     }

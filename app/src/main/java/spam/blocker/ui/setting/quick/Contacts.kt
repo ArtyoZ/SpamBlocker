@@ -16,8 +16,6 @@ import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.GreyIcon16
 import spam.blocker.ui.widgets.PopupDialog
@@ -36,7 +34,7 @@ import spam.blocker.util.spf
 @Composable
 fun Contacts() {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
     val spf = spf.Contact(ctx)
 
@@ -127,7 +125,7 @@ fun Contacts() {
                                     ResIcon(
                                         R.drawable.ic_question,
                                         modifier = M.size(16.dp),
-                                        color = Salmon
+                                        color = C.error
                                     )
                                     if (priStrict != 0) {
                                         PriorityLabel(priStrict)

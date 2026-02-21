@@ -33,8 +33,6 @@ import spam.blocker.db.Notification.CHANNEL_NONE
 import spam.blocker.db.Notification.Channel
 import spam.blocker.db.Notification.ChannelTable
 import spam.blocker.service.CopyToClipboardReceiver
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.Salmon
 import kotlin.random.Random
 
 
@@ -127,7 +125,7 @@ object Notification {
         return Channel(
             channelId = CHANNEL_HIGH,
             importance = IMPORTANCE_HIGH,
-            iconColor = DarkOrange.toArgb(),
+            iconColor = G.palette.warning.toArgb(),
         )
     }
 
@@ -214,8 +212,8 @@ object Notification {
     fun autoColor(channel: Channel, showType: ShowType) : Int {
         return channel.iconColor
             ?: when(showType) {
-                ShowType.SPAM_CALL -> Salmon.toArgb()
-                ShowType.SPAM_SMS -> Salmon.toArgb()
+                ShowType.SPAM_CALL -> G.palette.error.toArgb()
+                ShowType.SPAM_SMS -> G.palette.error.toArgb()
                 ShowType.VALID_SMS -> Color.Unspecified.toArgb()
             }
     }

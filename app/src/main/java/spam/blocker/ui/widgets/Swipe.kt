@@ -46,10 +46,9 @@ import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.MayaBlue
-import spam.blocker.ui.theme.Salmon
 import spam.blocker.util.Lambda
 import kotlin.math.abs
 import kotlin.math.roundToInt
@@ -250,7 +249,7 @@ fun BgDelete(
         modifier = Modifier
             .fillMaxSize()
             .clip(RoundedCornerShape(6.dp))
-            .background(Salmon)
+            .background(G.palette.error)
             .padding(horizontal = 16.dp),
         contentAlignment = if (direction == StartToEnd) {
             Alignment.CenterStart
@@ -274,7 +273,7 @@ fun BgLaunchApp(
         modifier = Modifier
             .fillMaxSize()
             .clip(RoundedCornerShape(6.dp))
-            .background(MayaBlue)
+            .background(G.palette.infoBlue)
             .padding(horizontal = 16.dp),
         contentAlignment = if (direction == StartToEnd) {
             Alignment.CenterStart

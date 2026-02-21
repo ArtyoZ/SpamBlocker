@@ -32,10 +32,6 @@ import spam.blocker.db.Notification.ChannelTable
 import spam.blocker.db.NumberRegexTable
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.ColorPickerButton
 import spam.blocker.ui.widgets.ComboBox
@@ -72,7 +68,7 @@ import androidx.compose.foundation.Image as ComposeImage
 fun ChannelIcons(
     importance: Int?,
     mute: Boolean?,
-    color: Color = LocalPalette.current.textGrey,
+    color: Color = G.palette.textGrey,
 ) {
 
     G.notificationChannels
@@ -100,7 +96,7 @@ fun ChannelIcons(
             }
         }
     } else {
-        ResIcon(R.drawable.ic_question_circle, modifier = M.size(16.dp), color = DarkOrange)
+        ResIcon(R.drawable.ic_question_circle, modifier = M.size(16.dp), color = G.palette.warning)
     }
 }
 
@@ -113,7 +109,7 @@ fun EditChannelDialog(
     if (!editTrigger.value) {
         return
     }
-    val C = LocalPalette.current
+    val C = G.palette
 
     var chId by remember { mutableStateOf(initChannel.channelId) }
     var importance by remember { mutableIntStateOf(initChannel.importance) }
@@ -144,7 +140,7 @@ fun EditChannelDialog(
                 PopupDialog(
                     trigger = deleteConfirm,
                     buttons = {
-                        StrokeButton(label = Str(R.string.delete), color = Salmon) {
+                        StrokeButton(label = Str(R.string.delete), color = C.error) {
                             Notification.deleteChannel(ctx, chId)
                             ChannelTable.deleteByChannelId(ctx, chId)
                             reloadChannels(ctx)
@@ -175,7 +171,7 @@ fun EditChannelDialog(
                 StrokeButton(
                     label = Str(R.string.delete),
                     enabled = !isBuiltin && chId.isNotEmpty(),
-                    color = if (!isBuiltin && chId.isNotEmpty()) Salmon else C.disabled
+                    color = if (!isBuiltin && chId.isNotEmpty()) C.error else C.disabled
                 ) {
                     deleteConfirm.value = true
                 }
@@ -184,7 +180,7 @@ fun EditChannelDialog(
                 StrokeButton(
                     label = Str(R.string.save),
                     enabled = !anyError,
-                    color = if (anyError) C.disabled else Teal200
+                    color = if (anyError) C.disabled else C.teal200
                 ) {
                     val newCh = Channel(
                         channelId = chId,
@@ -504,7 +500,7 @@ fun ChannelPicker(
 @Composable
 fun Notification() {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
     val spf = spf.Notification(ctx)
 
@@ -603,7 +599,7 @@ fun Notification() {
                         footerSize = 10,
                         footerOffset = Pair(-2, -2),
                         icon = {
-                            ChannelIcons(ch?.importance, ch?.mute, color = Salmon)
+                            ChannelIcons(ch?.importance, ch?.mute, color = C.error)
                         }
                     ) {
                         configTrigger.value = true
@@ -630,7 +626,7 @@ fun Notification() {
                                 // Vertical Divider
                                 VerticalDivider(thickness = 1.dp, color = C.disabled)
                                 // Spam SMS icon
-                                ChannelIcons(chSpam?.importance, chSpam?.mute, color = Salmon)
+                                ChannelIcons(chSpam?.importance, chSpam?.mute, color = C.error)
                             }
                         }
                     ) {

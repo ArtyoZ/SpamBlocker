@@ -2,6 +2,8 @@ package spam.blocker.util
 
 import android.content.Context
 import android.content.SharedPreferences
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.core.content.edit
@@ -12,7 +14,19 @@ import spam.blocker.db.Notification.CHANNEL_HIGH_MUTED
 import spam.blocker.db.Notification.CHANNEL_LOW
 import spam.blocker.def.Def
 import spam.blocker.def.Def.DEFAULT_HANG_UP_DELAY
+import spam.blocker.ui.theme.Black111111
+import spam.blocker.ui.theme.ColdGrey
+import spam.blocker.ui.theme.DarkGrey
+import spam.blocker.ui.theme.DarkOrange
+import spam.blocker.ui.theme.Emerald
+import spam.blocker.ui.theme.Grey383838
+import spam.blocker.ui.theme.LightMagenta
 import spam.blocker.ui.theme.MayaBlue
+import spam.blocker.ui.theme.RaisinBlack
+import spam.blocker.ui.theme.Salmon
+import spam.blocker.ui.theme.SilverGrey
+import spam.blocker.ui.theme.SkyBlue
+import spam.blocker.ui.theme.Teal200
 import spam.blocker.util.TimeUtils.FreshnessColor
 import kotlin.properties.ReadWriteProperty
 import kotlin.reflect.KProperty
@@ -89,13 +103,68 @@ class spf { // for namespace only
         }
     }
 
+    // This class is instantiated once and cached in GlobalVariables.kt, it holds all colors used by the app.
+    class Palette(ctx: Context) : SharedPref(ctx) {
+        // Delegate attributes,
+        //  - `initialized` from shared pref
+        //  - `read` from the state variable
+        //  - `write` to both the state variable and shared pref
+        private class Delegate(
+            private val prefs: SharedPreferences,
+            val key: String,
+            private val default: Color
+        ) : ReadWriteProperty<Any?, Color> {
+            private val state: MutableState<Color> = mutableStateOf(
+                Color(prefs.getInt("color_$key", default.toArgb()))
+            )
+
+            override operator fun getValue(thisRef: Any?, property: KProperty<*>): Color {
+                return state.value
+            }
+
+            override operator fun setValue(thisRef: Any?, property: KProperty<*>, value: Color) {
+                state.value = value
+                prefs.edit { putInt("color_$key", value.toArgb()) }
+            }
+        }
+
+        fun color(
+            key: String,
+            default: Color
+        ): ReadWriteProperty<Any?, Color> {
+            return Delegate(prefs, key, default)
+        }
+
+        var textGrey by color("text", SilverGrey)
+        var infoBlue by color("info", SkyBlue)
+        var warning by color("warning", DarkOrange)
+        var success by color("success", Emerald)
+        var error by color("error", Salmon)
+
+        var priority by color("priority", LightMagenta)
+        var regexFlags by color("regexFlags", Color.Magenta)
+
+        // widgets
+        var teal200 by color("highlighted", Teal200)
+        var disabled by color("disabled", ColdGrey)
+
+        // popup
+        var dialogBg by color("dialogBg", RaisinBlack)
+        var dialogBorder by color("dialogBorder", Grey383838)
+        var cardBorder by color("cardBorder", DarkGrey)
+
+        var background by color("background", Black111111)
+    }
+
     class Temporary(ctx: Context) : SharedPref(ctx) {
         // For answer + hang up
         var lastCallToBlock by str("last_number_to_block")
         var lastCallTime by long("last_called_time")
         var hangUpDelay by int("last_number_to_block_delay", DEFAULT_HANG_UP_DELAY)
+
         var ringtone by str("ringtone")
     }
+
     class Global(ctx: Context) : SharedPref(ctx) {
         var isGloballyEnabled by bool("globally_enable")
         var isCollapsed by bool("global_enable_collapsed", true)
@@ -103,12 +172,11 @@ class spf { // for namespace only
         var isSmsEnabled by bool("sms_enable")
         var isMmsEnabled by bool("mms_enable")
 
-        var themeType by int("theme_type")
         var language by str("language")
 
         var isTestIconClicked by bool("testing_icon_clicked")
 
-        // Settings below will not be backed up
+        // ---- Settings below will not be backed up ----
         var activeTab by str("active_tab", "setting")
 
         var hasPromptedForRunningInWorkProfile by bool("warn_running_in_work_profile_once")

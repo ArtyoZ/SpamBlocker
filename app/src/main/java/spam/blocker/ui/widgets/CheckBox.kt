@@ -5,12 +5,11 @@ import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.ripple
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import spam.blocker.ui.theme.LocalPalette
+import spam.blocker.G
 import spam.blocker.util.Lambda1
 
 
@@ -27,7 +26,6 @@ fun CheckBox(
         modifier = modifier
             .clickable(
                 enabled = enabled,
-                indication = ripple(color = MaterialTheme.colorScheme.primary),
                 interactionSource = remember { MutableInteractionSource() },
                 onClick = {
                     onCheckChange(!checked)
@@ -40,7 +38,8 @@ fun CheckBox(
             onCheckedChange = null,
             enabled = enabled,
             colors = CheckboxDefaults.colors(
-                uncheckedColor = LocalPalette.current.textGrey,
+                checkedColor = G.palette.teal200,
+                uncheckedColor = G.palette.textGrey,
             ),
         )
         label?.let {

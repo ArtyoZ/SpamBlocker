@@ -18,9 +18,6 @@ import spam.blocker.db.IApi
 import spam.blocker.service.bot.IAction
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.FormField
 import spam.blocker.ui.widgets.FormInputField
 import spam.blocker.ui.widgets.HtmlText
@@ -45,7 +42,7 @@ fun ApiAuthConfigDialog(
     onOk: Lambda,
 ) {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
     // All attributes
     val formFields = remember {
@@ -63,7 +60,7 @@ fun ApiAuthConfigDialog(
     ) {
         Text(
             text = errStr ?: Str(R.string.checking_auth_credential),
-            color = if (errStr == null) C.textGrey else Salmon,
+            color = if (errStr == null) C.textGrey else C.error,
         )
     }
 
@@ -84,7 +81,7 @@ fun ApiAuthConfigDialog(
         trigger = trigger,
         buttons = {
             // OK button
-            StrokeButton(label = Str(R.string.ok), color = Teal200) {
+            StrokeButton(label = Str(R.string.ok), color = C.teal200) {
                 errStr = null // clear previous error
                 validatePopupTrigger.value = true
 

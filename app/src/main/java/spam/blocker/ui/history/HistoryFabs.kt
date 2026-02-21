@@ -29,14 +29,9 @@ import spam.blocker.ui.history.HistoryOptions.showHistoryIndicator
 import spam.blocker.ui.history.HistoryOptions.showHistoryPassed
 import spam.blocker.ui.history.HistoryOptions.showHistoryTimeColor
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.ColorPickerButton
 import spam.blocker.ui.widgets.ComboBox
-import spam.blocker.ui.widgets.DimGreyText
 import spam.blocker.ui.widgets.Fab
 import spam.blocker.ui.widgets.FlowRowSpaced
 import spam.blocker.ui.widgets.GreyButton
@@ -45,6 +40,7 @@ import spam.blocker.ui.widgets.GreyText
 import spam.blocker.ui.widgets.LabelItem
 import spam.blocker.ui.widgets.MultiColorButton
 import spam.blocker.ui.widgets.NumberInputBox
+import spam.blocker.ui.widgets.Placeholder
 import spam.blocker.ui.widgets.PopupDialog
 import spam.blocker.ui.widgets.PopupSize
 import spam.blocker.ui.widgets.RowVCenterSpaced
@@ -87,6 +83,8 @@ fun EditSingleTimeColorsDialog(
     initial: FreshnessColor,
     onResult: Lambda2<FreshnessColor?, Boolean> // Pair<new item, isDelete, isAddOrEdit>
 ) {
+    val C = G.palette
+
     var dur by remember(initial) { mutableStateOf(initial.durationMin) }
     var color by remember(initial) { mutableIntStateOf(initial.argb) }
 
@@ -96,14 +94,14 @@ fun EditSingleTimeColorsDialog(
             RowVCenterSpaced(8) {
                 StrokeButton(
                     label = Str(R.string.delete),
-                    color = Salmon,
+                    color = C.error,
                 ) {
                     trigger.value = false
                     onResult(null, true)
                 }
                 StrokeButton(
                     label = Str(R.string.ok),
-                    color = Teal200,
+                    color = C.teal200,
                 ) {
                     trigger.value = false
 
@@ -121,7 +119,7 @@ fun EditSingleTimeColorsDialog(
             label = { Text(Str(R.string.duration)) },
             leadingIconId = R.drawable.ic_duration,
             supportingTextStr = if(!FreshnessColor(dur).isValid()) Str(R.string.invalid_value_see_tooltip) else null,
-            placeholder = { DimGreyText("10min") },
+            placeholder = { Placeholder("10min") },
             helpTooltip = Str(R.string.help_time_color_values),
             onValueChange = { dur = it }
         )
@@ -182,7 +180,7 @@ fun EditTimeColorsDialog(
         buttons = {
             StrokeButton(
                 label = "+",
-                color = LocalPalette.current.textGrey,
+                color = G.palette.textGrey,
             ) {
                 editing = FreshnessColor()
                 editingIndex = null
@@ -216,7 +214,7 @@ fun HistoryFabs(
     visible: Boolean,
     vm: HistoryViewModel,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
     val spf = spf.HistoryOptions(ctx)
 
@@ -447,7 +445,7 @@ fun HistoryFabs(
         Fab(
             visible = visible,
             iconId = R.drawable.ic_settings,
-            bgColor = SkyBlue
+            bgColor = C.infoBlue
         ) {
             settingPopupTrigger.value = true
         }
@@ -457,7 +455,7 @@ fun HistoryFabs(
         PopupDialog(
             trigger = deleteConfirm,
             buttons = {
-                StrokeButton(label = Str(R.string.delete), color = Salmon) {
+                StrokeButton(label = Str(R.string.delete), color = C.error) {
                     deleteConfirm.value = false
                     when (vm.forType) {
                         Def.ForNumber -> {
@@ -478,7 +476,7 @@ fun HistoryFabs(
         Fab(
             visible = visible,
             iconId = R.drawable.ic_recycle_bin,
-            bgColor = Salmon
+            bgColor = C.error
         ) {
             deleteConfirm.value = true
         }

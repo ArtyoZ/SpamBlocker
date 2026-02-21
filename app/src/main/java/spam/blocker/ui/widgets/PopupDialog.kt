@@ -19,10 +19,10 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import spam.blocker.G
 import spam.blocker.ui.M
 import spam.blocker.ui.maxScreenHeight
 import spam.blocker.ui.screenWidthDp
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.util.Lambda
 
 const val PopupPaddingHorizontal = 16
@@ -84,7 +84,7 @@ fun PopupDialog(
             // Enable this when taking screenshots..
 //            (LocalView.current.parent as DialogWindowProvider).window.setDimAmount(0.0f)
 
-            val C = LocalPalette.current
+            val C = G.palette
             val scrollState = rememberScrollState()
 
             Card(
@@ -96,7 +96,7 @@ fun PopupDialog(
 
                 border = BorderStroke(1.dp, color= C.dialogBorder),
                 colors = CardDefaults.cardColors(
-                    containerColor = LocalPalette.current.dialogBg,
+                    containerColor = G.palette.dialogBg,
                 ),
                 shape = RoundedCornerShape(4.dp)
             ) {

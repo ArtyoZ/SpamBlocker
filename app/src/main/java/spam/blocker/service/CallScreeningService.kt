@@ -22,7 +22,6 @@ import spam.blocker.service.checker.Checker
 import spam.blocker.service.checker.ICheckResult
 import spam.blocker.service.reporting.autoReportSpam
 import spam.blocker.ui.NotificationTrampolineActivity
-import spam.blocker.ui.theme.currentPalette
 import spam.blocker.util.Contacts
 import spam.blocker.util.ILogger
 import spam.blocker.util.Notification
@@ -164,7 +163,7 @@ class CallScreeningService : CallScreeningService() {
         val cnap = details.callerDisplayName
 
         val r = processCall(
-            ctx = this, logger = SaveableLogger(currentPalette(this)), rawNumber = rawNumber,
+            ctx = this, logger = SaveableLogger(), rawNumber = rawNumber,
             cnap = cnap, callDetails = details, simSlot = ringingSimSlot, isTest = false
         )
         logi("processCall() result: $r")

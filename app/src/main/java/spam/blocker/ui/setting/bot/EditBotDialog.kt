@@ -28,9 +28,6 @@ import spam.blocker.service.bot.rememberSaveableActionList
 import spam.blocker.service.bot.rememberSaveableTriggerState
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.LabelItem
 import spam.blocker.ui.widgets.MenuButton
 import spam.blocker.ui.widgets.PopupDialog
@@ -54,7 +51,7 @@ fun EditBotDialog(
         return
     }
 
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
 
     var description by rememberSaveable { mutableStateOf(initialBot.desc) }
@@ -72,7 +69,7 @@ fun EditBotDialog(
         buttons = {
             StrokeButton(
                 label = Str(R.string.save),
-                color = if (anyError) C.disabled else Teal200,
+                color = if (anyError) C.disabled else C.teal200,
                 enabled = !anyError,
                 onClick = {
                     // Gather all required permissions for the workflow
@@ -132,7 +129,7 @@ fun EditBotDialog(
                             }
                             MenuButton(
                                 label = Str(R.string.choose),
-                                color = SkyBlue,
+                                color = C.infoBlue,
                                 items = triggerItems,
                             )
                         }

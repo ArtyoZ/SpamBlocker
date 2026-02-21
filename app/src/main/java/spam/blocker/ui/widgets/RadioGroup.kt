@@ -11,8 +11,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.util.Lambda1
 
 data class RadioItem(
@@ -27,7 +27,7 @@ fun RadioGroup(
     selectedIndex: Int,
     onSelect: Lambda1<Int>,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     FlowRowSpaced(8) {
         items.forEachIndexed { idx, item ->
@@ -48,6 +48,7 @@ fun RadioGroup(
                         .width(24.dp)// reduce the gap between RadioButton and Text
                         .height(10.dp),
                     colors = RadioButtonDefaults.colors(
+                        selectedColor = C.teal200,
                         unselectedColor = C.disabled,
                     )
                 )

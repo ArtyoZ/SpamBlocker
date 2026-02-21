@@ -9,7 +9,6 @@ import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
@@ -36,9 +35,6 @@ import spam.blocker.service.resetPushAlertCache
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
 import spam.blocker.ui.setting.quick.PopupChooseApps
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.GreyButton
 import spam.blocker.ui.widgets.GreyLabel
 import spam.blocker.ui.widgets.LeftDeleteSwipeWrapper
@@ -102,6 +98,7 @@ fun PushAlertEditDialog(
         return
     }
 
+    val C = G.palette
     val ctx = LocalContext.current
 
     // id
@@ -140,7 +137,7 @@ fun PushAlertEditDialog(
         buttons = {
             StrokeButton(
                 label = Str(R.string.save),
-                color = Teal200,
+                color = C.teal200,
                 onClick = {
                     G.permissionChain.ask(
                         ctx,
@@ -236,6 +233,7 @@ fun PushAlertEditDialog(
 
 @Composable
 fun PushAlertHeader() {
+    val C = G.palette
     val ctx = LocalContext.current
     val vm = PushAlertViewModel
 
@@ -263,7 +261,7 @@ fun PushAlertHeader() {
     ) {
         StrokeButton(
             label = Str(R.string.new_),
-            color = SkyBlue,
+            color = C.infoBlue,
             onClick = {
                 addTrigger.value = true
             }
@@ -277,10 +275,10 @@ fun PushAlertCard(
     record: PushAlertRecord,
     modifier: Modifier,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     OutlineCard(
-        containerBg = MaterialTheme.colorScheme.background
+        containerBg = G.palette.background
     ) {
         RowVCenterSpaced(
             space = 10,
@@ -303,7 +301,7 @@ fun PushAlertCard(
                         modifier = M.weight(1f),
                         fontWeight = FontWeight.SemiBold,
                         maxLines = 2,
-                        color = if (record.enabled && record.isValid()) C.textGreen else C.textGrey,
+                        color = if (record.enabled && record.isValid()) C.success else C.textGrey,
                         overflow = TextOverflow.Ellipsis,
                     )
 

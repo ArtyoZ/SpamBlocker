@@ -59,8 +59,6 @@ import spam.blocker.ui.setting.regex.RegexList
 import spam.blocker.ui.setting.regex.RegexViewModel
 import spam.blocker.ui.setting.regex.SmsAlert
 import spam.blocker.ui.setting.regex.SmsBomb
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.theme.White
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.BalloonQuestionMark
@@ -81,6 +79,7 @@ const val SettingRowMinHeight = 40
 
 @Composable
 fun SettingScreen() {
+    val C = G.palette
     val ctx = LocalContext.current
 
     val testingTrigger = rememberSaveable { mutableStateOf(false) }
@@ -109,7 +108,7 @@ fun SettingScreen() {
                     text = if (alsoShowText) ctx.getString(R.string.title_rule_testing) else null,
                     iconId = R.drawable.ic_tube,
                     iconColor = White,
-                    bgColor = Teal200,
+                    bgColor = C.teal200,
                     modifier = positionModifier
                 ) {
                     testingTrigger.value = true
@@ -294,7 +293,7 @@ fun SettingLabel(
         maxLines = 1,
         fontSize = 16.sp,
         fontWeight = FontWeight.Medium,
-        color = color ?: SkyBlue,
+        color = color ?: G.palette.infoBlue,
     )
 }
 

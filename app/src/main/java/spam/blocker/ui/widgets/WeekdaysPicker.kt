@@ -10,10 +10,10 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.rememberSaveableMutableStateListOf
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.util.Lambda1
 import java.time.DayOfWeek
 
@@ -33,12 +33,12 @@ fun WeekdayPicker1(
     RowVCenter(
         horizontalArrangement = Arrangement.SpaceBetween,
     ) {
-        val C = LocalPalette.current
+        val C = G.palette
         val labels = LocalContext.current.resources.getStringArray(R.array.weekdays_abbrev)
 
         labels.forEachIndexed { index, label ->
             val selected = selectedDays.contains(index + 1)
-            val color = if (selected) C.enabled else C.disabled
+            val color = if (selected) C.teal200 else C.disabled
             StrokeButton(
                 modifier = M
                     .defaultMinSize(34.dp, 0.dp)
@@ -83,14 +83,14 @@ fun WeekdayPicker2(
     RowVCenter(
         horizontalArrangement = Arrangement.SpaceBetween,
     ) {
-        val C = LocalPalette.current
+        val C = G.palette
         val labels = LocalContext.current.resources.getStringArray(R.array.weekdays_abbrev)
 
         labels.forEachIndexed { index, label ->
             val selected = selectedDays.map {
                 it.value
             }.contains(if (index == 0) 7 else index)
-            val color = if (selected) C.enabled else C.disabled
+            val color = if (selected) C.teal200 else C.disabled
             StrokeButton(
                 modifier = M
                     .defaultMinSize(34.dp, 0.dp)

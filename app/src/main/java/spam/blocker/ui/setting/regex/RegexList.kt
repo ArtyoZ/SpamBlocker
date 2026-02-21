@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.CoroutineScope
 import spam.blocker.Events
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.db.RegexRule
 import spam.blocker.db.ruleTableForType
@@ -38,8 +39,6 @@ import spam.blocker.ui.M
 import spam.blocker.ui.maxScreenHeight
 import spam.blocker.ui.screenHeightDp
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
 import spam.blocker.ui.widgets.DividerItem
 import spam.blocker.ui.widgets.DropdownWrapper
 import spam.blocker.ui.widgets.GreyIcon20
@@ -173,6 +172,8 @@ fun RegexSettingsPopup(
 fun RegexList(
     vm: RegexViewModel,
 ) {
+    val C = G.palette
+
     val forType = vm.forType
     val ctx = LocalContext.current
     val spf = spf.RegexOptions(ctx)
@@ -211,7 +212,7 @@ fun RegexList(
         trigger = confirmDeleteAll,
         content = { GreyLabel(text = Str(R.string.confirm_delete_all_rule), fontSize = 18.sp) },
         buttons = {
-            StrokeButton(label = Str(R.string.delete), color = Salmon) {
+            StrokeButton(label = Str(R.string.delete), color = C.error) {
                 confirmDeleteAll.value = false
 
                 val table = ruleTableForType(forType)
@@ -249,7 +250,7 @@ fun RegexList(
             }
         },
         buttons = {
-            StrokeButton(label = Str(R.string.delete), color = Salmon) {
+            StrokeButton(label = Str(R.string.delete), color = C.error) {
                 confirmDeleteDuplicated.value = false
 
                 val table = ruleTableForType(forType)
@@ -389,7 +390,7 @@ fun RegexItem(
     contextMenuItems: List<IMenuItem>,
 ) {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
     DropdownWrapper(items = contextMenuItems) { contextMenuExpanded ->
         LeftDeleteSwipeWrapper(

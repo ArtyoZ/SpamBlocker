@@ -5,8 +5,8 @@ import android.content.Context
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import kotlinx.serialization.Serializable
+import spam.blocker.G
 import spam.blocker.R
-import spam.blocker.ui.theme.SkyBlue
 import java.text.SimpleDateFormat
 import java.time.Duration
 import java.time.Instant
@@ -114,7 +114,7 @@ object TimeUtils {
     @Serializable
     data class FreshnessColor (
         val durationMin: String = "10min", // "5min", "today", ...
-        val argb: Int = SkyBlue.toArgb()
+        val argb: Int = G.palette.infoBlue.toArgb()
     ) : Comparable<FreshnessColor> {
         fun isValid(): Boolean {
             return durationMin == "today" || durationMin.matches(Regex("\\d+min"))

@@ -11,11 +11,10 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
 import spam.blocker.ui.widgets.Button
 import spam.blocker.ui.widgets.PopupDialog
 import spam.blocker.ui.widgets.PriorityBox
@@ -29,7 +28,7 @@ import spam.blocker.util.spf
 @Composable
 fun Stir() {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
     val spf = spf.Stir(ctx)
 
     var isEnabled by remember { mutableStateOf(spf.isEnabled) }
@@ -66,12 +65,12 @@ fun Stir() {
                 Button(
                     content = {
                         RowVCenterSpaced(6) {
-                            ResIcon(R.drawable.ic_incognito, color = Salmon, modifier = M.size(16.dp))
+                            ResIcon(R.drawable.ic_incognito, color = C.error, modifier = M.size(16.dp))
                             if (includeUnverified) {
                                 ResIcon(
                                     R.drawable.ic_question,
                                     modifier = M.size(16.dp),
-                                    color = Salmon
+                                    color = C.error
                                 )
                             }
                             if (priority != 0) {

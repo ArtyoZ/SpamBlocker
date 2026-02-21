@@ -25,6 +25,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import spam.blocker.Events
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.db.SpamNumber
 import spam.blocker.db.SpamTable
@@ -34,8 +35,6 @@ import spam.blocker.service.bot.PruneDatabase
 import spam.blocker.service.bot.serialize
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
 import spam.blocker.ui.widgets.Button
 import spam.blocker.ui.widgets.GreyButton
 import spam.blocker.ui.widgets.GreyIcon18
@@ -87,7 +86,7 @@ fun SpamNumCard(
     num: SpamNumber,
     modifier: Modifier = Modifier,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
 
     OutlineCard(
@@ -119,6 +118,7 @@ fun SpamNumCard(
 
 @Composable
 fun SpamDB() {
+    val C = G.palette
     val ctx = LocalContext.current
     val spf = spf.SpamDB(ctx)
 
@@ -140,7 +140,7 @@ fun SpamDB() {
     PopupDialog(
         trigger = deleteConfirm,
         buttons = {
-            StrokeButton(label = Str(R.string.clear), color = Salmon) {
+            StrokeButton(label = Str(R.string.clear), color = C.error) {
                 deleteConfirm.value = false
                 SpamTable.clearAll(ctx)
                 total = SpamTable.count(ctx)
@@ -166,7 +166,7 @@ fun SpamDB() {
             LabeledRow(labelId = R.string.total) {
                 GreyLabel(text = NumberFormat.getInstance().format(total))
                 Spacer(modifier = M.width(16.dp))
-                StrokeButton(label = Str(R.string.clear), color = Salmon) {
+                StrokeButton(label = Str(R.string.clear), color = C.error) {
                     deleteConfirm.value = true
                 }
             }
@@ -263,14 +263,13 @@ fun SpamDB() {
                 Button(
                     content = {
                         RowVCenterSpaced(4) {
-                            Text(NumberFormat.getInstance().format(total), color = Salmon)
+                            Text(NumberFormat.getInstance().format(total), color = C.error)
 
                             if (priority != 0) {
                                 PriorityLabel(priority)
                             }
                         }
                     },
-//                    borderColor = Salmon,
                     onClick = {
                         popupTrigger.value = true
                     }

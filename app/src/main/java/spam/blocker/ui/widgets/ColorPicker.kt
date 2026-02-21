@@ -54,11 +54,9 @@ import androidx.core.graphics.createBitmap
 import androidx.core.graphics.toRect
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.util.Lambda
 import spam.blocker.util.Lambda1
 import android.graphics.Color as AndroidColor
@@ -74,7 +72,7 @@ fun ColorButton(
 ) {
     StrokeButton(
         label = if (color == null) defaultText else null,
-        color = LocalPalette.current.textGrey,
+        color = G.palette.textGrey,
         enabled = enabled,
         contentPadding = PaddingValues(
             horizontal = if (color == null) BUTTON_H_PADDING.dp else 0.dp, vertical = 0.dp
@@ -178,6 +176,8 @@ fun ColorPickerPopup(
     clearable: Boolean = false,
     onSelect: Lambda1<Int?>,
 ) {
+    val C = G.palette
+
     if (!trigger.value)
         return
 
@@ -196,7 +196,7 @@ fun ColorPickerPopup(
 
                     StrokeButton(
                         label = Str(R.string.clear),
-                        color = Salmon
+                        color = C.error
                     ) {
                         onSelect(null)
                         trigger.value = false
@@ -204,7 +204,7 @@ fun ColorPickerPopup(
                 }
                 StrokeButton(
                     label = Str(R.string.save),
-                    color = Teal200
+                    color = C.teal200
                 ) {
                     onSelect((a shl 24) + rgb)
                     trigger.value = false

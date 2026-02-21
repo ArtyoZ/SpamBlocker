@@ -13,7 +13,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
-import spam.blocker.ui.theme.LocalPalette
+import spam.blocker.G
+import spam.blocker.ui.darken
 
 
 private const val Width = 40
@@ -28,15 +29,15 @@ fun SwitchBox(
     checked: Boolean,
     onCheckedChange: (Boolean) -> Unit
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     val thumbOffset by animateIntAsState(
         targetValue = if (checked) ThumbRadius else -ThumbRadius,
         label = "",
     )
 
-    val trackColor = if (checked) C.switchTrackOn else C.switchTrackOff
-    val thumbColor = if (checked) C.switchThumbOn else C.switchThumbOff
+    val trackColor = if (checked) C.teal200.darken() else C.disabled.darken()
+    val thumbColor = if (checked) C.teal200 else C.disabled
 
     Box(
         modifier = Modifier

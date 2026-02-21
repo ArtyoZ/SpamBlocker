@@ -62,9 +62,6 @@ import spam.blocker.def.Def.RESULT_BLOCKED_BY_STIR
 import spam.blocker.service.bot.ApiQueryResult
 import spam.blocker.ui.M
 import spam.blocker.ui.history.ReportSpamDialog
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.widgets.DimGreyText
 import spam.blocker.ui.widgets.GreyText
 import spam.blocker.ui.widgets.RowVCenterSpaced
 import spam.blocker.ui.widgets.Str
@@ -81,7 +78,7 @@ import spam.blocker.util.spf
 
 @Composable
 fun ExtraInfoWithDivider(text: AnnotatedString, maxLines: Int) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     if(text.isNotEmpty() && maxLines > 0) {
         Column {
@@ -124,7 +121,7 @@ interface ICheckResult {
     @Composable
     fun ExpandedContent(forType: Int, record: HistoryRecord) {
         val ctx = LocalContext.current
-        val C = LocalPalette.current
+        val C = G.palette
 
         when(forType) {
             // "Report Number" button
@@ -140,7 +137,7 @@ interface ICheckResult {
                         ReportSpamDialog(trigger = reportTrigger, rawNumber = record.peer)
                         StrokeButton(
                             label = Str(R.string.report_number),
-                            color = DarkOrange,
+                            color = C.warning,
                             modifier = M.padding(bottom = 4.dp)
                         ) {
                             reportTrigger.value = true
@@ -466,7 +463,7 @@ class ByRegexRule(
     @Composable
     override fun ExpandedContent(forType: Int, record: HistoryRecord) {
         val ctx = LocalContext.current
-        val C = LocalPalette.current
+        val C = G.palette
 
         when(forType) {
             Def.ForSms -> {
@@ -482,7 +479,7 @@ class ByRegexRule(
                             text = smsContent,
                             regexStr = rule.pattern,
                             regexFlags = rule.patternFlags,
-                            wildcardColor = if(rule.isBlacklist) C.block else C.pass,
+                            wildcardColor = if(rule.isBlacklist) C.error else C.success,
                             textColor = C.textGrey
                         ),
                         maxLines = if (record.expanded) Int.MAX_VALUE else spf.HistoryOptions(ctx).initialSmsRowCount,
@@ -555,7 +552,7 @@ class ByPushAlert(
         Column {
             super.ExpandedContent(forType, record)
             if (record.expanded)
-                DimGreyText(detail.body)
+                GreyText(detail.body)
         }
     }
 }

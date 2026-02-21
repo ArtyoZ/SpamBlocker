@@ -13,7 +13,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.core.text.HtmlCompat
 import androidx.core.text.parseAsHtml
-import spam.blocker.ui.theme.LocalPalette
+import spam.blocker.G
 import spam.blocker.util.Lambda
 import spam.blocker.util.Lambda1
 
@@ -68,7 +68,7 @@ To embed images in the string, use tags like:
 fun HtmlText(
     html: String,
     modifier: Modifier = Modifier,
-    color: Color = LocalPalette.current.textGrey,
+    color: Color = G.palette.textGrey,
     onCustomLinkClick: Lambda1<String>? = null,
     onRandomClick: Lambda? = null,
 ) {

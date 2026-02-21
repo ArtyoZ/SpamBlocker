@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -34,8 +33,6 @@ import spam.blocker.ui.history.HistoryOptions.showHistoryPassed
 import spam.blocker.ui.history.HistoryScreen
 import spam.blocker.ui.setting.SettingScreen
 import spam.blocker.ui.theme.AppTheme
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.MayaBlue
 import spam.blocker.ui.widgets.BottomBar
 import spam.blocker.ui.widgets.BottomBarViewModel
 import spam.blocker.ui.widgets.GreyText
@@ -128,15 +125,10 @@ class MainActivity : ComponentActivity() {
         )
 
         setContent {
-            val isDarkTheme = when (G.themeType.intValue) {
-                1 -> false
-                2 -> true
-                else -> isSystemInDarkTheme()
-            }
-            AppTheme(darkTheme = isDarkTheme) {
+            AppTheme {
                 // fix white statusbar text when forced to white theme
                 WindowCompat.getInsetsController(window, LocalView.current)
-                    .isAppearanceLightStatusBars = !isDarkTheme
+                    .isAppearanceLightStatusBars = false
 
                 // Prepare for the permission launcher
                 G.permissionChain.Compose()
@@ -151,6 +143,7 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     private fun Main() {
+        val C = G.palette
         val ctx = LocalContext.current
 
         // Load all records to show unread badge in the bottom bar.
@@ -178,9 +171,9 @@ class MainActivity : ComponentActivity() {
                         ) {
                             Snackbar(
                                 modifier = M.padding(horizontal = 10.dp),
-                                containerColor = MayaBlue,
-                                contentColor = Color.DarkGray,
-                                actionColor = Color.DarkGray,
+                                containerColor = C.infoBlue,
+                                contentColor = C.cardBorder,
+                                actionColor = C.cardBorder,
                                 snackbarData = it
                             )
                         }
@@ -208,6 +201,7 @@ class MainActivity : ComponentActivity() {
     @SuppressLint("ComposableNaming")
     @Composable
     private fun checkWorkProfile() {
+        val C = G.palette
         val spf = spf.Global(this)
         val alreadyShown by remember { mutableStateOf(spf.hasPromptedForRunningInWorkProfile) }
         val runningInWorkProf by remember { mutableStateOf(Util.isRunningInWorkProfile(this)) }
@@ -225,7 +219,7 @@ class MainActivity : ComponentActivity() {
                 buttons = {
                     StrokeButton(
                         label = getString(R.string.dismiss),
-                        color = DarkOrange,
+                        color = C.warning,
                     ) {
                         trigger.value = false
                         spf.hasPromptedForRunningInWorkProfile = true

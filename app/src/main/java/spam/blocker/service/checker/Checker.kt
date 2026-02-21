@@ -33,12 +33,7 @@ import spam.blocker.service.bot.QuickTile
 import spam.blocker.service.bot.SmsEvent
 import spam.blocker.service.bot.SmsThrottling
 import spam.blocker.service.bot.executeAll
-import spam.blocker.ui.theme.DimGrey
-import spam.blocker.ui.theme.Emerald
-import spam.blocker.ui.theme.LightMagenta
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
+import spam.blocker.ui.darken
 import spam.blocker.util.A
 import spam.blocker.util.Clipboard
 import spam.blocker.util.Contacts
@@ -192,13 +187,15 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val logger = cCtx.logger
             val callDetails = cCtx.callDetails
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.emergency_call).A(SkyBlue),
-                        ctx.getString(R.string.max).A(LightMagenta)
+                        ctx.getString(R.string.emergency_call).A(C.infoBlue),
+                        ctx.getString(R.string.max).A(C.priority)
                     )
             )
             if (callDetails == null) {// there is no callDetail when testing
@@ -230,6 +227,7 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
             val spf = spf.EmergencySituation(ctx)
             if (!spf.isEnabled)
                 return null
@@ -239,8 +237,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.emergency_situation).A(SkyBlue),
-                        ctx.getString(R.string.max).A(LightMagenta)
+                        ctx.getString(R.string.emergency_situation).A(C.infoBlue),
+                        ctx.getString(R.string.max).A(C.priority)
                     )
             )
 
@@ -278,6 +276,7 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
             val logger = cCtx.logger
             val callDetails = cCtx.callDetails
 
@@ -288,8 +287,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.stir_attestation).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.stir_attestation).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -335,6 +334,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -345,8 +346,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.database).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.database).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -391,6 +392,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -402,8 +405,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.contact).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.contact).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -428,6 +431,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -442,8 +447,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.non_contact).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.non_contact).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -468,6 +473,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
             val isTesting = cCtx.callDetails == null
@@ -482,8 +489,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.repeated_call).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.repeated_call).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -537,7 +544,7 @@ class Checker { // for namespace only
             }
 
 
-            logger?.debug("${ctx.getString(R.string.call)}: $nCalls, ${ctx.getString(R.string.sms)}: $nSMSs".A(DimGrey))
+            logger?.debug("${ctx.getString(R.string.call)}: $nCalls, ${ctx.getString(R.string.sms)}: $nSMSs".A(C.textGrey.darken()))
 
             // check
             if (nCalls + nSMSs >= times) {
@@ -558,6 +565,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -568,8 +577,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.dialed_number).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.dialed_number).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -595,7 +604,7 @@ class Checker { // for namespace only
                 )
             else
                 0
-            logger?.debug("${ctx.getString(R.string.call)}: $nCalls, ${ctx.getString(R.string.sms)}: $nSMSs".A(DimGrey))
+            logger?.debug("${ctx.getString(R.string.call)}: $nCalls, ${ctx.getString(R.string.sms)}: $nSMSs".A(C.textGrey.darken()))
 
             if (nCalls + nSMSs > 0) {
                 logger?.success(
@@ -615,6 +624,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -625,8 +636,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.answered_number).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.answered_number).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -646,7 +657,7 @@ class Checker { // for namespace only
                 it.duration >= minDuration
             }.size
 
-            logger?.debug("${ctx.getString(R.string.call)}: $nCalls".A(DimGrey))
+            logger?.debug("${ctx.getString(R.string.call)}: $nCalls".A(C.textGrey.darken()))
 
             if (nCalls > 0) {
                 logger?.success(
@@ -666,6 +677,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val logger = cCtx.logger
 
             val spf = spf.OffTime(ctx)
@@ -675,8 +688,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.off_time).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.off_time).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -713,6 +726,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val logger = cCtx.logger
 
             val spf = spf.RecentApps(ctx)
@@ -724,8 +739,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.recent_apps).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.recent_apps).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -771,6 +786,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val logger = cCtx.logger
 
             val spf = spf.MeetingMode(ctx)
@@ -782,8 +799,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.in_meeting).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.in_meeting).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -821,6 +838,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -841,8 +860,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.instant_query).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.instant_query).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -953,7 +972,7 @@ class Checker { // for namespace only
             if (rule.simSlot != null && cCtx.simSlot != null) { // null == doesn't care, no need to check
                 if (!Permission.phoneState.isGranted) {
                     cCtx.logger?.warn(ctx.getString(R.string.missing_permission).formatAnnotated(
-                        Permission.phoneState.name.A(Teal200)
+                        Permission.phoneState.name.A(G.palette.teal200)
                     ))
                 } else if (rule.simSlot != cCtx.simSlot) {
                     return false
@@ -970,6 +989,8 @@ class Checker { // for namespace only
         rule: RegexRule,
     ) : RegexRuleChecker(ctx, rule) {
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -980,9 +1001,9 @@ class Checker { // for namespace only
             logger?.debug(
                 (ctx.getString(R.string.checking_template)+ ": %s")
                     .formatAnnotated(
-                        ctx.getString(R.string.number_rule).A(SkyBlue),
-                        priority().toString().A(LightMagenta),
-                        rule.summary().A(if (rule.isBlacklist) Salmon else Emerald),
+                        ctx.getString(R.string.number_rule).A(C.infoBlue),
+                        priority().toString().A(C.priority),
+                        rule.summary().A(if (rule.isBlacklist) C.error else C.success),
                     )
             )
 
@@ -1017,6 +1038,8 @@ class Checker { // for namespace only
         rule: RegexRule,
     ) : RegexRuleChecker(ctx, rule) {
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val cnap = cCtx.cnap
             val logger = cCtx.logger
 
@@ -1027,9 +1050,9 @@ class Checker { // for namespace only
             logger?.debug(
                 (ctx.getString(R.string.checking_template)+ ": %s")
                     .formatAnnotated(
-                        ctx.getString(R.string.caller_name_rule).A(SkyBlue),
-                        priority().toString().A(LightMagenta),
-                        rule.summary().A(if (rule.isBlacklist) Salmon else Emerald),
+                        ctx.getString(R.string.caller_name_rule).A(C.infoBlue),
+                        priority().toString().A(C.priority),
+                        rule.summary().A(if (rule.isBlacklist) C.error else C.success),
                     )
             )
             if (cnap == null) {
@@ -1067,6 +1090,8 @@ class Checker { // for namespace only
         rule: RegexRule,
     ) : RegexRuleChecker(ctx, rule) {
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             if (!Permission.phoneState.isGranted) {
                 return null
             }
@@ -1079,9 +1104,9 @@ class Checker { // for namespace only
             logger?.debug(
                 (ctx.getString(R.string.checking_template)+ ": %s")
                     .formatAnnotated(
-                        ctx.getString(R.string.geo_location_rule).A(SkyBlue),
-                        priority().toString().A(LightMagenta),
-                        rule.summary().A(if (rule.isBlacklist) Salmon else Emerald),
+                        ctx.getString(R.string.geo_location_rule).A(C.infoBlue),
+                        priority().toString().A(C.priority),
+                        rule.summary().A(if (rule.isBlacklist) C.error else C.success),
                     )
             )
 
@@ -1118,6 +1143,8 @@ class Checker { // for namespace only
         rule: RegexRule
     ) : RegexRuleChecker(ctx, rule) {
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -1132,9 +1159,9 @@ class Checker { // for namespace only
             logger?.debug(
                 (ctx.getString(R.string.checking_template) + ": %s")
                     .formatAnnotated(
-                        ctx.getString(R.string.contact_rule).A(SkyBlue),
-                        priority().toString().A(LightMagenta),
-                        rule.summary().A(if (rule.isBlacklist) Salmon else Emerald)
+                        ctx.getString(R.string.contact_rule).A(C.infoBlue),
+                        priority().toString().A(C.priority),
+                        rule.summary().A(if (rule.isBlacklist) C.error else C.success)
                     )
             )
 
@@ -1172,6 +1199,8 @@ class Checker { // for namespace only
         rule: RegexRule
     ) : RegexRuleChecker(ctx, rule) {
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val logger = cCtx.logger
 
@@ -1186,9 +1215,9 @@ class Checker { // for namespace only
             logger?.debug(
                 (ctx.getString(R.string.checking_template)+ ": %s")
                     .formatAnnotated(
-                        ctx.getString(R.string.contact_group).A(SkyBlue),
-                        priority().toString().A(LightMagenta),
-                        rule.summary().A(if (rule.isBlacklist) Salmon else Emerald)
+                        ctx.getString(R.string.contact_group).A(C.infoBlue),
+                        priority().toString().A(C.priority),
+                        rule.summary().A(if (rule.isBlacklist) C.error else C.success)
                     )
             )
 
@@ -1234,6 +1263,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val rawNumber = cCtx.rawNumber
             val smsContent = cCtx.smsContent!!
             val logger = cCtx.logger
@@ -1245,9 +1276,9 @@ class Checker { // for namespace only
             logger?.debug(
                 (ctx.getString(R.string.checking_template)+ ": %s")
                     .formatAnnotated(
-                        ctx.getString(R.string.content_rule).A(SkyBlue),
-                        priority().toString().A(LightMagenta),
-                        rule.summary().A(if (rule.isBlacklist) Salmon else Emerald)
+                        ctx.getString(R.string.content_rule).A(C.infoBlue),
+                        priority().toString().A(C.priority),
+                        rule.summary().A(if (rule.isBlacklist) C.error else C.success)
                     )
             )
 
@@ -1314,6 +1345,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             if (!Permission.notificationAccess.isGranted) {
                 return null
             }
@@ -1331,8 +1364,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.push_alert).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.push_alert).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -1373,6 +1406,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val logger = cCtx.logger
 
             val spf = spf.SmsAlert(ctx)
@@ -1382,8 +1417,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.sms_alert).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.sms_alert).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 
@@ -1412,6 +1447,8 @@ class Checker { // for namespace only
         }
 
         override fun check(cCtx: CheckContext): ICheckResult? {
+            val C = G.palette
+
             val logger = cCtx.logger
 
             val spf = spf.SmsBomb(ctx)
@@ -1421,8 +1458,8 @@ class Checker { // for namespace only
             logger?.debug(
                 ctx.getString(R.string.checking_template)
                     .formatAnnotated(
-                        ctx.getString(R.string.sms_bomb).A(SkyBlue),
-                        priority().toString().A(LightMagenta)
+                        ctx.getString(R.string.sms_bomb).A(C.infoBlue),
+                        priority().toString().A(C.priority)
                     )
             )
 

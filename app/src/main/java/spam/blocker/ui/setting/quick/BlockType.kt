@@ -14,7 +14,6 @@ import spam.blocker.R
 import spam.blocker.def.Def
 import spam.blocker.def.Def.DEFAULT_HANG_UP_DELAY
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.ui.widgets.ComboBox
 import spam.blocker.ui.widgets.GreyIcon20
 import spam.blocker.ui.widgets.LabelItem
@@ -106,7 +105,7 @@ fun BlockType() {
         R.string.block_type,
         helpTooltip = Str(R.string.help_block_type),
         content = {
-            val C = LocalPalette.current
+            val C = G.palette
             RowVCenterSpaced(4) {
 
                 if (selected.intValue == Def.BLOCK_TYPE_ANSWER_AND_HANGUP) {

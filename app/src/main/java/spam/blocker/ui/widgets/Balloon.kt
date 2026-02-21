@@ -18,12 +18,10 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import kotlinx.coroutines.launch
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.maxScreenHeight
-import spam.blocker.ui.theme.ColdGrey
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.util.Lambda1
 
 
@@ -50,7 +48,7 @@ fun BalloonWrapper(
                 modifier = Modifier
                     .border(
                         if (isSystemInDarkTheme()) BalloonBorderWidthDark.dp else BalloonBorderWidthLight.dp,
-                        LocalPalette.current.balloonBorder,
+                        G.palette.warning,
                         shape = RoundedCornerShape(BalloonCornerRadius.dp)
                     )
             ) {
@@ -64,7 +62,7 @@ fun BalloonWrapper(
                             state,
                             offsetX = 30,
                             persistent = true,
-                            scrollBarColor = DarkOrange
+                            scrollBarColor = G.palette.warning
                         ),
                     onCustomLinkClick = onCustomLinkClick,
                     onRandomClick = {
@@ -89,7 +87,7 @@ fun BalloonQuestionMark(tooltip: String, size: Int = 18) {
     ) { tooltipState ->
         val scope = rememberCoroutineScope()
         ResImage(
-            R.drawable.ic_question_circle, ColdGrey, M
+            R.drawable.ic_question_circle, G.palette.disabled, M
                 .width(size.dp)
                 .clickable { // put before `.padding` for larger clicking area
                     scope.launch {

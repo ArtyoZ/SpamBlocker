@@ -30,8 +30,6 @@ import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
 import spam.blocker.ui.setting.bot.ActionHeader
 import spam.blocker.ui.setting.bot.ActionList
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.Button
 import spam.blocker.ui.widgets.PopupDialog
@@ -90,14 +88,14 @@ fun PopupEditAutoReport(
 fun AutoReportIcons(
     autoReportTypes: Int
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     RowVCenterSpaced(4, modifier = M.padding(start = 12.dp)) {
         for (i in 0..2) {
             val hasFlag = autoReportTypes.hasFlag(autoReportFlags[i]) == true
             ResImage(
                 autoReportIcons[i],
-                if(hasFlag) C.enabled else C.disabled,
+                if(hasFlag) C.teal200 else C.disabled,
                 M.size(18.dp)
             )
         }
@@ -129,7 +127,7 @@ fun EditApiDialog(
         return
     }
 
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
 
     val isReportApi = rememberSaveable { initial is ReportApi}
@@ -153,7 +151,7 @@ fun EditApiDialog(
         buttons = {
             StrokeButton(
                 label = Str(R.string.save),
-                color = if (anyError) C.disabled else Teal200,
+                color = if (anyError) C.disabled else C.teal200,
                 enabled = !anyError,
                 onClick = {
                     // Gather all required permissions for all actions

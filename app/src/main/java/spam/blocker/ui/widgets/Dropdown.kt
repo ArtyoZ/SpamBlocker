@@ -21,8 +21,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.util.Lambda1
 
 // The built-in DropdownMenuItem is twice height as it should be.
@@ -49,7 +49,7 @@ class DividerItem(
 ) : IMenuItem {
     @Composable
     override fun Compose(menuExpandedState: MutableState<Boolean>) {
-        HorizontalDivider(thickness = thickness.dp, color = LocalPalette.current.disabled)
+        HorizontalDivider(thickness = thickness.dp, color = G.palette.disabled)
     }
 }
 
@@ -117,7 +117,7 @@ class CheckItem(
 ) : IMenuItem {
     @Composable
     override fun Compose(menuExpandedState: MutableState<Boolean>) {
-        val C = LocalPalette.current
+        val C = G.palette
         CheckBox(
             label = {
                 RowVCenterSpaced(2) {
@@ -143,7 +143,7 @@ fun DropdownWrapper(
     modifier: Modifier = Modifier,
     content: @Composable (MutableState<Boolean>) -> Unit, // Boolean == expanded or not
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     Box {
         val expanded = remember { mutableStateOf(false) }
@@ -154,8 +154,8 @@ fun DropdownWrapper(
             modifier = modifier,
             expanded = expanded.value,
             onDismissRequest = { expanded.value = false },
-            containerColor = C.menuBg,
-            border = BorderStroke(1.dp, C.menuBorder)
+            containerColor = C.dialogBg,
+            border = BorderStroke(1.dp, C.dialogBorder)
         ) {
             DropdownMenuItems(
                 items = items,

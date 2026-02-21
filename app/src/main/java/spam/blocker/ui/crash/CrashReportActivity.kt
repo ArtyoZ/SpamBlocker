@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -28,9 +27,6 @@ import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.misc.REPO
 import spam.blocker.ui.theme.AppTheme
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.HtmlText
 import spam.blocker.ui.widgets.Str
 import spam.blocker.ui.widgets.StrInputBox
@@ -48,13 +44,9 @@ class CrashReportActivity : ComponentActivity() {
         val ctx = this
 
         setContent {
-            AppTheme(
-                darkTheme = when (G.themeType.intValue) {
-                    1 -> false
-                    2 -> true
-                    else -> isSystemInDarkTheme()
-                }
-            ) {
+            val C = G.palette
+
+            AppTheme {
                 Scaffold(
                     modifier = M
                         .statusBarsPadding()
@@ -97,7 +89,7 @@ class CrashReportActivity : ComponentActivity() {
 
                         HtmlText(
                             html = promptStr,
-                            color = Salmon
+                            color = C.error
                         )
 
                         StrInputBox(
@@ -114,14 +106,14 @@ class CrashReportActivity : ComponentActivity() {
                                     alignment = Alignment.End
                                 )
                             ) {
-                                StrokeButton(label = Str(R.string.copy), color = Teal200) {
+                                StrokeButton(label = Str(R.string.copy), color = C.teal200) {
                                     Clipboard.copy(ctx, stackTrace)
                                 }
 
                                 val uriHandler = LocalUriHandler.current
                                 StrokeButton(
                                     label = Str(R.string.report_bug),
-                                    color = SkyBlue,
+                                    color = C.infoBlue,
                                 ) {
                                     uriHandler.openUri("$REPO/issues")
                                 }

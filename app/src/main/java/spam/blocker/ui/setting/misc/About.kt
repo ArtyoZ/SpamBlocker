@@ -8,8 +8,8 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.platform.LocalContext
 import spam.blocker.BuildConfig
+import spam.blocker.G
 import spam.blocker.R
-import spam.blocker.ui.theme.SkyBlue
 import spam.blocker.ui.widgets.HtmlText
 import spam.blocker.ui.widgets.PopupDialog
 import spam.blocker.ui.widgets.Str
@@ -21,6 +21,7 @@ const val REPO = "https://github.com/aj3423/SpamBlocker"
 
 @Composable
 fun About() {
+    val C = G.palette
     val ctx = LocalContext.current
 
     val popupTrigger = rememberSaveable { mutableStateOf(false) }
@@ -44,7 +45,7 @@ fun About() {
 
     StrokeButton(
         label = Str(R.string.about),
-        color = SkyBlue,
+        color = C.infoBlue,
         onClick = {
             popupTrigger.value = true
         },

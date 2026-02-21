@@ -12,6 +12,7 @@ import androidx.core.database.getBlobOrNull
 import androidx.core.database.getIntOrNull
 import androidx.core.database.getStringOrNull
 import kotlinx.serialization.Serializable
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.db.Db.Companion.COLUMN_CHANNEL_ID
 import spam.blocker.db.Db.Companion.COLUMN_GROUP
@@ -48,7 +49,7 @@ object Notification {
         val mute : Boolean = false, // for active SMS chat
         var sound: String = "", // "" for default sound
         val icon: ByteArray? = null, // icon bytes, null == Auto choose call/sms icon
-        val iconColor: Int? = null, // ARGB, Salmon for block, Unspecified for allowed. "" == Auto choose
+        val iconColor: Int? = null, // ARGB, red for block, Unspecified for allowed. "" == Auto choose
         var led: Boolean = false,
         var ledColor: Int = SkyBlue.toArgb(),
     ) {
@@ -177,7 +178,7 @@ object Notification {
                 iconColor = it.getIntOrNull(it.getColumnIndex(COLUMN_ICON_COLOR)),
                 group = it.getStringOrNull(it.getColumnIndex(COLUMN_GROUP)) ?: "",
                 led = it.getIntOrNull(it.getColumnIndex(COLUMN_LED)) == 1,
-                ledColor = it.getIntOrNull(it.getColumnIndex(COLUMN_LED_COLOR)) ?: SkyBlue.toArgb()
+                ledColor = it.getIntOrNull(it.getColumnIndex(COLUMN_LED_COLOR)) ?: G.palette.infoBlue.toArgb()
             )
         }
 

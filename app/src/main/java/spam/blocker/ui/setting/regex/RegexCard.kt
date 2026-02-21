@@ -24,8 +24,6 @@ import spam.blocker.def.Def.ForNumber
 import spam.blocker.def.Def.ForSms
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.quick.ChannelIcons
-import spam.blocker.ui.theme.LightMagenta
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.ui.widgets.GreyIcon16
 import spam.blocker.ui.widgets.GreyIcon20
 import spam.blocker.ui.widgets.OutlineCard
@@ -41,7 +39,7 @@ fun RegexCard(
     forType: Int,
     modifier: Modifier = Modifier,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
     val spf = spf.RegexOptions(ctx)
 
@@ -63,7 +61,6 @@ fun RegexCard(
                         text = rule.colorfulRegexStr(
                             ctx = LocalContext.current,
                             forType = forType,
-                            palette = C,
                         ),
                         fontWeight = FontWeight.Bold,
                         fontSize = 18.sp,
@@ -113,12 +110,12 @@ fun RegexCard(
                             ResIcon(
                                 iconId = R.drawable.ic_call,
                                 modifier = M.size(20.dp),
-                                color = if (rule.isForCall()) C.enabled else C.disabled
+                                color = if (rule.isForCall()) C.teal200 else C.disabled
                             )
                         ResIcon(
                             iconId = R.drawable.ic_sms,
                             modifier = M.size(20.dp),
-                            color = if (rule.isForSms()) C.enabled else C.disabled
+                            color = if (rule.isForSms()) C.teal200 else C.disabled
                         )
                     }
                 }
@@ -142,10 +139,10 @@ fun RegexCard(
                     }
 
                     // [Priority]
-                    ResIcon(R.drawable.ic_priority, color = LightMagenta, modifier = M.size(18.dp).offset(6.dp))
+                    ResIcon(R.drawable.ic_priority, color = C.priority, modifier = M.size(18.dp).offset(6.dp))
                     Text(
                         text = "${rule.priority}",
-                        color = LightMagenta,
+                        color = C.priority,
                         fontWeight = FontWeight.Bold,
                         fontSize = 14.sp,
                     )

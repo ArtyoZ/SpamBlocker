@@ -3,11 +3,11 @@ package spam.blocker.ui.setting.bot
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.db.Bot
 import spam.blocker.ui.M
 import spam.blocker.ui.widgets.GreyLabel
@@ -21,7 +21,7 @@ fun BotCard(
     modifier: Modifier,
 ) {
     OutlineCard(
-        containerBg = MaterialTheme.colorScheme.background
+        containerBg = G.palette.background
     ) {
         RowVCenterSpaced(
             space = 10,

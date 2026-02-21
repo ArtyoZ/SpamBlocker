@@ -25,10 +25,9 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.util.Lambda
 import spam.blocker.util.Lambda1
 import spam.blocker.util.Util.inRange
@@ -48,12 +47,12 @@ fun Button(
     onLongClick: Lambda? = null,
     enabled: Boolean = true,
     borderWidth: Dp = 1.dp,
-    borderColor: Color = LocalPalette.current.textGrey,
+    borderColor: Color = G.palette.textGrey,
     shape: Shape = RoundedCornerShape(BUTTON_CORNER_RADIUS.dp),
     contentPadding: PaddingValues = PaddingValues(BUTTON_H_PADDING.dp, 0.dp),
     onClick: () -> Unit,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     Box(
         modifier = modifier
@@ -121,7 +120,7 @@ fun GreyButton(
 ) {
     StrokeButton(
         label = label,
-        color = LocalPalette.current.textGrey,
+        color = G.palette.textGrey,
         modifier = modifier,
         enabled = enabled,
         onClick = onClick,
@@ -132,7 +131,7 @@ fun GreyButton(
 @Composable
 fun FooterButton(
     label: String? = null,
-    color: Color = LocalPalette.current.textGrey,
+    color: Color = G.palette.textGrey,
     icon: (@Composable () -> Unit)? = null,
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
@@ -145,7 +144,7 @@ fun FooterButton(
     onLongClick: Lambda? = null,
     onClick: Lambda,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     Box(
         modifier = modifier.wrapContentSize()
@@ -205,9 +204,9 @@ fun ComboBox(
     modifier: Modifier = Modifier,
     enabled: Boolean = true,
     displayType: ComboDisplayType = ComboDisplayType.Label, // show label/icon/both
-    color: Color = LocalPalette.current.textGrey,
+    color: Color = G.palette.textGrey,
     warning: (@Composable () -> Unit)? = {
-        ResIcon(R.drawable.ic_question_circle, color = DarkOrange, modifier = M.size(18.dp))
+        ResIcon(R.drawable.ic_question_circle, color = G.palette.warning, modifier = M.size(18.dp))
     },
     footerOffset: Pair<Int, Int> = Pair(-4, -4),
     footerSize: Int = 6,
@@ -258,7 +257,7 @@ fun MenuButton(
     label: String,
     items: List<IMenuItem>,
     modifier: Modifier = Modifier,
-    color: Color = LocalPalette.current.textGrey,
+    color: Color = G.palette.textGrey,
 ) {
     DropdownWrapper(items = items) { expanded ->
         FooterButton(
@@ -283,7 +282,7 @@ fun MenuButton(
     longTapItems: List<IMenuItem>,
     modifier: Modifier = Modifier,
     footerIconId: Int = R.drawable.ic_time_slot,
-    color: Color = LocalPalette.current.textGrey,
+    color: Color = G.palette.textGrey,
 ) {
     DropdownWrapper(items = items) { expandedForTap ->
         DropdownWrapper(items = longTapItems) { expandedForLongTap ->

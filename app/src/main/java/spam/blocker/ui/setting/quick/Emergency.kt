@@ -23,18 +23,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.service.CallScreeningService
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
-import spam.blocker.ui.widgets.DimGreyText
 import spam.blocker.ui.widgets.GreyText
 import spam.blocker.ui.widgets.NumberInputBox
 import spam.blocker.ui.widgets.OutlineCard
+import spam.blocker.ui.widgets.Placeholder
 import spam.blocker.ui.widgets.PopupDialog
 import spam.blocker.ui.widgets.Str
 import spam.blocker.ui.widgets.StrInputBox
@@ -45,7 +43,7 @@ import spam.blocker.util.spf
 
 @Composable
 fun EmergencySituation() {
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
     val spf = spf.EmergencySituation(ctx)
 
@@ -70,7 +68,7 @@ fun EmergencySituation() {
     PopupDialog(
         trigger = resetConfirm,
         buttons = {
-            StrokeButton(label = Str(R.string.reset), color = Salmon) {
+            StrokeButton(label = Str(R.string.reset), color = C.error) {
                 resetConfirm.value = false
                 timeLeft = 0
                 spf.timestamp = timeLeft
@@ -86,7 +84,7 @@ fun EmergencySituation() {
     PopupDialog(
         trigger = testTrigger,
         buttons = {
-            StrokeButton(label = Str(R.string.call_to), color = Teal200) {
+            StrokeButton(label = Str(R.string.call_to), color = C.teal200) {
                 CallScreeningService.updateOutgoingEmergencyTimestamp(ctx, callToNumber)
                 timeLeft = calcTimeLeft()
                 testTrigger.value = false
@@ -96,7 +94,7 @@ fun EmergencySituation() {
         StrInputBox(
             text = callToNumber,
             label = { Text(Str(R.string.call_to_number)) },
-            placeholder = { DimGreyText("911") },
+            placeholder = { Placeholder("911") },
             leadingIconId = R.drawable.ic_dial_pad,
             onValueChange = { callToNumber = it }
         )
@@ -108,7 +106,7 @@ fun EmergencySituation() {
     PopupDialog(
         trigger = configTrigger,
         buttons = {
-            StrokeButton(label = Str(R.string.test), color = Teal200) {
+            StrokeButton(label = Str(R.string.test), color = C.teal200) {
                 testTrigger.value = true
             }
         },
@@ -129,11 +127,11 @@ fun EmergencySituation() {
                         } else {
                             Str(R.string.inactive)
                         },
-                        color = if (timeLeft > 0) C.enabled else C.disabled,
+                        color = if (timeLeft > 0) C.teal200 else C.disabled,
                         fontWeight = FontWeight.Bold
                     )
                     Spacer(modifier = M.width(16.dp))
-                    StrokeButton(label = Str(R.string.reset), color = if (timeLeft > 0) Salmon else C.disabled) {
+                    StrokeButton(label = Str(R.string.reset), color = if (timeLeft > 0) C.error else C.disabled) {
                         resetConfirm.value = true
                     }
                 }
@@ -163,7 +161,7 @@ fun EmergencySituation() {
                 StrInputBox(
                     text = extraNumbers,
                     label = { Text(Str(R.string.additional_numbers)) },
-                    placeholder = { DimGreyText("000, 123, ...") },
+                    placeholder = { Placeholder("000, 123, ...") },
                     leadingIconId = R.drawable.ic_number_sign,
                     onValueChange = {
                         extraNumbers = it
@@ -189,7 +187,7 @@ fun EmergencySituation() {
             if (isEnabled) {
                 StrokeButton(
                     label = "$duration ${Str(R.string.min)}${if (isStirEnabled) "" else " (?)"}",
-                    color = if (timeLeft > 0) C.enabled else C.textGrey
+                    color = if (timeLeft > 0) C.teal200 else C.textGrey
                 ) {
                     configTrigger.value = true
                 }
@@ -215,7 +213,7 @@ fun EmergencySituation() {
                 // Regex
                 Text(
                     text = extraNumbers,
-                    color = C.textGreen,
+                    color = C.success,
                     fontWeight = FontWeight.Bold,
                     fontSize = 18.sp,
                     modifier = M.padding(top = 2.dp),

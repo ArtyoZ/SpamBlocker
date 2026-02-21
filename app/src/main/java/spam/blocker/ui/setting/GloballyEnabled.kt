@@ -20,9 +20,6 @@ import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.def.Def
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Orange
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.Button
 import spam.blocker.ui.widgets.HtmlText
@@ -43,7 +40,7 @@ import spam.blocker.util.spf
 @Composable
 fun GloballyEnabled() {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
     val spf = spf.Global(ctx)
 
     var collapsed by remember { mutableStateOf(spf.isCollapsed) }
@@ -75,12 +72,12 @@ fun GloballyEnabled() {
             trigger = doubleSmsWarningTrigger,
             icon = { ResIcon(R.drawable.ic_warning, color = Color.Unspecified) },
             buttons = {
-                StrokeButton(label = Str(R.string.dismiss), color = Orange) {
+                StrokeButton(label = Str(R.string.dismiss), color = C.warning) {
                     spf.isDoubleSMSWarningDismissed
                     doubleSmsWarningTrigger.value = false
                 }
                 Spacer(modifier = M.width(10.dp))
-                StrokeButton(label = Str(R.string.open_settings), color = Teal200) {
+                StrokeButton(label = Str(R.string.open_settings), color = C.teal200) {
                     doubleSmsWarningTrigger.value = false
                     Util.openDefaultSmsAppNotificationSetting(ctx)
                 }
@@ -125,18 +122,18 @@ fun GloballyEnabled() {
                                 RowVCenterSpaced(4) {
                                     ResImage(
                                         R.drawable.ic_call,
-                                        if (G.callEnabled.value) C.enabled else C.disabled,
+                                        if (G.callEnabled.value) C.teal200 else C.disabled,
                                         M.size(20.dp)
                                     )
                                     ResImage(
                                         R.drawable.ic_sms,
-                                        if (G.smsEnabled.value) C.enabled else C.disabled,
+                                        if (G.smsEnabled.value) C.teal200 else C.disabled,
                                         M.size(20.dp)
                                     )
                                     if (G.smsEnabled.value) {
                                         ResImage(
                                             R.drawable.ic_mms,
-                                            if (mmsEnabled) C.enabled else C.disabled,
+                                            if (mmsEnabled) C.teal200 else C.disabled,
                                             M.size(20.dp)
                                         )
                                     }

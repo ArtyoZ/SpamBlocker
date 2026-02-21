@@ -54,8 +54,6 @@ import spam.blocker.ui.setting.LabeledRow
 import spam.blocker.ui.setting.SettingRow
 import spam.blocker.ui.setting.quick.ChannelPicker
 import spam.blocker.ui.setting.quick.ConfigHangUp
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.CheckBox
 import spam.blocker.ui.widgets.ComboBox
@@ -104,7 +102,7 @@ fun Int.clearAllRegexFlags(): Int {
 fun RegexModeIcon(mode: Int) {
     Text(
         MAP_REGEX_FLAGS[mode]!!,
-        color = Color.Magenta,
+        color = G.palette.regexFlags,
         modifier = M.widthIn(16.dp),
         textAlign = TextAlign.Center
     )
@@ -116,7 +114,7 @@ fun RegexLeadingDropdownIcon(
     regexFlags: MutableIntState,
 ) {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
     val dropdownItems = remember(Unit) {
         val tooltipIds = mutableListOf(
@@ -281,7 +279,7 @@ fun EditRegexDialog(
         return
     }
 
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
 
     // id
@@ -360,7 +358,7 @@ fun EditRegexDialog(
         buttons = {
             StrokeButton(
                 label = Str(R.string.save),
-                color = if (anyError) C.disabled else Teal200,
+                color = if (anyError) C.disabled else C.teal200,
                 enabled = !anyError,
                 onClick = {
                     trigger.value = false
@@ -539,12 +537,12 @@ fun EditRegexDialog(
                         FlowRowSpaced(10) {
                             CheckBox(
                                 checked = applyToPassed,
-                                label = { Text(Str(R.string.allowed), color = C.pass) },
+                                label = { Text(Str(R.string.allowed), color = C.success) },
                                 onCheckChange = { applyToPassed = it },
                             )
                             CheckBox(
                                 checked = applyToBlocked,
-                                label = { Text(Str(R.string.blocked), color = C.block) },
+                                label = { Text(Str(R.string.blocked), color = C.error) },
                                 onCheckChange = { applyToBlocked = it })
                         }
                     }
@@ -566,8 +564,8 @@ fun EditRegexDialog(
                         labelId = R.string.type,
                     ) {
                         val items = listOf(
-                            RadioItem(Str(R.string.allow), C.pass),
-                            RadioItem(Str(R.string.block), C.block),
+                            RadioItem(Str(R.string.allow), C.success),
+                            RadioItem(Str(R.string.block), C.error),
                         )
                         RadioGroup(items = items, selectedIndex = whiteOrBlack) {
                             whiteOrBlack = it

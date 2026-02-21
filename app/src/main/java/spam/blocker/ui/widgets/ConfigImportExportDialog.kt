@@ -9,9 +9,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
+import spam.blocker.G
 import spam.blocker.R
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.util.Clipboard
 import spam.blocker.util.Lambda1
 
@@ -21,6 +20,7 @@ fun ConfigImportDialog(
     applyContent: Lambda1<String>,
 ) {
     if (trigger.value) {
+        val C = G.palette
 
         var text by remember { mutableStateOf("") }
 
@@ -35,7 +35,7 @@ fun ConfigImportDialog(
             icon = {
                 ResIcon(
                     iconId = if (succeeded) R.drawable.ic_check_green else R.drawable.ic_fail_red,
-                    color = if (succeeded) LocalPalette.current.pass else LocalPalette.current.block,
+                    color = if (succeeded) C.success else C.error,
                 )
             },
             content = {
@@ -46,7 +46,7 @@ fun ConfigImportDialog(
                         else
                             R.string.import_fail
                     ) + if (succeeded) "" else "\n" + errorText,
-                    color = LocalPalette.current.textGrey,
+                    color = C.textGrey,
                     fontWeight = FontWeight.SemiBold,
                 )
             }
@@ -57,7 +57,7 @@ fun ConfigImportDialog(
             buttons = {
                     StrokeButton(
                         label = Str(R.string.import_),
-                        color = Teal200
+                        color = C.teal200
                     ) {
                         succeeded = try {
                             applyContent(text)
@@ -86,6 +86,7 @@ fun ConfigExportDialog(
     trigger: MutableState<Boolean>,
     initialText: String,
 ) {
+    val C = G.palette
     val ctx = LocalContext.current
 
     if (trigger.value) {
@@ -97,7 +98,7 @@ fun ConfigExportDialog(
             buttons = {
                     StrokeButton(
                         label = Str(R.string.copy),
-                        color = Teal200
+                        color = C.teal200
                     ) {
                         Clipboard.copy(ctx, text)
                     }

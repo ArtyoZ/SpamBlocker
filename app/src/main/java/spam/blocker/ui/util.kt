@@ -15,12 +15,32 @@ import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.runtime.toMutableStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import spam.blocker.util.Lambda
 
 typealias M = Modifier
+
+// light_blue.darken() -> dark_blue
+fun Color.darken(factor: Float = 0.7f): Color {
+    return copy(
+        red   = red   * factor.coerceIn(0f, 1f),
+        green = green * factor.coerceIn(0f, 1f),
+        blue  = blue  * factor.coerceIn(0f, 1f),
+        alpha = alpha  // usually keep original alpha
+    )
+}
+// dark_blue.lighten() -> light_blue
+fun Color.lighten(factor: Float = 0.5f): Color {
+    return copy(
+        red   = red   + (1f - red)   * factor.coerceIn(0f, 1f),
+        green = green + (1f - green) * factor.coerceIn(0f, 1f),
+        blue  = blue  + (1f - blue)  * factor.coerceIn(0f, 1f),
+        alpha = alpha  // usually keep original alpha
+    )
+}
 
 @Composable
 fun <T: Any> rememberSaveableMutableStateListOf(vararg elements: T): SnapshotStateList<T> {

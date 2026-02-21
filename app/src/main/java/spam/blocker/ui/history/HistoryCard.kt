@@ -36,6 +36,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.db.HistoryRecord
 import spam.blocker.db.listReportableAPIs
@@ -43,14 +44,11 @@ import spam.blocker.service.bot.ActionContext
 import spam.blocker.service.bot.executeAll
 import spam.blocker.service.checker.parseCheckResultFromDb
 import spam.blocker.ui.M
+import spam.blocker.ui.darken
 import spam.blocker.ui.history.HistoryOptions.forceShowSIM
 import spam.blocker.ui.history.HistoryOptions.showHistoryGeoLocation
 import spam.blocker.ui.setting.api.spamCategoryNamesMap
 import spam.blocker.ui.setting.api.tagValid
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.BUTTON_CORNER_RADIUS
 import spam.blocker.ui.widgets.BUTTON_H_PADDING
 import spam.blocker.ui.widgets.Button
@@ -87,7 +85,7 @@ fun ReportSpamDialog(
     rawNumber: String,
 ) {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
     val scope = CoroutineScope(IO)
 
     PopupDialog(
@@ -117,7 +115,7 @@ fun ReportSpamDialog(
                             withContext(IO) {
                                 val aCtx = ActionContext(
                                     scope = scope,
-                                    logger = JetpackTextLogger(reportResult, C),
+                                    logger = JetpackTextLogger(reportResult),
                                     rawNumber = rawNumber,
                                     tagCategory = keyTag,
                                 )
@@ -146,11 +144,11 @@ fun HistoryCard(
     timeColors: List<FreshnessColor>?,
     modifier: Modifier,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
     OutlineCard(
         modifier = M.animateContentSize(),
-        borderColor = if (record.isTest) Teal200 else C.cardBorder
+        borderColor = if (record.isTest) C.teal200 else C.cardBorder
     ) {
         Box(
             modifier = M
@@ -202,7 +200,7 @@ fun HistoryCard(
                         }
                         Text(
                             text = t,
-                            color = if (record.isBlocked()) C.block else C.pass,
+                            color = if (record.isBlocked()) C.error else C.success,
                             fontSize = 18.sp
                         )
                     }
@@ -215,7 +213,7 @@ fun HistoryCard(
                                 text = loc,
                                 style = TextStyle(
                                     fontSize = 12.sp,
-                                    color = C.textDimGrey,
+                                    color = C.textGrey.darken(),
                                     fontWeight = FontWeight.W500,
                                 ),
                                 modifier = M.padding(start = 4.dp),
@@ -231,7 +229,7 @@ fun HistoryCard(
                         if (record.anythingWrong) {
                             ResIcon(
                                 R.drawable.ic_exclamation,
-                                color = DarkOrange,
+                                color = C.warning,
                                 modifier = M.size(16.dp)
                             )
                         }
@@ -316,7 +314,7 @@ fun HistoryCard(
                         .align(Alignment.TopEnd)
                         .offset(x = (-6).dp, y = (6).dp)
                 ) {
-                    drawCircle(color = Salmon, radius = size.minDimension / 2)
+                    drawCircle(color = C.error, radius = size.minDimension / 2)
                 }
             }
 
@@ -324,7 +322,7 @@ fun HistoryCard(
             if (record.isTest) {
                 ResIcon(
                     R.drawable.ic_tube,
-                    color = Teal200,
+                    color = C.teal200,
                     modifier = M
                         .size(16.dp)
                         .align(Alignment.BottomEnd)

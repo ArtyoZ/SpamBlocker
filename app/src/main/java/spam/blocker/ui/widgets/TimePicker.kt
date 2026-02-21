@@ -12,9 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.remember
 import androidx.compose.ui.unit.dp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.util.Lambda2
 import spam.blocker.util.Lambda4
 
@@ -55,7 +55,7 @@ fun TimeRangePicker(
             RowCenter(modifier = M.fillMaxWidth()) {
                 TimeInput(state = sState)
             }
-            HorizontalDivider(thickness = 1.dp, color = LocalPalette.current.disabled)
+            HorizontalDivider(thickness = 1.dp, color = G.palette.disabled)
             Text(Str(R.string.end_time))
             RowCenter(modifier = M.fillMaxWidth()) {
                 TimeInput(state = eState)

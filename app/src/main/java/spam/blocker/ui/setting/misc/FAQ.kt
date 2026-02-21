@@ -16,10 +16,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.core.net.toUri
 import androidx.core.text.HtmlCompat
 import kotlinx.coroutines.launch
+import spam.blocker.G
 import spam.blocker.R
-import spam.blocker.ui.theme.Priority
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.BalloonWrapper
 import spam.blocker.ui.widgets.FlowRowSpaced
 import spam.blocker.ui.widgets.PopupDialog
@@ -41,6 +39,7 @@ data class FaqBox(
 @SuppressLint("LocalContextGetResourceValueCall")
 @Composable
 fun FAQ() {
+    val C = G.palette
     val ctx = LocalContext.current
 
     val popupTrigger = rememberSaveable { mutableStateOf(false) }
@@ -53,12 +52,12 @@ fun FAQ() {
                     listOf(
                         FaqBox(
                             label = ctx.getString(R.string.priority),
-                            color = Priority,
+                            color = C.priority,
                             helpTooltip = ctx.getString(R.string.faq_priority)
                         ),
                         FaqBox(
                             label = ctx.getString(R.string.regex_pattern),
-                            color = Teal200,
+                            color = C.teal200,
                             helpTooltip = ctx.getString(R.string.faq_regex).format(
                                 ctx.getString(R.string.ai_regex_prompt)
                             ),
@@ -84,7 +83,7 @@ fun FAQ() {
                         ),
                         FaqBox(
                             label = ctx.getString(R.string.import_numbers),
-                            color = SkyBlue,
+                            color = C.infoBlue,
                             helpTooltip = ctx.getString(R.string.faq_import_numbers).format(
                                 "$REPO/issues?q=label:import_plain_text",
                                 "$REPO/issues?q=label:import_csv",
@@ -127,7 +126,7 @@ fun FAQ() {
 
     StrokeButton(
         label = Str(R.string.faq),
-        color = SkyBlue,
+        color = C.infoBlue,
         onClick = {
             popupTrigger.value = true
         },

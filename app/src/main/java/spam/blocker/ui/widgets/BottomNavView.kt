@@ -29,10 +29,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import spam.blocker.G
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
 import spam.blocker.ui.theme.White
 import spam.blocker.util.Lambda1
 import spam.blocker.util.spf
@@ -69,7 +67,7 @@ data class BottomBarViewModel(
 
 @Composable
 fun BottomBar(vm: BottomBarViewModel) {
-    val C = LocalPalette.current
+    val C = G.palette
     val ctx = LocalContext.current
 
 
@@ -85,7 +83,7 @@ fun BottomBar(vm: BottomBarViewModel) {
         modifier = M
             .height(BottomNavHeight.dp)
             .fillMaxWidth()
-            .background(C.bottomNavBg)
+            .background(C.dialogBg)
             .onGloballyPositioned {
                 val totalWidthPx = min(it.size.width, MaxBottomBarWidth).toFloat()
 
@@ -114,7 +112,7 @@ fun BottomBar(vm: BottomBarViewModel) {
                         modifier = M
                             .fillMaxHeight()
                             .width(itemWidth.dp)
-                            .background(C.bottomNavBg)
+                            .background(C.dialogBg)
                             .clickable {
                                 if (currentRoute == tab.route) { // reselect current tab
                                     vm.onTabReSelected(tab.route)
@@ -138,7 +136,7 @@ fun BottomBar(vm: BottomBarViewModel) {
                             badge = {
                                 badgeText?.let {
                                     Badge(
-                                        containerColor = Salmon,
+                                        containerColor = C.error,
                                         contentColor = White
                                     ) {
                                         Text(text = badgeText)
@@ -152,7 +150,7 @@ fun BottomBar(vm: BottomBarViewModel) {
                                 modifier = M
                                     .size(24.dp)
                                     .offset(y = 4.dp),
-                                color = if (tab.isSelected.value) SkyBlue else C.textGrey
+                                color = if (tab.isSelected.value) C.infoBlue else C.textGrey
                             )
                         }
 
@@ -160,7 +158,7 @@ fun BottomBar(vm: BottomBarViewModel) {
                         Text(
                             text = tab.label,
                             fontSize = 12.sp,
-                            color = if (tab.isSelected.value) SkyBlue else C.textGrey
+                            color = if (tab.isSelected.value) C.infoBlue else C.textGrey
                         )
                     }
                 }

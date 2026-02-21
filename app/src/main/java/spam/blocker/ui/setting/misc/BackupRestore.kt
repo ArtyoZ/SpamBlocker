@@ -19,11 +19,6 @@ import spam.blocker.R
 import spam.blocker.config.Configs
 import spam.blocker.db.SpamTable
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.DropdownWrapper
 import spam.blocker.ui.widgets.FlowRowSpaced
 import spam.blocker.ui.widgets.GreyLabel
@@ -46,6 +41,7 @@ import java.time.format.DateTimeFormatter
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun ExportButton() {
+    val C = G.palette
     val ctx = LocalContext.current
     val coroutine = rememberCoroutineScope()
 
@@ -60,7 +56,7 @@ fun ExportButton() {
         val estimate = remember { total/100_000 } // 100k numbers per second
 
         Text(Str(R.string.exporting_database).formatAnnotated(
-            "$total".A(Salmon), "$estimate".A(Teal200)
+            "$total".A(C.infoBlue), "$estimate".A(C.infoBlue)
         ))
     }
 
@@ -104,7 +100,7 @@ fun ExportButton() {
     ) { expanded ->
         LongPressButton(
             label = Str(R.string.export),
-            color = Teal200,
+            color = C.teal200,
             onClick = {
                 coroutine.launch(IO) {
                     chooseExportFile(includeSpamDB = false)
@@ -120,6 +116,7 @@ fun ExportButton() {
 @Composable
 fun ImportButton() {
     val ctx = LocalContext.current
+    val C = G.palette
 
     val fileReader = rememberFileReadChooser()
     fileReader.Compose()
@@ -136,7 +133,7 @@ fun ImportButton() {
             icon = {
                 ResIcon(
                     iconId = if (succeeded) R.drawable.ic_check_green else R.drawable.ic_fail_red,
-                    color = if (succeeded) LocalPalette.current.pass else LocalPalette.current.block,
+                    color = if (succeeded) C.success else C.error,
                 )
             },
             content = {
@@ -147,11 +144,11 @@ fun ImportButton() {
                         else
                             R.string.import_fail
                     ),
-                    color = LocalPalette.current.textGrey,
+                    color = C.textGrey,
                     fontWeight = FontWeight.SemiBold,
                 )
                 if (!succeeded) {
-                    Text(errorStr, color = Salmon)
+                    Text(errorStr, color = C.error)
                 }
 
                 if (succeeded && prevPermissions.isNotEmpty()) {
@@ -176,7 +173,7 @@ fun ImportButton() {
                     if (missingPermissions.isNotEmpty()) {
                         Text(
                             text = Str(R.string.missing_permissions),
-                            color = DarkOrange,
+                            color = C.warning,
                         )
 
                         missingPermissions.forEach {
@@ -185,7 +182,7 @@ fun ImportButton() {
 
                         StrokeButton(
                             label = Str(R.string.grant_permissions),
-                            color = Teal200,
+                            color = C.teal200,
                         ) {
                             G.permissionChain.ask(ctx, missingPermissions) { }
                         }
@@ -238,7 +235,7 @@ fun ImportButton() {
 
         LongPressButton(
             label = Str(R.string.import_),
-            color = SkyBlue,
+            color = C.infoBlue,
             onClick = {
                 chooseImportFile(false)
             },

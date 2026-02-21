@@ -10,10 +10,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Priority
 
 // Single line label
 @Composable
@@ -28,7 +27,7 @@ fun GreyLabel(
     Text(
         text = text,
         modifier = modifier,
-        color = LocalPalette.current.textGrey,
+        color = G.palette.textGrey,
         fontSize = fontSize,
         fontWeight = fontWeight,
         maxLines = maxLines,
@@ -48,7 +47,7 @@ fun GreyText(
     Text(
         text = text,
         modifier = modifier,
-        color = LocalPalette.current.textGrey,
+        color = G.palette.textGrey,
         fontSize = fontSize,
         fontWeight = fontWeight,
         maxLines = maxLines,
@@ -70,10 +69,10 @@ fun SummaryLabel(
 
 // Used as input placeholder
 @Composable
-fun DimGreyText(
+fun Placeholder(
     text: String,
     modifier: Modifier = Modifier,
-    color: Color = LocalPalette.current.textGrey.copy(alpha = 0.6f),
+    color: Color = G.palette.textGrey.copy(alpha = 0.6f),
     fontSize: TextUnit = TextUnit.Unspecified,
     fontWeight: FontWeight? = null,
 ) {
@@ -89,7 +88,7 @@ fun DimGreyText(
 @Composable
 fun PriorityLabel(
     priority: Int,
-    color: Color = Priority
+    color: Color = G.palette.priority
 ) {
     RowVCenter {
         ResIcon(R.drawable.ic_priority, color = color, modifier = M.size(14.dp))

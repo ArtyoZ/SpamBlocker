@@ -9,25 +9,24 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.wrapContentWidth
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import spam.blocker.G
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.ui.theme.SwissCoffee
 
 @Composable
 fun Section(
     title: String?,
     horizontalPadding : Int = 0,
-    bgColor: Color = MaterialTheme.colorScheme.background,
+    bgColor: Color = G.palette.background,
     content: @Composable ()->Unit,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
     Box(modifier = M.padding(top = 8.dp, bottom = 8.dp)) {
         // the rectangle section border line
         Box(

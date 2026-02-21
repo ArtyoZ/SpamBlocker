@@ -29,9 +29,6 @@ import spam.blocker.def.Def.ANDROID_12
 import spam.blocker.def.Def.FLAG_REGEX_FOR_CNAP
 import spam.blocker.service.CallScreeningService
 import spam.blocker.service.SmsReceiver
-import spam.blocker.ui.theme.DarkOrange
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.BalloonQuestionMark
 import spam.blocker.ui.widgets.GreyLabel
@@ -65,7 +62,7 @@ fun TestDialog(
     trigger: MutableState<Boolean>,
 ) {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
 
     val coroutine = rememberCoroutineScope()
 
@@ -126,13 +123,13 @@ fun TestDialog(
                         else
                             R.string.enable_sms_screening_first
                     ),
-                    color = DarkOrange,
+                    color = C.warning,
                 )
                 GreyText(Str(R.string.it_is_at_top))
             }
 
             // Test Button
-            StrokeButton(label = Str(R.string.test), color = Teal200) {
+            StrokeButton(label = Str(R.string.test), color = C.teal200) {
                 // Prompt to "enable the call/sms option first"
                 if ((isForCall && !G.callEnabled.value) || (!isForCall && !G.smsEnabled.value)) {
                     warningTrigger.value = true
@@ -143,8 +140,8 @@ fun TestDialog(
                 logTrigger.value = true
 
                 val multiLogger = MultiLogger(listOf(
-                    JetpackTextLogger(logStr, C),
-                    SaveableLogger(C)
+                    JetpackTextLogger(logStr),
+                    SaveableLogger()
                 ))
 
                 coroutine.launch(IO) {

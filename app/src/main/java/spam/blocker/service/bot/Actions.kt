@@ -43,16 +43,11 @@ import spam.blocker.db.ruleTableForType
 import spam.blocker.def.Def
 import spam.blocker.service.checker.Checker
 import spam.blocker.service.checker.Checker.RegexRuleChecker
+import spam.blocker.ui.darken
 import spam.blocker.ui.setting.LabeledRow
 import spam.blocker.ui.setting.api.tagCategory
-import spam.blocker.ui.theme.DimGrey
-import spam.blocker.ui.theme.DodgeBlue
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Pink80
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.ComboBox
-import spam.blocker.ui.widgets.DimGreyText
 import spam.blocker.ui.widgets.GreyIcon
 import spam.blocker.ui.widgets.GreyIcon16
 import spam.blocker.ui.widgets.GreyIcon18
@@ -60,6 +55,7 @@ import spam.blocker.ui.widgets.GreyIcon20
 import spam.blocker.ui.widgets.GreyText
 import spam.blocker.ui.widgets.LabelItem
 import spam.blocker.ui.widgets.NumberInputBox
+import spam.blocker.ui.widgets.Placeholder
 import spam.blocker.ui.widgets.PriorityBox
 import spam.blocker.ui.widgets.RadioGroup
 import spam.blocker.ui.widgets.RadioItem
@@ -222,6 +218,7 @@ open class HttpRequest(
 
     @OptIn(DelicateCoroutinesApi::class)
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
 
         var retryAttempts = 0
 
@@ -242,13 +239,13 @@ open class HttpRequest(
                     .replace(tagCategory, aCtx.realCategory ?: "")
                     .resolveSHA1Tag()
                     .resolveCustomTag(aCtx.customTags)
-                aCtx.logger?.debug(ctx.getString(R.string.resolved_url).formatAnnotated(resolvedUrl.A(DimGrey)))
+                aCtx.logger?.debug(ctx.getString(R.string.resolved_url).formatAnnotated(resolvedUrl.A(C.textGrey.darken())))
 
                 // 2. Headers
                 val headersMap = splitHeader(header, aCtx.customTags)
                 headersMap.forEach { (key, value) ->
                     aCtx.logger?.debug("${ctx.getString(R.string.http_header)}: %s -> %s".formatAnnotated(
-                        key.A(DimGrey), value.A(DimGrey)
+                        key.A(C.textGrey.darken()), value.A(C.textGrey.darken())
                     ))
                 }
 
@@ -265,7 +262,7 @@ open class HttpRequest(
                     .replace(tagCategory, aCtx.realCategory ?: "")
                     .resolveCustomTag(aCtx.customTags)
                 if (method == HTTP_POST) {
-                    aCtx.logger?.debug("${ctx.getString(R.string.http_post_body)}: %s".formatAnnotated(resolvedBody.A(DimGrey)))
+                    aCtx.logger?.debug("${ctx.getString(R.string.http_post_body)}: %s".formatAnnotated(resolvedBody.A(C.textGrey.darken())))
                 }
 
                 // 4. Send request
@@ -290,7 +287,7 @@ open class HttpRequest(
                 val echo = Util.truncate(String(result?.echo ?: byteArrayOf()), limit = 1000)
                 if (result?.statusCode == HttpURLConnection.HTTP_OK) {
                     aCtx.logger?.success("HTTP: <${result.statusCode}>")
-                    aCtx.logger?.debug("%s".formatAnnotated(echo.A(DimGrey)))
+                    aCtx.logger?.debug("%s".formatAnnotated(echo.A(C.textGrey.darken())))
                     return true
                 } else {
                     aCtx.logger?.error("HTTP <${result?.statusCode}>: $echo")
@@ -318,7 +315,7 @@ open class HttpRequest(
 
             if (retryAttempts <= retryTimes) {
                 aCtx.logger?.warn(ctx.getString(R.string.retry_attempt).formatAnnotated(
-                    "$retryAttempts".A(Teal200), "$retryTimes".A(Teal200)
+                    "$retryAttempts".A(C.teal200), "$retryTimes".A(C.teal200)
                 ))
 
                 Thread.sleep(retryDelayMs.toLong())
@@ -363,7 +360,7 @@ open class HttpRequest(
                 text = url,
                 label = { Text(Str(R.string.url)) },
                 leadingIconId = R.drawable.ic_link,
-                placeholder = { DimGreyText("https://...") },
+                placeholder = { Placeholder("https://...") },
                 helpTooltip = Str(R.string.help_http_url).format(
                     Str(R.string.number_tags),
                     Str(R.string.time_tags),
@@ -379,7 +376,7 @@ open class HttpRequest(
                 helpTooltip = Str(R.string.help_http_header) + "<br>" + Str(R.string.tags_supported) + Str(
                     R.string.auth_tags
                 ),
-                placeholder = { DimGreyText("apikey: ABC\nAuth: key\n…") }
+                placeholder = { Placeholder("apikey: ABC\nAuth: key\n…") }
             )
 
             var selected by remember { mutableIntStateOf(method) }
@@ -797,6 +794,8 @@ class ParseCSV(
 ) : IPermissiveAction {
 
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         val input = aCtx.lastOutput as ByteArray
 
         return try {
@@ -811,7 +810,7 @@ class ParseCSV(
             if (!csv.headers.contains(colPattern)) {
                 aCtx.logger?.error(
                     ctx.getString(R.string.csv_missing_column).formatAnnotated(
-                        colPattern.A(Teal200), colPattern.A(Teal200), colPattern.A(Teal200)
+                        colPattern.A(C.teal200), colPattern.A(C.teal200), colPattern.A(C.teal200)
                     )
                 )
                 return false
@@ -1264,7 +1263,6 @@ class ImportAsRegexRule(
     @Composable
     override fun Options() {
         val ctx = LocalContext.current
-        val C = LocalPalette.current
         Column {
             StrInputBox(
                 text = description,
@@ -1303,8 +1301,8 @@ class ImportAsRegexRule(
             LabeledRow(R.string.type) {
                 var applyToWorB by rememberSaveable { mutableIntStateOf(if (isWhitelist) 0 else 1) }
                 val items = listOf(
-                    RadioItem(Str(R.string.allow), C.pass),
-                    RadioItem(Str(R.string.block), C.block),
+                    RadioItem(Str(R.string.allow), G.palette.success),
+                    RadioItem(Str(R.string.block), G.palette.error),
                 )
                 RadioGroup(items = items, selectedIndex = applyToWorB) {
                     applyToWorB = it
@@ -1403,7 +1401,7 @@ class ConvertNumber(
         RegexInputBox(
             label = { Text(Str(R.string.replace_from)) },
             placeholder = {
-                DimGreyText(
+                Placeholder(
                     Str(R.string.regex_pattern) + "\n"
                             + Str(R.string.for_example) + " " + "(\"|-)"
                 )
@@ -1471,6 +1469,7 @@ class FindRules(
         if (aCtx.isInMemory) {
             return findInMemory(ctx, aCtx)
         }
+        val C = G.palette
 
         // foundPair is Pair<tableIndex, List<RegexRule>>?
         val map = listOf(
@@ -1484,7 +1483,7 @@ class FindRules(
 
         aCtx.logger?.debug(
             ctx.getString(R.string.find_rule_with_desc)
-                .formatAnnotated("${map.values.sumOf { it.size }}".A(Teal200), pattern.A(DimGrey))
+                .formatAnnotated("${map.values.sumOf { it.size }}".A(C.teal200), pattern.A(C.textGrey.darken()))
         )
 
         aCtx.lastOutput = map
@@ -1525,7 +1524,7 @@ class FindRules(
         RegexInputBox(
             label = { Text(Str(R.string.description)) },
             placeholder = {
-                DimGreyText(
+                Placeholder(
                     Str(R.string.regex_pattern) + "\n"
                             + Str(R.string.for_example) + "\n"
                             + ".*"
@@ -1555,8 +1554,9 @@ output: none
 class ModifyRules(
     var config: String = "",
 ) : IPermissiveAction {
-
     fun modifyInMemory(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         val rulesMap = aCtx.lastOutput as Map<Int, List<RegexRule>>
 
         val cCtx = aCtx.cCtx!!
@@ -1586,8 +1586,8 @@ class ModifyRules(
                 aCtx.logger?.debug(
                     ctx.getString(R.string.rule_updated_temporarily)
                         .formatAnnotated(
-                            rule.summary().A(Teal200),
-                            config.A(DimGrey)
+                            rule.summary().A(C.teal200),
+                            config.A(C.textGrey.darken())
                         )
                 )
                 it.rule = newRule
@@ -1598,6 +1598,8 @@ class ModifyRules(
     }
     @Suppress("UNCHECKED_CAST")
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         if (aCtx.isInMemory) {
             return modifyInMemory(ctx, aCtx)
         }
@@ -1628,8 +1630,8 @@ class ModifyRules(
                     aCtx.logger?.debug(
                         ctx.getString(R.string.rule_updated)
                             .formatAnnotated(
-                                rule.summary().A(Teal200),
-                                config.A(DimGrey)
+                                rule.summary().A(C.teal200),
+                                config.A(C.textGrey.darken())
                             )
                     )
                 }
@@ -1675,7 +1677,7 @@ class ModifyRules(
     override fun Options() {
         StrInputBox(
             label = { Text(Str(R.string.config_text)) },
-            placeholder = { DimGreyText(Str(R.string.action_modify_rules_placeholder)) },
+            placeholder = { Placeholder(Str(R.string.action_modify_rules_placeholder)) },
             text = config,
             onValueChange = {
                 config = it
@@ -1857,6 +1859,8 @@ class InterceptCall(
     }
 
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         // The `rawNumber` is set by the workflow caller before it's executed.
         val rawNumber = aCtx.rawNumber!!
         aCtx.logger?.debug("${label(ctx)}: $rawNumber")
@@ -1888,7 +1892,7 @@ class InterceptCall(
                 ForwardType.Forwarding, ForwardType.Original -> {
                     aCtx.logger?.warn(
                         ctx.getString(R.string.forwarded_number_modified_to)
-                            .formatAnnotated(clearedNumber.A(DimGrey))
+                            .formatAnnotated(clearedNumber.A(C.textGrey.darken()))
                     )
                 }
             }
@@ -1981,7 +1985,7 @@ class InterceptCall(
             label = { Text(Str(R.string.number_filter)) },
             leadingIcon = { GreyIcon18(R.drawable.ic_filter) },
             helpTooltipId = R.string.help_number_filter,
-            placeholder = { DimGreyText(".*") },
+            placeholder = { Placeholder(".*") },
             regexFlags = dummyFlags,
             showFlagsIcon = false,
             onRegexStrChange = { newVal, hasError ->
@@ -2229,7 +2233,7 @@ class ParseQueryResult(
             label = { Text(Str(R.string.negative_identifier)) },
             leadingIcon = { GreyIcon18(R.drawable.ic_no) },
             helpTooltipId = R.string.help_negative_identifier,
-            placeholder = { DimGreyText(Str(R.string.hint_negative_identifier)) },
+            placeholder = { Placeholder(Str(R.string.hint_negative_identifier)) },
             regexFlags = negativeFlagsCopy,
             onRegexStrChange = { newVal, hasError ->
                 if (!hasError) {
@@ -2247,7 +2251,7 @@ class ParseQueryResult(
             label = { Text(Str(R.string.positive_identifier)) },
             leadingIcon = { GreyIcon18(R.drawable.ic_yes) },
             helpTooltipId = R.string.help_positive_identifier,
-            placeholder = { DimGreyText(Str(R.string.hint_positive_identifier)) },
+            placeholder = { Placeholder(Str(R.string.hint_positive_identifier)) },
             regexFlags = positiveFlagsCopy,
             onRegexStrChange = { newVal, hasError ->
                 if (!hasError) {
@@ -2265,7 +2269,7 @@ class ParseQueryResult(
             label = { Text(Str(R.string.category_identifier)) },
             leadingIcon = { GreyIcon18(R.drawable.ic_category) },
             helpTooltipId = R.string.help_category_identifier,
-            placeholder = { DimGreyText(Str(R.string.hint_category_identifier)) },
+            placeholder = { Placeholder(Str(R.string.hint_category_identifier)) },
             regexFlags = reasonFlagsCopy,
             onRegexStrChange = { newVal, hasError ->
                 if (!hasError) {
@@ -2283,7 +2287,7 @@ class ParseQueryResult(
             text = jsonStr,
             label = { Text(Str(R.string.category_mapping)) },
             leadingIconId = R.drawable.ic_category,
-            placeholder = { DimGreyText(Str(R.string.category_mapping_placeholder)) },
+            placeholder = { Placeholder(Str(R.string.category_mapping_placeholder)) },
             helpTooltip = Str(R.string.help_category_mapping),
             onValueChange = { newVal ->
                 categoryMapping = newVal
@@ -2358,14 +2362,16 @@ class CategoryConfig(
 
     // It gets the ActionContext.tagCategory tag and fill the ActionContext.realCategory
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         // 1. check it in the map config
-        var realCategoryStr = map[aCtx.tagCategory]
+        val realCategoryStr = map[aCtx.tagCategory]
 
         if (realCategoryStr == null) {
             aCtx.logger?.warn(
                 ctx.getString(R.string.missing_category).formatAnnotated(
-                    aCtx.tagCategory!!.A(DodgeBlue),
-                    ctx.getString(R.string.action_category_config).A(Pink80)
+                    aCtx.tagCategory!!.A(C.infoBlue),
+                    ctx.getString(R.string.action_category_config).A(C.textGrey.darken())
                 )
             )
             return false
@@ -2409,7 +2415,7 @@ class CategoryConfig(
             label = { Text(Str(R.string.action_category_config)) },
             leadingIconId = R.drawable.ic_category,
             placeholder = {
-                DimGreyText(
+                Placeholder(
                     """
                 {
                   "{marketing}": "gym",
@@ -2517,6 +2523,8 @@ class ModifyNumber(
 ) : IPermissiveAction {
 
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         val cCtx = aCtx.cCtx!!
 
         val before = cCtx.rawNumber
@@ -2528,8 +2536,8 @@ class ModifyNumber(
             aCtx.logger?.warn(
                 ctx.getString(R.string.modify_number_template)
                     .formatAnnotated(
-                        before.A(DimGrey),
-                        after.A(DimGrey)
+                        before.A(C.textGrey.darken()),
+                        after.A(C.textGrey.darken())
                     )
             )
         }
@@ -2611,6 +2619,8 @@ class GenerateTag(
 //    var jsonPath: String = "",
 ) : IPermissiveAction {
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         val input = aCtx.lastOutput as ByteArray
 
         val text = input.toString(Charsets.UTF_8)
@@ -2632,8 +2642,8 @@ class GenerateTag(
 
             aCtx.logger?.info(ctx.getString(R.string.tag_generated)
                 .formatAnnotated(
-                    tagName.A(DimGrey),
-                    (tagValue ?: "").A(Teal200),
+                    tagName.A(C.textGrey.darken()),
+                    (tagValue ?: "").A(C.teal200),
                 )
             )
         } catch (e: Exception) {
@@ -2717,7 +2727,7 @@ class GenerateTag(
                         label = { Text(Str(R.string.regex_pattern)) },
                         regexFlags = flags,
                         leadingIcon = { GreyIcon(R.drawable.ic_regex) },
-                        placeholder = { DimGreyText("code: (\\d+)") },
+                        placeholder = { Placeholder("code: (\\d+)") },
                         onRegexStrChange = { newVal, hasError ->
                             if (!hasError) {
                                 regex = newVal
@@ -2751,6 +2761,7 @@ class LoadBotTag(
     var defaultValue: String = "",
 ) : IPermissiveAction {
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
 
         val logger = aCtx.logger
 
@@ -2765,7 +2776,7 @@ class LoadBotTag(
         aCtx.customTags[tagName] = value
 
         logger?.debug(ctx.getString(R.string.tag_is_set_to).formatAnnotated(
-            tagName.A(DimGrey), value.A(Teal200)
+            tagName.A(C.textGrey.darken()), value.A(C.teal200)
         ))
 
         return true
@@ -2836,6 +2847,7 @@ class SaveBotTag(
     var tagName: String = "",
 ) : IPermissiveAction {
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
 
         val logger = aCtx.logger
 
@@ -2854,7 +2866,7 @@ class SaveBotTag(
         BotTable.updateById(ctx, botId, customTags = tags)
 
         logger?.debug(ctx.getString(R.string.tag_is_saved_as).formatAnnotated(
-            tagName.A(DimGrey), value.A(Teal200)
+            tagName.A(C.textGrey.darken()), value.A(C.teal200)
         ))
 
         return true
@@ -2914,10 +2926,12 @@ class SetTag(
     var tagValue: String = "",
 ) : IPermissiveAction {
     override fun execute(ctx: Context, aCtx: ActionContext): Boolean {
+        val C = G.palette
+
         aCtx.customTags[tagName] = tagValue
 
         aCtx.logger?.debug(ctx.getString(R.string.tag_is_set_to).formatAnnotated(
-            tagName.A(DimGrey), tagValue.A(Teal200)
+            tagName.A(C.textGrey.darken()), tagValue.A(C.teal200)
         ))
 
         return true

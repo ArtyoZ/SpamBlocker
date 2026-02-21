@@ -22,7 +22,6 @@ import spam.blocker.R
 import spam.blocker.def.Def
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.regex.DisableNestedScrolling
-import spam.blocker.ui.theme.LightMagenta
 import spam.blocker.ui.widgets.ConfigExportDialog
 import spam.blocker.ui.widgets.DropdownWrapper
 import spam.blocker.ui.widgets.GreyIcon20
@@ -42,6 +41,7 @@ import spam.blocker.util.spf
 @Composable
 fun ApiList(vm: ApiViewModel) {
     val ctx = LocalContext.current
+    val C = G.palette
     val coroutineScope = rememberCoroutineScope()
 
     val editTrigger = rememberSaveable { mutableStateOf(false) }
@@ -98,7 +98,7 @@ fun ApiList(vm: ApiViewModel) {
             // Priority
             LabelItem(
                 label = ctx.getString(R.string.priority),
-                leadingIcon = { ResIcon(R.drawable.ic_priority, modifier = M.size(18.dp), color = LightMagenta) }
+                leadingIcon = { ResIcon(R.drawable.ic_priority, modifier = M.size(18.dp), color = C.priority) }
             ) {
                 priorityTrigger.value = true
             }

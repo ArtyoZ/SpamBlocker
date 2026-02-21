@@ -28,11 +28,10 @@ import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
 import spam.blocker.ui.widgets.Button
 import spam.blocker.ui.widgets.DrawableImage
 import spam.blocker.ui.widgets.GreyButton
@@ -76,6 +75,8 @@ private fun PopupMeetingConfig(
 
 @Composable
 fun MeetingMode() {
+    val C = G.palette
+
     val ctx = LocalContext.current
     val spf = spf.MeetingMode(ctx)
 
@@ -133,7 +134,7 @@ fun MeetingMode() {
                     )
 
                     // Label "Running Foreground Services"
-                    Text(Str(R.string.running_services), color = SkyBlue)
+                    Text(Str(R.string.running_services), color = C.infoBlue)
 
                     // The list
                     val services = remember { mutableStateListOf<String>() }
@@ -224,9 +225,8 @@ fun MeetingMode() {
                     if (enabledAppInfos.isNotEmpty()) {
                         Button(
                             content = {
-                                PriorityLabel(priority.intValue, color = Salmon)
+                                PriorityLabel(priority.intValue, color = C.error)
                             },
-//                            borderColor = Salmon
                         ) {
                             buttonPopupTrigger.value = true
                         }

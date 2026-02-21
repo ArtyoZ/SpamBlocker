@@ -21,7 +21,6 @@ import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.GreyIcon18
 import spam.blocker.ui.widgets.NumberInputBox
@@ -39,7 +38,7 @@ import spam.blocker.util.spf
 @Composable
 fun SmsBomb() {
     val ctx = LocalContext.current
-    val C = LocalPalette.current
+    val C = G.palette
     val spf = spf.SmsBomb(ctx)
 
     var isEnabled by remember { mutableStateOf(spf.isEnabled && Permission.receiveSMS.isGranted) }
@@ -142,7 +141,7 @@ fun SmsBomb() {
                 // Regex
                 Text(
                     text = regexStr,
-                    color = C.block,
+                    color = C.error,
                     fontWeight = FontWeight.Bold,
                     fontSize = 18.sp,
                     modifier = M.padding(top = 2.dp),

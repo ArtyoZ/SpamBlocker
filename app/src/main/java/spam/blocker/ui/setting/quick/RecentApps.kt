@@ -34,8 +34,6 @@ import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.SkyBlue
 import spam.blocker.ui.theme.SwissCoffee
 import spam.blocker.ui.widgets.DrawableImage
 import spam.blocker.ui.widgets.GreyButton
@@ -63,11 +61,12 @@ import spam.blocker.util.spf.RecentAppInfo
 fun AppChooserIcon(
     callback: Lambda1<Boolean>,
 ) {
+    val C = G.palette
     val ctx = LocalContext.current
 
     ResImage(
         resId = R.drawable.ic_right_arrow,
-        color = SkyBlue,
+        color = C.infoBlue,
         modifier = M
             .fillMaxHeight()
             .padding(start = 4.dp)
@@ -104,6 +103,7 @@ fun <T> PopupChooseApps(
 
     onCheckChange: Lambda2<String, Boolean>,
 ) {
+    val C = G.palette
     val ctx = LocalContext.current
 
     // popup for choosing apps
@@ -158,7 +158,7 @@ fun <T> PopupChooseApps(
                             Column(modifier = M.weight(1f)) {
                                 Text(
                                     appInfo.label,
-                                    color = SkyBlue,
+                                    color = C.infoBlue,
                                     overflow = TextOverflow.Ellipsis,
                                     maxLines = 1,
                                     lineHeight = 14.sp,
@@ -166,7 +166,7 @@ fun <T> PopupChooseApps(
 
                                 Text(
                                     appInfo.pkgName,
-                                    color = LocalPalette.current.textGrey,
+                                    color = G.palette.textGrey,
                                     overflow = TextOverflow.Ellipsis,
                                     lineHeight = 12.sp,
                                     maxLines = 1,

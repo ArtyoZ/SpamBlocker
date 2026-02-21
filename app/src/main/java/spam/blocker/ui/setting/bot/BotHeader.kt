@@ -16,7 +16,6 @@ import spam.blocker.service.bot.Schedule
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
 import spam.blocker.ui.setting.api.ApiAuthConfigDialog
-import spam.blocker.ui.theme.SkyBlue
 import spam.blocker.ui.widgets.ConfigImportDialog
 import spam.blocker.ui.widgets.DividerItem
 import spam.blocker.ui.widgets.GreyIcon
@@ -31,6 +30,7 @@ import java.util.UUID
 fun BotHeader(
     vm: BotViewModel,
 ) {
+    val C = G.palette
     val ctx = LocalContext.current
 
     val initialBotToEdit = remember { mutableStateOf(Bot()) }
@@ -166,7 +166,7 @@ fun BotHeader(
     ) {
         MenuButton(
             label = Str(R.string.new_),
-            color = SkyBlue,
+            color = C.infoBlue,
             items = dropdownItems,
         )
     }

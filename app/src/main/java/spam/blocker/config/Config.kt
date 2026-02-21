@@ -36,8 +36,8 @@ import java.util.zip.GZIPOutputStream
 
 
 interface IConfig {
-    fun load(ctx: Context)
-    fun apply(ctx: Context)
+    fun load(ctx: Context) // load current settings into this object before saving to a backup file
+    fun apply(ctx: Context) // import from a backup file and override the current settings.
 }
 /*
   These default values only works when upgrading from an old version that does not
@@ -304,11 +304,22 @@ class BotOptions : IConfig {
 class Theme : IConfig {
     var type = 0
     override fun load(ctx: Context) {
-        type = spf.Global(ctx).themeType
+//        type = spf.Global(ctx).themeType
     }
 
     override fun apply(ctx: Context) {
-        spf.Global(ctx).themeType = type
+//        spf.Global(ctx).themeType = type
+    }
+}
+
+@Serializable
+class ColorsPalette : IConfig {
+    override fun load(ctx: Context) {
+//        type = spf.Global(ctx).themeType
+    }
+
+    override fun apply(ctx: Context) {
+//        spf.Global(ctx).themeType = type
     }
 }
 

@@ -34,11 +34,9 @@ import spam.blocker.service.checker.ICheckResult
 import spam.blocker.ui.M
 import spam.blocker.ui.SizedBox
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.ui.widgets.AnimatedVisibleV
 import spam.blocker.ui.widgets.BalloonQuestionMark
 import spam.blocker.ui.widgets.ComboBox
-import spam.blocker.ui.widgets.DimGreyText
 import spam.blocker.ui.widgets.GreenDot
 import spam.blocker.ui.widgets.GreyButton
 import spam.blocker.ui.widgets.GreyIcon
@@ -48,6 +46,7 @@ import spam.blocker.ui.widgets.GreyIcon20
 import spam.blocker.ui.widgets.GreyLabel
 import spam.blocker.ui.widgets.LabelItem
 import spam.blocker.ui.widgets.NumberInputBox
+import spam.blocker.ui.widgets.Placeholder
 import spam.blocker.ui.widgets.PopupDialog
 import spam.blocker.ui.widgets.RegexInputBox
 import spam.blocker.ui.widgets.RingtonePicker
@@ -290,7 +289,7 @@ class CalendarEvent(
             aCtx.logger?.warn(
                 ctx.getString(R.string.calendar_event_is_triggered)
                     .formatAnnotated(
-                        eventTitle.A(Teal200)
+                        eventTitle.A(G.palette.teal200)
                     )
             )
         }
@@ -422,7 +421,7 @@ class SmsEvent(
         aCtx.logger?.warn(
             ctx.getString(R.string.sms_event_triggered)
                 .formatAnnotated(
-                    "$content <- $number".A(Teal200)
+                    "$content <- $number".A(G.palette.teal200)
                 )
         )
 
@@ -483,7 +482,7 @@ class SmsEvent(
             regexStr = number,
             label = { Text(Str(R.string.phone_number)) },
             regexFlags = flagsNumber,
-            placeholder = { DimGreyText(".*") },
+            placeholder = { Placeholder(".*") },
             onRegexStrChange = { newVal, hasError ->
                 if (!hasError) {
                     number = newVal
@@ -499,7 +498,7 @@ class SmsEvent(
             regexStr = content,
             label = { Text(Str(R.string.sms_content)) },
             regexFlags = flagsContent,
-            placeholder = { DimGreyText(".*") },
+            placeholder = { Placeholder(".*") },
             onRegexStrChange = { newVal, hasError ->
                 if (!hasError) {
                     content = newVal
@@ -559,7 +558,7 @@ class CallEvent(
         aCtx.logger?.warn(
             ctx.getString(R.string.call_event_is_triggered)
                 .formatAnnotated(
-                    number.A(Teal200)
+                    number.A(G.palette.teal200)
                 )
         )
         return true
@@ -620,7 +619,7 @@ class CallEvent(
             label = { Text(Str(R.string.phone_number)) },
             leadingIcon = { GreyIcon18(R.drawable.ic_filter) },
             regexFlags = flagsNumber,
-            placeholder = { DimGreyText(".*") },
+            placeholder = { Placeholder(".*") },
             showNumberFlags = true,
             onRegexStrChange = { newVal, hasError ->
                 if (!hasError) {
@@ -1182,7 +1181,7 @@ class Ringtone(
             text = bindToState,
             label = { Text(Str(R.string.set_to)) },
             leadingIconId = R.drawable.ic_link,
-            placeholder = { DimGreyText("{\"regex\": \"rule_desc\"}") },
+            placeholder = { Placeholder("{\"regex\": \"rule_desc\"}") },
             helpTooltip = Str(R.string.help_set_ringtone_to),
             supportingTextStr = error,
             onValueChange = {

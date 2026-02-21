@@ -40,7 +40,6 @@ import spam.blocker.service.bot.MyWorkManager
 import spam.blocker.service.bot.Schedule
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.regex.DisableNestedScrolling
-import spam.blocker.ui.theme.LocalPalette
 import spam.blocker.ui.widgets.ConfigExportDialog
 import spam.blocker.ui.widgets.CustomItem
 import spam.blocker.ui.widgets.DividerItem
@@ -156,14 +155,14 @@ fun BotLog(
         if (logTime == 0L) {
             Text(
                 text = Str(R.string.not_executed_yet).A(),
-                color = LocalPalette.current.textGrey,
+                color = G.palette.textGrey,
             )
         } else {
             Text(
                 text = "${Str(R.string.executed_at)} ${formatTime(ctx, logTime)}\n\n"
                     .formatAnnotated(annotatedLog)
                 ,
-                color = LocalPalette.current.textGrey,
+                color = G.palette.textGrey,
             )
         }
     }

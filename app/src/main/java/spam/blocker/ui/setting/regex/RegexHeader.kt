@@ -9,14 +9,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.db.RegexRule
 import spam.blocker.db.defaultRegexRuleByType
 import spam.blocker.def.Def
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
 import spam.blocker.ui.widgets.DividerItem
 import spam.blocker.ui.widgets.GreyIcon
 import spam.blocker.ui.widgets.HtmlText
@@ -33,6 +32,7 @@ import spam.blocker.util.Lambda1
 fun RegexHeader(
     vm: RegexViewModel,
 ) {
+    val C = G.palette
     val ctx = LocalContext.current
     val forType = vm.forType
 
@@ -68,7 +68,7 @@ fun RegexHeader(
     PopupDialog(errTrigger) {
         Text(
             text = errStr,
-            color = Salmon
+            color = C.error
         )
     }
 
@@ -116,7 +116,7 @@ fun RegexHeader(
             content = {
                 HtmlText(html = ctx.getString(R.string.failed_to_import_from_csv))
             },
-            icon = { ResIcon(R.drawable.ic_fail_red, color = Salmon) },
+            icon = { ResIcon(R.drawable.ic_fail_red, color = C.error) },
         )
     }
     val longClickItems = remember {
@@ -141,14 +141,14 @@ fun RegexHeader(
         if (forType == Def.ForNumber || forType == Def.ForSms) {
             MenuButton(
                 label = Str(R.string.new_),
-                color = SkyBlue,
+                color = C.infoBlue,
                 items = shortClickItems,
                 longTapItems = longClickItems,
             )
         } else {
             MenuButton(
                 label = Str(R.string.new_),
-                color = SkyBlue,
+                color = C.infoBlue,
                 items = shortClickItems,
             )
         }

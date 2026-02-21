@@ -2,9 +2,7 @@ package spam.blocker
 
 import android.content.Context
 import androidx.compose.runtime.Immutable
-import androidx.compose.runtime.MutableIntState
 import androidx.compose.runtime.MutableState
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.snapshots.SnapshotStateList
@@ -27,6 +25,7 @@ import spam.blocker.util.Notification.syncSystemChannels
 import spam.blocker.util.Permission
 import spam.blocker.util.PermissionChain
 import spam.blocker.util.spf
+import spam.blocker.util.spf.Palette
 
 @Immutable
 object G {
@@ -36,7 +35,7 @@ object G {
     val dynamicTile0Enabled : MutableState<Boolean> = mutableStateOf(false)
 
     val notificationChannels : SnapshotStateList<Channel> = mutableStateListOf()
-    val themeType : MutableIntState  = mutableIntStateOf(0)
+    lateinit var palette : Palette
 
     val callVM : CallViewModel = CallViewModel()
     val smsVM : SmsViewModel = SmsViewModel()
@@ -61,7 +60,7 @@ object G {
             globallyEnabled.value = spf.isGloballyEnabled
             callEnabled.value = spf.isCallEnabled && Permission.callScreening.isGranted
             smsEnabled.value = spf.isSmsEnabled && Permission.receiveSMS.isGranted
-            themeType.intValue = spf.themeType
+            palette = Palette(ctx)
         }
 
         // Workflow switches

@@ -41,6 +41,7 @@ import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.def.Def
 import spam.blocker.def.Def.FLAG_REGEX_CASE_SENSITIVE
@@ -49,13 +50,6 @@ import spam.blocker.def.Def.FLAG_REGEX_RAW_NUMBER
 import spam.blocker.def.Def.MAP_REGEX_FLAGS
 import spam.blocker.def.Def.REGEX_FLAGS_RIC
 import spam.blocker.ui.M
-import spam.blocker.ui.theme.ColdGrey
-import spam.blocker.ui.theme.LightMagenta
-import spam.blocker.ui.theme.LocalPalette
-import spam.blocker.ui.theme.Orange
-import spam.blocker.ui.theme.Salmon
-import spam.blocker.ui.theme.SkyBlue
-import spam.blocker.ui.theme.Teal200
 import spam.blocker.util.Lambda
 import spam.blocker.util.Lambda1
 import spam.blocker.util.Lambda2
@@ -85,7 +79,7 @@ private fun InputBox(
     enabled: Boolean = true,
     readOnly: Boolean = false,
     textStyle: TextStyle = TextStyle(
-        color = LocalPalette.current.textGrey,
+        color = G.palette.textGrey,
         fontWeight = FontWeight.SemiBold,
     ),
     limitTextLength: Boolean = false,
@@ -96,7 +90,7 @@ private fun InputBox(
     prefix: @Composable (() -> Unit)? = null,
     suffix: @Composable (() -> Unit)? = null,
     supportingTextStr: String? = null,
-    supportingTextColor: Color = Salmon,
+    supportingTextColor: Color = G.palette.error,
     warnings: SnapshotStateList<String> = mutableStateListOf<String>(),
     visualTransformation: VisualTransformation = VisualTransformation.None,
     keyboardOptions: KeyboardOptions = KeyboardOptions.Default,
@@ -107,26 +101,27 @@ private fun InputBox(
     shape: Shape = OutlinedTextFieldDefaults.shape,
     colors: TextFieldColors = OutlinedTextFieldDefaults.colors(
         // leading icon
-        focusedLeadingIconColor = ColdGrey,
-        unfocusedLeadingIconColor = ColdGrey.copy(alpha = 0.9f),
+        focusedLeadingIconColor = G.palette.disabled,
+        unfocusedLeadingIconColor = G.palette.disabled.copy(alpha = 0.9f),
 
         // label
-        focusedLabelColor = SkyBlue,
-        unfocusedLabelColor = ColdGrey.copy(alpha = 0.9f),
+        focusedLabelColor = G.palette.infoBlue,
+        unfocusedLabelColor = G.palette.disabled.copy(alpha = 0.9f),
 
         // border
-        focusedBorderColor = SkyBlue,
-        unfocusedBorderColor = LocalPalette.current.textGrey,
+        focusedBorderColor = G.palette.infoBlue,
+        unfocusedBorderColor = G.palette.textGrey,
 
         // error
-        errorBorderColor = Salmon,
-        errorPlaceholderColor = Salmon,
-        errorTextColor = Salmon,
-        errorCursorColor = Salmon,
-        errorSupportingTextColor = Salmon,
-        errorLabelColor = Salmon,
+        errorBorderColor = G.palette.error,
+        errorPlaceholderColor = G.palette.error,
+        errorTextColor = G.palette.error,
+        errorCursorColor = G.palette.error,
+        errorSupportingTextColor = G.palette.error,
+        errorLabelColor = G.palette.error,
     ),
 ) {
+    val C = G.palette
 
     // The input box will freeze for super long text, to solve this, if the input text exceeds
     // this length, the text will be truncated to this length, and the edit will be disabled.
@@ -159,7 +154,7 @@ private fun InputBox(
             readOnly = readOnly,
             textStyle = textStyle,
             cursorBrush = SolidColor(
-                if (isError) Salmon else LocalPalette.current.textGrey
+                if (isError) C.error else C.textGrey
             ),
             visualTransformation = visualTransformation,
             keyboardOptions = keyboardOptions,
@@ -212,7 +207,7 @@ private fun InputBox(
         warningList.forEach {
             Text(
                 text = it,
-                color = Orange,
+                color = C.warning,
                 fontSize = 14.sp,
                 lineHeight = 14.sp,
                 modifier = M.padding(4.dp),
@@ -372,7 +367,7 @@ fun StrInputBox(
     helpTooltip: String? = null,
     enabled: Boolean = true,
     supportingTextStr: String? = null,
-    supportingTextColor: Color = Salmon,
+    supportingTextColor: Color = G.palette.error,
     singleLine: Boolean = false,
     maxLines: Int = if (singleLine) 1 else 10,
     alwaysShowClear: Boolean = false,
@@ -465,7 +460,7 @@ fun TestRegexDialog(
     regexStr: String,
     regexFlags: Int,
 ) {
-    val C = LocalPalette.current
+    val C = G.palette
 
     val result: MutableState<Boolean?> = remember { mutableStateOf(null) }
 
@@ -480,7 +475,7 @@ fun TestRegexDialog(
                 BalloonQuestionMark(Str(R.string.help_test_regex))
                 StrokeButton(
                     label = Str(R.string.test),
-                    color = Teal200,
+                    color = C.teal200,
                     onClick = {
                         result.value = regexStr.regexMatchesNumber(regexTestString.value, regexFlags)
                     }
@@ -511,7 +506,7 @@ fun TestRegexDialog(
                         R.string.match_found else R.string.match_not_found
                 ),
                 color = if (result.value == true)
-                    C.pass else C.block
+                    C.success else C.error
             )
         }
     }
@@ -532,6 +527,7 @@ fun RegexInputBox(
     testable: Boolean = false,
     showFlagsIcon: Boolean = true,
 ) {
+    val C = G.palette
     val ctx = LocalContext.current
 
     // Code learned from the built-in BasicTextField.kt
@@ -644,7 +640,7 @@ fun RegexInputBox(
                                         1 -> MAP_REGEX_FLAGS[FLAG_REGEX_IGNORE_CC]!!
                                         else -> MAP_REGEX_FLAGS[FLAG_REGEX_CASE_SENSITIVE]!!
                                     },
-                                    color = Color.Magenta,
+                                    color = C.regexFlags,
                                     modifier = M
                                         .defaultMinSize(minWidth = 24.dp)
                                         .wrapContentWidth(Alignment.CenterHorizontally),
@@ -711,7 +707,7 @@ fun RegexInputBox(
                         } else {
                             Text(
                                 text = ric,
-                                color = Color.Magenta,
+                                color = C.regexFlags,
                                 modifier = clickableModifier
                                     .defaultMinSize(minWidth = 24.dp)
                                     .wrapContentWidth(Alignment.CenterHorizontally),
@@ -734,7 +730,7 @@ fun RegexInputBox(
 
                     ResIcon(
                         R.drawable.ic_tube,
-                        color = Teal200,
+                        color = C.teal200,
                         modifier = M
                             .clickable {
                                 trigger.value = true
@@ -764,7 +760,7 @@ fun PriorityBox(
         leadingIcon = {
             ResIcon(
                 iconId = R.drawable.ic_priority,
-                color = LightMagenta,
+                color = G.palette.priority,
                 modifier = M.size(18.dp)
             )
         }
