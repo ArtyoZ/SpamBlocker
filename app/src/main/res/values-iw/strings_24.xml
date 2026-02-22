@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        ודא <font color="#fa7f71"><b>לכבות את ההתראות של אפליקציית ההודעות</b></font> בהגדרות המערכת
+        ודא <error><b>לכבות את ההתראות של אפליקציית ההודעות</b></error> בהגדרות המערכת
          כדי למנוע כפילויות בהתראות. <br>
         <br>
         אם אפליקציית ההודעות אוכפת הרשאת התראות, באפשרותך להשאיר אותה מוענקת
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>שם מתקשר</b></font>:<br>
+        <title><b>שם מתקשר</b></title>:<br>
         &ensp; הביטוי הרגולרי יותאם לשם התצוגה של המתקשר (CNAP). <br>
         <br>
         ביומן היסטוריית השיחות, שם המתקשר יופיע אחרי מספר הטלפון בסוגריים אם קיים, כך: <br>
-        &ensp; <font color="#888888">12345 (שם תצוגה)</font> <br>
+        &ensp; <sample>12345 (שם תצוגה)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">שם מתקשר</string>
@@ -45,13 +45,13 @@
     <string name="explanation_forwarded_call">
         <![CDATA[
         זהו <b>ספציפי למפעיל</b>, חלק מהמפעילים מעצבים שיחות מועברות כשני מספרים מחוברים באמצעות סימן \'&\',
-         כגון <font color="#888888">222&111</font>. <br>
+         כגון <sample>222&111</sample>. <br>
         <br>
         בפורמט זה: <br>
-        &ensp; - החלק הראשון (<font color="#888888">222</font>) הוא בדרך כלל מספר ההעברה. <br>
-        &ensp; - החלק השני (<font color="#888888">111</font>) הוא המספר המקורי. <br>
+        &ensp; - החלק הראשון (<sample>222</sample>) הוא בדרך כלל מספר ההעברה. <br>
+        &ensp; - החלק השני (<sample>111</sample>) הוא המספר המקורי. <br>
         <br>
-        יכולים להיות גם <font color="#888888">333&111</font> ו-<font color="#888888">444&111</font>,
+        יכולים להיות גם <sample>333&111</sample> ו-<sample>444&111</sample>,
          כאשר מספר המקור נשאר זהה ומספר ההעברה משתנה.
         ]]>
     </string>
@@ -66,14 +66,14 @@
         <br>
         <b>אפשרויות</b>: <br>
         <br>
-        <font color="#00BFFF"><b>גלם</b></font> <br>
-        שאילתה/דיווח על המספר הגולמי (<font color="#888888">222&111</font>), אם ה-API תומך בפורמט זה. <br>
+        <title><b>גלם</b></title> <br>
+        שאילתה/דיווח על המספר הגולמי (<sample>222&111</sample>), אם ה-API תומך בפורמט זה. <br>
         <br>
-        <font color="#00BFFF"><b>מקורי</b></font> <br>
-        שאילתה/דיווח על המספר המקורי (<font color="#888888">111</font>), זהו פתרון עוקף עבור ממשקי API שאינם תומכים בפורמט הגולמי. <br>
+        <title><b>מקורי</b></title> <br>
+        שאילתה/דיווח על המספר המקורי (<sample>111</sample>), זהו פתרון עוקף עבור ממשקי API שאינם תומכים בפורמט הגולמי. <br>
         <br>
-        <font color="#00BFFF"><b>מעביר</b></font> <br>
-        שאילתה/דיווח על המספר המעביר (<font color="#888888">222</font>). <br>
+        <title><b>מעביר</b></title> <br>
+        שאילתה/דיווח על המספר המעביר (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">מספר טלפון מועבר זה שונה ל-%s.</string>
@@ -82,7 +82,7 @@
     <string name="geo_location_rule">כלל מיקום גאוגרפי</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>מיקום גאוגרפי</b></font>:<br>
+        <title><b>מיקום גאוגרפי</b></title>:<br>
         &ensp; הביטוי הרגולרי יתאים למיקום הגאוגרפי של המספר. <br>
         <br>
         &ensp; זה מסתמך על הספרייה של Google <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -106,8 +106,8 @@
         <br>
         החלף את ממלא המקום ___ באיזורך האמיתי. <br>
         <br>
-        התחביר <font color="#fa7f71">(?!___$).*</font> אומר: <br>
-        &ensp; התאם כל טקסט שאינו <font color="#fa7f71">___</font>.
+        התחביר <error>(?!___$).*</error> אומר: <br>
+        &ensp; התאם כל טקסט שאינו <error>___</error>.
         ]]>
     </string>
 </resources>

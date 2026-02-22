@@ -5,7 +5,7 @@
         <br>
         אם שעת ההתחלה גדולה משעת הסיום, לדוגמה, 20:00 -> 07:00, הכוונה היא לתקופה מ-20:00 בערב עד 07:00 בבוקר למחרת. <br>
         <br>
-        <font color="#ea86ff"><b>עדיפות: 10</b></font>
+        <priority><b>עדיפות: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             סימונים אלה משנים את התנהגות ההתאמה של הביטוי הרגולרי. <br>
             <br>
 
-            <font color="#00BFFF"><b>מספר גולמי</b></font>: <br>
-            &ensp; כשאפשרות זו מופעלת, המספר לא יעבור אופטימיזציה, <font color="#03DAC5"><b>+</b></font>
-            ו-<font color="#03DAC5"><b>אפסים מובילים</b></font> יישארו, שימושי להבחנה בין מספרים מקומיים. <br>
+            <title><b>מספר גולמי</b></title>: <br>
+            &ensp; כשאפשרות זו מופעלת, המספר לא יעבור אופטימיזציה, <highlight><b>+</b></highlight>
+            ו-<highlight><b>אפסים מובילים</b></highlight> יישארו, שימושי להבחנה בין מספרים מקומיים. <br>
             <br>
 
-            <font color="#00BFFF"><b>התעלם מקידומת מדינה</b></font>: <br>
-            &ensp; כשאפשרות זו מופעלת, <font color="#fa7f71">+</font> המוביל ו-<font color="#fa7f71">קידומת המדינה</font>
+            <title><b>התעלם מקידומת מדינה</b></title>: <br>
+            &ensp; כשאפשרות זו מופעלת, <error>+</error> המוביל ו-<error>קידומת המדינה</error>
              יוסרו ממספר בינלאומי. <br>
             <br>
-            לדוגמה, גם <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> וגם
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> יהפכו ל-<font color="#03DAC5">12345</font>,
+            לדוגמה, גם <error>+33</error><highlight>12345</highlight> וגם
+            <error>+44</error><highlight>12345</highlight> יהפכו ל-<highlight>12345</highlight>,
             דבר המאפשר לך להשתמש בביטוי רגולרי פשוט יותר `123.*` במקום `(33|44)*123.*` כדי להתאים למספרים בינלאומיים. <br>
             <br>
 
-            <font color="#00BFFF"><b>תלוי רישיות</b></font>:<br>
-            &ensp; כברירת מחדל, התאמת הביטוי הרגולרי אינה תלוית רישיות, <font color="#03DAC5"><b>a</b></font>
-              יתאים גם ל-<font color="#03DAC5"><b>a</b></font> וגם ל-<font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>תלוי רישיות</b></title>:<br>
+            &ensp; כברירת מחדל, התאמת הביטוי הרגולרי אינה תלוית רישיות, <highlight><b>a</b></highlight>
+              יתאים גם ל-<highlight><b>a</b></highlight> וגם ל-<highlight><b>A</b></highlight>. <br>
             &ensp; הפעל אפשרות זו כדי שההתאמה תהיה תלוית רישיות. <br>
         ]]>
     </string>

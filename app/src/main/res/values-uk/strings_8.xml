@@ -15,7 +15,7 @@
         <br>
         Це стосується як дзвінків, так і SMS-повідомлень.<br>
         <br>
-        <font color="#ea86ff"><b>Пріоритет за замовчуванням: 0</b></font>
+        <priority><b>Пріоритет за замовчуванням: 0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

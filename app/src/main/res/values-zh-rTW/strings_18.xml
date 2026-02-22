@@ -11,8 +11,8 @@
         依照行事曆事件暫時修改正規表示式規則。<br>
         <br>
         <b>使用情境</b>：<br>
-        &ensp; <font color="#888888">排班人員連續兩天白班，接著兩天夜班；<br>
-        &ensp; 需要依照不同工時啟用或停用部分規則。</font><br>
+        &ensp; <sample>排班人員連續兩天白班，接著兩天夜班；<br>
+        &ensp; 需要依照不同工時啟用或停用部分規則。</sample><br>
         <br>
         這會同時建立正規表示式規則與工作流程，該規則會在指定的行事曆事件期間即時啟用。<br>
         ]]>
@@ -34,9 +34,9 @@
         - 否則，工作流程將終止。<br>
         <br>
         使用案例： <br>
-        <font color="#888888">
+        <sample>
         &ensp; 在收到值班或下班簡訊後切換某些規則。 <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">簡訊事件 %s 已觸發。</string>
@@ -64,18 +64,18 @@
         <![CDATA[
         允許之前接聽過的來電。<br>
         <br>
-        <h6><font color="#ffa500">警告</font></h6>
+        <h6><warn>警告</warn></h6>
         %s<br>
         <br>
         <b>選項：</b><br>
         <br>
-        <h6><font color="#00BFFF">- [天數範圍]</font></h6>
-        會忽略 <font color="#03DAC5">%d 天</font>之前的來電。<br>
+        <h6><title>- [天數範圍]</title></h6>
+        會忽略 <highlight>%d 天</highlight>之前的來電。<br>
         <br>
-        <h6><font color="#00BFFF">- [最短通話時間]</font></h6>
-        會忽略通話時間少於 <font color="#03DAC5">%d 秒</font>的通話。<br>
+        <h6><title>- [最短通話時間]</title></h6>
+        會忽略通話時間少於 <highlight>%d 秒</highlight>的通話。<br>
         <br>
-        <font color="#ea86ff"><b>優先順序：10</b></font>
+        <priority><b>優先順序：10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">請勿為長者或較難辨識詐騙來電的人啟用此功能，以免讓詐騙電話重複撥入。</string>

@@ -12,53 +12,53 @@
     <![CDATA[
         使用工作流程從本機或遠端檔案匯入號碼。<br>
         <br>
-        <font color="#00BFFF"><b>典型設定</b></font>：<br>
+        <title><b>典型設定</b></title>：<br>
         <br>
-        1. <font color="#6ed0ff"><b>讀取檔案</b></font> / <font color="#6ed0ff"><b>Http 請求</b></font> <br>
+        1. <minor><b>讀取檔案</b></minor> / <minor><b>Http 請求</b></minor> <br>
           &ensp; 取得檔案內容。<br>
           <br>
-        2. <font color="#6ed0ff"><b>解析 CSV</b></font> / <font color="#6ed0ff"><b>解析 XML</b></font> / <font color="#6ed0ff"><b>正則提取</b></font> <br>
+        2. <minor><b>解析 CSV</b></minor> / <minor><b>解析 XML</b></minor> / <minor><b>正則提取</b></minor> <br>
           &ensp; 解析並取得號碼列表。<br>
           <br>
-        3. <font color="#6ed0ff"><b>替換號碼</b></font> (選用) <br>
+        3. <minor><b>替換號碼</b></minor> (選用) <br>
           &ensp; 修改號碼格式<br>
           &ensp; 使用案例：<br>
-          <font color="#888888">
+          <sample>
             &emsp; 從其他應用程式遷移號碼時，將 <b>123#####</b> 等格式轉換為正則表達式 <b>123.....</b> 或 <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>匯入至騷擾資料庫</b></font> / <font color="#6ed0ff"><b>匯入至正則規則</b></font> <br>
+        4. <minor><b>匯入至騷擾資料庫</b></minor> / <minor><b>匯入至正則規則</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>範例</b></font>：<br>
+        <title><b>範例</b></title>：<br>
           - 預設的 <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         更多線上範例：<br>
           - <a href=\"%s\">純文字</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - 尚未支援 JsonPath，請改用 <font color="#6ed0ff"><b>正則提取</b></font>。
+          - <a href=\"%s\">Json</a> - 尚未支援 JsonPath，請改用 <minor><b>正則提取</b></minor>。
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         給非程式設計師的正則表達式教學。<br>
         <br>
-        <font color="#00BFFF"><b>入門 - 萬用字元</b></font> <br>
-        &ensp; 當您想使用萬用字元 <font color="#888888"><b>*</b></font> 時，請在前面加一個點 <font color="#888888"><b>.</b></font>，例如 <font color="#888888">.*<b></b></font>，這應該能涵蓋大多數的使用情境。<br>
+        <title><b>入門 - 萬用字元</b></title> <br>
+        &ensp; 當您想使用萬用字元 <sample><b>*</b></sample> 時，請在前面加一個點 <sample><b>.</b></sample>，例如 <sample><b>.*</b></sample>，這應該能涵蓋大多數的使用情境。<br>
         <br>
-        <font color="#00BFFF"><b>進階 - 使用 AI</b></font> <br>
+        <title><b>進階 - 使用 AI</b></title> <br>
         &ensp; 例如，要取得以下用於簡訊驗證的正則表達式：<br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         詢問 AI：<br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>線上試試看</b></font> <br>
+        <highlight><b>線上試試看</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>點擊這裡</big></a> 複製上述提示詞 <br>
           &ensp; 2. <a href=\"try_it\"><big>點擊這裡</big></a> 啟動線上 AI <br>
     ]]>

@@ -22,26 +22,26 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>Nomor Telepon</b></font>:<br>
+        <title><b>Nomor Telepon</b></title>:<br>
         &ensp; Mode default, regex akan mencocokkan nomor telepon.<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>Kontak</b></font>:<br>
+        <title><b>Kontak</b></title>:<br>
         &ensp; Regex akan mencocokkan nama kontak yang terkait dengan nomor telepon masuk.<br>
         &ensp;  - Contoh penggunaan:<br>
-        &emsp; <font color="#888888">Blokir semua non-kontak di akhir pekan dengan regex `.*`. </font><br>
+        &emsp; <sample>Blokir semua non-kontak di akhir pekan dengan regex `.*`. </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>Grup Kontak</b></font>:<br>
+        <title><b>Grup Kontak</b></title>:<br>
         &ensp; Regex akan mencocokkan nama grup kontak yang terkait dengan nomor telepon masuk,
                  memengaruhi semua kontak dalam grup tersebut, sehingga Anda tidak perlu menambahkannya satu per satu,
                  dan tidak perlu memperbarui meskipun ada perubahan personel.<br>
         &ensp;  - Contoh penggunaan:<br>
-        &emsp; <font color="#888888">Blokir semua rekan kerja di akhir pekan dengan memblokir grup kontak \"kantor\". </font> <br>
+        &emsp; <sample>Blokir semua rekan kerja di akhir pekan dengan memblokir grup kontak \"kantor\". </sample> <br>
         ]]>
     </string>
 </resources>

@@ -12,53 +12,53 @@
     <![CDATA[
         Імпорт номерів з локальних або віддалених файлів за допомогою робочих процесів. <br>
         <br>
-        <font color="#00BFFF"><b>Типове налаштування</b></font>: <br>
+        <title><b>Типове налаштування</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Читання файлу</b></font> / <font color="#6ed0ff"><b>Http-запит</b></font> <br>
+        1. <minor><b>Читання файлу</b></minor> / <minor><b>Http-запит</b></minor> <br>
           &ensp; Отримати вміст файлу. <br>
           <br>
-        2. <font color="#6ed0ff"><b>Обробка CSV</b></font> / <font color="#6ed0ff"><b>Обробка XML</b></font> / <font color="#6ed0ff"><b>Витягнення Regex</b></font> <br>
+        2. <minor><b>Обробка CSV</b></minor> / <minor><b>Обробка XML</b></minor> / <minor><b>Витягнення Regex</b></minor> <br>
           &ensp; Обробити його та отримати список номерів. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Заміна номера</b></font> (опціонально) <br>
+        3. <minor><b>Заміна номера</b></minor> (опціонально) <br>
           &ensp; Змінити формат номера <br>
           &ensp; Сценарій використання: <br>
-          <font color="#888888">
+          <sample>
             &emsp; При міграції номерів з інших додатків конвертуйте формати, наприклад <b>123#####</b>, у regex <b>123.....</b> або <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Імпорт у базу спаму</b></font> / <font color="#6ed0ff"><b>Імпорт у правило Regex</b></font> <br>
+        4. <minor><b>Імпорт у базу спаму</b></minor> / <minor><b>Імпорт у правило Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Приклади</b></font>: <br>
+        <title><b>Приклади</b></title>: <br>
           - Попереднє налаштування <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Більше онлайн-прикладів: <br>
           - <a href=\"%s\">Простий текст</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath ще не підтримується, натомість використовуйте <font color="#6ed0ff"><b>Витягнення Regex</b></font>.
+          - <a href=\"%s\">Json</a> - JsonPath ще не підтримується, натомість використовуйте <minor><b>Витягнення Regex</b></minor>.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Посібник з regex для непрограмістів. <br>
         <br>
-        <font color="#00BFFF"><b>Початковий рівень - Знак підстановки</b></font> <br>
-        &ensp; Щоразу, коли ви хочете використати знак підстановки <font color="#888888"><b>*</b></font>, ставте крапку <font color="#888888"><b>.</b></font> перед ним, наприклад <font color="#888888">.*<b></b></font>, це має покрити більшість випадків використання. <br>
+        <title><b>Початковий рівень - Знак підстановки</b></title> <br>
+        &ensp; Щоразу, коли ви хочете використати знак підстановки <sample><b>*</b></sample>, ставте крапку <sample><b>.</b></sample> перед ним, наприклад <sample><b>.*</b></sample>, це має покрити більшість випадків використання. <br>
         <br>
-        <font color="#00BFFF"><b>Розширений - Використання ШІ</b></font> <br>
+        <title><b>Розширений - Використання ШІ</b></title> <br>
         &ensp; Наприклад, щоб отримати наступний regex для SMS-верифікації: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Запитайте ШІ: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Спробувати онлайн</b></font> <br>
+        <highlight><b>Спробувати онлайн</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Натисніть тут</big></a>, щоб скопіювати запит вище <br>
           &ensp; 2. <a href=\"try_it\"><big>Натисніть тут</big></a>, щоб запустити онлайн ШІ <br>
     ]]>

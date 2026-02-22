@@ -8,10 +8,10 @@
         Tal fluxo de trabalho será acionado automaticamente por uma chamada recebida.<br>
         <br>
         Caso de uso: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Remover caracteres extras do início do número de telefone antes da triagem,
           pois algumas operadoras suportam números duplos em um único cartão SIM. <br>
-        </font>
+        </sample>
         <br>
         Uma configuração típica:<br>
         - Evento de Chamada <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         Modifica o número de telefone da chamada de entrada antes que ele seja verificado pelas regras.<br>
         <br>
-        <font color="#00BFFF"><b>Um caso de uso</b>:</font><br>
+        <title><b>Um caso de uso</b>:</title><br>
         &ensp; Algumas operadoras de rede móvel suportam números duplos para o mesmo cartão SIM, adicionando dígitos extras no início ao número secundário.<br>
-        &ensp;   Por exemplo: 3312345679 pode se tornar <font color="#888888">123</font>3312345679. <br>
-        &ensp; O prefixo <font color="#888888">123</font> precisa ser removido antes de ser verificado. <br>
+        &ensp;   Por exemplo: 3312345679 pode se tornar <sample>123</sample>3312345679. <br>
+        &ensp; O prefixo <sample>123</sample> precisa ser removido antes de ser verificado. <br>
         <br>
-        <font color="#00BFFF"><b>Uma configuração típica:</b></font> <br>
+        <title><b>Uma configuração típica:</b></title> <br>
         - <b>Evento de Chamada</b> <br>
         - <b>Substituir Número</b> <br>
-        &emsp; de: <font color="#888888">^123</font> <br>
-        &emsp; para: <font color="#888888">deixar vazio</fonts> <br>
+        &emsp; de: <sample>^123</sample> <br>
+        &emsp; para: <sample>deixar vazio</sample> <br>
         ]]>
     </string>
     <string name="blocked">Bloqueado</string>
@@ -42,19 +42,19 @@
         <![CDATA[
         Os canais de notificação integrados: <br>
         <br>
-        <font color="#00BFFF"><b>Nenhuma</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>Nenhuma</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; Nenhuma notificação. <br>
         <br>
-        <font color="#00BFFF"><b>Baixa</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Baixa</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; Aparece na barra de status e na sombra de notificação. <br>
         <br>
-        <font color="#00BFFF"><b>Média</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Média</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; Aparece na barra de status e na sombra de notificação com som. <br>
         <br>
-        <font color="#00BFFF"><b>Alta</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Alta</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Aparece na barra de status, na sombra de notificação e como pop-up de heads-up com som. <br>
         <br>
-        <font color="#00BFFF"><b>Alta Silenciada</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Alta Silenciada</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; É semelhante a <b>Alta</b>, mas silencia o som. <br>
         &ensp; É ideal para <b>Chat SMS</b> ativo, onde sons contínuos podem ser irritantes. <br>
           É considerado <b>Chat SMS</b> ativo quando a tela está desbloqueada e o aplicativo de SMS está aberto em primeiro plano. <br>
@@ -108,7 +108,7 @@
         <![CDATA[
         Criar um novo canal de notificação. <br>
         <br>
-        <font color="#03DAC5"><b>Toque longo</b></font> em um canal de notificação nesta lista suspensa para editá-lo.
+        <highlight><b>Toque longo</b></highlight> em um canal de notificação nesta lista suspensa para editá-lo.
         ]]>
     </string>
     <string name="warning_delete_channel">

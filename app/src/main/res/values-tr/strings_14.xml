@@ -42,15 +42,15 @@
         <![CDATA[
         Yalnızca aşağıdaki spam kategorileri desteklenir, API\'den gelen diğer tüm kategoriler bunlardan birine eşleştirilmelidir.<br>
         <br>
-         - <font color="#03DAC5"><b>{geçerli}</b></font><br>
+         - <highlight><b>{geçerli}</b></highlight><br>
         &ensp; Geçerli numara olarak bildirin, spam değil.<br>
         <br>
-         - <font color="#fa7f71"><b>{sahtekarlık}</b></font><br>
-         - <font color="#fa7f71"><b>{pazarlama}</b></font><br>
-         - <font color="#fa7f71"><b>{anket}</b></font><br>
-         - <font color="#fa7f71"><b>{siyasi}</b></font><br>
+         - <error><b>{sahtekarlık}</b></error><br>
+         - <error><b>{pazarlama}</b></error><br>
+         - <error><b>{anket}</b></error><br>
+         - <error><b>{siyasi}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{diğer}</b></font><br>
+         - <error><b>{diğer}</b></error><br>
         &ensp; Yukarıdaki kategorilerden hiçbiri uygulanmadığında kullanılan yedek spam türü.<br>
         ]]>
     </string>
@@ -76,16 +76,16 @@
         Bazı hizmetler, size bir aramanın yaklaşmakta olduğunu, genellikle bir dakika içinde, önceden bildirmek için size mesaj gönderecektir.<br>
         <br>
         Örneğin, şöyle bir SMS mesajı:<br>
-        &ensp; <font color="#888888">[bazı hizmet] Sizi bilgilendirmek için arıyoruz ..., lütfen cevaplamaktan çekinmeyin.</font><br>
+        &ensp; <sample>[bazı hizmet] Sizi bilgilendirmek için arıyoruz ..., lütfen cevaplamaktan çekinmeyin.</sample><br>
         <br>
         Böyle bir mesaj için normal ifade şöyle olacaktır:<br>
-        &ensp; <font color="#03DAC5"><b><translate>.*cevap.*ver.*</translate></b></font> <br>
+        &ensp; <highlight><b><translate>.*cevap.*ver.*</translate></b></highlight> <br>
         <br>
-        Varsayılan ayar <font color="#03DAC5"><b>120 Saniye</b></font>, böyle bir mesaj aldıktan sonraki iki dakika içinde tüm aramalara izin verileceği anlamına gelir.<br>
+        Varsayılan ayar <highlight><b>120 Saniye</b></highlight>, böyle bir mesaj aldıktan sonraki iki dakika içinde tüm aramalara izin verileceği anlamına gelir.<br>
         <br>
         Hem normal SMS hem de flaş SMS (sınıf 0 SMS) için çalışır.<br>
         <br>
-        <font color="#ea86ff"><b>Öncelik: 10</b></font>
+        <priority><b>Öncelik: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Wildcard `*`, öncesinde nokta olmadan kullanıldı, `.*` demek istediniz mi?</string>

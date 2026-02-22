@@ -5,7 +5,7 @@
         <br>
         Jika waktu mulai lebih besar dari waktu akhir, misalnya, 20:00 -> 07:00, itu berarti periode dari pukul 20:00 di malam hari hingga 07:00 keesokan paginya. <br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 10</b></font>
+        <priority><b>Prioritas: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Flag ini mengubah perilaku pencocokan regex. <br>
             <br>
 
-            <font color="#00BFFF"><b>Nomor Mentah</b></font>: <br>
-            &ensp; Saat diaktifkan, nomor tidak akan dioptimalkan, <font color="#03DAC5"><b>+</b></font>
-            dan <font color="#03DAC5"><b>angka 0 di depan</b></font> akan tetap ada, berguna untuk membedakan nomor domestik.<br>
+            <title><b>Nomor Mentah</b></title>: <br>
+            &ensp; Saat diaktifkan, nomor tidak akan dioptimalkan, <highlight><b>+</b></highlight>
+            dan <highlight><b>angka 0 di depan</b></highlight> akan tetap ada, berguna untuk membedakan nomor domestik.<br>
             <br>
 
-            <font color="#00BFFF"><b>Abaikan Kode Negara</b></font>: <br>
-            &ensp; Saat diaktifkan, <font color="#fa7f71">+</font> di depan dan <font color="#fa7f71">kode negara</font>
+            <title><b>Abaikan Kode Negara</b></title>: <br>
+            &ensp; Saat diaktifkan, <error>+</error> di depan dan <error>kode negara</error>
              akan dihapus dari nomor internasional.<br>
             <br>
-            Misalnya, baik <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> maupun
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> akan menjadi <font color="#03DAC5">12345</font>,
+            Misalnya, baik <error>+33</error><highlight>12345</highlight> maupun
+            <error>+44</error><highlight>12345</highlight> akan menjadi <highlight>12345</highlight>,
             ini memungkinkan Anda menggunakan regex yang lebih sederhana `123.*` daripada `(33|44)*123.*` untuk mencocokkan nomor internasional.<br>
             <br>
 
-            <font color="#00BFFF"><b>Peka Huruf Besar-Kecil</b></font>:<br>
-            &ensp; Secara default, pencocokan regex tidak peka huruf besar-kecil, <font color="#03DAC5"><b>a</b></font>
-              akan cocok dengan <font color="#03DAC5"><b>a</b></font> dan <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Peka Huruf Besar-Kecil</b></title>:<br>
+            &ensp; Secara default, pencocokan regex tidak peka huruf besar-kecil, <highlight><b>a</b></highlight>
+              akan cocok dengan <highlight><b>a</b></highlight> dan <highlight><b>A</b></highlight>. <br>
             &ensp; Aktifkan ini untuk membuatnya peka huruf besar-kecil. <br>
         ]]>
     </string>

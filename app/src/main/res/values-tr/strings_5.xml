@@ -35,13 +35,13 @@
         <br>
         <b>Seçenekler:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Günler İçinde</font></h6>
-        <font color="#03DAC5">%s günden</font> önce gerçekleşen çağrılar yok sayılır.<br>
+        <h6><title>- Günler İçinde</title></h6>
+        <highlight>%s günden</highlight> önce gerçekleşen çağrılar yok sayılır.<br>
         <br>
-        <h6><font color="#00BFFF">- SMS Dahil Et</font></h6>
+        <h6><title>- SMS Dahil Et</title></h6>
         Etkinleştirildiğinde, o numaraya SMS göndermek de sayılır.<br>
         <br>
-        <font color="#ea86ff"><b>Öncelik: 10</b></font>
+        <priority><b>Öncelik: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -51,12 +51,12 @@
         Tipik bir kullanım durumu:<br>
         &emsp; PizzaApp\'tan bir pizza siparişi verdiniz, kısa süre sonra kapandıkları için sizi geri ödeme yapmak üzere arıyorlar. Eğer PizzaApp burada etkinse, o arama geçecektir. <br>
         <br>
-        Varsayılan ayar  <font color="03DAC5"><b>5 Dk.</b></font> Eğer son 5 dakika içinde uygulamalardan herhangi biri kullanıldıysa, herhangi bir aramanın geçeceği anlamına gelir.
+        Varsayılan ayar  <highlight><b>5 Dk.</b></highlight> Eğer son 5 dakika içinde uygulamalardan herhangi biri kullanıldıysa, herhangi bir aramanın geçeceği anlamına gelir.
         \'Kullanıldı\' derken, uygulamanın etkinleştirilmesi, devre dışı bırakılması, küçültülmesi veya kapatılması anlamına gelir. <br>
         <br>
         Sadece aramalar için geçerlidir, metin mesajları için <b>değil</b>. <br>
         <br>
-        <font color="#ea86ff"><b>Öncelik: 10</b></font>
+        <priority><b>Öncelik: 10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">Arama kapatılmadan önceki gecikme.</string>
@@ -67,20 +67,20 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Reddet</b></font>: <br>
+        - <title><b>Reddet</b></title>: <br>
          Reddetme düğmesine basmakla aynıdır. Tamamen sessiz çalışır, kilit ekranı açılmaz.<br>
         <br>
-        - <font color="#00BFFF"><b>Sessize Al</b></font>: <br>
+        - <title><b>Sessize Al</b></title>: <br>
          Arka planda sessizce çalarak arayana ulaşılamadığınız ve aramayı kaçırdığınız izlenimini verir. <br>
         <br>
          Tekrarlayan spam aramalar yaşıyorsanız da yardımcı olabilir; arama süresini uzatarak spam gönderenler için daha az verimli hale getirir ve potansiyel olarak sizi tekrar aramamalarını sağlar.<br>
         <br>
-        - <font color="#00BFFF"><b>Kapat</b></font>: <br>
+        - <title><b>Kapat</b></title>: <br>
         Aramanın sesli mesaja gitmesini önlemek için aramayı yanıtlar ve kapatır. <br>
         <br>
         Devam eden bir arama sırasında spam araması alındığında, devam eden aramayı kapatmamak için \"Reddet\" seçeneğine geçilir. <br>
         <br>
-        <font color="#FFA500">Not</font> Kilit ekranı kısa bir süre açılabilir,
+        <warn>Not</warn> Kilit ekranı kısa bir süre açılabilir,
         ayrıca bir arama bitiş tonu duyabilirsiniz (bazı telefonlar bu sesi kapatma seçeneği sunar). <br>
         <br>
         - <b>Gecikme</b>: <br>

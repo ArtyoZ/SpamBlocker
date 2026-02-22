@@ -7,9 +7,9 @@
         <br>
         適用於通話與簡訊。 <br>
         <br>
-        <font color="#ea86ff"><b>預設優先權</b></font>: <br>
-        &ensp; 允許: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; 封鎖: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>預設優先權</b></priority>: <br>
+        &ensp; 允許: <priority><b>10</b></priority> <br>
+        &ensp; 封鎖: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>選項：</b> <br>
         <br>
-        <font color="#00BFFF"><b>包含未驗證的電話</b></font> <br>
+        <title><b>包含未驗證的電話</b></title> <br>
         同時阻止未驗證的電話，這表示電話無法驗證，或是運營商或您的裝置不支援 STIR 驗證。 <br>
         <br>
         <b>使用情境</b>： <br>
-        <font color="#888888">
+        <sample>
           &ensp; 對於實施 STIR 驗證的國家，未驗證的號碼很可能是垃圾電話。 <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>預設優先權：0</b></font> <br>
+        <priority><b>預設優先權：0</b></priority> <br>
         <br>
         自訂優先權的<b>使用情境</b>：<br>
         <br>
         1. 永遠允許聯絡人。 <br>
-          &emsp; - 聯絡人，優先權 <font color="#ea86ff">12</font> <br>
+          &emsp; - 聯絡人，優先權 <priority>12</priority> <br>
         2. 阻止未通過 STIR 的電話，即使它們重複撥打。 <br>
-          &emsp; - STIR，優先權 <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR，優先權 <priority>11</priority> <br>
         3. 允許重複的電話。 <br>
-          &emsp; - 重複電話，優先權 <font color="#ea86ff">10</font> <br>
+          &emsp; - 重複電話，優先權 <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

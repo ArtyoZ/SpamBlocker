@@ -3,22 +3,22 @@
         <![CDATA[
         Queste regole si applicano al contenuto degli SMS.<br>
         <br>
-        <font color="#00BFFF"><b> - Alcuni schemi tipici</b></font>:<br>
-        &ensp; - Contiene \"verifica\": <font color="#03DAC5"><b>.*verification.*</b></font><br>
-        &ensp; - Contiene una qualsiasi delle parole: <font color="#03DAC5"><b>.*(police|hospital|verification).*</b></font>
+        <title><b> - Alcuni schemi tipici</b></title>:<br>
+        &ensp; - Contiene \"verifica\": <highlight><b>.*verification.*</b></highlight><br>
+        &ensp; - Contiene una qualsiasi delle parole: <highlight><b>.*(police|hospital|verification).*</b></highlight>
         ]]>
     </string>
     <string name="help_quick_copy">
         <![CDATA[
         Un modo rapido per copiare il contenuto da SMS o numeri di telefono, semplificando l\'acquisizione di codici di verifica o numeri in arrivo.<br>
         <br>
-        Quando corrisponde, un pulsante come <font color="#00BFFF"><b>Copia: 123456</b></font> apparirà nella notifica.<br>
+        Quando corrisponde, un pulsante come <title><b>Copia: 123456</b></title> apparirà nella notifica.<br>
         <br>
         Una regola di esempio per l\'estrazione di codici di verifica:<br>
         &emsp; Utilizzando il gruppo di cattura:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>code.*?(\\d+) </b></font><br>
+        &emsp;&emsp; <highlight><b>code.*?(\\d+) </b></highlight><br>
         &emsp; Un altro approccio usando lookaround:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>(?&lt;=code.{0,3})\\d+</b></font>
+        &emsp;&emsp; <highlight><b>(?&lt;=code.{0,3})\\d+</b></highlight>
         ]]>
     </string>
     <string name="help_apply_to_call_sms">
@@ -29,18 +29,18 @@
     </string>
     <string name="help_apply_to_number_and_message">
         <![CDATA[
-        Quando <font color="#00BFFF"><b>Numero</b></font> è selezionato, questa regola estrarrà il contenuto dal numero in arrivo.
+        Quando <title><b>Numero</b></title> è selezionato, questa regola estrarrà il contenuto dal numero in arrivo.
         Ad esempio, usa <b>(.*)</b> per copiare il numero di telefono.<br>
         <br>
-        Quando <font color="#00BFFF"><b>Contenuto</b></font> è selezionato, questa regola estrarrà il contenuto dal corpo del messaggio SMS,
+        Quando <title><b>Contenuto</b></title> è selezionato, questa regola estrarrà il contenuto dal corpo del messaggio SMS,
         come i codici di verifica.
         ]]>
     </string>
     <string name="help_apply_to_passed_and_blocked">
         <![CDATA[
-        Quando <font color="#03DAC5"><b>Concesso</b></font> è selezionato, questa regola si applicherà alle chiamate e ai messaggi concessi.<br>
+        Quando <highlight><b>Concesso</b></highlight> è selezionato, questa regola si applicherà alle chiamate e ai messaggi concessi.<br>
         <br>
-        Quando <font color="#fa7f71"><b>Bloccato</b></font> è selezionato, questa regola si applicherà alle chiamate e ai messaggi bloccati.
+        Quando <error><b>Bloccato</b></error> è selezionato, questa regola si applicherà alle chiamate e ai messaggi bloccati.
         ]]>
     </string>
     <string name="title_rule_testing">Test Regole</string>

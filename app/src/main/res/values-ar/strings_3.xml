@@ -3,22 +3,22 @@
         <![CDATA[
         تطبق هذه القواعد على محتوى الرسائل النصية القصيرة.<br>
         <br>
-        <font color="#00BFFF"><b> - بعض الأنماط النموذجية</b></font>:<br>
-        &ensp; - يحتوي على \"التحقق\": <font color="#03DAC5"><b>.*التحقق.*</b></font><br>
-        &ensp; - يحتوي على أي من الكلمات: <font color="#03DAC5"><b>.*(شرطة|مستشفى|التحقق).*</b></font>
+        <title><b> - بعض الأنماط النموذجية</b></title>:<br>
+        &ensp; - يحتوي على \"التحقق\": <highlight><b>.*التحقق.*</b></highlight><br>
+        &ensp; - يحتوي على أي من الكلمات: <highlight><b>.*(شرطة|مستشفى|التحقق).*</b></highlight>
         ]]>
     </string>
     <string name="help_quick_copy">
         <![CDATA[
         طريقة سريعة لنسخ المحتوى من رسائل SMS أو أرقام الهواتف، مما يجعل من السهل الحصول على رموز التحقق أو الأرقام الواردة.<br>
         <br>
-        عندما تتطابق، سيظهر زر مثل <font color="#00BFFF"><b>نسخ: 123456</b></font> في الإشعار.<br>
+        عندما تتطابق، سيظهر زر مثل <title><b>نسخ: 123456</b></title> في الإشعار.<br>
         <br>
         عينة قاعدة لاستخراج رموز التحقق:<br>
         &emsp; باستخدام مجموعة التقاط:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>code.*?(\\d+) </b></font><br>
+        &emsp;&emsp; <highlight><b>code.*?(\\d+) </b></highlight><br>
         &emsp; نهج آخر باستخدام النظرة الخلفية:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>(?&lt;=code.{0,3})\\d+</b></font>
+        &emsp;&emsp; <highlight><b>(?&lt;=code.{0,3})\\d+</b></highlight>
         ]]>
     </string>
     <string name="help_apply_to_call_sms">
@@ -29,18 +29,18 @@
     </string>
     <string name="help_apply_to_number_and_message">
         <![CDATA[
-        عند تحديد <font color="#00BFFF"><b>رقم</b></font>، ستستخرج هذه القاعدة المحتوى من الرقم الوارد.
+        عند تحديد <title><b>رقم</b></title>، ستستخرج هذه القاعدة المحتوى من الرقم الوارد.
         على سبيل المثال، استخدم <b>(.*)</b> لنسخ رقم الهاتف.<br>
         <br>
-        عند تحديد <font color="#00BFFF"><b>المحتوى</b></font>، ستستخرج هذه القاعدة المحتوى من نص رسالة SMS،
+        عند تحديد <title><b>المحتوى</b></title>، ستستخرج هذه القاعدة المحتوى من نص رسالة SMS،
         مثل رموز التحقق.
         ]]>
     </string>
     <string name="help_apply_to_passed_and_blocked">
         <![CDATA[
-        عند تحديد <font color="#03DAC5"><b>تمت الموافقة</b></font>، ستنطبق هذه القاعدة على المكالمات والرسائل التي تمت الموافقة عليها.<br>
+        عند تحديد <highlight><b>تمت الموافقة</b></highlight>، ستنطبق هذه القاعدة على المكالمات والرسائل التي تمت الموافقة عليها.<br>
         <br>
-        عند تحديد <font color="#fa7f71"><b>تم الحظر</b></font>، ستنطبق هذه القاعدة على المكالمات والرسائل المحظورة.
+        عند تحديد <error><b>تم الحظر</b></error>، ستنطبق هذه القاعدة على المكالمات والرسائل المحظورة.
         ]]>
     </string>
     <string name="title_rule_testing">اختبار القاعدة</string>

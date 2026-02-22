@@ -5,7 +5,7 @@
         <br>
         If the start time is greater than the end time, for example, 20:00 -> 07:00, it means the period from 20:00 in the evening to 07:00 the next morning. <br>
         <br>
-        <font color="#ea86ff"><b>Priority: 10</b></font>
+        <priority><b>Priority: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             These flags change the matching behavior of the regex. <br>
             <br>
 
-            <font color="#00BFFF"><b>Raw Number</b></font>: <br>
-            &ensp; When enabled, the number will not be optimized, <font color="#03DAC5"><b>+</b></font>
-            and <font color="#03DAC5"><b>leading 0s</b></font> will remain, useful for differentiating domestic numbers.<br>
+            <title><b>Raw Number</b></title>: <br>
+            &ensp; When enabled, the number will not be optimized, <highlight><b>+</b></highlight>
+            and <highlight><b>leading 0s</b></highlight> will remain, useful for differentiating domestic numbers.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ignore Country Code</b></font>: <br>
-            &ensp; When enabled, the leading <font color="#fa7f71">+</font> and the <font color="#fa7f71">country code</font>
+            <title><b>Ignore Country Code</b></title>: <br>
+            &ensp; When enabled, the leading <error>+</error> and the <error>country code</error>
              will be removed from an international number.<br>
             <br>
-            For example, both <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> and
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> will become <font color="#03DAC5">12345</font>,
+            For example, both <error>+33</error><highlight>12345</highlight> and
+            <error>+44</error><highlight>12345</highlight> will become <highlight>12345</highlight>,
             this allows you to use simpler regex `123.*` instead of `(33|44)*123.*` to match international numbers.<br>
             <br>
 
-            <font color="#00BFFF"><b>Case Sensitive</b></font>:<br>
-            &ensp; By default, the regex matching is case-insensitive, <font color="#03DAC5"><b>a</b></font>
-              would match both <font color="#03DAC5"><b>a</b></font> and <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Case Sensitive</b></title>:<br>
+            &ensp; By default, the regex matching is case-insensitive, <highlight><b>a</b></highlight>
+              would match both <highlight><b>a</b></highlight> and <highlight><b>A</b></highlight>. <br>
             &ensp; Enable this to make it case-sensitive. <br>
         ]]>
     </string>

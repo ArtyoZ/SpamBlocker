@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Çift bildirimleri önlemek için sistem ayarlarında <font color="#fa7f71"><b>SMS uygulamasının bildirimini kapattığınızdan</b></font> emin olun. <br>
+        Çift bildirimleri önlemek için sistem ayarlarında <error><b>SMS uygulamasının bildirimini kapattığınızdan</b></error> emin olun. <br>
         <br>
         SMS uygulaması bildirim izni zorluyorsa, izni açık bırakabilir ve bunun yerine tüm <b>bildirim kanallarını</b> kapatabilirsiniz.
         ]]>
@@ -15,11 +15,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Arayan Adı</b></font>:<br>
+        <title><b>Arayan Adı</b></title>:<br>
         &ensp; Regex, arayanın görünen adıyla (CNAP) eşleşecektir. <br>
         <br>
         Çağrı geçmişi kaydında, arayan adı varsa telefon numarasından sonra parantez içinde görünecektir, örneğin: <br>
-        &ensp; <font color="#888888">12345 (Görünen Ad)</font> <br>
+        &ensp; <sample>12345 (Görünen Ad)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">Arayan Adı</string>
@@ -41,13 +41,13 @@
     </string>
     <string name="explanation_forwarded_call">
         <![CDATA[
-        Bu <b>operatöre özeldir</b>, bazı operatörler yönlendirilen çağrıları <font color="#888888">222&111</font> gibi \"&\" ile birleştirilmiş iki numara olarak biçimlendirir. <br>
+        Bu <b>operatöre özeldir</b>, bazı operatörler yönlendirilen çağrıları <sample>222&111</sample> gibi \"&\" ile birleştirilmiş iki numara olarak biçimlendirir. <br>
         <br>
         Bu biçimde: <br>
-        &ensp; - İlk kısım (<font color="#888888">222</font>) genellikle yönlendiren numaradır. <br>
-        &ensp; - İkinci kısım (<font color="#888888">111</font>) orijinal numaradır. <br>
+        &ensp; - İlk kısım (<sample>222</sample>) genellikle yönlendiren numaradır. <br>
+        &ensp; - İkinci kısım (<sample>111</sample>) orijinal numaradır. <br>
         <br>
-        Ayrıca <font color="#888888">333&111</font> ve <font color="#888888">444&111</font> de olabilir, burada orijinal numara aynı kalır ve yönlendiren numara değişir.
+        Ayrıca <sample>333&111</sample> ve <sample>444&111</sample> de olabilir, burada orijinal numara aynı kalır ve yönlendiren numara değişir.
         ]]>
     </string>
     <string name="raw">Ham</string>
@@ -61,14 +61,14 @@
         <br>
         <b>Seçenekler</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Ham</b></font> <br>
-        API bu biçimi destekliyorsa ham numarayı (<font color="#888888">222&111</font>) sorgulayın/bildirin. <br>
+        <title><b>Ham</b></title> <br>
+        API bu biçimi destekliyorsa ham numarayı (<sample>222&111</sample>) sorgulayın/bildirin. <br>
         <br>
-        <font color="#00BFFF"><b>Orijinal</b></font> <br>
-        Orijinal numarayı (<font color="#888888">111</font>) sorgulayın/bildirin, bu, ham biçimi desteklemeyen API\'ler için bir çözümdür. <br>
+        <title><b>Orijinal</b></title> <br>
+        Orijinal numarayı (<sample>111</sample>) sorgulayın/bildirin, bu, ham biçimi desteklemeyen API\'ler için bir çözümdür. <br>
         <br>
-        <font color="#00BFFF"><b>Yönlendirme</b></font> <br>
-        Yönlendirme numarasını (<font color="#888888">222</font>) sorgulayın/bildirin. <br>
+        <title><b>Yönlendirme</b></title> <br>
+        Yönlendirme numarasını (<sample>222</sample>) sorgulayın/bildirin. <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">Bu yönlendirilen numara %s olarak değiştirildi.</string>
@@ -77,7 +77,7 @@
     <string name="geo_location_rule">Coğrafi Konum Kuralı</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Coğrafi Konum</b></font>:<br>
+        <title><b>Coğrafi Konum</b></title>:<br>
         &ensp; Regex, numaranın coğrafi konumuyla eşleşecektir. <br>
         <br>
         &ensp; Bu, Google\'ın <a href="https://github.com/google/libphonenumber">libphonenumber</a> kütüphanesine dayanır,
@@ -101,8 +101,8 @@
         <br>
         ___ yer tutucusunu gerçek bölgenizle değiştirin. <br>
         <br>
-        Sözdizimi <font color="#fa7f71">(?!___$).*</font> şu anlama gelir: <br>
-        &ensp; <font color="#fa7f71">___</font> olmayan herhangi bir metni eşleştir.
+        Sözdizimi <error>(?!___$).*</error> şu anlama gelir: <br>
+        &ensp; <error>___</error> olmayan herhangi bir metni eşleştir.
         ]]>
     </string>
 </resources>

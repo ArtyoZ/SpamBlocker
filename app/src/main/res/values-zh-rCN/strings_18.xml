@@ -21,9 +21,9 @@
         - 否则，工作流将终止。<br>
         <br>
         用例: <br>
-        <font color="#888888">
+        <sample>
         &ensp; 在收到值班或非值班短信后切换某些规则。<br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">短信事件 %s 已触发。</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         允许接听之前已接听的号码来电。<br>
         <br>
-        <h6><font color="#ffa500">警告</font></h6>
+        <h6><warn>警告</warn></h6>
         %s<br>
         <br>
         <b>选项：</b><br>
         <br>
-        <h6><font color="#00BFFF">- 天数范围内</font></h6>
-        发生在 <font color="#03DAC5">%d 天</font> 之前的来电将被忽略。<br>
+        <h6><title>- 天数范围内</title></h6>
+        发生在 <highlight>%d 天</highlight> 之前的来电将被忽略。<br>
         <br>
-        <h6><font color="#00BFFF">- 最短持续时间</font></h6>
-        持续时间少于 <font color="#03DAC5">%d 秒</font> 的来电将被忽略。<br>
+        <h6><title>- 最短持续时间</title></h6>
+        持续时间少于 <highlight>%d 秒</highlight> 的来电将被忽略。<br>
         <br>
-        <font color="#ea86ff"><b>优先级：10</b></font>
+        <priority><b>优先级：10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">请勿为老年人或任何不善于识别诈骗电话的人启用此功能，因为这可能使他们遭受重复的诈骗电话。</string>
@@ -75,9 +75,9 @@
         根据日历事件临时修改正则表达式规则。<br>
         <br>
         <b>用例</b>:<br>
-        &ensp; <font color="#888888">轮班工人白班工作两天，
+        &ensp; <sample>轮班工人白班工作两天，
           然后夜班工作两天。<br>
-        &ensp; 某些规则需要在不同的工作时间禁用或启用。</font><br>
+        &ensp; 某些规则需要在不同的工作时间禁用或启用。</sample><br>
         <br>
         这将同时创建一条正则表达式规则和一个工作流，该规则将在特定的日历事件期间即时启用。<br>
         ]]>

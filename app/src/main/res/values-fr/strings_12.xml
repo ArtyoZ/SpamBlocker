@@ -3,11 +3,11 @@
         <![CDATA[
         Interrogez le numéro entrant en ligne en temps réel. <br>
         <br>
-        Plusieurs points d\'accès API seront interrogés simultanément, le premier résultat reçu étant utilisé et tous les résultats ultérieurs ignorés. <br>
+        Plusieurs points de terminaison API seront interrogés simultanément, le premier résultat reçu sera utilisé et tous les résultats ultérieurs seront ignorés. <br>
         <br>
-        Il a la priorité la plus basse par défaut, ce qui signifie qu\'il ne sera déclenché que lorsque l\'appel passe toutes les autres règles.<br>
+        Il a la priorité la plus basse par défaut, ce qui signifie qu\'il ne sera déclenché qu\'après que l\'appel ait passé toutes les règles locales.<br>
         <br>
-        <font color="#ea86ff"><b>Priorité par défaut : -1</b></font>
+        <priority><b>Priorité par défaut : -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">Requête instantanée</string>
@@ -35,23 +35,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        Extrayez la <font color="#00BFFF">catégorie</font> et les <font color="#00BFFF">commentaires</font>
+        Extrayez la <title>catégorie</title> et les <title>commentaires</title>
          du résultat de la requête et affichez-les dans la notification et le journal d\'historique. (facultatif)<br>
         <br>
         Par exemple, pour ce résultat de requête : <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - Extrayez uniquement la <font color="#00BFFF">catégorie</font> : <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - Extrayez uniquement la <title>catégorie</title> : <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - Extrayez à la fois la <font color="#00BFFF">catégorie</font> et les <font color="#00BFFF">commentaires</font> : <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - Extrayez à la fois la <title>catégorie</title> et les <title>commentaires</title> : <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">Analyser le résultat</string>
@@ -89,13 +89,13 @@
         Cette expression régulière filtre les numéros en conséquence ; les numéros entrants qui ne correspondent pas à cette expression régulière seront ignorés.<br>
         <br>
         - Vérifier uniquement les <b>numéros internationaux</b> :<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - Vérifier uniquement les <b>numéros nationaux</b> :<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - Vérifier <b>tous les numéros</b> :<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">Vérification : %s, priorité : %s</string>

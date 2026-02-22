@@ -21,9 +21,9 @@
         - Sinon, le flux de travail se terminera.<br>
         <br>
         Cas d\'utilisation : <br>
-        <font color="#888888">
+        <sample>
         &ensp; Basculer certaines règles après avoir reçu des SMS de garde ou de fin de garde. <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">L\'événement SMS %s est déclenché.</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         Autoriser les appels provenant de numéros précédemment répondus.<br>
         <br>
-        <h6><font color="#ffa500">Avertissement</font></h6>
+        <h6><warn>Avertissement</warn></h6>
         %s<br>
         <br>
         <b>Options :</b><br>
         <br>
-        <h6><font color="#00BFFF">- Dans les jours</font></h6>
-        Les appels qui ont eu lieu avant <font color="#03DAC5">%d jours</font> sont ignorés.<br>
+        <h6><title>- Dans les jours</title></h6>
+        Les appels qui ont eu lieu avant <highlight>%d jours</highlight> sont ignorés.<br>
         <br>
-        <h6><font color="#00BFFF">- Durée minimale</font></h6>
-        Les appels d\'une durée inférieure à <font color="#03DAC5">%d secondes</font> sont ignorés.<br>
+        <h6><title>- Durée minimale</title></h6>
+        Les appels d\'une durée inférieure à <highlight>%d secondes</highlight> sont ignorés.<br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 10</b></font>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">N\'activez pas cette fonction pour les personnes âgées ou toute personne moins apte à identifier les appels frauduleux, car cela pourrait les exposer à des appels frauduleux répétés.</string>
@@ -75,9 +75,9 @@
         Modifie temporairement les règles d\'expression régulière en fonction des événements de calendrier. <br>
         <br>
         <b>Cas d\'utilisation</b>:<br>
-        &ensp; <font color="#888888">Un travailleur posté travaille de jour pendant deux jours,
+        &ensp; <sample>Un travailleur posté travaille de jour pendant deux jours,
           puis de nuit pendant les deux suivants.<br>
-        &ensp; Certaines règles doivent être désactivées ou activées pendant les heures de travail variables.</font><br>
+        &ensp; Certaines règles doivent être désactivées ou activées pendant les heures de travail variables.</sample><br>
         <br>
         Cela créera à la fois une règle d\'expression régulière et un flux de travail, la règle sera activée à la volée pendant l\'événement de calendrier spécifique. <br>
         ]]>

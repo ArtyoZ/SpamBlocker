@@ -12,53 +12,53 @@
     <![CDATA[
         ワークフローを使用して、ローカルまたはリモートファイルから番号をインポートします。<br>
         <br>
-        <font color="#00BFFF"><b>典型的な設定</b></font>: <br>
+        <title><b>典型的な設定</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>ファイルを読み込み</b></font> / <font color="#6ed0ff"><b>HTTPリクエスト</b></font> <br>
+        1. <minor><b>ファイルを読み込み</b></minor> / <minor><b>HTTPリクエスト</b></minor> <br>
           &ensp; ファイルの内容を取得します。<br>
           <br>
-        2. <font color="#6ed0ff"><b>CSV解析</b></font> / <font color="#6ed0ff"><b>XML解析</b></font> / <font color="#6ed0ff"><b>正規表現抽出</b></font> <br>
+        2. <minor><b>CSV解析</b></minor> / <minor><b>XML解析</b></minor> / <minor><b>正規表現抽出</b></minor> <br>
           &ensp; 解析して番号のリストを取得します。<br>
           <br>
-        3. <font color="#6ed0ff"><b>番号の置換</b></font> (オプション) <br>
+        3. <minor><b>番号の置換</b></minor> (オプション) <br>
           &ensp; 番号の形式を変更します<br>
           &ensp; 使用例:<br>
-          <font color="#888888">
+          <sample>
             &emsp; 他のアプリから番号を移行する際、<b>123#####</b> のような形式を正規表現 <b>123.....</b> または <b>123.*</b> に変換します <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>スパムデータベースにインポート</b></font> / <font color="#6ed0ff"><b>正規表現ルールにインポート</b></font> <br>
+        4. <minor><b>スパムデータベースにインポート</b></minor> / <minor><b>正規表現ルールにインポート</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>例</b></font>: <br>
+        <title><b>例</b></title>: <br>
           - プリセット <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         その他のオンライン例: <br>
           - <a href=\"%s\">プレーンテキスト</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPathはまだサポートされていません。代わりに <font color="#6ed0ff"><b>正規表現抽出</b></font> を使用してください。
+          - <a href=\"%s\">Json</a> - JsonPathはまだサポートされていません。代わりに <minor><b>正規表現抽出</b></minor> を使用してください。
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         プログラマー以外のための正規表現チュートリアル。<br>
         <br>
-        <font color="#00BFFF"><b>初級 - ワイルドカード</b></font> <br>
-        &ensp; ワイルドカード <font color="#888888"><b>*</b></font> を使用したい場合は、その前にドット <font color="#888888"><b>.</b></font> を置きます（例: <font color="#888888">.*<b></b></font>）。これでほとんどのケースに対応できます。<br>
+        <title><b>初級 - ワイルドカード</b></title> <br>
+        &ensp; ワイルドカード <sample><b>*</b></sample> を使用したい場合は、その前にドット <sample><b>.</b></sample> を置きます（例: <sample><b>.*</b></sample>）。これでほとんどのケースに対応できます。<br>
         <br>
-        <font color="#00BFFF"><b>上級 - AIの使用</b></font> <br>
+        <title><b>上級 - AIの使用</b></title> <br>
         &ensp; 例えば、SMS認証用に以下の正規表現を取得する場合: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         AIに質問する: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>オンラインで試す</b></font> <br>
+        <highlight><b>オンラインで試す</b></highlight> <br>
           &ensp; 1. 上記のプロンプトをコピーするには<a href=\"copy\"><big>ここをタップ</big></a> <br>
           &ensp; 2. オンラインAIを起動するには<a href=\"try_it\"><big>ここをタップ</big></a> <br>
     ]]>

@@ -4,9 +4,9 @@
     <![CDATA[
     اگر شماره به دلایل زیر مسدود شود، به صورت خودکار گزارش شود: <br>
     <br>
-    &ensp; - <font color="#fa7f71">شماره‌های ناشناس</font>  <br>
-    &ensp; - <font color="#fa7f71">تأییدیه STIR/SHAKEN</font> <br>
-    &ensp; - <font color="#fa7f71">عبارت باقاعده شماره تلفن</font> <br>
+    &ensp; - <error>شماره‌های ناشناس</error>  <br>
+    &ensp; - <error>تأییدیه STIR/SHAKEN</error> <br>
+    &ensp; - <error>عبارت باقاعده شماره تلفن</error> <br>
     <br>
     این بر گزارش‌دهی دستی تأثیری ندارد.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         بایت‌های داده CSV را به لیستی از شماره‌ها تجزیه کنید. <br>
         <br>
-        ستون حاوی شماره‌ها <b>باید</b> <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> نام‌گذاری شود. <br>
+        ستون حاوی شماره‌ها <b>باید</b> <title><b><no_translate>pattern</no_translate></b></title> نام‌گذاری شود. <br>
         <br>
         برای فایل‌های CSV شخص ثالث با نام‌های سربرگ متفاوت، آنها را با استفاده از <b>نگاشت ستون</b> به
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> نگاشت کنید. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> نگاشت کنید. <br>
         <br>
         برای مثال: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>توجه</b></font> <br>
+        <warn><b>توجه</b></warn> <br>
         برای تجزیه فایل‌های متنی ساده بدون سربرگ ستون، به جای آن از <b>استخراج عبارت باقاعده</b> استفاده کنید.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        بایت‌های داده XML را با استفاده از <font color="#00BFFF">xpath</font> تجزیه کرده و لیستی از شماره‌ها تولید کنید.
+        بایت‌های داده XML را با استفاده از <title>xpath</title> تجزیه کرده و لیستی از شماره‌ها تولید کنید.
         ]]>
     </string>
     <string name="action_parse_xml">تجزیه XML</string>
@@ -44,13 +44,13 @@
         این قابلیت همچنین می‌تواند برای تجزیه فایل‌های متنی ساده با یک شماره در هر خط استفاده شود. <br>
         <br>
         برای مثال، تجزیه متن: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         با عبارت باقاعده: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         بایت‌های داده را از یک فایل بخوانید. <br>
         <br>
-        تگ‌های <font color="#03DAC5">مسیر</font> پشتیبانی شده: <br>
+        تگ‌های <highlight>مسیر</highlight> پشتیبانی شده: <br>
         <br>
         %s <br>
         <br>
-        تگ‌های <font color="#03DAC5">نام فایل</font> پشتیبانی شده: <br>
+        تگ‌های <highlight>نام فایل</highlight> پشتیبانی شده: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         بایت‌های داده را در یک فایل بنویسید. <br>
         <br>
-        تگ‌های <font color="#03DAC5"><b>مسیر</b></font> پشتیبانی شده: <br>
+        تگ‌های <highlight><b>مسیر</b></highlight> پشتیبانی شده: <br>
         <br>
         %s <br>
         <br>
-        تگ‌های <font color="#03DAC5"><b>نام فایل</b></font> پشتیبانی شده: <br>
+        تگ‌های <highlight><b>نام فایل</b></highlight> پشتیبانی شده: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         بسته به نوع راه‌انداز گردش کار، قوانین می‌توانند به طور دائمی یا موقت اصلاح شوند. <br>
         <br>
         ویژگی‌های قابل اصلاح: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; عبارت باقاعده <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; توضیحات <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; اولویت <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: مسدود کردن، <no_translate>false</no_translate>: اجازه دادن <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; اعمال به: <br>
         &ensp; 1: تماس، 2: پیامک، 3: هر دو، 0: غیرفعال <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; رشته شناسه کانال اعلان<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: رد کردن، 1: بی‌صدا کردن، 2: قطع کردن <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… یا <no_translate>null</no_translate> برای هر سیم کارت.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         الگوهای عددی را از منابع شخص ثالث به فرمت عبارت باقاعده نرمال‌سازی کنید. <br>
         <br>
         برای مثال، برای نگاشت <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         به <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         دو عمل <b>جایگزینی شماره</b> اضافه کنید: <br>
-        &ensp; - جایگزینی `<font color="#fa7f71">(\\+)</font>` با ``<br>
-        &ensp; - جایگزینی `<font color="#fa7f71">(#)</font>` با `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - جایگزینی `<error>(\\+)</error>` با ``<br>
+        &ensp; - جایگزینی `<error>(#)</error>` با `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">جایگزینی شماره</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">مدت زمان (دقیقه)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        برای اجرای دستی این گردش کار، روی دکمه <font color="#03DAC5">تست</font> ضربه بزنید.
+        برای اجرای دستی این گردش کار، روی دکمه <highlight>تست</highlight> ضربه بزنید.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,9 +164,9 @@
         اجرای وظایف را بر اساس برنامه‌های زمانی خودکار کنید. <br>
         <br>
         موارد استفاده: <br>
-        &ensp; - <font color="#888888">هر روز شماره‌های اسپم را از ثبت‌نام FTC-DNC دانلود کنید.</font> <br>
+        &ensp; - <sample>هر روز شماره‌های اسپم را از ثبت‌نام FTC-DNC دانلود کنید.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">هر روز به صورت خودکار پشتیبان‌گیری کنید و فقط ۷ پشتیبان آخر را نگه دارید.</font> <br>
+        &ensp; - <sample>هر روز به صورت خودکار پشتیبان‌گیری کنید و فقط ۷ پشتیبان آخر را نگه دارید.</sample> <br>
         ]]>
     </string>
     <string name="trigger">راه انداز</string>
@@ -174,7 +174,7 @@
     <string name="help_ringtone_delay">
         <![CDATA[
         این ویژگی به طور موقت آهنگ زنگ پیش‌فرض سیستم را قبل از شروع زنگ زدن تغییر می‌دهد و
-         سپس پس از <font color="#03DAC5">%d ثانیه</font> آن را بازمی‌گرداند، زمانی که انتظار می‌رود زنگ زدن شروع شده باشد. <br>
+         سپس پس از <highlight>%d ثانیه</highlight> آن را بازمی‌گرداند، زمانی که انتظار می‌رود زنگ زدن شروع شده باشد. <br>
         <br>
         برخی از تلفن‌ها ویژگی‌هایی مانند <b>اول لرزش، سپس زنگ زدن</b> را ارائه می‌دهند که ممکن است زنگ زدن را مثلاً 6 ثانیه به تأخیر بیندازد.
          در این صورت، این تأخیر را بر این اساس افزایش دهید.

@@ -27,61 +27,61 @@
     <string name="auto_detect_cc_permission">Для определения кода страны требуется разрешение READ_PHONE_STATE.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; Код страны.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; Внутренняя часть номера.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; Полный номер, включая код страны и внутреннюю часть, без ведущих + или 0.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; Исходный номер, который может содержать ведущие + или 0.<br>
         ]]>
     </string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; Содержание SMS.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Однозначное число будет дополнено ведущим нулем, например: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; становится <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Эти значения не будут дополняться, например: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; становится <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Их можно использовать для имитации графика ротации, например: <br>
-        &emsp; <font color="#888888">Выполнять ежедневное резервное копирование и сохранять только семь последних резервных копий.</font> <br>
+        &emsp; <sample>Выполнять ежедневное резервное копирование и сохранять только семь последних резервных копий.</sample> <br>
         <br>
-        <font color="#ffa500"><b>Примечание:</b></font><br>
+        <warn><b>Примечание:</b></warn><br>
          Эти теги времени поддерживают простые арифметические операции, такие как
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          и
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="help_http_url">
@@ -129,17 +129,17 @@
     <string name="canceling_thread">Отмена потока.</string>>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>Смахните влево</b></font> для удаления.<br>
+        <highlight><b>Смахните влево</b></highlight> для удаления.<br>
         <br>
         Большинство элементов интерфейса в стиле карточек в этом приложении связаны с жестами смахивания,
-        некоторые из которых также поддерживают <font color="#03DAC5"><b>смахивание вправо</b></font>, например, записи истории.
+        некоторые из которых также поддерживают <highlight><b>смахивание вправо</b></highlight>, например, записи истории.
         ]]>
     </string>
     <string name="bug_number">Если это надёжный номер, пожалуйста, сообщите об этом на github.</string>
     <string name="skip_alpha_empty_number">Пропуск буквенных или пустых номеров.</string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; Экранировать содержимое в скобках, используемое для контента внутри кавычек. <br>
         ]]>
     </string>

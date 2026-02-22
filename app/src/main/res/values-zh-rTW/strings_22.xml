@@ -4,9 +4,9 @@
     <![CDATA[
     如果號碼因以下原因被封鎖，將會自動回報： <br>
     <br>
-    &ensp; - <font color="#fa7f71">非聯絡人</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> 驗證 <br>
-    &ensp; - <font color="#fa7f71">號碼規則</font> <br>
+    &ensp; - <error>非聯絡人</error>  <br>
+    &ensp; - <error>STIR/SHAKEN</error> 驗證 <br>
+    &ensp; - <error>號碼規則</error> <br>
     <br>
     這不影響手動回報。
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         將 CSV 資料位元組解析為電話號碼列表。 <br>
         <br>
-        包含電話號碼的欄位<b>必須</b>命名為 <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>。 <br>
+        包含電話號碼的欄位<b>必須</b>命名為 <title><b><no_translate>pattern</no_translate></b></title>。 <br>
         <br>
         對於具有不同標頭名稱的第三方 CSV 檔案，請使用<b>欄位映射</b>將其映射到
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>。 <br>
+        <title><b><no_translate>pattern</no_translate></b></title>。 <br>
         <br>
         例如： <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>注意</b></font> <br>
+        <warn><b>注意</b></warn> <br>
         對於解析沒有欄位標頭的純文字檔案，請改用<b>正規表達式擷取</b>。
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        使用 <font color="#00BFFF">xpath</font> 解析 XML 資料位元組並產生電話號碼列表。
+        使用 <title>xpath</title> 解析 XML 資料位元組並產生電話號碼列表。
         ]]>
     </string>
     <string name="action_parse_xml">解析 XML</string>
@@ -44,13 +44,13 @@
         這也可以用於解析每行一個電話號碼的純文字檔案。 <br>
         <br>
         例如，解析文字： <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         使用正規表達式： <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         從檔案讀取資料位元組。 <br>
         <br>
-        支援的 <font color="#03DAC5">路徑</font> 標籤： <br>
+        支援的 <highlight>路徑</highlight> 標籤： <br>
         <br>
         %s <br>
         <br>
-        支援的 <font color="#03DAC5">檔案名稱</font> 標籤： <br>
+        支援的 <highlight>檔案名稱</highlight> 標籤： <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         將資料位元組寫入檔案。 <br>
         <br>
-        支援的 <font color="#03DAC5"><b>路徑</b></font> 標籤： <br>
+        支援的 <highlight><b>路徑</b></highlight> 標籤： <br>
         <br>
         %s <br>
         <br>
-        支援的 <font color="#03DAC5"><b>檔案名稱</b></font> 標籤： <br>
+        支援的 <highlight><b>檔案名稱</b></highlight> 標籤： <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         根據工作流程觸發類型，規則可以永久或暫時修改。 <br>
         <br>
         可修改的屬性： <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; 正規表達式 <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; 描述 <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; 優先級 <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>：封鎖，<no_translate>false</no_translate>：允許 <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; 套用於： <br>
         &ensp; 1：通話，2：簡訊，3：兩者，0：停用 <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; 通知頻道 ID 字串<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0：拒絕，1：靜音，2：掛斷 <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0、1、2… 或 <no_translate>null</no_translate> 表示任何 SIM 卡。
         ]]>
     </string>
@@ -142,13 +142,13 @@
         將第三方來源的數字模式正規化為正規表達式格式。 <br>
         <br>
         例如，將 <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         映射到 <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         新增兩個<b>取代電話號碼</b>動作： <br>
-        &ensp; - 將 `<font color="#fa7f71">(\\+)</font>` 取代為 ``<br>
-        &ensp; - 將 `<font color="#fa7f71">(#)</font>` 取代為 `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - 將 `<error>(\\+)</error>` 取代為 ``<br>
+        &ensp; - 將 `<error>(#)</error>` 取代為 `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">取代電話號碼</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">持續時間 (分鐘)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        點擊 <font color="#03DAC5">測試</font> 按鈕以手動運行此工作流程。
+        點擊 <highlight>測試</highlight> 按鈕以手動運行此工作流程。
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         根據時間驅動的排程自動執行任務。 <br>
         <br>
         使用案例： <br>
-        &ensp; - <font color="#888888">每天從 FTC-DNC 註冊表下載垃圾電話號碼。</font> <br>
+        &ensp; - <sample>每天從 FTC-DNC 註冊表下載垃圾電話號碼。</sample> <br>
         <br>
-        &ensp; - <font color="#888888">每天自動備份，並且只保留最後 7 個備份。</font> <br>
+        &ensp; - <sample>每天自動備份，並且只保留最後 7 個備份。</sample> <br>
         ]]>
     </string>
     <string name="trigger">觸發</string>
     <string name="delay_in_seconds">延遲 (秒)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        此功能會在響鈴開始前暫時更改系統預設鈴聲，然後在 <font color="#03DAC5">%d 秒</font> 後恢復，屆時預計響鈴已開始。 <br>
+        此功能會在響鈴開始前暫時更改系統預設鈴聲，然後在 <highlight>%d 秒</highlight> 後恢復，屆時預計響鈴已開始。 <br>
         <br>
         有些手機提供諸如<b>先震動後響鈴</b>的功能，這可能會將響鈴延遲，例如 6 秒。在這種情況下，請相應增加此延遲。
         ]]>

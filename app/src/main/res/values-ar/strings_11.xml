@@ -9,7 +9,7 @@
         <br>
         ينطبق على كل من المكالمات والرسائل.<br>
         <br>
-        <font color="#ea86ff"><b>الأولوية الافتراضية: 20</b></font></translate>
+        <priority><b>الأولوية الافتراضية: 20</b></priority></translate>
         ]]>
     </string>
     <string name="in_meeting"><translate>وضع الاجتماع</translate></string>
@@ -29,11 +29,11 @@
     </string>
     <string name="auth_tags">
         <![CDATA[
-        <translate>- <font color="#00BFFF"><b>{basic_auth(username:password)}</b></font><br>
+        <translate>- <title><b>{basic_auth(username:password)}</b></title><br>
         &ensp; واجهات برمجة التطبيقات التي تتطلب مصادقة HTTP الأساسية. على سبيل المثال:<br>
-        &emsp; <font color="#888888">{basic_auth(111:222)}</font><br>
+        &emsp; <sample>{basic_auth(111:222)}</sample><br>
         &ensp; سيتم تحليله إلى:<br>
-        &emsp; <font color="#888888">Authorization: Basic MTExOjIyMg== </font><br>
+        &emsp; <sample>Authorization: Basic MTExOjIyMg== </sample><br>
         </translate>
         ]]>
     </string>

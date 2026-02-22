@@ -27,61 +27,61 @@
     <string name="auto_detect_cc_permission">ההרשאה READ_PHONE_STATE נדרשת לזיהוי קידומת מדינה.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; קידומת המדינה.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; החלק המקומי.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; מספר הטלפון המלא, כולל קידומת המדינה והחלק המקומי, ללא סימן + או אפסים מובילים.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; מספר הטלפון המקורי שיכול להכיל סימן + או אפסים מובילים.<br>
         ]]>
     </string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; תוכן ההודעה.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; מספרים חד-ספרתיים ירופדו באפס מוביל, לדוגמה: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; הופך ל-<br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; ערכים אלה לא ירופדו, לדוגמה: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; הופך ל-<br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; אלה יכולים לשמש לדימוי לוח זמנים סיבובי, לדוגמה: <br>
-        &emsp; <font color="#888888">בצע גיבויים יומיים ושמור רק את שבעת הגיבויים האחרונים.</font> <br>
+        &emsp; <sample>בצע גיבויים יומיים ושמור רק את שבעת הגיבויים האחרונים.</sample> <br>
         <br>
-        <font color="#ffa500"><b>הערה:</b></font><br>
+        <warn><b>הערה:</b></warn><br>
          תגי זמן אלה תומכים בפעולות חשבון פשוטות, כגון
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          ו-
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="help_http_url">
@@ -127,17 +127,17 @@
     <string name="canceling_thread">מבטל תהליך.</string>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>החלק שמאלה</b></font> כדי למחוק.<br>
+        <highlight><b>החלק שמאלה</b></highlight> כדי למחוק.<br>
         <br>
         רוב רכיבי ממשק המשתמש דמויי כרטיס באפליקציה זו קשורים למחוות החלקה,
-        חלקם תומכים גם ב-<font color="#03DAC5"><b>החלקה ימינה</b></font>, לדוגמה, רשומות ההיסטוריה.
+        חלקם תומכים גם ב-<highlight><b>החלקה ימינה</b></highlight>, לדוגמה, רשומות ההיסטוריה.
         ]]>
     </string>
     <string name="bug_number">אם זהו מספר תקין, אנא דווחו על כך ב-GitHub.</string>
     <string name="skip_alpha_empty_number">דלג על מספר אלפביתי או ריק.</string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; הימנע מהתוכן בסוגריים, משמש לתוכן בתוך מרכאות. <br>
         ]]>
     </string>

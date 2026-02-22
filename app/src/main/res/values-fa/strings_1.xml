@@ -43,7 +43,7 @@
         <![CDATA[
         <translate>این ویژگی به مجوز نیاز دارد:</translate><br>
         <br>
-        <font color="#00BFFF">%s</font><br>
+        <title>%s</title><br>
         <br>
         <translate>باید به صورت دستی در تنظیمات سیستم فعال شود.</translate><br>
         <translate>صفحه تنظیمات را باز کنم؟</translate>

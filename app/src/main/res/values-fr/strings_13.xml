@@ -66,76 +66,76 @@
     <string name="auto_detect_cc_permission">L\'autorisation READ_PHONE_STATE est nécessaire pour détecter l\'indicatif pays.</string>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>Faites glisser vers la gauche</b></font> pour le supprimer.<br>
+        <highlight><b>Faites glisser vers la gauche</b></highlight> pour le supprimer.<br>
         <br>
         La plupart des éléments d\'interface utilisateur de type carte dans cette application sont associés à des gestes de glissement,
-        dont certains prennent également en charge <font color="#03DAC5"><b>le glissement vers la droite</b></font>, par exemple, les enregistrements d\'historique.
+        dont certains prennent également en charge <highlight><b>le glissement vers la droite</b></highlight>, par exemple, les enregistrements d\'historique.
         ]]>
     </string>
     <string name="bug_number">S\'il s\'agit d\'un numéro valide, veuillez le signaler sur github.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; Le code pays.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; La partie nationale.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; Le numéro complet, incluant le code pays et la partie nationale, sans + ni 0 en tête.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; Le numéro d\'origine qui peut contenir des + ou des 0 en tête.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Les nombres à un chiffre seront complétés par un zéro en tête, par exemple : <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; devient <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Ces valeurs ne seront pas complétées, par exemple : <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; devient <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Celles-ci peuvent être utilisées pour simuler un calendrier de rotation, par exemple : <br>
-        &emsp; <font color="#888888">Effectuer des sauvegardes quotidiennes et ne conserver que les sept sauvegardes les plus récentes.</font> <br>
+        &emsp; <sample>Effectuer des sauvegardes quotidiennes et ne conserver que les sept sauvegardes les plus récentes.</sample> <br>
         <br>
-        <font color="#ffa500"><b>Remarque :</b></font><br>
+        <warn><b>Remarque :</b></warn><br>
          Ces balises temporelles prennent en charge les opérations arithmétiques simples, telles que
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          et
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="skip_alpha_empty_number">Ignorer les numéros alphabétiques ou vides.</string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; Le contenu du SMS.<br>
         ]]>
     </string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; Échapper le contenu entre les crochets, utilisé pour le contenu entre guillemets. <br>
         ]]>
     </string>

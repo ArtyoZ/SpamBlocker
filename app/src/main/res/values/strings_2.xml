@@ -7,9 +7,9 @@
         <br>
         It applies to both calls and SMS messages. <br>
         <br>
-        <font color="#ea86ff"><b>Default Priority</b></font>: <br>
-        &ensp; Allow: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; Block: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>Default Priority</b></priority>: <br>
+        &ensp; Allow: <priority><b>10</b></priority> <br>
+        &ensp; Block: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,25 +25,25 @@
         <br>
         <b>Options:</b> <br>
         <br>
-        <font color="#00BFFF"><b>Include Unverified</b></font> <br>
+        <title><b>Include Unverified</b></title> <br>
         Also block unverified calls, which means the call cannot be validated, or,
           the carrier or your device does not support STIR attestation. <br>
         <br>
         <b>Use case</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; For countries that enforce STIR attestation, unverified numbers are likely spam. <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>Default Priority: 0</b></font> <br>
+        <priority><b>Default Priority: 0</b></priority> <br>
         <br>
         A <b>use case</b> for customizing the priority:<br>
         <br>
         1. Always allow contacts. <br>
-          &emsp; - Contacts, priority <font color="#ea86ff">12</font> <br>
+          &emsp; - Contacts, priority <priority>12</priority> <br>
         2. Block calls fail STIR, even if they repeat. <br>
-          &emsp; - STIR, priority <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR, priority <priority>11</priority> <br>
         3. Allow calls that repeat. <br>
-          &emsp; - Repeated Call, priority <font color="#ea86ff">10</font> <br>
+          &emsp; - Repeated Call, priority <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

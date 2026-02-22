@@ -12,53 +12,53 @@
     <![CDATA[
         Impor nomor dari file lokal atau jarak jauh menggunakan alur kerja. <br>
         <br>
-        <font color="#00BFFF"><b>Pengaturan umum</b></font>: <br>
+        <title><b>Pengaturan umum</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Baca File</b></font> / <font color="#6ed0ff"><b>Permintaan Http</b></font> <br>
+        1. <minor><b>Baca File</b></minor> / <minor><b>Permintaan Http</b></minor> <br>
           &ensp; Dapatkan konten file. <br>
           <br>
-        2. <font color="#6ed0ff"><b>Uraikan CSV</b></font> / <font color="#6ed0ff"><b>Uraikan XML</b></font> / <font color="#6ed0ff"><b>Ekstrak Regex</b></font> <br>
+        2. <minor><b>Uraikan CSV</b></minor> / <minor><b>Uraikan XML</b></minor> / <minor><b>Ekstrak Regex</b></minor> <br>
           &ensp; Uraikan dan dapatkan daftar nomor. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Ganti Nomor</b></font> (opsional) <br>
+        3. <minor><b>Ganti Nomor</b></minor> (opsional) <br>
           &ensp; Ubah format nomor <br>
           &ensp; Kasus penggunaan: <br>
-        <font color="#888888">
+        <sample>
             &emsp; Saat memigrasi nomor dari aplikasi lain, konversi format seperti <b>123#####</b> ke regex <b>123.....</b> atau <b>123.*</b> <br>
-        </font>
+        </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Impor ke Database Spam</b></font> / <font color="#6ed0ff"><b>Impor ke Aturan Regex</b></font> <br>
+        4. <minor><b>Impor ke Database Spam</b></minor> / <minor><b>Impor ke Aturan Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Contoh</b></font>: <br>
+        <title><b>Contoh</b></title>: <br>
           - Preset <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Contoh online lainnya: <br>
           - <a href=\"%s\">Teks biasa</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath belum didukung, gunakan <font color="#6ed0ff"><b>Ekstrak Regex</b></font> sebagai gantinya.
+          - <a href=\"%s\">Json</a> - JsonPath belum didukung, gunakan <minor><b>Ekstrak Regex</b></minor> sebagai gantinya.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Tutorial regex untuk non-programmer. <br>
         <br>
-        <font color="#00BFFF"><b>Tingkat Dasar - Wildcard</b></font> <br>
-        &ensp; Setiap kali Anda ingin menggunakan wildcard <font color="#888888"><b>*</b></font>, letakkan titik <font color="#888888"><b>.</b></font> sebelumnya, seperti <font color="#888888">.*<b></b></font>, ini seharusnya mencakup sebagian besar kasus penggunaan. <br>
+        <title><b>Tingkat Dasar - Wildcard</b></title> <br>
+        &ensp; Setiap kali Anda ingin menggunakan wildcard <sample><b>*</b></sample>, letakkan titik <sample><b>.</b></sample> sebelumnya, seperti <sample><b>.*</b></sample>, ini seharusnya mencakup sebagian besar kasus penggunaan. <br>
         <br>
-        <font color="#00BFFF"><b>Lanjutan - Menggunakan AI</b></font> <br>
+        <title><b>Lanjutan - Menggunakan AI</b></title> <br>
         &ensp; Misalnya, untuk mendapatkan regex berikut untuk verifikasi SMS: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Tanya AI: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Coba online</b></font> <br>
+        <highlight><b>Coba online</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Ketuk di sini</big></a> untuk menyalin prompt di atas <br>
           &ensp; 2. <a href=\"try_it\"><big>Ketuk di sini</big></a> untuk membuka AI online <br>
     ]]>

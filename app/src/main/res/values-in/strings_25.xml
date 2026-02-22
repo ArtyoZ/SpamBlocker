@@ -19,9 +19,9 @@
         Tag ini terikat pada alur kerja dan akan dihapus secara otomatis ketika alur kerja dihapus. <br>
         <br>
         <b>Kasus penggunaan</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Dalam skenario pembaruan inkremental, variabel mirip pointer harus disimpan dan digunakan kembali pada run berikutnya.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">Muat Tag</string>
@@ -45,13 +45,13 @@
         <br>
         <b>Opsi</b> <br>
         <br>
-        <font color="#00BFFF"><b>Tipe Penguraian</b></font> <br>
+        <title><b>Tipe Penguraian</b></title> <br>
         Uraikan nilai tag, ini mendukung regex dan xpath. <br>
         <br>
-        <font color="#00BFFF"><b>Nama Tag</b></font> <br>
+        <title><b>Nama Tag</b></title> <br>
         Nama tag yang akan dihasilkan. <br>
-        Misalnya, jika nama tag adalah <font color="#03DAC5">my_token</font>,
-         maka Anda dapat menggunakan <font color="#03DAC5">{my_token}</font> dalam kueri HTTP berikutnya. <br>
+        Misalnya, jika nama tag adalah <highlight>my_token</highlight>,
+         maka Anda dapat menggunakan <highlight>{my_token}</highlight> dalam kueri HTTP berikutnya. <br>
     ]]>
     </string>
     <string name="max"><short>Maks</short></string>
@@ -66,15 +66,15 @@
         Sorot stempel waktu dengan warna berbeda berdasarkan seberapa baru catatan tersebut. <br>
         <br>
         <b>Kasus penggunaan</b>: <br>
-        &ensp; <font color="#888888">Tinjau panggilan hari ini pada malam hari dengan memeriksa semua catatan yang memiliki stempel waktu biru. </font>
+        &ensp; <sample>Tinjau panggilan hari ini pada malam hari dengan memeriksa semua catatan yang memiliki stempel waktu biru. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        Harus berupa <font color="#00BFFF"><no_translate>today</no_translate></font> atau
+        Harus berupa <title><no_translate>today</no_translate></title> atau
         angka yang diikuti <b><no_translate>min</no_translate></b>
-        (misalnya <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (misalnya <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">Nilai tidak valid, lihat tooltip untuk bantuan</string>
@@ -85,34 +85,34 @@
         <br>
         Secara Default, <br>
         <br>
-        - <font color="#03DAC5">Whitelist rules</font> memiliki prioritas <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">Contoh: Kontak, RepeatedCall, RecentApps, dll </font><br>
+        - <highlight>Whitelist rules</highlight> memiliki prioritas <priority>10</priority> <br>
+        &ensp; <sample>Contoh: Kontak, RepeatedCall, RecentApps, dll </sample><br>
         <br>
-        - <font color="#fa7f71">Blacklist rules</font> memiliki prioritas <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">Contoh: STIR, Database, dll </font> <br>
+        - <error>Blacklist rules</error> memiliki prioritas <priority>0</priority> <br>
+        &ensp; <sample>Contoh: STIR, Database, dll </sample> <br>
         <br>
         Ketika keduanya diaktifkan, aturan whitelist akan menggantikan aturan blacklist karena 10 > 0. <br>
         <br>
-        Untuk aturan regex, prioritas dapat diatur ke angka berapa pun antara <font color="#ea86ff">-2147483648</font>
-          dan <font color="#ea86ff">2147483647</font>. <br>
+        Untuk aturan regex, prioritas dapat diatur ke angka berapa pun antara <priority>-2147483648</priority>
+          dan <priority>2147483647</priority>. <br>
         Berbagai aturan dapat memiliki prioritas yang sama selama mereka bertipe sama, namun,
-          <font color="#ffa500"><b>jangan pernah memberikan prioritas yang sama kepada
-          whitelist dan blacklist rules</b></font>, karena dapat menyebabkan perilaku acak. <br>
+          <warn><b>jangan pernah memberikan prioritas yang sama kepada
+          whitelist dan blacklist rules</b></warn>, karena dapat menyebabkan perilaku acak. <br>
         <br>
-        Fitur <font color="#00BFFF">Meeting Mode</font> memiliki prioritas <font color="#ea86ff">20</font> secara default,
+        Fitur <title>Meeting Mode</title> memiliki prioritas <priority>20</priority> secara default,
           karena seharusnya memblokir semua panggilan selama rapat. <br>
-        Dan <font color="#ea86ff">-1</font> untuk <font color="#00BFFF">Instant Query</font>,
+        Dan <priority>-1</priority> untuk <title>Instant Query</title>,
           sehingga hanya diperiksa setelah panggilan melewati semua filter lokal. <br>
         <br>
         <b>Contoh penggunaan</b> penyesuaian prioritas: <br>
         <br>
-        - <font color="#888888">Selalu blokir nomor tertentu, tidak peduli apakah berulang</font> <br>
-         &ensp; Atur aturan dengan prioritas > 10 untuk menggantikan <font color="#00BFFF">Repeated Call</font>. <br>
+        - <sample>Selalu blokir nomor tertentu, tidak peduli apakah berulang</sample> <br>
+         &ensp; Atur aturan dengan prioritas > 10 untuk menggantikan <title>Repeated Call</title>. <br>
         <br>
-        - <font color="#888888">Selalu izinkan nomor</font> <br>
-         &ensp; Atur menjadi > 20 untuk menggantikan <font color="#00BFFF">Meeting Mode</font>. <br>
+        - <sample>Selalu izinkan nomor</sample> <br>
+         &ensp; Atur menjadi > 20 untuk menggantikan <title>Meeting Mode</title>. <br>
         <br>
-        - <font color="#888888">Uji aturan regex</font> <br>
+        - <sample>Uji aturan regex</sample> <br>
          &ensp; Atur menjadi 999 untuk menggantikan semua filter lain sehingga Anda tidak perlu menonaktifkannya satu per satu secara sementara.
     ]]>
     </string>

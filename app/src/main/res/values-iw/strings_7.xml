@@ -22,26 +22,26 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>מספר טלפון</b></font>:<br>
+        <title><b>מספר טלפון</b></title>:<br>
         &ensp; מצב ברירת המחדל, הביטוי הרגולרי יתאים למספר הטלפון.<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>אנשי קשר</b></font>:<br>
+        <title><b>אנשי קשר</b></title>:<br>
         &ensp; הביטוי הרגולרי יתאים לשם איש הקשר המשויך למספר הנכנס.<br>
         &ensp;  - מקרה שימוש:<br>
-        &emsp; <font color="#888888">חסום את כל מי שאינו איש קשר בסוף השבוע באמצעות הביטוי הרגולרי `.*`.</font><br>
+        &emsp; <sample>חסום את כל מי שאינו איש קשר בסוף השבוע באמצעות הביטוי הרגולרי `.*`.</sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>קבוצת אנשי קשר</b></font>:<br>
+        <title><b>קבוצת אנשי קשר</b></title>:<br>
         &ensp; הביטוי הרגולרי יתאים לשם קבוצת אנשי הקשר המשויכת למספר הנכנס,
                  וישפיע על כל אנשי הקשר בקבוצה זו, כך שאינך צריך להוסיף אותם בנפרד,
                  ואין צורך לעדכן אותו גם כאשר יש שינויים בכוח אדם.<br>
         &ensp;  - מקרה שימוש:<br>
-        &emsp; <font color="#888888">חסום את כל העמיתים לעבודה בסוף השבוע על ידי חסימת קבוצת אנשי הקשר \"עבודה\".</font> <br>
+        &emsp; <sample>חסום את כל העמיתים לעבודה בסוף השבוע על ידי חסימת קבוצת אנשי הקשר \"עבודה\".</sample> <br>
         ]]>
     </string>
 </resources>

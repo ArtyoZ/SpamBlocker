@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Assegura\'t de <font color="#fa7f71"><b>desactivar les notificacions de l\'aplicació de SMS</b></font> a la configuració del sistema
+        Assegura\'t de <error><b>desactivar les notificacions de l\'aplicació de SMS</b></error> a la configuració del sistema
          per evitar notificacions duplicades. <br>
         <br>
         Si l\'aplicació de SMS exigeix permís de notificació, pots mantenir-lo concedit
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Nom del Trucador</b></font>:<br>
+        <title><b>Nom del Trucador</b></title>:<br>
         &ensp; L\'expressió regular coincidirà amb el nom de visualització del trucador (CNAP). <br>
         <br>
         Al registre de l\'historial de trucades, el nom del trucador apareixerà després del número de telèfon entre parèntesis si existeix, com ara: <br>
-        &ensp; <font color="#888888">12345 (Nom de Visualització)</font> <br>
+        &ensp; <sample>12345 (Nom de Visualització)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">Nom del Trucador</string>
@@ -45,13 +45,13 @@
     <string name="explanation_forwarded_call">
         <![CDATA[
         Això és <b>específic de l\'operador</b>, alguns operadors formaten les trucades desviades com dos números concatenats amb un \"&\",
-         com ara <font color="#888888">222&111</font>. <br>
+         com ara <sample>222&111</sample>. <br>
         <br>
         En aquest format: <br>
-        &ensp; - La primera part (<font color="#888888">222</font>) és normalment el número de desviació. <br>
-        &ensp; - La segona part (<font color="#888888">111</font>) és el número original. <br>
+        &ensp; - La primera part (<sample>222</sample>) és normalment el número de desviació. <br>
+        &ensp; - La segona part (<sample>111</sample>) és el número original. <br>
         <br>
-        També podria haver-hi <font color="#888888">333&111</font> i <font color="#888888">444&111</font>,
+        També podria haver-hi <sample>333&111</sample> i <sample>444&111</sample>,
          on el número d\'origen es manté igual i el número de desviació canvia.
         ]]>
     </string>
@@ -66,14 +66,14 @@
         <br>
         <b>Opcions</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Cru</b></font> <br>
-        Consulta/informa el número cru (<font color="#888888">222&111</font>), si l\'API admet aquest format. <br>
+        <title><b>Cru</b></title> <br>
+        Consulta/informa el número cru (<sample>222&111</sample>), si l\'API admet aquest format. <br>
         <br>
-        <font color="#00BFFF"><b>Original</b></font> <br>
-        Consulta/informa el número original (<font color="#888888">111</font>), això és una solució alternativa per a les API que no admeten el format cru. <br>
+        <title><b>Original</b></title> <br>
+        Consulta/informa el número original (<sample>111</sample>), això és una solució alternativa per a les API que no admeten el format cru. <br>
         <br>
-        <font color="#00BFFF"><b>Desviació</b></font> <br>
-        Consulta/informa el número de desviació (<font color="#888888">222</font>). <br>
+        <title><b>Desviació</b></title> <br>
+        Consulta/informa el número de desviació (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">Aquest número desviat s\'ha modificat a %s.</string>
@@ -82,7 +82,7 @@
     <string name="geo_location_rule">Regla d\'ubicació geogràfica</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Ubicació geogràfica</b></font>:<br>
+        <title><b>Ubicació geogràfica</b></title>:<br>
         &ensp; L\'expressió regular coincidirà amb l\'ubicació geogràfica del número. <br>
         <br>
         &ensp; Això es basa en la biblioteca de Google <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -106,8 +106,8 @@
         <br>
         Substitueix el marcador ___ amb la teva regió real. <br>
         <br>
-        La sintaxi <font color="#fa7f71">(?!___$).*</font> significa: <br>
-        &ensp; Coincideix qualsevol text que no sigui <font color="#fa7f71">___</font>.
+        La sintaxi <error>(?!___$).*</error> significa: <br>
+        &ensp; Coincideix qualsevol text que no sigui <error>___</error>.
         ]]>
     </string>
 </resources>

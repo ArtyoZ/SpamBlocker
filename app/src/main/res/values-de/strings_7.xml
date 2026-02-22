@@ -22,24 +22,24 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>Telefonnummer</b></font>:<br>
+        <title><b>Telefonnummer</b></title>:<br>
         &ensp; Der Standardmodus, der Regex wird mit der Telefonnummer abgeglichen.<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>Kontakte</b></font>:<br>
+        <title><b>Kontakte</b></title>:<br>
         &ensp; Der Regex wird mit dem Kontaktnamen abgeglichen, der der eingehenden Nummer zugeordnet ist.<br>
         &ensp;  - Anwendungsfall:<br>
-        &emsp; <font color="#888888">Alle Nicht-Kontakte am Wochenende mit Regex `.*` blockieren. </font><br>
+        &emsp; <sample>Alle Nicht-Kontakte am Wochenende mit Regex `.*` blockieren. </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>Kontaktgruppe</b></font>:<br>
+        <title><b>Kontaktgruppe</b></title>:<br>
         &ensp; Der Regex wird mit dem Namen der Kontaktgruppe abgeglichen, der der eingehenden Nummer zugeordnet ist, wodurch alle Kontakte in dieser Gruppe betroffen sind, sodass Sie sie nicht einzeln hinzufügen müssen und es auch bei Personaländerungen nicht aktualisiert werden muss.<br>
         &ensp;  - Anwendungsfall:<br>
-        &emsp; <font color="#888888">Alle Kollegen am Wochenende blockieren, indem die Kontaktgruppe \"Arbeit\" blockiert wird. </font> <br>
+        &emsp; <sample>Alle Kollegen am Wochenende blockieren, indem die Kontaktgruppe \"Arbeit\" blockiert wird. </sample> <br>
         ]]>
     </string>
 </resources>

@@ -36,7 +36,7 @@
         <br>
         A simple vista, pots verificar sense esforç si els registres de l\'historial estan coberts per les regles, de manera que no cal que els provis individualment. <br>
         <br>
-        <font color="#ffa500">Nota:</font><br>
+        <warn>Nota:</warn><br>
         Això pot afectar el rendiment quan hi ha massa regles de regex. <br>
         <br>
         <b>Exemples:</b> <br>
@@ -46,7 +46,7 @@
         &ensp; - La segona icona de SMS vermella indica que aquest contingut de SMS serà bloquejat per una regla de contingut. <br>
         &ensp; - La tercera icona de base de dades vermella indica que aquest número existeix a la base de dades de números de correu brossa. <br>
         <br>
-        Aquestes icones estan ordenades per <font color="#ea86ff"><b>prioritat</b></font>; la <b>primera</b> icona indica
+        Aquestes icones estan ordenades per <priority><b>prioritat</b></priority>; la <b>primera</b> icona indica
         el resultat general. Aquesta regla de número té una prioritat més alta, el missatge SMS finalment serà permès per ella.<br>
         <br>
         <img src=\'ic_history_indicator_2\'/> <br>
@@ -64,7 +64,7 @@
         <![CDATA[
         Els missatges MMS solen ser correu brossa, no cal activar-los tret que els facis servir realment.<br>
         <br>
-        <font color="#ffa500">Nota:</font><br>
+        <warn>Nota:</warn><br>
         Els missatges de grup són MMS, no SMS.<br>
         <br>
         Els MMS es tractaran com a SMS, només es processarà el contingut de text,
@@ -84,28 +84,28 @@
           de verificacions OTP (contrasenya d\'un sol ús).<br>
         <br>
         Per exemple, missatges SMS com:<br>
-        &ensp; <font color="#888888">El vostre OTP és: 1234.</font><br>
-        &ensp; <font color="#888888">Aquest és el vostre codi de verificació: 1234.</font><br>
-        &ensp; <font color="#888888">1234 és el vostre codi de validació.</font><br>
+        &ensp; <sample>El vostre OTP és: 1234.</sample><br>
+        &ensp; <sample>Aquest és el vostre codi de verificació: 1234.</sample><br>
+        &ensp; <sample>1234 és el vostre codi de validació.</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Expressió regular del contingut</font></h5>
+        <h5><title>- Expressió regular del contingut</title></h5>
         Aquesta funció només s\'aplica als missatges que coincideixen amb aquesta expressió regular; una expressió regular típica seria: <br>
-        <font color="#fa7f71">.*(otp|code).*</font><br>
+        <error>.*(otp|code).*</error><br>
         <br>
-        <h5><font color="#00BFFF">- Interval</font></h5>
+        <h5><title>- Interval</title></h5>
         Si arriba un missatge OTP posterior dins d\'aquest interval de temps, es considera
           part de l\'atac de bombardeig i es bloquejarà.<br>
         (per defecte: 30 segons)<br>
         <br>
         Això bloquejarà tots els bombardeigs següents, excepte el primer.<br>
         <br>
-        <h5><font color="#00BFFF">- Protecció de la pantalla de bloqueig</font></h5>
+        <h5><title>- Protecció de la pantalla de bloqueig</title></h5>
         Activa això per bloquejar tots els bombardeigs en el mode de pantalla de bloqueig, inclòs el primer. <br>
         <br>
         Normalment, la pantalla hauria d\'estar desbloquejada mentre s\'espera un codi de verificació.
         Quan aquests missatges arriben mentre el dispositiu està en mode de pantalla de bloqueig, és probable que siguin bombardeigs.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritat: 20</b></font>
+        <priority><b>Prioritat: 20</b></priority>
         ]]>
     </string>
     <string name="lockscreen_protection"><short>Protecció pantalla bloqueig</short></string>

@@ -12,53 +12,53 @@
     <![CDATA[
         İş akışlarını kullanarak yerel veya uzak dosyalardan numara içe aktarın. <br>
         <br>
-        <font color="#00BFFF"><b>Tipik bir kurulum</b></font>: <br>
+        <title><b>Tipik bir kurulum</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Dosya Oku</b></font> / <font color="#6ed0ff"><b>Http İsteği</b></font> <br>
+        1. <minor><b>Dosya Oku</b></minor> / <minor><b>Http İsteği</b></minor> <br>
           &ensp; Dosya içeriğini alın. <br>
           <br>
-        2. <font color="#6ed0ff"><b>CSV Ayrıştır</b></font> / <font color="#6ed0ff"><b>XML Ayrıştır</b></font> / <font color="#6ed0ff"><b>Regex Çıkar</b></font> <br>
+        2. <minor><b>CSV Ayrıştır</b></minor> / <minor><b>XML Ayrıştır</b></minor> / <minor><b>Regex Çıkar</b></minor> <br>
           &ensp; Ayrıştırın ve bir numara listesi alın. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Numara Değiştir</b></font> (isteğe bağlı) <br>
+        3. <minor><b>Numara Değiştir</b></minor> (isteğe bağlı) <br>
           &ensp; Numara formatını değiştirin <br>
           &ensp; Kullanım durumu: <br>
-          <font color="#888888">
+          <sample>
             &emsp; Diğer uygulamalardan numara taşırken, <b>123#####</b> gibi formatları <b>123.....</b> veya <b>123.*</b> regex\'ine dönüştürün <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Spam Veritabanına İçe Aktar</b></font> / <font color="#6ed0ff"><b>Regex Kuralına İçe Aktar</b></font> <br>
+        4. <minor><b>Spam Veritabanına İçe Aktar</b></minor> / <minor><b>Regex Kuralına İçe Aktar</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Örnekler</b></font>: <br>
+        <title><b>Örnekler</b></title>: <br>
           - Hazır ayar <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Daha fazla çevrimiçi örnek: <br>
           - <a href=\"%s\">Düz metin</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath henüz desteklenmiyor, bunun yerine <font color="#6ed0ff"><b>Regex Çıkar</b></font> kullanın.
+          - <a href=\"%s\">Json</a> - JsonPath henüz desteklenmiyor, bunun yerine <minor><b>Regex Çıkar</b></minor> kullanın.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Programcı olmayanlar için regex öğreticisi. <br>
         <br>
-        <font color="#00BFFF"><b>Giriş Seviyesi - Joker Karakter</b></font> <br>
-        &ensp; Bir joker karakter <font color="#888888"><b>*</b></font> kullanmak istediğinizde, önüne bir nokta <font color="#888888"><b>.</b></font> koyun, örneğin <font color="#888888">.*<b></b></font>, bu çoğu kullanım durumunu kapsamalıdır. <br>
+        <title><b>Giriş Seviyesi - Joker Karakter</b></title> <br>
+        &ensp; Bir joker karakter <sample><b>*</b></sample> kullanmak istediğinizde, önüne bir nokta <sample><b>.</b></sample> koyun, örneğin <sample><b>.*</b></sample>, bu çoğu kullanım durumunu kapsamalıdır. <br>
         <br>
-        <font color="#00BFFF"><b>İleri Seviye - Yapay Zeka Kullanımı</b></font> <br>
+        <title><b>İleri Seviye - Yapay Zeka Kullanımı</b></title> <br>
         &ensp; Örneğin, SMS doğrulamaları için şu regex\'i elde etmek için: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Yapay zekaya sor: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Çevrimiçi deneyin</b></font> <br>
+        <highlight><b>Çevrimiçi deneyin</b></highlight> <br>
           &ensp; 1. Yukarıdaki istemi kopyalamak için <a href=\"copy\"><big>Buraya dokunun</big></a> <br>
           &ensp; 2. Çevrimiçi yapay zekayı başlatmak için <a href=\"try_it\"><big>Buraya dokunun</big></a> <br>
     ]]>

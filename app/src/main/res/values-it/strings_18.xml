@@ -21,9 +21,9 @@
         - Altrimenti, il flusso di lavoro terminerà.<br>
         <br>
         Caso d\'uso: <br>
-        <font color="#888888">
+        <sample>
         &ensp; Attiva/disattiva alcune regole dopo aver ricevuto SMS di reperibilità o non reperibilità. <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">L\'evento SMS %s è stato attivato.</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         Consenti chiamate da numeri a cui hai risposto in precedenza.<br>
         <br>
-        <h6><font color="#ffa500">Avviso</font></h6>
+        <h6><warn>Avviso</warn></h6>
         %s<br>
         <br>
         <b>Opzioni:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Entro Giorni</font></h6>
-        Le chiamate avvenute prima di <font color="#03DAC5">%d giorni</font> vengono ignorate.<br>
+        <h6><title>- Entro Giorni</title></h6>
+        Le chiamate avvenute prima di <highlight>%d giorni</highlight> vengono ignorate.<br>
         <br>
-        <h6><font color="#00BFFF">- Durata Minima</font></h6>
-        Le chiamate durate meno di <font color="#03DAC5">%d secondi</font> vengono ignorate.<br>
+        <h6><title>- Durata Minima</title></h6>
+        Le chiamate durate meno di <highlight>%d secondi</highlight> vengono ignorate.<br>
         <br>
-        <font color="#ea86ff"><b>Priorità: 10</b></font>
+        <priority><b>Priorità: 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">Non abilitare questa funzione per anziani o per chiunque sia meno in grado di identificare le chiamate fraudolente, in quanto ciò potrebbe esporli a ripetute chiamate fraudolente.</string>
@@ -75,9 +75,9 @@
         Modifica temporaneamente le regole regex in base agli eventi del calendario. <br>
         <br>
         <b>Caso d\'uso</b>:<br>
-        &ensp; <font color="#888888">Un lavoratore a turni lavora il turno diurno per due giorni,
+        &ensp; <sample>Un lavoratore a turni lavora il turno diurno per due giorni,
           poi il turno notturno per i due successivi.<br>
-        &ensp; Alcune regole devono essere disattivate o attivate durante i diversi orari di lavoro.</font><br>
+        &ensp; Alcune regole devono essere disattivate o attivate durante i diversi orari di lavoro.</sample><br>
         <br>
         Questo creerà sia una regola regex che un flusso di lavoro, la regola verrà abilitata al volo durante lo specifico evento del calendario. <br>
         ]]>

@@ -41,25 +41,25 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        Bloquea todas las llamadas internacionales excepto las de tu propio país con la regex <font color="#fa7f71"><b>\\+(?!39).*</b></font>,
+        Bloquea todas las llamadas internacionales excepto las de tu propio país con la regex <error><b>\\+(?!39).*</b></error>,
           las llamadas que pasen esta regla no serán permitidas inmediatamente, serán verificadas por otras reglas. <br>
         <br>
-        <font color="#ffa500">Cambia</font> <b>39</b> por el código de tu país. <br>
+        <warn>Cambia</warn> <b>39</b> por el código de tu país. <br>
         <br>
         Desglose de la Regex: <br>
         &ensp; - La bandera de regex <b>Número Crudo</b> preserva el <b>+</b> inicial, de lo contrario, se eliminará antes de la verificación. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> coincide con cualquier número que comience con <b>+</b> y no vaya seguido de <b>39</b> (números extranjeros).
+        &ensp; - <error><b>\\+(?!39)</b></error> coincide con cualquier número que comience con <b>+</b> y no vaya seguido de <b>39</b> (números extranjeros).
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         También conocido como <b>Número Desconocido</b> o <b>Número Vacío</b>, son cadenas vacías que
          pueden ser igualadas por cualquiera de: <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; un campo de regex <font color="#fa7f71">en blanco</font>. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; un campo de regex <error>en blanco</error>. <br>
         <br>
-        La <font color="#ea86ff">prioridad</font> se establece en <font color="#ea86ff">20</font> para anular otras funciones como <b>Llamada Repetida</b>,
+        La <priority>prioridad</priority> se establece en <priority>20</priority> para anular otras funciones como <b>Llamada Repetida</b>,
         de modo que siempre se bloquean incluso si se repiten.
         ]]>
     </string>
@@ -83,7 +83,7 @@
         <![CDATA[
         Este interruptor es para deshabilitar rápidamente la aplicación, útil cuando esperas una llamada o mensaje específico. <br>
         <br>
-        También puedes activarlo/desactivarlo desde los <font color="#6ed0ff"><b>Ajustes rápidos desplegables</b></font>. <br>
+        También puedes activarlo/desactivarlo desde los <minor><b>Ajustes rápidos desplegables</b></minor>. <br>
         <br>
         El filtrado de llamadas y SMS también debe habilitarse por separado a continuación; solo funcionan cuando esto está habilitado.
         ]]>
@@ -99,10 +99,10 @@
          este mosaico personalizado afecta solo a reglas específicas. <br>
         <br>
         Esta configuración involucra tanto una regla de expresión regular como un flujo de trabajo. Cuando el mosaico está: <br>
-        &ensp; - <font color="#03DAC5"><b>Activado</b></font> <br>
+        &ensp; - <highlight><b>Activado</b></highlight> <br>
         &emsp; Este flujo de trabajo se ejecutará antes de que se filtren las llamadas, habilitará la regla de expresión regular. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Desactivado</b></font> <br>
+        &ensp; - <sample><b>Desactivado</b></sample> <br>
         &emsp; Este flujo de trabajo nunca se ejecutará, la regla nunca funcionará. <br>
         <br>
         En resumen, <b>cuando el mosaico está activado, la regla está activada, y viceversa</b>.
@@ -117,8 +117,8 @@
         Requiere Android 12+. <br>
         <br>
         Esto añadirá dos reglas para la SIM 2: <br>
-        &ensp; - Permitir contactos, <font color="#ea86ff">prioridad 12</font>. <br>
-        &ensp; - Bloquear todo lo demás, <font color="#ea86ff">prioridad 11</font>.
+        &ensp; - Permitir contactos, <priority>prioridad 12</priority>. <br>
+        &ensp; - Bloquear todo lo demás, <priority>prioridad 11</priority>.
         Esto anula configuraciones como Llamada Repetida, por lo que siempre serán bloqueadas incluso si se repiten.
         ]]>
     </string>

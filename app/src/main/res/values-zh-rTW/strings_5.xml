@@ -30,13 +30,13 @@
         <br>
         <b>選項：</b><br>
         <br>
-        <h6><font color="#00BFFF">- 指定天數內</font></h6>
-        會忽略 <font color="#03DAC5">%s 天</font> 之前的通話紀錄。<br>
+        <h6><title>- 指定天數內</title></h6>
+        會忽略 <highlight>%s 天</highlight> 之前的通話紀錄。<br>
         <br>
-        <h6><font color="#00BFFF">- 包含簡訊</font></h6>
+        <h6><title>- 包含簡訊</title></h6>
         啟用後，傳送給該號碼的簡訊也會列入判斷。<br>
         <br>
-        <font color="#ea86ff"><b>優先順序：10</b></font>
+        <priority><b>優先順序：10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -46,12 +46,12 @@
         典型的使用案例：<br>
         &emsp; 您剛在 PizzaApp 點了披薩，不久後他們打電話通知您要退款，因為他們要打烊了。如果在此啟用了 PizzaApp，這通電話就會被放行。<br>
         <br>
-        預設設定 <font color="03DAC5"><b>5 分鐘</b></font> 表示如果任何應用程式在 5 分鐘內被使用過，就會放行來電，
+        預設設定 <highlight><b>5 分鐘</b></highlight> 表示如果任何應用程式在 5 分鐘內被使用過，就會放行來電，
         「使用過」指的是啟動、停用、最小化或關閉應用程式。<br>
         <br>
         僅適用於來電，<b>不適用</b>於簡訊。<br>
         <br>
-        <font color="#ea86ff"><b>優先順序：10</b></font>
+        <priority><b>優先順序：10</b></priority>
         ]]>
     </string>
     <string-array name="block_type_list">
@@ -61,21 +61,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>拒絕</b></font>： <br>
+        - <title><b>拒絕</b></title>： <br>
          與按下拒絕按鈕相同。它會完全靜音運作，鎖定螢幕不會亮起。<br>
         <br>
-        - <font color="#00BFFF"><b>靜音</b></font>： <br>
+        - <title><b>靜音</b></title>： <br>
          它會在背景靜音響鈴，讓來電者感覺您無法接聽電話並錯過了通話。 <br>
         <br>
          如果您遇到重複的垃圾電話，這也可能有所幫助，它會延長通話時間，降低垃圾電話者的效率，潛在地阻止他們再次致電給您。<br>
         <br>
-        - <font color="#00BFFF"><b>掛斷</b></font>： <br>
+        - <title><b>掛斷</b></title>： <br>
         接聽並掛斷電話，以防止其轉到語音信箱。 <br>
         <br>
         當正在通話時收到垃圾電話，它將切換到「拒絕」
          以避免掛斷正在進行的通話。 <br>
         <br>
-        <font color="#FFA500">注意</font> 鎖定螢幕可能會短暫亮起，
+        <warn>注意</warn> 鎖定螢幕可能會短暫亮起，
         您也可能會聽到通話結束音（有些手機提供靜音此聲音的選項）。 <br>
         <br>
         - <b>延遲</b>： <br>

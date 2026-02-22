@@ -43,13 +43,13 @@
         <br>
         <b>Seçenekler:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Frekans</h6>
-        Varsayılan ayar <font color="#03DAC5"><b>1 / 5 Dakika</b></font>, 5 dakika içinde ikinci çağrıya izin verileceği anlamına gelir. <br>
+        <h6><title>- Frekans</title></h6>
+        Varsayılan ayar <highlight><b>1 / 5 Dakika</b></highlight>, 5 dakika içinde ikinci çağrıya izin verileceği anlamına gelir. <br>
         <br>
-        <h6><font color="#00BFFF">- SMS Dahil Et</font></h6>
+        <h6><title>- SMS Dahil Et</title></h6>
         Etkinleştirildiğinde, o numaradan SMS mesajları almak da sayılır.<br>
         <br>
-        <font color="#ea86ff"><b>Öncelik: 10</b></font>
+        <priority><b>Öncelik: 10</b></priority>
         ]]>
     </string>
 

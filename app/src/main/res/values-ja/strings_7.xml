@@ -22,26 +22,26 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>電話番号</b></font>:<br>
+        <title><b>電話番号</b></title>:<br>
         &ensp; デフォルトモードでは、正規表現は電話番号に対してマッチします。<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>連絡先</b></font>:<br>
+        <title><b>連絡先</b></title>:<br>
         &ensp; 正規表現は、着信番号に関連付けられた連絡先名に対してマッチします。<br>
         &ensp;  - ユースケース:<br>
-        &emsp; <font color="#888888">週末に正規表現`.*`ですべての非連絡先をブロックします。 </font><br>
+        &emsp; <sample>週末に正規表現`.*`ですべての非連絡先をブロックします。 </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>連絡先グループ</b></font>:<br>
+        <title><b>連絡先グループ</b></title>:<br>
         &ensp; 正規表現は、着信番号に関連付けられた連絡先グループ名に対してマッチし、
                  そのグループ内のすべての連絡先に影響を与えます。そのため、個別に連絡先を追加する必要がなく、
                  人事異動があっても更新する必要がありません。<br>
         &ensp;  - ユースケース:<br>
-        &emsp; <font color="#888888">週末に連絡先グループ「work」をブロックすることで、すべての同僚をブロックします。 </font> <br>
+        &emsp; <sample>週末に連絡先グループ「work」をブロックすることで、すべての同僚をブロックします。 </sample> <br>
         ]]>
     </string>
 </resources>

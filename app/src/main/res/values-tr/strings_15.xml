@@ -35,7 +35,7 @@
         <br>
         Hızlıca bakarak, geçmiş kayıtlarının kurallar tarafından kapsanıp kapsanmadığını zahmetsizce doğrulayabilir, böylece her birini tek tek test etmenize gerek kalmaz. <br>
         <br>
-        <font color="#ffa500">Not:</font><br>
+        <warn>Not:</warn><br>
         Çok fazla regex kuralı olduğunda bu, performansı etkileyebilir. <br>
         <br>
         <b>Örnekler:</b> <br>
@@ -45,7 +45,7 @@
         &ensp; - İkinci kırmızı SMS simgesi, bu SMS içeriğinin bir içerik kuralı tarafından engelleneceğini belirtir. <br>
         &ensp; - Üçüncü kırmızı veritabanı simgesi, bu telefon numarasının spam telefon numarası veritabanında bulunduğunu belirtir. <br>
         <br>
-        Bu simgeler <font color="#ea86ff"><b>önceliğe</b></font> göre sıralanır, <b>ilk</b> simge genel sonucu gösterir. Bu telefon numarası kuralı daha yüksek bir önceliğe sahiptir, SMS mesajına nihayetinde bu kural tarafından izin verilecektir.<br>
+        Bu simgeler <priority><b>önceliğe</b></priority> göre sıralanır, <b>ilk</b> simge genel sonucu gösterir. Bu telefon numarası kuralı daha yüksek bir önceliğe sahiptir, SMS mesajına nihayetinde bu kural tarafından izin verilecektir.<br>
         <br>
         <img src=\'ic_history_indicator_2\'/> <br>
         &ensp; - Bir içerik kuralı tarafından izin verilecektir. <br>
@@ -63,7 +63,7 @@
         <![CDATA[
         MMS mesajları genellikle spam\'dir, gerçekten kullanmadığınız sürece etkinleştirilmesi gereksizdir.<br>
         <br>
-        <font color="#ffa500">Not:</font><br>
+        <warn>Not:</warn><br>
         Grup mesajları SMS değil, MMS\'dir.<br>
         <br>
         MMS, SMS olarak ele alınacaktır, yalnızca metin içeriği işlenecektir,
@@ -82,27 +82,27 @@
         Özellikle OTP (Tek Kullanımlık Şifre) doğrulamalarından oluşan büyük, sürekli SMS mesajı akınlarını önleyin.<br>
         <br>
         Örneğin, aşağıdaki gibi SMS mesajları:<br>
-        &ensp; <font color="#888888">OTP\'niz: 1234.</font><br>
-        &ensp; <font color="#888888">Doğrulama kodunuz: 1234.</font><br>
-        &ensp; <font color="#888888">1234 doğrulama kodunuzdur.</font><br>
+        &ensp; <sample>OTP\'niz: 1234.</sample><br>
+        &ensp; <sample>Doğrulama kodunuz: 1234.</sample><br>
+        &ensp; <sample>1234 doğrulama kodunuzdur.</sample><br>
         <br>
-        <h5><font color="#00BFFF">- İçerik regex</font></h5>
+        <h5><title>- İçerik regex</title></h5>
         Bu özellik yalnızca bu regex ile eşleşen mesajlara uygulanır, tipik bir regex şöyle olacaktır: <br>
-        <font color="#fa7f71">.*(otp|code).*</font><br>
+        <error>.*(otp|code).*</error><br>
         <br>
-        <h5><font color="#00BFFF">- Aralık</font></h5>
+        <h5><title>- Aralık</title></h5>
         Bu zaman aralığında sonraki bir OTP mesajı gelirse, bombardıman saldırısının bir parçası olarak kabul edilir ve engellenir.<br>
         (varsayılan: 30 saniye)<br>
         <br>
         Bu, ilk mesaj hariç, sonraki tüm bombaları engelleyecektir.<br>
         <br>
-        <h5><font color="#00BFFF">- Kilit ekranı koruması</font></h5>
+        <h5><title>- Kilit ekranı koruması</title></h5>
         İlk mesaj dahil olmak üzere, kilit ekranı modundaki tüm bombaları engellemek için bunu etkinleştirin. <br>
         <br>
         Genellikle, bir doğrulama kodu beklerken ekranınızın kilidi açılmış olmalıdır.
         Bu tür mesajlar cihaz kilit ekranı modundayken gelirse, büyük olasılıkla bomba mesajlardır.<br>
         <br>
-        <font color="#ea86ff"><b>Öncelik: 20</b></font>
+        <priority><b>Öncelik: 20</b></priority>
         ]]>
     </string>
     <string name="lockscreen_protection">Kilit ekranı koruması</string>

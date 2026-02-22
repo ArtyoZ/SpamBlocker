@@ -15,7 +15,7 @@
         <br>
         これは通話とSMSメッセージの両方に適用されます。<br>
         <br>
-        <font color="#ea86ff"><b>デフォルトの優先度: 0</b></font>
+        <priority><b>デフォルトの優先度: 0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

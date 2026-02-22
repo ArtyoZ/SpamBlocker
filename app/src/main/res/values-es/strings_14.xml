@@ -42,15 +42,15 @@
         <![CDATA[
         Solo se admiten las siguientes categorías de spam, cualquier otra categoría de la API debe asignarse a una de ellas.<br>
         <br>
-         - <font color="#03DAC5"><b>{válido}</b></font><br>
+         - <highlight><b>{válido}</b></highlight><br>
         &ensp; Reportar como número válido, no spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraude}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{encuesta}</b></font><br>
-         - <font color="#fa7f71"><b>{político}</b></font><br>
+         - <error><b>{fraude}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{encuesta}</b></error><br>
+         - <error><b>{político}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{otro}</b></font><br>
+         - <error><b>{otro}</b></error><br>
         &ensp; El tipo de spam de reserva, utilizado cuando ninguna de las categorías anteriores se aplica.<br>
         ]]>
     </string>
@@ -76,16 +76,16 @@
         Algunos servicios le enviarán un mensaje de texto primero para informarle que una llamada es inminente, generalmente dentro de un minuto.<br>
         <br>
         Por ejemplo, un mensaje SMS como:<br>
-        &ensp; <font color="#888888">[algún servicio] Te llamamos para informarte ..., siéntete libre de contestar.</font><br>
+        &ensp; <sample>[algún servicio] Te llamamos para informarte ..., siéntete libre de contestar.</sample><br>
         <br>
         Una expresión regular para ese mensaje sería:<br>
-        &ensp; <font color="#03DAC5"><b>.*contestar.*</b></font> <br>
+        &ensp; <highlight><b>.*contestar.*</b></highlight> <br>
         <br>
-        La configuración predeterminada <font color="#03DAC5"><b>120 Segundos</b></font> significa que todas las llamadas se permitirán en los próximos dos minutos después de recibir dicho mensaje.<br>
+        La configuración predeterminada <highlight><b>120 Segundos</b></highlight> significa que todas las llamadas se permitirán en los próximos dos minutos después de recibir dicho mensaje.<br>
         <br>
         Funciona tanto para SMS normales como para SMS flash (SMS de clase 0).<br>
         <br>
-        <font color="#ea86ff"><b>Prioridad: 10</b></font>
+        <priority><b>Prioridad: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Se usa el comodín `*` sin un punto anterior, ¿quiere decir `.*`?</string>

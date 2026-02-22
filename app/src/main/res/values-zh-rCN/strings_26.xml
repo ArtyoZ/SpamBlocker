@@ -12,53 +12,53 @@
     <![CDATA[
         使用工作流从本地或远程文件导入号码。<br>
         <br>
-        <font color="#00BFFF"><b>典型设置</b></font>: <br>
+        <title><b>典型设置</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>读取文件</b></font> / <font color="#6ed0ff"><b>Http 请求</b></font> <br>
+        1. <minor><b>读取文件</b></minor> / <minor><b>Http 请求</b></minor> <br>
           &ensp; 获取文件内容。<br>
           <br>
-        2. <font color="#6ed0ff"><b>解析 CSV</b></font> / <font color="#6ed0ff"><b>解析 XML</b></font> / <font color="#6ed0ff"><b>正则提取</b></font> <br>
+        2. <minor><b>解析 CSV</b></minor> / <minor><b>解析 XML</b></minor> / <minor><b>正则提取</b></minor> <br>
           &ensp; 解析文件并获取号码列表。<br>
           <br>
-        3. <font color="#6ed0ff"><b>替换号码</b></font> (可选) <br>
+        3. <minor><b>替换号码</b></minor> (可选) <br>
           &ensp; 修改号码格式 <br>
           &ensp; 使用场景： <br>
-          <font color="#888888">
+          <sample>
             &emsp; 从其他应用迁移号码时，将 <b>123#####</b> 等格式转换为正则表达式 <b>123.....</b> 或 <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>导入到骚扰电话数据库</b></font> / <font color="#6ed0ff"><b>导入到正则规则</b></font> <br>
+        4. <minor><b>导入到骚扰电话数据库</b></minor> / <minor><b>导入到正则规则</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>示例</b></font>: <br>
+        <title><b>示例</b></title>: <br>
           - 预设 <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         更多在线示例： <br>
           - <a href=\"%s\">纯文本</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - 暂不支持 JsonPath，请改用 <font color="#6ed0ff"><b>正则提取</b></font>。
+          - <a href=\"%s\">Json</a> - 暂不支持 JsonPath，请改用 <minor><b>正则提取</b></minor>。
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         面向非程序员的正则表达式教程。<br>
         <br>
-        <font color="#00BFFF"><b>入门 - 通配符</b></font> <br>
-        &ensp; 当您想使用通配符 <font color="#888888"><b>*</b></font> 时，请在它前面加一个点 <font color="#888888"><b>.</b></font>，例如 <font color="#888888">.*<b></b></font>，这应该能覆盖大多数使用场景。<br>
+        <title><b>入门 - 通配符</b></title> <br>
+        &ensp; 当您想使用通配符 <sample><b>*</b></sample> 时，请在它前面加一个点 <sample><b>.</b></sample>，例如 <sample><b>.*</b></sample>，这应该能覆盖大多数使用场景。<br>
         <br>
-        <font color="#00BFFF"><b>进阶 - 使用 AI</b></font> <br>
+        <title><b>进阶 - 使用 AI</b></title> <br>
         &ensp; 例如，要获取以下用于短信验证的正则表达式：<br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         向 AI 提问：<br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>在线试用</b></font> <br>
+        <highlight><b>在线试用</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>点击此处</big></a> 复制上述提示词 <br>
           &ensp; 2. <a href=\"try_it\"><big>点击此处</big></a> 启动在线 AI <br>
     ]]>

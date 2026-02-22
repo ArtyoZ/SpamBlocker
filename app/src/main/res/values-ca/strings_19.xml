@@ -8,10 +8,10 @@
         Aquest flux de treball s\'activarà automàticament amb una trucada entrant.<br>
         <br>
         Cas d\'ús: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Eliminar caràcters addicionals del número de telèfon abans de la detecció,
           ja que alguns operadors admeten números duals en una sola targeta SIM. <br>
-        </font>
+        </sample>
         <br>
         Una configuració típica:<br>
         - Esdeveniment de trucada <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         Modifica el número de trucada entrant abans que sigui comprovat per les regles.<br>
         <br>
-        <font color="#00BFFF"><b>Un cas d\'ús</b>:</font><br>
+        <title><b>Un cas d\'ús</b>:</title><br>
         &ensp; Alguns operadors de xarxa mòbil admeten números duals per a la mateixa targeta SIM, afegint dígits inicials addicionals al número secundari.<br>
-        &ensp;   Per exemple: 3312345679 pot convertir-se en <font color="#888888">123</font>3312345679. <br>
-        &ensp; El <font color="#888888">123</font> inicial s\'ha d\'eliminar abans de ser comprovat. <br>
+        &ensp;   Per exemple: 3312345679 pot convertir-se en <sample>123</sample>3312345679. <br>
+        &ensp; El <sample>123</sample> inicial s\'ha d\'eliminar abans de ser comprovat. <br>
         <br>
-        <font color="#00BFFF"><b>Una configuració típica:</b></font> <br>
+        <title><b>Una configuració típica:</b></title> <br>
         - <b>Esdeveniment de Trucada</b> <br>
         - <b>Substituir Número</b> <br>
-        &emsp; de: <font color="#888888">^123</font> <br>
-        &emsp; a: <font color="#888888">deixar buit</fonts> <br>
+        &emsp; de: <sample>^123</sample> <br>
+        &emsp; a: <sample>deixar buit</sample> <br>
         ]]>
     </string>
     <string name="blocked">Blocat</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         Els canals de notificació integrats: <br>
         <br>
-        <font color="#00BFFF"><b>Cap</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>Cap</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; Cap notificació. <br>
         <br>
-        <font color="#00BFFF"><b>Baixa</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Baixa</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; Apareix a la barra d\'estat i a la cortina de notificacions. <br>
         <br>
-        <font color="#00BFFF"><b>Mitjana</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Mitjana</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; Apareix a la barra d\'estat i a la cortina de notificacions amb un so. <br>
         <br>
-        <font color="#00BFFF"><b>Alta</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Alta</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Apareix a la barra d\'estat, a la cortina de notificacions i com a finestra emergent amb un so. <br>
         <br>
-        <font color="#00BFFF"><b>Alta (silenciada)</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Alta (silenciada)</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; És similar a <b>Alta</b> però silencia el so. <br>
-        &ensp; És ideal per a <font color="#03DAC5"><b>Xat SMS</b></font> actiu on els sons continus podrien ser molestos. <br>
-          Es considera <font color="#03DAC5"><b>Xat SMS</b></font> actiu quan la pantalla està desbloquejada i l\'aplicació d\'SMS està oberta en primer pla. <br>
+        &ensp; És ideal per a <highlight><b>Xat SMS</b></highlight> actiu on els sons continus podrien ser molestos. <br>
+          Es considera <highlight><b>Xat SMS</b></highlight> actiu quan la pantalla està desbloquejada i l\'aplicació d\'SMS està oberta en primer pla. <br>
         ]]>
     </string>
     <string name="none">Cap</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         Crea un canal de notificació nou. <br>
         <br>
-        <font color="#03DAC5"><b>Fes una pulsació llarga</b></font> sobre un canal de notificació en aquesta llista desplegable per editar-lo.
+        <highlight><b>Fes una pulsació llarga</b></highlight> sobre un canal de notificació en aquesta llista desplegable per editar-lo.
         ]]>
     </string>
     <string name="warning_delete_channel">

@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        Gelen numarayı gerçek zamanlı olarak çevrimiçi sorgula. <br>
+        Gerçek zamanlı olarak gelen numarayı çevrimiçi sorgula. <br>
         <br>
-        Birden fazla API uç noktası aynı anda sorgulanacak, ilk alınan sonuç kullanılacak ve sonraki tüm sonuçlar göz ardı edilecek. <br>
+        Birden fazla API uç noktası aynı anda sorgulanacak, alınan ilk sonuç kullanılacak ve sonraki tüm sonuçlar yok sayılacak. <br>
         <br>
-        Varsayılan olarak en düşük önceliğe sahiptir, yani yalnızca arama diğer tüm kuralları geçtiğinde tetiklenecektir.<br>
+        Varsayılan olarak en düşük önceliğe sahiptir, bu da çağrı tüm yerel kuralları geçtikten sonra tetikleneceği anlamına gelir.<br>
         <br>
-        <font color="#ea86ff"><b>Varsayılan Öncelik: -1</b></font>
+        <priority><b>Varsayılan Öncelik: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">Anında Sorgu</string>
@@ -35,23 +35,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        Sorgu sonucundan <font color="#00BFFF">kategoriyi</font> ve <font color="#00BFFF">yorumları</font>
+        Sorgu sonucundan <title>kategoriyi</title> ve <title>yorumları</title>
          çıkarın ve bildirim ile geçmiş günlüğünde gösterin. (isteğe bağlı)<br>
         <br>
         Örneğin, bu sorgu sonucu için: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - Yalnızca <font color="#00BFFF">kategoriyi</font> çıkarın: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - Yalnızca <title>kategoriyi</title> çıkarın: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - Hem <font color="#00BFFF">kategoriyi</font> hem de <font color="#00BFFF">yorumları</font> çıkarın: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - Hem <title>kategoriyi</title> hem de <title>yorumları</title> çıkarın: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">Sonucu Ayrıştır</string>
@@ -89,13 +89,13 @@
         Bu regex, numaraları buna göre filtreler, bu regex ile eşleşmeyen gelen numaralar kontrol edilmeden atlanacaktır.<br>
         <br>
         - Yalnızca <b>uluslararası numaraları</b> kontrol et:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - Yalnızca <b>yurtiçi numaraları</b> kontrol et:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - <b>Herhangi bir numarayı</b> kontrol et:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">Kontrol ediliyor: %s, öncelik: %s</string>

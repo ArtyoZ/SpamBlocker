@@ -36,13 +36,13 @@
         <br>
         <b>Opcions:</b><br>
         <br>
-        <h6><font color="#00BFFF">- En Dies</font></h6>
-        Les trucades que van ocórrer abans de <font color="#03DAC5">%s dies</font> són ignorades.<br>
+        <h6><title>- En Dies</title></h6>
+        Les trucades que van ocórrer abans de <highlight>%s dies</highlight> són ignorades.<br>
         <br>
-        <h6><font color="#00BFFF">- Incloure SMS</font></h6>
+        <h6><title>- Incloure SMS</title></h6>
         Quan està activat, enviar missatges a aquest número també compta.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritat: 10</b></font>
+        <priority><b>Prioritat: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -52,12 +52,12 @@
         Un cas d\'ús típic:<br>
         &emsp; Acabeu de demanar una pizza a PizzaApp, aviat us truquen per reemborsar-vos perquè estan tancant. Aquesta trucada passaria si PizzaApp està habilitada aquí. <br>
         <br>
-        La configuració per defecte <font color="03DAC5"><b>5 Min</b></font> significa que qualsevol trucada passaria si alguna de les aplicacions s\'ha utilitzat en 5 minuts,
+        La configuració per defecte <highlight><b>5 Min</b></highlight> significa que qualsevol trucada passaria si alguna de les aplicacions s\'ha utilitzat en 5 minuts,
         per `utilitzat` vol dir que s\'ha activat, desactivat, minimitzat o eliminat. <br>
         <br>
         Només s\'aplica a les trucades, <b>no</b> als missatges de text. <br>
         <br>
-        <font color="#ea86ff"><b>Prioritat: 10</b></font>
+        <priority><b>Prioritat: 10</b></priority>
         ]]>
     </string>
     <string-array name="block_type_list">
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Rebutjar</b></font>: <br>
+        - <title><b>Rebutjar</b></title>: <br>
          Igual que prémer el botó de rebutjar. Funciona completament en silenci, la pantalla de bloqueig no s\'encendrà.<br>
         <br>
-        - <font color="#00BFFF"><b>Silenciar</b></font>: <br>
+        - <title><b>Silenciar</b></title>: <br>
          Sonarà en silenci en segon pla, donant la impressió a la persona que truca que no estaves disponible i vas perdre la trucada. <br>
         <br>
          També pot ajudar si estàs experimentant trucades de spam repetides; allargarà la durada de la trucada, fent-la menys eficient per als spammers, podent desincentivar-los de tornar a trucar-te.<br>
         <br>
-        - <font color="#00BFFF"><b>Penjar</b></font>: <br>
+        - <title><b>Penjar</b></title>: <br>
         Respondre i penjar la trucada per evitar que vagi al contestador. <br>
         <br>
         Quan es rep la trucada de spam durant una trucada en curs, canviarà a \"Rebutjar\"
          per evitar penjar la trucada en curs. <br>
         <br>
-        <font color="#FFA500">Nota</font> La pantalla de bloqueig es pot encendre durant un curt període de temps,
+        <warn>Nota</warn> La pantalla de bloqueig es pot encendre durant un curt període de temps,
         també podries sentir un to de finalització de trucada (alguns telèfons ofereixen una opció per silenciar aquest so). <br>
         <br>
         - El <b>retard</b>: <br>

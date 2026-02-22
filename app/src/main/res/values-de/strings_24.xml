@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Stellen Sie sicher, dass Sie <font color="#fa7f71"><b>die Benachrichtigungen der SMS-App</b></font> in den Systemeinstellungen deaktivieren,
+        Stellen Sie sicher, dass Sie <error><b>die Benachrichtigungen der SMS-App</b></error> in den Systemeinstellungen deaktivieren,
          um doppelte Benachrichtigungen zu vermeiden. <br>
         <br>
         Wenn die SMS-App eine Benachrichtigungsberechtigung erzwingt, können Sie diese gewährt lassen
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Anrufername</b></font>:<br>
+        <title><b>Anrufername</b></title>:<br>
         &ensp; Der Regex wird mit dem angezeigten Anrufernamen (CNAP) abgeglichen. <br>
         <br>
         Im Anrufverlaufsprotokoll erscheint der Anrufername, falls vorhanden, nach der Telefonnummer in Klammern, zum Beispiel: <br>
-        &ensp; <font color="#888888">12345 (Anzeigename)</font> <br>
+        &ensp; <sample>12345 (Anzeigename)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">Anrufername</string>
@@ -46,13 +46,13 @@
     <string name="explanation_forwarded_call">
         <![CDATA[
         Dies ist <b>netzbetreiberspezifisch</b>; einige Netzbetreiber formatieren weitergeleitete Anrufe als zwei Nummern, die mit einem „&“ verkettet sind,
-         z. B. <font color="#888888">222&111</font>. <br>
+         z. B. <sample>222&111</sample>. <br>
         <br>
         In diesem Format: <br>
-        &ensp; - Der erste Teil (<font color="#888888">222</font>) ist typischerweise die Weiterleitungsnummer. <br>
-        &ensp; - Der zweite Teil (<font color="#888888">111</font>) ist die ursprüngliche Nummer. <br>
+        &ensp; - Der erste Teil (<sample>222</sample>) ist typischerweise die Weiterleitungsnummer. <br>
+        &ensp; - Der zweite Teil (<sample>111</sample>) ist die ursprüngliche Nummer. <br>
         <br>
-        Es könnte auch <font color="#888888">333&111</font> und <font color="#888888">444&111</font> geben,
+        Es könnte auch <sample>333&111</sample> und <sample>444&111</sample> geben,
          wobei die Ursprungsnummer gleich bleibt und die Weiterleitungsnummer sich ändert.
         ]]>
     </string>
@@ -67,14 +67,14 @@
         <br>
         <b>Optionen</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Roh</b></font> <br>
-        Abfrage/Meldung der Rohdaten-Nummer (<font color="#888888">222&111</font>), falls die API dieses Format unterstützt. <br>
+        <title><b>Roh</b></title> <br>
+        Abfrage/Meldung der Rohdaten-Nummer (<sample>222&111</sample>), falls die API dieses Format unterstützt. <br>
         <br>
-        <font color="#00BFFF"><b>Original</b></font> <br>
-        Abfrage/Meldung der ursprünglichen Nummer (<font color="#888888">111</font>), dies ist eine Problemumgehung für APIs, die das Rohdatenformat nicht unterstützen. <br>
+        <title><b>Original</b></title> <br>
+        Abfrage/Meldung der ursprünglichen Nummer (<sample>111</sample>), dies ist eine Problemumgehung für APIs, die das Rohdatenformat nicht unterstützen. <br>
         <br>
-        <font color="#00BFFF"><b>Weiterleitung</b></font> <br>
-        Abfrage/Meldung der Weiterleitungsnummer (<font color="#888888">222</font>). <br>
+        <title><b>Weiterleitung</b></title> <br>
+        Abfrage/Meldung der Weiterleitungsnummer (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">Diese weitergeleitete Nummer wurde auf %s geändert.</string>
@@ -83,7 +83,7 @@
     <string name="geo_location_rule">Regel für Geo-Standort</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Geo-Standort</b></font>:<br>
+        <title><b>Geo-Standort</b></title>:<br>
         &ensp; Der reguläre Ausdruck stimmt mit dem Geo-Standort der Nummer überein. <br>
         <br>
         &ensp; Dies beruht auf Googles Bibliothek <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -107,8 +107,8 @@
         <br>
         Ersetze den ___-Platzhalter durch deine tatsächliche Region. <br>
         <br>
-        Die Syntax <font color="#fa7f71">(?!___$).*</font> bedeutet: <br>
-        &ensp; Jeden Text, der nicht <font color="#fa7f71">___</font> ist, finden.
+        Die Syntax <error>(?!___$).*</error> bedeutet: <br>
+        &ensp; Jeden Text, der nicht <error>___</error> ist, finden.
         ]]>
     </string>
 </resources>

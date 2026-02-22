@@ -31,14 +31,14 @@
     <br>
     <b>Opciones:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Duración</b></font> <br>
+    - <title><b>Duración</b></title> <br>
     Las llamadas serán bloqueadas durante este período (en segundos). <br>
     <br>
-    - <font color="#00BFFF"><b>Incluyendo Bloqueadas</b></font> <br>
+    - <title><b>Incluyendo Bloqueadas</b></title> <br>
     Esta función se activará después de que cualquier llamada sea bloqueada. <br>
     <br>
-    - <font color="#00BFFF"><b>Incluyendo Contestadas</b></font> <br>
-    - <font color="#00BFFF"><b>Duración Mínima de Llamada</b></font> <br>
+    - <title><b>Incluyendo Contestadas</b></title> <br>
+    - <title><b>Duración Mínima de Llamada</b></title> <br>
     Esta función se activará después de que una llamada sea contestada pero la duración de la llamada sea demasiado corta, ya que una llamada así
      también se considera una llamada de spam. <br>
     ]]>
@@ -48,10 +48,10 @@
     Después de bloquear una llamada, también bloquea las llamadas posteriores que eviten todas las reglas durante un período. <br>
     <br>
     <b>Caso de uso:</b> <br>
-    <font color="#888888"> &ensp; Algunos spammers usan números con prefijos comunes, que pueden ser bloqueados con reglas de expresiones regulares.
-      Después de que la primera llamada sea bloqueada, cambiarán a números aleatorios, realizando llamadas que pueden eludir todas las reglas. </font><br>
+    <sample> &ensp; Algunos spammers usan números con prefijos comunes, que pueden ser bloqueados con reglas de expresiones regulares.
+      Después de que la primera llamada sea bloqueada, cambiarán a números aleatorios, realizando llamadas que pueden eludir todas las reglas. </sample><br>
     <br>
-    <font color="#ffa500"><b>Nota:</b></font> <br>
+    <warn><b>Nota:</b></warn> <br>
       Esto también implica el riesgo de bloquear una llamada válida, es una compensación.<br>
     <br>
     Esto creará tanto <b>una regla regex</b> como <b>un flujo de trabajo</b>, consulta la descripción de la acción interna <b>Limitación de Llamadas</b> para una explicación detallada.<br>
@@ -67,14 +67,14 @@
     <br>
     <b>Opciones:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Duración</b></font> <br>
+    - <title><b>Duración</b></title> <br>
     Los mensajes SMS se bloquearán durante este período (en segundos). <br>
     <br>
-    - <font color="#00BFFF"><b>Límite de Conteo</b></font> <br>
+    - <title><b>Límite de Conteo</b></title> <br>
     Permite las primeras N notificaciones. <br>
     <br>
-    - <font color="#00BFFF"><b>Incluyendo Contestadas</b></font> <br>
-    - <font color="#00BFFF"><b>Duración Mínima de Llamada</b></font> <br>
+    - <title><b>Incluyendo Contestadas</b></title> <br>
+    - <title><b>Duración Mínima de Llamada</b></title> <br>
     Si una llamada contestada es demasiado corta, también se considera una llamada spam y activará esta función. <br>
     ]]>
     </string>
@@ -83,7 +83,7 @@
     Silencia las notificaciones de SMS consecutivas de un mismo número durante un período. <br>
     <br>
     <b>Casos de uso:</b> <br>
-    <font color="#888888">Permitir las primeras tres notificaciones de un número y silenciar el resto en un minuto.</font> <br>
+    <sample>Permitir las primeras tres notificaciones de un número y silenciar el resto en un minuto.</sample> <br>
     <br>
     Esto creará tanto <b>una regla regex</b> como <b>un flujo de trabajo</b>, consulta la descripción de la acción interna <b>Limitación de SMS</b> para una explicación detallada.<br>
     ]]>

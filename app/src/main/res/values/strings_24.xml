@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Make sure to <font color="#fa7f71"><b>turn off the SMS app\'s notification</b></font> in system settings
+        Make sure to <error><b>turn off the SMS app\'s notification</b></error> in system settings
          to avoid double notifications. <br>
         <br>
         If the SMS app enforces notification permission, you can keep it granted
@@ -20,11 +20,11 @@
     <string name="caller_name_rule">Caller Name Rule</string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Caller Name</b></font>:<br>
+        <title><b>Caller Name</b></title>:<br>
         &ensp; The regex will match against the caller display name(CNAP). <br>
         <br>
         In the call history log, the caller name will appear after the phone number in parentheses if it exists, like: <br>
-        &ensp; <font color="#888888">12345 (Display Name)</font> <br>
+        &ensp; <sample>12345 (Display Name)</sample> <br>
         ]]>
     </string>
     <string name="help_regex_preset_caller_name">
@@ -46,13 +46,13 @@
     <string name="explanation_forwarded_call">
         <![CDATA[
         This is <b>carrier specific</b>, some carriers format forwarded calls as two numbers concatenated with an \"&\",
-         such as <font color="#888888">222&111</font>. <br>
+         such as <sample>222&111</sample>. <br>
         <br>
         In this format: <br>
-        &ensp; - The first part (<font color="#888888">222</font>) is typically the forwarding number. <br>
-        &ensp; - The second part (<font color="#888888">111</font>) is the original number. <br>
+        &ensp; - The first part (<sample>222</sample>) is typically the forwarding number. <br>
+        &ensp; - The second part (<sample>111</sample>) is the original number. <br>
         <br>
-        There could also be <font color="#888888">333&111</font> and <font color="#888888">444&111</font>,
+        There could also be <sample>333&111</sample> and <sample>444&111</sample>,
          where the origin number remains the same and the forwarding number changes.
         ]]>
     </string>
@@ -67,14 +67,14 @@
         <br>
         <b>Options</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Raw</b></font> <br>
-        Query/report the raw number(<font color="#888888">222&111</font>), if the API supports this format. <br>
+        <title><b>Raw</b></title> <br>
+        Query/report the raw number(<sample>222&111</sample>), if the API supports this format. <br>
         <br>
-        <font color="#00BFFF"><b>Original</b></font> <br>
-        Query/report the original number(<font color="#888888">111</font>), this is a workaround for APIs that don\'t support the raw format. <br>
+        <title><b>Original</b></title> <br>
+        Query/report the original number(<sample>111</sample>), this is a workaround for APIs that don\'t support the raw format. <br>
         <br>
-        <font color="#00BFFF"><b>Forwarding</b></font> <br>
-        Query/report the forwarding number(<font color="#888888">222</font>). <br>
+        <title><b>Forwarding</b></title> <br>
+        Query/report the forwarding number(<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">This forwarded number has been modified to %s.</string>
@@ -83,7 +83,7 @@
     <string name="geo_location_rule">Geo Location Rule</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Geo Location</b></font>:<br>
+        <title><b>Geo Location</b></title>:<br>
         &ensp; The regex will match against the number\'s geo location. <br>
         <br>
         &ensp; This relies on Google\'s library <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -107,8 +107,8 @@
         <br>
         Replace the ___ placeholder with your actual region. <br>
         <br>
-        The syntax <font color="#fa7f71">(?!___$).*</font> means: <br>
-        &ensp; Match any text that is not <font color="#fa7f71">___</font>.
+        The syntax <error>(?!___$).*</error> means: <br>
+        &ensp; Match any text that is not <error>___</error>.
         ]]>
     </string>
 </resources>

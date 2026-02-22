@@ -11,10 +11,10 @@
 
     <string name="help_action_header">
         <![CDATA[
-        - <font color="#03DAC5"><b>テスト</b></font><br>
+        - <highlight><b>テスト</b></highlight><br>
         これらのアクションは、設定が正しく行われているかどうかを確認するために、またはワークフローを手動で実行したい場合に、ただちに実行されます。<br>
         <br>
-        - <font color="#00BFFF"><b>新規</b></font><br>
+        - <title><b>新規</b></title><br>
             新しいアクションを作成します。複数のアクションを連結して、複雑なタスクを完了させることができます。<br>
             アイテム間の緑または赤のドットは、連結可能かどうかを示しています。
         ]]>
@@ -25,7 +25,7 @@
         自動バックアップ設定。<br>
         <br>
         ローテーションスケジュールをサポートしています。例:<br>
-        &ensp; <font color="#888888">直近7日間の日次バックアップのみを保持します。</font>
+        &ensp; <sample>直近7日間の日次バックアップのみを保持します。</sample>
         ]]>
     </string>
     <string name="everyday">毎日</string>
@@ -39,10 +39,10 @@
         <![CDATA[
         バックアップファイル形式はgzip圧縮jsonです。任意のアーカイバで開いて編集できます。<br>
         <br>
-        - <font color="#00BFFF"><b>スパムデータベースを含める</b></font><br>
+        - <title><b>スパムデータベースを含める</b></title><br>
         ボタンを長押しすると、スパムデータベースのエクスポート/インポートも行われます。<br>
         <br>
-        <font color="#ffa500">注記：</font><br>
+        <warn>注記：</warn><br>
         &ensp; バックアップファイルにスパムデータベースを含めると、ファイルサイズが大幅に増加します。データベースは定期的に更新されるため、通常は不要です。別の電話に複製する場合を除きます。<br>
         ]]>
     </string>
@@ -54,15 +54,15 @@
     </string-array>
     <string name="help_regex_action_add_mode">
         <![CDATA[
-        -<font color="#00BFFF"><b>作成</b></font><br>
+        -<title><b>作成</b></title><br>
         &ensp; 常に新しい正規表現ルールを作成します。<br>
         <br>
-        - <font color="#00BFFF"><b>置換</b></font><br>
+        - <title><b>置換</b></title><br>
         &ensp; 同じ<b>説明</b>を持つ既存のルールを見つけようとします。<br>
         &ensp;&ensp; - 見つかった場合、上書きされます。<br>
         &ensp;&ensp; - 見つからない場合、<b>作成</b>と同じように新しいルールが作成されます。<br>
         <br>
-        - <font color="#00BFFF"><b>マージ</b></font><br>
+        - <title><b>マージ</b></title><br>
         &ensp;- 同じ説明を持つルールが存在する場合、新しい番号がマージされます。<br>
          重複した番号は自動的に削除されます。<br>
         &ensp;- 存在しない場合、<b>作成</b>と同じように新しいルールが作成されます。<br>

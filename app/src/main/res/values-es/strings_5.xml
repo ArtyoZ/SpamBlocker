@@ -35,13 +35,13 @@
         <br>
         <b>Opciones:</b><br>
         <br>
-        <h6><font color="#00BFFF">- En Días</font></h6>
-        Se ignoran las llamadas que ocurrieron antes de <font color="#03DAC5">%s días</font>.<br>
+        <h6><title>- En Días</title></h6>
+        Se ignoran las llamadas que ocurrieron antes de <highlight>%s días</highlight>.<br>
         <br>
-        <h6><font color="#00BFFF">- Incluir SMS</font></h6>
+        <h6><title>- Incluir SMS</title></h6>
         Cuando está activada, enviar mensajes de texto a ese número también cuenta.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridad: 10</b></font>
+        <priority><b>Prioridad: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -51,12 +51,12 @@
         Un caso de uso típico:<br>
         &emsp; Acaba de pedir una pizza en PizzaApp, pronto le llaman para reembolsarle porque cierran. Esa llamada pasaría si PizzaApp está habilitada aquí.<br>
         <br>
-        La configuración predeterminada <font color="03DAC5"><b>5 Min</b></font> significa que cualquier llamada pasaría si alguna de las aplicaciones se ha utilizado dentro de los 5 minutos,
+        La configuración predeterminada <highlight><b>5 Min</b></highlight> significa que cualquier llamada pasaría si alguna de las aplicaciones se ha utilizado dentro de los 5 minutos,
         por `utilizado` significa estar activado, desactivado, minimizado o asesinado.<br>
         <br>
         Solo se aplica a las llamadas, <b>no</b> a los mensajes de texto. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridad: 10</b></font>
+        <priority><b>Prioridad: 10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">El retraso antes de colgar la llamada.</string>
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Rechazar</b></font>: <br>
+        - <title><b>Rechazar</b></title>: <br>
          Igual que pulsar el botón de rechazar. Funciona de forma completamente silenciosa, la pantalla de bloqueo no se encenderá.<br>
         <br>
-        - <font color="#00BFFF"><b>Silenciar</b></font>: <br>
+        - <title><b>Silenciar</b></title>: <br>
          Sonará en silencio en segundo plano, dando la impresión al llamante de que no estaba disponible y perdió la llamada. <br>
         <br>
          También puede ayudar si está experimentando llamadas de spam repetidas, extenderá la duración de la llamada, haciéndola menos eficiente para los spammers, lo que podría desanimarlos a volver a llamarle.<br>
         <br>
-        - <font color="#00BFFF"><b>Colgar</b></font>: <br>
+        - <title><b>Colgar</b></title>: <br>
         Responder y colgar la llamada para evitar que vaya al buzón de voz. <br>
         <br>
         Cuando se recibe la llamada de spam durante una llamada en curso, cambiará a \"Rechazar\"
          para evitar colgar la llamada en curso. <br>
         <br>
-        <font color="#FFA500">Nota</font> La pantalla de bloqueo puede encenderse por un corto tiempo,
+        <warn>Nota</warn> La pantalla de bloqueo puede encenderse por un corto tiempo,
         también podría escuchar un tono de finalización de llamada (algunos teléfonos ofrecen la opción de silenciar este sonido). <br>
         <br>
         - El <b>retraso</b>: <br>

@@ -5,7 +5,7 @@
         <br>
         Se a hora de início for maior que a hora de término, por exemplo, 20:00 -> 07:00, significa o período das 20:00 da noite até as 07:00 da manhã seguinte. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Esses sinalizadores alteram o comportamento de correspondência da regex. <br>
             <br>
 
-            <font color="#00BFFF"><b>Número Bruto</b></font>: <br>
-            &ensp; Quando ativado, o número não será otimizado, <font color="#03DAC5"><b>+</b></font>
-            e <font color="#03DAC5"><b>zeros à esquerda</b></font> permanecerão, útil para diferenciar números domésticos.<br>
+            <title><b>Número Bruto</b></title>: <br>
+            &ensp; Quando ativado, o número não será otimizado, <highlight><b>+</b></highlight>
+            e <highlight><b>zeros à esquerda</b></highlight> permanecerão, útil para diferenciar números domésticos.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ignorar Código do País</b></font>: <br>
-            &ensp; Quando ativado, o <font color="#fa7f71">+</font> inicial e o <font color="#fa7f71">código do país</font>
+            <title><b>Ignorar Código do País</b></title>: <br>
+            &ensp; Quando ativado, o <error>+</error> inicial e o <error>código do país</error>
              serão removidos de um número internacional.<br>
             <br>
-            Por exemplo, tanto <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> quanto
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> se tornarão <font color="#03DAC5">12345</font>,
+            Por exemplo, tanto <error>+33</error><highlight>12345</highlight> quanto
+            <error>+44</error><highlight>12345</highlight> se tornarão <highlight>12345</highlight>,
             isso permite que você use uma regex mais simples `123.*` em vez de `(33|44)*123.*` para corresponder a números internacionais.<br>
             <br>
 
-            <font color="#00BFFF"><b>Diferenciar Maiúsculas/Minúsculas</b></font>:<br>
-            &ensp; Por padrão, a correspondência de regex não diferencia maiúsculas de minúsculas, <font color="#03DAC5"><b>a</b></font>
-              corresponderia tanto a <font color="#03DAC5"><b>a</b></font> quanto a <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Diferenciar Maiúsculas/Minúsculas</b></title>:<br>
+            &ensp; Por padrão, a correspondência de regex não diferencia maiúsculas de minúsculas, <highlight><b>a</b></highlight>
+              corresponderia tanto a <highlight><b>a</b></highlight> quanto a <highlight><b>A</b></highlight>. <br>
             &ensp; Ative isto para diferenciar maiúsculas/minúsculas. <br>
         ]]>
     </string>

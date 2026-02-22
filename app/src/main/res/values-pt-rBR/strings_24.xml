@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Certifique-se de <font color="#fa7f71"><b>desativar a notificação do aplicativo de SMS</b></font> nas configurações do sistema
+        Certifique-se de <error><b>desativar a notificação do aplicativo de SMS</b></error> nas configurações do sistema
          para evitar notificações duplicadas. <br>
         <br>
         Se o aplicativo de SMS impõe a permissão de notificação, você pode mantê-la concedida
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Nome do Chamador</b></font>:<br>
+        <title><b>Nome do Chamador</b></title>:<br>
         &ensp; A regex corresponderá ao nome de exibição do chamador (CNAP). <br>
         <br>
         No registro do histórico de chamadas, o nome do chamador aparecerá após o número de telefone entre parênteses, se existir, como: <br>
-        &ensp; <font color="#888888">12345 (Nome de Exibição)</font> <br>
+        &ensp; <sample>12345 (Nome de Exibição)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">Nome do Chamador</string>
@@ -45,13 +45,13 @@
     <string name="explanation_forwarded_call">
         <![CDATA[
         Isso é <b>específico da operadora</b>, algumas operadoras formatam chamadas encaminhadas como dois números concatenados com um \"&\",
-         como <font color="#888888">222&111</font>. <br>
+         como <sample>222&111</sample>. <br>
         <br>
         Neste formato: <br>
-        &ensp; - A primeira parte (<font color="#888888">222</font>) é tipicamente o número de encaminhamento. <br>
-        &ensp; - A segunda parte (<font color="#888888">111</font>) é o número original. <br>
+        &ensp; - A primeira parte (<sample>222</sample>) é tipicamente o número de encaminhamento. <br>
+        &ensp; - A segunda parte (<sample>111</sample>) é o número original. <br>
         <br>
-        Também pode haver <font color="#888888">333&111</font> e <font color="#888888">444&111</font>,
+        Também pode haver <sample>333&111</sample> e <sample>444&111</sample>,
          onde o número de origem permanece o mesmo e o número de encaminhamento muda.
         ]]>
     </string>
@@ -66,14 +66,14 @@
         <br>
         <b>Opções</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Bruto</b></font> <br>
-        Consultar/relatar o número bruto (<font color="#888888">222&111</font>), se a API suportar este formato. <br>
+        <title><b>Bruto</b></title> <br>
+        Consultar/relatar o número bruto (<sample>222&111</sample>), se a API suportar este formato. <br>
         <br>
-        <font color="#00BFFF"><b>Original</b></font> <br>
-        Consultar/relatar o número original (<font color="#888888">111</font>), esta é uma solução alternativa para APIs que não suportam o formato bruto. <br>
+        <title><b>Original</b></title> <br>
+        Consultar/relatar o número original (<sample>111</sample>), esta é uma solução alternativa para APIs que não suportam o formato bruto. <br>
         <br>
-        <font color="#00BFFF"><b>Encaminhamento</b></font> <br>
-        Consultar/relatar o número de encaminhamento (<font color="#888888">222</font>). <br>
+        <title><b>Encaminhamento</b></title> <br>
+        Consultar/relatar o número de encaminhamento (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">Este número encaminhado foi modificado para %s.</string>
@@ -82,7 +82,7 @@
     <string name="geo_location_rule">Regra de Localização Geográfica</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Localização Geográfica</b></font>:<br>
+        <title><b>Localização Geográfica</b></title>:<br>
         &ensp; A expressão regular corresponderá à localização geográfica do número. <br>
         <br>
         &ensp; Isso depende da biblioteca do Google <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -106,8 +106,8 @@
         <br>
         Substitua o placeholder ___ pela sua região real. <br>
         <br>
-        A sintaxe <font color="#fa7f71">(?!___$).*</font> significa: <br>
-        &ensp; Correspondência a qualquer texto que não seja <font color="#fa7f71">___</font>.
+        A sintaxe <error>(?!___$).*</error> significa: <br>
+        &ensp; Correspondência a qualquer texto que não seja <error>___</error>.
         ]]>
     </string>
 </resources>

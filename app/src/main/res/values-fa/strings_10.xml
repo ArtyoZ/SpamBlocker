@@ -3,39 +3,39 @@
         <![CDATA[
         قوانین شماره هم برای شماره تماس ورودی و هم شماره پیامک اعمال می شود.<br>
         <br>
-        <h5><font color="#00BFFF"> - مثال ها</font></h5>
+        <h5><title> - مثال ها</title></h5>
         چند مثال در <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">صفحه ویکی</a> وجود دارد.<br>
         <br>
-        <h5><font color="#00BFFF"> - بهینه سازی Regex</font></h5>
+        <h5><title> - بهینه سازی Regex</title></h5>
         برای ساده کردن regex،
-          <font color="#fa7f71"><b>+</b></font> و <font color="#fa7f71"><b>صفرهای ابتدایی</b></font>
+          <error><b>+</b></error> و <error><b>صفرهای ابتدایی</b></error>
           قبل از بررسی حذف می شوند، برای مثال:<br>
         &emsp; همه این فرمت ها:<br>
         &emsp;&emsp; 123456789 &emsp;(شماره معمولی)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(با <font color="#fa7f71"><b>+</b></font> ابتدایی)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(با پیش شماره داخلی <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(دو <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp; <b>همه</b> آنها به صورت 123456789 بررسی می شوند و می توانند توسط <font color="#03DAC5"><b>123.*</b></font> مطابقت داده شوند<br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(با <error><b>+</b></error> ابتدایی)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(با پیش شماره داخلی <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(دو <error><b>0</b></error>)<br>
+        &emsp; <b>همه</b> آنها به صورت 123456789 بررسی می شوند و می توانند توسط <highlight><b>123.*</b></highlight> مطابقت داده شوند<br>
         این بهینه سازی شماره می تواند با پرچم regex `Raw Number` <b>غیرفعال</b> شود.<br>
         <br>
-        <h5><font color="#00BFFF"> - برخی الگوهای معمول</font></h5>
-        &ensp; - هر شماره: <font color="#03DAC5"><b>.*</b></font> (regex .* معادل wildcard * در سایر برنامه ها است) <br>
-        &ensp; - شماره دقیق: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - شروع با 400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - پایان با 123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 رقم: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - کوتاه تر از 5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - طولانی تر از 10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - شماره ناشناخته/خصوصی/خالی: <font color="#03DAC5"><b>.{0}</b></font> یا <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - مطابقت با هر یک از الگوها: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - شروع با 400، با پیش شماره کشور 11 یا بدون آن: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - برخی الگوهای معمول</title></h5>
+        &ensp; - هر شماره: <highlight><b>.*</b></highlight> (regex .* معادل wildcard * در سایر برنامه ها است) <br>
+        &ensp; - شماره دقیق: <highlight><b>12345</b></highlight> <br>
+        &ensp; - شروع با 400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - پایان با 123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 رقم: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - کوتاه تر از 5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - طولانی تر از 10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - شماره ناشناخته/خصوصی/خالی: <highlight><b>.{0}</b></highlight> یا <highlight><b>^$</b></highlight> <br>
+        &ensp; - مطابقت با هر یک از الگوها: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - شروع با 400، با پیش شماره کشور 11 یا بدون آن: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - مرتبط با رابط کاربری</font></h5>
-        برای غیرفعال کردن قانون، علامت چک باکس ها را بردارید، <font color="#fa7f71"><b>برای حذف به چپ بکشید</b></font>.<br>
+        <h5><title> - مرتبط با رابط کاربری</title></h5>
+        برای غیرفعال کردن قانون، علامت چک باکس ها را بردارید، <error><b>برای حذف به چپ بکشید</b></error>.<br>
         <br>
         لیست به ترتیب نزولی اولویت، توضیحات صعودی و الگوی صعودی <b>نمایش داده می شود</b>.<br>
         <br>
-        <h5><font color="#00BFFF"> - وارد کردن قوانین از .csv</font></h5>
+        <h5><title> - وارد کردن قوانین از .csv</title></h5>
         دکمه `Add` را طولانی فشار دهید تا شماره ها از فایل .csv وارد شوند.<br>
         <brg>
         ]]>

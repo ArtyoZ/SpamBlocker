@@ -15,7 +15,7 @@
         <br>
         Si applica sia alle chiamate che ai messaggi SMS.<br>
         <br>
-        <font color="#ea86ff"><b>Priorità predefinita: 0</b></font>
+        <priority><b>Priorità predefinita: 0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

@@ -5,7 +5,7 @@
         <br>
         開始時間が終了時間より大きい場合（例：20:00 -> 07:00）、これは夜の20:00から翌朝の07:00までの期間を意味します。<br>
         <br>
-        <font color="#ea86ff"><b>優先度: 10</b></font>
+        <priority><b>優先度: 10</b></priority>
         ]]>
     </string>
 
@@ -14,18 +14,18 @@
             これらのフラグは、正規表現の一致動作を変更します。<br>
             <br>
 
-            <font color="#00BFFF"><b>生番号</b></font>: <br>
-            &ensp; 有効にすると、電話番号は最適化されず、<font color="#03DAC5"><b>+</b></font>と<font color="#03DAC5"><b>先頭の0</b></font>が保持され、国内の電話番号を区別するのに役立ちます。<br>
+            <title><b>生番号</b></title>: <br>
+            &ensp; 有効にすると、電話番号は最適化されず、<highlight><b>+</b></highlight>と<highlight><b>先頭の0</b></highlight>が保持され、国内の電話番号を区別するのに役立ちます。<br>
             <br>
 
-            <font color="#00BFFF"><b>国コードを無視</b></font>: <br>
-            &ensp; 有効にすると、国際電話番号から先頭の<font color="#fa7f71">+</font>と<font color="#fa7f71">国コード</font>が削除されます。<br>
+            <title><b>国コードを無視</b></title>: <br>
+            &ensp; 有効にすると、国際電話番号から先頭の<error>+</error>と<error>国コード</error>が削除されます。<br>
             <br>
-            例えば、<font color="#fa7f71">+33</font><font color="#03DAC5">12345</font>と<font color="#fa7f71">+44</font><font color="#03DAC5">12345</font>の両方が<font color="#03DAC5">12345</font>となり、国際電話番号に一致させるために`(33|44)*123.*`の代わりに`123.*`のようなよりシンプルな正規表現を使用できるようになります。<br>
+            例えば、<error>+33</error><highlight>12345</highlight>と<error>+44</error><highlight>12345</highlight>の両方が<highlight>12345</highlight>となり、国際電話番号に一致させるために`(33|44)*123.*`の代わりに`123.*`のようなよりシンプルな正規表現を使用できるようになります。<br>
             <br>
 
-            <font color="#00BFFF"><b>大文字と小文字を区別</b></font>:<br>
-            &ensp; デフォルトでは、正規表現の一致は大文字と小文字を区別せず、<font color="#03DAC5"><b>a</b></font>は<font color="#03DAC5"><b>a</b></font>と<font color="#03DAC5"><b>A</b></font>の両方に一致します。<br>
+            <title><b>大文字と小文字を区別</b></title>:<br>
+            &ensp; デフォルトでは、正規表現の一致は大文字と小文字を区別せず、<highlight><b>a</b></highlight>は<highlight><b>a</b></highlight>と<highlight><b>A</b></highlight>の両方に一致します。<br>
             &ensp; これを有効にすると、大文字と小文字が区別されます。<br>
         ]]>
     </string>

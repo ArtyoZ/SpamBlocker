@@ -66,76 +66,76 @@
     <string name="auto_detect_cc_permission">Necesítase o permiso READ_PHONE_STATE para detectar o código de país.</string>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>Desliza cara á esquerda</b></font> para eliminalo.<br>
+        <highlight><b>Desliza cara á esquerda</b></highlight> para eliminalo.<br>
         <br>
         A maioría dos elementos da IU tipo tarxeta nesta aplicación están asociados con xestos de deslizamento,
-        algúns dos cales tamén admiten <font color="#03DAC5"><b>deslizar cara á dereita</b></font>, por exemplo, os rexistros do historial.
+        algúns dos cales tamén admiten <highlight><b>deslizar cara á dereita</b></highlight>, por exemplo, os rexistros do historial.
         ]]>
     </string>
     <string name="bug_number">Se este é un número válido, por favor, nóteo en github.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; O código de país.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; A parte doméstica.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; O número completo, incluíndo tanto o código de país como a parte doméstica, sen + ou 0s iniciais.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; O número orixinal que pode conter + ou 0s iniciais.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Os números dun só díxito encheranse cun cero inicial, por exemplo: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; convértese en <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Estes valores non se encherán, por exemplo: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; convértese en <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Estes pódense usar para simular unha programación de rotación, por exemplo: <br>
-        &emsp; <font color="#888888">Realizar copias de seguridade diarias e conservar só as sete máis recentes.</font> <br>
+        &emsp; <sample>Realizar copias de seguridade diarias e conservar só as sete máis recentes.</sample> <br>
         <br>
-        <font color="#ffa500"><b>Nota:</b></font><br>
+        <warn><b>Nota:</b></warn><br>
          Estas etiquetas de tempo admiten operacións aritméticas sinxelas, como
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          e
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="skip_alpha_empty_number">Saltar número alfa ou baleiro.</string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; O contido do SMS.<br>
         ]]>
     </string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; Escape o contido nos corchetes, usado para contido dentro de comiñas. <br>
         ]]>
     </string>

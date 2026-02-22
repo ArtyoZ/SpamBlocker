@@ -3,39 +3,39 @@
         <![CDATA[
         Aturan nomor berlaku untuk nomor panggilan masuk dan nomor SMS.<br>
         <br>
-        <h5><font color="#00BFFF"> - Contoh</font></h5>
+        <h5><title> - Contoh</title></h5>
         Ada beberapa contoh di <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">halaman Wiki</a>.<br>
         <br>
-        <h5><font color="#00BFFF"> - Optimalisasi Regex</font></h5>
+        <h5><title> - Optimalisasi Regex</title></h5>
         Untuk menyederhanakan regex,
-          <font color="#fa7f71"><b>+</b></font> dan <font color="#fa7f71"><b>angka nol di depan</b></font>
+          <error><b>+</b></error> dan <error><b>angka nol di depan</b></error>
           dihapus sebelum diperiksa, contohnya:<br>
         &emsp; Semua format ini:<br>
         &emsp;&emsp; 123456789 &emsp;(nomor biasa)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(dengan <font color="#fa7f71"><b>+</b></font> di depan)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(dengan awalan trunk domestik <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(dua angka <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp; Mereka <b>semua</b> diperiksa sebagai 123456789 dan dapat dicocokkan oleh <font color="#03DAC5"><b>123.*</b></font><br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(dengan <error><b>+</b></error> di depan)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(dengan awalan trunk domestik <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(dua angka <error><b>0</b></error>)<br>
+        &emsp; Mereka <b>semua</b> diperiksa sebagai 123456789 dan dapat dicocokkan oleh <highlight><b>123.*</b></highlight><br>
         Optimalisasi nomor ini dapat <b>dinonaktifkan</b> dengan flag regex `Raw Number`.<br>
         <br>
-        <h5><font color="#00BFFF"> - Beberapa pola umum</font></h5>
-        &ensp; - Nomor apa pun: <font color="#03DAC5"><b>.*</b></font> (regex .* setara dengan wildcard * di aplikasi lain) <br>
-        &ensp; - Nomor persis: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - Mulai dengan 400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - Berakhir dengan 123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 digit: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - Lebih pendek dari 5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - Lebih panjang dari 10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - Nomor Tidak Dikenal/Pribadi/Kosong: <font color="#03DAC5"><b>.{0}</b></font> atau <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - Cocokkan salah satu pola: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - Mulai dengan 400, dengan kode negara 11 di depan atau tidak: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - Beberapa pola umum</title></h5>
+        &ensp; - Nomor apa pun: <highlight><b>.*</b></highlight> (regex .* setara dengan wildcard * di aplikasi lain) <br>
+        &ensp; - Nomor persis: <highlight><b>12345</b></highlight> <br>
+        &ensp; - Mulai dengan 400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - Berakhir dengan 123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 digit: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - Lebih pendek dari 5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - Lebih panjang dari 10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - Nomor Tidak Dikenal/Pribadi/Kosong: <highlight><b>.{0}</b></highlight> atau <highlight><b>^$</b></highlight> <br>
+        &ensp; - Cocokkan salah satu pola: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - Mulai dengan 400, dengan kode negara 11 di depan atau tidak: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - Terkait UI</font></h5>
-        Hapus centang pada kotak centang untuk menonaktifkan aturan, <font color="#fa7f71"><b>geser ke kiri untuk menghapus</b></font> nya.<br>
+        <h5><title> - Terkait UI</title></h5>
+        Hapus centang pada kotak centang untuk menonaktifkan aturan, <error><b>geser ke kiri untuk menghapus</b></error> nya.<br>
         <br>
         Daftar <b>ditampilkan</b> dalam urutan prioritas menurun, deskripsi menaik, dan pola menaik.<br>
         <br>
-        <h5><font color="#00BFFF"> - Impor aturan dari .csv</font></h5>
+        <h5><title> - Impor aturan dari .csv</title></h5>
         Tekan lama tombol `Tambah` untuk mengimpor nomor dari file .csv.<br>
         <brg>
         ]]>

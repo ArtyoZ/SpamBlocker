@@ -3,7 +3,7 @@
         <![CDATA[
         API yang dikonfigurasi di sini akan digunakan untuk pelaporan otomatis dan pelaporan manual.<br>
         <br>
-        <h6><font color="#00BFFF">- Privasi</font></h6>
+        <h6><title>- Privasi</title></h6>
         Endpoint API akan melihat:<br>
         <br>
          &ensp; - Alamat IP<br>
@@ -12,39 +12,39 @@
         <br>
         Tidak ada yang lain akan dilaporkan.<br>
         <br>
-        <h6><font color="#00BFFF">- Pelaporan manual</font></h6>
+        <h6><title>- Pelaporan manual</title></h6>
 		Jika ada API yang diaktifkan di sini, ketuk nomor di riwayat panggilan, akan ada tombol lapor.<br>
 		<br>
 		Nomor tersebut akan dilaporkan ke <b>semua</b> API.<br>
 		<br>
-        <h6><font color="#00BFFF">- Pelaporan otomatis</font></h6>
-		<font color="#6ED0ff"><b>Penundaan laporan</b></font><br>
+        <h6><title>- Pelaporan otomatis</title></h6>
+		<minor><b>Penundaan laporan</b></minor><br>
         Ketika panggilan diblokir, akan ada jeda waktu satu jam sebelum dilaporkan.
         Jika nomor tersebut diizinkan nanti karena pengulangan atau dihubungi kembali dalam jeda waktu ini,
         itu dianggap bukan nomor spam dan pelaporan akan dibatalkan.<br>
         <br>
-		<font color="#6ED0ff"><b>Jenis laporan</b></font><br>
-		1. Itu <font color="#fa7f71"><b>tidak akan</b></font> melaporkan:<br>
+		<minor><b>Jenis laporan</b></minor><br>
+		1. Itu <error><b>tidak akan</b></error> melaporkan:<br>
         <br>
-        - <font color="#fa7f71">Nomor atau konten SMS</font><br>
-        - <font color="#fa7f71">Nomor yang diizinkan</font><br>
-        - <font color="#fa7f71">Pengujian</font><br>
+        - <error>Nomor atau konten SMS</error><br>
+        - <error>Nomor yang diizinkan</error><br>
+        - <error>Pengujian</error><br>
         Dan jenis yang diblokir berikut:<br>
-        - <font color="#fa7f71">Regex Kontak</font><br>
-        - <font color="#fa7f71">Regex Grup Kontak</font><br>
-        - <font color="#fa7f71">Basis Data</font><br>
-        - <font color="#fa7f71">Mode Rapat</font><br>
-        - <font color="#fa7f71">Kueri Instan</font> (untuk mencegah nomor endpoint API bocor ke pesaing lain)<br>
+        - <error>Regex Kontak</error><br>
+        - <error>Regex Grup Kontak</error><br>
+        - <error>Basis Data</error><br>
+        - <error>Mode Rapat</error><br>
+        - <error>Kueri Instan</error> (untuk mencegah nomor endpoint API bocor ke pesaing lain)<br>
         <br>
-		2. Itu <font color="#03DAC5"><b>akan</b></font> melaporkan nomor yang diblokir oleh:<br>
+		2. Itu <highlight><b>akan</b></highlight> melaporkan nomor yang diblokir oleh:<br>
         <br>
-        - <font color="#03DAC5">Bukan-Kontak</font><br>
-        - <font color="#03DAC5">Atestasi STIR</font><br>
-        - <font color="#03DAC5">Regex Nomor</font><br>
+        - <highlight>Bukan-Kontak</highlight><br>
+        - <highlight>Atestasi STIR</highlight><br>
+        - <highlight>Regex Nomor</highlight><br>
         <br>
 		3. Satu pengecualian:<br>
 		<br>
-        Ketika diblokir oleh <font color="#03DAC5">Basis Data</font> dan nomor tersebut awalnya ditambahkan oleh kueri API,
+        Ketika diblokir oleh <highlight>Basis Data</highlight> dan nomor tersebut awalnya ditambahkan oleh kueri API,
          nomor tersebut akan dilaporkan kembali ke API tersebut untuk meningkatkan skor peringkat. <br>
         <br>
          Misalnya, jika nomor tersebut ditambahkan oleh

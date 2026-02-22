@@ -8,10 +8,10 @@
         Such a workflow will be automatically triggered by an incoming call.<br>
         <br>
         Use case: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Remove extra leading characters from the phone number before screening,
           as some carriers support dual numbers on a single SIM card. <br>
-        </font>
+        </sample>
         <br>
         A typical setup:<br>
         - Call Event <br>
@@ -24,38 +24,38 @@
         <![CDATA[
         Modify the incoming call number before it\'s checked by the rules.<br>
         <br>
-        <font color="#00BFFF"><b>A use case</b>:</font><br>
+        <title><b>A use case</b>:</title><br>
         &ensp; Some mobile network operators support dual numbers for the same SIM card, they add extra leading digits to the secondary number.<br>
-        &ensp;   For example: 3312345679 may become <font color="#888888">123</font>3312345679. <br>
-        &ensp; The leading <font color="#888888">123</font> needs to be removed before it\'s checked. <br>
+        &ensp;   For example: 3312345679 may become <sample>123</sample>3312345679. <br>
+        &ensp; The leading <sample>123</sample> needs to be removed before it\'s checked. <br>
         <br>
-        <font color="#00BFFF"><b>A typical setup:</b></font> <br>
+        <title><b>A typical setup:</b></title> <br>
         - <b>Call Event</b> <br>
         - <b>Replace Number</b> <br>
-        &emsp; from: <font color="#888888">^123</font> <br>
-        &emsp; to: <font color="#888888">leave as empty</fonts>
+        &emsp; from: <sample>^123</sample> <br>
+        &emsp; to: <sample>leave as empty</sample>
         ]]>
     </string>
     <string name="help_notification">
         <![CDATA[
         The built-in notification channels: <br>
         <br>
-        <font color="#00BFFF"><b>None</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>None</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; No notification at all. <br>
         <br>
-        <font color="#00BFFF"><b>Low</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Low</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; Appears in the status bar and notification shade. <br>
         <br>
-        <font color="#00BFFF"><b>Medium</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Medium</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; Appears in the status bar and notification shade with a sound. <br>
         <br>
-        <font color="#00BFFF"><b>High</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>High</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Appears in the status bar, notification shade, and as heads-up pop-up with a sound. <br>
         <br>
-        <font color="#00BFFF"><b>High Muted</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>High Muted</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; It\'s similar to <b>High</b> but mutes the sound. <br>
-        &ensp; It\'s ideal for active <font color="#03DAC5"><b>SMS Chat</b></font> where continuous sounds might be annoying. <br>
-          It\'s considered active <font color="#03DAC5"><b>SMS Chat</b></font> when the screen is unlocked and the SMS app is open in the foreground. <br>
+        &ensp; It\'s ideal for active <highlight><b>SMS Chat</b></highlight> where continuous sounds might be annoying. <br>
+          It\'s considered active <highlight><b>SMS Chat</b></highlight> when the screen is unlocked and the SMS app is open in the foreground. <br>
         ]]>
     </string>
     <string name="none">None</string>
@@ -116,7 +116,7 @@
         <![CDATA[
         Create a new notification channel. <br>
         <br>
-        <font color="#03DAC5"><b>Long tap</b></font> a notification channel in this dropdown list to edit it.
+        <highlight><b>Long tap</b></highlight> a notification channel in this dropdown list to edit it.
         ]]>
     </string>
     <string name="warning_delete_channel">

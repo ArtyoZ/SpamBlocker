@@ -4,9 +4,9 @@
     <![CDATA[
     Denuncia automàticament el número si és bloquejat per les raons següents: <br>
     <br>
-    &ensp; - <font color="#fa7f71">No-contactes</font> <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> certificació <br>
-    &ensp; - <font color="#fa7f71">Regex de números</font> <br>
+    &ensp; - <error>No-contactes</error> <br>
+    &ensp; - <error>STIR/SHAKEN</error> certificació <br>
+    &ensp; - <error>Regex de números</error> <br>
     <br>
     Això no afecta la denúncia manual.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         Analitzeu bytes de dades csv a una llista de números. <br>
         <br>
-        La columna que conté els números <b>ha de</b> anomenar-se <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        La columna que conté els números <b>ha de</b> anomenar-se <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         Per a fitxers csv de tercers amb noms de capçalera diferents, mapegeu-los a
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> utilitzant el <b>Mapatge de Columnes</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> utilitzant el <b>Mapatge de Columnes</b>. <br>
         <br>
         Per exemple: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Nota</b></font> <br>
+        <warn><b>Nota</b></warn> <br>
         Per analitzar fitxers de text pla sense capçaleres de columna, utilitzeu <b>Extreure amb Regex</b> en lloc d\'aquest.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        Analitzeu bytes de dades xml utilitzant <font color="#00BFFF">xpath</font> i genereu una llista de números.
+        Analitzeu bytes de dades xml utilitzant <title>xpath</title> i genereu una llista de números.
         ]]>
     </string>
     <string name="action_parse_xml">Analitzar XML</string>
@@ -44,13 +44,13 @@
         Això també es pot utilitzar per analitzar fitxers de text pla amb un número per línia. <br>
         <br>
         Per exemple, analitzeu el text: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         amb regex: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         Llegiu bytes de dades d\'un fitxer. <br>
         <br>
-        Etiquetes de <font color="#03DAC5">ruta</font> admeses: <br>
+        Etiquetes de <highlight>ruta</highlight> admeses: <br>
         <br>
         %s <br>
         <br>
-        Etiquetes de <font color="#03DAC5">nom de fitxer</font> admeses: <br>
+        Etiquetes de <highlight>nom de fitxer</highlight> admeses: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         Escriviu bytes de dades a un fitxer. <br>
         <br>
-        Etiquetes de <font color="#03DAC5"><b>ruta</b></font> admeses: <br>
+        Etiquetes de <highlight><b>ruta</b></highlight> admeses: <br>
         <br>
         %s <br>
         <br>
-        Etiquetes de <font color="#03DAC5"><b>nom de fitxer</b></font> admeses: <br>
+        Etiquetes de <highlight><b>nom de fitxer</b></highlight> admeses: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         Segons el tipus de disparador del flux de treball, les regles es poden modificar de forma permanent o temporal. <br>
         <br>
         Atributs modificables: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; L\'expressió regular <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; La descripció <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; La prioritat <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Bloqueja, <no_translate>false</no_translate>: permet <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Aplica a: <br>
         &ensp; 1: trucada, 2: SMS, 3: ambdós, 0: desactiva <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; La cadena d\'ID del canal de notificació<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: rebutjar, 1: silenciar, 2: penjar <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… O <no_translate>null</no_translate> per a qualsevol SIM.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         Normalitzeu patrons numèrics de fonts de tercers al format regex. <br>
         <br>
         Per exemple, per mapejar <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         a <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         Afegiu dues accions de <b>Substituir Número</b>: <br>
-        &ensp; - Substituïu `<font color="#fa7f71">(\\+)</font>` per ``<br>
-        &ensp; - Substituïu `<font color="#fa7f71">(#)</font>` per `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - Substituïu `<error>(\\+)</error>` per ``<br>
+        &ensp; - Substituïu `<error>(#)</error>` per `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">Substituir Número</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Durada (minuts)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Toca el botó <font color="#03DAC5">Prova</font> per executar manualment aquest flux de treball.
+        Toca el botó <highlight>Prova</highlight> per executar manualment aquest flux de treball.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         Automatitza les execucions de tasques en horaris basats en el temps. <br>
         <br>
         Casos d\'ús: <br>
-        &ensp; - <font color="#888888">Descarrega números de spam del registre FTC-DNC cada dia.</font> <br>
+        &ensp; - <sample>Descarrega números de spam del registre FTC-DNC cada dia.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Còpia de seguretat automàtica cada dia i conserva només les últimes 7 còpies de seguretat.</font> <br>
+        &ensp; - <sample>Còpia de seguretat automàtica cada dia i conserva només les últimes 7 còpies de seguretat.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Activador</string>
     <string name="delay_in_seconds">Retard (segons)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Aquesta funció canvia temporalment el to de trucada predeterminat del sistema abans que comenci a sonar i el torna a restablir després de <font color="#03DAC5">%d segons</font>, moment en què s\'espera que hagi començat la trucada. <br>
+        Aquesta funció canvia temporalment el to de trucada predeterminat del sistema abans que comenci a sonar i el torna a restablir després de <highlight>%d segons</highlight>, moment en què s\'espera que hagi començat la trucada. <br>
         <br>
         Alguns telèfons ofereixen funcions com <b>Vibrar primer i després sonar</b> que poden endarrerir la trucada, per exemple, 6 segons. En aquest cas, augmenta aquest retard en conseqüència.
         ]]>

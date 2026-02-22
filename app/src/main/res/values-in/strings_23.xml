@@ -41,25 +41,25 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        Blokir semua panggilan internasional kecuali dari negara Anda sendiri dengan regex <font color="#fa7f71"><b>\\+(?!39).*</b></font>,
+        Blokir semua panggilan internasional kecuali dari negara Anda sendiri dengan regex <error><b>\\+(?!39).*</b></error>,
           panggilan yang melewati aturan ini tidak akan langsung diizinkan, mereka akan diperiksa oleh aturan lain. <br>
         <br>
-        <font color="#ffa500">Ubah</font> <b>39</b> ke kode negara Anda. <br>
+        <warn>Ubah</warn> <b>39</b> ke kode negara Anda. <br>
         <br>
         Rincian Regex: <br>
         &ensp; - Flag regex <b>Nomor Mentah</b> mempertahankan awalan <b>+</b>, jika tidak, itu akan dihapus sebelum diperiksa. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> mencocokkan nomor apa pun yang dimulai dengan <b>+</b> yang tidak diikuti oleh <b>39</b> (nomor asing).
+        &ensp; - <error><b>\\+(?!39)</b></error> mencocokkan nomor apa pun yang dimulai dengan <b>+</b> yang tidak diikuti oleh <b>39</b> (nomor asing).
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         Juga dikenal sebagai <b>Nomor Tidak Dikenal</b> atau <b>Nomor Kosong</b>, ini adalah string kosong yang
          dapat dicocokkan oleh salah satu dari: <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; bidang regex <font color="#fa7f71">kosong</font>. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; bidang regex <error>kosong</error>. <br>
         <br>
-        <font color="#ea86ff">Prioritas</font> diatur ke <font color="#ea86ff">20</font> untuk menimpa fitur lain seperti <b>Panggilan Berulang</b>,
+        <priority>Prioritas</priority> diatur ke <priority>20</priority> untuk menimpa fitur lain seperti <b>Panggilan Berulang</b>,
         sehingga selalu diblokir meskipun berulang.
         ]]>
     </string>
@@ -83,7 +83,7 @@
         <![CDATA[
         Sakelar ini untuk menonaktifkan aplikasi dengan cepat, berguna saat Anda sedang menunggu panggilan atau pesan tertentu. <br>
         <br>
-        Anda juga dapat mengalihkannya dari <font color="#6ed0ff"><b>Pengaturan Cepat Dropdown</b></font>. <br>
+        Anda juga dapat mengalihkannya dari <minor><b>Pengaturan Cepat Dropdown</b></minor>. <br>
         <br>
         Penyaringan panggilan dan SMS juga perlu diaktifkan secara terpisah di bawah, keduanya hanya berfungsi saat ini diaktifkan.
         ]]>
@@ -99,10 +99,10 @@
          tile kustom ini hanya memengaruhi aturan tertentu. <br>
         <br>
         Pengaturan ini melibatkan aturan regex dan alur kerja. Saat tile: <br>
-        &ensp; - <font color="#03DAC5"><b>Aktif</b></font> <br>
+        &ensp; - <highlight><b>Aktif</b></highlight> <br>
         &emsp;  Alur kerja ini akan dieksekusi sebelum panggilan disaring, ini akan mengaktifkan aturan regex. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Mati</b></font> <br>
+        &ensp; - <sample><b>Mati</b></sample> <br>
         &emsp;  Alur kerja ini tidak akan pernah berjalan, aturan tidak akan pernah berfungsi. <br>
         <br>
         Singkatnya, <b>saat tile aktif, aturan aktif, dan sebaliknya</b>.
@@ -117,8 +117,8 @@
         Membutuhkan Android 12+. <br>
         <br>
         Ini akan menambahkan dua aturan untuk SIM 2: <br>
-        &ensp; - Izinkan kontak, <font color="#ea86ff">prioritas 12</font>. <br>
-        &ensp; - Blokir yang lainnya, <font color="#ea86ff">prioritas 11</font>.
+        &ensp; - Izinkan kontak, <priority>prioritas 12</priority>. <br>
+        &ensp; - Blokir yang lainnya, <priority>prioritas 11</priority>.
         Ini mengesampingkan pengaturan seperti Panggilan Berulang, sehingga mereka akan selalu diblokir meskipun berulang.
         ]]>
     </string>

@@ -3,22 +3,22 @@
         <![CDATA[
         Estas regras aplícanse ao contido dos SMS.<br>
         <br>
-        <font color="#00BFFF"><b> - Algúns patróns típicos</b></font>:<br>
-        &ensp; - Contén \"verificación\": <font color="#03DAC5"><b>.*verificación.*</b></font><br>
-        &ensp; - Contén calquera das palabras: <font color="#03DAC5"><b>.*(policía|hospital|verificación).*</b></font>
+        <title><b> - Algúns patróns típicos</b></title>:<br>
+        &ensp; - Contén \"verificación\": <highlight><b>.*verificación.*</b></highlight><br>
+        &ensp; - Contén calquera das palabras: <highlight><b>.*(policía|hospital|verificación).*</b></highlight>
         ]]>
     </string>
     <string name="help_quick_copy">
         <![CDATA[
         Unha forma rápida de copiar contido de mensaxes SMS ou <translate>números de teléfono</translate>, o que facilita a captura de códigos de verificación ou <translate>números de teléfono</translate> entrantes.<br>
         <br>
-        Cando coincide, aparecerá un botón como <font color="#00BFFF"><b>Copiar: 123456</b></font> na notificación.<br>
+        Cando coincide, aparecerá un botón como <title><b>Copiar: 123456</b></title> na notificación.<br>
         <br>
         Unha regra de exemplo para extraer códigos de verificación:<br>
         &emsp; Usando o grupo de captura:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>code.*?(\\d+) </b></font><br>
+        &emsp;&emsp; <highlight><b>code.*?(\\d+) </b></highlight><br>
         &emsp; Outro enfoque usando a procura arredor:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>(?&lt;=code.{0,3})\\d+</b></font>
+        &emsp;&emsp; <highlight><b>(?&lt;=code.{0,3})\\d+</b></highlight>
         ]]>
     </string>
     <string name="help_apply_to_call_sms">
@@ -29,18 +29,18 @@
     </string>
     <string name="help_apply_to_number_and_message">
         <![CDATA[
-        Cando se marca <font color="#00BFFF"><b><translate>Número</translate></b></font>, esta regra extraerá contido do <translate>número de teléfono</translate> entrante.
+        Cando se marca <title><b><translate>Número</translate></b></title>, esta regra extraerá contido do <translate>número de teléfono</translate> entrante.
         Por exemplo, usa <b>(.*)</b> para copiar o <translate>número de teléfono</translate>.<br>
         <br>
-        Cando se marca <font color="#00BFFF"><b>Contido</b></font>, esta regra extraerá contido do corpo da mensaxe SMS,
+        Cando se marca <title><b>Contido</b></title>, esta regra extraerá contido do corpo da mensaxe SMS,
         como códigos de verificación.
         ]]>
     </string>
     <string name="help_apply_to_passed_and_blocked">
         <![CDATA[
-        Cando se marca <font color="#03DAC5"><b>Pasado</b></font>, esta regra aplicarase a chamadas e mensaxes pasadas.<br>
+        Cando se marca <highlight><b>Pasado</b></highlight>, esta regra aplicarase a chamadas e mensaxes pasadas.<br>
         <br>
-        Cando se marca <font color="#fa7f71"><b>Bloqueado</b></font>, esta regra aplicarase a chamadas e mensaxes bloqueadas.
+        Cando se marca <error><b>Bloqueado</b></error>, esta regra aplicarase a chamadas e mensaxes bloqueadas.
         ]]>
     </string>
     <string name="title_rule_testing"><translate>Proba de regras</translate></string>

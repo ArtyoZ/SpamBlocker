@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        重複通知を避けるため、システム設定で<font color="#fa7f71"><b>SMSアプリの通知をオフ</b></font>にしてください。<br>
+        重複通知を避けるため、システム設定で<error><b>SMSアプリの通知をオフ</b></error>にしてください。<br>
         <br>
         SMSアプリが通知権限を強制する場合でも、権限は許可したまま、代わりにすべての<b>通知チャンネル</b>をオフにすることができます。
         ]]>
@@ -15,11 +15,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>発信者名</b></font>:<br>
+        <title><b>発信者名</b></title>:<br>
         &ensp; 正規表現は発信者の表示名（CNAP）と一致します。<br>
         <br>
         通話履歴ログでは、発信者名が存在する場合、電話番号の後にかっこで囲まれて表示されます。例:<br>
-        &ensp; <font color="#888888">12345 (表示名)</font> <br>
+        &ensp; <sample>12345 (表示名)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">発信者名</string>
@@ -41,13 +41,13 @@
     </string>
     <string name="explanation_forwarded_call">
         <![CDATA[
-        これは<b>キャリア固有</b>です。一部のキャリアでは、転送された通話を「&」で連結された2つの電話番号としてフォーマットします。例: <font color="#888888">222&111</font>。<br>
+        これは<b>キャリア固有</b>です。一部のキャリアでは、転送された通話を「&」で連結された2つの電話番号としてフォーマットします。例: <sample>222&111</sample>。<br>
         <br>
         この形式では:<br>
-        &ensp; - 最初の部分（<font color="#888888">222</font>）は通常、転送元の電話番号です。<br>
-        &ensp; - 2番目の部分（<font color="#888888">111</font>）は元の電話番号です。<br>
+        &ensp; - 最初の部分（<sample>222</sample>）は通常、転送元の電話番号です。<br>
+        &ensp; - 2番目の部分（<sample>111</sample>）は元の電話番号です。<br>
         <br>
-        また、<font color="#888888">333&111</font>や<font color="#888888">444&111</font>のように、元の電話番号は同じままで転送元の電話番号が変わる場合もあります。
+        また、<sample>333&111</sample>や<sample>444&111</sample>のように、元の電話番号は同じままで転送元の電話番号が変わる場合もあります。
         ]]>
     </string>
     <string name="raw">生データ</string>
@@ -61,14 +61,14 @@
         <br>
         <b>オプション</b>:<br>
         <br>
-        <font color="#00BFFF"><b>生データ</b></font><br>
-        APIがこの形式をサポートしている場合、生の電話番号（<font color="#888888">222&111</font>）を照会/報告します。<br>
+        <title><b>生データ</b></title><br>
+        APIがこの形式をサポートしている場合、生の電話番号（<sample>222&111</sample>）を照会/報告します。<br>
         <br>
-        <font color="#00BFFF"><b>元の電話番号</b></font><br>
-        元の電話番号（<font color="#888888">111</font>）を照会/報告します。これは、生の形式をサポートしないAPIの回避策です。<br>
+        <title><b>元の電話番号</b></title><br>
+        元の電話番号（<sample>111</sample>）を照会/報告します。これは、生の形式をサポートしないAPIの回避策です。<br>
         <br>
-        <font color="#00BFFF"><b>転送元</b></font><br>
-        転送元の電話番号（<font color="#888888">222</font>）を照会/報告します。<br>
+        <title><b>転送元</b></title><br>
+        転送元の電話番号（<sample>222</sample>）を照会/報告します。<br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">この転送された電話番号は%sに修正されました。</string>
@@ -77,7 +77,7 @@
     <string name="geo_location_rule">ジオロケーション規則</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>ジオロケーション</b></font>:<br>
+        <title><b>ジオロケーション</b></title>:<br>
         &ensp; 正規表現は電話番号のジオロケーションに一致します。 <br>
         <br>
         &ensp; これは Google のライブラリ <a href="https://github.com/google/libphonenumber">libphonenumber</a> に依存しており、電話番号の地理情報を提供するオフラインライブラリです。 <br>
@@ -97,8 +97,8 @@
         <br>
         ___ プレースホルダーを実際の地域に置き換えてください。 <br>
         <br>
-        構文 <font color="#fa7f71">(?!___$).*</font> は次を意味します: <br>
-        &ensp; <font color="#fa7f71">___</font> ではない任意のテキストにマッチします。
+        構文 <error>(?!___$).*</error> は次を意味します: <br>
+        &ensp; <error>___</error> ではない任意のテキストにマッチします。
         ]]>
     </string>
 </resources>

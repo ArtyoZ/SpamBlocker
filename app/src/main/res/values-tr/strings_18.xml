@@ -21,9 +21,9 @@
         - Aksi takdirde, iş akışı sonlanır.<br>
         <br>
         Kullanım senaryosu: <br>
-        <font color="#888888">
+        <sample>
         &ensp; Nöbet veya nöbet dışı SMS aldıktan sonra bazı kuralları açıp kapatın. <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">SMS etkinliği %s tetiklendi.</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         Önceden cevaplanmış numaralardan gelen çağrılara izin verin.<br>
         <br>
-        <h6><font color="#ffa500">Uyarı</font></h6>
+        <h6><warn>Uyarı</warn></h6>
         %s<br>
         <br>
         <b>Seçenekler:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Gün İçinde</font></h6>
-        <font color="#03DAC5">%d gün</font> öncesinde gerçekleşen çağrılar yoksayılır.<br>
+        <h6><title>- Gün İçinde</title></h6>
+        <highlight>%d gün</highlight> öncesinde gerçekleşen çağrılar yoksayılır.<br>
         <br>
-        <h6><font color="#00BFFF">- Minimum Süre</font></h6>
-        <font color="#03DAC5">%d saniyeden</font> az süren çağrılar yoksayılır.<br>
+        <h6><title>- Minimum Süre</title></h6>
+        <highlight>%d saniyeden</highlight> az süren çağrılar yoksayılır.<br>
         <br>
-        <font color="#ea86ff"><b>Öncelik: 10</b></font>
+        <priority><b>Öncelik: 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">Bu özelliği yaşlılar veya sahte aramaları tanımlama yeteneği daha az olan kişiler için etkinleştirmeyin, zira bu onları tekrarlanan sahte aramalara maruz bırakabilir.</string>
@@ -75,9 +75,9 @@
         Takvim etkinliklerine göre regex kurallarını geçici olarak değiştirin. <br>
         <br>
         <b>Kullanım senaryosu</b>:<br>
-        &ensp; <font color="#888888">Vardiyalı bir çalışan iki gün gündüz vardiyasında,
+        &ensp; <sample>Vardiyalı bir çalışan iki gün gündüz vardiyasında,
           sonraki iki gün ise gece vardiyasında çalışır.<br>
-        &ensp; Bazı kuralların değişen çalışma saatlerinde devre dışı bırakılması veya etkinleştirilmesi gerekebilir.</font><br>
+        &ensp; Bazı kuralların değişen çalışma saatlerinde devre dışı bırakılması veya etkinleştirilmesi gerekebilir.</sample><br>
         <br>
         Bu hem bir regex kuralı hem de bir iş akışı oluşturacaktır; kural belirli takvim etkinliği sırasında anında etkinleştirilecektir. <br>
         ]]>

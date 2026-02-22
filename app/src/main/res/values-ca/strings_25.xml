@@ -19,9 +19,9 @@
         Està vinculat al flux de treball i s\'eliminarà automàticament quan el flux de treball sigui eliminat. <br>
         <br>
         <b>Cas d\'ús</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; En escenaris que impliquen actualitzacions incrementals, una variable similar a un punter ha de ser desada i reutilitzada en execucions successives.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">Carregar etiqueta</string>
@@ -45,13 +45,13 @@
         <br>
         <b>Opcions</b> <br>
         <br>
-        <font color="#00BFFF"><b>Tipus d\'anàlisi</b></font> <br>
+        <title><b>Tipus d\'anàlisi</b></title> <br>
         Analitza el valor de l\'etiqueta; és compatible amb expressions regulars i XPath. <br>
         <br>
-        <font color="#00BFFF"><b>Nom de l\'etiqueta</b></font> <br>
+        <title><b>Nom de l\'etiqueta</b></title> <br>
         El nom de l\'etiqueta a generar. <br>
-        Per exemple, si el nom de l\'etiqueta és <font color="#03DAC5">my_token</font>,
-         llavors pots utilitzar <font color="#03DAC5">{my_token}</font> en consultes HTTP posteriors. <br>
+        Per exemple, si el nom de l\'etiqueta és <highlight>my_token</highlight>,
+         llavors pots utilitzar <highlight>{my_token}</highlight> en consultes HTTP posteriors. <br>
     ]]>
     </string>
     <string name="max"><short>Màx</short></string>
@@ -66,15 +66,15 @@
         Ressalteu la marca de temps amb colors diferents segons com de recent és el registre. <br>
         <br>
         <b>Cas d\'ús</b>: <br>
-        &ensp; <font color="#888888">Reviseu les trucades d\'avui a la nit comprovant tots els registres amb una marca de temps blava. </font>
+        &ensp; <sample>Reviseu les trucades d\'avui a la nit comprovant tots els registres amb una marca de temps blava. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        Ha de ser o bé <font color="#00BFFF"><no_translate>today</no_translate></font> o
+        Ha de ser o bé <title><no_translate>today</no_translate></title> o
         un número seguit de <b><no_translate>min</no_translate></b>
-        (p. ex. <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (p. ex. <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">Valor invàlid, vegeu la informació emergent per obtenir ajuda</string>
@@ -85,34 +85,34 @@
         <br>
         Per defecte, <br>
         <br>
-        - <font color="#03DAC5">Regles de la llista blanca</font> tenen prioritat <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">Per exemple: Contactes, Trucada repetida, Aplicacions recents, etc </font><br>
+        - <highlight>Regles de la llista blanca</highlight> tenen prioritat <priority>10</priority> <br>
+        &ensp; <sample>Per exemple: Contactes, Trucada repetida, Aplicacions recents, etc </sample><br>
         <br>
-        - <font color="#fa7f71">Regles de la llista negra</font> tenen prioritat <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">Per exemple: STIR, Base de dades, etc </font> <br>
+        - <error>Regles de la llista negra</error> tenen prioritat <priority>0</priority> <br>
+        &ensp; <sample>Per exemple: STIR, Base de dades, etc </sample> <br>
         <br>
         Quan ambdues estan habilitades, les regles de la llista blanca sobreescriuen les de la llista negra ja que 10 > 0. <br>
         <br>
-        Per a regles regex, la prioritat es pot establir a qualsevol número entre <font color="#ea86ff">-2147483648</font>
-          i <font color="#ea86ff">2147483647</font>. <br>
+        Per a regles regex, la prioritat es pot establir a qualsevol número entre <priority>-2147483648</priority>
+          i <priority>2147483647</priority>. <br>
         Regles diferents poden tenir la mateixa prioritat sempre que siguin del mateix tipus, però,
-          <font color="#ffa500"><b>mai assignis la mateixa prioritat tant a les regles de la llista blanca
-          com a les de la llista negra</b></font>, ja que pot provocar un comportament aleatori. <br>
+          <warn><b>mai assignis la mateixa prioritat tant a les regles de la llista blanca
+          com a les de la llista negra</b></warn>, ja que pot provocar un comportament aleatori. <br>
         <br>
-        La funció <font color="#00BFFF">Mode de reunió</font> té prioritat <font color="#ea86ff">20</font> per defecte,
+        La funció <title>Mode de reunió</title> té prioritat <priority>20</priority> per defecte,
           perquè ha de bloquejar qualsevol trucada durant una reunió. <br>
-        I <font color="#ea86ff">-1</font> per a <font color="#00BFFF">Consulta instantània</font>,
+        I <priority>-1</priority> per a <title>Consulta instantània</title>,
           de manera que només es comprova després que la trucada hagi superat tots els filtres locals. <br>
         <br>
         <b>Casos d\'ús</b> de personalització de la prioritat: <br>
         <br>
-        - <font color="#888888">Bloqueja sempre un número concret, independentment de si es repeteix</font> <br>
-         &ensp; Estableix una regla amb prioritat > 10 per sobreescriure <font color="#00BFFF">Trucada repetida</font>. <br>
+        - <sample>Bloqueja sempre un número concret, independentment de si es repeteix</sample> <br>
+         &ensp; Estableix una regla amb prioritat > 10 per sobreescriure <title>Trucada repetida</title>. <br>
         <br>
-        - <font color="#888888">Permet sempre un número</font> <br>
-         &ensp; Estableix-la a > 20 per sobreescriure <font color="#00BFFF">Mode de reunió</font>. <br>
+        - <sample>Permet sempre un número</sample> <br>
+         &ensp; Estableix-la a > 20 per sobreescriure <title>Mode de reunió</title>. <br>
         <br>
-        - <font color="#888888">Prova una regla regex</font> <br>
+        - <sample>Prova una regla regex</sample> <br>
          &ensp; Estableix-la a 999 per sobreescriure tots els altres filtres i no haver de desactivar-los temporalment un per un.
     ]]>
     </string>

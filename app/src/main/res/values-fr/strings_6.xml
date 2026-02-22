@@ -43,13 +43,13 @@
         <br>
         <b>Options :</b><br>
         <br>
-        <h6><font color="#00BFFF">- Fréquence</h6>
-        Le réglage par défaut <font color="#03DAC5"><b>1 / 5 min</b></font> signifie que le deuxième appel dans les 5 minutes sera autorisé. <br>
+        <h6><title>- Fréquence</title></h6>
+        Le réglage par défaut <highlight><b>1 / 5 min</b></highlight> signifie que le deuxième appel dans les 5 minutes sera autorisé. <br>
         <br>
-        <h6><font color="#00BFFF">- Inclure les SMS</font></h6>
+        <h6><title>- Inclure les SMS</title></h6>
         Lorsqu\'activé, la réception de messages SMS de ce numéro compte également.<br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 10</b></font>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
 

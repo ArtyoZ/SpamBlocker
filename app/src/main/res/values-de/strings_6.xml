@@ -43,13 +43,13 @@
         <br>
         <b>Optionen:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Häufigkeit</h6>
-        Die Standardeinstellung <font color="#03DAC5"><b>1 / 5 Min</b></font> bedeutet, dass der zweite Anruf innerhalb von 5 Minuten zugelassen wird. <br>
+        <h6><title>- Häufigkeit</title></h6>
+        Die Standardeinstellung <highlight><b>1 / 5 Min</b></highlight> bedeutet, dass der zweite Anruf innerhalb von 5 Minuten zugelassen wird. <br>
         <br>
-        <h6><font color="#00BFFF">- SMS einbeziehen</font></h6>
+        <h6><title>- SMS einbeziehen</title></h6>
         Wenn aktiviert, zählt auch der Empfang von SMS-Nachrichten von dieser Nummer.<br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 10</b></font>
+        <priority><b>Priorität: 10</b></priority>
         ]]>
     </string>
 

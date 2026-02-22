@@ -43,7 +43,7 @@
         <![CDATA[
         Este recurso requer permissão:<br>
         <br>
-        <font color="#00BFFF">%s</font><br>
+        <title>%s</title><br>
         <br>
         Ele deve ser habilitado manualmente nas Configurações do Sistema.<br>
         Abrir essa página de configuração?

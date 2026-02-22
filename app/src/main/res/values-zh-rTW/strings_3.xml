@@ -3,22 +3,22 @@
         <![CDATA[
         這些規則用於過濾簡訊內容。<br>
         <br>
-        <font color="#00BFFF"><b> - 常見的規則範例</b></font>：<br>
-        &ensp; - 包含「驗證」：<font color="#03DAC5"><b>.*驗證.*</b></font><br>
-        &ensp; - 包含任一關鍵字：<font color="#03DAC5"><b>.*(警察|醫院|驗證).*</b></font>
+        <title><b> - 常見的規則範例</b></title>：<br>
+        &ensp; - 包含「驗證」：<highlight><b>.*驗證.*</b></highlight><br>
+        &ensp; - 包含任一關鍵字：<highlight><b>.*(警察|醫院|驗證).*</b></highlight>
         ]]>
     </string>
     <string name="help_quick_copy">
         <![CDATA[
         快速從簡訊或電話號碼複製內容的方法，方便擷取驗證碼或來電號碼。<br>
         <br>
-        符合規則時，通知中會出現類似 <font color="#00BFFF"><b>複製：123456</b></font> 的按鈕。<br>
+        符合規則時，通知中會出現類似 <title><b>複製：123456</b></title> 的按鈕。<br>
         <br>
         擷取驗證碼的規則範例：<br>
         &emsp; 使用擷取群組：<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>驗證碼.*?(\\d+)</b></font><br>
+        &emsp;&emsp; <highlight><b>驗證碼.*?(\\d+)</b></highlight><br>
         &emsp; 另一種使用環顧的方法：<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>(?&lt;=驗證碼.{0,3})\\d+</b></font>
+        &emsp;&emsp; <highlight><b>(?&lt;=驗證碼.{0,3})\\d+</b></highlight>
         ]]>
     </string>
     <string name="help_apply_to_call_sms">
@@ -29,18 +29,18 @@
     </string>
     <string name="help_apply_to_number_and_message">
         <![CDATA[
-        勾選 <font color="#00BFFF"><b>號碼</b></font> 時，此規則會從來電號碼擷取內容。
+        勾選 <title><b>號碼</b></title> 時，此規則會從來電號碼擷取內容。
         例如，使用 <b>(.*)</b> 來複製電話號碼。<br>
         <br>
-        勾選 <font color="#00BFFF"><b>內容</b></font> 時，此規則會從簡訊內容擷取內容，
+        勾選 <title><b>內容</b></title> 時，此規則會從簡訊內容擷取內容，
         例如驗證碼。
         ]]>
     </string>
     <string name="help_apply_to_passed_and_blocked">
         <![CDATA[
-        勾選 <font color="#03DAC5"><b>放行</b></font> 時，此規則會套用於已放行的通話和簡訊。<br>
+        勾選 <highlight><b>放行</b></highlight> 時，此規則會套用於已放行的通話和簡訊。<br>
         <br>
-        勾選 <font color="#fa7f71"><b>封鎖</b></font> 時，此規則會套用於已封鎖的通話和簡訊。
+        勾選 <error><b>封鎖</b></error> 時，此規則會套用於已封鎖的通話和簡訊。
         ]]>
     </string>
     <string name="title_rule_testing">規則測試</string>

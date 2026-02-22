@@ -42,15 +42,15 @@
         <![CDATA[
         Hanya kategori spam berikut ini yang didukung, kategori lain dari API harus dipetakan ke salah satunya.<br>
         <br>
-         - <font color="#03DAC5"><b>{sah}</b></font><br>
+         - <highlight><b>{sah}</b></highlight><br>
         &ensp; Laporkan sebagai nomor yang sah, bukan spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{penipuan}</b></font><br>
-         - <font color="#fa7f71"><b>{pemasaran}</b></font><br>
-         - <font color="#fa7f71"><b>{survei}</b></font><br>
-         - <font color="#fa7f71"><b>{politik}</b></font><br>
+         - <error><b>{penipuan}</b></error><br>
+         - <error><b>{pemasaran}</b></error><br>
+         - <error><b>{survei}</b></error><br>
+         - <error><b>{politik}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{lainnya}</b></font><br>
+         - <error><b>{lainnya}</b></error><br>
         &ensp; Jenis spam cadangan, digunakan ketika tidak ada kategori di atas yang berlaku.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         Beberapa layanan akan mengirim SMS terlebih dahulu untuk memberi tahu Anda bahwa panggilan akan segera datang, biasanya dalam waktu satu menit.<br>
         <br>
         Misalnya, pesan SMS seperti:<br>
-        &ensp; <font color="#888888">[beberapa layanan] Kami menghubungi Anda untuk menginformasikan ...,  mohon menjawab.</font><br>
+        &ensp; <sample>[beberapa layanan] Kami menghubungi Anda untuk menginformasikan ...,  mohon menjawab.</sample><br>
         <br>
         Regex untuk pesan tersebut adalah: <br>
-        &ensp; <font color="#03DAC5"><b><translate>.*mohon.*menjawab.*</translate></b></font> <br>
+        &ensp; <highlight><b><translate>.*mohon.*menjawab.*</translate></b></highlight> <br>
         <br>
-        Pengaturan default <font color="#03DAC5"><b>120 Detik</b></font> berarti semua panggilan akan
+        Pengaturan default <highlight><b>120 Detik</b></highlight> berarti semua panggilan akan
         diizinkan dalam dua menit berikutnya setelah menerima pesan tersebut.<br>
         <br>
         Dapat digunakan untuk SMS biasa dan SMS kilat (SMS kelas 0).<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 10</b></font>
+        <priority><b>Prioritas: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Wildcard `*` digunakan tanpa titik yang mendahului titik sebelumnya, Apakah maksud Anda `.*` ?</string>

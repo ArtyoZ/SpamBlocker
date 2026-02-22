@@ -35,13 +35,13 @@
         <br>
         <b>选项:</b><br>
         <br>
-        <h6><font color="#00BFFF">- 天数内</font></h6>
-        忽略在<font color="#03DAC5">%s 天</font>之前发生的通话。<br>
+        <h6><title>- 天数内</title></h6>
+        忽略在<highlight>%s 天</highlight>之前发生的通话。<br>
         <br>
-        <h6><font color="#00BFFF">- 包括短信</font></h6>
+        <h6><title>- 包括短信</title></h6>
         启用后，发送短信给该号码也算数。<br>
         <br>
-        <font color="#ea86ff"><b>优先级: 10</b></font>
+        <priority><b>优先级: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -51,12 +51,12 @@
         一个典型的用例：<br>
         &emsp; 您刚刚在 PizzaApp 中订购了披萨，很快他们打电话给您退款，因为他们要关门。如果 PizzaApp 在此处启用，该呼叫将通过。<br>
         <br>
-        默认设置 <font color="03DAC5"><b>5 分钟</b></font> 表示如果任何应用在 5 分钟内使用过，任何呼叫都将通过，
+        默认设置 <highlight><b>5 分钟</b></highlight> 表示如果任何应用在 5 分钟内使用过，任何呼叫都将通过，
         “使用”是指被激活、停用、最小化或关闭。<br>
         <br>
         仅适用于呼叫，<b>不</b>适用于短信。<br>
         <br>
-        <font color="#ea86ff"><b>优先级：10</b></font>
+        <priority><b>优先级：10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">挂断电话前的延迟。</string>
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>拒接</b></font>: <br>
+        - <title><b>拒接</b></title>: <br>
          与按下拒绝按钮相同。它完全静默工作，不会点亮锁屏。<br>
         <br>
-        - <font color="#00BFFF"><b>静音</b></font>: <br>
+        - <title><b>静音</b></title>: <br>
          它会在后台静默响铃，给来电者一种您不在或错过了电话的印象。<br>
         <br>
          如果您正在遭受重复的垃圾电话（spam calls），它可能也会有所帮助，它会延长通话时长，降低垃圾电话（spammers）的效率，从而可能阻止他们再次呼叫您。<br>
         <br>
-        - <font color="#00BFFF"><b>挂断</b></font>: <br>
+        - <title><b>挂断</b></title>: <br>
         接听并挂断电话，以防止其转到语音信箱。<br>
         <br>
         当正在进行通话时收到垃圾电话（spam call）时，它将切换到“拒接”
          以避免挂断正在进行的通话。<br>
         <br>
-        <font color="#FFA500">注意</font> 锁屏可能会短暂点亮，
+        <warn>注意</warn> 锁屏可能会短暂点亮，
         您也可能会听到通话结束音（有些手机提供静音此声音的选项）。<br>
         <br>
         - <b>延迟</b>: <br>

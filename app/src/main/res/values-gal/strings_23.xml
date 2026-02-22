@@ -41,25 +41,25 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        Bloquea todas as chamadas internacionais excepto as do teu propio país coa expresión regular <font color="#fa7f71"><b>\\+(?!39).*</b></font>,
+        Bloquea todas as chamadas internacionais excepto as do teu propio país coa expresión regular <error><b>\\+(?!39).*</b></error>,
           as chamadas que superen esta regra non se permitirán inmediatamente, serán verificadas por outras regras. <br>
         <br>
-        <font color="#ffa500">Cambia</font> <b>39</b> polo código do teu país. <br>
+        <warn>Cambia</warn> <b>39</b> polo código do teu país. <br>
         <br>
         Desglose da expresión regular: <br>
         &ensp; - O indicador de expresión regular <b>Número en bruto</b> conserva o <b>+</b> inicial, se non, eliminarase antes de verificar. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> coincide con calquera número que comece con <b>+</b> e que non vaia seguido de <b>39</b> (números estranxeiros).
+        &ensp; - <error><b>\\+(?!39)</b></error> coincide con calquera número que comece con <b>+</b> e que non vaia seguido de <b>39</b> (números estranxeiros).
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         Tamén coñecido como <b>Número Descoñecido</b> ou <b>Número Baleiro</b>, son cadeas baleiras que
          poden ser coincidentes con calquera de: <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; un campo de expresión regular <font color="#fa7f71">baleiro</font>. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; un campo de expresión regular <error>baleiro</error>. <br>
         <br>
-        A <font color="#ea86ff">prioridade</font> establécese en <font color="#ea86ff">20</font> para anular outras funcións como <b>Chamada Repetida</b>,
+        A <priority>prioridade</priority> establécese en <priority>20</priority> para anular outras funcións como <b>Chamada Repetida</b>,
         polo que sempre se bloquean aínda que se repitan.
         ]]>
     </string>
@@ -83,7 +83,7 @@
         <![CDATA[
         Este interruptor serve para desactivar rapidamente a aplicación, útil cando esperas unha chamada ou mensaxe específica. <br>
         <br>
-        Tamén podes activalo desde a <font color="#6ed0ff"><b>Configuración Rápida Despregable</b></font>. <br>
+        Tamén podes activalo desde a <minor><b>Configuración Rápida Despregable</b></minor>. <br>
         <br>
         O filtrado de chamadas e SMS tamén debe ser activado por separado debaixo, só funciona cando este está activado.
         ]]>
@@ -99,10 +99,10 @@
          este mosaico personalizado afecta só a regras específicas. <br>
         <br>
         Esta configuración implica tanto unha regra de regex como un fluxo de traballo. Cando o mosaico está: <br>
-        &ensp; - <font color="#03DAC5"><b>Activado</b></font> <br>
+        &ensp; - <highlight><b>Activado</b></highlight> <br>
         &emsp;  Este fluxo de traballo executarase antes de que as chamadas sexan filtradas, habilitará a regra de regex. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Desactivado</b></font> <br>
+        &ensp; - <sample><b>Desactivado</b></sample> <br>
         &emsp;  Este fluxo de traballo nunca se executará, a regra nunca funcionará. <br>
         <br>
         En resumo, <b>cando o mosaico está activado, a regra está activada, e viceversa</b>.
@@ -117,8 +117,8 @@
         Require Android 12+. <br>
         <br>
         Isto engadirá dúas regras para a SIM 2: <br>
-        &ensp; - Permitir contactos, <font color="#ea86ff">prioridade 12</font>. <br>
-        &ensp; - Bloquear todo o demais, <font color="#ea86ff">prioridade 11</font>.
+        &ensp; - Permitir contactos, <priority>prioridade 12</priority>. <br>
+        &ensp; - Bloquear todo o demais, <priority>prioridade 11</priority>.
         Isto anula configuracións como Chamada repetida, polo que sempre se bloquearán aínda que se repitan.
         ]]>
     </string>

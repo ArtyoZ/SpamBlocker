@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Asegúrate de <font color="#fa7f71"><b>desactivar as notificacións da aplicación de SMS</b></font> na configuración do sistema
+        Asegúrate de <error><b>desactivar as notificacións da aplicación de SMS</b></error> na configuración do sistema
          para evitar notificacións dobres. <br>
         <br>
         Se a aplicación de SMS forza o permiso de notificación, podes mantelo concedido
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Nome do Chamador</b></font>:<br>
+        <title><b>Nome do Chamador</b></title>:<br>
         &ensp; A expresión regular coincidirá co nome de visualización do chamador (CNAP). <br>
         <br>
         No rexistro do historial de chamadas, o nome do chamador aparecerá despois do número de teléfono entre parénteses se existe, como: <br>
-        &ensp; <font color="#888888">12345 (Nome de Visualización)</font> <br>
+        &ensp; <sample>12345 (Nome de Visualización)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">Nome do Chamador</string>
@@ -45,13 +45,13 @@
     </string>
     <string name="explanation_forwarded_call">
         <![CDATA[
-        Isto é <b>específico do operador</b>; algúns operadores formatan as chamadas reenviadas como dous números concatenados cun \"&amp;\", como <font color="#888888">222&111</font>. <br>
+        Isto é <b>específico do operador</b>; algúns operadores formatan as chamadas reenviadas como dous números concatenados cun \"&amp;\", como <sample>222&111</sample>. <br>
         <br>
         Neste formato: <br>
-        &ensp; - A primeira parte (<font color="#888888">222</font>) é tipicamente o número de reenvío. <br>
-        &ensp; - A segunda parte (<font color="#888888">111</font>) é o número orixinal. <br>
+        &ensp; - A primeira parte (<sample>222</sample>) é tipicamente o número de reenvío. <br>
+        &ensp; - A segunda parte (<sample>111</sample>) é o número orixinal. <br>
         <br>
-        Tamén podería haber <font color="#888888">333&111</font> e <font color="#888888">444&111</font>, onde o número de orixe permanece o mesmo e o número de reenvío cambia.
+        Tamén podería haber <sample>333&111</sample> e <sample>444&111</sample>, onde o número de orixe permanece o mesmo e o número de reenvío cambia.
         ]]>
     </string>
     <string name="raw">Sen procesar</string>
@@ -65,14 +65,14 @@
         <br>
         <b>Opcións</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Sen procesar</b></font> <br>
-        Consultar/informar o número sen procesar (<font color="#888888">222&111</font>), se a API admite este formato. <br>
+        <title><b>Sen procesar</b></title> <br>
+        Consultar/informar o número sen procesar (<sample>222&111</sample>), se a API admite este formato. <br>
         <br>
-        <font color="#00BFFF"><b>Orixinal</b></font> <br>
-        Consultar/informar o número orixinal (<font color="#888888">111</font>), isto é unha solución alternativa para APIs que non admiten o formato sen procesar. <br>
+        <title><b>Orixinal</b></title> <br>
+        Consultar/informar o número orixinal (<sample>111</sample>), isto é unha solución alternativa para APIs que non admiten o formato sen procesar. <br>
         <br>
-        <font color="#00BFFF"><b>Reenvío</b></font> <br>
-        Consultar/informar o número de reenvío (<font color="#888888">222</font>). <br>
+        <title><b>Reenvío</b></title> <br>
+        Consultar/informar o número de reenvío (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">Este número reenviado foi modificado a %s.</string>
@@ -81,7 +81,7 @@
     <string name="geo_location_rule">Regra de Localización Xeográfica</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Localización Xeográfica</b></font>:<br>
+        <title><b>Localización Xeográfica</b></title>:<br>
         &ensp; O regex coincidirá coa localización xeográfica do number. <br>
         <br>
         &ensp; Isto basease na biblioteca de Google <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -105,8 +105,8 @@
         <br>
         Substitúe o marcador ___ pola túa zona real. <br>
         <br>
-        A sintaxe <font color="#fa7f71">(?!___$).*</font> significa: <br>
-        &ensp; Coincide con calquera texto que non sexa <font color="#fa7f71">___</font>.
+        A sintaxe <error>(?!___$).*</error> significa: <br>
+        &ensp; Coincide con calquera texto que non sexa <error>___</error>.
         ]]>
     </string>
 </resources>

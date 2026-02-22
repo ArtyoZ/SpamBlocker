@@ -21,9 +21,9 @@
         - Andernfalls wird der Workflow beendet.<br>
         <br>
         Anwendungsfall: <br>
-        <font color="#888888">
+        <sample>
         &ensp; Einige Regeln nach Erhalt von Bereitschafts- oder Nicht-Bereitschafts-SMS umschalten. <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">SMS-Ereignis %s wird ausgelöst.</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         Anrufe von zuvor angenommenen Nummern zulassen.<br>
         <br>
-        <h6><font color="#ffa500">Warnung</font></h6>
+        <h6><warn>Warnung</warn></h6>
         %s<br>
         <br>
         <b>Optionen:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Innerhalb von Tagen</font></h6>
-        Anrufe, die vor <font color="#03DAC5">%d Tagen</font> stattfanden, werden ignoriert.<br>
+        <h6><title>- Innerhalb von Tagen</title></h6>
+        Anrufe, die vor <highlight>%d Tagen</highlight> stattfanden, werden ignoriert.<br>
         <br>
-        <h6><font color="#00BFFF">- Minimale Dauer</font></h6>
-        Anrufe, die weniger als <font color="#03DAC5">%d Sekunden</font> dauerten, werden ignoriert.<br>
+        <h6><title>- Minimale Dauer</title></h6>
+        Anrufe, die weniger als <highlight>%d Sekunden</highlight> dauerten, werden ignoriert.<br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 10</b></font>
+        <priority><b>Priorität: 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">Aktivieren Sie diese Funktion nicht für Senioren oder Personen, die weniger in der Lage sind, betrügerische Anrufe zu identifizieren, da dies sie wiederholten betrügerischen Anrufen aussetzen könnte.</string>
@@ -75,9 +75,9 @@
         Regex-Regeln basierend auf Kalenderereignissen temporär ändern. <br>
         <br>
         <b>Anwendungsfall</b>:<br>
-        &ensp; <font color="#888888">Ein Schichtarbeiter arbeitet zwei Tage im Tagschicht,
+        &ensp; <sample>Ein Schichtarbeiter arbeitet zwei Tage im Tagschicht,
           dann die nächsten zwei in der Nachtschicht.<br>
-        &ensp; Einige Regeln müssen während der unterschiedlichen Arbeitszeiten deaktiviert oder aktiviert werden.</font><br>
+        &ensp; Einige Regeln müssen während der unterschiedlichen Arbeitszeiten deaktiviert oder aktiviert werden.</sample><br>
         <br>
         Dies erstellt sowohl eine Regex-Regel als auch einen Workflow; die Regel wird während des spezifischen Kalenderereignisses dynamisch aktiviert. <br>
         ]]>

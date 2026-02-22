@@ -12,53 +12,53 @@
     <![CDATA[
         Importieren Sie Nummern aus lokalen oder Remote-Dateien mithilfe von Workflows. <br>
         <br>
-        <font color="#00BFFF"><b>Ein typisches Setup</b></font>: <br>
+        <title><b>Ein typisches Setup</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Datei lesen</b></font> / <font color="#6ed0ff"><b>Http-Anfrage</b></font> <br>
+        1. <minor><b>Datei lesen</b></minor> / <minor><b>Http-Anfrage</b></minor> <br>
           &ensp; Den Dateiinhalt abrufen. <br>
           <br>
-        2. <font color="#6ed0ff"><b>CSV parsen</b></font> / <font color="#6ed0ff"><b>XML parsen</b></font> / <font color="#6ed0ff"><b>Regex extrahieren</b></font> <br>
+        2. <minor><b>CSV parsen</b></minor> / <minor><b>XML parsen</b></minor> / <minor><b>Regex extrahieren</b></minor> <br>
           &ensp; Analysieren Sie es und erhalten Sie eine Liste von Nummern. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Nummer ersetzen</b></font> (optional) <br>
+        3. <minor><b>Nummer ersetzen</b></minor> (optional) <br>
           &ensp; Das Nummernformat ändern <br>
           &ensp; Anwendungsfall: <br>
-          <font color="#888888">
+          <sample>
             &emsp; Beim Migrieren von Nummern aus anderen Apps, Formate wie <b>123#####</b> in Regex <b>123.....</b> oder <b>123.*</b> konvertieren <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>In Spam-Datenbank importieren</b></font> / <font color="#6ed0ff"><b>In Regex-Regel importieren</b></font> <br>
+        4. <minor><b>In Spam-Datenbank importieren</b></minor> / <minor><b>In Regex-Regel importieren</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Beispiele</b></font>: <br>
+        <title><b>Beispiele</b></title>: <br>
           - Die Voreinstellung <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Weitere Online-Beispiele: <br>
           - <a href=\"%s\">Klartext</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath wird noch nicht unterstützt, verwenden Sie stattdessen <font color="#6ed0ff"><b>Regex extrahieren</b></font>.
+          - <a href=\"%s\">Json</a> - JsonPath wird noch nicht unterstützt, verwenden Sie stattdessen <minor><b>Regex extrahieren</b></minor>.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Ein Regex-Tutorial für Nicht-Programmierer. <br>
         <br>
-        <font color="#00BFFF"><b>Einsteigerlevel - Platzhalter</b></font> <br>
-        &ensp; Wann immer Sie einen Platzhalter <font color="#888888"><b>*</b></font> verwenden möchten, setzen Sie einen Punkt <font color="#888888"><b>.</b></font> davor, wie <font color="#888888">.*<b></b></font>, dies sollte die meisten Anwendungsfälle abdecken. <br>
+        <title><b>Einsteigerlevel - Platzhalter</b></title> <br>
+        &ensp; Wann immer Sie einen Platzhalter <sample><b>*</b></sample> verwenden möchten, setzen Sie einen Punkt <sample><b>.</b></sample> davor, wie <sample><b>.*</b></sample>, dies sollte die meisten Anwendungsfälle abdecken. <br>
         <br>
-        <font color="#00BFFF"><b>Fortgeschritten - KI nutzen</b></font> <br>
+        <title><b>Fortgeschritten - KI nutzen</b></title> <br>
         &ensp; Um beispielsweise den folgenden Regex für SMS-Bestätigungen zu erhalten: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Fragen Sie die KI: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Online testen</b></font> <br>
+        <highlight><b>Online testen</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Hier tippen</big></a>, um die obige Eingabe zu kopieren <br>
           &ensp; 2. <a href=\"try_it\"><big>Hier tippen</big></a>, um die Online-KI zu starten <br>
     ]]>

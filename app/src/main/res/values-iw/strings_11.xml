@@ -9,7 +9,7 @@
         <br>
         זה חל הן על שיחות והן על הודעות.<br>
         <br>
-        <font color="#ea86ff"><b>עדיפות ברירת מחדל: 20</b></font>
+        <priority><b>עדיפות ברירת מחדל: 20</b></priority>
         ]]>
     </string>
     <string name="in_meeting">מצב פגישה</string>
@@ -27,11 +27,11 @@
     </string>
     <string name="auth_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{basic_auth(username:password)}</b></font><br>
+        - <title><b>{basic_auth(username:password)}</b></title><br>
         &ensp; עבור ממשקי API הדורשים אימות בסיסי HTTP. לדוגמה:<br>
-        &emsp; <font color="#888888">{basic_auth(111:222)}</font><br>
+        &emsp; <sample>{basic_auth(111:222)}</sample><br>
         &ensp; ייפורס ל:<br>
-        &emsp; <font color="#888888">Authorization: Basic MTExOjIyMg== </font><br>
+        &emsp; <sample>Authorization: Basic MTExOjIyMg== </sample><br>
         ]]>
     </string>
     <string name="initial_row_count">מספר שורות התחלתי</string>

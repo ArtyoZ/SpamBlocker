@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        着信番号をリアルタイムでオンライン照会します。<br>
+        リアルタイムで着信番号をオンラインで照会します。 <br>
         <br>
-        複数のAPIエンドポイントが同時に照会され、最初に受け取った結果が使用され、それ以降の結果はすべて無視されます。<br>
+        複数のAPIエンドポイントが同時に照会され、最初に受信した結果が使用され、後続の結果は無視されます。 <br>
         <br>
-        デフォルトでは最も低い優先順位が設定されており、他のすべてのルールを通過した場合にのみトリガーされます。<br>
+        デフォルトでは最低優先度となり、ローカルルールをすべて通過した後にのみトリガーされます。<br>
         <br>
-        <font color="#ea86ff"><b>デフォルトの優先度: -1</b></font>
+        <priority><b>デフォルト優先度: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">瞬時照会</string>
@@ -35,22 +35,22 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        照会結果から<font color="#00BFFF">カテゴリ</font>と<font color="#00BFFF">コメント</font>を抽出し、通知と履歴ログに表示します。(オプション)<br>
+        照会結果から<title>カテゴリ</title>と<title>コメント</title>を抽出し、通知と履歴ログに表示します。(オプション)<br>
         <br>
         例として、この照会結果の場合: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - <font color="#00BFFF">カテゴリ</font>のみを抽出: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - <title>カテゴリ</title>のみを抽出: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - <font color="#00BFFF">カテゴリ</font>と<font color="#00BFFF">コメント</font>の両方を抽出: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - <title>カテゴリ</title>と<title>コメント</title>の両方を抽出: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">結果を解析</string>
@@ -88,13 +88,13 @@
         この正規表現は番号をそれに応じてフィルタリングします。この正規表現に一致しない着信番号は、チェックがスキップされます。<br>
         <br>
         - <b>国際番号</b>のみチェックします。<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - <b>国内番号</b>のみチェックします。<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - <b>任意の番号</b>をチェックします。<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">チェック中：%s、優先度：%s</string>

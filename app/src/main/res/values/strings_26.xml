@@ -12,54 +12,54 @@
     <![CDATA[
         Import numbers from local or remote files using workflows. <br>
         <br>
-        <font color="#00BFFF"><b>A typical setup</b></font>: <br>
+        <title><b>A typical setup</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Read File</b></font> / <font color="#6ed0ff"><b>Http Request</b></font> <br>
+        1. <minor><b>Read File</b></minor> / <minor><b>Http Request</b></minor> <br>
           &ensp; Get the file content. <br>
           <br>
-        2. <font color="#6ed0ff"><b>Parse CSV</b></font> / <font color="#6ed0ff"><b>Parse XML</b></font> / <font color="#6ed0ff"><b>Regex Extract</b></font> <br>
+        2. <minor><b>Parse CSV</b></minor> / <minor><b>Parse XML</b></minor> / <minor><b>Regex Extract</b></minor> <br>
           &ensp; Parse it and get a list of numbers. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Replace Number</b></font> (optional) <br>
+        3. <minor><b>Replace Number</b></minor> (optional) <br>
           &ensp; Modify the number format <br>
           &ensp; Use case: <br>
-          <font color="#888888">
+          <sample>
             &emsp; When migrating numbers from other apps, convert formats like <b>123#####</b> to regex <b>123.....</b> or <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Import to Spam Database</b></font> / <font color="#6ed0ff"><b>Import to Regex Rule</b></font> <br>
+        4. <minor><b>Import to Spam Database</b></minor> / <minor><b>Import to Regex Rule</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Examples</b></font>: <br>
+        <title><b>Examples</b></title>: <br>
           - The preset <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         More online examples: <br>
           - <a href=\"%s\">Plain text</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath isn\'t supported yet, use <font color="#6ed0ff"><b>Regex Extract</b></font> instead.
+          - <a href=\"%s\">Json</a> - JsonPath isn\'t supported yet, use <minor><b>Regex Extract</b></minor> instead.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         A regex tutorial for non-programmers. <br>
         <br>
-        <font color="#00BFFF"><b>Entry Level - Wildcard</b></font> <br>
-        &ensp; Whenever you want to use a wildcard <font color="#888888"><b>*</b></font>, put a dot <font color="#888888"><b>.</b></font>
-          before it, like <font color="#888888">.*<b></b></font>, this should cover most use cases. <br>
+        <title><b>Entry Level - Wildcard</b></title> <br>
+        &ensp; Whenever you want to use a wildcard <sample><b>*</b></sample>, put a dot <sample><b>.</b></sample>
+          before it, like <sample><b>.*</b></sample>, this should cover most use cases. <br>
         <br>
-        <font color="#00BFFF"><b>Advanced - Using AI</b></font> <br>
+        <title><b>Advanced - Using AI</b></title> <br>
         &ensp; For example, to get the following regex for SMS verifications: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Ask AI: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Try it online</b></font> <br>
+        <highlight><b>Try it online</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Tap here</big></a> to copy the prompt above <br>
           &ensp; 2. <a href=\"try_it\"><big>Tap here</big></a> to launch the online AI <br>
     ]]>

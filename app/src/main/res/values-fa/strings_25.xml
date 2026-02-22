@@ -19,9 +19,9 @@
         این برچسب به گردش کار مرتبط است و هنگام حذف گردش کار به‌صورت خودکار حذف می‌شود. <br>
         <br>
         <b>مورد استفاده</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; در سناریوهای شامل به‌روزرسانی‌های افزایشی، یک متغیر شبیه‌به‌اشاره‌گر باید ذخیره و در اجراهای متوالی دوباره استفاده شود.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">بارگذاری برچسب</string>
@@ -45,13 +45,13 @@
         <br>
         <b>گزینه‌ها</b> <br>
         <br>
-        <font color="#00BFFF"><b>نوع تجزیه</b></font> <br>
+        <title><b>نوع تجزیه</b></title> <br>
         مقدار برچسب را تجزیه می‌کند، از Regex و XPath پشتیبانی می‌کند. <br>
         <br>
-        <font color="#00BFFF"><b>نام برچسب</b></font> <br>
+        <title><b>نام برچسب</b></title> <br>
         نام برچسبی که قرار است تولید شود. <br>
-        به عنوان مثال، اگر نام برچسب <font color="#03DAC5">my_token</font> باشد،
-         می‌توانید از <font color="#03DAC5">{my_token}</font> در جستجوهای HTTP بعدی استفاده کنید. <br>
+        به عنوان مثال، اگر نام برچسب <highlight>my_token</highlight> باشد،
+         می‌توانید از <highlight>{my_token}</highlight> در جستجوهای HTTP بعدی استفاده کنید. <br>
     ]]>
     </string>
     <string name="max"><short>حد</short></string>
@@ -66,14 +66,14 @@
         برچسب زمان را بر اساس تازگی رکوردها با رنگ‌های مختلف برجسته کنید. <br>
         <br>
         <b>مثال استفاده</b>: <br>
-        &ensp; <font color="#888888">تماس‌های امروز را در شب با بررسی تمام رکوردها که برچسب زمان آبی دارند، مرور کنید. </font>
+        &ensp; <sample>تماس‌های امروز را در شب با بررسی تمام رکوردها که برچسب زمان آبی دارند، مرور کنید. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        باید یا <font color="#00BFFF"><no_translate>today</no_translate></font> باشد یا عددی به دنبال <b><no_translate>min</no_translate></b>
-        (مثلاً <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        باید یا <title><no_translate>today</no_translate></title> باشد یا عددی به دنبال <b><no_translate>min</no_translate></b>
+        (مثلاً <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">مقدار نامعتبر، برای راهنمایی نکته ابزار را ببینید</string>
@@ -84,33 +84,33 @@
         <br>
         به‌صورت پیش‌فرض، <br>
         <br>
-        - <font color="#03DAC5">قواعد فهرست سفید</font> دارای اولویت <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">مثلاً مخاطبین، تماس‌های تکراری، برنامه‌های اخیر و غیره </font><br>
+        - <highlight>قواعد فهرست سفید</highlight> دارای اولویت <priority>10</priority> <br>
+        &ensp; <sample>مثلاً مخاطبین، تماس‌های تکراری، برنامه‌های اخیر و غیره </sample><br>
         <br>
-        - <font color="#fa7f71">قواعد فهرست سیاه</font> دارای اولویت <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">مثلاً STIR، پایگاه‌داده و غیره </font> <br>
+        - <error>قواعد فهرست سیاه</error> دارای اولویت <priority>0</priority> <br>
+        &ensp; <sample>مثلاً STIR، پایگاه‌داده و غیره </sample> <br>
         <br>
         هنگامی که هر دو فعال باشند، قواعد فهرست سفید بر قواعد فهرست سیاه ارجحیت دارند چون 10 > 0. <br>
         <br>
-        برای قواعد regex، می‌توان اولویت را به هر عددی بین <font color="#ea86ff">-2147483648</font>
-          و <font color="#ea86ff">2147483647</font> تنظیم کرد. <br>
+        برای قواعد regex، می‌توان اولویت را به هر عددی بین <priority>-2147483648</priority>
+          و <priority>2147483647</priority> تنظیم کرد. <br>
         قواعد مختلف می‌توانند همان اولویت را داشته باشند تا زمانی که از نوع یکسان باشند، اما
-          <font color="#ffa500"><b>هرگز همان اولویت را به هر دو قاعده فهرست سفید و فهرست سیاه اختصاص ندهید</b></font>، این می‌تواند رفتارهای تصادفی ایجاد کند. <br>
+          <warn><b>هرگز همان اولویت را به هر دو قاعده فهرست سفید و فهرست سیاه اختصاص ندهید</b></warn>، این می‌تواند رفتارهای تصادفی ایجاد کند. <br>
         <br>
-        ویژگی <font color="#00BFFF">حالت جلسه</font> به‌صورت پیش‌فرض دارای اولویت <font color="#ea86ff">20</font> است،
+        ویژگی <title>حالت جلسه</title> به‌صورت پیش‌فرض دارای اولویت <priority>20</priority> است،
           زیرا باید تمام تماس‌ها را در طول جلسه مسدود کند. <br>
-        و <font color="#ea86ff">-1</font> برای <font color="#00BFFF">پرس‌وجوی فوری</font>,
+        و <priority>-1</priority> برای <title>پرس‌وجوی فوری</title>,
           به این معنی که فقط پس از عبور تماس از تمام فیلترهای محلی بررسی می‌شود. <br>
         <br>
         <b>موارد استفاده</b> از سفارشی‌سازی اولویت: <br>
         <br>
-        - <font color="#888888">همیشه یک شماره خاص را مسدود کنید، صرف‌نظر از اینکه تکرار شود</font> <br>
-         &ensp; قاعده‌ای با اولویت > 10 تنظیم کنید تا <font color="#00BFFF">تماس تکراری</font> را نادیده بگیرد. <br>
+        - <sample>همیشه یک شماره خاص را مسدود کنید، صرف‌نظر از اینکه تکرار شود</sample> <br>
+         &ensp; قاعده‌ای با اولویت > 10 تنظیم کنید تا <title>تماس تکراری</title> را نادیده بگیرد. <br>
         <br>
-        - <font color="#888888">همیشه یک شماره را اجازه دهید</font> <br>
-         &ensp; مقدار آن را > 20 تنظیم کنید تا <font color="#00BFFF">حالت جلسه</font> را نادیده بگیرد. <br>
+        - <sample>همیشه یک شماره را اجازه دهید</sample> <br>
+         &ensp; مقدار آن را > 20 تنظیم کنید تا <title>حالت جلسه</title> را نادیده بگیرد. <br>
         <br>
-        - <font color="#888888">آزمون یک قاعده regex</font> <br>
+        - <sample>آزمون یک قاعده regex</sample> <br>
          &ensp; مقدار آن را 999 تنظیم کنید تا تمام فیلترهای دیگر را نادیده بگیرد، بنابراین نیازی به غیرفعال‌سازی موقت هر یک به‌صورت جداگانه ندارید.
     ]]>
     </string>

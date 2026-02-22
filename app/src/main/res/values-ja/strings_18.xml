@@ -21,9 +21,9 @@
         - それ以外の場合、ワークフローは終了します。<br>
         <br>
         使用例:<br>
-        <font color="#888888">
+        <sample>
         &ensp; オンコールまたはオフコールのSMSを受信した後、一部のルールを切り替えます。<br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">SMSイベント %s がトリガーされました。</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         以前応答した電話番号からの通話を許可します。<br>
         <br>
-        <h6><font color="#ffa500">警告</font></h6>
+        <h6><warn>警告</warn></h6>
         %s<br>
         <br>
         <b>オプション:</b><br>
         <br>
-        <h6><font color="#00BFFF">- 日以内</font></h6>
-        <font color="#03DAC5">%d日</font>より前に発生した通話は無視されます。<br>
+        <h6><title>- 日以内</title></h6>
+        <highlight>%d日</highlight>より前に発生した通話は無視されます。<br>
         <br>
-        <h6><font color="#00BFFF">- 最小期間</font></h6>
-        <font color="#03DAC5">%d秒</font>未満の通話は無視されます。<br>
+        <h6><title>- 最小期間</title></h6>
+        <highlight>%d秒</highlight>未満の通話は無視されます。<br>
         <br>
-        <font color="#ea86ff"><b>優先度: 10</b></font>
+        <priority><b>優先度: 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">この機能は、高齢者や詐欺電話を識別する能力が低い人には有効にしないでください。これにより、詐欺電話が繰り返し着信する可能性があります。</string>
@@ -75,8 +75,8 @@
         カレンダーイベントに基づいて正規表現ルールを一時的に変更します。<br>
         <br>
         <b>ユースケース</b>:<br>
-        &ensp; <font color="#888888">シフト制の作業員が2日間日勤、その後の2日間夜勤で働きます。<br>
-        &ensp; 勤務時間に応じて、一部のルールを無効または有効にする必要があります。</font><br>
+        &ensp; <sample>シフト制の作業員が2日間日勤、その後の2日間夜勤で働きます。<br>
+        &ensp; 勤務時間に応じて、一部のルールを無効または有効にする必要があります。</sample><br>
         <br>
         これにより正規表現ルールとワークフローの両方が作成され、特定のカレンダーイベント中にルールがその場で有効になります。<br>
         ]]>

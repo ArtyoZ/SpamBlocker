@@ -5,30 +5,30 @@
         <![CDATA[
         Après avoir composé un numéro d\'urgence, autorisez tous les appels entrants pendant un certain temps.<br>
         <br>
-        <h5><font color="#00BFFF">- Durée</font></h5>
-        Le réglage par défaut <font color="#03DAC5"><b>120 Min</b></font> signifie que tous les appels seront autorisés
+        <h5><title>- Durée</title></h5>
+        Le réglage par défaut <highlight><b>120 Min</b></highlight> signifie que tous les appels seront autorisés
         dans les 120 prochaines minutes après avoir composé un numéro d\'urgence.<br>
         <br>
-        <h5><font color="#00BFFF">- Vérifier STIR</font></h5>
+        <h5><title>- Vérifier STIR</title></h5>
          - Lorsqu\'il est désactivé, tous les appels seront autorisés.<br>
          - Lorsqu\'il est activé, les appels échouant à l\'attestation STIR ne seront pas autorisés, seuls les appels "Valides" et "Non vérifiés" seront autorisés.<br>
         <br>
-        <h5><font color="#00BFFF">- Numéros supplémentaires</font></h5>
+        <h5><title>- Numéros supplémentaires</title></h5>
         Composer n\'importe quel numéro dans cette liste déclenchera également cette fonctionnalité.<br>
         <br>
         Il n\'est pas nécessaire d\'ajouter explicitement des numéros comme le 112 ici, car Android inclut une liste intégrée
         de numéros d\'urgence pour chaque pays (par exemple : police, pompiers, ambulance).<br>
         <br>
         Séparez les numéros par des virgules, par exemple :<br>
-        &ensp; <font color="#888888">111, 222, 3333</font><br>
+        &ensp; <sample>111, 222, 3333</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Réinitialiser</font></h5>
+        <h5><title>- Réinitialiser</title></h5>
         Appuyez sur ce bouton pour réinitialiser cette fonctionnalité si elle a été déclenchée par erreur ou pendant les tests.<br>
         <br>
-        <h5><font color="#00BFFF">- Tester</font></h5>
+        <h5><title>- Tester</title></h5>
         Simulez un appel sortant pour vérifier si ce numéro est un numéro d\'urgence.<br>
         <br>
-        <font color="#ea86ff"><b>Priorité : Max</b></font>
+        <priority><b>Priorité : Max</b></priority>
         ]]>
     </string>
     <string name="reset">Réinitialiser</string>
@@ -39,17 +39,17 @@
     <string name="additional_numbers">Numéros supplémentaires</string>
     <string name="path_tags">
         <![CDATA[
-        <font color="#00BFFF"><b>{sdcard}</b></font><br>
+        <title><b>{sdcard}</b></title><br>
         Le répertoire de stockage externe, identique à : <br>
-        <font color="#888888">/storage/emulated/0</font><br>
+        <sample>/storage/emulated/0</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Download}</b></font><br>
+        <title><b>{Download}</b></title><br>
         Identique à : <br>
-        <font color="#888888">{sdcard}/Download</font><br>
+        <sample>{sdcard}/Download</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Documents}</b></font><br>
+        <title><b>{Documents}</b></title><br>
         Identique à : <br>
-        <font color="#888888">{sdcard}/Documents</font>
+        <sample>{sdcard}/Documents</sample>
         ]]>
     </string>
     <string name="call_to_number">Vers numéro</string>
@@ -61,8 +61,8 @@
         <br>
         Un cas d\'utilisation typique :<br>
         &ensp; Quand il y a une notification telle que :<br>
-        &emsp; Titre : <font color="#888888">Mise à jour de commande :</font><br>
-        &emsp; Corps : <font color="#888888">Votre commande a été prise en charge par le chauffeur…</font><br>
+        &emsp; Titre : <sample>Mise à jour de commande :</sample><br>
+        &emsp; Corps : <sample>Votre commande a été prise en charge par le chauffeur…</sample><br>
         &ensp; Le chauffeur pourrait ensuite vous appeler pour confirmer les détails.<br>
         <br>
         <b>Autorisations requises :</b> <br>
@@ -71,18 +71,18 @@
         <br>
         Options :<br>
         <br>
-        <h6><font color="#00BFFF">- Application</font></h6>
+        <h6><title>- Application</title></h6>
         Il ne vérifiera que les notifications de cette application.<br>
         <br>
-        <h6><font color="#00BFFF">- Contenu de la notification</font></h6>
+        <h6><title>- Contenu de la notification</title></h6>
         Cette expression régulière correspondra à la fois au <b>titre et au corps de la notification</b>.<br>
         Un exemple pour le cas d\'utilisation ci-dessus :<br>
-        &emsp; <font color="#03DAC5">mise à jour de commande.*prise en charge par le chauffeur.*</font><br>
+        &emsp; <highlight>mise à jour de commande.*prise en charge par le chauffeur.*</highlight><br>
         <br>
-        <h6><font color="#00BFFF">- Durée</font></h6>
+        <h6><title>- Durée</title></h6>
         Les appels seront autorisés pendant cette période, spécifiée en minutes.<br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 10</b></font>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
     <string name="notification_content">Contenu de la notification</string>

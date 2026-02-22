@@ -3,7 +3,7 @@
         <![CDATA[
         Hier konfigurierte APIs werden sowohl für die automatische als auch für die manuelle Meldung verwendet.<br>
         <br>
-        <h6><font color="#00BFFF">- Datenschutz</font></h6>
+        <h6><title>- Datenschutz</title></h6>
         Die API-Endpunkte sehen Ihre:<br>
         <br>
          &ensp; - IP-Adresse<br>
@@ -12,39 +12,39 @@
         <br>
         Nichts anderes wird gemeldet.<br>
         <br>
-        <h6><font color="#00BFFF">- Manuelle Meldung</font></h6>
+        <h6><title>- Manuelle Meldung</title></h6>
 		Wenn hier eine API aktiviert ist, tippen Sie auf eine Rufnummer im Anrufverlauf; es wird ein Melde-Button angezeigt.<br>
 		<br>
 		Die Rufnummer wird an <b>alle</b> APIs gemeldet.<br>
 		<br>
-        <h6><font color="#00BFFF">- Automatische Meldung</font></h6>
-		<font color="#6ED0ff"><b>Meldeverzögerung</b></font><br>
+        <h6><title>- Automatische Meldung</title></h6>
+		<minor><b>Meldeverzögerung</b></minor><br>
         Wenn ein Anruf blockiert wird, gibt es einen einstündigen Zeitpuffer, bevor er gemeldet wird.
         Wenn die Rufnummer später aufgrund von Wiederholungen oder Rückrufen innerhalb dieses Zeitpuffers zugelassen wird,
         wird sie als Nicht-Spam-Rufnummer betrachtet und die Meldung wird abgebrochen.<br>
         <br>
-		<font color="#6ED0ff"><b>Meldungsart</b></font><br>
-		1. Es <font color="#fa7f71"><b>wird nicht</b></font> gemeldet:<br>
+		<minor><b>Meldungsart</b></minor><br>
+		1. Es <error><b>wird nicht</b></error> gemeldet:<br>
         <br>
-        - <font color="#fa7f71">SMS-Rufnummern oder -Inhalte</font><br>
-        - <font color="#fa7f71">Erlaubte Rufnummern</font><br>
-        - <font color="#fa7f71">Testen</font><br>
+        - <error>SMS-Rufnummern oder -Inhalte</error><br>
+        - <error>Erlaubte Rufnummern</error><br>
+        - <error>Testen</error><br>
         Und folgende blockierte Typen:<br>
-        - <font color="#fa7f71">Kontakt-Regex</font><br>
-        - <font color="#fa7f71">Kontaktgruppen-Regex</font><br>
-        - <font color="#fa7f71">Datenbank</font><br>
-        - <font color="#fa7f71">Besprechungsmodus</font><br>
-        - <font color="#fa7f71">Sofortabfrage</font> (um zu verhindern, dass die Rufnummer des API-Endpunkts an andere Wettbewerber weitergegeben wird)<br>
+        - <error>Kontakt-Regex</error><br>
+        - <error>Kontaktgruppen-Regex</error><br>
+        - <error>Datenbank</error><br>
+        - <error>Besprechungsmodus</error><br>
+        - <error>Sofortabfrage</error> (um zu verhindern, dass die Rufnummer des API-Endpunkts an andere Wettbewerber weitergegeben wird)<br>
         <br>
-		2. Es <font color="#03DAC5"><b>wird</b></font> Rufnummern melden, die blockiert wurden durch:<br>
+		2. Es <highlight><b>wird</b></highlight> Rufnummern melden, die blockiert wurden durch:<br>
         <br>
-        - <font color="#03DAC5">Nicht-Kontakt</font><br>
-        - <font color="#03DAC5">STIR-Attestierung</font><br>
-        - <font color="#03DAC5">Rufnummer-Regex</font><br>
+        - <highlight>Nicht-Kontakt</highlight><br>
+        - <highlight>STIR-Attestierung</highlight><br>
+        - <highlight>Rufnummer-Regex</highlight><br>
         <br>
 		3. Eine Ausnahme:<br>
 		<br>
-        Wenn sie durch die <font color="#03DAC5">Datenbank</font> blockiert wird und die Rufnummer ursprünglich durch eine API-Abfrage hinzugefügt wurde,
+        Wenn sie durch die <highlight>Datenbank</highlight> blockiert wird und die Rufnummer ursprünglich durch eine API-Abfrage hinzugefügt wurde,
          wird sie an diese API zurückgemeldet, um die Bewertung zu erhöhen. <br>
         <br>
          Wenn die Rufnummer beispielsweise durch

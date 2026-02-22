@@ -19,9 +19,9 @@
         它与工作流绑定，工作流被删除时会自动删除。 <br>
         <br>
         <b>使用场景</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; 在增量更新的场景中，需要保存类似指针的变量并在连续运行中重复使用。
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">加载标签</string>
@@ -45,12 +45,12 @@
         <br>
         <b>选项</b> <br>
         <br>
-        <font color="#00BFFF"><b>解析类型</b></font> <br>
+        <title><b>解析类型</b></title> <br>
         解析标签值，支持正则表达式和XPath。<br>
         <br>
-        <font color="#00BFFF"><b>标签名称</b></font> <br>
+        <title><b>标签名称</b></title> <br>
         要生成的标签名称。<br>
-        例如，如果标签名称是 <font color="#03DAC5">my_token</font>，那么您可以在后续HTTP查询中使用 <font color="#03DAC5">{my_token}</font>。<br>
+        例如，如果标签名称是 <highlight>my_token</highlight>，那么您可以在后续HTTP查询中使用 <highlight>{my_token}</highlight>。<br>
     ]]>
     </string>
     <string name="max"><short>最大</short></string>
@@ -65,14 +65,14 @@
         突出显示时间戳的颜色，以反映记录的最近程度。 <br>
         <br>
         <b>使用场景</b>: <br>
-        &ensp; <font color="#888888">在夜间查看今天的来电，通过检查所有带蓝色时间戳的记录。</font>
+        &ensp; <sample>在夜间查看今天的来电，通过检查所有带蓝色时间戳的记录。</sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        必须是 <font color="#00BFFF"><no_translate>today</no_translate></font> 或者一个后跟 <b><no_translate>min</no_translate></b> 的数字
-        （例如 <font color="#00BFFF"><no_translate>5min</no_translate></font>，
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>）
+        必须是 <title><no_translate>today</no_translate></title> 或者一个后跟 <b><no_translate>min</no_translate></b> 的数字
+        （例如 <title><no_translate>5min</no_translate></title>，
+        <title><no_translate>120min</no_translate></title>）
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">无效的值，请查看工具提示获取帮助</string>
@@ -83,30 +83,30 @@
         <br>
         默认情况下， <br>
         <br>
-        - <font color="#03DAC5">白名单规则</font> 的优先级为 <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">例如：联系人、重复来电、最近使用的应用等 </font><br>
+        - <highlight>白名单规则</highlight> 的优先级为 <priority>10</priority> <br>
+        &ensp; <sample>例如：联系人、重复来电、最近使用的应用等 </sample><br>
         <br>
-        - <font color="#fa7f71">黑名单规则</font> 的优先级为 <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">例如：STIR、数据库等 </font> <br>
+        - <error>黑名单规则</error> 的优先级为 <priority>0</priority> <br>
+        &ensp; <sample>例如：STIR、数据库等 </sample> <br>
         <br>
         当两者同时启用时，白名单规则会覆盖黑名单规则，因为 10 > 0。 <br>
         <br>
-        对于正则规则，优先级可以设置为介于 <font color="#ea86ff">-2147483648</font>
-          和 <font color="#ea86ff">2147483647</font> 之间的任意数字。 <br>
-        不同的规则可以拥有相同的优先级，只要它们属于同一类型；然而，<font color="#ffa500"><b>绝不要为白名单和黑名单规则分配相同的优先级</b></font>，否则可能导致随机行为。 <br>
+        对于正则规则，优先级可以设置为介于 <priority>-2147483648</priority>
+          和 <priority>2147483647</priority> 之间的任意数字。 <br>
+        不同的规则可以拥有相同的优先级，只要它们属于同一类型；然而，<warn><b>绝不要为白名单和黑名单规则分配相同的优先级</b></warn>，否则可能导致随机行为。 <br>
         <br>
-        功能 <font color="#00BFFF">会议模式</font> 默认优先级为 <font color="#ea86ff">20</font>，因为它应在会议期间阻止所有来电。 <br>
-        对于 <font color="#00BFFF">即时查询</font>，优先级为 <font color="#ea86ff">-1</font>，因此只有在来电通过所有本地过滤器后才会进行检查。 <br>
+        功能 <title>会议模式</title> 默认优先级为 <priority>20</priority>，因为它应在会议期间阻止所有来电。 <br>
+        对于 <title>即时查询</title>，优先级为 <priority>-1</priority>，因此只有在来电通过所有本地过滤器后才会进行检查。 <br>
         <br>
         <b>自定义优先级的使用场景</b>： <br>
         <br>
-        - <font color="#888888">始终拦截特定号码，无论是否重复</font> <br>
-         &ensp; 设置优先级大于 10 的规则以覆盖 <font color="#00BFFF">重复来电</font>。 <br>
+        - <sample>始终拦截特定号码，无论是否重复</sample> <br>
+         &ensp; 设置优先级大于 10 的规则以覆盖 <title>重复来电</title>。 <br>
         <br>
-        - <font color="#888888">始终允许某个号码</font> <br>
-         &ensp; 将其优先级设为大于 20，以覆盖 <font color="#00BFFF">会议模式</font>。 <br>
+        - <sample>始终允许某个号码</sample> <br>
+         &ensp; 将其优先级设为大于 20，以覆盖 <title>会议模式</title>。 <br>
         <br>
-        - <font color="#888888">测试正则规则</font> <br>
+        - <sample>测试正则规则</sample> <br>
          &ensp; 将其设为 999，以覆盖所有其他过滤器，免去逐个临时禁用的麻烦。
     ]]>
     </string>

@@ -42,15 +42,15 @@
         <![CDATA[
         يتم دعم فئات الرسائل غير المرغوب فيها التالية فقط، يجب تعيين أي فئة أخرى من واجهة برمجة التطبيقات (API) إلى إحدى هذه الفئات.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; الإبلاغ كرقم صالح، وليس رسائل غير مرغوب فيها.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; النوع الاحتياطي للرسائل غير المرغوب فيها، يستخدم عندما لا تنطبق أي من الفئات المذكورة أعلاه.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         سترسل لك بعض الخدمات رسالة نصية أولاً لإعلامك بأن مكالمة وشيكة، عادةً في غضون دقيقة.<br>
         <br>
         على سبيل المثال، رسالة SMS مثل:<br>
-        &ensp; <font color="#888888">[بعض الخدمات] نتصل بك لإعلامك بـ ...، لا تتردد في الرد.</font><br>
+        &ensp; <sample>[بعض الخدمات] نتصل بك لإعلامك بـ ...، لا تتردد في الرد.</sample><br>
         <br>
         ستكون العبارة العادية لمثل هذه الرسالة هي: <br>
-        &ensp; <font color="#03DAC5"><b><translate>.*الرجاء.*الرد.*</translate></b></font> <br>
+        &ensp; <highlight><b><translate>.*الرجاء.*الرد.*</translate></b></highlight> <br>
         <br>
-        الإعداد الافتراضي <font color="#03DAC5"><b>120 ثانية</b></font> يعني أن جميع المكالمات سيتم
+        الإعداد الافتراضي <highlight><b>120 ثانية</b></highlight> يعني أن جميع المكالمات سيتم
         السماح بها في الدقيقتين التاليتين بعد تلقي هذه الرسالة.<br>
         <br>
         إنه يعمل لكل من الرسائل النصية القصيرة العادية والرسائل النصية القصيرة الفلاش (الرسائل النصية القصيرة من الفئة 0).<br>
         <br>
-        <font color="#ea86ff"><b>الأولوية: 10</b></font>
+        <priority><b>الأولوية: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">يتم استخدام حرف البدل `*` بدون نقطة سابقة، هل تقصد `.*`؟</string>

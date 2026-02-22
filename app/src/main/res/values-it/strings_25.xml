@@ -19,9 +19,9 @@
         È legato al flusso di lavoro e verrà eliminato automaticamente quando il flusso di lavoro viene eliminato. <br>
         <br>
         <b>Caso d\'uso</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; In scenari che coinvolgono aggiornamenti incrementali, una variabile simile a un puntatore deve essere salvata e riutilizzata nei successivi avvii.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">Carica tag</string>
@@ -45,13 +45,13 @@
         <br>
         <b>Opzioni</b> <br>
         <br>
-        <font color="#00BFFF"><b>Tipo di analisi</b></font> <br>
+        <title><b>Tipo di analisi</b></title> <br>
         Analizza il valore del tag, supporta regex e xpath. <br>
         <br>
-        <font color="#00BFFF"><b>Nome tag</b></font> <br>
+        <title><b>Nome tag</b></title> <br>
         Il nome del tag da generare. <br>
-        Ad esempio, se il nome del tag è <font color="#03DAC5">my_token</font>,
-         allora puoi usare <font color="#03DAC5">{my_token}</font> nelle query HTTP successive. <br>
+        Ad esempio, se il nome del tag è <highlight>my_token</highlight>,
+         allora puoi usare <highlight>{my_token}</highlight> nelle query HTTP successive. <br>
     ]]>
     </string>
     <string name="max"><short>Max</short></string>
@@ -66,15 +66,15 @@
         Evidenzia il timestamp in colori diversi in base a quanto è recente il record. <br>
         <br>
         <b>Caso d\'uso</b>: <br>
-        &ensp; <font color="#888888">Rivedi le chiamate di oggi di notte controllando tutti i record con un timestamp blu. </font>
+        &ensp; <sample>Rivedi le chiamate di oggi di notte controllando tutti i record con un timestamp blu. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        Deve essere o <font color="#00BFFF"><no_translate>today</no_translate></font> o
+        Deve essere o <title><no_translate>today</no_translate></title> o
         un numero seguito da <b><no_translate>min</no_translate></b>
-        (ad es. <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (ad es. <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">Valore non valido, vedere il tooltip per aiuto</string>
@@ -85,33 +85,33 @@
         <br>
         Per impostazione predefinita, <br>
         <br>
-        - <font color="#03DAC5">Whitelist rules</font> hanno priorità <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">Ad es. Contatti, RepeatedCall, RecentApps, ecc </font><br>
+        - <highlight>Whitelist rules</highlight> hanno priorità <priority>10</priority> <br>
+        &ensp; <sample>Ad es. Contatti, RepeatedCall, RecentApps, ecc </sample><br>
         <br>
-        - <font color="#fa7f71">Blacklist rules</font> hanno priorità <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">Ad es. STIR, Database, ecc </font> <br>
+        - <error>Blacklist rules</error> hanno priorità <priority>0</priority> <br>
+        &ensp; <sample>Ad es. STIR, Database, ecc </sample> <br>
         <br>
         Quando sono entrambe abilitate, le regole della whitelist sovrascrivono quelle della blacklist poiché 10 > 0. <br>
         <br>
-        Per le regole regex, la priorità può essere impostata a qualsiasi numero compreso tra <font color="#ea86ff">-2147483648</font>
-          e <font color="#ea86ff">2147483647</font>. <br>
+        Per le regole regex, la priorità può essere impostata a qualsiasi numero compreso tra <priority>-2147483648</priority>
+          e <priority>2147483647</priority>. <br>
         Regole diverse possono avere la stessa priorità finché sono dello stesso tipo, tuttavia,
-          <font color="#ffa500"><b>non assegnare mai la stessa priorità sia alle regole della whitelist sia a quelle della blacklist</b></font>, poiché può causare comportamenti casuali. <br>
+          <warn><b>non assegnare mai la stessa priorità sia alle regole della whitelist sia a quelle della blacklist</b></warn>, poiché può causare comportamenti casuali. <br>
         <br>
-        La funzionalità <font color="#00BFFF">Meeting Mode</font> ha priorità <font color="#ea86ff">20</font> per impostazione predefinita,
+        La funzionalità <title>Meeting Mode</title> ha priorità <priority>20</priority> per impostazione predefinita,
           poiché dovrebbe bloccare tutte le chiamate durante una riunione. <br>
-        E <font color="#ea86ff">-1</font> per <font color="#00BFFF">Instant Query</font>,
+        E <priority>-1</priority> per <title>Instant Query</title>,
           così viene controllata solo dopo che la chiamata ha superato tutti i filtri locali. <br>
         <br>
         <b>Casi d\'uso</b> per personalizzare la priorità: <br>
         <br>
-        - <font color="#888888">Blocca sempre un numero specifico, indipendentemente dal fatto che si ripeta</font> <br>
-         &ensp; Imposta una regola con priorità > 10 per sovrascrivere <font color="#00BFFF">Repeated Call</font>. <br>
+        - <sample>Blocca sempre un numero specifico, indipendentemente dal fatto che si ripeta</sample> <br>
+         &ensp; Imposta una regola con priorità > 10 per sovrascrivere <title>Repeated Call</title>. <br>
         <br>
-        - <font color="#888888">Consenti sempre un numero</font> <br>
-         &ensp; Impostala a > 20 per sovrascrivere <font color="#00BFFF">Meeting Mode</font>. <br>
+        - <sample>Consenti sempre un numero</sample> <br>
+         &ensp; Impostala a > 20 per sovrascrivere <title>Meeting Mode</title>. <br>
         <br>
-        - <font color="#888888">Testa una regola regex</font> <br>
+        - <sample>Testa una regola regex</sample> <br>
          &ensp; Impostala a 999 per sovrascrivere tutti gli altri filtri, così non dovrai disabilitarli temporaneamente uno per uno.
     ]]>
     </string>

@@ -66,76 +66,76 @@
     <string name="auto_detect_cc_permission">Die Berechtigung READ_PHONE_STATE wird benötigt, um die Landesvorwahl zu erkennen.</string>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>Nach links wischen</b></font> zum Löschen.<br>
+        <highlight><b>Nach links wischen</b></highlight> zum Löschen.<br>
         <br>
         Die meisten kartenartigen Benutzeroberflächenelemente in dieser App sind mit Wischgesten verknüpft,
-        von denen einige auch <font color="#03DAC5"><b>Rechtswischen</b></font> unterstützen, z. B. die Verlaufseinträge.
+        von denen einige auch <highlight><b>Rechtswischen</b></highlight> unterstützen, z. B. die Verlaufseinträge.
         ]]>
     </string>
     <string name="bug_number">Wenn dies eine gültige Nummer ist, melden Sie sie bitte auf Github.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; Die Ländervorwahl.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; Der Inlandsanteil.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; Die vollständige Telefonnummer, einschließlich Ländervorwahl und Inlandsanteil, ohne führende + oder Nullen.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; Die ursprüngliche Telefonnummer, die führende + oder Nullen enthalten kann.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Einstellige Zahlen werden mit einer führenden Null aufgefüllt, z.B.: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; wird zu <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Diese Werte werden nicht aufgefüllt, z.B.: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; wird zu <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Diese können verwendet werden, um einen Rotationsplan zu simulieren, zum Beispiel: <br>
-        &emsp; <font color="#888888">Führen Sie tägliche Backups durch und behalten Sie nur die sieben letzten Backups.</font> <br>
+        &emsp; <sample>Führen Sie tägliche Backups durch und behalten Sie nur die sieben letzten Backups.</sample> <br>
         <br>
-        <font color="#ffa500"><b>Hinweis:</b></font><br>
+        <warn><b>Hinweis:</b></warn><br>
          Diese Zeit-Tags unterstützen einfache arithmetische Operationen, wie zum Beispiel
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          und
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="skip_alpha_empty_number">Alpha- oder leere Nummer überspringen.</string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; Der SMS-Inhalt.<br>
         ]]>
     </string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; Den Inhalt in den Klammern escapen, verwendet für Inhalt innerhalb von Anführungszeichen. <br>
         ]]>
     </string>

@@ -41,23 +41,23 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        封鎖所有國際來電，除了來自您所在國家/地區的電話，使用正規表達式 <font color="#fa7f71"><b>\\+(?!39).*</b></font>，通過此規則的來電不會立即允許，它們將由其他規則檢查。<br>
+        封鎖所有國際來電，除了來自您所在國家/地區的電話，使用正規表達式 <error><b>\\+(?!39).*</b></error>，通過此規則的來電不會立即允許，它們將由其他規則檢查。<br>
         <br>
-        <font color="#ffa500">將</font> <b>39</b> 更改為您國家/地區的國碼。<br>
+        <warn>將</warn> <b>39</b> 更改為您國家/地區的國碼。<br>
         <br>
         正規表達式解析：<br>
         &ensp; - <b>原始號碼</b>正規表達式旗標會保留開頭的 <b>+</b>，否則它將在檢查前被移除。<br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> 匹配任何以 <b>+</b> 開頭且不跟隨 <b>39</b> 的號碼（國外號碼）。
+        &ensp; - <error><b>\\+(?!39)</b></error> 匹配任何以 <b>+</b> 開頭且不跟隨 <b>39</b> 的號碼（國外號碼）。
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         也稱為<b>未知號碼</b>或<b>空號碼</b>，它們是可以使用以下任一方式匹配的空字串：<br>
-        &ensp; <font color="#fa7f71">.{0}</font> <br>
-        &ensp; <font color="#fa7f71">^$</font> <br>
-        &ensp; 一個 <font color="#fa7f71">空白</font> 正規表達式欄位。<br>
+        &ensp; <error>.{0}</error> <br>
+        &ensp; <error>^$</error> <br>
+        &ensp; 一個 <error>空白</error> 正規表達式欄位。<br>
         <br>
-        <font color="#ea86ff">優先級</font>設定為 <font color="#ea86ff">20</font>，以覆蓋其他功能，例如<b>重複來電</b>，因此即使重複，它們也始終會被封鎖。
+        <priority>優先級</priority>設定為 <priority>20</priority>，以覆蓋其他功能，例如<b>重複來電</b>，因此即使重複，它們也始終會被封鎖。
         ]]>
     </string>
     <string name="verification_code">驗證碼</string>
@@ -80,7 +80,7 @@
         <![CDATA[
         此開關用於快速停用應用程式，當您正在等待特定來電或訊息時非常有用。<br>
         <br>
-        您也可以從<font color="#6ed0ff"><b>下拉式快速設定</b></font>中切換它。<br>
+        您也可以從<minor><b>下拉式快速設定</b></minor>中切換它。<br>
         <br>
         通話和簡訊篩選也需要在下方單獨啟用，它們只有在此功能啟用時才有效。
         ]]>
@@ -95,10 +95,10 @@
         使用快速設定快捷磚快速切換規則。全域快捷磚切換整個應用程式，而此自訂快捷磚僅影響特定規則。<br>
         <br>
         此設定涉及正規表達式規則和工作流程。當快捷磚處於：<br>
-        &ensp; - <font color="#03DAC5"><b>開啟</b></font> <br>
+        &ensp; - <highlight><b>開啟</b></highlight> <br>
         &emsp;  此工作流程將在通話篩選前執行，它將啟用正規表達式規則。<br>
         <br>
-        &ensp; - <font color="#888888"><b>關閉</b></font> <br>
+        &ensp; - <sample><b>關閉</b></sample> <br>
         &emsp;  此工作流程將永不執行，規則將永不生效。<br>
         <br>
         簡而言之，<b>當快捷磚開啟時，規則開啟；反之亦然</b>。
@@ -113,8 +113,8 @@
         需要 Android 12 或更高版本。<br>
         <br>
         這將為 SIM 2 添加兩條規則：<br>
-        &ensp; - 允許聯絡人，<font color="#ea86ff">優先級 12</font>。<br>
-        &ensp; - 阻擋其他所有來電，<font color="#ea86ff">優先級 11</font>。
+        &ensp; - 允許聯絡人，<priority>優先級 12</priority>。<br>
+        &ensp; - 阻擋其他所有來電，<priority>優先級 11</priority>。
         這將覆蓋重複來電等設定，因此即使重複，它們也將始終被阻擋。
         ]]>
     </string>

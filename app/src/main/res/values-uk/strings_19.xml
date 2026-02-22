@@ -8,10 +8,10 @@
         Такий робочий процес буде автоматично запускатися при вхідному дзвінку.<br>
         <br>
         Варіант використання: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Видалення зайвих початкових символів з номера телефону перед перевіркою,
           оскільки деякі оператори підтримують подвійні номери на одній SIM-карті. <br>
-        </font>
+        </sample>
         <br>
         Типова конфігурація:<br>
         - Подія виклику <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         Змінити номер вхідного дзвінка перш ніж його буде перевірено правилами.<br>
         <br>
-        <font color="#00BFFF"><b>Приклад використання</b>:</font><br>
+        <title><b>Приклад використання</b>:</title><br>
         &ensp; Деякі оператори мобільного зв\'язку підтримують подвійні номери для однієї SIM-карти, вони додають додаткові початкові цифри до вторинного номера.<br>
-        &ensp;   Наприклад: 3312345679 може стати <font color="#888888">123</font>3312345679. <br>
-        &ensp; Провідні <font color="#888888">123</font> потрібно видалити перед перевіркою. <br>
+        &ensp;   Наприклад: 3312345679 може стати <sample>123</sample>3312345679. <br>
+        &ensp; Провідні <sample>123</sample> потрібно видалити перед перевіркою. <br>
         <br>
-        <font color="#00BFFF"><b>Типова конфігурація:</b></font> <br>
+        <title><b>Типова конфігурація:</b></title> <br>
         - <b>Подія дзвінка</b> <br>
         - <b>Замінити номер</b> <br>
-        &emsp; від: <font color="#888888">^123</font> <br>
-        &emsp; до: <font color="#888888">залишити порожнім</fonts> <br>
+        &emsp; від: <sample>^123</sample> <br>
+        &emsp; до: <sample>залишити порожнім</sample> <br>
         ]]>
     </string>
     <string name="blocked">Заблоковано</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         Вбудовані канали сповіщень: <br>
         <br>
-        <font color="#00BFFF"><b>Немає</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>Немає</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; Жодних сповіщень взагалі. <br>
         <br>
-        <font color="#00BFFF"><b>Низький</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Низький</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; З\'являється в рядку стану та шторці сповіщень. <br>
         <br>
-        <font color="#00BFFF"><b>Середній</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Середній</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; З\'являється в рядку стану та шторці сповіщень зі звуком. <br>
         <br>
-        <font color="#00BFFF"><b>Високий</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Високий</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; З\'являється в рядку стану, шторці сповіщень і як спливаюче повідомлення з прев\'ю зі звуком. <br>
         <br>
-        <font color="#00BFFF"><b>Високий (без звуку)</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Високий (без звуку)</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Він схожий на <b>Високий</b>, але вимикає звук. <br>
-        &ensp; Ідеально підходить для активного <font color="#03DAC5"><b>SMS-чату</b></font>, де постійні звуки можуть дратувати. <br>
-          Він вважається активним <font color="#03DAC5"><b>SMS-чатом</b></font>, коли екран розблоковано, а SMS-додаток відкрито на передньому плані. <br>
+        &ensp; Ідеально підходить для активного <highlight><b>SMS-чату</b></highlight>, де постійні звуки можуть дратувати. <br>
+          Він вважається активним <highlight><b>SMS-чатом</b></highlight>, коли екран розблоковано, а SMS-додаток відкрито на передньому плані. <br>
         ]]>
     </string>
     <string name="none">Немає</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         Створити новий канал сповіщень.<br>
         <br>
-        <font color="#03DAC5"><b>Довге натискання</b></font> на канал сповіщень у цьому випадаючому списку, щоб відредагувати його.
+        <highlight><b>Довге натискання</b></highlight> на канал сповіщень у цьому випадаючому списку, щоб відредагувати його.
         ]]>
     </string>
     <string name="warning_delete_channel">

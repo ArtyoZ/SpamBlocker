@@ -42,15 +42,15 @@
         <![CDATA[
         Es werden nur die folgenden Spam-Kategorien unterstützt. Alle anderen Kategorien aus der API sollten einer dieser Kategorien zugeordnet werden.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; Als gültige Nummer melden, kein Spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; Der Standard-Spam-Typ, der verwendet wird, wenn keine der oben genannten Kategorien zutrifft.<br>
         ]]>
     </string>
@@ -76,16 +76,16 @@
         Einige Dienste senden Ihnen zuerst eine SMS, um Sie darüber zu informieren, dass ein Anruf bevorsteht, in der Regel innerhalb einer Minute.<br>
         <br>
         Beispielsweise eine SMS wie:<br>
-        &ensp; <font color="#888888">[irgendein Dienst] Wir rufen Sie an, um zu informieren…, Sie können gerne antworten.</font><br>
+        &ensp; <sample>[irgendein Dienst] Wir rufen Sie an, um zu informieren…, Sie können gerne antworten.</sample><br>
         <br>
         Ein regulärer Ausdruck für eine solche Nachricht wäre:<br>
-        &ensp; <font color="#03DAC5"><b>.*bitte.*antworten.*</b></font> <br>
+        &ensp; <highlight><b>.*bitte.*antworten.*</b></highlight> <br>
         <br>
-        Die Standardeinstellung <font color="#03DAC5"><b>120 Sekunden</b></font> bedeutet, dass alle Anrufe in den nächsten zwei Minuten nach Erhalt einer solchen Nachricht zugelassen werden.<br>
+        Die Standardeinstellung <highlight><b>120 Sekunden</b></highlight> bedeutet, dass alle Anrufe in den nächsten zwei Minuten nach Erhalt einer solchen Nachricht zugelassen werden.<br>
         <br>
         Es funktioniert sowohl für reguläre SMS als auch für Flash-SMS (Klasse 0 SMS).<br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 10</b></font>
+        <priority><b>Priorität: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Platzhalter `*` wird ohne vorangestellten Punkt verwendet, meinen Sie `.*`?</string>

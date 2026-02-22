@@ -19,9 +19,9 @@
         Elle est liée au flux de travail et sera automatiquement supprimée lorsque le flux de travail sera supprimé. <br>
         <br>
         <b>Cas d\'utilisation</b> : <br>
-        <font color="#888888">
+        <sample>
           &ensp; Dans les scénarios impliquant des mises à jour incrémentielles, une variable de type pointeur doit être enregistrée et réutilisée lors des exécutions successives.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">Charger le tag</string>
@@ -45,13 +45,13 @@
         <br>
         <b>Options</b> <br>
         <br>
-        <font color="#00BFFF"><b>Type d\'analyse</b></font> <br>
+        <title><b>Type d\'analyse</b></title> <br>
         Analysez la valeur de la balise, elle prend en charge les expressions régulières et xpath. <br>
         <br>
-        <font color="#00BFFF"><b>Nom de la balise</b></font> <br>
+        <title><b>Nom de la balise</b></title> <br>
         Le nom de la balise à générer. <br>
-        Par exemple, si le nom de la balise est <font color="#03DAC5">my_token</font>,
-         alors vous pouvez utiliser <font color="#03DAC5">{my_token}</font> dans les requêtes HTTP suivantes. <br>
+        Par exemple, si le nom de la balise est <highlight>my_token</highlight>,
+         alors vous pouvez utiliser <highlight>{my_token}</highlight> dans les requêtes HTTP suivantes. <br>
     ]]>
     </string>
     <string name="max"><short>Max</short></string>
@@ -66,15 +66,15 @@
         Mettre en surbrillance l\'horodatage avec différentes couleurs en fonction de la récence de l\'enregistrement. <br>
         <br>
         <b>Cas d\'utilisation</b> : <br>
-        &ensp; <font color="#888888">Revoir les appels d\'aujourd\'hui la nuit en vérifiant tous les enregistrements avec un horodatage bleu. </font>
+        &ensp; <sample>Revoir les appels d\'aujourd\'hui la nuit en vérifiant tous les enregistrements avec un horodatage bleu. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        Doit être soit <font color="#00BFFF"><no_translate>today</no_translate></font> ou
+        Doit être soit <title><no_translate>today</no_translate></title> ou
         un nombre suivi de <b><no_translate>min</no_translate></b>
-        (par ex. <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (par ex. <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">Valeur invalide, voir l\'infobulle pour obtenir de l\'aide</string>
@@ -85,33 +85,33 @@
         <br>
         Par défaut, <br>
         <br>
-        - <font color="#03DAC5">règles de liste blanche</font> ont une priorité <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">Par ex. Contacts, RepeatedCall, RecentApps, etc </font><br>
+        - <highlight>règles de liste blanche</highlight> ont une priorité <priority>10</priority> <br>
+        &ensp; <sample>Par ex. Contacts, RepeatedCall, RecentApps, etc </sample><br>
         <br>
-        - <font color="#fa7f71">règles de liste noire</font> ont une priorité <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">Par ex. STIR, Database, etc </font> <br>
+        - <error>règles de liste noire</error> ont une priorité <priority>0</priority> <br>
+        &ensp; <sample>Par ex. STIR, Database, etc </sample> <br>
         <br>
         Lorsqu\'elles sont toutes les deux activées, les règles de liste blanche prévalent sur les règles de liste noire car 10 > 0. <br>
         <br>
-        Pour les règles regex, la priorité peut être définie à n\'importe quel nombre entre <font color="#ea86ff">-2147483648</font>
-          et <font color="#ea86ff">2147483647</font>. <br>
+        Pour les règles regex, la priorité peut être définie à n\'importe quel nombre entre <priority>-2147483648</priority>
+          et <priority>2147483647</priority>. <br>
         Des règles différentes peuvent avoir la même priorité tant qu\'elles sont du même type, cependant,
-          <font color="#ffa500"><b>n\'attribuez jamais la même priorité aux règles de liste blanche et de liste noire</b></font>, cela peut entraîner un comportement aléatoire. <br>
+          <warn><b>n\'attribuez jamais la même priorité aux règles de liste blanche et de liste noire</b></warn>, cela peut entraîner un comportement aléatoire. <br>
         <br>
-        La fonctionnalité <font color="#00BFFF">Mode Réunion</font> a une priorité <font color="#ea86ff">20</font> par défaut,
+        La fonctionnalité <title>Mode Réunion</title> a une priorité <priority>20</priority> par défaut,
           car elle doit bloquer tous les appels pendant une réunion. <br>
-        Et <font color="#ea86ff">-1</font> pour <font color="#00BFFF">Recherche Instantanée</font>,
+        Et <priority>-1</priority> pour <title>Recherche Instantanée</title>,
           de sorte qu\'elle ne soit vérifiée qu\'après que l\'appel a traversé tous les filtres locaux. <br>
         <br>
         <b>Cas d\'utilisation</b> de la personnalisation de la priorité : <br>
         <br>
-        - <font color="#888888">Bloquer toujours un number particulier, quel que soit le nombre de répétitions</font> <br>
-         &ensp; Définissez une règle avec une priorité > 10 pour remplacer <font color="#00BFFF">Appel Répété</font>. <br>
+        - <sample>Bloquer toujours un number particulier, quel que soit le nombre de répétitions</sample> <br>
+         &ensp; Définissez une règle avec une priorité > 10 pour remplacer <title>Appel Répété</title>. <br>
         <br>
-        - <font color="#888888">Autoriser toujours un number</font> <br>
-         &ensp; Définissez-la à > 20 pour remplacer <font color="#00BFFF">Mode Réunion</font>. <br>
+        - <sample>Autoriser toujours un number</sample> <br>
+         &ensp; Définissez-la à > 20 pour remplacer <title>Mode Réunion</title>. <br>
         <br>
-        - <font color="#888888">Tester une règle regex</font> <br>
+        - <sample>Tester une règle regex</sample> <br>
          &ensp; Définissez-la à 999 pour remplacer tous les autres filtres afin de ne pas devoir les désactiver temporairement un par un.
     ]]>
     </string>

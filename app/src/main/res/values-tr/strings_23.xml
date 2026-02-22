@@ -41,23 +41,23 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        Kendi ülkeniz dışındaki tüm uluslararası aramaları <font color="#fa7f71"><b>\\+(?!39).*</b></font> regex\'i ile engelleyin, bu kuralı geçen aramalar hemen izin verilmeyecek, diğer kurallar tarafından kontrol edilecektir. <br>
+        Kendi ülkeniz dışındaki tüm uluslararası aramaları <error><b>\\+(?!39).*</b></error> regex\'i ile engelleyin, bu kuralı geçen aramalar hemen izin verilmeyecek, diğer kurallar tarafından kontrol edilecektir. <br>
         <br>
-        <b>39</b>\'u kendi ülke kodunuzla <font color="#ffa500">değiştirin</font>. <br>
+        <b>39</b>\'u kendi ülke kodunuzla <warn>değiştirin</warn>. <br>
         <br>
         Regex ayrıştırması: <br>
         &ensp; - <b>Ham Numara</b> regex bayrağı baştaki <b>+</b> işaretini korur, aksi takdirde kontrol edilmeden önce kaldırılır. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font>, <b>+</b> ile başlayan ve <b>39</b> tarafından takip edilmeyen herhangi bir numarayı (yabancı numaraları) eşleştirir.
+        &ensp; - <error><b>\\+(?!39)</b></error>, <b>+</b> ile başlayan ve <b>39</b> tarafından takip edilmeyen herhangi bir numarayı (yabancı numaraları) eşleştirir.
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         <b>Bilinmeyen Numara</b> veya <b>Boş Numara</b> olarak da bilinirler, bunlar aşağıdaki şekillerden herhangi biriyle eşleşebilen boş dizelerdir: <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; boş bir <font color="#fa7f71">regex</font> alanı. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; boş bir <error>regex</error> alanı. <br>
         <br>
-        <font color="#ea86ff">Öncelik</font>, <b>Tekrarlanan Arama</b> gibi diğer özellikleri geçersiz kılmak için <font color="#ea86ff">20</font> olarak ayarlanmıştır, böylece tekrar etseler bile her zaman engellenirler.
+        <priority>Öncelik</priority>, <b>Tekrarlanan Arama</b> gibi diğer özellikleri geçersiz kılmak için <priority>20</priority> olarak ayarlanmıştır, böylece tekrar etseler bile her zaman engellenirler.
         ]]>
     </string>
     <string name="verification_code">Doğrulama Kodu</string>
@@ -80,7 +80,7 @@
         <![CDATA[
         Bu anahtar, belirli bir arama veya mesaj beklerken kullanışlı olan uygulamayı hızlıca devre dışı bırakmak içindir. <br>
         <br>
-        <font color="#6ed0ff"><b>Açılır Hızlı Ayarlar</b></font>\'dan da değiştirebilirsiniz. <br>
+        <minor><b>Açılır Hızlı Ayarlar</b></minor>\'dan da değiştirebilirsiniz. <br>
         <br>
         Arama ve SMS taraması da aşağıda ayrı ayrı etkinleştirilmelidir, bunlar yalnızca bu etkinleştirildiğinde çalışır.
         ]]>
@@ -95,10 +95,10 @@
         Hızlı Ayarlar Kutucuğu\'nu kullanarak kuralları hızla değiştirin. Genel kutucuk tüm uygulamayı değiştirirken, bu özel kutucuk yalnızca belirli kuralları etkiler. <br>
         <br>
         Bu kurulum hem bir regex kuralı hem de bir iş akışı içerir. Kutucuk: <br>
-        &ensp; - <font color="#03DAC5"><b>Açık</b></font> <br>
+        &ensp; - <highlight><b>Açık</b></highlight> <br>
         &emsp;  Bu iş akışı aramalar filtrelenmeden önce yürütülecek, regex kuralını etkinleştirecektir. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Kapalı</b></font> <br>
+        &ensp; - <sample><b>Kapalı</b></sample> <br>
         &emsp;  Bu iş akışı asla çalışmayacak, kural asla işlemeyecektir. <br>
         <br>
         Kısacası, <b>kutucuk açıkken kural açıktır ve bunun tersi de geçerlidir</b>.
@@ -113,8 +113,8 @@
         Android 12 veya üzeri gerektirir. <br>
         <br>
         Bu, SIM 2 için iki kural ekleyecektir: <br>
-        &ensp; - Kişilere izin ver, <font color="#ea86ff">öncelik 12</font>. <br>
-        &ensp; - Diğer her şeyi engelle, <font color="#ea86ff">öncelik 11</font>. Bu, Tekrarlanan Arama gibi ayarları geçersiz kılar, böylece tekrar etseler bile her zaman engellenirler.
+        &ensp; - Kişilere izin ver, <priority>öncelik 12</priority>. <br>
+        &ensp; - Diğer her şeyi engelle, <priority>öncelik 11</priority>. Bu, Tekrarlanan Arama gibi ayarları geçersiz kılar, böylece tekrar etseler bile her zaman engellenirler.
         ]]>
     </string>
     <string name="sim_2_non_contacts">SIM 2 Kişi Olmayanlar</string>

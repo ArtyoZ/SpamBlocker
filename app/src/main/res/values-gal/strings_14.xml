@@ -42,15 +42,15 @@
         <![CDATA[
         Só se admiten as seguintes categorías de spam, calquera outra categoría da API debe asignarse a unha delas.<br>
         <br>
-         - <font color="#03DAC5"><b>{válido}</b></font><br>
+         - <highlight><b>{válido}</b></highlight><br>
         &ensp; Denunciar como número válido, non spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraude}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{enquisa}</b></font><br>
-         - <font color="#fa7f71"><b>{político}</b></font><br>
+         - <error><b>{fraude}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{enquisa}</b></error><br>
+         - <error><b>{político}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{outro}</b></font><br>
+         - <error><b>{outro}</b></error><br>
         &ensp; O tipo de spam por defecto, usado cando non se aplica ningunha das categorías anteriores.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         Algúns servizos enviaránche un SMS primeiro para informarche de que unha chamada é inminente, normalmente nun minuto.<br>
         <br>
         Por exemplo, unha mensaxe SMS como:<br>
-        &ensp; <font color="#888888">[algún servizo] Chamamos para informarte..., podes contestar sen problemas.</font><br>
+        &ensp; <sample>[algún servizo] Chamamos para informarte..., podes contestar sen problemas.</sample><br>
         <br>
         Unha expresión regular para esa mensaxe sería:<br>
-        &ensp; <font color="#03DAC5"><b>.*responder.*</b></font> <br>
+        &ensp; <highlight><b>.*responder.*</b></highlight> <br>
         <br>
-        A configuración por defecto <font color="#03DAC5"><b>120 Segundos</b></font> significa que todas as chamadas serán
+        A configuración por defecto <highlight><b>120 Segundos</b></highlight> significa que todas as chamadas serán
         permitidas nos próximos dous minutos despois de recibir esa mensaxe.<br>
         <br>
         Funciona tanto para SMS regulares como para SMS flash (SMS de clase 0).<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">O comodín `*` úsase sen un punto precedente, queres dicir `.*`?</string>

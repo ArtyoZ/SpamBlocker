@@ -4,9 +4,9 @@
     <![CDATA[
     Numara aşağıdaki nedenlerle engellenirse otomatik olarak rapor edilsin: <br>
     <br>
-    &ensp; - <font color="#fa7f71">Kişi Olmayanlar</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> onayı <br>
-    &ensp; - <font color="#fa7f71">Numara Regex</font> <br>
+    &ensp; - <error>Kişi Olmayanlar</error>  <br>
+    &ensp; - <error>STIR/SHAKEN</error> onayı <br>
+    &ensp; - <error>Numara Regex</error> <br>
     <br>
     Bu, manuel raporlamayı etkilemez.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         CSV veri baytlarını bir telefon numaraları listesine ayrıştır. <br>
         <br>
-        Telefon numaralarını içeren sütun <b>mutlaka</b> <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> olarak adlandırılmalıdır. <br>
+        Telefon numaralarını içeren sütun <b>mutlaka</b> <title><b><no_translate>pattern</no_translate></b></title> olarak adlandırılmalıdır. <br>
         <br>
         Farklı başlık adlarına sahip üçüncü taraf CSV dosyaları için, bunları <b>Sütun Eşleme</b> kullanarak
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> ile eşleyin. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> ile eşleyin. <br>
         <br>
         Örneğin: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Not</b></font> <br>
+        <warn><b>Not</b></warn> <br>
         Sütun başlıkları olmayan düz metin dosyalarını ayrıştırmak için bunun yerine <b>Regex Çıkart</b>\'ı kullanın.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        XML veri baytlarını <font color="#00BFFF">xpath</font> kullanarak ayrıştırın ve bir telefon numaraları listesi oluşturun.
+        XML veri baytlarını <title>xpath</title> kullanarak ayrıştırın ve bir telefon numaraları listesi oluşturun.
         ]]>
     </string>
     <string name="action_parse_xml">XML Ayrıştır</string>
@@ -44,13 +44,13 @@
         Bu, her satırda bir numara bulunan düz metin dosyalarını ayrıştırmak için de kullanılabilir. <br>
         <br>
         Örneğin, metni ayrıştırın: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         regex ile: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         Bir dosyadan veri baytları okuyun. <br>
         <br>
-        Desteklenen <font color="#03DAC5">yol</font> etiketleri: <br>
+        Desteklenen <highlight>yol</highlight> etiketleri: <br>
         <br>
         %s <br>
         <br>
-        Desteklenen <font color="#03DAC5">dosya adı</font> etiketleri: <br>
+        Desteklenen <highlight>dosya adı</highlight> etiketleri: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         Veri baytlarını bir dosyaya yazın. <br>
         <br>
-        Desteklenen <font color="#03DAC5"><b>yol</b></font> etiketleri: <br>
+        Desteklenen <highlight><b>yol</b></highlight> etiketleri: <br>
         <br>
         %s <br>
         <br>
-        Desteklenen <font color="#03DAC5"><b>dosya adı</b></font> etiketleri: <br>
+        Desteklenen <highlight><b>dosya adı</b></highlight> etiketleri: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         İş akışı tetikleyici türüne bağlı olarak, kurallar kalıcı veya geçici olarak değiştirilebilir. <br>
         <br>
         Değiştirilebilir özellikler: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; Regex <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; Açıklama <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; Öncelik <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Engelle, <no_translate>false</no_translate>: İzin ver <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Uygula: <br>
         &ensp; 1: arama, 2: SMS, 3: her ikisi, 0: devre dışı bırak <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; Bildirim kanalı kimliği dizesi<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: reddet, 1: sessize al, 2: kapat <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… Veya herhangi bir SIM için <no_translate>null</no_translate>.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         Üçüncü taraf kaynaklardan gelen sayısal desenleri regex formatına normalleştirin. <br>
         <br>
         Örneğin, eşlemek için <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         şuna <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         İki <b>Numarayı Değiştir</b> eylemi ekleyin: <br>
-        &ensp; - `<font color="#fa7f71">(\\+)</font>`\'ı `` ile değiştirin<br>
-        &ensp; - `<font color="#fa7f71">(#)</font>`\'i `<font color="#03DAC5"><b>.</b></font>` ile değiştirin<br>
+        &ensp; - `<error>(\\+)</error>`\'ı `` ile değiştirin<br>
+        &ensp; - `<error>(#)</error>`\'i `<highlight><b>.</b></highlight>` ile değiştirin<br>
         ]]>
     </string>
     <string name="action_replace_number">Numarayı Değiştir</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Süre (dakika)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        <font color="#03DAC5">Test</font> düğmesine dokunarak bu iş akışını manuel olarak çalıştırın.
+        <highlight>Test</highlight> düğmesine dokunarak bu iş akışını manuel olarak çalıştırın.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         Görev çalışmalarını zamana bağlı programlarla otomatikleştirin. <br>
         <br>
         Kullanım senaryoları: <br>
-        &ensp; - <font color="#888888">Her gün FTC-DNC kaydından istenmeyen (spam) numaraları indirin.</font> <br>
+        &ensp; - <sample>Her gün FTC-DNC kaydından istenmeyen (spam) numaraları indirin.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Her gün otomatik yedekleme yapın ve yalnızca son 7 yedeği saklayın.</font> <br>
+        &ensp; - <sample>Her gün otomatik yedekleme yapın ve yalnızca son 7 yedeği saklayın.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Tetikleyici</string>
     <string name="delay_in_seconds">Gecikme (saniye)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Bu özellik, çalma başlamadan önce sistemin varsayılan zil sesini geçici olarak değiştirir ve çalmanın başlaması beklenen süreden sonra <font color="#03DAC5">%d saniye</font> sonra eski haline getirir. <br>
+        Bu özellik, çalma başlamadan önce sistemin varsayılan zil sesini geçici olarak değiştirir ve çalmanın başlaması beklenen süreden sonra <highlight>%d saniye</highlight> sonra eski haline getirir. <br>
         <br>
         Bazı telefonlar, çalmayı örneğin 6 saniye erteleyebilen <b>Önce Titre Sonra Çal</b> gibi özellikler sunar.
          Bu durumda, bu gecikmeyi buna göre artırın.

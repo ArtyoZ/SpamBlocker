@@ -43,7 +43,7 @@
         <![CDATA[
         Bu özellik izin gerektiriyor:<br>
         <br>
-        <font color="#00BFFF">%s</font><br>
+        <title>%s</title><br>
         <br>
         Sistem Ayarları\'nda manuel olarak etkinleştirilmesi gerekiyor.<br>
         O ayar sayfası açılsın mı?

@@ -31,14 +31,14 @@
     <br>
     <b>Options :</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Durée</b></font> <br>
+    - <title><b>Durée</b></title> <br>
     Les appels seront bloqués pendant cette période (en secondes). <br>
     <br>
-    - <font color="#00BFFF"><b>Incluant les Bloqués</b></font> <br>
+    - <title><b>Incluant les Bloqués</b></title> <br>
     Cette fonction sera activée après le blocage de tout appel. <br>
     <br>
-    - <font color="#00BFFF"><b>Incluant les Répondus</b></font> <br>
-    - <font color="#00BFFF"><b>Durée Minimale d\'Appel</b></font> <br>
+    - <title><b>Incluant les Répondus</b></title> <br>
+    - <title><b>Durée Minimale d\'Appel</b></title> <br>
     Cette fonction sera activée après qu\'un appel a été répondu mais que la durée de l\'appel est trop courte, car un tel appel est également considéré comme un appel spam. <br>
     ]]>
     </string>
@@ -47,10 +47,10 @@
     Après avoir bloqué un appel, bloquez également les appels suivants qui contournent toutes les règles pendant une période. <br>
     <br>
     <b>Cas d\'utilisation :</b> <br>
-    <font color="#888888"> &ensp; Certains spammeurs utilisent des numéros avec des préfixes communs, qui peuvent être bloqués avec des règles d\'expressions régulières.
-      Après le premier appel bloqué, ils passeront à des numéros aléatoires, effectuant des appels qui pourraient contourner toutes les règles. </font><br>
+    <sample> &ensp; Certains spammeurs utilisent des numéros avec des préfixes communs, qui peuvent être bloqués avec des règles d\'expressions régulières.
+      Après le premier appel bloqué, ils passeront à des numéros aléatoires, effectuant des appels qui pourraient contourner toutes les règles. </sample><br>
     <br>
-    <font color="#ffa500"><b>Remarque :</b></font> <br>
+    <warn><b>Remarque :</b></warn> <br>
       Cela implique également le risque de bloquer un appel valide, c\'est un compromis.<br>
     <br>
     Ceci créera à la fois <b>une règle d\'expression régulière</b> et <b>un flux de travail</b>, consultez l\'info-bulle de l\'action interne <b>Régulation des appels</b> pour une explication détaillée.<br>
@@ -66,14 +66,14 @@
     <br>
     <b>Options :</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Durée</b></font> <br>
+    - <title><b>Durée</b></title> <br>
     Les messages SMS seront bloqués pendant cette période (en secondes). <br>
     <br>
-    - <font color="#00BFFF"><b>Limite de messages</b></font> <br>
+    - <title><b>Limite de messages</b></title> <br>
     Autoriser les N premières notifications. <br>
     <br>
-    - <font color="#00BFFF"><b>Y compris les répondus</b></font> <br>
-    - <font color="#00BFFF"><b>Durée minimale de l\'appel</b></font> <br>
+    - <title><b>Y compris les répondus</b></title> <br>
+    - <title><b>Durée minimale de l\'appel</b></title> <br>
     Si un appel répondu est trop court, il est également considéré comme un appel indésirable et activera cette fonctionnalité. <br>
     ]]>
     </string>
@@ -82,7 +82,7 @@
     Mettre en sourdine les notifications SMS consécutives d\'un même numéro pendant une période. <br>
     <br>
     <b>Cas d\'utilisation :</b> <br>
-    <font color="#888888">Autoriser les trois premières notifications d\'un numéro et mettre en sourdine le reste dans la minute.</font> <br>
+    <sample>Autoriser les trois premières notifications d\'un numéro et mettre en sourdine le reste dans la minute.</sample> <br>
     <br>
     Ceci créera à la fois <b>une règle d\'expression régulière</b> et <b>un flux de travail</b>, consultez l\'info-bulle de l\'action interne <b>Régulation des SMS</b> pour une explication détaillée.<br>
     ]]>

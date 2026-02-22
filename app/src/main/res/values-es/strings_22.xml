@@ -4,9 +4,9 @@
     <![CDATA[
     Informar automáticamente el número si es bloqueado por las siguientes razones: <br>
     <br>
-    &ensp; - <font color="#fa7f71">No Contactos</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> certificación <br>
-    &ensp; - <font color="#fa7f71">Regex del Número</font> <br>
+    &ensp; - <error>No Contactos</error>  <br>
+    &ensp; - <error>STIR/SHAKEN</error> certificación <br>
+    &ensp; - <error>Regex del Número</error> <br>
     <br>
     Esto no afecta la denuncia manual.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         Analiza bytes de datos CSV a una lista de números de teléfono. <br>
         <br>
-        La columna que contiene los números de teléfono <b>debe</b> llamarse <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        La columna que contiene los números de teléfono <b>debe</b> llamarse <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         Para archivos CSV de terceros con nombres de encabezado diferentes, mapea a
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> usando el <b>Mapeo de Columnas</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> usando el <b>Mapeo de Columnas</b>. <br>
         <br>
         Por ejemplo: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Nota</b></font> <br>
+        <warn><b>Nota</b></warn> <br>
         Para analizar archivos de texto plano sin encabezados de columna, usa <b>Extraer con Regex</b> en su lugar.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        Analiza bytes de datos XML usando <font color="#00BFFF">xpath</font> y genera una lista de números de teléfono.
+        Analiza bytes de datos XML usando <title>xpath</title> y genera una lista de números de teléfono.
         ]]>
     </string>
     <string name="action_parse_xml">Analizar XML</string>
@@ -44,13 +44,13 @@
         Esto también se puede usar para analizar archivos de texto plano con un número de teléfono por línea. <br>
         <br>
         Por ejemplo, analiza el texto: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         con regex: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         Lee bytes de datos de un archivo. <br>
         <br>
-        Etiquetas de <font color="#03DAC5">ruta</font> admitidas: <br>
+        Etiquetas de <highlight>ruta</highlight> admitidas: <br>
         <br>
         %s <br>
         <br>
-        Etiquetas de <font color="#03DAC5">nombre de archivo</font> admitidas: <br>
+        Etiquetas de <highlight>nombre de archivo</highlight> admitidas: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         Escribe bytes de datos en un archivo. <br>
         <br>
-        Etiquetas de <font color="#03DAC5"><b>ruta</b></font> admitidas: <br>
+        Etiquetas de <highlight><b>ruta</b></highlight> admitidas: <br>
         <br>
         %s <br>
         <br>
-        Etiquetas de <font color="#03DAC5"><b>nombre de archivo</b></font> admitidas: <br>
+        Etiquetas de <highlight><b>nombre de archivo</b></highlight> admitidas: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         Dependiendo del tipo de disparador del flujo de trabajo, las reglas pueden modificarse de forma permanente o temporal. <br>
         <br>
         Atributos modificables: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; La expresión regular <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; La descripción <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; La prioridad <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Bloquear, <no_translate>false</no_translate>: permitir <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Aplicar a: <br>
         &ensp; 1: llamada, 2: SMS, 3: ambos, 0: deshabilitar <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; La cadena de ID del canal de notificación<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: rechazar, 1: silenciar, 2: colgar <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… O <no_translate>null</no_translate> para cualquier SIM.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         Normaliza patrones numéricos de fuentes de terceros a formato regex. <br>
         <br>
         Por ejemplo, para mapear <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         a <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         Añade dos acciones de <b>Reemplazar Número</b>: <br>
-        &ensp; - Reemplaza `<font color="#fa7f71">(\\+)</font>` con ``<br>
-        &ensp; - Reemplaza `<font color="#fa7f71">(#)</font>` con `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - Reemplaza `<error>(\\+)</error>` con ``<br>
+        &ensp; - Reemplaza `<error>(#)</error>` con `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">Reemplazar Número</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Duración (minutos)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Toque el botón <font color="#03DAC5">Probar</font> para ejecutar manualmente este flujo de trabajo.
+        Toque el botón <highlight>Probar</highlight> para ejecutar manualmente este flujo de trabajo.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,9 +164,9 @@
         Automatice las ejecuciones de tareas en horarios programados. <br>
         <br>
         Casos de uso: <br>
-        &ensp; - <font color="#888888">Descargue números de teléfono spam del registro FTC-DNC todos los días.</font> <br>
+        &ensp; - <sample>Descargue números de teléfono spam del registro FTC-DNC todos los días.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Haga una copia de seguridad automática todos los días y conserve solo las últimas 7 copias de seguridad.</font> <br>
+        &ensp; - <sample>Haga una copia de seguridad automática todos los días y conserve solo las últimas 7 copias de seguridad.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Activador</string>
@@ -174,7 +174,7 @@
     <string name="help_ringtone_delay">
         <![CDATA[
         Esta característica cambia temporalmente el tono de llamada predeterminado del sistema antes de que comience a sonar y
-         luego lo revierte después de <font color="#03DAC5">%d segundos</font>, momento en el cual se espera que la llamada haya comenzado. <br>
+         luego lo revierte después de <highlight>%d segundos</highlight>, momento en el cual se espera que la llamada haya comenzado. <br>
         <br>
         Algunos teléfonos ofrecen características como <b>Vibrar Primero y Luego Sonar</b> que pueden posponer el timbre, digamos, por 6 segundos.
          En ese caso, aumente este retraso en consecuencia.

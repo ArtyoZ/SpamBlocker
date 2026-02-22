@@ -3,7 +3,7 @@
         <![CDATA[
         ממשקי API המוגדרים כאן ישמשו לדיווח אוטומטי וגם לדיווח ידני.<br>
         <br>
-        <h6><font color="#00BFFF">- פרטיות</font></h6>
+        <h6><title>- פרטיות</title></h6>
         נקודות הקצה של ה-API יראו את:<br>
         <br>
          &ensp; - כתובת IP<br>
@@ -12,39 +12,39 @@
         <br>
         שום דבר אחר לא ידווח.<br>
         <br>
-        <h6><font color="#00BFFF">- דיווח ידני</font></h6>
+        <h6><title>- דיווח ידני</title></h6>
 		אם ממשק API כלשהו מופעל כאן, הקש על מספר טלפון בהיסטוריית השיחות, ויופיע כפתור דיווח.<br>
 		<br>
 		מספר הטלפון ידווח ל-<b>כל</b> ממשקי ה-API.<br>
 		<br>
-        <h6><font color="#00BFFF">- דיווח אוטומטי</font></h6>
-		<font color="#6ED0ff"><b>עיכוב דיווח</b></font><br>
+        <h6><title>- דיווח אוטומטי</title></h6>
+		<minor><b>עיכוב דיווח</b></minor><br>
         כאשר שיחה נחסמת, יהיה חיץ זמן של שעה לפני שהיא מדווחת.
         אם מספר הטלפון מותר מאוחר יותר עקב חזרות או חיוג חוזר בתוך חיץ זמן זה,
         הוא נחשב למספר טלפון שאינו ספאם והדיווח יבוטל.<br>
         <br>
-		<font color="#6ED0ff"><b>סוג דיווח</b></font><br>
-		1. הוא <font color="#fa7f71"><b>לא ידווח</b></font> על:<br>
+		<minor><b>סוג דיווח</b></minor><br>
+		1. הוא <error><b>לא ידווח</b></error> על:<br>
         <br>
-        - <font color="#fa7f71">מספרי טלפון או תוכן SMS</font><br>
-        - <font color="#fa7f71">מספרי טלפון מורשים</font><br>
-        - <font color="#fa7f71">בדיקות</font><br>
+        - <error>מספרי טלפון או תוכן SMS</error><br>
+        - <error>מספרי טלפון מורשים</error><br>
+        - <error>בדיקות</error><br>
         וסוגי החסימה הבאים:<br>
-        - <font color="#fa7f71">Regex של איש קשר</font><br>
-        - <font color="#fa7f71">Regex של קבוצת אנשי קשר</font><br>
-        - <font color="#fa7f71">מסד נתונים</font><br>
-        - <font color="#fa7f71">מצב פגישה</font><br>
-        - <font color="#fa7f71">שאילתה מיידית</font> (כדי למנוע ממספר הטלפון של נקודת הקצה של ה-API לדלוף למתחרים אחרים)<br>
+        - <error>Regex של איש קשר</error><br>
+        - <error>Regex של קבוצת אנשי קשר</error><br>
+        - <error>מסד נתונים</error><br>
+        - <error>מצב פגישה</error><br>
+        - <error>שאילתה מיידית</error> (כדי למנוע ממספר הטלפון של נקודת הקצה של ה-API לדלוף למתחרים אחרים)<br>
         <br>
-		2. הוא <font color="#03DAC5"><b>ידווח</b></font> על מספרי טלפון שנחסמו על ידי:<br>
+		2. הוא <highlight><b>ידווח</b></highlight> על מספרי טלפון שנחסמו על ידי:<br>
         <br>
-        - <font color="#03DAC5">לא איש קשר</font><br>
-        - <font color="#03DAC5">אישור STIR</font><br>
-        - <font color="#03DAC5">Regex של מספר טלפון</font><br>
+        - <highlight>לא איש קשר</highlight><br>
+        - <highlight>אישור STIR</highlight><br>
+        - <highlight>Regex של מספר טלפון</highlight><br>
         <br>
 		3. יוצא מן הכלל אחד:<br>
 		<br>
-        כאשר הוא נחסם על ידי <font color="#03DAC5">מסד נתונים</font> ומספר הטלפון נוסף במקור על ידי שאילתת API,
+        כאשר הוא נחסם על ידי <highlight>מסד נתונים</highlight> ומספר הטלפון נוסף במקור על ידי שאילתת API,
          הוא ידווח בחזרה לאותו API כדי להגדיל את ציון הדירוג. <br>
         <br>
          לדוגמה, אם מספר הטלפון נוסף על ידי

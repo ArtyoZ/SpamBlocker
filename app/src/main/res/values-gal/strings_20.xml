@@ -31,14 +31,14 @@
     <br>
     <b>Opcións:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Duración</b></font> <br>
+    - <title><b>Duración</b></title> <br>
     As chamadas serán bloqueadas durante este período (en segundos). <br>
     <br>
-    - <font color="#00BFFF"><b>Incluíndo Bloqueadas</b></font> <br>
+    - <title><b>Incluíndo Bloqueadas</b></title> <br>
     Esta función activarase despois de que calquera chamada sexa bloqueada. <br>
     <br>
-    - <font color="#00BFFF"><b>Incluíndo Respondidas</b></font> <br>
-    - <font color="#00BFFF"><b>Duración Mínima da Chamada</b></font> <br>
+    - <title><b>Incluíndo Respondidas</b></title> <br>
+    - <title><b>Duración Mínima da Chamada</b></title> <br>
     Esta función activarase despois de que unha chamada sexa respondida pero a duración da chamada sexa demasiado curta, xa que
      esa chamada tamén se considera unha chamada spam. <br>
     ]]>
@@ -48,10 +48,10 @@
     Despois de bloquear unha chamada, tamén bloquear as chamadas posteriores que eviten todas as regras durante un período. <br>
     <br>
     <b>Caso de uso:</b> <br>
-    <font color="#888888"> &ensp; Algúns spammers usan números de teléfono con prefixos comúns, que poden ser bloqueados con regras de expresión regular.
-      Despois de que a primeira chamada sexa bloqueada, cambiarán a números de teléfono aleatorios, facendo chamadas que poden evitar todas as regras. </font><br>
+    <sample> &ensp; Algúns spammers usan números de teléfono con prefixos comúns, que poden ser bloqueados con regras de expresión regular.
+      Despois de que a primeira chamada sexa bloqueada, cambiarán a números de teléfono aleatorios, facendo chamadas que poden evitar todas as regras. </sample><br>
     <br>
-    <font color="#ffa500"><b>Nota:</b></font> <br>
+    <warn><b>Nota:</b></warn> <br>
       Isto tamén implica o risco de bloquear unha chamada válida, é unha compensación.<br>
     <br>
     Isto creará tanto <b>unha regra de expresión regular</b> como <b>un fluxo de traballo</b>, consulta a información da ferramenta da acción interna <b>Limitación de Chamadas</b> para unha explicación detallada.<br>
@@ -67,14 +67,14 @@
     <br>
     <b>Opcións:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Duración</b></font> <br>
+    - <title><b>Duración</b></title> <br>
     As mensaxes SMS bloquearanse durante este período (en segundos). <br>
     <br>
-    - <font color="#00BFFF"><b>Límite de Conteos</b></font> <br>
+    - <title><b>Límite de Conteos</b></title> <br>
     Permitir as primeiras N notificacións. <br>
     <br>
-    - <font color="#00BFFF"><b>Incluíndo Respondidas</b></font> <br>
-    - <font color="#00BFFF"><b>Duración Mínima da Chamada</b></font> <br>
+    - <title><b>Incluíndo Respondidas</b></title> <br>
+    - <title><b>Duración Mínima da Chamada</b></title> <br>
     Se unha chamada respondida é demasiado curta, tamén se considera unha chamada de spam e activará esta característica. <br>
     ]]>
     </string>
@@ -83,7 +83,7 @@
     Silenciar as notificacións consecutivas de SMS do mesmo número de teléfono durante un período. <br>
     <br>
     <b>Casos de uso:</b> <br>
-    <font color="#888888">Permitir as tres primeiras notificacións dun número de teléfono e silenciar o resto nun minuto.</font> <br>
+    <sample>Permitir as tres primeiras notificacións dun número de teléfono e silenciar o resto nun minuto.</sample> <br>
     <br>
     Isto creará tanto <b>unha regra de expresión regular</b> como <b>un fluxo de traballo</b>, consulta a información da ferramenta da acción interna <b>Limitación de SMS</b> para unha explicación detallada.<br>
     ]]>

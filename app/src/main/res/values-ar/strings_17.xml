@@ -5,30 +5,30 @@
         <![CDATA[
         بعد الاتصال برقم طوارئ، اسمح بجميع المكالمات الواردة لفترة من الوقت.<br>
         <br>
-        <h5><font color="#00BFFF">- المدة</font></h5>
-        الإعداد الافتراضي <font color="#03DAC5"><b>120 دقيقة</b></font> يعني السماح بجميع المكالمات
+        <h5><title>- المدة</title></h5>
+        الإعداد الافتراضي <highlight><b>120 دقيقة</b></highlight> يعني السماح بجميع المكالمات
         في الـ 120 دقيقة التالية بعد الاتصال برقم طوارئ.<br>
         <br>
-        <h5><font color="#00BFFF">- التحقق من STIR</font></h5>
+        <h5><title>- التحقق من STIR</title></h5>
          - عند التعطيل، سيتم السماح بجميع المكالمات.<br>
          - عند التفعيل، لن يتم السماح بالمكالمات التي تفشل في مصادقة STIR، وسيتم السماح فقط بالمكالمات "الصحيحة" و "غير المؤكدة".<br>
         <br>
-        <h5><font color="#00BFFF">- أرقام إضافية</font></h5>
+        <h5><title>- أرقام إضافية</title></h5>
         سيؤدي الاتصال بأي رقم في هذه القائمة أيضًا إلى تشغيل هذه الميزة.<br>
         <br>
         لا حاجة لإضافة أرقام مثل 911 هنا بشكل صريح، لأن Android يتضمن قائمة أرقام طوارئ مدمجة
         لكل بلد (مثل: الشرطة، والإطفاء، والإسعاف).<br>
         <br>
         افصل بين الأرقام بفواصل، مثل:<br>
-        &ensp; <font color="#888888">111, 222, 3333</font><br>
+        &ensp; <sample>111, 222, 3333</sample><br>
         <br>
-        <h5><font color="#00BFFF">- إعادة تعيين</font></h5>
+        <h5><title>- إعادة تعيين</title></h5>
         اضغط على هذا الزر لإعادة تعيين هذه الميزة إذا تم تشغيلها عن طريق الخطأ أو أثناء الاختبار.<br>
         <br>
-        <h5><font color="#00BFFF">- اختبار</font></h5>
+        <h5><title>- اختبار</title></h5>
         قم بمحاكاة مكالمة صادرة لاختبار ما إذا كان هذا الرقم هو رقم طوارئ.<br>
         <br>
-        <font color="#ea86ff"><b>الأولوية: قصوى</b></font>
+        <priority><b>الأولوية: قصوى</b></priority>
         ]]>
     </string>
     <string name="reset"><translate>إعادة تعيين</translate></string>
@@ -39,17 +39,17 @@
     <string name="additional_numbers"><translate>أرقام إضافية</translate></string>
     <string name="path_tags">
         <![CDATA[
-        <font color="#00BFFF"><b>{sdcard}</b></font><br>
+        <title><b>{sdcard}</b></title><br>
         دليل التخزين الخارجي، نفس: <br>
-        <font color="#888888">/storage/emulated/0</font><br>
+        <sample>/storage/emulated/0</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Download}</b></font><br>
+        <title><b>{Download}</b></title><br>
         نفس: <br>
-        <font color="#888888">{sdcard}/Download</font><br>
+        <sample>{sdcard}/Download</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Documents}</b></font><br>
+        <title><b>{Documents}</b></title><br>
         نفس: <br>
-        <font color="#888888">{sdcard}/Documents</font>
+        <sample>{sdcard}/Documents</sample>
         ]]>
     </string>
     <string name="call_to_number"><translate>للرقم</translate></string>
@@ -61,8 +61,8 @@
         <br>
         حالة استخدام نموذجية:<br>
         &ensp; عند وجود إشعار مثل:<br>
-        &emsp; العنوان: <font color="#888888">تحديث الطلب:</font><br>
-        &emsp; النص: <font color="#888888">تم استلام طلبك من قبل السائق ...</font><br>
+        &emsp; العنوان: <sample>تحديث الطلب:</sample><br>
+        &emsp; النص: <sample>تم استلام طلبك من قبل السائق ...</sample><br>
         &ensp; قد يتصل بك السائق بعد ذلك لتأكيد التفاصيل.<br>
         <br>
         <b>الأذونات المطلوبة:</b> <br>
@@ -71,18 +71,18 @@
         <br>
         خيارات:<br>
         <br>
-        <h6><font color="#00BFFF">- التطبيق</font></h6>
+        <h6><title>- التطبيق</title></h6>
         سوف تتحقق من الإشعارات من هذا التطبيق فقط.<br>
         <br>
-        <h6><font color="#00BFFF">- محتوى الإشعار</font></h6>
+        <h6><title>- محتوى الإشعار</title></h6>
         سيُطابق هذا التعبير النمطي <b>كلاً من عنوان الإشعار ونصه</b>.<br>
         مثال لحالة الاستخدام أعلاه:<br>
-        &emsp; <font color="#03DAC5">تحديث الطلب.*استلمه السائق.*</font><br>
+        &emsp; <highlight>تحديث الطلب.*استلمه السائق.*</highlight><br>
         <br>
-        <h6><font color="#00BFFF">- المدة</font></h6>
+        <h6><title>- المدة</title></h6>
         سيُسمح بالمكالمات خلال هذه الفترة، المحددة بالدقائق.<br>
         <br>
-        <font color="#ea86ff"><b>الأولوية: 10</b></font>
+        <priority><b>الأولوية: 10</b></priority>
         ]]>
     </string>
     <string name="notification_content">محتوى الإشعار</string>

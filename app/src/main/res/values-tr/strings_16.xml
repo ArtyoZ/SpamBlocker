@@ -3,7 +3,7 @@
         <![CDATA[
         Burada yapılandırılan API\'ler hem otomatik raporlama hem de manuel raporlama için kullanılacaktır.<br>
         <br>
-        <h6><font color="#00BFFF">- Gizlilik</font></h6>
+        <h6><title>- Gizlilik</title></h6>
         API uç noktaları şunları görecektir:<br>
         <br>
          &ensp; - IP adresi<br>
@@ -12,39 +12,39 @@
         <br>
         Başka hiçbir şey rapor edilmeyecektir.<br>
         <br>
-        <h6><font color="#00BFFF">- Manuel raporlama</font></h6>
+        <h6><title>- Manuel raporlama</title></h6>
 		Burada herhangi bir API etkinleştirilirse, arama geçmişinde bir numaraya dokunduğunuzda, bir raporlama düğmesi olacaktır.<br>
 		<br>
 		Numara <b>tüm</b> API\'lere bildirilecektir.<br>
 		<br>
-        <h6><font color="#00BFFF">- Otomatik raporlama</font></h6>
-		<font color="#6ED0ff"><b>Raporlama gecikmesi</b></font><br>
+        <h6><title>- Otomatik raporlama</title></h6>
+		<minor><b>Raporlama gecikmesi</b></minor><br>
         Bir çağrı engellendiğinde, raporlanmadan önce bir saatlik bir zaman aralığı olacaktır.
         Bu zaman aralığında numara tekrarlamalar nedeniyle daha sonra izin verilirse veya geri aranırsa,
         istenmeyen çağrı numarası olarak kabul edilmez ve raporlama iptal edilir.<br>
         <br>
-		<font color="#6ED0ff"><b>Rapor türü</b></font><br>
-		1. Şunları <font color="#fa7f71"><b>raporlamaz</b></font>:<br>
+		<minor><b>Rapor türü</b></minor><br>
+		1. Şunları <error><b>raporlamaz</b></error>:<br>
         <br>
-        - <font color="#fa7f71">SMS numaraları veya içeriği</font><br>
-        - <font color="#fa7f71">İzin verilen numaralar</font><br>
-        - <font color="#fa7f71">Test etme</font><br>
+        - <error>SMS numaraları veya içeriği</error><br>
+        - <error>İzin verilen numaralar</error><br>
+        - <error>Test etme</error><br>
         Ve aşağıdaki engellenen türler:<br>
-        - <font color="#fa7f71">Kişi Regex</font><br>
-        - <font color="#fa7f71">Kişi Grubu Regex</font><br>
-        - <font color="#fa7f71">Veritabanı</font><br>
-        - <font color="#fa7f71">Toplantı Modu</font><br>
-        - <font color="#fa7f71">Anında Sorgulama</font> (API uç noktasının numarasının diğer rakiplere sızmasını önlemek için)<br>
+        - <error>Kişi Regex</error><br>
+        - <error>Kişi Grubu Regex</error><br>
+        - <error>Veritabanı</error><br>
+        - <error>Toplantı Modu</error><br>
+        - <error>Anında Sorgulama</error> (API uç noktasının numarasının diğer rakiplere sızmasını önlemek için)<br>
         <br>
-		2. Şunlar tarafından engellenen numaraları <font color="#03DAC5"><b>raporlar</b></font>:<br>
+		2. Şunlar tarafından engellenen numaraları <highlight><b>raporlar</b></highlight>:<br>
         <br>
-        - <font color="#03DAC5">Kişi Olmayan</font><br>
-        - <font color="#03DAC5">STIR Onayı</font><br>
-        - <font color="#03DAC5">Numara Regex</font><br>
+        - <highlight>Kişi Olmayan</highlight><br>
+        - <highlight>STIR Onayı</highlight><br>
+        - <highlight>Numara Regex</highlight><br>
         <br>
 		3. Bir istisna:<br>
 		<br>
-        <font color="#03DAC5">Veritabanı</font> tarafından engellendiğinde ve numara orijinal olarak API sorgusuyla eklendiğinde,
+        <highlight>Veritabanı</highlight> tarafından engellendiğinde ve numara orijinal olarak API sorgusuyla eklendiğinde,
          derecelendirme puanını artırmak için o API\'ye geri rapor edilecektir. <br>
         <br>
          Örneğin, numara

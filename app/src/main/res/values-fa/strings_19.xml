@@ -8,10 +8,10 @@
         چنین جریان کاری به‌طور خودکار با یک تماس ورودی فعال خواهد شد.<br>
         <br>
         مورد استفاده: <br>
-        <font color="#888888">
+        <sample>
           &ensp; حذف کاراکترهای اضافی از ابتدای شماره تلفن قبل از بررسی،
           زیرا برخی از اپراتورها از دو شماره روی یک سیم کارت پشتیبانی می‌کنند. <br>
-        </font>
+        </sample>
         <br>
         یک تنظیم معمول:<br>
         - رویداد تماس <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         شماره تماس ورودی را قبل از اینکه توسط قوانین بررسی شود، تغییر دهید.<br>
         <br>
-        <font color="#00BFFF"><b>یک مورد استفاده</b>:</font><br>
+        <title><b>یک مورد استفاده</b>:</title><br>
         &ensp; برخی از اپراتورهای شبکه تلفن همراه از دو شماره برای یک سیم‌کارت پشتیبانی می‌کنند؛ آن‌ها ارقام پیشرو اضافی را به شماره ثانویه اضافه می‌کنند.<br>
-        &ensp;   به عنوان مثال: 3312345679 ممکن است به <font color="#888888">123</font>3312345679 تبدیل شود. <br>
-        &ensp; <font color="#888888">123</font> پیشرو باید قبل از بررسی حذف شود. <br>
+        &ensp;   به عنوان مثال: 3312345679 ممکن است به <sample>123</sample>3312345679 تبدیل شود. <br>
+        &ensp; <sample>123</sample> پیشرو باید قبل از بررسی حذف شود. <br>
         <br>
-        <font color="#00BFFF"><b>یک تنظیمات معمول:</b></font> <br>
+        <title><b>یک تنظیمات معمول:</b></title> <br>
         - <b>رویداد تماس</b> <br>
         - <b>جایگزینی شماره</b> <br>
-        &emsp; از: <font color="#888888">^123</font> <br>
-        &emsp; به: <font color="#888888">خالی بگذارید</fonts> <br>
+        &emsp; از: <sample>^123</sample> <br>
+        &emsp; به: <sample>خالی بگذارید</sample> <br>
         ]]>
     </string>
     <string name="blocked">مسدود شده</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         کانال‌های اعلان داخلی: <br>
         <br>
-        <font color="#00BFFF"><b>هیچ‌کدام</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>هیچ‌کدام</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; هیچ اعلانی نمایش داده نمی‌شود. <br>
         <br>
-        <font color="#00BFFF"><b>پایین</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>پایین</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; در نوار وضعیت و پنل اعلان ظاهر می‌شود. <br>
         <br>
-        <font color="#00BFFF"><b>متوسط</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>متوسط</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; در نوار وضعیت و پنل اعلان همراه با صدا ظاهر می‌شود. <br>
         <br>
-        <font color="#00BFFF"><b>بالا</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>بالا</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; در نوار وضعیت، پنل اعلان، و به صورت پنجره بازشو (heads-up) همراه با صدا ظاهر می‌شود. <br>
         <br>
-        <font color="#00BFFF"><b>بالا (بی‌صدا)</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>بالا (بی‌صدا)</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; مشابه <b>بالا</b> است اما صدا را قطع می‌کند. <br>
-        &ensp; ایده‌آل برای <font color="#03DAC5"><b>چت پیامکی</b></font> فعال است که در آن صداهای مداوم ممکن است آزاردهنده باشند. <br>
-          <font color="#03DAC5"><b>چت پیامکی</b></font> فعال زمانی در نظر گرفته می‌شود که صفحه باز است و برنامه پیامک در پیش‌زمینه باز باشد. <br>
+        &ensp; ایده‌آل برای <highlight><b>چت پیامکی</b></highlight> فعال است که در آن صداهای مداوم ممکن است آزاردهنده باشند. <br>
+          <highlight><b>چت پیامکی</b></highlight> فعال زمانی در نظر گرفته می‌شود که صفحه باز است و برنامه پیامک در پیش‌زمینه باز باشد. <br>
         ]]>
     </string>
     <string name="none">هیچ‌کدام</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         یک کانال اعلان جدید ایجاد کنید. <br>
         <br>
-        <font color="#03DAC5"><b>فشار طولانی</b></font> روی یک کانال اعلان در این لیست کشویی برای ویرایش آن.
+        <highlight><b>فشار طولانی</b></highlight> روی یک کانال اعلان در این لیست کشویی برای ویرایش آن.
         ]]>
     </string>
     <string name="warning_delete_channel">

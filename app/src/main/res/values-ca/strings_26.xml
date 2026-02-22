@@ -12,53 +12,53 @@
     <![CDATA[
         Importa números de fitxers locals o remots mitjançant fluxos de treball. <br>
         <br>
-        <font color="#00BFFF"><b>Una configuració típica</b></font>: <br>
+        <title><b>Una configuració típica</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Llegir fitxer</b></font> / <font color="#6ed0ff"><b>Petició HTTP</b></font> <br>
+        1. <minor><b>Llegir fitxer</b></minor> / <minor><b>Petició HTTP</b></minor> <br>
           &ensp; Obté el contingut del fitxer. <br>
           <br>
-        2. <font color="#6ed0ff"><b>Analitzar CSV</b></font> / <font color="#6ed0ff"><b>Analitzar XML</b></font> / <font color="#6ed0ff"><b>Extreure Regex</b></font> <br>
+        2. <minor><b>Analitzar CSV</b></minor> / <minor><b>Analitzar XML</b></minor> / <minor><b>Extreure Regex</b></minor> <br>
           &ensp; Analitza\'ls i obté una llista de números. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Reemplaçar número</b></font> (opcional) <br>
+        3. <minor><b>Reemplaçar número</b></minor> (opcional) <br>
           &ensp; Modifica el format del número <br>
           &ensp; Cas d\'ús: <br>
-          <font color="#888888">
+          <sample>
             &emsp; En migrar números d\'altres aplicacions, converteix formats com <b>123#####</b> a l\'expressió regular <b>123.....</b> o <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Importar a la base de dades de spam</b></font> / <font color="#6ed0ff"><b>Importar a la regla Regex</b></font> <br>
+        4. <minor><b>Importar a la base de dades de spam</b></minor> / <minor><b>Importar a la regla Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Exemples</b></font>: <br>
+        <title><b>Exemples</b></title>: <br>
           - La predefinició <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Més exemples en línia: <br>
           - <a href=\"%s\">Text pla</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath encara no és compatible, utilitza <font color="#6ed0ff"><b>Regex Extract</b></font> en el seu lloc.
+          - <a href=\"%s\">Json</a> - JsonPath encara no és compatible, utilitza <minor><b>Regex Extract</b></minor> en el seu lloc.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Un tutorial d\'expressions regulars per a no programadors. <br>
         <br>
-        <font color="#00BFFF"><b>Nivell inicial - Comodí</b></font> <br>
-        &ensp; Sempre que vulguis utilitzar un comodí <font color="#888888"><b>*</b></font>, posa un punt <font color="#888888"><b>.</b></font> abans, com <font color="#888888">.*<b></b></font>, això hauria de cobrir la majoria de casos d\'ús. <br>
+        <title><b>Nivell inicial - Comodí</b></title> <br>
+        &ensp; Sempre que vulguis utilitzar un comodí <sample><b>*</b></sample>, posa un punt <sample><b>.</b></sample> abans, com <sample><b>.*</b></sample>, això hauria de cobrir la majoria de casos d\'ús. <br>
         <br>
-        <font color="#00BFFF"><b>Avançat - Utilitzant IA</b></font> <br>
+        <title><b>Avançat - Utilitzant IA</b></title> <br>
         &ensp; Per exemple, per obtenir la següent expressió regular per a verificacions SMS: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Pregunta a la IA: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Prova-ho en línia</b></font> <br>
+        <highlight><b>Prova-ho en línia</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Toca aquí</big></a> per copiar el prompt anterior <br>
           &ensp; 2. <a href=\"try_it\"><big>Toca aquí</big></a> per iniciar la IA en línia <br>
     ]]>

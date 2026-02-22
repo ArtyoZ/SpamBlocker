@@ -3,7 +3,7 @@
         <![CDATA[
         Le API configurate qui verranno utilizzate sia per la segnalazione automatica che manuale.<br>
         <br>
-        <h6><font color="#00BFFF">- Privacy</font></h6>
+        <h6><title>- Privacy</title></h6>
         Gli endpoint API vedranno i tuoi dati:<br>
         <br>
          &ensp; - Indirizzo IP<br>
@@ -12,39 +12,39 @@
         <br>
         Null\'altro verrà segnalato.<br>
         <br>
-        <h6><font color="#00BFFF">- Segnalazione manuale</font></h6>
+        <h6><title>- Segnalazione manuale</title></h6>
 		Se un\'API è abilitata qui, tocca un numero nella cronologia chiamate; ci sarà un pulsante di segnalazione.<br>
 		<br>
 		Il numero verrà segnalato a <b>tutte</b> le API.<br>
 		<br>
-        <h6><font color="#00BFFF">- Segnalazione automatica</font></h6>
-		<font color="#6ED0ff"><b>Ritardo nella segnalazione</b></font><br>
+        <h6><title>- Segnalazione automatica</title></h6>
+		<minor><b>Ritardo nella segnalazione</b></minor><br>
         Quando una chiamata viene bloccata, ci sarà un buffer di tempo di un\'ora prima che venga segnalata.
         Se il numero viene successivamente consentito a causa di chiamate ripetute o richiamate entro questo periodo di tempo,
         verrà considerato un numero non spam e la segnalazione verrà annullata.<br>
         <br>
-		<font color="#6ED0ff"><b>Tipo di segnalazione</b></font><br>
-		1. <font color="#fa7f71"><b>Non</b></font> segnalerà:<br>
+		<minor><b>Tipo di segnalazione</b></minor><br>
+		1. <error><b>Non</b></error> segnalerà:<br>
         <br>
-        - <font color="#fa7f71">Numeri o contenuti SMS</font><br>
-        - <font color="#fa7f71">Numeri consentiti</font><br>
-        - <font color="#fa7f71">Test</font><br>
+        - <error>Numeri o contenuti SMS</error><br>
+        - <error>Numeri consentiti</error><br>
+        - <error>Test</error><br>
         E i seguenti tipi bloccati:<br>
-        - <font color="#fa7f71">Regex Contatto</font><br>
-        - <font color="#fa7f71">Regex Gruppo Contatti</font><br>
-        - <font color="#fa7f71">Database</font><br>
-        - <font color="#fa7f71">Modalità Riunione</font><br>
-        - <font color="#fa7f71">Query Istantanea</font> (per evitare che il numero dell\'endpoint API venga divulgato ad altri concorrenti)<br>
+        - <error>Regex Contatto</error><br>
+        - <error>Regex Gruppo Contatti</error><br>
+        - <error>Database</error><br>
+        - <error>Modalità Riunione</error><br>
+        - <error>Query Istantanea</error> (per evitare che il numero dell\'endpoint API venga divulgato ad altri concorrenti)<br>
         <br>
-		2. <font color="#03DAC5"><b>Segnalerà</b></font> i numeri bloccati da:<br>
+		2. <highlight><b>Segnalerà</b></highlight> i numeri bloccati da:<br>
         <br>
-        - <font color="#03DAC5">Non-Contatto</font><br>
-        - <font color="#03DAC5">Attestazione STIR</font><br>
-        - <font color="#03DAC5">Regex Numero</font><br>
+        - <highlight>Non-Contatto</highlight><br>
+        - <highlight>Attestazione STIR</highlight><br>
+        - <highlight>Regex Numero</highlight><br>
         <br>
 		3. Un\'eccezione:<br>
 		<br>
-        Quando viene bloccato da <font color="#03DAC5">Database</font> e il numero è stato originariamente aggiunto tramite query API,
+        Quando viene bloccato da <highlight>Database</highlight> e il numero è stato originariamente aggiunto tramite query API,
          verrà segnalato nuovamente a quell\'API per aumentare il punteggio di valutazione. <br>
         <br>
          Ad esempio, se il numero è stato aggiunto tramite

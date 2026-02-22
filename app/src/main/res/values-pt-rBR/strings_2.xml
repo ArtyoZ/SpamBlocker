@@ -7,9 +7,9 @@
         <br>
         Aplica-se tanto a chamadas quanto a mensagens SMS. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridade padrão</b></font>: <br>
-        &ensp; Permitir: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; Bloquear: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>Prioridade padrão</b></priority>: <br>
+        &ensp; Permitir: <priority><b>10</b></priority> <br>
+        &ensp; Bloquear: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>Opções:</b> <br>
         <br>
-        <font color="#00BFFF"><b>Incluir Não Verificados</b></font> <br>
+        <title><b>Incluir Não Verificados</b></title> <br>
         Também bloqueie chamadas não verificadas, o que significa que a chamada não pode ser validada, ou que a operadora ou seu dispositivo não suportam a atestação STIR. <br>
         <br>
         <b>Caso de uso</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Para países que exigem atestação STIR, números não verificados são provavelmente spam. <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>Prioridade padrão: 0</b></font> <br>
+        <priority><b>Prioridade padrão: 0</b></priority> <br>
         <br>
         Um <b>caso de uso</b> para personalizar a prioridade:<br>
         <br>
         1. Sempre permitir contatos. <br>
-          &emsp; - Contatos, prioridade <font color="#ea86ff">12</font> <br>
+          &emsp; - Contatos, prioridade <priority>12</priority> <br>
         2. Bloquear chamadas que falham STIR, mesmo que se repitam. <br>
-          &emsp; - STIR, prioridade <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR, prioridade <priority>11</priority> <br>
         3. Permitir chamadas que se repetem. <br>
-          &emsp; - Chamada repetida, prioridade <font color="#ea86ff">10</font> <br>
+          &emsp; - Chamada repetida, prioridade <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

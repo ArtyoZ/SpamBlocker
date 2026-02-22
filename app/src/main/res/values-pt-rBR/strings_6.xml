@@ -43,13 +43,13 @@
         <br>
         <b>Opções:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Frequência</h6>
-        A configuração padrão <font color="#03DAC5"><b>1 / 5 Min</b></font> significa que a segunda chamada em 5 minutos será permitida. <br>
+        <h6><title>- Frequência</title></h6>
+        A configuração padrão <highlight><b>1 / 5 Min</b></highlight> significa que a segunda chamada em 5 minutos será permitida. <br>
         <br>
-        <h6><font color="#00BFFF">- Incluir SMS</font></h6>
+        <h6><title>- Incluir SMS</title></h6>
         Quando ativado, o recebimento de mensagens SMS desse número também conta.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
 

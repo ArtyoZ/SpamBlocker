@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        استعلام عن الرقم الوارد عبر الإنترنت في الوقت الفعلي. <br>
+        استعلم عن الرقم الوارد عبر الإنترنت في الوقت الحقيقي. <br>
         <br>
-        سيتم استعلام نقاط نهاية متعددة لواجهة برمجة التطبيقات في وقت واحد، وسيتم استخدام أول نتيجة يتم استلامها وتجاهل جميع النتائج اللاحقة. <br>
+        سيتم الاستعلام عن عدة نقاط نهاية API في وقت واحد، وسيتم استخدام النتيجة الأولى المستلمة وتجاهل جميع النتائج اللاحقة. <br>
         <br>
-        لديها أقل أولوية افتراضيًا، مما يعني أنها ستعمل فقط عندما تتجاوز المكالمة جميع القواعد الأخرى.<br>
+        لديه أدنى أولوية بشكل افتراضي، مما يعني أنه سيُفعَّل فقط بعد أن يجتاز المكالمة جميع القواعد المحلية.<br>
         <br>
-        <font color="#ea86ff"><b>الأولوية الافتراضية: -1</b></font>
+        <priority><b>الأولوية الافتراضية: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query"><translate>استعلام فوري</translate></string>
@@ -37,23 +37,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        استخرج <font color="#00BFFF">الفئة</font> و<font color="#00BFFF">التعليقات</font>
+        استخرج <title>الفئة</title> و<title>التعليقات</title>
          من نتيجة الاستعلام واعرضها في الإشعارات وسجل التاريخ. (اختياري)<br>
         <br>
         على سبيل المثال، لنتيجة الاستعلام هذه: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - استخرج <font color="#00BFFF">الفئة</font> فقط: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - استخرج <title>الفئة</title> فقط: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - استخرج كلاً من <font color="#00BFFF">الفئة</font> و<font color="#00BFFF">التعليقات</font>: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - استخرج كلاً من <title>الفئة</title> و<title>التعليقات</title>: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result"><translate>تحليل النتيجة</translate></string>
@@ -100,13 +100,13 @@
         <translate>يقوم هذا regex بتصفية الأرقام وفقًا لذلك، وسيتم تخطي فحص الأرقام الواردة التي لا تتطابق مع regex هذا.</translate><br>
         <br>
         <translate>- تحقق فقط من <b>الأرقام الدولية</b>:</translate><br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         <translate>- تحقق فقط من <b>الأرقام المحلية</b>:</translate><br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         <translate>- تحقق من <b>أي رقم</b>:</translate><br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template"><translate>التحقق: %s، الأولوية: %s</translate></string>

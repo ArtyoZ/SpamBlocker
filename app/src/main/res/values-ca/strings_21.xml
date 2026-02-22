@@ -6,9 +6,9 @@
         Estableix el to de trucada per a una característica particular, o silencia-lo. <br>
         <br>
         Per exemple, per establir el to de trucada per a una regla regex: <br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         Les trucades permeses per aquesta regla reproduiran el to de trucada especificat.<br>
     ]]>
@@ -53,9 +53,9 @@
         Personalitza el to de trucada per a una regla regex; el to de trucada especificat es reproduirà quan la trucada sigui permesa per aquesta regla. <br>
         <br>
         <b>Cas d\'ús:<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; Estableix diferents tons de trucada per a persones particulars, grups de contactes o rangs de números de telèfon.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="remote_setup">Configuració Remota</string>
@@ -92,8 +92,8 @@
         <br>
         El flux de treball s\'executa diàriament, descarrega el conjunt de dades complet de 90 dies en la primera execució i després només realitza actualitzacions incrementals en execucions posteriors. <br>
         <br>
-        <font color="#ffa500"><b>Nota:</b></font> <br>
-        <font color="#888888">&ensp; Normalment, el conjunt de dades s\'actualitza cada dia laborable al voltant del migdia hora de l\'Est. </font><br>
+        <warn><b>Nota:</b></warn> <br>
+        <sample>&ensp; Normalment, el conjunt de dades s\'actualitza cada dia laborable al voltant del migdia hora de l\'Est. </sample><br>
         <br>
         Per tant, està programat a les 18:00, ja que s\'espera que el conjunt de dades estigui disponible per aleshores. <br>
     ]]>

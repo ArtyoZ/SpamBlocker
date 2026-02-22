@@ -8,10 +8,10 @@
         这样的工作流程会在有来电时自动触发。<br>
         <br>
         用例：<br>
-        <font color="#888888">
+        <sample>
           &ensp; 在筛选电话号码之前，删除号码中多余的前导字符，
           因为有些运营商支持单张SIM卡双号码。<br>
-        </font>
+        </sample>
         <br>
         典型设置：<br>
         - 来电事件<br>
@@ -24,16 +24,16 @@
         <![CDATA[
         在来电号码被规则检查之前对其进行修改。<br>
         <br>
-        <font color="#00BFFF"><b>用例</b>：</font><br>
+        <title><b>用例</b>：</title><br>
         &ensp; 某些移动网络运营商支持同一张SIM卡上的双号码，他们会给次要号码添加额外的开头数字。<br>
-        &ensp;   例如：3312345679 可能会变成 <font color="#888888">123</font>3312345679。<br>
-        &ensp; 开头的 <font color="#888888">123</font> 需要在检查前被移除。<br>
+        &ensp;   例如：3312345679 可能会变成 <sample>123</sample>3312345679。<br>
+        &ensp; 开头的 <sample>123</sample> 需要在检查前被移除。<br>
         <br>
-        <font color="#00BFFF"><b>典型设置：</b></font> <br>
+        <title><b>典型设置：</b></title> <br>
         - <b>通话事件</b> <br>
         - <b>替换号码</b> <br>
-        &emsp; 从: <font color="#888888">^123</font> <br>
-        &emsp; 到: <font color="#888888">留空</font> <br>
+        &emsp; 从: <sample>^123</sample> <br>
+        &emsp; 到: <sample>留空</sample> <br>
         ]]>
     </string>
     <string name="blocked">已阻止</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         内置通知渠道： <br>
         <br>
-        <font color="#00BFFF"><b>无</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>无</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; 完全没有通知。 <br>
         <br>
-        <font color="#00BFFF"><b>低</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>低</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; 出现在状态栏和通知阴影中。 <br>
         <br>
-        <font color="#00BFFF"><b>中</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>中</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; 伴随声音出现在状态栏和通知阴影中。 <br>
         <br>
-        <font color="#00BFFF"><b>高</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>高</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; 伴随声音出现在状态栏、通知阴影和浮动通知中。 <br>
         <br>
-        <font color="#00BFFF"><b>高（静音）</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>高（静音）</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; 它类似于<b>高</b>，但静音。 <br>
-        &ensp; 它非常适合活跃的 <font color="#03DAC5"><b>短信聊天</b></font>，因为持续的声音可能会令人烦恼。 <br>
-          当屏幕解锁且短信应用在前台打开时，被视为活跃的 <font color="#03DAC5"><b>短信聊天</b></font>。 <br>
+        &ensp; 它非常适合活跃的 <highlight><b>短信聊天</b></highlight>，因为持续的声音可能会令人烦恼。 <br>
+          当屏幕解锁且短信应用在前台打开时，被视为活跃的 <highlight><b>短信聊天</b></highlight>。 <br>
         ]]>
     </string>
     <string name="none">无</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         创建新的通知渠道。<br>
         <br>
-        <font color="#03DAC5"><b>长按</b></font>此下拉列表中的通知渠道即可编辑。
+        <highlight><b>长按</b></highlight>此下拉列表中的通知渠道即可编辑。
         ]]>
     </string>
     <string name="warning_delete_channel">

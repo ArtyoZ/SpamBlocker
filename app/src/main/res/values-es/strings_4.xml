@@ -5,7 +5,7 @@
         <br>
         Si la hora de inicio es mayor que la hora de finalización, por ejemplo, 20:00 -> 07:00, significa el período desde las 20:00 de la tarde hasta las 07:00 de la mañana siguiente. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridad: 10</b></font>
+        <priority><b>Prioridad: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Estas banderas cambian el comportamiento de coincidencia de la regex. <br>
             <br>
 
-            <font color="#00BFFF"><b>Número sin procesar</b></font>: <br>
-            &ensp; Cuando está habilitado, el número no se optimizará, <font color="#03DAC5"><b>+</b></font>
-            y los <font color="#03DAC5"><b>ceros iniciales</b></font> permanecerán, útil para diferenciar números domésticos.<br>
+            <title><b>Número sin procesar</b></title>: <br>
+            &ensp; Cuando está habilitado, el número no se optimizará, <highlight><b>+</b></highlight>
+            y los <highlight><b>ceros iniciales</b></highlight> permanecerán, útil para diferenciar números domésticos.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ignorar Código de País</b></font>: <br>
-            &ensp; Cuando está habilitado, el <font color="#fa7f71">+</font> inicial y el <font color="#fa7f71">código de país</font>
+            <title><b>Ignorar Código de País</b></title>: <br>
+            &ensp; Cuando está habilitado, el <error>+</error> inicial y el <error>código de país</error>
              se eliminarán de un número internacional.<br>
             <br>
-            Por ejemplo, tanto <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> como
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> se convertirán en <font color="#03DAC5">12345</font>,
+            Por ejemplo, tanto <error>+33</error><highlight>12345</highlight> como
+            <error>+44</error><highlight>12345</highlight> se convertirán en <highlight>12345</highlight>,
             esto le permite usar una regex más simple `123.*` en lugar de `(33|44)*123.*` para coincidir con números internacionales.<br>
             <br>
 
-            <font color="#00BFFF"><b>Sensible a Mayúsculas y Minúsculas</b></font>:<br>
-            &ensp; Por defecto, la coincidencia de regex no distingue mayúsculas y minúsculas, <font color="#03DAC5"><b>a</b></font>
-              coincidiría tanto con <font color="#03DAC5"><b>a</b></font> como con <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Sensible a Mayúsculas y Minúsculas</b></title>:<br>
+            &ensp; Por defecto, la coincidencia de regex no distingue mayúsculas y minúsculas, <highlight><b>a</b></highlight>
+              coincidiría tanto con <highlight><b>a</b></highlight> como con <highlight><b>A</b></highlight>. <br>
             &ensp; Habilite esto para que distinga mayúsculas y minúsculas. <br>
         ]]>
     </string>

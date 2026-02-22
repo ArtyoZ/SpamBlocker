@@ -37,7 +37,7 @@
         Sekilas, Anda dapat dengan mudah memverifikasi apakah catatan riwayat tercakup oleh aturan, jadi Anda tidak perlu mengujinya satu per satu. <br>
         <br>
 
-        <font color="#ffa500">Catatan:</font><br>
+        <warn>Catatan:</warn><br>
         Ini dapat memengaruhi kinerja jika ada terlalu banyak aturan regex. <br>
         <br>
         <b>Contoh:</b> <br>
@@ -47,7 +47,7 @@
         &ensp; - Ikon SMS merah kedua menunjukkan konten SMS ini akan diblokir oleh aturan konten. <br>
         &ensp; - Ikon database merah ketiga menunjukkan nomor ini ada di database nomor spam. <br>
         <br>
-        Ikon-ikon ini disusun berdasarkan <font color="#ea86ff"><b>prioritas</b></font>, ikon <b>pertama</b> menunjukkan
+        Ikon-ikon ini disusun berdasarkan <priority><b>prioritas</b></priority>, ikon <b>pertama</b> menunjukkan
         hasil keseluruhan. Aturan nomor tersebut memiliki prioritas lebih tinggi, pesan SMS pada akhirnya akan diizinkan olehnya.<br>
         <br>
         <img src=\'ic_history_indicator_2\'/> <br>
@@ -65,7 +65,7 @@
         <![CDATA[
         Pesan MMS biasanya merupakan spam, tidak perlu diaktifkan kecuali jika Anda benar-benar menggunakannya.<br>
         <br>
-        <font color="#ffa500">Catatan:</font><br>
+        <warn>Catatan:</warn><br>
         Pesan grup adalah MMS, bukan SMS.<br>
         <br>
         MMS akan diperlakukan sebagai SMS, hanya isi teks yang akan diproses,
@@ -85,28 +85,28 @@
           dari verifikasi OTP (Kata Sandi Sekali Pakai).<br>
         <br>
         Misalnya, pesan SMS seperti:<br>
-        &ensp; <font color="#888888">OTP Anda adalah: 1234.</font><br>
-        &ensp; <font color="#888888">Ini adalah kode verifikasi Anda: 1234.</font><br>
-        &ensp; <font color="#888888">1234 adalah kode validasi Anda.</font><br>
+        &ensp; <sample>OTP Anda adalah: 1234.</sample><br>
+        &ensp; <sample>Ini adalah kode verifikasi Anda: 1234.</sample><br>
+        &ensp; <sample>1234 adalah kode validasi Anda.</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Regex konten</font></h5>
+        <h5><title>- Regex konten</title></h5>
         Fitur ini hanya berlaku untuk pesan yang cocok dengan regex ini, regex yang umum adalah: <br>
-        <font color="#fa7f71">.*(otp|code).*</font><br>
+        <error>.*(otp|code).*</error><br>
         <br>
-        <h5><font color="#00BFFF">- Interval</font></h5>
+        <h5><title>- Interval</title></h5>
         Jika pesan OTP berikutnya tiba dalam interval waktu ini, itu dianggap
           bagian dari serangan bom dan akan diblokir.<br>
         (default: 30 detik)<br>
         <br>
         Ini akan memblokir semua bom berikutnya, kecuali yang pertama.<br>
         <br>
-        <h5><font color="#00BFFF">- Perlindungan Layar Kunci</font></h5>
+        <h5><title>- Perlindungan Layar Kunci</title></h5>
         Aktifkan ini untuk memblokir semua bom dalam mode layar kunci, termasuk yang pertama. <br>
         <br>
         Biasanya, layar Anda seharusnya sudah tidak terkunci saat menunggu kode verifikasi.
         Ketika pesan seperti itu tiba saat perangkat dalam mode layar kunci, kemungkinan besar itu adalah bom.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 20</b></font>
+        <priority><b>Prioritas: 20</b></priority>
         ]]>
     </string>
     <string name="lockscreen_protection"><short>Kunci layar</short></string>

@@ -3,39 +3,39 @@
         <![CDATA[
         Numara kuralları hem gelen arama numarasına hem de SMS numarasına uygulanır.<br>
         <br>
-        <h5><font color="#00BFFF"> - Örnekler</font></h5>
+        <h5><title> - Örnekler</title></h5>
         <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">Wiki sayfasında</a> bazı örnekler bulunmaktadır.<br>
         <br>
-        <h5><font color="#00BFFF"> - Regex Optimizasyonu</font></h5>
+        <h5><title> - Regex Optimizasyonu</title></h5>
         Regex\'i basitleştirmek için,
-          <font color="#fa7f71"><b>+</b></font> ve <font color="#fa7f71"><b>öndeki sıfırlar</b></font>
+          <error><b>+</b></error> ve <error><b>öndeki sıfırlar</b></error>
           kontrol etmeden önce kaldırılır, örneğin:<br>
         &emsp; Tüm bu formatlar:<br>
         &emsp;&emsp; 123456789 &emsp;(normal numara)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(<font color="#fa7f71"><b>+</b></font> ile)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(yerel alan kodu <font color="#fa7f71"><b>0</b></font> ile)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(iki tane <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp; Bunların <b>hepsi</b> 123456789 olarak kontrol edilir ve <font color="#03DAC5"><b>123.*</b></font> ile eşleştirilebilir<br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(<error><b>+</b></error> ile)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(yerel alan kodu <error><b>0</b></error> ile)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(iki tane <error><b>0</b></error>)<br>
+        &emsp; Bunların <b>hepsi</b> 123456789 olarak kontrol edilir ve <highlight><b>123.*</b></highlight> ile eşleştirilebilir<br>
         Bu numara optimizasyonu `Ham Numara` regex bayrağı ile <b>devre dışı</b> bırakılabilir.<br>
         <br>
-        <h5><font color="#00BFFF"> - Bazı tipik desenler</font></h5>
-        &ensp; - Herhangi bir numara: <font color="#03DAC5"><b>.*</b></font> (.* regex\'i diğer uygulamalardaki * joker karakterine eşdeğerdir) <br>
-        &ensp; - Tam numara: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - 400 ile başla: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - 123 ile bit: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 hane: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - 5\'ten kısa: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - 10\'dan uzun: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - Bilinmeyen/Gizli/Boş numara: <font color="#03DAC5"><b>.{0}</b></font> veya <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - Desenlerden herhangi biriyle eşleş: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - 400 ile başla, 11 ülke kodu ile veya değil: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - Bazı tipik desenler</title></h5>
+        &ensp; - Herhangi bir numara: <highlight><b>.*</b></highlight> (.* regex\'i diğer uygulamalardaki * joker karakterine eşdeğerdir) <br>
+        &ensp; - Tam numara: <highlight><b>12345</b></highlight> <br>
+        &ensp; - 400 ile başla: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - 123 ile bit: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 hane: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - 5\'ten kısa: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - 10\'dan uzun: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - Bilinmeyen/Gizli/Boş numara: <highlight><b>.{0}</b></highlight> veya <highlight><b>^$</b></highlight> <br>
+        &ensp; - Desenlerden herhangi biriyle eşleş: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - 400 ile başla, 11 ülke kodu ile veya değil: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - Arayüz ile ilgili</font></h5>
-        Kuralı devre dışı bırakmak için onay kutularının işaretini kaldırın, <font color="#fa7f71"><b>silmek için sola kaydırın</b></font>.<br>
+        <h5><title> - Arayüz ile ilgili</title></h5>
+        Kuralı devre dışı bırakmak için onay kutularının işaretini kaldırın, <error><b>silmek için sola kaydırın</b></error>.<br>
         <br>
         Liste, önceliğe göre azalan, açıklamaya göre artan ve desene göre artan sırada <b>görüntülenir</b>.<br>
         <br>
-        <h5><font color="#00BFFF"> - .csv\'den kuralları içe aktar</font></h5>
+        <h5><title> - .csv\'den kuralları içe aktar</title></h5>
         .csv dosyasından numaraları içe aktarmak için `Ekle` düğmesine uzun basın.<br>
         <brg>
         ]]>

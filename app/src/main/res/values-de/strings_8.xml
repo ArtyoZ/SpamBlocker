@@ -15,7 +15,7 @@
         <br>
         Dies gilt sowohl für Anrufe als auch für SMS-Nachrichten.<br>
         <br>
-        <font color="#ea86ff"><b>Standardpriorität: 0</b></font>
+        <priority><b>Standardpriorität: 0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

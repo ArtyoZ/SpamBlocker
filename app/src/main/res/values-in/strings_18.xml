@@ -21,9 +21,9 @@
         - Jika tidak, alur kerja akan dihentikan.<br>
         <br>
         Kasus penggunaan: <br>
-        <font color="#888888">
+        <sample>
         &ensp; Mengalihkan beberapa aturan setelah menerima SMS panggilan siaga atau non-siaga. <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">Acara SMS %s dipicu.</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         Izinkan panggilan dari nomor yang sebelumnya telah dijawab.<br>
         <br>
-        <h6><font color="#ffa500">Peringatan</font></h6>
+        <h6><warn>Peringatan</warn></h6>
         %s<br>
         <br>
         <b>Opsi:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Dalam Hari</font></h6>
-        Panggilan yang terjadi sebelum <font color="#03DAC5">%d hari</font> diabaikan.<br>
+        <h6><title>- Dalam Hari</title></h6>
+        Panggilan yang terjadi sebelum <highlight>%d hari</highlight> diabaikan.<br>
         <br>
-        <h6><font color="#00BFFF">- Durasi Minimal</font></h6>
-        Panggilan yang berlangsung kurang dari <font color="#03DAC5">%d detik</font> diabaikan.<br>
+        <h6><title>- Durasi Minimal</title></h6>
+        Panggilan yang berlangsung kurang dari <highlight>%d detik</highlight> diabaikan.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 10</b></font>
+        <priority><b>Prioritas: 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">Jangan aktifkan fitur ini untuk lansia atau siapa pun yang kurang mampu mengidentifikasi panggilan penipuan, karena ini dapat membuat mereka terpapar panggilan penipuan berulang.</string>
@@ -75,9 +75,9 @@
         Mengubah aturan regex sementara berdasarkan acara kalender. <br>
         <br>
         <b>Contoh kasus</b>:<br>
-        &ensp; <font color="#888888">Seorang pekerja shift bekerja shift pagi selama dua hari,
+        &ensp; <sample>Seorang pekerja shift bekerja shift pagi selama dua hari,
           lalu shift malam selama dua hari berikutnya.<br>
-        &ensp; Beberapa aturan perlu dinonaktifkan atau diaktifkan selama jam kerja yang bervariasi.</font><br>
+        &ensp; Beberapa aturan perlu dinonaktifkan atau diaktifkan selama jam kerja yang bervariasi.</sample><br>
         <br>
         Ini akan membuat aturan regex dan alur kerja, aturan akan diaktifkan secara otomatis selama acara kalender tertentu. <br>
         ]]>

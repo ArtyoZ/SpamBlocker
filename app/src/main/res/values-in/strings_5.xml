@@ -36,13 +36,13 @@
         <br>
         <b>Opsi:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Dalam Hari</font></h6>
-        Panggilan yang terjadi sebelum <font color="#03DAC5">%s hari</font> akan diabaikan.<br>
+        <h6><title>- Dalam Hari</title></h6>
+        Panggilan yang terjadi sebelum <highlight>%s hari</highlight> akan diabaikan.<br>
         <br>
-        <h6><font color="#00BFFF">- Sertakan SMS</font></h6>
+        <h6><title>- Sertakan SMS</title></h6>
         Saat diaktifkan, SMS ke nomor tersebut juga dihitung.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 10</b></font>
+        <priority><b>Prioritas: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -52,12 +52,12 @@
         Kasus penggunaan yang umum:<br>
         &emsp; Anda baru saja memesan pizza di PizzaApp, kemudian mereka menelepon Anda untuk mengembalikan uang Anda karena mereka akan tutup. Panggilan itu akan lolos jika PizzaApp diaktifkan di sini. <br>
         <br>
-        Pengaturan default <font color="03DAC5"><b>5 Menit</b></font> berarti setiap panggilan akan lolos jika salah satu aplikasi telah digunakan dalam waktu 5 menit,
+        Pengaturan default <highlight><b>5 Menit</b></highlight> berarti setiap panggilan akan lolos jika salah satu aplikasi telah digunakan dalam waktu 5 menit,
         dengan `digunakan` berarti diaktifkan, dinonaktifkan, diminimalkan, atau dimatikan. <br>
         <br>
         Hanya berlaku untuk panggilan, <b>tidak</b> untuk pesan teks <br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 10</b></font>
+        <priority><b>Prioritas: 10</b></priority>
         ]]>
     </string>
     <string-array name="block_type_list">
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Tolak</b></font>: <br>
+        - <title><b>Tolak</b></title>: <br>
          Sama seperti menekan tombol tolak. Ini bekerja sepenuhnya secara senyap, layar kunci tidak akan menyala.<br>
         <br>
-        - <font color="#00BFFF"><b>Senyap</b></font>: <br>
+        - <title><b>Senyap</b></title>: <br>
          Panggilan akan berdering secara senyap di latar belakang, memberikan kesan kepada penelepon bahwa Anda tidak tersedia dan melewatkan panggilan tersebut. <br>
         <br>
          Ini juga dapat membantu jika Anda mengalami panggilan spam berulang, karena akan memperpanjang durasi panggilan, menjadikannya kurang efisien bagi spammer, dan berpotensi membuat mereka enggan menelepon Anda lagi.<br>
         <br>
-        - <font color="#00BFFF"><b>Tutup Panggilan</b></font>: <br>
+        - <title><b>Tutup Panggilan</b></title>: <br>
         Jawab dan tutup panggilan untuk mencegahnya masuk ke pesan suara. <br>
         <br>
         Ketika panggilan spam diterima saat ada panggilan yang sedang berlangsung, ini akan beralih ke \"Tolak\"
          untuk menghindari menutup panggilan yang sedang berlangsung. <br>
         <br>
-        <font color="#FFA500">Catatan</font> Layar kunci mungkin menyala sebentar,
+        <warn>Catatan</warn> Layar kunci mungkin menyala sebentar,
         Anda mungkin juga mendengar nada akhir panggilan (beberapa ponsel menawarkan opsi untuk membisukan suara ini). <br>
         <br>
         - <b>Penundaan</b>: <br>

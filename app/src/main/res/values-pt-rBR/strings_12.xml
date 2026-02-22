@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        Consultar o número de entrada online em tempo real. <br>
+        Consulte o número entrante online em tempo real. <br>
         <br>
-        Múltiplos endpoints de API serão consultados simultaneamente, com o primeiro resultado recebido sendo usado e todos os resultados posteriores ignorados. <br>
+        Vários pontos de extremidade da API serão consultados simultaneamente, sendo usado o primeiro resultado recebido e ignorando todos os resultados posteriores. <br>
         <br>
-        Por padrão, tem a prioridade mais baixa, o que significa que só será acionado quando a chamada passar por todas as outras regras.<br>
+        Ele tem a prioridade mais baixa por padrão, o que significa que será acionado somente depois que a chamada passar por todas as regras locais.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade Padrão: -1</b></font>
+        <priority><b>Prioridade padrão: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">Consulta Instantânea</string>
@@ -36,23 +36,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        Extraia a <font color="#00BFFF">categoria</font> e os <font color="#00BFFF">comentários</font>
+        Extraia a <title>categoria</title> e os <title>comentários</title>
          do resultado da consulta e exiba-os na notificação e no histórico. (opcional)<br>
         <br>
         Por exemplo, para este resultado da consulta: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - Extrair apenas a <font color="#00BFFF">categoria</font>: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - Extrair apenas a <title>categoria</title>: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - Extrair tanto a <font color="#00BFFF">categoria</font> quanto os <font color="#00BFFF">comentários</font>: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - Extrair tanto a <title>categoria</title> quanto os <title>comentários</title>: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">Analisar Resultado</string>
@@ -90,13 +90,13 @@
         Esta expressão regular filtra os números de acordo; os números recebidos que não corresponderem a esta expressão regular serão ignorados na verificação.<br>
         <br>
         - Verificar apenas <b>números internacionais</b>:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - Verificar apenas <b>números domésticos</b>:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - Verificar <b>qualquer número</b>:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">Verificando: %s, prioridade: %s</string>

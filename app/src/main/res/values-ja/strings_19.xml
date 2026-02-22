@@ -8,9 +8,9 @@
         このようなワークフローは、着信時に自動的にトリガーされます。<br>
         <br>
         使用例: <br>
-        <font color="#888888">
+        <sample>
           &ensp; 一部のキャリアは1枚のSIMカードでデュアル番号をサポートしているため、スクリーニング前に電話番号の余分な先頭文字を削除します。 <br>
-        </font>
+        </sample>
         <br>
         一般的な設定:<br>
         - 通話イベント <br>
@@ -23,16 +23,16 @@
         <![CDATA[
         着信番号がルールによって確認される前に変更します。<br>
         <br>
-        <font color="#00BFFF"><b>ユースケース：</b></font><br>
+        <title><b>ユースケース：</b></title><br>
         &ensp; 一部の携帯電話事業者は、同じSIMカードでデュアル番号をサポートしており、副番号に余分な先頭桁を追加します。<br>
-        &ensp;   例：3312345679が<font color="#888888">123</font>3312345679になることがあります。<br>
-        &ensp; 先頭の<font color="#888888">123</font>は、確認される前に削除する必要があります。<br>
+        &ensp;   例：3312345679が<sample>123</sample>3312345679になることがあります。<br>
+        &ensp; 先頭の<sample>123</sample>は、確認される前に削除する必要があります。<br>
         <br>
-        <font color="#00BFFF"><b>一般的な設定：</b></font> <br>
+        <title><b>一般的な設定：</b></title> <br>
         - <b>通話イベント</b> <br>
         - <b>番号置換</b> <br>
-        &emsp; から: <font color="#888888">^123</font> <br>
-        &emsp; へ: <font color="#888888">空のままにする</fonts> <br>
+        &emsp; から: <sample>^123</sample> <br>
+        &emsp; へ: <sample>空のままにする</sample> <br>
         ]]>
     </string>
     <string name="blocked">ブロック済み</string>
@@ -41,22 +41,22 @@
         <![CDATA[
         組み込みの通知チャンネル:<br>
         <br>
-        <font color="#00BFFF"><b>なし</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>なし</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; 通知は一切ありません。 <br>
         <br>
-        <font color="#00BFFF"><b>低</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>低</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; ステータスバーと通知シェードに表示されます。 <br>
         <br>
-        <font color="#00BFFF"><b>中</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>中</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; ステータスバーと通知シェードにサウンド付きで表示されます。 <br>
         <br>
-        <font color="#00BFFF"><b>高</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>高</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; ステータスバー、通知シェード、およびヘッドアップポップアップとしてサウンド付きで表示されます。 <br>
         <br>
-        <font color="#00BFFF"><b>高 (ミュート)</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>高 (ミュート)</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; <b>高</b> に似ていますが、サウンドをミュートします。 <br>
-        &ensp; 連続したサウンドが煩わしい場合がある、アクティブな <font color="#03DAC5"><b>SMSチャット</b></font> に最適です。 <br>
-          画面のロックが解除され、SMSアプリがフォアグラウンドで開かれている場合、アクティブな <font color="#03DAC5"><b>SMSチャット</b></font> と見なされます。 <br>
+        &ensp; 連続したサウンドが煩わしい場合がある、アクティブな <highlight><b>SMSチャット</b></highlight> に最適です。 <br>
+          画面のロックが解除され、SMSアプリがフォアグラウンドで開かれている場合、アクティブな <highlight><b>SMSチャット</b></highlight> と見なされます。 <br>
         ]]>
     </string>
     <string name="none">なし</string>
@@ -107,7 +107,7 @@
         <![CDATA[
         新しい通知チャンネルを作成します。 <br>
         <br>
-        <font color="#03DAC5"><b>長押し</b></font>をすると、このドロップダウンリストの通知チャンネルを編集できます。
+        <highlight><b>長押し</b></highlight>をすると、このドロップダウンリストの通知チャンネルを編集できます。
         ]]>
     </string>
     <string name="warning_delete_channel">

@@ -27,55 +27,55 @@
     <string name="auto_detect_cc_permission">L\'autorizzazione READ_PHONE_STATE è richiesta per rilevare il codice paese.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; Il prefisso internazionale.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; La parte nazionale.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; Il numero completo, inclusi prefisso internazionale e parte nazionale, senza + o 0 iniziali.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; Il numero originale che può contenere + o 0 iniziali.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; I numeri a singola cifra verranno riempiti con uno zero iniziale, ad esempio: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; diventa <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Questi valori non verranno riempiti, ad esempio: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; diventa <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Questi possono essere utilizzati per simulare una pianificazione a rotazione, ad esempio: <br>
-        &emsp; <font color="#888888">Esegui backup giornalieri e conserva solo i sette backup più recenti.</font> <br>
+        &emsp; <sample>Esegui backup giornalieri e conserva solo i sette backup più recenti.</sample> <br>
         <br>
-        <font color="#ffa500"><b>Nota:</b></font><br>
+        <warn><b>Nota:</b></warn><br>
          Questi tag orari supportano semplici operazioni aritmetiche, come
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          e
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="help_http_url">
@@ -123,23 +123,23 @@
     <string name="canceling_thread">Annullamento del thread.</string>>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>Scorri a sinistra</b></font> per eliminarlo.<br>
+        <highlight><b>Scorri a sinistra</b></highlight> per eliminarlo.<br>
         <br>
         La maggior parte degli elementi dell\'interfaccia utente simili a schede in questa app sono associati a gesti di scorrimento,
-        alcuni dei quali supportano anche <font color="#03DAC5"><b>scorrimento a destra</b></font>, ad esempio, le registrazioni della cronologia.
+        alcuni dei quali supportano anche <highlight><b>scorrimento a destra</b></highlight>, ad esempio, le registrazioni della cronologia.
         ]]>
     </string>
     <string name="bug_number">Se questo è un numero valido, segnalalo su github.</string>
     <string name="skip_alpha_empty_number">Salta numero alfa o vuoto.</string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; Il contenuto dell\'SMS.<br>
         ]]>
     </string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; Escapa il contenuto tra parentesi, usato per il contenuto all\'interno delle virgolette. <br>
         ]]>
     </string>

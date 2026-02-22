@@ -23,10 +23,10 @@
     After blocking a call, also block subsequent calls that bypass all rules for a period. <br>
     <br>
     <b>Use case:</b> <br>
-    <font color="#888888"> &ensp; Some spammers use numbers with common prefixes, which can be blocked with regex rules.
-      After the first call being blocked, they will switch to random numbers, making calls that may bypass all rules. </font><br>
+    <sample> &ensp; Some spammers use numbers with common prefixes, which can be blocked with regex rules.
+      After the first call being blocked, they will switch to random numbers, making calls that may bypass all rules. </sample><br>
     <br>
-    <font color="#ffa500"><b>Note:</b></font> <br>
+    <warn><b>Note:</b></warn> <br>
       This also involves the risk of blocking a valid call, it\'s a trade-off.<br>
     <br>
     This will create both <b>a regex rule</b> and <b>a workflow</b>, see the tooltip of inner action <b>Call Throttling</b> for a detailed explanation.<br>
@@ -43,14 +43,14 @@
     <br>
     <b>Options:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Duration</b></font> <br>
+    - <title><b>Duration</b></title> <br>
     Calls will be blocked during this period (in seconds). <br>
     <br>
-    - <font color="#00BFFF"><b>Including Blocked</b></font> <br>
+    - <title><b>Including Blocked</b></title> <br>
     This feature will be activated after any call is blocked. <br>
     <br>
-    - <font color="#00BFFF"><b>Including Answered</b></font> <br>
-    - <font color="#00BFFF"><b>Minimal Call Duration</b></font> <br>
+    - <title><b>Including Answered</b></title> <br>
+    - <title><b>Minimal Call Duration</b></title> <br>
     This feature will be activated after a call is answered but the call duration is too short, as such
      a call is also considered a spam call. <br>
     ]]>
@@ -72,7 +72,7 @@
     Mute consecutive SMS notifications from the same number for a period. <br>
     <br>
     <b>Use cases:</b> <br>
-    <font color="#888888">Allow the first three notifications from a number and mute the rest within a minute.</font> <br>
+    <sample>Allow the first three notifications from a number and mute the rest within a minute.</sample> <br>
     <br>
     This will create both <b>a regex rule</b> and <b>a workflow</b>, see the tooltip of inner action <b>SMS Throttling</b> for a detailed explanation.<br>
     ]]>
@@ -87,14 +87,14 @@
     <br>
     <b>Options:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Duration</b></font> <br>
+    - <title><b>Duration</b></title> <br>
     SMS messages will be blocked during this period (in seconds). <br>
     <br>
-    - <font color="#00BFFF"><b>Count Limit</b></font> <br>
+    - <title><b>Count Limit</b></title> <br>
     Allow first N notifications. <br>
     <br>
-    - <font color="#00BFFF"><b>Including Answered</b></font> <br>
-    - <font color="#00BFFF"><b>Minimal Call Duration</b></font> <br>
+    - <title><b>Including Answered</b></title> <br>
+    - <title><b>Minimal Call Duration</b></title> <br>
     If an answered call is too short, it\'s also considered a spam call and will activate this feature. <br>
     ]]>
     </string>

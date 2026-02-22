@@ -5,7 +5,7 @@
         <br>
         Si l\'hora d\'inici és posterior a l\'hora de finalització, per exemple, 20:00 -> 07:00, significa el període des de les 20:00 del vespre fins a les 07:00 del matí següent. <br>
         <br>
-        <font color="#ea86ff"><b>Prioritat: 10</b></font>
+        <priority><b>Prioritat: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Aquestes banderes canvien el comportament de coincidència de l\'expressió regular. <br>
             <br>
 
-            <font color="#00BFFF"><b>Número en brut</b></font>: <br>
-            &ensp; Quan estigui activat, el número no s\'optimitzarà, la <font color="#03DAC5"><b>+</b></font>
-            i els <font color="#03DAC5"><b>zeros inicials</b></font> romandran, útil per diferenciar números nacionals.<br>
+            <title><b>Número en brut</b></title>: <br>
+            &ensp; Quan estigui activat, el número no s\'optimitzarà, la <highlight><b>+</b></highlight>
+            i els <highlight><b>zeros inicials</b></highlight> romandran, útil per diferenciar números nacionals.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ignora el codi de país</b></font>: <br>
-            &ensp; Quan estigui activat, el <font color="#fa7f71">+</font> inicial i el <font color="#fa7f71">codi de país</font>
+            <title><b>Ignora el codi de país</b></title>: <br>
+            &ensp; Quan estigui activat, el <error>+</error> inicial i el <error>codi de país</error>
              s\'eliminaran d\'un número internacional.<br>
             <br>
-            Per exemple, tant <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> com
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> es convertiran en <font color="#03DAC5">12345</font>,
+            Per exemple, tant <error>+33</error><highlight>12345</highlight> com
+            <error>+44</error><highlight>12345</highlight> es convertiran en <highlight>12345</highlight>,
             això et permet utilitzar una expressió regular més senzilla `123.*` en lloc de `(33|44)*123.*` per fer coincidir números internacionals.<br>
             <br>
 
-            <font color="#00BFFF"><b>Sensible a majúscules i minúscules</b></font>:<br>
-            &ensp; Per defecte, la coincidència de l\'expressió regular no distingeix majúscules i minúscules, <font color="#03DAC5"><b>a</b></font>
-              coincidiria tant amb <font color="#03DAC5"><b>a</b></font> com amb <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Sensible a majúscules i minúscules</b></title>:<br>
+            &ensp; Per defecte, la coincidència de l\'expressió regular no distingeix majúscules i minúscules, <highlight><b>a</b></highlight>
+              coincidiria tant amb <highlight><b>a</b></highlight> com amb <highlight><b>A</b></highlight>. <br>
             &ensp; Habilita-ho per fer-ho sensible a majúscules i minúscules. <br>
         ]]>
     </string>

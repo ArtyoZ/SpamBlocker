@@ -45,13 +45,13 @@
         <br>
         <b>אפשרויות:</b><br>
         <br>
-        <h6><font color="#00BFFF">- תדירות</h6>
-        ההגדרה ברירת המחדל <font color="#03DAC5"><b>1 / 5 דקות</b></font> פירושה שהשיחה השנייה בתוך 5 דקות תאושר. <br>
+        <h6><title>- תדירות</title></h6>
+        ההגדרה ברירת המחדל <highlight><b>1 / 5 דקות</b></highlight> פירושה שהשיחה השנייה בתוך 5 דקות תאושר. <br>
         <br>
-        <h6><font color="#00BFFF">- כלול SMS</font></h6>
+        <h6><title>- כלול SMS</title></h6>
         כאשר מופעל, קבלת הודעות SMS מאותו מספר נספרת גם כן.<br>
         <br>
-        <font color="#ea86ff"><b>עדיפות: 10</b></font>
+        <priority><b>עדיפות: 10</b></priority>
         ]]>
     </string>
 

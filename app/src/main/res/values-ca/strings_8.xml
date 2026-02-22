@@ -15,7 +15,7 @@
         <br>
         S\'aplica tant a les trucades com als missatges SMS.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritat predeterminada: 0</b></font>
+        <priority><b>Prioritat predeterminada: 0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

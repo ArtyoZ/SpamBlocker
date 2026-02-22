@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Pastikan untuk <font color="#fa7f71"><b>mematikan notifikasi aplikasi SMS</b></font> di pengaturan sistem
+        Pastikan untuk <error><b>mematikan notifikasi aplikasi SMS</b></error> di pengaturan sistem
          untuk menghindari notifikasi ganda. <br>
         <br>
         Jika aplikasi SMS memberlakukan izin notifikasi, Anda dapat tetap memberikannya
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Nama Penelepon</b></font>:<br>
+        <title><b>Nama Penelepon</b></title>:<br>
         &ensp; Regex akan cocok dengan nama tampilan penelepon (CNAP). <br>
         <br>
         Dalam log riwayat panggilan, nama penelepon akan muncul setelah nomor telepon dalam tanda kurung jika ada, seperti: <br>
-        &ensp; <font color="#888888">12345 (Nama Tampilan)</font> <br>
+        &ensp; <sample>12345 (Nama Tampilan)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">Nama Penelepon</string>
@@ -45,13 +45,13 @@
     </string>
     <string name="explanation_forwarded_call">
         <![CDATA[
-        Ini <b>spesifik operator</b>, beberapa operator memformat panggilan yang diteruskan sebagai dua nomor yang digabungkan dengan \"&\", seperti <font color="#888888">222&111</font>. <br>
+        Ini <b>spesifik operator</b>, beberapa operator memformat panggilan yang diteruskan sebagai dua nomor yang digabungkan dengan \"&\", seperti <sample>222&111</sample>. <br>
         <br>
         Dalam format ini: <br>
-        &ensp; - Bagian pertama (<font color="#888888">222</font>) biasanya adalah nomor penerus. <br>
-        &ensp; - Bagian kedua (<font color="#888888">111</font>) adalah nomor asli. <br>
+        &ensp; - Bagian pertama (<sample>222</sample>) biasanya adalah nomor penerus. <br>
+        &ensp; - Bagian kedua (<sample>111</sample>) adalah nomor asli. <br>
         <br>
-        Mungkin juga ada <font color="#888888">333&111</font> dan <font color="#888888">444&111</font>, di mana nomor asal tetap sama dan nomor penerus berubah.
+        Mungkin juga ada <sample>333&111</sample> dan <sample>444&111</sample>, di mana nomor asal tetap sama dan nomor penerus berubah.
         ]]>
     </string>
     <string name="raw">Mentah</string>
@@ -65,14 +65,14 @@
         <br>
         <b>Opsi</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Mentah</b></font> <br>
-        Kueri/laporkan nomor mentah (<font color="#888888">222&111</font>), jika API mendukung format ini. <br>
+        <title><b>Mentah</b></title> <br>
+        Kueri/laporkan nomor mentah (<sample>222&111</sample>), jika API mendukung format ini. <br>
         <br>
-        <font color="#00BFFF"><b>Asli</b></font> <br>
-        Kueri/laporkan nomor asli (<font color="#888888">111</font>), ini adalah solusi untuk API yang tidak mendukung format mentah. <br>
+        <title><b>Asli</b></title> <br>
+        Kueri/laporkan nomor asli (<sample>111</sample>), ini adalah solusi untuk API yang tidak mendukung format mentah. <br>
         <br>
-        <font color="#00BFFF"><b>Meneruskan</b></font> <br>
-        Kueri/laporkan nomor penerusan (<font color="#888888">222</font>). <br>
+        <title><b>Meneruskan</b></title> <br>
+        Kueri/laporkan nomor penerusan (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">Nomor yang diteruskan ini telah diubah menjadi %s.</string>
@@ -81,7 +81,7 @@
     <string name="geo_location_rule">Aturan Lokasi Geo</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Lokasi Geo</b></font>:<br>
+        <title><b>Lokasi Geo</b></title>:<br>
         &ensp; Regex akan mencocokkan lokasi geo nomor. <br>
         <br>
         &ensp; Ini bergantung pada pustaka Google <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -105,8 +105,8 @@
         <br>
         Ganti placeholder ___ dengan wilayah Anda yang sebenarnya. <br>
         <br>
-        Sintaks <font color="#fa7f71">(?!___$).*</font> berarti: <br>
-        &ensp; Cocokkan teks apa pun yang bukan <font color="#fa7f71">___</font>.
+        Sintaks <error>(?!___$).*</error> berarti: <br>
+        &ensp; Cocokkan teks apa pun yang bukan <error>___</error>.
         ]]>
     </string>
 </resources>

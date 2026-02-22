@@ -9,7 +9,7 @@
         <br>
         Ini berlaku untuk panggilan dan pesan.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas Default: 20</b></font>
+        <priority><b>Prioritas Default: 20</b></priority>
         ]]>
     </string>
     <string name="in_meeting">Mode Rapat</string>
@@ -27,11 +27,11 @@
     </string>
     <string name="auth_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{autentikasi_dasar(username:password)}</b></font><br>
+        - <title><b>{autentikasi_dasar(username:password)}</b></title><br>
         &ensp; Untuk API yang memerlukan autentikasi dasar HTTP. Sebagai contoh:<br>
-        &emsp; <font color="#888888">{autentikasi_dasar(111:222)}</font><br>
+        &emsp; <sample>{autentikasi_dasar(111:222)}</sample><br>
         &ensp; akan diuraikan menjadi:<br>
-        &emsp; <font color="#888888">Autentikasi: Dasar MTExOjIyMg== </font><br>
+        &emsp; <sample>Autentikasi: Dasar MTExOjIyMg== </sample><br>
         ]]>
     </string>
     <string name="initial_row_count">Jumlah Baris Awal</string>

@@ -27,61 +27,61 @@
     <string name="auto_detect_cc_permission">إذن READ_PHONE_STATE مطلوب لاكتشاف رمز البلد.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; رمز البلد.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; الجزء المحلي.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; الرقم الكامل، بما في ذلك رمز البلد والجزء المحلي، بدون علامة + أو أصفار بادئة.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; الرقم الأصلي الذي يمكن أن يحتوي على علامة + أو أصفار بادئة.<br>
         ]]>
     </string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; محتوى الرسالة النصية القصيرة.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; سيتم حشو الرقم المكون من خانة واحدة بصفر بادئ، على سبيل المثال: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; ليصبح <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; لن يتم حشو هذه القيم، على سبيل المثال: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; ليصبح <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; يمكن استخدام هذه لمحاكاة جدول تدوير، على سبيل المثال: <br>
-        &emsp; <font color="#888888">إجراء نسخ احتياطي يومي والاحتفاظ بأحدث سبع نسخ احتياطية فقط.</font><br>
+        &emsp; <sample>إجراء نسخ احتياطي يومي والاحتفاظ بأحدث سبع نسخ احتياطية فقط.</sample><br>
         <br>
-        <font color="#ffa500"><b>ملاحظة:</b></font><br>
+        <warn><b>ملاحظة:</b></warn><br>
          تدعم علامات الوقت هذه عمليات حسابية بسيطة، مثل
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          و
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="help_http_url">
@@ -129,17 +129,17 @@
     <string name="canceling_thread">إلغاء الخيط.</string>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>اسحب لليسار</b></font> لحذفه.<br>
+        <highlight><b>اسحب لليسار</b></highlight> لحذفه.<br>
         <br>
         ترتبط معظم عناصر واجهة المستخدم الشبيهة بالبطاقات في هذا التطبيق بإيماءات التمرير،
-        يدعم بعضها أيضًا <font color="#03DAC5"><b>السحب لليمين</b></font>، على سبيل المثال، سجلات المحفوظات.
+        يدعم بعضها أيضًا <highlight><b>السحب لليمين</b></highlight>، على سبيل المثال، سجلات المحفوظات.
         ]]>
     </string>>
     <string name="bug_number">إذا كان هذا رقمًا صالحًا، فيرجى الإبلاغ عنه على github.</string>>
     <string name="skip_alpha_empty_number">تخطي الرقم الأبجدي أو الفارغ.</string>>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; هروب المحتوى داخل الأقواس، يُستخدم للمحتوى داخل علامات الاقتباس. <br>
         ]]>
     </string>

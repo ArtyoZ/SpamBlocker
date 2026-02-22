@@ -11,11 +11,11 @@
 
     <string name="help_action_header">
         <![CDATA[
-        - <font color="#03DAC5"><b>Test</b></font><br>
+        - <highlight><b>Test</b></highlight><br>
         Diese Aktionen werden sofort ausgeführt, um zu überprüfen, ob sie korrekt eingerichtet wurden,
         oder vielleicht möchten Sie diesen Workflow einfach manuell ausführen.<br>
         <br>
-        - <font color="#00BFFF"><b>Neu</b></font><br>
+        - <title><b>Neu</b></title><br>
             Eine neue Aktion erstellen, mehrere Aktionen können miteinander verkettet werden, um eine komplexe Aufgabe zu erledigen.<br>
             Die grünen oder roten Punkte zwischen den Elementen zeigen an, ob sie verkettbar sind oder nicht.
         ]]>
@@ -26,7 +26,7 @@
         Einstellungen automatisch sichern. <br>
         <br>
         Es unterstützt einen Rotationsplan, zum Beispiel: <br>
-        &ensp; <font color="#888888">Es werden nur die letzten sieben täglichen Backups aufbewahrt. </font>
+        &ensp; <sample>Es werden nur die letzten sieben täglichen Backups aufbewahrt. </sample>
         ]]>
     </string>
     <string name="everyday">Täglich</string>
@@ -40,10 +40,10 @@
         <![CDATA[
         Das Sicherungsdateiformat ist eine gzip-komprimierte JSON-Datei. Sie können sie mit jedem Archivierungsprogramm öffnen und bearbeiten.<br>
         <br>
-        - <font color="#00BFFF"><b>Spam-Datenbank einschließen</b></font><br>
+        - <title><b>Spam-Datenbank einschließen</b></title><br>
         Langer Druck auf die Taste, um auch die Spam-Datenbank zu exportieren/importieren.<br>
         <br>
-        <font color="#ffa500">Hinweis:</font><br>
+        <warn>Hinweis:</warn><br>
         &ensp; Das Einschließen der Spam-Datenbank in die Sicherungsdatei erhöht deren Größe erheblich. Da die Datenbank regelmäßig aktualisiert wird, ist dies normalerweise nicht notwendig, es sei denn, Sie möchten sie auf ein anderes Telefon klonen.<br>
         ]]>
     </string>
@@ -55,15 +55,15 @@
     </string-array>
     <string name="help_regex_action_add_mode">
         <![CDATA[
-        -<font color="#00BFFF"><b>Erstellen</b></font><br>
+        -<title><b>Erstellen</b></title><br>
         &ensp; Erstelle immer eine neue Regex-Regel.<br>
         <br>
-        - <font color="#00BFFF"><b>Ersetzen</b></font><br>
+        - <title><b>Ersetzen</b></title><br>
         &ensp; Es wird versucht, eine bestehende Regel zu finden, die dieselbe <b>Beschreibung</b> hat. <br>
         &ensp;&ensp; - Wenn gefunden, wird sie überschrieben.<br>
         &ensp;&ensp; - Wenn nicht gefunden, wird eine neue Regel erstellt, genauso wie bei <b>Erstellen</b>.<br>
         <br>
-        - <font color="#00BFFF"><b>Zusammenführen</b></font><br>
+        - <title><b>Zusammenführen</b></title><br>
         &ensp;- Wenn eine Regel mit derselben Beschreibung existiert, werden die neuen Nummern in sie zusammengeführt,<br>
          doppelte Nummern werden automatisch entfernt.<br>
         &ensp;- Wenn sie nicht existiert, wird eine neue Regel erstellt, genauso wie bei <b>Erstellen</b>.<br>

@@ -6,9 +6,9 @@
         Establece el tono de llamada para una función particular, o siléncialo. <br>
         <br>
         Por ejemplo, para establecer el tono de llamada para una regla de expresión regular: <br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         Las llamadas permitidas por esta regla reproducirán el tono de llamada especificado.<br>
     ]]>
@@ -54,9 +54,9 @@
         permitida por esta regla. <br>
         <br>
         <b>Caso de uso:<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; Establece tonos de llamada diferentes para personas específicas, grupos de contactos o rangos de números de teléfono.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="remote_setup">Configuración Remota</string>
@@ -93,8 +93,8 @@
         <br>
         El flujo de trabajo se ejecuta diariamente, descarga el conjunto de datos completo de 90 días en la primera ejecución, y luego realiza solo actualizaciones incrementales en ejecuciones posteriores. <br>
         <br>
-        <font color="#ffa500"><b>Nota:</b></font> <br>
-        <font color="#888888">&ensp; El conjunto de datos se actualiza típicamente cada día laborable alrededor del mediodía, hora del Este. </font><br>
+        <warn><b>Nota:</b></warn> <br>
+        <sample>&ensp; El conjunto de datos se actualiza típicamente cada día laborable alrededor del mediodía, hora del Este. </sample><br>
         <br>
         Por lo tanto, está programado a las 18:00, ya que se espera que el conjunto de datos esté disponible para entonces. <br>
     ]]>

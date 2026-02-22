@@ -8,10 +8,10 @@
         Este flujo de trabajo se activará automáticamente con una llamada entrante.<br>
         <br>
         Caso de uso: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Eliminar caracteres iniciales adicionales del número de teléfono antes de la detección,
           ya que algunos operadores admiten números duales en una sola tarjeta SIM. <br>
-        </font>
+        </sample>
         <br>
         Una configuración típica:<br>
         - Evento de Llamada <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         Modifica el número de la llamada entrante antes de que sea verificado por las reglas.<br>
         <br>
-        <font color="#00BFFF"><b>Un caso de uso</b>:</font><br>
+        <title><b>Un caso de uso</b>:</title><br>
         &ensp; Algunos operadores de redes móviles admiten números duales para la misma tarjeta SIM, añaden dígitos iniciales adicionales al número secundario.<br>
-        &ensp;   Por ejemplo: 3312345679 puede convertirse en <font color="#888888">123</font>3312345679. <br>
-        &ensp; Los dígitos iniciales <font color="#888888">123</font> deben ser eliminados antes de la verificación. <br>
+        &ensp;   Por ejemplo: 3312345679 puede convertirse en <sample>123</sample>3312345679. <br>
+        &ensp; Los dígitos iniciales <sample>123</sample> deben ser eliminados antes de la verificación. <br>
         <br>
-        <font color="#00BFFF"><b>Una configuración típica:</b></font> <br>
+        <title><b>Una configuración típica:</b></title> <br>
         - <b>Evento de Llamada</b> <br>
         - <b>Reemplazar Número</b> <br>
-        &emsp; desde: <font color="#888888">^123</font> <br>
-        &emsp; a: <font color="#888888">dejar vacío</fonts> <br>
+        &emsp; desde: <sample>^123</sample> <br>
+        &emsp; a: <sample>dejar vacío</sample> <br>
         ]]>
     </string>
     <string name="blocked">Bloqueado</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         Los canales de notificación incorporados: <br>
         <br>
-        <font color="#00BFFF"><b>Ninguno</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>Ninguno</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; Ninguna notificación en absoluto. <br>
         <br>
-        <font color="#00BFFF"><b>Baja</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Baja</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; Aparece en la barra de estado y en el panel de notificaciones. <br>
         <br>
-        <font color="#00BFFF"><b>Media</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Media</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; Aparece en la barra de estado y en el panel de notificaciones con sonido. <br>
         <br>
-        <font color="#00BFFF"><b>Alta</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Alta</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Aparece en la barra de estado, el panel de notificaciones y como una ventana emergente (heads-up) con sonido. <br>
         <br>
-        <font color="#00BFFF"><b>Alta Silenciada</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Alta Silenciada</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Es similar a <b>Alta</b> pero silencia el sonido. <br>
-        &ensp; Es ideal para un <font color="#03DAC5"><b>Chat SMS</b></font> activo donde los sonidos continuos pueden ser molestos. <br>
-          Se considera un <font color="#03DAC5"><b>Chat SMS</b></font> activo cuando la pantalla está desbloqueada y la aplicación de SMS está abierta en primer plano. <br>
+        &ensp; Es ideal para un <highlight><b>Chat SMS</b></highlight> activo donde los sonidos continuos pueden ser molestos. <br>
+          Se considera un <highlight><b>Chat SMS</b></highlight> activo cuando la pantalla está desbloqueada y la aplicación de SMS está abierta en primer plano. <br>
         ]]>
     </string>
     <string name="none">Ninguno</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         Crear un nuevo canal de notificación. <br>
         <br>
-        <font color="#03DAC5"><b>Mantén pulsado</b></font> un canal de notificación en esta lista desplegable para editarlo.
+        <highlight><b>Mantén pulsado</b></highlight> un canal de notificación en esta lista desplegable para editarlo.
         ]]>
     </string>
     <string name="warning_delete_channel">

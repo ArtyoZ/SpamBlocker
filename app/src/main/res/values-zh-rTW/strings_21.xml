@@ -6,9 +6,9 @@
         為特定功能指定鈴聲，或將其靜音。<br>
         <br>
         例如要為某個正規表示式規則設定鈴聲：<br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         符合該規則並被允許的來電會播放指定鈴聲。<br>
     ]]>
@@ -25,9 +25,9 @@
         為正則表達式規則自訂鈴聲，當來電被此規則允許時將播放指定的鈴聲。 <br>
         <br>
         <b>使用案例：<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; 為特定聯絡人、聯絡人群組或號碼範圍設定不同的鈴聲。
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="help_target_rule_desc">
@@ -88,8 +88,8 @@
         <br>
         工作流程每日執行，首次執行時下載完整的 90 天資料集，之後的執行僅執行增量更新。 <br>
         <br>
-        <font color="#ffa500"><b>注意：</b></font> <br>
-        <font color="#888888">&ensp; 資料集通常在每個工作日的美東時間中午左右更新。 </font><br>
+        <warn><b>注意：</b></warn> <br>
+        <sample>&ensp; 資料集通常在每個工作日的美東時間中午左右更新。 </sample><br>
         <br>
         因此排程設定在 18:00，因為預計屆時資料集會可用。 <br>
     ]]>

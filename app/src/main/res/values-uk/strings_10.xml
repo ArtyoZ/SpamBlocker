@@ -3,39 +3,39 @@
         <![CDATA[
         Правила для номерів застосовуються як до номера вхідного дзвінка, так і до номера SMS.<br>
         <br>
-        <h5><font color="#00BFFF"> - Приклади</font></h5>
+        <h5><title> - Приклади</title></h5>
         Приклади можна знайти на <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">Wiki-сторінці</a>.<br>
         <br>
-        <h5><font color="#00BFFF"> - Оптимізація Regex</font></h5>
+        <h5><title> - Оптимізація Regex</title></h5>
         Для спрощення регулярного виразу,
-          <font color="#fa7f71"><b>+</b></font> та <font color="#fa7f71"><b>початкові нулі</b></font>
+          <error><b>+</b></error> та <error><b>початкові нулі</b></error>
           видаляються перед перевіркою, наприклад:<br>
         &emsp; Усі ці формати:<br>
         &emsp;&emsp; 123456789 &emsp;(звичайний номер)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(з початковим <font color="#fa7f71"><b>+</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(з внутрішнім префіксом <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(два <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp; <b>Усі</b> вони перевіряються як 123456789 і можуть бути зіставлені за допомогою <font color="#03DAC5"><b>123.*</b></font><br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(з початковим <error><b>+</b></error>)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(з внутрішнім префіксом <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(два <error><b>0</b></error>)<br>
+        &emsp; <b>Усі</b> вони перевіряються як 123456789 і можуть бути зіставлені за допомогою <highlight><b>123.*</b></highlight><br>
         Цю оптимізацію номера можна <b>вимкнути</b> за допомогою прапора regex `Raw Number`.<br>
         <br>
-        <h5><font color="#00BFFF"> - Типові патерни</font></h5>
-        &ensp; - Будь-який номер: <font color="#03DAC5"><b>.*</b></font> (регулярний вираз .* еквівалентний підстановці * в інших додатках) <br>
-        &ensp; - Точний номер: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - Починається з 400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - Закінчується на 123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 цифр: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - Менше 5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - Більше 10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - Невідомий/Прихований/Порожній номер: <font color="#03DAC5"><b>.{0}</b></font> або <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - Відповідність будь-якому з шаблонів: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - Починається з 400, з кодом країни 11 або без нього: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - Типові патерни</title></h5>
+        &ensp; - Будь-який номер: <highlight><b>.*</b></highlight> (регулярний вираз .* еквівалентний підстановці * в інших додатках) <br>
+        &ensp; - Точний номер: <highlight><b>12345</b></highlight> <br>
+        &ensp; - Починається з 400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - Закінчується на 123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 цифр: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - Менше 5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - Більше 10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - Невідомий/Прихований/Порожній номер: <highlight><b>.{0}</b></highlight> або <highlight><b>^$</b></highlight> <br>
+        &ensp; - Відповідність будь-якому з шаблонів: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - Починається з 400, з кодом країни 11 або без нього: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - Інтерфейс користувача</font></h5>
-        Зніміть прапорці, щоб вимкнути правило, <font color="#fa7f71"><b>проведіть пальцем вліво, щоб видалити</b></font> його.<br>
+        <h5><title> - Інтерфейс користувача</title></h5>
+        Зніміть прапорці, щоб вимкнути правило, <error><b>проведіть пальцем вліво, щоб видалити</b></error> його.<br>
         <br>
         Список <b>відображається</b> у порядку спадання пріоритету, зростання опису та зростання шаблону.<br>
         <br>
-        <h5><font color="#00BFFF"> - Імпорт правил з .csv</font></h5>
+        <h5><title> - Імпорт правил з .csv</title></h5>
         Довго натисніть кнопку `Add`, щоб імпортувати номери з файлу .csv.<br>
         <brg>
         ]]>

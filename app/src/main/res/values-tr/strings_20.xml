@@ -30,14 +30,14 @@
     <br>
     <b>Seçenekler:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Süre</b></font> <br>
+    - <title><b>Süre</b></title> <br>
     Aramalar bu süre boyunca (saniye cinsinden) engellenecektir. <br>
     <br>
-    - <font color="#00BFFF"><b>Engellenenleri İçerir</b></font> <br>
+    - <title><b>Engellenenleri İçerir</b></title> <br>
     Bu özellik, herhangi bir arama engellendikten sonra etkinleştirilecektir. <br>
     <br>
-    - <font color="#00BFFF"><b>Cevaplananları İçerir</b></font> <br>
-    - <font color="#00BFFF"><b>Minimum Çağrı Süresi</b></font> <br>
+    - <title><b>Cevaplananları İçerir</b></title> <br>
+    - <title><b>Minimum Çağrı Süresi</b></title> <br>
     Bu özellik, bir arama cevaplandıktan ancak arama süresi çok kısa olduğunda etkinleştirilecektir, zira böyle bir arama da spam çağrı olarak kabul edilir. <br>
     ]]>
     </string>
@@ -46,10 +46,10 @@
     Bir aramayı engelledikten sonra, belirli bir süre boyunca tüm kuralları atlayan sonraki aramaları da engelleyin. <br>
     <br>
     <b>Kullanım senaryosu:</b> <br>
-    <font color="#888888"> &ensp; Bazı spam çağrı yapanlar, ortak ön ekli telefon numaraları kullanır ve bunlar regex kurallarıyla engellenebilir.
-      İlk arama engellendikten sonra, rastgele telefon numaralarına geçerek tüm kuralları atlayabilecek aramalar yaparlar. </font><br>
+    <sample> &ensp; Bazı spam çağrı yapanlar, ortak ön ekli telefon numaraları kullanır ve bunlar regex kurallarıyla engellenebilir.
+      İlk arama engellendikten sonra, rastgele telefon numaralarına geçerek tüm kuralları atlayabilecek aramalar yaparlar. </sample><br>
     <br>
-    <font color="#ffa500"><b>Not:</b></font> <br>
+    <warn><b>Not:</b></warn> <br>
       Bu aynı zamanda geçerli bir aramayı engelleme riskini de içerir, bu bir takas durumudur.<br>
     <br>
     Bu hem <b>bir regex kuralı</b> hem de <b>bir iş akışı</b> oluşturacaktır, ayrıntılı açıklama için dahili eylem <b>Çağrı Kısıtlama</b>\'nın ipucuna bakın.<br>
@@ -65,14 +65,14 @@
     <br>
     <b>Seçenekler:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Süre</b></font> <br>
+    - <title><b>Süre</b></title> <br>
     Bu süre boyunca (saniye cinsinden) SMS mesajları engellenecektir. <br>
     <br>
-    - <font color="#00BFFF"><b>Sayım Sınırı</b></font> <br>
+    - <title><b>Sayım Sınırı</b></title> <br>
     İlk N bildirimine izin ver. <br>
     <br>
-    - <font color="#00BFFF"><b>Cevaplananlar Dahil</b></font> <br>
-    - <font color="#00BFFF"><b>Minimum Çağrı Süresi</b></font> <br>
+    - <title><b>Cevaplananlar Dahil</b></title> <br>
+    - <title><b>Minimum Çağrı Süresi</b></title> <br>
     Cevaplanan bir çağrı çok kısaysa, bu da bir spam çağrı olarak kabul edilir ve bu özelliği etkinleştirir. <br>
     ]]>
     </string>
@@ -81,7 +81,7 @@
     Aynı telefon numarasından gelen ardışık SMS bildirimlerini belirli bir süre için sessize alın. <br>
     <br>
     <b>Kullanım senaryoları:</b> <br>
-    <font color="#888888">Bir telefon numarasından gelen ilk üç bildirime izin verin ve geri kalanını bir dakika içinde sessize alın.</font> <br>
+    <sample>Bir telefon numarasından gelen ilk üç bildirime izin verin ve geri kalanını bir dakika içinde sessize alın.</sample> <br>
     <br>
     Bu hem <b>bir regex kuralı</b> hem de <b>bir iş akışı</b> oluşturacaktır, ayrıntılı açıklama için dahili eylem <b>SMS Kısıtlama</b>\'nın ipucuna bakın.<br>
     ]]>

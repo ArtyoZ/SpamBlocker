@@ -34,13 +34,13 @@
         <br>
         <b>Options:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Within Days</font></h6>
-        Calls that occurred before <font color="#03DAC5">%s days</font> are ignored.<br>
+        <h6><title>- Within Days</title></h6>
+        Calls that occurred before <highlight>%s days</highlight> are ignored.<br>
         <br>
-        <h6><font color="#00BFFF">- Include SMS</font></h6>
+        <h6><title>- Include SMS</title></h6>
         When enabled, texting that number also counts.<br>
         <br>
-        <font color="#ea86ff"><b>Priority: 10</b></font>
+        <priority><b>Priority: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -50,12 +50,12 @@
         A typical use case:<br>
         &emsp; You just ordered a pizza in PizzaApp, soon they call you to refund because they are closing. That call would pass if PizzaApp is enabled here. <br>
         <br>
-        The default setting <font color="03DAC5"><b>5 Min</b></font> means any call would pass if any of the apps has been used within 5 minutes,
+        The default setting <highlight><b>5 Min</b></highlight> means any call would pass if any of the apps has been used within 5 minutes,
         by `used` it means either being activated, deactivated, minimized, or killed. <br>
         <br>
         Only applies to calls, <b>not</b> to text messages. <br>
         <br>
-        <font color="#ea86ff"><b>Priority: 10</b></font>
+        <priority><b>Priority: 10</b></priority>
         ]]>
     </string>
     <string-array name="block_type_list">
@@ -65,21 +65,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Reject</b></font>: <br>
+        - <title><b>Reject</b></title>: <br>
          Same as pressing the decline button. It works completely silently, lockscreen won\'t be turned on.<br>
         <br>
-        - <font color="#00BFFF"><b>Silence</b></font>: <br>
+        - <title><b>Silence</b></title>: <br>
          It will ring silently in the background, giving the impression to the caller that you were unavailable and missed the call. <br>
         <br>
          It may also help if you are experiencing repeated spam calls, it will extend the call duration, making it less efficient for spammers, potentially discouraging them from calling you again.<br>
         <br>
-        - <font color="#00BFFF"><b>Hang Up</b></font>: <br>
+        - <title><b>Hang Up</b></title>: <br>
         Answer and hang up the call to prevent it from going to voicemail. <br>
         <br>
         When the spam call is received during an ongoing call, it will switch to \"Reject\"
          to avoid hanging up the ongoing call. <br>
         <br>
-        <font color="#FFA500">Note</font> The lockscreen can be turned on for a short while,
+        <warn>Note</warn> The lockscreen can be turned on for a short while,
         you might also hear a call end tone(some phones offer an option to mute this sound). <br>
         <br>
         - The <b>delay</b>: <br>

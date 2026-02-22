@@ -3,39 +3,39 @@
         <![CDATA[
         Les regles de números s\'apliquen tant al número de la trucada entrant com al número del SMS.<br>
         <br>
-        <h5><font color="#00BFFF"> - Exemples</font></h5>
+        <h5><title> - Exemples</title></h5>
         Hi ha alguns exemples a la <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">pàgina Wiki</a>.<br>
         <br>
-        <h5><font color="#00BFFF"> - Optimització de Regex</font></h5>
+        <h5><title> - Optimització de Regex</title></h5>
         Per simplificar l\'expressió regular,
-          <font color="#fa7f71"><b>+</b></font> i <font color="#fa7f71"><b>els zeros inicials</b></font>
+          <error><b>+</b></error> i <error><b>els zeros inicials</b></error>
           s\'eliminen abans de comprovar, per exemple:<br>
         &emsp; Tots aquests formats:<br>
         &emsp;&emsp; 123456789 &emsp;(número normal)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(amb <font color="#fa7f71"><b>+</b></font> inicial)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(amb prefix de tronc nacional <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(dos <font color="#fa7f71"><b>0</b></font>s)<br>
-        &emsp; <b>Tots</b> es comproven com a 123456789 i es poden coincidir amb <font color="#03DAC5"><b>123.*</b></font><br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(amb <error><b>+</b></error> inicial)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(amb prefix de tronc nacional <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(dos <error><b>0</b></error>s)<br>
+        &emsp; <b>Tots</b> es comproven com a 123456789 i es poden coincidir amb <highlight><b>123.*</b></highlight><br>
         Aquesta optimització del número es pot <b>desactivar</b> amb el flag regex `Raw Number`.<br>
         <br>
-        <h5><font color="#00BFFF"> - Alguns patrons típics</font></h5>
-        &ensp; - Qualsevol número: <font color="#03DAC5"><b>.*</b></font> (l\'expressió regular .* és equivalent al caràcter comodí * en altres aplicacions) <br>
-        &ensp; - Número exacte: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - Comença amb 400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - Acaba amb 123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 dígits: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - Més curt que 5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - Més llarg que 10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - Número desconegut/privat/buit: <font color="#03DAC5"><b>.{0}</b></font> o <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - Coincideix amb qualsevol dels patrons: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - Comença amb 400, amb el codi de país 11 o no: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - Alguns patrons típics</title></h5>
+        &ensp; - Qualsevol número: <highlight><b>.*</b></highlight> (l\'expressió regular .* és equivalent al caràcter comodí * en altres aplicacions) <br>
+        &ensp; - Número exacte: <highlight><b>12345</b></highlight> <br>
+        &ensp; - Comença amb 400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - Acaba amb 123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 dígits: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - Més curt que 5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - Més llarg que 10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - Número desconegut/privat/buit: <highlight><b>.{0}</b></highlight> o <highlight><b>^$</b></highlight> <br>
+        &ensp; - Coincideix amb qualsevol dels patrons: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - Comença amb 400, amb el codi de país 11 o no: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - Relacionat amb la IU</font></h5>
-        Desmarqueu les caselles de selecció per desactivar la regla, <font color="#fa7f71"><b>llisqueu cap a l\'esquerra per suprimir</b></font>.<br>
+        <h5><title> - Relacionat amb la IU</title></h5>
+        Desmarqueu les caselles de selecció per desactivar la regla, <error><b>llisqueu cap a l\'esquerra per suprimir</b></error>.<br>
         <br>
         La llista es <b>mostra</b> en ordre descendent de prioritat, descripció ascendent i patró ascendent.<br>
         <br>
-        <h5><font color="#00BFFF"> - Importa regles des de .csv</font></h5>
+        <h5><title> - Importa regles des de .csv</title></h5>
         Mantingueu premut el botó `Afegeix` per importar números des del fitxer .csv.<br>
         <brg>
         ]]>

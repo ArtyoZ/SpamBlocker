@@ -43,7 +43,7 @@
         <![CDATA[
         Fitur ini membutuhkan izin:<br>
         <br>
-        <font color="#00BFFF">%s</font><br>
+        <title>%s</title><br>
         <br>
         Izin harus diaktifkan secara manual di Pengaturan Sistem.<br>
         Buka halaman pengaturan tersebut?

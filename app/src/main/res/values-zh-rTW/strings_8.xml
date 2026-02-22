@@ -15,7 +15,7 @@
         <br>
         適用於通話和簡訊。<br>
         <br>
-        <font color="#ea86ff"><b>優先順序：0</b></font>
+        <priority><b>優先順序：0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

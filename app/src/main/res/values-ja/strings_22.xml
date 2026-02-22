@@ -4,9 +4,9 @@
     <![CDATA[
     電話番号が以下の理由でブロックされた場合、自動的に報告します。<br>
     <br>
-    &ensp; - <font color="#fa7f71">非連絡先</font> <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> 証明<br>
-    &ensp; - <font color="#fa7f71">電話番号の正規表現</font><br>
+    &ensp; - <error>非連絡先</error> <br>
+    &ensp; - <error>STIR/SHAKEN</error> 証明<br>
+    &ensp; - <error>電話番号の正規表現</error><br>
     <br>
     これは手動報告には影響しません。
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         CSVデータバイトを電話番号のリストに解析します。<br>
         <br>
-        電話番号を含む列は、<font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>という名前である<b>必要があります</b>。<br>
+        電話番号を含む列は、<title><b><no_translate>pattern</no_translate></b></title>という名前である<b>必要があります</b>。<br>
         <br>
         ヘッダー名が異なるサードパーティのCSVファイルの場合、それらを
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>に<b>列マッピング</b>を使用してマッピングします。<br>
+        <title><b><no_translate>pattern</no_translate></b></title>に<b>列マッピング</b>を使用してマッピングします。<br>
         <br>
         例：<br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate><br>
         <br>
-        <font color="#ffa500"><b>注</b></font><br>
+        <warn><b>注</b></warn><br>
         列ヘッダーのないプレーンテキストファイルを解析する場合は、代わりに<b>正規表現の抽出</b>を使用してください。
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        <font color="#00BFFF">xpath</font>を使用してXMLデータバイトを解析し、電話番号のリストを生成します。
+        <title>xpath</title>を使用してXMLデータバイトを解析し、電話番号のリストを生成します。
         ]]>
     </string>
     <string name="action_parse_xml">XMLの解析</string>
@@ -44,13 +44,13 @@
         これは、1行に1つの電話番号が含まれるプレーンテキストファイルの解析にも使用できます。<br>
         <br>
         例、テキストを解析：<br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         正規表現：<br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         ファイルからデータバイトを読み取ります。<br>
         <br>
-        サポートされている<font color="#03DAC5">パス</font>タグ：<br>
+        サポートされている<highlight>パス</highlight>タグ：<br>
         <br>
         %s<br>
         <br>
-        サポートされている<font color="#03DAC5">ファイル名</font>タグ：<br>
+        サポートされている<highlight>ファイル名</highlight>タグ：<br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         ファイルにデータバイトを書き込みます。<br>
         <br>
-        サポートされている<font color="#03DAC5"><b>パス</b></font>タグ：<br>
+        サポートされている<highlight><b>パス</b></highlight>タグ：<br>
         <br>
         %s<br>
         <br>
-        サポートされている<font color="#03DAC5"><b>ファイル名</b></font>タグ：<br>
+        サポートされている<highlight><b>ファイル名</b></highlight>タグ：<br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         ワークフローのトリガータイプに応じて、ルールは永続的または一時的に変更できます。 <br>
         <br>
         変更可能な属性： <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; 正規表現 <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; 説明 <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; 優先度 <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: ブロック, <no_translate>false</no_translate>: 許可 <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; 適用対象： <br>
         &ensp; 1: 通話, 2: SMS, 3: 両方, 0: 無効 <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; 通知チャンネルID文字列<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: 拒否, 1: サイレンス, 2: 切断 <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… または任意のSIMの場合は<no_translate>null</no_translate>。
         ]]>
     </string>
@@ -142,13 +142,13 @@
         サードパーティのソースからの数値パターンを正規表現形式に正規化します。<br>
         <br>
         例：<br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         を<br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         2つの<b>電話番号の置換</b>アクションを追加します：<br>
-        &ensp; - 「<font color="#fa7f71">(\\+)</font>」を「」で置き換えます<br>
-        &ensp; - 「<font color="#fa7f71">(#)</font>」を「<font color="#03DAC5"><b>.</b></font>」で置き換えます<br>
+        &ensp; - 「<error>(\\+)</error>」を「」で置き換えます<br>
+        &ensp; - 「<error>(#)</error>」を「<highlight><b>.</b></highlight>」で置き換えます<br>
         ]]>
     </string>
     <string name="action_replace_number">電話番号の置換</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">期間 (分)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        <font color="#03DAC5">テスト</font>ボタンをタップして、このワークフローを手動で実行します。
+        <highlight>テスト</highlight>ボタンをタップして、このワークフローを手動で実行します。
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         時間指定スケジュールでタスクの実行を自動化します。<br>
         <br>
         ユースケース:<br>
-        &ensp; - <font color="#888888">毎日、FTC-DNCレジストリから迷惑電話番号をダウンロードします。</font><br>
+        &ensp; - <sample>毎日、FTC-DNCレジストリから迷惑電話番号をダウンロードします。</sample><br>
         <br>
-        &ensp; - <font color="#888888">毎日自動バックアップを行い、過去7つのバックアップのみを保持します。</font><br>
+        &ensp; - <sample>毎日自動バックアップを行い、過去7つのバックアップのみを保持します。</sample><br>
         ]]>
     </string>
     <string name="trigger">トリガー</string>
     <string name="delay_in_seconds">遅延（秒）</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        この機能は、着信が始まる前に一時的にシステムのデフォルト着信音を変更し、<font color="#03DAC5">%d秒後</font>に着信が始まっていると予想される時点でもとに戻します。<br>
+        この機能は、着信が始まる前に一時的にシステムのデフォルト着信音を変更し、<highlight>%d秒後</highlight>に着信が始まっていると予想される時点でもとに戻します。<br>
         <br>
         一部の電話には、<b>まずバイブレーション、次に着信</b>のような機能があり、着信を例えば6秒遅らせる場合があります。その場合、この遅延を適切に増やしてください。
         ]]>

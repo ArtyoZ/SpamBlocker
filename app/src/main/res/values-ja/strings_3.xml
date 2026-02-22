@@ -3,22 +3,22 @@
         <![CDATA[
         これらのルールはSMSコンテンツに適用されます。<br>
         <br>
-        <font color="#00BFFF"><b> - 典型的なパターン</b></font>:<br>
-        &ensp; - \"verification\"を含む: <font color="#03DAC5"><b>.*verification.*</b></font><br>
-        &ensp; - 以下のいずれかの単語を含む: <font color="#03DAC5"><b>.*(police|hospital|verification).*</b></font>
+        <title><b> - 典型的なパターン</b></title>:<br>
+        &ensp; - \"verification\"を含む: <highlight><b>.*verification.*</b></highlight><br>
+        &ensp; - 以下のいずれかの単語を含む: <highlight><b>.*(police|hospital|verification).*</b></highlight>
         ]]>
     </string>
     <string name="help_quick_copy">
         <![CDATA[
         SMSメッセージまたは電話番号からコンテンツをコピーするための簡単な方法であり、認証コードや着信番号を簡単に取得できます。<br>
         <br>
-        一致した場合、<font color="#00BFFF"><b>コピー: 123456</b></font>のようなボタンが通知に表示されます。<br>
+        一致した場合、<title><b>コピー: 123456</b></title>のようなボタンが通知に表示されます。<br>
         <br>
         認証コードを抽出するためのサンプルルール:<br>
         &emsp; キャプチャリンググループを使用:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>code.*?(\\d+) </b></font><br>
+        &emsp;&emsp; <highlight><b>code.*?(\\d+) </b></highlight><br>
         &emsp; ルックアラウンドを使用する別の方法:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>(?&lt;=code.{0,3})\\d+</b></font>
+        &emsp;&emsp; <highlight><b>(?&lt;=code.{0,3})\\d+</b></highlight>
         ]]>
     </string>
     <string name="help_apply_to_call_sms">
@@ -29,17 +29,17 @@
     </string>
     <string name="help_apply_to_number_and_message">
         <![CDATA[
-        <font color="#00BFFF"><b>電話番号</b></font>がチェックされている場合、このルールは着信番号からコンテンツを抽出します。
+        <title><b>電話番号</b></title>がチェックされている場合、このルールは着信番号からコンテンツを抽出します。
         たとえば、<b>(.*)</b>を使用して電話番号をコピーします。<br>
         <br>
-        <font color="#00BFFF"><b>コンテンツ</b></font>がチェックされている場合、このルールは認証コードなどのSMSメッセージ本文からコンテンツを抽出します。
+        <title><b>コンテンツ</b></title>がチェックされている場合、このルールは認証コードなどのSMSメッセージ本文からコンテンツを抽出します。
         ]]>
     </string>
     <string name="help_apply_to_passed_and_blocked">
         <![CDATA[
-        <font color="#03DAC5"><b>通過</b></font>がチェックされている場合、このルールは通過した通話とメッセージに適用されます。<br>
+        <highlight><b>通過</b></highlight>がチェックされている場合、このルールは通過した通話とメッセージに適用されます。<br>
         <br>
-        <font color="#fa7f71"><b>ブロック</b></font>がチェックされている場合、このルールはブロックされた通話とメッセージに適用されます。
+        <error><b>ブロック</b></error>がチェックされている場合、このルールはブロックされた通話とメッセージに適用されます。
         ]]>
     </string>
     <string name="title_rule_testing">ルールテスト</string>

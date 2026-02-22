@@ -19,9 +19,9 @@
         İş akışıyla ilişkilidir ve iş akışı silindiğinde otomatik olarak silinecektir. <br>
         <br>
         <b>Kullanım durumu</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Artımlı güncellemeler içeren senaryolarda, işaretçi benzeri bir değişkenin kaydedilmesi ve ardışık çalıştırmalarda yeniden kullanılması gerekir.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">Etiketi Yükle</string>
@@ -45,13 +45,13 @@
         <br>
         <b>Seçenekler</b> <br>
         <br>
-        <font color="#00BFFF"><b>Parse Type</b></font> <br>
+        <title><b>Parse Type</b></title> <br>
         Etiket değerini ayrıştırın, regex ve xpath destekler. <br>
         <br>
-        <font color="#00BFFF"><b>Tag Name</b></font> <br>
+        <title><b>Tag Name</b></title> <br>
         Oluşturulacak etiket adı. <br>
-        Örneğin, etiket adı <font color="#03DAC5">my_token</font>,
-         sonraki HTTP sorgularında <font color="#03DAC5">{my_token}</font> kullanabilirsiniz. <br>
+        Örneğin, etiket adı <highlight>my_token</highlight>,
+         sonraki HTTP sorgularında <highlight>{my_token}</highlight> kullanabilirsiniz. <br>
     ]]>
     </string>
     <string name="max"><short>Maks</short></string>
@@ -66,15 +66,15 @@
         Kaydın ne kadar yeni olduğuna göre zaman damgasını farklı renklerde vurgulayın. <br>
         <br>
         <b>Kullanım durumu</b>: <br>
-        &ensp; <font color="#888888">Tüm kayıtları mavi zaman damgası ile kontrol ederek gece bugün yapılan aramaları gözden geçirin. </font>
+        &ensp; <sample>Tüm kayıtları mavi zaman damgası ile kontrol ederek gece bugün yapılan aramaları gözden geçirin. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        Ya <font color="#00BFFF"><no_translate>today</no_translate></font> olmalı ya da
+        Ya <title><no_translate>today</no_translate></title> olmalı ya da
         bir sayı <b><no_translate>min</no_translate></b> ile
-        (ör. <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (ör. <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">Geçersiz değer, yardım için araç ipucuna bakın</string>
@@ -85,29 +85,29 @@
         <br>
         Varsayılan olarak, <br>
         <br>
-        - <font color="#03DAC5">Whitelist rules</font> önceliği <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">Örn. Kişiler, TekrarlananArama, SonUygulamalar, vb </font><br>
+        - <highlight>Whitelist rules</highlight> önceliği <priority>10</priority> <br>
+        &ensp; <sample>Örn. Kişiler, TekrarlananArama, SonUygulamalar, vb </sample><br>
         <br>
-        - <font color="#fa7f71">Blacklist rules</font> önceliği <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">Örn. STIR, Veritabanı, vb </font> <br>
+        - <error>Blacklist rules</error> önceliği <priority>0</priority> <br>
+        &ensp; <sample>Örn. STIR, Veritabanı, vb </sample> <br>
         <br>
         Her ikisi de etkin olduğunda, whitelist kuralları blacklist kurallarını 10 > 0 olduğu için geçersiz kılar. <br>
         <br>
-        Regex kuralları için öncelik, <font color="#ea86ff">-2147483648</font> ile <font color="#ea86ff">2147483647</font> arasında herhangi bir numaraya ayarlanabilir. <br>
-        Farklı kurallar aynı türde oldukları sürece aynı önceliğe sahip olabilir, ancak <font color="#ffa500"><b>whitelist ve blacklist kurallarına aynı önceliği asla atamayın</b></font>, bu rastgele davranışa neden olabilir. <br>
+        Regex kuralları için öncelik, <priority>-2147483648</priority> ile <priority>2147483647</priority> arasında herhangi bir numaraya ayarlanabilir. <br>
+        Farklı kurallar aynı türde oldukları sürece aynı önceliğe sahip olabilir, ancak <warn><b>whitelist ve blacklist kurallarına aynı önceliği asla atamayın</b></warn>, bu rastgele davranışa neden olabilir. <br>
         <br>
-        <font color="#00BFFF">Meeting Mode</font> özelliği, varsayılan olarak önceliği <font color="#ea86ff">20</font>’dir, çünkü toplantı sırasında tüm aramaları engellemesi gerekir. <br>
-        Ve <font color="#ea86ff">-1</font> <font color="#00BFFF">Instant Query</font> için, böylece arama tüm yerel filtrelerden geçtiğinde kontrol edilir. <br>
+        <title>Meeting Mode</title> özelliği, varsayılan olarak önceliği <priority>20</priority>’dir, çünkü toplantı sırasında tüm aramaları engellemesi gerekir. <br>
+        Ve <priority>-1</priority> <title>Instant Query</title> için, böylece arama tüm yerel filtrelerden geçtiğinde kontrol edilir. <br>
         <br>
         <b>Önceliği özelleştirmenin kullanım durumları</b>: <br>
         <br>
-        - <font color="#888888">Tekrarlansa da belirli bir numarayı her zaman engelle</font> <br>
-         &ensp; <font color="#00BFFF">Repeated Call</font> kuralını geçersiz kılmak için önceliği > 10 bir kural ayarlayın. <br>
+        - <sample>Tekrarlansa da belirli bir numarayı her zaman engelle</sample> <br>
+         &ensp; <title>Repeated Call</title> kuralını geçersiz kılmak için önceliği > 10 bir kural ayarlayın. <br>
         <br>
-        - <font color="#888888">Bir numarayı her zaman izin ver</font> <br>
-         &ensp; <font color="#00BFFF">Meeting Mode</font>’u geçersiz kılmak için önceliği > 20 yapın. <br>
+        - <sample>Bir numarayı her zaman izin ver</sample> <br>
+         &ensp; <title>Meeting Mode</title>’u geçersiz kılmak için önceliği > 20 yapın. <br>
         <br>
-        - <font color="#888888">Bir regex kuralını test et</font> <br>
+        - <sample>Bir regex kuralını test et</sample> <br>
          &ensp; Diğer tüm filtreleri geçersiz kılmak için önceliği 999 yapın, böylece tek tek geçici olarak devre dışı bırakmanız gerekmez.
     ]]>
     </string>

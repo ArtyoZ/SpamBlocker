@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        تأكد من <font color="#fa7f71"><b>إيقاف إشعارات تطبيق الرسائل القصيرة</b></font> في إعدادات النظام لتجنب الإشعارات المزدوجة. <br>
+        تأكد من <error><b>إيقاف إشعارات تطبيق الرسائل القصيرة</b></error> في إعدادات النظام لتجنب الإشعارات المزدوجة. <br>
         <br>
         إذا كان تطبيق الرسائل القصيرة يفرض إذن الإشعارات، يمكنك إبقائه ممنوحًا وإيقاف تشغيل <b>قنوات الإشعارات</b> كلها بدلاً من ذلك.
         ]]>
@@ -15,11 +15,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>اسم المتصل</b></font>:<br>
+        <title><b>اسم المتصل</b></title>:<br>
         &ensp; سيتطابق التعبير النمطي مع اسم عرض المتصل (CNAP). <br>
         <br>
         في سجل المكالمات، سيظهر اسم المتصل بعد رقم الهاتف بين قوسين إذا كان موجودًا، مثل: <br>
-        &ensp; <font color="#888888">12345 (اسم العرض)</font> <br>
+        &ensp; <sample>12345 (اسم العرض)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">اسم المتصل</string>
@@ -43,13 +43,13 @@
     <string name="explanation_forwarded_call">
         <![CDATA[
         هذا <b>خاص بالناقل</b>، بعض شركات الاتصالات تقوم بتنسيق المكالمات المحولة كرقمين متسلسلين بعلامة \"&\"،
-         مثل <font color="#888888">222&111</font>. <br>
+         مثل <sample>222&111</sample>. <br>
         <br>
         في هذا التنسيق: <br>
-        &ensp; - الجزء الأول (<font color="#888888">222</font>) هو عادةً رقم التحويل. <br>
-        &ensp; - الجزء الثاني (<font color="#888888">111</font>) هو الرقم الأصلي. <br>
+        &ensp; - الجزء الأول (<sample>222</sample>) هو عادةً رقم التحويل. <br>
+        &ensp; - الجزء الثاني (<sample>111</sample>) هو الرقم الأصلي. <br>
         <br>
-        قد يكون هناك أيضًا <font color="#888888">333&111</font> و <font color="#888888">444&111</font>،
+        قد يكون هناك أيضًا <sample>333&111</sample> و <sample>444&111</sample>،
          حيث يبقى الرقم الأصلي كما هو ويتغير رقم التحويل.
         ]]>
     </string>
@@ -64,14 +64,14 @@
         <br>
         <b>الخيارات</b>: <br>
         <br>
-        <font color="#00BFFF"><b>خام</b></font> <br>
-        الاستعلام عن/الإبلاغ عن الرقم الخام (<font color="#888888">222&111</font>)، إذا كانت واجهة برمجة التطبيقات تدعم هذا التنسيق. <br>
+        <title><b>خام</b></title> <br>
+        الاستعلام عن/الإبلاغ عن الرقم الخام (<sample>222&111</sample>)، إذا كانت واجهة برمجة التطبيقات تدعم هذا التنسيق. <br>
         <br>
-        <font color="#00BFFF"><b>أصلي</b></font> <br>
-        الاستعلام عن/الإبلاغ عن الرقم الأصلي (<font color="#888888">111</font>)، هذا حل بديل لواجهات برمجة التطبيقات التي لا تدعم التنسيق الخام. <br>
+        <title><b>أصلي</b></title> <br>
+        الاستعلام عن/الإبلاغ عن الرقم الأصلي (<sample>111</sample>)، هذا حل بديل لواجهات برمجة التطبيقات التي لا تدعم التنسيق الخام. <br>
         <br>
-        <font color="#00BFFF"><b>تحويل</b></font> <br>
-        الاستعلام عن/الإبلاغ عن رقم التحويل (<font color="#888888">222</font>). <br>
+        <title><b>تحويل</b></title> <br>
+        الاستعلام عن/الإبلاغ عن رقم التحويل (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">تم تعديل هذا الرقم المحوّل إلى %s.</string>
@@ -80,7 +80,7 @@
     <string name="geo_location_rule">قاعدة الموقع الجغرافي</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>الموقع الجغرافي</b></font>:<br>
+        <title><b>الموقع الجغرافي</b></title>:<br>
         &ensp; سيطابق regex الموقع الجغرافي للـ number. <br>
         <br>
         &ensp; يعتمد هذا على مكتبة Google <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -104,8 +104,8 @@
         <br>
         استبدل العنصر النائب ___ بمنطقتك الفعلية. <br>
         <br>
-        الصيغة <font color="#fa7f71">(?!___$).*</font> تعني: <br>
-        &ensp; مطابقة أي نص ليس <font color="#fa7f71">___</font>.
+        الصيغة <error>(?!___$).*</error> تعني: <br>
+        &ensp; مطابقة أي نص ليس <error>___</error>.
         ]]>
     </string>
 </resources>

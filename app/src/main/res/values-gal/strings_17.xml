@@ -5,30 +5,30 @@
         <![CDATA[
         Despois de marcar un número de emerxencia, permite todas as chamadas entrantes durante un período de tempo.<br>
         <br>
-        <h5><font color="#00BFFF">- Duración</font></h5>
-        A configuración predeterminada <font color="#03DAC5"><b>120 Min</b></font> significa que todas as chamadas serán permitidas
+        <h5><title>- Duración</title></h5>
+        A configuración predeterminada <highlight><b>120 Min</b></highlight> significa que todas as chamadas serán permitidas
         nos próximos 120 minutos despois de marcar un número de emerxencia.<br>
         <br>
-        <h5><font color="#00BFFF">- Verificar STIR</font></h5>
+        <h5><title>- Verificar STIR</title></h5>
          - Cando está desactivado, permitiránse todas as chamadas.<br>
          - Cando está activado, non se permitirán as chamadas que fallen na certificación STIR, só se permitirán as chamadas "Válidas" e "Non verificadas".<br>
         <br>
-        <h5><font color="#00BFFF">- Números adicionais</font></h5>
+        <h5><title>- Números adicionais</title></h5>
         Marcar calquera número desta lista tamén activará esta función.<br>
         <br>
         Non é necesario engadir números explícitamente como o 911 aquí, porque Android inclúe un
         lista de números de emerxencia integrada para cada país (por exemplo: policía, bombeiros, ambulancia).<br>
         <br>
         Separa os números con comas, como:<br>
-        &ensp; <font color="#888888">111, 222, 3333</font><br>
+        &ensp; <sample>111, 222, 3333</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Restablecer</font></h5>
+        <h5><title>- Restablecer</title></h5>
         Preme este botón para restablecer esta función se se activou por erro ou durante a proba.<br>
         <br>
-        <h5><font color="#00BFFF">- Proba</font></h5>
+        <h5><title>- Proba</title></h5>
         Simula unha chamada saínte para probar se ese número é un número de emerxencia.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: Máxima</b></font>
+        <priority><b>Prioridade: Máxima</b></priority>
         ]]>
     </string>
     <string name="reset">Restablecer</string>
@@ -39,17 +39,17 @@
     <string name="additional_numbers">Números adicionais</string>
     <string name="path_tags">
         <![CDATA[
-        <font color="#00BFFF"><b>{sdcard}</b></font><br>
+        <title><b>{sdcard}</b></title><br>
         O directorio de almacenamento externo, igual que: <br>
-        <font color="#888888">/storage/emulated/0</font><br>
+        <sample>/storage/emulated/0</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Download}</b></font><br>
+        <title><b>{Download}</b></title><br>
         Igual que: <br>
-        <font color="#888888">{sdcard}/Download</font><br>
+        <sample>{sdcard}/Download</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Documents}</b></font><br>
+        <title><b>{Documents}</b></title><br>
         Igual que: <br>
-        <font color="#888888">{sdcard}/Documents</font>
+        <sample>{sdcard}/Documents</sample>
         ]]>
     </string>
     <string name="call_to_number">A número</string>
@@ -61,8 +61,8 @@
         <br>
         Un caso de uso típico:<br>
         &ensp; Cando hai unha notificación como:<br>
-        &emsp; Título: <font color="#888888">Actualización de pedido:</font><br>
-        &emsp; Corpo: <font color="#888888">O teu pedido foi recollido polo condutor…</font><br>
+        &emsp; Título: <sample>Actualización de pedido:</sample><br>
+        &emsp; Corpo: <sample>O teu pedido foi recollido polo condutor…</sample><br>
         &ensp; O condutor pode entón chamarte para confirmar os detalles.<br>
         <br>
         <b>Permisos requiridos:</b> <br>
@@ -71,18 +71,18 @@
         <br>
         Opcións:<br>
         <br>
-        <h6><font color="#00BFFF">- Aplicación</font></h6>
+        <h6><title>- Aplicación</title></h6>
         Só comprobará as notificacións desta aplicación.<br>
         <br>
-        <h6><font color="#00BFFF">- Contido da notificación</font></h6>
+        <h6><title>- Contido da notificación</title></h6>
         Esta expresión regular coincidirá co título e o corpo da notificación.<br>
         Un exemplo para o caso de uso anterior:<br>
-        &emsp; <font color="#03DAC5">actualización de pedido.*recollido polo condutor.*</font><br>
+        &emsp; <highlight>actualización de pedido.*recollido polo condutor.*</highlight><br>
         <br>
-        <h6><font color="#00BFFF">- Duración</font></h6>
+        <h6><title>- Duración</title></h6>
         Permitiranse as chamadas durante este período, especificado en minutos.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
     <string name="notification_content">Contido da notificación</string>

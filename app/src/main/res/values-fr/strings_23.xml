@@ -41,25 +41,25 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        Bloquez tous les appels internationaux sauf ceux de votre propre pays avec l\'expression régulière <font color="#fa7f71"><b>\\+(?!39).*</b></font>,
+        Bloquez tous les appels internationaux sauf ceux de votre propre pays avec l\'expression régulière <error><b>\\+(?!39).*</b></error>,
           les appels passant cette règle ne seront pas immédiatement autorisés, ils seront vérifiés par d\'autres règles. <br>
         <br>
-        <font color="#ffa500">Changez</font> <b>39</b> par votre code de pays. <br>
+        <warn>Changez</warn> <b>39</b> par votre code de pays. <br>
         <br>
         Analyse de l\'expression régulière : <br>
         &ensp; - Le drapeau d\'expression régulière <b>Numéro Brut</b> conserve le <b>+</b> initial, sinon, il sera supprimé avant la vérification. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> correspond à tout numéro commençant par <b>+</b> qui n\'est pas suivi de <b>39</b> (numéros étrangers).
+        &ensp; - <error><b>\\+(?!39)</b></error> correspond à tout numéro commençant par <b>+</b> qui n\'est pas suivi de <b>39</b> (numéros étrangers).
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         Également connu sous le nom de <b>Numéro Inconnu</b> ou <b>Numéro Vide</b>, ce sont des chaînes vides qui
          peuvent être mises en correspondance par l\'un des éléments suivants : <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; un champ d\'expression régulière <font color="#fa7f71">vide</font>. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; un champ d\'expression régulière <error>vide</error>. <br>
         <br>
-        La <font color="#ea86ff">priorité</font> est définie sur <font color="#ea86ff">20</font> pour remplacer d\'autres fonctionnalités comme l\'<b>Appel Répété</b>,
+        La <priority>priorité</priority> est définie sur <priority>20</priority> pour remplacer d\'autres fonctionnalités comme l\'<b>Appel Répété</b>,
         de sorte qu\'ils sont toujours bloqués même s\'ils se répètent.
         ]]>
     </string>
@@ -83,7 +83,7 @@
         <![CDATA[
         Cet interrupteur permet de désactiver rapidement l\'application, utile lorsque vous attendez un appel ou un message particulier. <br>
         <br>
-        Vous pouvez également l\'activer/le désactiver depuis les <font color="#6ed0ff"><b>Paramètres rapides déroulants</b></font>. <br>
+        Vous pouvez également l\'activer/le désactiver depuis les <minor><b>Paramètres rapides déroulants</b></minor>. <br>
         <br>
         Le filtrage des appels et des SMS doit également être activé séparément ci-dessous, ils ne fonctionnent que lorsque ceci est activé.
         ]]>
@@ -98,10 +98,10 @@
         Activez/désactivez rapidement les règles à l\'aide de la tuile de paramètres rapides. Alors que la tuile globale active/désactive toute l\'application, cette tuile personnalisée n\'affecte que des règles spécifiques. <br>
         <br>
         Cette configuration implique à la fois une règle regex et un flux de travail. Lorsque la tuile est : <br>
-        &ensp; - <font color="#03DAC5"><b>Activée</b></font> <br>
+        &ensp; - <highlight><b>Activée</b></highlight> <br>
         &emsp;  Ce flux de travail sera exécuté avant le filtrage des appels, il activera la règle regex. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Désactivée</b></font> <br>
+        &ensp; - <sample><b>Désactivée</b></sample> <br>
         &emsp;  Ce flux de travail ne s\'exécutera jamais, la règle ne fonctionnera jamais. <br>
         <br>
         En bref, <b>lorsque la tuile est activée, la règle est activée, et vice versa</b>.
@@ -116,8 +116,8 @@
         Nécessite Android 12 ou supérieur. <br>
         <br>
         Ceci ajoutera deux règles pour la SIM 2 : <br>
-        &ensp; - Autoriser les contacts, <font color="#ea86ff">priorité 12</font>. <br>
-        &ensp; - Bloquer tout le reste, <font color="#ea86ff">priorité 11</font>.
+        &ensp; - Autoriser les contacts, <priority>priorité 12</priority>. <br>
+        &ensp; - Bloquer tout le reste, <priority>priorité 11</priority>.
         Cela remplace les paramètres comme Appel répété, ils seront donc toujours bloqués même s\'ils se répètent.
         ]]>
     </string>

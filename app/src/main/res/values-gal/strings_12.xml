@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        Consultar o número entrante en liña en tempo real. <br>
+        Consulta o número entrante en liña en tempo real. <br>
         <br>
-        Múltiples puntos finais da API serán consultados simultaneamente, utilizándose o primeiro resultado recibido e ignorándose todos os posteriores. <br>
+        Consultaranse simultaneamente varios puntos finais da API, usando o primeiro resultado recibido e ignorando os resultados posteriores. <br>
         <br>
-        Ten a prioridade máis baixa por defecto, o que significa que só se activará cando a chamada pase todas as outras regras.<br>
+        Ten a prioridade máis baixa por defecto, o que significa que só se activará despois de que a chamada pase todas as regras locais.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade por defecto: -1</b></font>
+        <priority><b>Prioridade predeterminada: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">Consulta instantánea</string>
@@ -36,23 +36,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        Extrae a <font color="#00BFFF">categoría</font> e os <font color="#00BFFF">comentarios</font>
+        Extrae a <title>categoría</title> e os <title>comentarios</title>
          do resultado da consulta e móstraos na notificación e no rexistro de historial. (opcional)<br>
         <br>
         Por exemplo, para este resultado de consulta: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - Extraer só a <font color="#00BFFF">categoría</font>: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - Extraer só a <title>categoría</title>: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - Extraer tanto a <font color="#00BFFF">categoría</font> coma os <font color="#00BFFF">comentarios</font>: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - Extraer tanto a <title>categoría</title> coma os <title>comentarios</title>: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">Analizar resultado</string>
@@ -91,13 +91,13 @@
         Este regex filtra os números en consecuencia, os números entrantes que non coincidan con este regex saltaranse a comprobación.<br>
         <br>
         - Só comprobar <b>números internacionais</b>:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - Só comprobar <b>números domésticos</b>:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - Comprobar <b>calquera número</b>:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">Comprobando: %s, prioridade: %s</string>

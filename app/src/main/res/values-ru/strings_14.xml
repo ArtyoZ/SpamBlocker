@@ -42,15 +42,15 @@
         <![CDATA[
         Поддерживаются только следующие категории спама, любые другие категории из API должны быть сопоставлены с одной из них.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; Сообщить, что номер надёжный, не спам.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; Резервный тип спама, используемый, если ни одна из вышеперечисленных категорий не подходит.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         Некоторые сервисы сначала отправят вам SMS, чтобы сообщить о предстоящем звонке, обычно в течение минуты.<br>
         <br>
         Например, SMS-сообщение вида:<br>
-        &ensp; <font color="#888888">[некий сервис] Мы звоним вам, чтобы сообщить …, пожалуйста, ответьте.</font><br>
+        &ensp; <sample>[некий сервис] Мы звоним вам, чтобы сообщить …, пожалуйста, ответьте.</sample><br>
         <br>
         Регулярное выражение для такого сообщения будет:<br>
-        &ensp; <font color="#03DAC5"><b>.*please.*answer.*</b></font> <br>
+        &ensp; <highlight><b>.*please.*answer.*</b></highlight> <br>
         <br>
-        Настройка по умолчанию <font color="#03DAC5"><b>120 секунд</b></font> означает, что все звонки будут
+        Настройка по умолчанию <highlight><b>120 секунд</b></highlight> означает, что все звонки будут
         разрешены в течение следующих двух минут после получения такого сообщения.<br>
         <br>
         Работает как для обычных SMS, так и для flash SMS (SMS класса 0).<br>
         <br>
-        <font color="#ea86ff"><b>Приоритет: 10</b></font>
+        <priority><b>Приоритет: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Подстановочный знак `*` используется без предшествующей точки, вы имели в виду `.*`?</string>

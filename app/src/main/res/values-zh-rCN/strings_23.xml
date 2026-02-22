@@ -41,23 +41,23 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        使用正则表达式 <font color="#fa7f71"><b>\\+(?!39).*</b></font> 阻止所有来自您本国以外的国际电话。通过此规则的电话不会立即被放行，它们将由其他规则检查。<br>
+        使用正则表达式 <error><b>\\+(?!39).*</b></error> 阻止所有来自您本国以外的国际电话。通过此规则的电话不会立即被放行，它们将由其他规则检查。<br>
         <br>
-        <font color="#ffa500">将</font> <b>39</b> 更改为您的国家/地区代码。<br>
+        <warn>将</warn> <b>39</b> 更改为您的国家/地区代码。<br>
         <br>
         正则表达式解析：<br>
         &ensp; - <b>原始号码</b> 正则表达式标志保留开头的 <b>+</b>，否则，它将在检查前被删除。<br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> 匹配任何以 <b>+</b> 开头且后面不跟 <b>39</b> 的号码（国际号码）。
+        &ensp; - <error><b>\\+(?!39)</b></error> 匹配任何以 <b>+</b> 开头且后面不跟 <b>39</b> 的号码（国际号码）。
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         也称为 <b>未知号码</b> 或 <b>空号码</b>，它们是可以通过以下任一方式匹配的空字符串： <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; 一个 <font color="#fa7f71">空白</font> 正则表达式字段。<br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; 一个 <error>空白</error> 正则表达式字段。<br>
         <br>
-        <font color="#ea86ff">优先级</font> 设置为 <font color="#ea86ff">20</font> 以覆盖 <b>重复来电</b> 等其他功能，因此即使重复也会始终被阻止。
+        <priority>优先级</priority> 设置为 <priority>20</priority> 以覆盖 <b>重复来电</b> 等其他功能，因此即使重复也会始终被阻止。
         ]]>
     </string>
     <string name="verification_code">验证码</string>
@@ -80,7 +80,7 @@
         <![CDATA[
         此开关用于快速禁用应用，当您正在等待特定电话或消息时非常有用。 <br>
         <br>
-        您也可以从<font color="#6ed0ff"><b>下拉快速设置</b></font>中切换它。 <br>
+        您也可以从<minor><b>下拉快速设置</b></minor>中切换它。 <br>
         <br>
         通话和短信筛选也需要在下方单独启用，它们仅在此功能启用时才有效。
         ]]>
@@ -95,10 +95,10 @@
         使用快速设置快捷开关快速切换规则。全局快捷开关切换整个应用程序，而此自定义快捷开关仅影响特定规则。<br>
         <br>
         此设置涉及正则表达式规则和工作流。当快捷开关为：<br>
-        &ensp; - <font color="#03DAC5"><b>开启</b></font> <br>
+        &ensp; - <highlight><b>开启</b></highlight> <br>
         &emsp;  此工作流将在筛选来电之前执行，它将启用正则表达式规则。<br>
         <br>
-        &ensp; - <font color="#888888"><b>关闭</b></font> <br>
+        &ensp; - <sample><b>关闭</b></sample> <br>
         &emsp;  此工作流将永远不会运行，规则将永远不会生效。<br>
         <br>
         简而言之，<b>当快捷开关开启时，规则开启；反之亦然</b>。
@@ -113,8 +113,8 @@
         需要安卓 12 及更高版本。 <br>
         <br>
         这将为 SIM 2 添加两条规则： <br>
-        &ensp; - 允许联系人，<font color="#ea86ff">优先级 12</font>。 <br>
-        &ensp; - 阻止其他所有内容，<font color="#ea86ff">优先级 11</font>。这将覆盖重复呼叫等设置，因此即使重复呼叫也始终会被阻止。
+        &ensp; - 允许联系人，<priority>优先级 12</priority>。 <br>
+        &ensp; - 阻止其他所有内容，<priority>优先级 11</priority>。这将覆盖重复呼叫等设置，因此即使重复呼叫也始终会被阻止。
         ]]>
     </string>
     <string name="sim_2_non_contacts">SIM 2 非联系人</string>

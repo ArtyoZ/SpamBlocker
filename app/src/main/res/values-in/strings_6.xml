@@ -45,13 +45,13 @@
         <br>
         <b>Opsi:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Frekuensi</h6>
-        Pengaturan default <font color="#03DAC5"><b>1 / 5 Menit</b></font> berarti panggilan kedua dalam 5 menit akan diizinkan. <br>
+        <h6><title>- Frekuensi</title></h6>
+        Pengaturan default <highlight><b>1 / 5 Menit</b></highlight> berarti panggilan kedua dalam 5 menit akan diizinkan. <br>
         <br>
-        <h6><font color="#00BFFF">- Sertakan SMS</font></h6>
+        <h6><title>- Sertakan SMS</title></h6>
         Ketika diaktifkan, menerima pesan SMS dari nomor tersebut juga dihitung.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 10</b></font>
+        <priority><b>Prioritas: 10</b></priority>
         ]]>
     </string>
 

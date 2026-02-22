@@ -22,26 +22,26 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>Telefon Numarası</b></font>:<br>
+        <title><b>Telefon Numarası</b></title>:<br>
         &ensp; Varsayılan moddur, regex telefon numarasıyla eşleşecektir.<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>Kişiler</b></font>:<br>
+        <title><b>Kişiler</b></title>:<br>
         &ensp; Regex, gelen numarayla ilişkili kişi adıyla eşleşecektir.<br>
         &ensp;  - Kullanım durumu:<br>
-        &emsp; <font color="#888888">Hafta sonu tüm rehber dışı numaraları `.*` regex\'iyle engelle. </font><br>
+        &emsp; <sample>Hafta sonu tüm rehber dışı numaraları `.*` regex\'iyle engelle. </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>Kişi Grubu</b></font>:<br>
+        <title><b>Kişi Grubu</b></title>:<br>
         &ensp; Regex, gelen numarayla ilişkili kişi grubu adıyla eşleşecektir,
                  bu gruptaki tüm kişileri etkiler, böylece onları tek tek eklemenize gerek kalmaz,
                  ve personel değişiklikleri olduğunda bile güncellemene gerek olmaz.<br>
         &ensp;  - Kullanım durumu:<br>
-        &emsp; <font color="#888888">Hafta sonu \"iş\" kişi grubunu engelleyerek tüm iş arkadaşlarını engelle. </font> <br>
+        &emsp; <sample>Hafta sonu \"iş\" kişi grubunu engelleyerek tüm iş arkadaşlarını engelle. </sample> <br>
         ]]>
     </string>
 </resources>

@@ -41,25 +41,25 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        Bloqueie todas as chamadas internacionais, exceto as do seu próprio país, com a regex <font color="#fa7f71"><b>\\+(?!39).*</b></font>.
+        Bloqueie todas as chamadas internacionais, exceto as do seu próprio país, com a regex <error><b>\\+(?!39).*</b></error>.
           As chamadas que passarem por esta regra não serão permitidas imediatamente, serão verificadas por outras regras. <br>
         <br>
-        <font color="#ffa500">Mude</font> <b>39</b> para o código do seu país. <br>
+        <warn>Mude</warn> <b>39</b> para o código do seu país. <br>
         <br>
         Análise da Regex: <br>
         &ensp; - A flag de regex <b>Número Bruto</b> preserva o <b>+</b> inicial; caso contrário, ele será removido antes da verificação. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> corresponde a qualquer número que comece com <b>+</b> e não seja seguido por <b>39</b> (números estrangeiros).
+        &ensp; - <error><b>\\+(?!39)</b></error> corresponde a qualquer número que comece com <b>+</b> e não seja seguido por <b>39</b> (números estrangeiros).
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         Também conhecidos como <b>Número Desconhecido</b> ou <b>Número Vazio</b>, são strings vazias que
          podem ser correspondidas por qualquer um de: <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; um campo de regex <font color="#fa7f71">em branco</font>. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; um campo de regex <error>em branco</error>. <br>
         <br>
-        A <font color="#ea86ff">prioridade</font> é definida como <font color="#ea86ff">20</font> para substituir outras funcionalidades como <b>Chamada Repetida</b>,
+        A <priority>prioridade</priority> é definida como <priority>20</priority> para substituir outras funcionalidades como <b>Chamada Repetida</b>,
         para que sejam sempre bloqueados mesmo que se repitam.
         ]]>
     </string>
@@ -83,7 +83,7 @@
         <![CDATA[
         Este interruptor serve para desativar rapidamente o aplicativo, útil quando você está aguardando uma chamada ou mensagem específica. <br>
         <br>
-        Você também pode ativá-lo/desativá-lo nas <font color="#6ed0ff"><b>Configurações Rápidas da Barra de Notificações</b></font>. <br>
+        Você também pode ativá-lo/desativá-lo nas <minor><b>Configurações Rápidas da Barra de Notificações</b></minor>. <br>
         <br>
         A triagem de chamadas e SMS também precisa ser ativada separadamente abaixo; elas só funcionam quando esta opção está ativada.
         ]]>
@@ -99,10 +99,10 @@
          este bloco personalizado afeta apenas regras específicas. <br>
         <br>
         Esta configuração envolve uma regra regex e um fluxo de trabalho. Quando o bloco está: <br>
-        &ensp; - <font color="#03DAC5"><b>Ligado</b></font> <br>
+        &ensp; - <highlight><b>Ligado</b></highlight> <br>
         &emsp;  Este fluxo de trabalho será executado antes que as chamadas sejam triadas, ele ativará a regra regex. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Desligado</b></font> <br>
+        &ensp; - <sample><b>Desligado</b></sample> <br>
         &emsp;  Este fluxo de trabalho nunca será executado, a regra nunca funcionará. <br>
         <br>
         Em resumo, <b>quando o bloco está ligado, a regra está ligada, e vice-versa</b>.
@@ -117,8 +117,8 @@
         Requer Android 12+. <br>
         <br>
         Isso adicionará duas regras para o SIM 2: <br>
-        &ensp; - Permitir contatos, <font color="#ea86ff">prioridade 12</font>. <br>
-        &ensp; - Bloquear todo o resto, <font color="#ea86ff">prioridade 11</font>.
+        &ensp; - Permitir contatos, <priority>prioridade 12</priority>. <br>
+        &ensp; - Bloquear todo o resto, <priority>prioridade 11</priority>.
         Isso substitui configurações como Chamada Repetida, então eles serão sempre bloqueados mesmo se repetirem.
         ]]>
     </string>

@@ -8,10 +8,10 @@
         سيتم تشغيل سير العمل هذا تلقائيًا بواسطة مكالمة واردة.<br>
         <br>
         حالة الاستخدام: <br>
-        <font color="#888888">
+        <sample>
           &ensp; إزالة الأحرف البادئة الإضافية من رقم الهاتف قبل الفحص،
           حيث تدعم بعض شركات الاتصال الأرقام المزدوجة على بطاقة SIM واحدة. <br>
-        </font>
+        </sample>
         <br>
         إعداد نموذجي:<br>
         - حدث المكالمة <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         تعديل رقم المكالمة الواردة قبل التحقق منه بواسطة القواعد.<br>
         <br>
-        <font color="#00BFFF"><b>حالة استخدام</b>:</font><br>
+        <title><b>حالة استخدام</b>:</title><br>
         &ensp; يدعم بعض مشغلي شبكات الهاتف المحمول الأرقام المزدوجة لنفس بطاقة SIM، حيث يضيفون أرقامًا بادئة إضافية إلى الرقم الثانوي.<br>
-        &ensp;   على سبيل المثال: 3312345679 قد يصبح <font color="#888888">123</font>3312345679. <br>
-        &ensp; يجب إزالة البادئة <font color="#888888">123</font> قبل التحقق منها. <br>
+        &ensp;   على سبيل المثال: 3312345679 قد يصبح <sample>123</sample>3312345679. <br>
+        &ensp; يجب إزالة البادئة <sample>123</sample> قبل التحقق منها. <br>
         <br>
-        <font color="#00BFFF"><b>إعداد نموذجي:</b></font> <br>
+        <title><b>إعداد نموذجي:</b></title> <br>
         - <b>حدث المكالمة</b> <br>
         - <b>استبدال الرقم</b> <br>
-        &emsp; من: <font color="#888888">^123</font> <br>
-        &emsp; إلى: <font color="#888888">اتركه فارغًا</fonts> <br>
+        &emsp; من: <sample>^123</sample> <br>
+        &emsp; إلى: <sample>اتركه فارغًا</sample> <br>
         ]]>
     </string>
     <string name="blocked">محظور</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         قنوات الإشعارات المدمجة: <br>
         <br>
-        <font color="#00BFFF"><b>بلا</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>بلا</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; لا يوجد إشعار على الإطلاق. <br>
         <br>
-        <font color="#00BFFF"><b>منخفض</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>منخفض</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; يظهر في شريط الحالة ودرج الإشعارات. <br>
         <br>
-        <font color="#00BFFF"><b>متوسط</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>متوسط</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; يظهر في شريط الحالة ودرج الإشعارات مع صوت. <br>
         <br>
-        <font color="#00BFFF"><b>مرتفع</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>مرتفع</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; يظهر في شريط الحالة، ودرج الإشعارات، وكنوافذة منبثقة عائمة مع صوت. <br>
         <br>
-        <font color="#00BFFF"><b>مرتفع صامت</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>مرتفع صامت</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; إنه مشابه لـ <b>مرتفع</b> ولكنه يكتم الصوت. <br>
-        &ensp; إنه مثالي لـ <font color="#03DAC5"><b>دردشة الرسائل القصيرة</b></font> النشطة حيث قد تكون الأصوات المستمرة مزعجة. <br>
-          تعتبر <font color="#03DAC5"><b>دردشة الرسائل القصيرة</b></font> نشطة عندما تكون الشاشة غير مقفلة وتطبيق الرسائل القصيرة مفتوحًا في المقدمة. <br>
+        &ensp; إنه مثالي لـ <highlight><b>دردشة الرسائل القصيرة</b></highlight> النشطة حيث قد تكون الأصوات المستمرة مزعجة. <br>
+          تعتبر <highlight><b>دردشة الرسائل القصيرة</b></highlight> نشطة عندما تكون الشاشة غير مقفلة وتطبيق الرسائل القصيرة مفتوحًا في المقدمة. <br>
         ]]>
     </string>
     <string name="none">بلا</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         إنشاء قناة إشعار جديدة. <br>
         <br>
-        <font color="#03DAC5"><b>انقر مطولاً</b></font> على قناة إشعار في هذه القائمة المنسدلة لتعديلها.
+        <highlight><b>انقر مطولاً</b></highlight> على قناة إشعار في هذه القائمة المنسدلة لتعديلها.
         ]]>
     </string>
     <string name="warning_delete_channel">

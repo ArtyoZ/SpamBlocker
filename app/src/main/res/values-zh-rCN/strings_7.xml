@@ -22,24 +22,24 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>电话号码</b></font>:<br>
+        <title><b>电话号码</b></title>:<br>
         &ensp; 默认模式，正则表达式将匹配电话号码。<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>联系人</b></font>:<br>
+        <title><b>联系人</b></title>:<br>
         &ensp; 正则表达式将匹配与来电号码关联的联系人姓名。<br>
         &ensp;  - 用例:<br>
-        &emsp; <font color="#888888">在周末使用正则表达式 `.*` 阻止所有非联系人。</font><br>
+        &emsp; <sample>在周末使用正则表达式 `.*` 阻止所有非联系人。</sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>联系人群组</b></font>:<br>
+        <title><b>联系人群组</b></title>:<br>
         &ensp; 正则表达式将匹配与来电号码关联的联系人群组名称，影响该组中的所有联系人，因此您无需单独添加他们，即使有人事变动也无需更新。<br>
         &ensp;  - 用例:<br>
-        &emsp; <font color="#888888">通过阻止联系人群组“工作”，在周末阻止所有同事。</font> <br>
+        &emsp; <sample>通过阻止联系人群组“工作”，在周末阻止所有同事。</sample> <br>
         ]]>
     </string>
 </resources>

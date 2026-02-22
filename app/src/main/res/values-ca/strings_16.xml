@@ -3,7 +3,7 @@
         <![CDATA[
         Les API configurades aquí s\'utilitzaran tant per a l\'informe automàtic com per a l\'informe manual.<br>
         <br>
-        <h6><font color="#00BFFF">- Privadesa</font></h6>
+        <h6><title>- Privadesa</title></h6>
         Els punts finals de l\'API veuran la vostra:<br>
         <br>
          &ensp; - Adreça IP<br>
@@ -12,39 +12,39 @@
         <br>
         No s\'informarà de res més.<br>
         <br>
-        <h6><font color="#00BFFF">- Informe manual</font></h6>
+        <h6><title>- Informe manual</title></h6>
 		Si s\'activa alguna API aquí, toqueu un número a l\'historial de trucades i apareixerà un botó d\'informe.<br>
 		<br>
 		El número s\'informarà a <b>totes</b> les API.<br>
 		<br>
-        <h6><font color="#00BFFF">- Informe automàtic</font></h6>
-		<font color="#6ED0ff"><b>Retard de l\'informe</b></font><br>
+        <h6><title>- Informe automàtic</title></h6>
+		<minor><b>Retard de l\'informe</b></minor><br>
         Quan es bloqueja una trucada, hi haurà un període d\'una hora abans que s\'informi.
         Si el número es permet més tard a causa de repeticions o si es torna a marcar dins d\'aquest període,
         es considera un número no spam i l\'informe es cancel·larà.<br>
         <br>
-		<font color="#6ED0ff"><b>Tipus d\'informe</b></font><br>
-		1. <font color="#fa7f71"><b>No</b></font> s\'informarà de:<br>
+		<minor><b>Tipus d\'informe</b></minor><br>
+		1. <error><b>No</b></error> s\'informarà de:<br>
         <br>
-        - <font color="#fa7f71">Números o contingut SMS</font><br>
-        - <font color="#fa7f71">Números permesos</font><br>
-        - <font color="#fa7f71">Proves</font><br>
+        - <error>Números o contingut SMS</error><br>
+        - <error>Números permesos</error><br>
+        - <error>Proves</error><br>
         I els següents tipus bloquejats:<br>
-        - <font color="#fa7f71">Regex de contacte</font><br>
-        - <font color="#fa7f71">Regex de grup de contactes</font><br>
-        - <font color="#fa7f71">Base de dades</font><br>
-        - <font color="#fa7f71">Mode reunió</font><br>
-        - <font color="#fa7f71">Consulta instantània</font> (per evitar que el número del punt final de l\'API es filtri a altres competidors)<br>
+        - <error>Regex de contacte</error><br>
+        - <error>Regex de grup de contactes</error><br>
+        - <error>Base de dades</error><br>
+        - <error>Mode reunió</error><br>
+        - <error>Consulta instantània</error> (per evitar que el número del punt final de l\'API es filtri a altres competidors)<br>
         <br>
-		2. <font color="#03DAC5"><b>Sí</b></font> que informarà dels números bloquejats per:<br>
+		2. <highlight><b>Sí</b></highlight> que informarà dels números bloquejats per:<br>
         <br>
-        - <font color="#03DAC5">No-contacte</font><br>
-        - <font color="#03DAC5">Atestació STIR</font><br>
-        - <font color="#03DAC5">Regex de número</font><br>
+        - <highlight>No-contacte</highlight><br>
+        - <highlight>Atestació STIR</highlight><br>
+        - <highlight>Regex de número</highlight><br>
         <br>
 		3. Una excepció:<br>
 		<br>
-        Quan és bloquejat per <font color="#03DAC5">Base de dades</font> i el número va ser afegit originalment per una consulta d\'API,
+        Quan és bloquejat per <highlight>Base de dades</highlight> i el número va ser afegit originalment per una consulta d\'API,
          s\'informarà de nou a aquesta API per augmentar la puntuació de valoració. <br>
         <br>
          Per exemple, si el número va ser afegit per

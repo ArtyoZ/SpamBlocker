@@ -35,13 +35,13 @@
         <br>
         <b>Options :</b><br>
         <br>
-        <h6><font color="#00BFFF">- Dans les jours</font></h6>
-        Les appels qui ont eu lieu avant <font color="#03DAC5">%s jours</font> sont ignorés.<br>
+        <h6><title>- Dans les jours</title></h6>
+        Les appels qui ont eu lieu avant <highlight>%s jours</highlight> sont ignorés.<br>
         <br>
-        <h6><font color="#00BFFF">- Inclure les SMS</font></h6>
+        <h6><title>- Inclure les SMS</title></h6>
         Lorsque cette option est activée, l\'envoi de SMS à ce numéro compte également.<br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 10</b></font>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -51,12 +51,12 @@
         Cas d’utilisation typique : <br>
         &emsp; Vous venez de commander une pizza dans PizzaApp, ils vous appellent bientôt pour un remboursement car ils ferment. Cet appel passera si PizzaApp est activé ici. <br>
         <br>
-        Le paramètre par défaut <font color="03DAC5"><b>5 min</b></font> signifie que tout appel passera si l’une des applications a été utilisée au cours des 5 dernières minutes,
+        Le paramètre par défaut <highlight><b>5 min</b></highlight> signifie que tout appel passera si l’une des applications a été utilisée au cours des 5 dernières minutes,
         par « utilisé », il faut entendre activé, désactivé, réduit au minimum ou tué. <br>
         <br>
         Ne s’applique qu’aux appels, <b>pas</b> aux messages texte. <br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 10</b></font>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">Le délai avant que l\'appel ne soit raccroché.</string>
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Rejeter</b></font> : <br>
+        - <title><b>Rejeter</b></title> : <br>
          Équivalent à appuyer sur le bouton de refus. Fonctionne en toute discrétion, l\'écran de verrouillage ne s\'allumera pas.<br>
         <br>
-        - <font color="#00BFFF"><b>Mettre en silence</b></font> : <br>
+        - <title><b>Mettre en silence</b></title> : <br>
          L\'appel sonnera silencieusement en arrière-plan, donnant l\'impression à l\'appelant que vous étiez indisponible et avez manqué l\'appel. <br>
         <br>
          Cela peut également aider si vous recevez des appels de spam répétés ; cela prolongera la durée de l\'appel, le rendant moins efficace pour les spammeurs, les décourageant potentiellement de vous rappeler.<br>
         <br>
-        - <font color="#00BFFF"><b>Raccrocher</b></font> : <br>
+        - <title><b>Raccrocher</b></title> : <br>
         Répondre puis raccrocher l\'appel pour l\'empêcher d\'aller à la messagerie vocale. <br>
         <br>
         Lorsqu\'un appel de spam est reçu pendant un appel en cours, le système passera en mode \"Rejeter\"
          pour éviter de raccrocher l\'appel en cours. <br>
         <br>
-        <font color="#FFA500">Note</font> L\'écran de verrouillage peut s\'allumer brièvement,
+        <warn>Note</warn> L\'écran de verrouillage peut s\'allumer brièvement,
         vous pourriez également entendre une tonalité de fin d\'appel (certains téléphones offrent une option pour désactiver ce son). <br>
         <br>
         - Le <b>délai</b> : <br>

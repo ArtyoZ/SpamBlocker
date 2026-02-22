@@ -4,9 +4,9 @@
     <![CDATA[
     Die Nummer automatisch melden, wenn sie aus folgenden Gründen blockiert wurde: <br>
     <br>
-    &ensp; - <font color="#fa7f71">Nicht-Kontakte</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN-Bescheinigung</font> <br>
-    &ensp; - <font color="#fa7f71">Nummern-Regex</font> <br>
+    &ensp; - <error>Nicht-Kontakte</error>  <br>
+    &ensp; - <error>STIR/SHAKEN-Bescheinigung</error> <br>
+    &ensp; - <error>Nummern-Regex</error> <br>
     <br>
     Dies hat keine Auswirkungen auf die manuelle Meldung.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         Analysiert CSV-Daten-Bytes in eine Liste von Telefonnummern. <br>
         <br>
-        Die Spalte, die die Nummern enthält, <b>muss</b> <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> heißen. <br>
+        Die Spalte, die die Nummern enthält, <b>muss</b> <title><b><no_translate>pattern</no_translate></b></title> heißen. <br>
         <br>
         Für CSV-Dateien von Drittanbietern mit anderen Spaltennamen, ordnen Sie diese mit der <b>Spaltenzuordnung</b>
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> zu. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> zu. <br>
         <br>
         Zum Beispiel: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Hinweis</b></font> <br>
+        <warn><b>Hinweis</b></warn> <br>
         Verwenden Sie stattdessen <b>Regex extrahieren</b>, um reine Textdateien ohne Spaltenüberschriften zu parsen.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        Analysiert XML-Daten-Bytes mithilfe von <font color="#00BFFF">xpath</font> und generiert eine Liste von Telefonnummern.
+        Analysiert XML-Daten-Bytes mithilfe von <title>xpath</title> und generiert eine Liste von Telefonnummern.
         ]]>
     </string>
     <string name="action_parse_xml">XML parsen</string>
@@ -44,13 +44,13 @@
         Dies kann auch zum Parsen von reinen Textdateien mit einer Telefonnummer pro Zeile verwendet werden. <br>
         <br>
         Zum Beispiel, Text parsen: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         mit Regex: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         Liest Daten-Bytes aus einer Datei. <br>
         <br>
-        Unterstützte <font color="#03DAC5">Pfad</font>-Tags: <br>
+        Unterstützte <highlight>Pfad</highlight>-Tags: <br>
         <br>
         %s <br>
         <br>
-        Unterstützte <font color="#03DAC5">Dateiname</font>-Tags: <br>
+        Unterstützte <highlight>Dateiname</highlight>-Tags: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         Schreibt Daten-Bytes in eine Datei. <br>
         <br>
-        Unterstützte <font color="#03DAC5"><b>Pfad</b></font>-Tags: <br>
+        Unterstützte <highlight><b>Pfad</b></highlight>-Tags: <br>
         <br>
         %s <br>
         <br>
-        Unterstützte <font color="#03DAC5"><b>Dateiname</b></font>-Tags: <br>
+        Unterstützte <highlight><b>Dateiname</b></highlight>-Tags: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         Abhängig vom Workflow-Trigger-Typ können Regeln dauerhaft oder temporär geändert werden. <br>
         <br>
         Modifizierbare Attribute: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; Der Regex <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; Die Beschreibung <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; Die Priorität <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Blockieren, <no_translate>false</no_translate>: erlauben <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Anwenden auf: <br>
         &ensp; 1: Anruf, 2: SMS, 3: beide, 0: deaktivieren <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; Die ID-Zeichenfolge des Benachrichtigungskanals<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: ablehnen, 1: stummschalten, 2: auflegen <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… Oder <no_translate>null</no_translate> für jede SIM.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         Normalisiert numerische Muster von Drittanbietern in das Regex-Format. <br>
         <br>
         Zum Beispiel, um <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         auf <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         Fügen Sie zwei <b>Nummer ersetzen</b>-Aktionen hinzu: <br>
-        &ensp; - Ersetzen Sie `<font color="#fa7f71">(\\+)</font>` durch ``<br>
-        &ensp; - Ersetzen Sie `<font color="#fa7f71">(#)</font>` durch ``<font color="#03DAC5"><b>.</b></font>``<br>
+        &ensp; - Ersetzen Sie `<error>(\\+)</error>` durch ``<br>
+        &ensp; - Ersetzen Sie `<error>(#)</error>` durch ``<highlight><b>.</b></highlight>``<br>
         ]]>
     </string>
     <string name="action_replace_number">Nummer ersetzen</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Dauer (Minuten)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Tippen Sie auf die Schaltfläche <font color="#03DAC5">Test</font>, um diesen Workflow manuell auszuführen.
+        Tippen Sie auf die Schaltfläche <highlight>Test</highlight>, um diesen Workflow manuell auszuführen.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         Automatisieren Sie die Ausführung von Aufgaben nach zeitgesteuerten Zeitplänen. <br>
         <br>
         Anwendungsfälle: <br>
-        &ensp; - <font color="#888888">Laden Sie täglich Spam-Nummern aus dem FTC-DNC-Register herunter.</font> <br>
+        &ensp; - <sample>Laden Sie täglich Spam-Nummern aus dem FTC-DNC-Register herunter.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Sichern Sie täglich automatisch und behalten Sie nur die letzten 7 Backups.</font> <br>
+        &ensp; - <sample>Sichern Sie täglich automatisch und behalten Sie nur die letzten 7 Backups.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Auslöser</string>
     <string name="delay_in_seconds">Verzögerung (Sekunden)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Diese Funktion ändert den System-Standardklingelton vorübergehend, bevor das Klingeln beginnt, und setzt ihn nach <font color="#03DAC5">%d Sekunden</font> zurück, zu welchem Zeitpunkt das Klingeln voraussichtlich begonnen haben wird. <br>
+        Diese Funktion ändert den System-Standardklingelton vorübergehend, bevor das Klingeln beginnt, und setzt ihn nach <highlight>%d Sekunden</highlight> zurück, zu welchem Zeitpunkt das Klingeln voraussichtlich begonnen haben wird. <br>
         <br>
         Einige Telefone bieten Funktionen wie <b>Zuerst vibrieren, dann klingeln</b>, die das Klingeln um, sagen wir, 6 Sekunden verzögern können. Erhöhen Sie in diesem Fall diese Verzögerung entsprechend.
         ]]>

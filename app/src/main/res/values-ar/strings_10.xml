@@ -3,39 +3,39 @@
         <![CDATA[
         تنطبق قواعد الأرقام على كل من رقم المكالمة الواردة ورقم الرسائل النصية القصيرة.<br>
         <br>
-        <h5><font color="#00BFFF"> - أمثلة</font></h5>
+        <h5><title> - أمثلة</title></h5>
         توجد بعض الأمثلة على <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">صفحة Wiki</a>.<br>
         <br>
-        <h5><font color="#00BFFF"> - تحسين Regex</font></h5>
+        <h5><title> - تحسين Regex</title></h5>
         لتبسيط regex،
-          <font color="#fa7f71"><b>+</b></font> و <font color="#fa7f71"><b>الأصفار البادئة</b></font>
+          <error><b>+</b></error> و <error><b>الأصفار البادئة</b></error>
           تتم إزالتها قبل التحقق، على سبيل المثال:<br>
         &emsp; كل هذه التنسيقات:<br>
         &emsp;&emsp; 123456789 &emsp;(رقم عادي)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(مع <font color="#fa7f71"><b>+</b></font> بادئة)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(مع بادئة الجذع المحلية <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(صفرين <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp; يتم التحقق من <b>كلها</b> كـ 123456789 ويمكن مطابقتها بواسطة <font color="#03DAC5"><b>123.*</b></font><br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(مع <error><b>+</b></error> بادئة)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(مع بادئة الجذع المحلية <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(صفرين <error><b>0</b></error>)<br>
+        &emsp; يتم التحقق من <b>كلها</b> كـ 123456789 ويمكن مطابقتها بواسطة <highlight><b>123.*</b></highlight><br>
         يمكن <b>تعطيل</b> تحسين الرقم هذا باستخدام علامة regex `Raw Number`.<br>
         <br>
-        <h5><font color="#00BFFF"> - بعض الأنماط النموذجية</font></h5>
-        &ensp; - أي رقم: <font color="#03DAC5"><b>.*</b></font> (regex .* يعادل حرف البدل * في تطبيقات أخرى) <br>
-        &ensp; - رقم دقيق: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - يبدأ بـ 400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - ينتهي بـ 123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 أرقام: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - أقصر من 5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - أطول من 10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - رقم غير معروف/خاص/فارغ: <font color="#03DAC5"><b>.{0}</b></font> أو <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - تطابق أي من الأنماط: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - ابدأ بـ 400، مع رمز البلد 11 بادئًا أم لا: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - بعض الأنماط النموذجية</title></h5>
+        &ensp; - أي رقم: <highlight><b>.*</b></highlight> (regex .* يعادل حرف البدل * في تطبيقات أخرى) <br>
+        &ensp; - رقم دقيق: <highlight><b>12345</b></highlight> <br>
+        &ensp; - يبدأ بـ 400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - ينتهي بـ 123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 أرقام: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - أقصر من 5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - أطول من 10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - رقم غير معروف/خاص/فارغ: <highlight><b>.{0}</b></highlight> أو <highlight><b>^$</b></highlight> <br>
+        &ensp; - تطابق أي من الأنماط: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - ابدأ بـ 400، مع رمز البلد 11 بادئًا أم لا: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - متعلق بواجهة المستخدم</font></h5>
-        ألغ تحديد مربعات الاختيار لتعطيل القاعدة، <font color="#fa7f71"><b>اسحب لليسار للحذف</b></font> .<br>
+        <h5><title> - متعلق بواجهة المستخدم</title></h5>
+        ألغ تحديد مربعات الاختيار لتعطيل القاعدة، <error><b>اسحب لليسار للحذف</b></error> .<br>
         <br>
         يتم <b>عرض</b> القائمة بترتيب تنازلي للأولوية، ووصف تصاعدي، ونمط تصاعدي.<br>
         <br>
-        <h5><font color="#00BFFF"> - استيراد القواعد من .csv</font></h5>
+        <h5><title> - استيراد القواعد من .csv</title></h5>
         اضغط لفترة طويلة على زر "إضافة" لاستيراد الأرقام من ملف .csv.<br>
         <brg>
         ]]>

@@ -4,9 +4,9 @@
     <![CDATA[
     דווח אוטומטית על המספר אם הוא נחסם מהסיבות הבאות: <br>
     <br>
-    &ensp; - <font color="#fa7f71">לא אנשי קשר</font>  <br>
-    &ensp; - <font color="#fa7f71">אימות STIR/SHAKEN</font> <br>
-    &ensp; - <font color="#fa7f71">רג\'קס של מספרים</font> <br>
+    &ensp; - <error>לא אנשי קשר</error>  <br>
+    &ensp; - <error>אימות STIR/SHAKEN</error> <br>
+    &ensp; - <error>רג\'קס של מספרים</error> <br>
     <br>
     זה לא משפיע על דיווח ידני.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         נתח נתוני CSV לרשימת מספרים. <br>
         <br>
-        העמודה המכילה את המספרים <b>חייבת</b> להיקרא <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        העמודה המכילה את המספרים <b>חייבת</b> להיקרא <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         עבור קבצי CSV מצד שלישי עם שמות כותרות שונים, מפה אותם ל-
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> באמצעות ה<b>מיפוי עמודות</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> באמצעות ה<b>מיפוי עמודות</b>. <br>
         <br>
         לדוגמה: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>הערה</b></font> <br>
+        <warn><b>הערה</b></warn> <br>
         לניתוח קבצי טקסט רגילים ללא כותרות עמודות, השתמש ב-<b>חילוץ ביטוי רגולרי</b> במקום.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        נתח בייטים של נתוני XML באמצעות <font color="#00BFFF">xpath</font> וצור רשימת מספרים.
+        נתח בייטים של נתוני XML באמצעות <title>xpath</title> וצור רשימת מספרים.
         ]]>
     </string>
     <string name="action_parse_xml">ניתוח XML</string>
@@ -44,13 +44,13 @@
         זה יכול לשמש גם לניתוח קבצי טקסט רגילים עם מספר אחד בכל שורה. <br>
         <br>
         לדוגמה, נתח טקסט: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         עם ביטוי רגולרי: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         קרא בייטים של נתונים מקובץ. <br>
         <br>
-        תגי <font color="#03DAC5">נתיב</font> נתמכים: <br>
+        תגי <highlight>נתיב</highlight> נתמכים: <br>
         <br>
         %s <br>
         <br>
-        תגי <font color="#03DAC5">שם קובץ</font> נתמכים: <br>
+        תגי <highlight>שם קובץ</highlight> נתמכים: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         כתוב בייטים של נתונים לקובץ. <br>
         <br>
-        תגי <font color="#03DAC5"><b>נתיב</b></font> נתמכים: <br>
+        תגי <highlight><b>נתיב</b></highlight> נתמכים: <br>
         <br>
         %s <br>
         <br>
-        תגי <font color="#03DAC5"><b>שם קובץ</b></font> נתמכים: <br>
+        תגי <highlight><b>שם קובץ</b></highlight> נתמכים: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         בהתאם לסוג מפעיל זרימת העבודה, ניתן לשנות כללים באופן קבוע או זמני. <br>
         <br>
         תכונות ניתנות לשינוי: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; הביטוי הרגולרי <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; התיאור <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; העדיפות <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: חסימה, <no_translate>false</no_translate>: אפשור <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; החל על: <br>
         &ensp; 1: שיחה, 2: SMS, 3: שניהם, 0: השבתה <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; מחרוזת מזהה ערוץ ההתראה<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: דחייה, 1: השתקה, 2: ניתוק <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… או <no_translate>null</no_translate> עבור כל SIM.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         נרמל תבניות מספריות ממקורות צד שלישי לפורמט ביטוי רגולרי. <br>
         <br>
         לדוגמה, כדי למפות <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         ל- <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         הוסף שתי פעולות <b>החלף מספר</b>: <br>
-        &ensp; - החלף `<font color="#fa7f71">(\\+)</font>` ב-``<br>
-        &ensp; - החלף `<font color="#fa7f71">(#)</font>` ב-`<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - החלף `<error>(\\+)</error>` ב-``<br>
+        &ensp; - החלף `<error>(#)</error>` ב-`<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">החלף מספר</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">משך זמן (דקות)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        הקש על כפתור <font color="#03DAC5">בדיקה</font> כדי להפעיל זרימת עבודה זו ידנית.
+        הקש על כפתור <highlight>בדיקה</highlight> כדי להפעיל זרימת עבודה זו ידנית.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         אוטומט הרצת משימות לפי לוחות זמנים מבוססי זמן. <br>
         <br>
         מקרי שימוש: <br>
-        &ensp; - <font color="#888888">הורד מספרי ספאם מרישום FTC-DNC כל יום.</font> <br>
+        &ensp; - <sample>הורד מספרי ספאם מרישום FTC-DNC כל יום.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">גיבוי אוטומטי כל יום ושמור רק את 7 הגיבויים האחרונים.</font> <br>
+        &ensp; - <sample>גיבוי אוטומטי כל יום ושמור רק את 7 הגיבויים האחרונים.</sample> <br>
         ]]>
     </string>
     <string name="trigger">הפעל</string>
     <string name="delay_in_seconds">השהיה (שניות)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        תכונה זו משנה באופן זמני את צלצול ברירת המחדל של המערכת לפני תחילת הצלצול ומחזירה אותו לאחר <font color="#03DAC5">%d שניות</font>, כשעד אז הצלצול צפוי להתחיל. <br>
+        תכונה זו משנה באופן זמני את צלצול ברירת המחדל של המערכת לפני תחילת הצלצול ומחזירה אותו לאחר <highlight>%d שניות</highlight>, כשעד אז הצלצול צפוי להתחיל. <br>
         <br>
         טלפונים מסוימים מציעים תכונות כמו <b>רטט תחילה ואז צלצול</b> שעשויות לדחות את הצלצול, למשל, ב-6 שניות. במקרה כזה, הגדל את ההשהיה הזו בהתאם.
         ]]>

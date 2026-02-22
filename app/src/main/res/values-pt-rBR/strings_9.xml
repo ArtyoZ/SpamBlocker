@@ -11,11 +11,11 @@
 
     <string name="help_action_header">
         <![CDATA[
-        - <font color="#03DAC5"><b>Teste</b></font><br>
+        - <highlight><b>Teste</b></highlight><br>
         Essas ações serão executadas imediatamente, para verificar se foram configuradas corretamente,
         ou talvez você só queira executar este fluxo de trabalho manualmente.<br>
         <br>
-        - <font color="#00BFFF"><b>Novo</b></font><br>
+        - <title><b>Novo</b></title><br>
             Crie uma nova ação, várias ações podem ser encadeadas para completar uma tarefa complexa.<br>
             Esses pontos verdes ou vermelhos entre os itens indicam se eles são encadeáveis ou não.
         ]]>
@@ -26,7 +26,7 @@
         Configurações de backup automático. <br>
         <br>
         Ele suporta agendamento de rotação, por exemplo: <br>
-        &ensp; <font color="#888888">Mantenha apenas os últimos sete backups diários. </font>
+        &ensp; <sample>Mantenha apenas os últimos sete backups diários. </sample>
         ]]>
     </string>
     <string name="everyday">Todos os dias</string>
@@ -40,10 +40,10 @@
         <![CDATA[
         O formato do arquivo de backup é um json compactado com gzip, você pode abri-lo e editá-lo com qualquer compactador.<br>
         <br>
-        - <font color="#00BFFF"><b>Incluir Banco de Dados de Spam</b></font><br>
+        - <title><b>Incluir Banco de Dados de Spam</b></title><br>
         Pressione longamente o botão para também exportar/importar o banco de dados de spam.<br>
         <br>
-        <font color="#ffa500">Observação:</font><br>
+        <warn>Observação:</warn><br>
         &ensp; Incluir o banco de dados de spam no arquivo de backup aumentará significativamente seu tamanho,
         já que o banco de dados será atualizado regularmente, isso geralmente é desnecessário, a menos que você queira cloná-lo
         para outro telefone.<br>
@@ -57,15 +57,15 @@
     </string-array>
     <string name="help_regex_action_add_mode">
         <![CDATA[
-        -<font color="#00BFFF"><b>Criar</b></font><br>
+        -<title><b>Criar</b></title><br>
         &ensp; Sempre crie uma nova regra regex.<br>
         <br>
-        - <font color="#00BFFF"><b>Substituir</b></font><br>
+        - <title><b>Substituir</b></title><br>
         &ensp; Ele tentará encontrar uma regra existente que tenha a mesma <b>descrição</b>. <br>
         &ensp;&ensp; - Se encontrada, será substituída.<br>
         &ensp;&ensp; - Se não for encontrada, uma nova regra será criada, da mesma forma que <b>Criar</b>.<br>
         <br>
-        - <font color="#00BFFF"><b>Mesclar</b></font><br>
+        - <title><b>Mesclar</b></title><br>
         &ensp;- Se uma regra com a mesma descrição existir, os novos números serão mesclados nela,<br>
          números duplicados serão removidos automaticamente.<br>
         &ensp;- Se não existir, uma nova regra será criada, da mesma forma que <b>Criar</b>.<br>

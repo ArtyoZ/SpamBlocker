@@ -11,11 +11,11 @@
 
     <string name="help_action_header">
         <![CDATA[
-        - <font color="#03DAC5"><b>Test</b></font><br>
+        - <highlight><b>Test</b></highlight><br>
         Queste azioni verranno eseguite immediatamente, per verificare se sono state impostate correttamente,
         o forse vuoi solo eseguire manualmente questo flusso di lavoro.<br>
         <br>
-        - <font color="#00BFFF"><b>Nuovo</b></font><br>
+        - <title><b>Nuovo</b></title><br>
             Crea una nuova azione, è possibile concatenare più azioni per completare un\'attività complessa.<br>
             I punti verdi o rossi tra gli elementi indicano se sono concatenabili o meno.
         ]]>
@@ -26,7 +26,7 @@
         Impostazioni di backup automatico. <br>
         <br>
         Supporta la pianificazione della rotazione, ad esempio: <br>
-        &ensp; <font color="#888888">Mantieni solo gli ultimi sette backup giornalieri. </font>
+        &ensp; <sample>Mantieni solo gli ultimi sette backup giornalieri. </sample>
         ]]>
     </string>
     <string name="everyday">Ogni Giorno</string>
@@ -40,10 +40,10 @@
         <![CDATA[
         Il formato del file di backup è un json compresso gzip, puoi aprirlo e modificarlo con qualsiasi programma di archiviazione.<br>
         <br>
-        - <font color="#00BFFF"><b>Includi Database Spam</b></font><br>
+        - <title><b>Includi Database Spam</b></title><br>
         Premi a lungo il pulsante per esportare/importare anche il database spam.<br>
         <br>
-        <font color="#ffa500">Nota:</font><br>
+        <warn>Nota:</warn><br>
         &ensp; L\'inclusione del database spam nel file di backup aumenterà significativamente le sue dimensioni,
         poiché il database verrà aggiornato regolarmente, questo di solito non è necessario, a meno che tu non voglia clonarlo
         su un altro telefono.<br>
@@ -57,15 +57,15 @@
     </string-array>
     <string name="help_regex_action_add_mode">
         <![CDATA[
-        -<font color="#00BFFF"><b>Crea</b></font><br>
+        -<title><b>Crea</b></title><br>
         &ensp; Crea sempre una nuova regola regex.<br>
         <br>
-        - <font color="#00BFFF"><b>Sostituisci</b></font><br>
+        - <title><b>Sostituisci</b></title><br>
         &ensp; Cercherà di trovare una regola esistente che abbia la stessa <b>descrizione</b>. <br>
         &ensp;&ensp; - Se trovata, verrà sovrascritta.<br>
         &ensp;&ensp; - Se non trovata, verrà creata una nuova regola, come con <b>Crea</b>.<br>
         <br>
-        - <font color="#00BFFF"><b>Unisci</b></font><br>
+        - <title><b>Unisci</b></title><br>
         &ensp;- Se esiste una regola con la stessa descrizione, i nuovi numeri verranno uniti ad essa,<br>
          i numeri duplicati verranno rimossi automaticamente.<br>
         &ensp;- Se non esiste, verrà creata una nuova regola, come con <b>Crea</b>.<br>

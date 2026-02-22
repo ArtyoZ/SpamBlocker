@@ -5,7 +5,7 @@
         <br>
         Si l\'heure de début est supérieure à l\'heure de fin, par exemple, 20h00 -> 07h00, cela signifie la période de 20h00 le soir à 07h00 le lendemain matin. <br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 10</b></font>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Ces drapeaux modifient le comportement de correspondance de l\'expression régulière. <br>
             <br>
 
-            <font color="#00BFFF"><b>Numéro brut</b></font> : <br>
-            &ensp; Lorsque activé, le numéro de téléphone ne sera pas optimisé, le <font color="#03DAC5"><b>+</b></font>
-            et les <font color="#03DAC5"><b>zéros initiaux</b></font> seront conservés, utile pour différencier les numéros de téléphone nationaux.<br>
+            <title><b>Numéro brut</b></title> : <br>
+            &ensp; Lorsque activé, le numéro de téléphone ne sera pas optimisé, le <highlight><b>+</b></highlight>
+            et les <highlight><b>zéros initiaux</b></highlight> seront conservés, utile pour différencier les numéros de téléphone nationaux.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ignorer l\'indicatif du pays</b></font> : <br>
-            &ensp; Lorsque activé, le <font color="#fa7f71">+</font> initial et l\'<font color="#fa7f71">indicatif du pays</font>
+            <title><b>Ignorer l\'indicatif du pays</b></title> : <br>
+            &ensp; Lorsque activé, le <error>+</error> initial et l\'<error>indicatif du pays</error>
              seront supprimés d\'un numéro international.<br>
             <br>
-            Par exemple, <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> et
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> deviendront tous deux <font color="#03DAC5">12345</font>,
+            Par exemple, <error>+33</error><highlight>12345</highlight> et
+            <error>+44</error><highlight>12345</highlight> deviendront tous deux <highlight>12345</highlight>,
             ce qui vous permet d\'utiliser une expression régulière plus simple `123.*` au lieu de `(33|44)*123.*` pour faire correspondre les numéros internationaux.<br>
             <br>
 
-            <font color="#00BFFF"><b>Sensible à la casse</b></font>:<br>
-            &ensp; Par défaut, la correspondance de l\'expression régulière est insensible à la casse, <font color="#03DAC5"><b>a</b></font>
-              correspondrait à la fois à <font color="#03DAC5"><b>a</b></font> et à <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Sensible à la casse</b></title>:<br>
+            &ensp; Par défaut, la correspondance de l\'expression régulière est insensible à la casse, <highlight><b>a</b></highlight>
+              correspondrait à la fois à <highlight><b>a</b></highlight> et à <highlight><b>A</b></highlight>. <br>
             &ensp; Activez ceci pour la rendre sensible à la casse. <br>
         ]]>
     </string>

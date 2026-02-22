@@ -41,25 +41,25 @@
     </string>
     <string name="help_foreign_number">
         <![CDATA[
-        Blockiere alle internationalen Anrufe, außer denen aus deinem eigenen Land, mit dem Regex <font color="#fa7f71"><b>\\+(?!39).*</b></font>.
+        Blockiere alle internationalen Anrufe, außer denen aus deinem eigenen Land, mit dem Regex <error><b>\\+(?!39).*</b></error>.
           Anrufe, die diese Regel passieren, werden nicht sofort zugelassen, sie werden von anderen Regeln überprüft. <br>
         <br>
-        <font color="#ffa500">Ändere</font> <b>39</b> zu deiner Landesvorwahl. <br>
+        <warn>Ändere</warn> <b>39</b> zu deiner Landesvorwahl. <br>
         <br>
         Regex-Aufschlüsselung: <br>
         &ensp; - Das <b>Raw Number</b>-Regex-Flag behält das führende <b>+</b> bei, andernfalls wird es vor der Überprüfung entfernt. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> stimmt mit jeder Nummer überein, die mit <b>+</b> beginnt und nicht von <b>39</b> gefolgt wird (ausländische Nummern).
+        &ensp; - <error><b>\\+(?!39)</b></error> stimmt mit jeder Nummer überein, die mit <b>+</b> beginnt und nicht von <b>39</b> gefolgt wird (ausländische Nummern).
         ]]>
     </string>
     <string name="help_private_number">
         <![CDATA[
         Auch bekannt als <b>Unbekannte Nummer</b> oder <b>Leere Nummer</b>, es sind leere Zeichenfolgen, die
          durch eine der folgenden Optionen abgeglichen werden können: <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; ein <font color="#fa7f71">leeres</font> Regex-Feld. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; ein <error>leeres</error> Regex-Feld. <br>
         <br>
-        Die <font color="#ea86ff">Priorität</font> ist auf <font color="#ea86ff">20</font> eingestellt, um andere Funktionen wie <b>Wiederholter Anruf</b> zu überschreiben,
+        Die <priority>Priorität</priority> ist auf <priority>20</priority> eingestellt, um andere Funktionen wie <b>Wiederholter Anruf</b> zu überschreiben,
         sodass sie immer blockiert werden, selbst wenn sie sich wiederholen.
         ]]>
     </string>
@@ -83,7 +83,7 @@
         <![CDATA[
         Dieser Schalter dient zum schnellen Deaktivieren der App, nützlich, wenn du einen bestimmten Anruf oder eine Nachricht erwartest. <br>
         <br>
-        Du kannst ihn auch über die <font color="#6ed0ff"><b>Schnelleinstellungen im Dropdown-Menü</b></font> umschalten. <br>
+        Du kannst ihn auch über die <minor><b>Schnelleinstellungen im Dropdown-Menü</b></minor> umschalten. <br>
         <br>
         Anruf- und SMS-Filterung müssen auch unten separat aktiviert werden, sie funktionieren nur, wenn dies aktiviert ist.
         ]]>
@@ -99,10 +99,10 @@
          betrifft diese benutzerdefinierte Kachel nur bestimmte Regeln. <br>
         <br>
         Dieses Setup umfasst sowohl eine Regex-Regel als auch einen Workflow. Wenn die Kachel ist: <br>
-        &ensp; - <font color="#03DAC5"><b>An</b></font> <br>
+        &ensp; - <highlight><b>An</b></highlight> <br>
         &emsp;  Dieser Workflow wird ausgeführt, bevor Anrufe gefiltert werden, er aktiviert die Regex-Regel. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Aus</b></font> <br>
+        &ensp; - <sample><b>Aus</b></sample> <br>
         &emsp;  Dieser Workflow wird niemals ausgeführt, die Regel wird niemals funktionieren. <br>
         <br>
         Kurz gesagt, <b>wenn die Kachel an ist, ist die Regel an, und umgekehrt</b>.
@@ -117,8 +117,8 @@
         Erfordert Android 12+. <br>
         <br>
         Dies wird zwei Regeln für SIM 2 hinzufügen: <br>
-        &ensp; - Kontakte zulassen, <font color="#ea86ff">Priorität 12</font>. <br>
-        &ensp; - Alles andere blockieren, <font color="#ea86ff">Priorität 11</font>.
+        &ensp; - Kontakte zulassen, <priority>Priorität 12</priority>. <br>
+        &ensp; - Alles andere blockieren, <priority>Priorität 11</priority>.
         Dies überschreibt Einstellungen wie Wiederholter Anruf, sodass diese immer blockiert werden, auch wenn sie sich wiederholen.
         ]]>
     </string>

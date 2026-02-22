@@ -5,7 +5,7 @@
         <br>
         إذا كان وقت البدء أكبر من وقت الانتهاء، على سبيل المثال، 20:00 -> 07:00، فهذا يعني الفترة من 20:00 مساءً إلى 07:00 صباح اليوم التالي. <br>
         <br>
-        <font color="#ea86ff"><b>الأولوية: 10</b></font>
+        <priority><b>الأولوية: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             تغير هذه العلامات سلوك مطابقة التعبير النمطي (regex). <br>
             <br>
 
-            <font color="#00BFFF"><b>الرقم الخام</b></font>: <br>
-            &ensp; عند التمكين، لن يتم تحسين الرقم، وستظل <font color="#03DAC5"><b>+</b></font>
-            و <font color="#03DAC5"><b>الأصفار البادئة</b></font> موجودة، وهو مفيد للتمييز بين الأرقام المحلية.<br>
+            <title><b>الرقم الخام</b></title>: <br>
+            &ensp; عند التمكين، لن يتم تحسين الرقم، وستظل <highlight><b>+</b></highlight>
+            و <highlight><b>الأصفار البادئة</b></highlight> موجودة، وهو مفيد للتمييز بين الأرقام المحلية.<br>
             <br>
 
-            <font color="#00BFFF"><b>تجاهل رمز الدولة</b></font>: <br>
-            &ensp; عند التمكين، ستتم إزالة <font color="#fa7f71">+</font> البادئة و <font color="#fa7f71">رمز الدولة</font>
+            <title><b>تجاهل رمز الدولة</b></title>: <br>
+            &ensp; عند التمكين، ستتم إزالة <error>+</error> البادئة و <error>رمز الدولة</error>
              من الرقم الدولي.<br>
             <br>
-            على سبيل المثال، سيصبح كل من <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> و
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> <font color="#03DAC5">12345</font>،
+            على سبيل المثال، سيصبح كل من <error>+33</error><highlight>12345</highlight> و
+            <error>+44</error><highlight>12345</highlight> <highlight>12345</highlight>،
             وهذا يسمح لك باستخدام تعبير نمطي أبسط `123.*` بدلاً من `(33|44)*123.*` لمطابقة الأرقام الدولية.<br>
             <br>
 
-            <font color="#00BFFF"><b>حساس لحالة الأحرف</b></font>:<br>
-            &ensp; افتراضيًا، مطابقة التعبير النمطي لا تميز بين حالة الأحرف، حيث تتطابق <font color="#03DAC5"><b>a</b></font>
-              مع كل من <font color="#03DAC5"><b>a</b></font> و <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>حساس لحالة الأحرف</b></title>:<br>
+            &ensp; افتراضيًا، مطابقة التعبير النمطي لا تميز بين حالة الأحرف، حيث تتطابق <highlight><b>a</b></highlight>
+              مع كل من <highlight><b>a</b></highlight> و <highlight><b>A</b></highlight>. <br>
             &ensp; قم بتمكين هذا لجعلها حساسة لحالة الأحرف. <br>
         ]]>
     </string>

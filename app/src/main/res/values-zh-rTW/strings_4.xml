@@ -5,7 +5,7 @@
         <br>
         如果開始時間晚於結束時間，例如 20:00 -> 07:00，表示從晚上 20:00 到隔天早上 07:00 的時段。<br>
         <br>
-        <font color="#ea86ff"><b>優先順序：10</b></font>
+        <priority><b>優先順序：10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             這些標誌改變了正規表達式的匹配行為。<br>
             <br>
 
-            <font color="#00BFFF"><b>原始號碼</b></font>：<br>
-            &ensp; 啟用後，號碼將不會被優化，<font color="#03DAC5"><b>+</b></font>
-            和 <font color="#03DAC5"><b>開頭的 0</b></font> 將保留，有助於區分國內號碼。<br>
+            <title><b>原始號碼</b></title>：<br>
+            &ensp; 啟用後，號碼將不會被優化，<highlight><b>+</b></highlight>
+            和 <highlight><b>開頭的 0</b></highlight> 將保留，有助於區分國內號碼。<br>
             <br>
 
-            <font color="#00BFFF"><b>忽略國碼</b></font>：<br>
-            &ensp; 啟用後，國際號碼開頭的 <font color="#fa7f71">+</font> 和 <font color="#fa7f71">國碼</font>
+            <title><b>忽略國碼</b></title>：<br>
+            &ensp; 啟用後，國際號碼開頭的 <error>+</error> 和 <error>國碼</error>
              將被移除。<br>
             <br>
-            例如，<font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> 和
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> 都將變成 <font color="#03DAC5">12345</font>，
+            例如，<error>+33</error><highlight>12345</highlight> 和
+            <error>+44</error><highlight>12345</highlight> 都將變成 <highlight>12345</highlight>，
             這讓您可以使用更簡單的正規表達式 `123.*` 來匹配國際號碼，而不是 `(33|44)*123.*`。<br>
             <br>
 
-            <font color="#00BFFF"><b>區分大小寫</b></font>：<br>
-            &ensp; 預設情況下，正規表達式匹配不區分大小寫，<font color="#03DAC5"><b>a</b></font>
-              會同時匹配 <font color="#03DAC5"><b>a</b></font> 和 <font color="#03DAC5"><b>A</b></font>。<br>
+            <title><b>區分大小寫</b></title>：<br>
+            &ensp; 預設情況下，正規表達式匹配不區分大小寫，<highlight><b>a</b></highlight>
+              會同時匹配 <highlight><b>a</b></highlight> 和 <highlight><b>A</b></highlight>。<br>
             &ensp; 啟用此選項可使其區分大小寫。<br>
         ]]>
     </string>

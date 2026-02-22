@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        Kueri nomor telepon masuk secara online secara real-time. <br>
+        Query nomor masuk secara daring secara waktu nyata. <br>
         <br>
-        Beberapa titik akhir API akan dikueri secara bersamaan, dengan hasil pertama yang diterima digunakan dan semua hasil berikutnya diabaikan. <br>
+        Beberapa endpoint API akan dipanggil secara bersamaan, dengan hasil pertama yang diterima digunakan dan semua hasil selanjutnya diabaikan. <br>
         <br>
-        Prioritasnya paling rendah secara default, yang berarti hanya akan dipicu ketika panggilan melewati semua aturan lainnya.<br>
+        Ini memiliki prioritas terendah secara default, artinya akan dipicu hanya setelah panggilan melewati semua aturan lokal.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas Default: -1</b></font>
+        <priority><b>Prioritas Default: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">Permintaan Instan</string>
@@ -37,23 +37,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        Ekstrak <font color="#00BFFF">kategori</font> dan <font color="#00BFFF">komentar</font>
+        Ekstrak <title>kategori</title> dan <title>komentar</title>
          dari hasil kueri dan tampilkan dalam notifikasi serta log riwayat. (opsional)<br>
         <br>
         Contoh, untuk hasil kueri ini: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - Ekstrak <font color="#00BFFF">kategori</font> saja: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - Ekstrak <title>kategori</title> saja: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - Ekstrak <font color="#00BFFF">kategori</font> dan <font color="#00BFFF">komentar</font>: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - Ekstrak <title>kategori</title> dan <title>komentar</title>: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">Urai Hasil</string>
@@ -100,13 +100,13 @@
         Regex ini menyaring angka yang sesuai, angka masuk yang tidak sesuai dengan regex ini akan dilewatkan pemeriksaannya.<br>
         <br>
         - Hanya memeriksa <b>nomor-nomor internasional</b>:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - Hanya memeriksa <b>nomor-nomor domestik</b>:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - Periksa <b>angka apa pun</b>:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">Memeriksa: %s, prioritas: %s</string>

@@ -66,76 +66,76 @@
     <string name="auto_detect_cc_permission">A permissão READ_PHONE_STATE é necessária para detectar o código do país.</string>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>Deslize para a esquerda</b></font> para excluí-lo.<br>
+        <highlight><b>Deslize para a esquerda</b></highlight> para excluí-lo.<br>
         <br>
         A maioria dos elementos da IU semelhantes a cartões neste aplicativo está associada a gestos de deslizamento,
-        alguns dos quais também suportam <font color="#03DAC5"><b>deslizar para a direita</b></font>, por exemplo, os registros de histórico.
+        alguns dos quais também suportam <highlight><b>deslizar para a direita</b></highlight>, por exemplo, os registros de histórico.
         ]]>
     </string>
     <string name="bug_number">Se este for um número válido, reporte-o no github.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; O código do país.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; A parte doméstica.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; O número completo, incluindo código do país e parte doméstica, sem + ou 0s à frente.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; O número de origem que pode conter + ou 0s à frente.<br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Números de um dígito serão preenchidos com um zero à esquerda, por exemplo: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; torna-se <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Estes valores não serão preenchidos, por exemplo: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; torna-se <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Estes podem ser usados para simular um cronograma de rotação, por exemplo: <br>
-        &emsp; <font color="#888888">Realize backups diários e mantenha apenas os sete backups mais recentes.</font> <br>
+        &emsp; <sample>Realize backups diários e mantenha apenas os sete backups mais recentes.</sample> <br>
         <br>
-        <font color="#ffa500"><b>Nota:</b></font><br>
+        <warn><b>Nota:</b></warn><br>
          Estas tags de tempo suportam operações aritméticas simples, como
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          e
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="skip_alpha_empty_number">Pular número alfa ou vazio.</string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; O conteúdo do SMS.<br>
         ]]>
     </string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; Escape o conteúdo entre colchetes, usado para conteúdo dentro de aspas. <br>
         ]]>
     </string>

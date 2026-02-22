@@ -43,7 +43,7 @@
         <![CDATA[
         此功能需要權限：<br>
         <br>
-        <font color="#00BFFF">%s</font><br>
+        <title>%s</title><br>
         <br>
         必須在系統設定中手動啟用。<br>
         要開啟該設定頁面嗎？

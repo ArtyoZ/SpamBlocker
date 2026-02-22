@@ -4,9 +4,9 @@
     <![CDATA[
     如果号码因以下原因被阻止，则自动举报该号码： <br>
     <br>
-    &ensp; - <font color="#fa7f71">非联系人</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> 认证 <br>
-    &ensp; - <font color="#fa7f71">号码正则表达式</font> <br>
+    &ensp; - <error>非联系人</error>  <br>
+    &ensp; - <error>STIR/SHAKEN</error> 认证 <br>
+    &ensp; - <error>号码正则表达式</error> <br>
     <br>
     这不影响手动举报。
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         将CSV数据字节解析为号码列表。 <br>
         <br>
-        包含号码的列<b>必须</b>命名为 <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>。 <br>
+        包含号码的列<b>必须</b>命名为 <title><b><no_translate>pattern</no_translate></b></title>。 <br>
         <br>
         对于列头名称不同的第三方CSV文件，使用<b>列映射</b>将其映射到
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>。 <br>
+        <title><b><no_translate>pattern</no_translate></b></title>。 <br>
         <br>
         例如： <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>注意</b></font> <br>
+        <warn><b>注意</b></warn> <br>
         对于没有列标题的纯文本文件解析，请改用<b>正则表达式提取</b>。
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        使用<font color="#00BFFF">xpath</font>解析XML数据字节并生成号码列表。
+        使用<title>xpath</title>解析XML数据字节并生成号码列表。
         ]]>
     </string>
     <string name="action_parse_xml">解析XML</string>
@@ -44,13 +44,13 @@
         这也可用于解析每行一个号码的纯文本文件。 <br>
         <br>
         例如，解析文本： <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         使用正则表达式： <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         从文件读取数据字节。 <br>
         <br>
-        支持的<font color="#03DAC5">路径</font>标签： <br>
+        支持的<highlight>路径</highlight>标签： <br>
         <br>
         %s <br>
         <br>
-        支持的<font color="#03DAC5">文件名</font>标签： <br>
+        支持的<highlight>文件名</highlight>标签： <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         将数据字节写入文件。 <br>
         <br>
-        支持的<font color="#03DAC5"><b>路径</b></font>标签： <br>
+        支持的<highlight><b>路径</b></highlight>标签： <br>
         <br>
         %s <br>
         <br>
-        支持的<font color="#03DAC5"><b>文件名</b></font>标签： <br>
+        支持的<highlight><b>文件名</b></highlight>标签： <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         根据工作流程触发类型，规则可以永久或临时修改。 <br>
         <br>
         可修改属性： <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; 正则表达式 <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; 描述 <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; 优先级 <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: 阻止, <no_translate>false</no_translate>: 允许 <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; 适用于： <br>
         &ensp; 1: 来电, 2: 短信, 3: 两者, 0: 禁用 <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; 通知渠道 ID 字符串<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: 拒接, 1: 静音, 2: 挂断 <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… 或 <no_translate>null</no_translate> 表示任意 SIM 卡。
         ]]>
     </string>
@@ -142,13 +142,13 @@
         将第三方来源的数字模式规范化为正则表达式格式。 <br>
         <br>
         例如，要将 <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         映射到 <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         添加两个<b>替换号码</b>操作： <br>
-        &ensp; - 将`<font color="#fa7f71">(\\+)</font>`替换为``<br>
-        &ensp; - 将`<font color="#fa7f71">(#)</font>`替换为`<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - 将`<error>(\\+)</error>`替换为``<br>
+        &ensp; - 将`<error>(#)</error>`替换为`<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">替换号码</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">持续时间（分钟）</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        轻触<font color="#03DAC5">测试</font>按钮以手动运行此工作流程。
+        轻触<highlight>测试</highlight>按钮以手动运行此工作流程。
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         自动按时间表运行任务。 <br>
         <br>
         用例： <br>
-        &ensp; - <font color="#888888">每天从FTC-DNC注册表下载骚扰电话号码。</font> <br>
+        &ensp; - <sample>每天从FTC-DNC注册表下载骚扰电话号码。</sample> <br>
         <br>
-        &ensp; - <font color="#888888">每天自动备份并仅保留最近7个备份。</font> <br>
+        &ensp; - <sample>每天自动备份并仅保留最近7个备份。</sample> <br>
         ]]>
     </string>
     <string name="trigger">触发器</string>
     <string name="delay_in_seconds">延迟（秒）</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        此功能在铃声响起前暂时更改系统默认铃声，并在 <font color="#03DAC5">%d 秒</font> 后恢复，届时铃声预计已响起。 <br>
+        此功能在铃声响起前暂时更改系统默认铃声，并在 <highlight>%d 秒</highlight> 后恢复，届时铃声预计已响起。 <br>
         <br>
         某些手机提供诸如<b>先振动后响铃</b>之类的功能，这可能会将响铃推迟例如 6 秒。在这种情况下，请相应地增加此延迟。
         ]]>

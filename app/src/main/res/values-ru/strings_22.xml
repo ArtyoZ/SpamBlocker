@@ -4,9 +4,9 @@
     <![CDATA[
     Автоматически сообщать о номере, если он заблокирован по следующим причинам: <br>
     <br>
-    &ensp; - <font color="#fa7f71">Неконтакты</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> аттестация <br>
-    &ensp; - <font color="#fa7f71">Регулярное выражение номера</font> <br>
+    &ensp; - <error>Неконтакты</error>  <br>
+    &ensp; - <error>STIR/SHAKEN</error> аттестация <br>
+    &ensp; - <error>Регулярное выражение номера</error> <br>
     <br>
     Это не влияет на ручную отчетность.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         Разобрать байты данных CSV в список номеров. <br>
         <br>
-        Столбец, содержащий номера, <b>должен</b> быть назван <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        Столбец, содержащий номера, <b>должен</b> быть назван <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         Для сторонних CSV-файлов с другими названиями заголовков сопоставьте их с
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> используя <b>Сопоставление столбцов</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> используя <b>Сопоставление столбцов</b>. <br>
         <br>
         Например: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Примечание</b></font> <br>
+        <warn><b>Примечание</b></warn> <br>
         Для разбора простых текстовых файлов без заголовков столбцов используйте вместо этого <b>Извлечение по регулярному выражению</b>.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        Разобрать байты данных XML, используя <font color="#00BFFF">xpath</font>, и сгенерировать список номеров.
+        Разобрать байты данных XML, используя <title>xpath</title>, и сгенерировать список номеров.
         ]]>
     </string>
     <string name="action_parse_xml">Разобрать XML</string>
@@ -44,13 +44,13 @@
         Это также можно использовать для разбора простых текстовых файлов с одним номером на строку. <br>
         <br>
         Например, разобрать текст: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         с регулярным выражением: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         Читать байты данных из файла. <br>
         <br>
-        Поддерживаемые теги <font color="#03DAC5">пути</font>: <br>
+        Поддерживаемые теги <highlight>пути</highlight>: <br>
         <br>
         %s <br>
         <br>
-        Поддерживаемые теги <font color="#03DAC5">имени файла</font>: <br>
+        Поддерживаемые теги <highlight>имени файла</highlight>: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         Записать байты данных в файл. <br>
         <br>
-        Поддерживаемые теги <font color="#03DAC5"><b>пути</b></font>: <br>
+        Поддерживаемые теги <highlight><b>пути</b></highlight>: <br>
         <br>
         %s <br>
         <br>
-        Поддерживаемые теги <font color="#03DAC5"><b>имени файла</b></font>: <br>
+        Поддерживаемые теги <highlight><b>имени файла</b></highlight>: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         В зависимости от типа триггера рабочего процесса правила могут быть изменены постоянно или временно. <br>
         <br>
         Изменяемые атрибуты: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; Регулярное выражение <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; Описание <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; Приоритет <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Блокировать, <no_translate>false</no_translate>: разрешить <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Применить к: <br>
         &ensp; 1: звонок, 2: SMS, 3: оба, 0: отключить <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; Строка ID канала уведомлений<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: отклонить, 1: бесшумно, 2: отбой <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… Или <no_translate>null</no_translate> для любой SIM-карты.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         Нормализовать числовые шаблоны из сторонних источников в формат регулярных выражений. <br>
         <br>
         Например, чтобы сопоставить <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         с <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         Добавьте два действия <b>Заменить номер</b>: <br>
-        &ensp; - Заменить `<font color="#fa7f71">(\\+)</font>` на ``<br>
-        &ensp; - Заменить `<font color="#fa7f71">(#)</font>` на `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - Заменить `<error>(\\+)</error>` на ``<br>
+        &ensp; - Заменить `<error>(#)</error>` на `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">Заменить номер</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Продолжительность (минуты)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Нажмите кнопку <font color="#03DAC5">Тест</font>, чтобы вручную запустить этот рабочий процесс.
+        Нажмите кнопку <highlight>Тест</highlight>, чтобы вручную запустить этот рабочий процесс.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         Автоматизируйте выполнение задач по расписанию. <br>
         <br>
         Варианты использования: <br>
-        &ensp; - <font color="#888888">Ежедневно загружайте номера спам-звонков из реестра FTC-DNC.</font> <br>
+        &ensp; - <sample>Ежедневно загружайте номера спам-звонков из реестра FTC-DNC.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Ежедневное автоматическое резервное копирование и хранение только последних 7 копий.</font> <br>
+        &ensp; - <sample>Ежедневное автоматическое резервное копирование и хранение только последних 7 копий.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Триггер</string>
     <string name="delay_in_seconds">Задержка (секунды)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Эта функция временно изменяет системный рингтон по умолчанию до начала звонка, а затем возвращает его обратно через <font color="#03DAC5">%d секунд</font>, к этому моменту ожидается, что звонок уже начался. <br>
+        Эта функция временно изменяет системный рингтон по умолчанию до начала звонка, а затем возвращает его обратно через <highlight>%d секунд</highlight>, к этому моменту ожидается, что звонок уже начался. <br>
         <br>
         Некоторые телефоны предлагают такие функции, как <b>Сначала вибрация, затем звонок</b>, которые могут отложить звонок, например, на 6 секунд.
          В этом случае увеличьте эту задержку соответствующим образом.

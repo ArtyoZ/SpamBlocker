@@ -4,9 +4,9 @@
     <![CDATA[
     الإبلاغ التلقائي عن الرقم إذا تم حظره للأسباب التالية: <br>
     <br>
-    &ensp; - <font color="#fa7f71">الأرقام غير الموجودة في جهات الاتصال</font>  <br>
-    &ensp; - <font color="#fa7f71">مصادقة STIR/SHAKEN</font> <br>
-    &ensp; - <font color="#fa7f71">نمط الرقم</font> <br>
+    &ensp; - <error>الأرقام غير الموجودة في جهات الاتصال</error>  <br>
+    &ensp; - <error>مصادقة STIR/SHAKEN</error> <br>
+    &ensp; - <error>نمط الرقم</error> <br>
     <br>
     هذا لا يؤثر على الإبلاغ اليدوي.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         تحليل بايتات بيانات CSV إلى قائمة أرقام. <br>
         <br>
-        يجب أن يكون العمود الذي يحتوي على الأرقام <b>مسمى</b> <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        يجب أن يكون العمود الذي يحتوي على الأرقام <b>مسمى</b> <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         لملفات CSV من جهات خارجية ذات أسماء رؤوس مختلفة، قم بتعيينها إلى
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> باستخدام <b>تعيين الأعمدة</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> باستخدام <b>تعيين الأعمدة</b>. <br>
         <br>
         على سبيل المثال: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>ملاحظة</b></font> <br>
+        <warn><b>ملاحظة</b></warn> <br>
         لتحليل ملفات النص العادي بدون رؤوس أعمدة، استخدم <b>استخراج تعبير منتظم</b> بدلاً من ذلك.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        تحليل بايتات بيانات XML باستخدام <font color="#00BFFF">xpath</font> وتوليد قائمة أرقام.
+        تحليل بايتات بيانات XML باستخدام <title>xpath</title> وتوليد قائمة أرقام.
         ]]>
     </string>
     <string name="action_parse_xml">تحليل XML</string>
@@ -44,13 +44,13 @@
         يمكن استخدام هذا أيضًا لتحليل ملفات النص العادي التي تحتوي على رقم واحد لكل سطر. <br>
         <br>
         على سبيل المثال، تحليل النص: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         باستخدام التعبير المنتظم: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         قراءة بايتات البيانات من ملف. <br>
         <br>
-        علامات <font color="#03DAC5">المسار</font> المدعومة: <br>
+        علامات <highlight>المسار</highlight> المدعومة: <br>
         <br>
         %s <br>
         <br>
-        علامات <font color="#03DAC5">اسم الملف</font> المدعومة: <br>
+        علامات <highlight>اسم الملف</highlight> المدعومة: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         كتابة بايتات البيانات إلى ملف. <br>
         <br>
-        علامات <font color="#03DAC5"><b>المسار</b></font> المدعومة: <br>
+        علامات <highlight><b>المسار</b></highlight> المدعومة: <br>
         <br>
         %s <br>
         <br>
-        علامات <font color="#03DAC5"><b>اسم الملف</b></font> المدعومة: <br>
+        علامات <highlight><b>اسم الملف</b></highlight> المدعومة: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         اعتمادًا على نوع مشغل سير العمل، يمكن تعديل القواعد بشكل دائم أو مؤقت. <br>
         <br>
         السمات القابلة للتعديل: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; التعبير النمطي <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; الوصف <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; الأولوية <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: حظر, <no_translate>false</no_translate>: سماح <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; تنطبق على: <br>
         &ensp; 1: مكالمة, 2: رسالة نصية (SMS), 3: كلاهما, 0: تعطيل <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; سلسلة معرف قناة الإشعارات<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: رفض, 1: صامت, 2: إنهاء المكالمة <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… أو <no_translate>null</no_translate> لأي شريحة SIM.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         تطبيع الأنماط الرقمية من مصادر خارجية إلى تنسيق التعبير المنتظم. <br>
         <br>
         على سبيل المثال، لتعيين <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         إلى <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         أضف عمليتين لـ <b>استبدال الرقم</b>: <br>
-        &ensp; - استبدل `<font color="#fa7f71">(\\+)</font>` بـ ``<br>
-        &ensp; - استبدل `<font color="#fa7f71">(#)</font>` بـ `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - استبدل `<error>(\\+)</error>` بـ ``<br>
+        &ensp; - استبدل `<error>(#)</error>` بـ `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">استبدال الرقم</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">المدة (بالدقائق)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        اضغط على زر <font color="#03DAC5">الاختبار</font> لتشغيل سير العمل هذا يدويًا.
+        اضغط على زر <highlight>الاختبار</highlight> لتشغيل سير العمل هذا يدويًا.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         أتمتة تشغيل المهام في جداول زمنية محددة. <br>
         <br>
         حالات الاستخدام: <br>
-        &ensp; - <font color="#888888">تنزيل أرقام المكالمات المزعجة من سجل FTC-DNC يوميًا.</font> <br>
+        &ensp; - <sample>تنزيل أرقام المكالمات المزعجة من سجل FTC-DNC يوميًا.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">النسخ الاحتياطي التلقائي يوميًا والاحتفاظ بآخر 7 نسخ احتياطية فقط.</font> <br>
+        &ensp; - <sample>النسخ الاحتياطي التلقائي يوميًا والاحتفاظ بآخر 7 نسخ احتياطية فقط.</sample> <br>
         ]]>
     </string>
     <string name="trigger">المشغل</string>
     <string name="delay_in_seconds">تأخير (ثواني)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        تقوم هذه الميزة بتغيير نغمة الرنين الافتراضية للنظام مؤقتًا قبل بدء الرنين ثم إعادتها بعد <font color="#03DAC5">%d ثانية</font>، وهو الوقت الذي يُتوقع أن يكون الرنين قد بدأ فيه. <br>
+        تقوم هذه الميزة بتغيير نغمة الرنين الافتراضية للنظام مؤقتًا قبل بدء الرنين ثم إعادتها بعد <highlight>%d ثانية</highlight>، وهو الوقت الذي يُتوقع أن يكون الرنين قد بدأ فيه. <br>
         <br>
         توفر بعض الهواتف ميزات مثل <b>اهتزاز أولاً ثم رنين</b> والتي قد تؤخر الرنين بمقدار 6 ثوانٍ على سبيل المثال. في هذه الحالة، قم بزيادة هذا التأخير وفقًا لذلك.
         ]]>

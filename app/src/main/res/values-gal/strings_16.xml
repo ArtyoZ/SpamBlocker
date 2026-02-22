@@ -3,7 +3,7 @@
         <![CDATA[
         As APIs configuradas aquí utilizaranse tanto para o informe automático como para o informe manual.<br>
         <br>
-        <h6><font color="#00BFFF">- Privacidade</font></h6>
+        <h6><title>- Privacidade</title></h6>
         Os puntos finais da API verán o teu:<br>
         <br>
          &ensp; - Enderezo IP<br>
@@ -12,39 +12,39 @@
         <br>
         Nada máis será informado.<br>
         <br>
-        <h6><font color="#00BFFF">- Informe manual</font></h6>
+        <h6><title>- Informe manual</title></h6>
 		Se algunha API está activada aquí, toca un número de teléfono no historial de chamadas, haberá un botón de informe.<br>
 		<br>
 		O número de teléfono será informado a <b>todas</b> as APIs.<br>
 		<br>
-        <h6><font color="#00BFFF">- Informe automático</font></h6>
-		<font color="#6ED0ff"><b>Atraso do informe</b></font><br>
+        <h6><title>- Informe automático</title></h6>
+		<minor><b>Atraso do informe</b></minor><br>
         Cando unha chamada é bloqueada, haberá un tempo de espera dunha hora antes de que se informe.
         Se o número de teléfono se permite máis tarde debido a repeticións ou se volve chamar dentro deste tempo de espera,
         considérase un número de teléfono non-spam e o informe será cancelado.<br>
         <br>
-		<font color="#6ED0ff"><b>Tipo de informe</b></font><br>
-		1. <font color="#fa7f71"><b>Non</b></font> informará de:<br>
+		<minor><b>Tipo de informe</b></minor><br>
+		1. <error><b>Non</b></error> informará de:<br>
         <br>
-        - <font color="#fa7f71">Números de teléfono ou contido de SMS</font><br>
-        - <font color="#fa7f71">Números de teléfono permitidos</font><br>
-        - <font color="#fa7f71">Probas</font><br>
+        - <error>Números de teléfono ou contido de SMS</error><br>
+        - <error>Números de teléfono permitidos</error><br>
+        - <error>Probas</error><br>
         E os seguintes tipos bloqueados:<br>
-        - <font color="#fa7f71">Regex de contacto</font><br>
-        - <font color="#fa7f71">Regex de grupo de contactos</font><br>
-        - <font color="#fa7f71">Base de datos</font><br>
-        - <font color="#fa7f71">Modo reunión</font><br>
-        - <font color="#fa7f71">Consulta instantánea</font> (para evitar que o número de teléfono do punto final da API se filtre a outros competidores)<br>
+        - <error>Regex de contacto</error><br>
+        - <error>Regex de grupo de contactos</error><br>
+        - <error>Base de datos</error><br>
+        - <error>Modo reunión</error><br>
+        - <error>Consulta instantánea</error> (para evitar que o número de teléfono do punto final da API se filtre a outros competidores)<br>
         <br>
-		2. <font color="#03DAC5"><b>Si</b></font> informará de números de teléfono bloqueados por:<br>
+		2. <highlight><b>Si</b></highlight> informará de números de teléfono bloqueados por:<br>
         <br>
-        - <font color="#03DAC5">Non-Contacto</font><br>
-        - <font color="#03DAC5">Atestación STIR</font><br>
-        - <font color="#03DAC5">Regex de número de teléfono</font><br>
+        - <highlight>Non-Contacto</highlight><br>
+        - <highlight>Atestación STIR</highlight><br>
+        - <highlight>Regex de número de teléfono</highlight><br>
         <br>
 		3. Unha excepción:<br>
 		<br>
-        Cando é bloqueado por <font color="#03DAC5">Base de datos</font> e o número de teléfono foi engadido orixinalmente por unha consulta API,
+        Cando é bloqueado por <highlight>Base de datos</highlight> e o número de teléfono foi engadido orixinalmente por unha consulta API,
          informarase de volta a esa API para aumentar a puntuación de valoración. <br>
         <br>
          Por exemplo, se o número de teléfono foi engadido por

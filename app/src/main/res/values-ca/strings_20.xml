@@ -31,14 +31,14 @@
     <br>
     <b>Opcions:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Durada</b></font> <br>
+    - <title><b>Durada</b></title> <br>
     Les trucades es bloquejaran durant aquest període (en segons). <br>
     <br>
-    - <font color="#00BFFF"><b>Inclou les bloquejades</b></font> <br>
+    - <title><b>Inclou les bloquejades</b></title> <br>
     Aquesta funció s\'activarà després que es bloquegi qualsevol trucada. <br>
     <br>
-    - <font color="#00BFFF"><b>Inclou les contestades</b></font> <br>
-    - <font color="#00BFFF"><b>Durada mínima de trucada</b></font> <br>
+    - <title><b>Inclou les contestades</b></title> <br>
+    - <title><b>Durada mínima de trucada</b></title> <br>
     Aquesta funció s\'activarà després que una trucada sigui contestada però la durada de la trucada sigui massa curta, ja que
      aquesta trucada també es considera una trucada spam. <br>
     ]]>
@@ -48,10 +48,10 @@
     Després de bloquejar una trucada, també bloqueja les trucades posteriors que eviten totes les regles durant un període. <br>
     <br>
     <b>Cas d\'ús:</b> <br>
-    <font color="#888888"> &ensp; Alguns spammers utilitzen números amb prefixos comuns, que es poden bloquejar amb regles d\'expressions regulars.
-      Després de bloquejar la primera trucada, canviaran a números aleatoris, fent trucades que poden evitar totes les regles. </font><br>
+    <sample> &ensp; Alguns spammers utilitzen números amb prefixos comuns, que es poden bloquejar amb regles d\'expressions regulars.
+      Després de bloquejar la primera trucada, canviaran a números aleatoris, fent trucades que poden evitar totes les regles. </sample><br>
     <br>
-    <font color="#ffa500"><b>Nota:</b></font> <br>
+    <warn><b>Nota:</b></warn> <br>
       Això també implica el risc de bloquejar una trucada vàlida, és un compromís.<br>
     <br>
     Això crearà tant <b>una regla d\'expressions regulars</b> com <b>un flux de treball</b>, consulta la informació sobre eines de l\'acció interna <b>Limitació de trucades</b> per a una explicació detallada.<br>
@@ -67,14 +67,14 @@
     <br>
     <b>Opcions:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Durada</b></font> <br>
+    - <title><b>Durada</b></title> <br>
     Els missatges SMS es bloquejaran durant aquest període (en segons). <br>
     <br>
-    - <font color="#00BFFF"><b>Límit de recompte</b></font> <br>
+    - <title><b>Límit de recompte</b></title> <br>
     Permet les primeres N notificacions. <br>
     <br>
-    - <font color="#00BFFF"><b>Inclòs el contestat</b></font> <br>
-    - <font color="#00BFFF"><b>Durada mínima de la trucada</b></font> <br>
+    - <title><b>Inclòs el contestat</b></title> <br>
+    - <title><b>Durada mínima de la trucada</b></title> <br>
     Si una trucada contestada és massa curta, també es considera una trucada spam i activarà aquesta funció. <br>
     ]]>
     </string>
@@ -83,7 +83,7 @@
     Silencia les notificacions SMS consecutives del mateix número durant un període. <br>
     <br>
     <b>Casos d\'ús:</b> <br>
-    <font color="#888888">Permet les tres primeres notificacions d\'un número i silencia la resta en un minut.</font> <br>
+    <sample>Permet les tres primeres notificacions d\'un número i silencia la resta en un minut.</sample> <br>
     <br>
     Això crearà tant <b>una regla d\'expressions regulars</b> com <b>un flux de treball</b>, consulta la informació sobre eines de l\'acció interna <b>Limitació de SMS</b> per a una explicació detallada.<br>
     ]]>

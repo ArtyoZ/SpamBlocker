@@ -22,26 +22,26 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>Número de telèfon</b></font>:<br>
+        <title><b>Número de telèfon</b></title>:<br>
         &ensp; El mode per defecte, l\'expressió regular coincidirà amb el número de telèfon.<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>Contactes</b></font>:<br>
+        <title><b>Contactes</b></title>:<br>
         &ensp; L\'expressió regular coincidirà amb el nom del contacte associat al número entrant.<br>
         &ensp;  - Cas d\'ús:<br>
-        &emsp; <font color="#888888">Bloqueja tots els no-contactes el cap de setmana amb l\'expressió regular `.*`. </font><br>
+        &emsp; <sample>Bloqueja tots els no-contactes el cap de setmana amb l\'expressió regular `.*`. </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>Grup de contactes</b></font>:<br>
+        <title><b>Grup de contactes</b></title>:<br>
         &ensp; L\'expressió regular coincidirà amb el nom del grup de contactes associat al número entrant,
                  afectant tots els contactes d\'aquest grup, de manera que no cal que els afegiu individualment,
                  i no cal actualitzar-lo fins i tot quan hi hagi canvis de personal.<br>
         &ensp;  - Cas d\'ús:<br>
-        &emsp; <font color="#888888">Bloqueja tots els companys de feina el cap de setmana bloquejant el grup de contactes \"Feina\". </font> <br>
+        &emsp; <sample>Bloqueja tots els companys de feina el cap de setmana bloquejant el grup de contactes \"Feina\". </sample> <br>
         ]]>
     </string>
 </resources>

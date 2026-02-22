@@ -9,7 +9,7 @@
         <br>
         Это относится как к звонкам, так и к сообщениям.<br>
         <br>
-        <font color="#ea86ff"><b>Стандартный приоритет: 20</b></font>
+        <priority><b>Стандартный приоритет: 20</b></priority>
         ]]>
     </string>
     <string name="in_meeting">Режим собрания</string>
@@ -27,11 +27,11 @@
     </string>
     <string name="auth_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{basic_auth(username:password)}</b></font><br>
+        - <title><b>{basic_auth(username:password)}</b></title><br>
         &ensp; Для API, требующих простую HTTP-авторизацию. Например:<br>
-        &emsp; <font color="#888888">{basic_auth(111:222)}</font><br>
+        &emsp; <sample>{basic_auth(111:222)}</sample><br>
         &ensp; будет преобразовано в:<br>
-        &emsp; <font color="#888888">Authorization: Basic MTExOjIyMg== </font><br>
+        &emsp; <sample>Authorization: Basic MTExOjIyMg== </sample><br>
         ]]>
     </string>
     <string name="initial_row_count">Начальное количество строк</string>

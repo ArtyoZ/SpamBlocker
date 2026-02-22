@@ -3,39 +3,39 @@
         <![CDATA[
         כללי המספר חלים הן על מספר השיחה הנכנסת והן על מספר ה-SMS.<br>
         <br>
-        <h5><font color="#00BFFF"> - דוגמאות</font></h5>
+        <h5><title> - דוגמאות</title></h5>
         ישנן כמה דוגמאות ב<a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">דף הוויקי</a>.<br>
         <br>
-        <h5><font color="#00BFFF"> - אופטימיזציית Regex</font></h5>
+        <h5><title> - אופטימיזציית Regex</title></h5>
         כדי לפשט את ה-regex,
-          <font color="#fa7f71"><b>+</b></font> ו<font color="#fa7f71"><b>אפסים מובילים</b></font>
+          <error><b>+</b></error> ו<error><b>אפסים מובילים</b></error>
           מוסרים לפני הבדיקה, לדוגמה:<br>
         &emsp; כל הפורמטים הללו:<br>
         &emsp;&emsp; 123456789 &emsp;(מספר רגיל)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(עם <font color="#fa7f71"><b>+</b></font> מוביל)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(עם קידומת חיוג ארצית <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(שני <font color="#fa7f71"><b>0</b></font>ים)<br>
-        &emsp; כולם <b>נבדקים</b> כמספר 123456789 וניתן להתאימם באמצעות <font color="#03DAC5"><b>123.*</b></font><br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(עם <error><b>+</b></error> מוביל)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(עם קידומת חיוג ארצית <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(שני <error><b>0</b></error>ים)<br>
+        &emsp; כולם <b>נבדקים</b> כמספר 123456789 וניתן להתאימם באמצעות <highlight><b>123.*</b></highlight><br>
         אופטימיזציית מספר זו ניתנת ל<b>ביטול</b> עם דגל ה-regex `Raw Number`.<br>
         <br>
-        <h5><font color="#00BFFF"> - כמה תבניות אופייניות</font></h5>
-        &ensp; - כל מספר: <font color="#03DAC5"><b>.*</b></font> (ה-regex .* שווה ערך לתו הכללי * באפליקציות אחרות) <br>
-        &ensp; - מספר מדויק: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - מתחיל ב-400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - מסתיים ב-123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 ספרות: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - קצר מ-5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - ארוך מ-10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - מספר לא ידוע/פרטי/ריק: <font color="#03DAC5"><b>.{0}</b></font> או <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - התאמה לאחת מהתבניות: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - מתחיל ב-400, עם קידומת מדינה 11 או בלעדיה: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - כמה תבניות אופייניות</title></h5>
+        &ensp; - כל מספר: <highlight><b>.*</b></highlight> (ה-regex .* שווה ערך לתו הכללי * באפליקציות אחרות) <br>
+        &ensp; - מספר מדויק: <highlight><b>12345</b></highlight> <br>
+        &ensp; - מתחיל ב-400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - מסתיים ב-123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 ספרות: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - קצר מ-5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - ארוך מ-10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - מספר לא ידוע/פרטי/ריק: <highlight><b>.{0}</b></highlight> או <highlight><b>^$</b></highlight> <br>
+        &ensp; - התאמה לאחת מהתבניות: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - מתחיל ב-400, עם קידומת מדינה 11 או בלעדיה: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - קשור לממשק המשתמש</font></h5>
-        בטל סימון בתיבות הסימון כדי להשבית את הכלל, <font color="#fa7f71"><b>החלק שמאלה כדי למחוק</b></font> אותו.<br>
+        <h5><title> - קשור לממשק המשתמש</title></h5>
+        בטל סימון בתיבות הסימון כדי להשבית את הכלל, <error><b>החלק שמאלה כדי למחוק</b></error> אותו.<br>
         <br>
         הרשימה <b>מוצגת</b> בסדר עדיפות יורד, תיאור עולה ותבנית עולה.<br>
         <br>
-        <h5><font color="#00BFFF"> - ייבוא כללים מקובץ .csv</font></h5>
+        <h5><title> - ייבוא כללים מקובץ .csv</title></h5>
         לחץ לחיצה ארוכה על כפתור ה\'הוספה\' כדי לייבא מספרים מקובץ .csv.<br>
         <brg>
         ]]>

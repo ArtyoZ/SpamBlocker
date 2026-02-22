@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        務必在系統設定中<font color="#fa7f71"><b>關閉簡訊應用程式的通知</b></font>，
+        務必在系統設定中<error><b>關閉簡訊應用程式的通知</b></error>，
  以避免重複通知。<br>
 <br>
 如果簡訊應用程式強制要求通知權限，您可以保持授予該權限，
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>來電者名稱</b></font>:<br>
+        <title><b>來電者名稱</b></title>:<br>
         &ensp; 正規表示式將針對來電者顯示名稱(CNAP)進行比對。 <br>
         <br>
         在通話記錄中，如果存在，來電者名稱將會出現在電話號碼之後的括號中，例如: <br>
-        &ensp; <font color="#888888">12345 (顯示名稱)</font> <br>
+        &ensp; <sample>12345 (顯示名稱)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">來電者名稱</string>
@@ -44,13 +44,13 @@
     </string>
     <string name="explanation_forwarded_call">
         <![CDATA[
-        這是<b>電信業者特定</b>的，有些電信業者會將轉接電話格式化為兩個號碼用「&」連接，例如 <font color="#888888">222&111</font>。 <br>
+        這是<b>電信業者特定</b>的，有些電信業者會將轉接電話格式化為兩個號碼用「&」連接，例如 <sample>222&111</sample>。 <br>
         <br>
         在此格式中： <br>
-        &ensp; - 第一部分 (<font color="#888888">222</font>) 通常是轉接號碼。 <br>
-        &ensp; - 第二部分 (<font color="#888888">111</font>) 是原始號碼。 <br>
+        &ensp; - 第一部分 (<sample>222</sample>) 通常是轉接號碼。 <br>
+        &ensp; - 第二部分 (<sample>111</sample>) 是原始號碼。 <br>
         <br>
-        也可能有 <font color="#888888">333&111</font> 和 <font color="#888888">444&111</font>，其中原始號碼保持不變，轉接號碼會改變。
+        也可能有 <sample>333&111</sample> 和 <sample>444&111</sample>，其中原始號碼保持不變，轉接號碼會改變。
         ]]>
     </string>
     <string name="raw">原始</string>
@@ -64,14 +64,14 @@
         <br>
         <b>選項</b>： <br>
         <br>
-        <font color="#00BFFF"><b>原始</b></font> <br>
-        查詢/報告原始號碼(<font color="#888888">222&111</font>)，如果 API 支援此格式。 <br>
+        <title><b>原始</b></title> <br>
+        查詢/報告原始號碼(<sample>222&111</sample>)，如果 API 支援此格式。 <br>
         <br>
-        <font color="#00BFFF"><b>原始號碼</b></font> <br>
-        查詢/報告原始號碼(<font color="#888888">111</font>)，這是針對不支援原始格式的 API 的一種變通方法。 <br>
+        <title><b>原始號碼</b></title> <br>
+        查詢/報告原始號碼(<sample>111</sample>)，這是針對不支援原始格式的 API 的一種變通方法。 <br>
         <br>
-        <font color="#00BFFF"><b>轉接號碼</b></font> <br>
-        查詢/報告轉接號碼(<font color="#888888">222</font>)。 <br>
+        <title><b>轉接號碼</b></title> <br>
+        查詢/報告轉接號碼(<sample>222</sample>)。 <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">此轉接號碼已修改為 %s。</string>
@@ -80,7 +80,7 @@
     <string name="geo_location_rule">地理位置規則</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>地理位置</b></font>:<br>
+        <title><b>地理位置</b></title>:<br>
         &ensp; 此正則表達式將對電話號碼的地理位置進行匹配。 <br>
         <br>
         &ensp; 這依賴於 Google 的函式庫 <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -104,8 +104,8 @@
         <br>
         將 ___ 佔位符替換為您實際的區域。 <br>
         <br>
-        語法 <font color="#fa7f71">(?!___$).*</font> 表示： <br>
-        &ensp; 匹配任何不是 <font color="#fa7f71">___</font> 的文字。
+        語法 <error>(?!___$).*</error> 表示： <br>
+        &ensp; 匹配任何不是 <error>___</error> 的文字。
         ]]>
     </string>
 </resources>

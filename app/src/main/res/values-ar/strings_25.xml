@@ -19,9 +19,9 @@
         هي مرتبطة بسير العمل وسيتم حذفها تلقائيًا عند حذف سير العمل. <br>
         <br>
         <b>حالة الاستخدام</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; في السيناريوهات التي تتضمن تحديثات تدريجية، يجب حفظ متغير يشبه المؤشر وإعادة استخدامه عبر تشغيلات متتالية.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">تحميل العلامة</string>
@@ -45,13 +45,13 @@
         <br>
         <b>الخيارات</b> <br>
         <br>
-        <font color="#00BFFF"><b>نوع التحليل</b></font> <br>
+        <title><b>نوع التحليل</b></title> <br>
         تحليل قيمة الوسم، يدعم التعبيرات النمطية و XPath. <br>
         <br>
-        <font color="#00BFFF"><b>اسم الوسم</b></font> <br>
+        <title><b>اسم الوسم</b></title> <br>
         اسم الوسم الذي سيتم إنشاؤه. <br>
-        على سبيل المثال، إذا كان اسم الوسم هو <font color="#03DAC5">my_token</font>،
-         فيمكنك استخدام <font color="#03DAC5">{my_token}</font> في استعلامات HTTP اللاحقة. <br>
+        على سبيل المثال، إذا كان اسم الوسم هو <highlight>my_token</highlight>،
+         فيمكنك استخدام <highlight>{my_token}</highlight> في استعلامات HTTP اللاحقة. <br>
     ]]>
     </string>
     <string name="max"><short>الأقصى</short></string>
@@ -66,15 +66,15 @@
         قم بتمييز الطابع الزمني بألوان مختلفة بناءً على مدى حداثة السجل. <br>
         <br>
         <b>حالة الاستخدام</b>: <br>
-        &ensp; <font color="#888888">مراجعة مكالمات اليوم في الليل عن طريق فحص جميع السجلات ذات الطابع الزمني الأزرق. </font>
+        &ensp; <sample>مراجعة مكالمات اليوم في الليل عن طريق فحص جميع السجلات ذات الطابع الزمني الأزرق. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        يجب أن يكون إما <font color="#00BFFF"><no_translate>today</no_translate></font> أو
+        يجب أن يكون إما <title><no_translate>today</no_translate></title> أو
         رقم متبوع بـ <b><no_translate>min</no_translate></b>
-        (مثال: <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (مثال: <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">قيمة غير صالحة، راجع التلميح للمساعدة</string>
@@ -85,33 +85,33 @@
         <br>
         بشكل افتراضي، <br>
         <br>
-        - <font color="#03DAC5">قواعد القائمة البيضاء</font> لها أولوية <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">مثال: جهات الاتصال، RepeatedCall، RecentApps، إلخ </font><br>
+        - <highlight>قواعد القائمة البيضاء</highlight> لها أولوية <priority>10</priority> <br>
+        &ensp; <sample>مثال: جهات الاتصال، RepeatedCall، RecentApps، إلخ </sample><br>
         <br>
-        - <font color="#fa7f71">قواعد القائمة السوداء</font> لها أولوية <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">مثال: STIR، Database، إلخ </font> <br>
+        - <error>قواعد القائمة السوداء</error> لها أولوية <priority>0</priority> <br>
+        &ensp; <sample>مثال: STIR، Database، إلخ </sample> <br>
         <br>
         عندما يتم تمكينهما معًا، تتجاوز قواعد القائمة البيضاء قواعد القائمة السوداء لأن 10 > 0. <br>
         <br>
-        بالنسبة لقواعد regex، يمكن ضبط الأولوية على أي رقم بين <font color="#ea86ff">-2147483648</font>
-          و <font color="#ea86ff">214748367</font>. <br>
+        بالنسبة لقواعد regex، يمكن ضبط الأولوية على أي رقم بين <priority>-2147483648</priority>
+          و <priority>214748367</priority>. <br>
         يمكن لقواعد مختلفة أن تكون لها نفس الأولوية طالما أنها من نفس النوع، ومع ذلك،
-          <font color="#ffa500"><b>لا تقم أبدًا بتعيين نفس الأولوية لكل من قواعد القائمة البيضاء والقائمة السوداء</b></font>، قد يسبب ذلك سلوكًا عشوائيًا. <br>
+          <warn><b>لا تقم أبدًا بتعيين نفس الأولوية لكل من قواعد القائمة البيضاء والقائمة السوداء</b></warn>، قد يسبب ذلك سلوكًا عشوائيًا. <br>
         <br>
-        الميزة <font color="#00BFFF">وضع الاجتماع</font> لها أولوية <font color="#ea86ff">20</font> بشكل افتراضي،
+        الميزة <title>وضع الاجتماع</title> لها أولوية <priority>20</priority> بشكل افتراضي،
           لأنها تهدف إلى حظر أي مكالمات أثناء الاجتماع. <br>
-        و <font color="#ea86ff">-1</font> ل<font color="#00BFFF">الاستعلام الفوري</font>،
+        و <priority>-1</priority> ل<title>الاستعلام الفوري</title>،
           لذا يتم فحصها فقط بعد أن تمر المكالمة بجميع الفلاتر المحلية. <br>
         <br>
         <b>حالات الاستخدام</b> لتخصيص الأولوية: <br>
         <br>
-        - <font color="#888888">حظر رقم معين دائمًا، بغض النظر إذا تكرر</font> <br>
-         &ensp; قم بتعيين قاعدة بأولوية > 10 لتجاوز <font color="#00BFFF">المكالمة المتكررة</font>. <br>
+        - <sample>حظر رقم معين دائمًا، بغض النظر إذا تكرر</sample> <br>
+         &ensp; قم بتعيين قاعدة بأولوية > 10 لتجاوز <title>المكالمة المتكررة</title>. <br>
         <br>
-        - <font color="#888888">السماح برقم دائمًا</font> <br>
-         &ensp; قم بتعيينه إلى > 20 لتجاوز <font color="#00BFFF">وضع الاجتماع</font>. <br>
+        - <sample>السماح برقم دائمًا</sample> <br>
+         &ensp; قم بتعيينه إلى > 20 لتجاوز <title>وضع الاجتماع</title>. <br>
         <br>
-        - <font color="#888888">اختبار قاعدة regex</font> <br>
+        - <sample>اختبار قاعدة regex</sample> <br>
          &ensp; قم بتعيينه إلى 999 لتجاوز جميع الفلاتر الأخرى حتى لا تحتاج إلى تعطيلها مؤقتًا واحدةً تلو الأخرى.
     ]]>
     </string>

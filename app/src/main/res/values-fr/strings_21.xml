@@ -6,9 +6,9 @@
         Définir la sonnerie pour une fonctionnalité particulière, ou la mettre en sourdine. <br>
         <br>
         Par exemple, pour définir la sonnerie pour une règle d\'expression régulière : <br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         Les appels autorisés par cette règle joueront la sonnerie spécifiée.<br>
     ]]>
@@ -54,9 +54,9 @@
         autorisé par cette règle. <br>
         <br>
         <b>Cas d\'utilisation :<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; Définissez différentes sonneries pour des personnes particulières, des groupes de contacts ou des plages de numéros de téléphone.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="remote_setup">Configuration à distance</string>
@@ -93,8 +93,8 @@
         <br>
         Le flux de travail s\'exécute quotidiennement, il télécharge l\'ensemble complet de données de 90 jours lors de la première exécution, puis effectue uniquement des mises à jour incrémentielles lors des exécutions suivantes. <br>
         <br>
-        <font color="#ffa500"><b>Note :</b></font> <br>
-        <font color="#888888">&ensp; L\'ensemble de données est généralement mis à jour chaque jour de la semaine aux alentours de midi, heure de l\'Est. </font><br>
+        <warn><b>Note :</b></warn> <br>
+        <sample>&ensp; L\'ensemble de données est généralement mis à jour chaque jour de la semaine aux alentours de midi, heure de l\'Est. </sample><br>
         <br>
         Il est donc programmé à 18 h, car l\'ensemble de données devrait être disponible d\'ici là. <br>
     ]]>

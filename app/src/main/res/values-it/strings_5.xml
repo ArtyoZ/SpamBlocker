@@ -35,13 +35,13 @@
         <br>
         <b>Opzioni:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Entro Giorni</font></h6>
-        Le chiamate avvenute prima di <font color="#03DAC5">%s giorni</font> vengono ignorate.<br>
+        <h6><title>- Entro Giorni</title></h6>
+        Le chiamate avvenute prima di <highlight>%s giorni</highlight> vengono ignorate.<br>
         <br>
-        <h6><font color="#00BFFF">- Includi SMS</font></h6>
+        <h6><title>- Includi SMS</title></h6>
         Se abilitato, anche l\'invio di SMS a quel numero conta.<br>
         <br>
-        <font color="#ea86ff"><b>Priorità: 10</b></font>
+        <priority><b>Priorità: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -51,12 +51,12 @@
         Un caso d\'uso tipico:<br>
         &emsp; Hai appena ordinato una pizza in PizzaApp, presto ti chiamano per un rimborso perché stanno chiudendo. Quella chiamata verrebbe accettata se PizzaApp è abilitata qui. <br>
         <br>
-        L\'impostazione predefinita <font color="03DAC5"><b>5 Min</b></font> significa che qualsiasi chiamata verrebbe accettata se una delle app è stata utilizzata entro 5 minuti,
+        L\'impostazione predefinita <highlight><b>5 Min</b></highlight> significa che qualsiasi chiamata verrebbe accettata se una delle app è stata utilizzata entro 5 minuti,
         per `utilizzata` si intende attivata, disattivata, minimizzata o chiusa. <br>
         <br>
         Si applica solo alle chiamate, <b>non</b> ai messaggi di testo. <br>
         <br>
-        <font color="#ea86ff"><b>Priorità: 10</b></font>
+        <priority><b>Priorità: 10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">Il ritardo prima che la chiamata venga riagganciata.</string>
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Rifiuta</b></font>: <br>
+        - <title><b>Rifiuta</b></title>: <br>
          Come premere il tasto di rifiuto. Funziona in modo completamente silenzioso, la schermata di blocco non si attiverà.<br>
         <br>
-        - <font color="#00BFFF"><b>Silenzia</b></font>: <br>
+        - <title><b>Silenzia</b></title>: <br>
          Squillerà silenziosamente in sottofondo, dando l\'impressione al chiamante che eri non disponibile e hai perso la chiamata. <br>
         <br>
          Potrebbe anche essere utile se stai ricevendo ripetute chiamate spam; prolungherà la durata della chiamata, rendendola meno efficiente per gli spammer, scoraggiandoli potenzialmente dal richiamarti.<br>
         <br>
-        - <font color="#00BFFF"><b>Riaggancia</b></font>: <br>
+        - <title><b>Riaggancia</b></title>: <br>
         Rispondi e riaggancia la chiamata per evitare che vada alla segreteria telefonica. <br>
         <br>
         Quando la chiamata spam viene ricevuta durante una chiamata in corso, passerà a \"Rifiuta\"
          per evitare di riagganciare la chiamata in corso. <br>
         <br>
-        <font color="#FFA500">Nota</font> La schermata di blocco potrebbe attivarsi per un breve periodo,
+        <warn>Nota</warn> La schermata di blocco potrebbe attivarsi per un breve periodo,
         potresti anche sentire un tono di fine chiamata (alcuni telefoni offrono un\'opzione per silenziare questo suono). <br>
         <br>
         - Il <b>ritardo</b>: <br>

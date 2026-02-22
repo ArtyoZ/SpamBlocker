@@ -36,7 +36,7 @@
         Auf einen Blick können Sie mühelos überprüfen, ob die Verlaufsaufzeichnungen von den Regeln abgedeckt sind, sodass Sie sie nicht einzeln testen müssen. <br>
         <br>
 
-        <font color="#ffa500">Hinweis:</font><br>
+        <warn>Hinweis:</warn><br>
         Dies kann die Leistung beeinträchtigen, wenn es zu viele Regex-Regeln gibt. <br>
         <br>
         <b>Beispiele:</b> <br>
@@ -46,7 +46,7 @@
         &ensp; - Das zweite rote SMS-Symbol zeigt an, dass dieser SMS-Inhalt durch eine Inhaltsregel blockiert wird. <br>
         &ensp; - Das dritte rote Datenbank-Symbol zeigt an, dass diese Telefonnummer in der Spam-Telefonnummern-Datenbank vorhanden ist. <br>
         <br>
-        Diese Symbole sind nach <font color="#ea86ff"><b>Priorität</b></font> angeordnet, das <b>erste</b> Symbol zeigt
+        Diese Symbole sind nach <priority><b>Priorität</b></priority> angeordnet, das <b>erste</b> Symbol zeigt
         das Gesamtergebnis an. Diese Telefonnummern-Regel hat eine höhere Priorität, die SMS-Nachricht wird letztendlich dadurch zugelassen.<br>
         <br>
         <img src=\'ic_history_indicator_2\'/> <br>
@@ -65,7 +65,7 @@
         <![CDATA[
         MMS-Nachrichten sind normalerweise Spam. Es ist unnötig, sie zu aktivieren, es sei denn, Sie verwenden sie tatsächlich.<br>
         <br>
-        <font color="#ffa500">Hinweis:</font><br>
+        <warn>Hinweis:</warn><br>
         Gruppennachrichten sind MMS, keine SMS.<br>
         <br>
         MMS wird wie SMS behandelt, nur Textinhalte werden verarbeitet,
@@ -85,28 +85,28 @@
           OTP-Verifizierungen (One-Time Password) bestehen.<br>
         <br>
         Zum Beispiel SMS-Nachrichten wie:<br>
-        &ensp; <font color="#888888">Dein OTP ist: 1234.</font><br>
-        &ensp; <font color="#888888">Dies ist dein Verifizierungscode: 1234.</font><br>
-        &ensp; <font color="#888888">1234 ist dein Validierungscode.</font><br>
+        &ensp; <sample>Dein OTP ist: 1234.</sample><br>
+        &ensp; <sample>Dies ist dein Verifizierungscode: 1234.</sample><br>
+        &ensp; <sample>1234 ist dein Validierungscode.</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Inhalts-Regex</font></h5>
+        <h5><title>- Inhalts-Regex</title></h5>
         Diese Funktion gilt nur für Nachrichten, die mit dieser Regex übereinstimmen. Eine typische Regex wäre: <br>
-        <font color="#fa7f71">.*(otp|code).*</font><br>
+        <error>.*(otp|code).*</error><br>
         <br>
-        <h5><font color="#00BFFF">- Intervall</font></h5>
+        <h5><title>- Intervall</title></h5>
         Wenn eine nachfolgende OTP-Nachricht innerhalb dieses Zeitintervalls eintrifft, wird dies als
           Teil des Bombardements betrachtet und wird blockiert.<br>
         (Standard: 30 Sekunden)<br>
         <br>
         Dies blockiert alle folgenden Bomben, mit Ausnahme der ersten.<br>
         <br>
-        <h5><font color="#00BFFF">- Sperrbildschirmschutz</font></h5>
+        <h5><title>- Sperrbildschirmschutz</title></h5>
         Aktiviere dies, um alle Bomben im Sperrbildschirmmodus zu blockieren, einschließlich der ersten. <br>
         <br>
         Normalerweise sollte dein Bildschirm entsperrt sein, während du auf einen Verifizierungscode wartest.
         Wenn solche Nachrichten eintreffen, während sich das Gerät im Sperrbildschirmmodus befindet, handelt es sich wahrscheinlich um Bomben.<br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 20</b></font>
+        <priority><b>Priorität: 20</b></priority>
         ]]>
     </string>
     <string name="lockscreen_protection"><short>Sperrbildschirm</short></string>

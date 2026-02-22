@@ -42,15 +42,15 @@
         <![CDATA[
         Sono supportate solo le seguenti categorie di spam, qualsiasi altra categoria dall\'API dovrebbe essere mappata a una di esse.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; Segnala come numero valido, non spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; Il tipo di spam di fallback, utilizzato quando nessuna delle categorie di cui sopra si applica.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         Alcuni servizi ti invieranno prima un messaggio per informarti che una chiamata è imminente, in genere entro un minuto.<br>
         <br>
         Ad esempio, un messaggio SMS come:<br>
-        &ensp; <font color="#888888">[some service] Ti stiamo chiamando per informarti …, sentiti libero di rispondere.</font><br>
+        &ensp; <sample>[some service] Ti stiamo chiamando per informarti …, sentiti libero di rispondere.</sample><br>
         <br>
         Un\'espressione regolare per tale messaggio sarebbe:<br>
-        &ensp; <font color="#03DAC5"><b>.*rispondere.*</b></font> <br>
+        &ensp; <highlight><b>.*rispondere.*</b></highlight> <br>
         <br>
-        L\'impostazione predefinita <font color="#03DAC5"><b>120 Secondi</b></font> significa che tutte le chiamate saranno
+        L\'impostazione predefinita <highlight><b>120 Secondi</b></highlight> significa che tutte le chiamate saranno
         consentite nei successivi due minuti dopo aver ricevuto tale messaggio.<br>
         <br>
         Funziona sia per SMS normali che per SMS flash (SMS di classe 0).<br>
         <br>
-        <font color="#ea86ff"><b>Priorità: 10</b></font>
+        <priority><b>Priorità: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Il carattere jolly `*` è usato senza un punto precedente, intendi `.*`?</string>

@@ -22,26 +22,26 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>Número de Telefone</b></font>:<br>
+        <title><b>Número de Telefone</b></title>:<br>
         &ensp; O modo padrão, a expressão regular será aplicada ao número de telefone.<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>Contatos</b></font>:<br>
+        <title><b>Contatos</b></title>:<br>
         &ensp; A expressão regular será aplicada ao nome do contato associado ao número que está ligando.<br>
         &ensp;  - Caso de uso:<br>
-        &emsp; <font color="#888888">Bloqueie todos os não-contatos no fim de semana com a expressão regular `.*`. </font><br>
+        &emsp; <sample>Bloqueie todos os não-contatos no fim de semana com a expressão regular `.*`. </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>Grupo de Contato</b></font>:<br>
+        <title><b>Grupo de Contato</b></title>:<br>
         &ensp; A expressão regular será aplicada ao nome do grupo de contatos associado ao número que está ligando,
                  impactando todos os contatos desse grupo, assim você não precisa adicioná-los individualmente
                  e não é necessário atualizar mesmo com mudanças de pessoal.<br>
         &ensp;  - Caso de uso:<br>
-        &emsp; <font color="#888888">Bloqueie todos os colegas de trabalho no fim de semana bloqueando o grupo de contatos \"trabalho\". </font> <br>
+        &emsp; <sample>Bloqueie todos os colegas de trabalho no fim de semana bloqueando o grupo de contatos \"trabalho\". </sample> <br>
         ]]>
     </string>
 </resources>

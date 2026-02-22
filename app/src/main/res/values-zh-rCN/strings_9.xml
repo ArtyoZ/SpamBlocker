@@ -11,11 +11,11 @@
 
     <string name="help_action_header">
         <![CDATA[
-        - <font color="#03DAC5"><b>测试</b></font><br>
+        - <highlight><b>测试</b></highlight><br>
         这些操作将立即执行，用于检查是否设置正确，
         或者您可能只是想手动运行此工作流程。<br>
         <br>
-        - <font color="#00BFFF"><b>新建</b></font><br>
+        - <title><b>新建</b></title><br>
             创建一个新的操作，多个操作可以链接在一起以完成一项复杂的任务。<br>
             项目之间的绿色或红色点指示它们是否可链接。
         ]]>
@@ -26,7 +26,7 @@
         自动备份设置。<br>
         <br>
         它支持轮换计划，例如：<br>
-        &ensp; <font color="#888888">只保留最近七个每日备份。</font>
+        &ensp; <sample>只保留最近七个每日备份。</sample>
         ]]>
     </string>
     <string name="everyday">每天</string>
@@ -40,10 +40,10 @@
         <![CDATA[
         备份文件格式为gzip压缩的json，您可以使用任何压缩工具打开和编辑它。<br>
         <br>
-        - <font color="#00BFFF"><b>包含垃圾电话数据库</b></font><br>
+        - <title><b>包含垃圾电话数据库</b></title><br>
         长按按钮还可以导出/导入垃圾电话数据库。<br>
         <br>
-        <font color="#ffa500">注意：</font><br>
+        <warn>注意：</warn><br>
         &ensp;在备份文件中包含垃圾电话数据库会大大增加其大小，
         由于数据库会定期更新，这通常是不必要的，除非您想将其克隆到另一部手机。<br>
         ]]>
@@ -56,15 +56,15 @@
     </string-array>
     <string name="help_regex_action_add_mode">
         <![CDATA[
-        -<font color="#00BFFF"><b>创建</b></font><br>
+        -<title><b>创建</b></title><br>
         &ensp; 始终创建一个新的正则表达式规则。<br>
         <br>
-        - <font color="#00BFFF"><b>替换</b></font><br>
+        - <title><b>替换</b></title><br>
         &ensp; 它将尝试找到一个具有相同<b>描述</b>的现有规则。 <br>
         &ensp;&ensp; - 如果找到，它将被覆盖。<br>
         &ensp;&ensp; - 如果未找到，将创建一个新规则，与<b>创建</b>相同。<br>
         <br>
-        - <font color="#00BFFF"><b>合并</b></font><br>
+        - <title><b>合并</b></title><br>
         &ensp;- 如果存在具有相同描述的规则，则新号码将合并到其中，<br>
          重复的号码将被自动删除。<br>
         &ensp;- 如果不存在，将创建一个新规则，与<b>创建</b>相同。<br>

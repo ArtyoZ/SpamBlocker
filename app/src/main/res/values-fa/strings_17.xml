@@ -5,28 +5,28 @@
         <![CDATA[
         پس از شماره گیری یک شماره اضطراری، اجازه دادن به تمام تماس های ورودی برای مدتی.<br>
         <br>
-        <h5><font color="#00BFFF">- مدت زمان</font></h5>
-        تنظیمات پیش فرض <font color="#03DAC5"><b>120 دقیقه</b></font> به این معنی است که همه تماس ها در 120 دقیقه آینده پس از شماره گیری شماره اضطراری مجاز خواهند بود.<br>
+        <h5><title>- مدت زمان</title></h5>
+        تنظیمات پیش فرض <highlight><b>120 دقیقه</b></highlight> به این معنی است که همه تماس ها در 120 دقیقه آینده پس از شماره گیری شماره اضطراری مجاز خواهند بود.<br>
         <br>
-        <h5><font color="#00BFFF">- بررسی STIR</font></h5>
+        <h5><title>- بررسی STIR</title></h5>
          - هنگامی که غیرفعال است، همه تماس ها مجاز خواهند بود.<br>
          - هنگامی که فعال است، تماس هایی که گواهی STIR را قبول نمی کنند مجاز نخواهند بود، فقط تماس های "معتبر" و "تایید نشده" مجاز خواهند بود.<br>
         <br>
-        <h5><font color="#00BFFF">- شماره های اضافی</font></h5>
+        <h5><title>- شماره های اضافی</title></h5>
         شماره گیری هر شماره در این لیست نیز این ویژگی را فعال می کند.<br>
         <br>
         نیازی به اضافه کردن صریح شماره هایی مانند 911 در اینجا نیست، زیرا Android شامل یک لیست شماره اضطراری داخلی برای هر کشور است (به عنوان مثال: پلیس، آتش نشانی، آمبولانس).<br>
         <br>
         شماره ها را با کاما از هم جدا کنید، مانند:<br>
-        &ensp; <font color="#888888">111، 222، 3333</font><br>
+        &ensp; <sample>111، 222، 3333</sample><br>
         <br>
-        <h5><font color="#00BFFF">- بازنشانی</font></h5>
+        <h5><title>- بازنشانی</title></h5>
         اگر این ویژگی به اشتباه یا در حین آزمایش فعال شده است، این دکمه را فشار دهید تا بازنشانی شود.<br>
         <br>
-        <h5><font color="#00BFFF">- تست</font></h5>
+        <h5><title>- تست</title></h5>
         یک تماس خروجی را شبیه سازی کنید تا آزمایش کنید که آیا آن شماره یک شماره اضطراری است.<br>
         <br>
-        <font color="#ea86ff"><b>اولویت: حداکثر</b></font>
+        <priority><b>اولویت: حداکثر</b></priority>
         ]]>
     </string>
     <string name="reset">بازنشانی</string>
@@ -37,17 +37,17 @@
     <string name="additional_numbers">شماره های اضافی</string>
     <string name="path_tags">
         <![CDATA[
-        <font color="#00BFFF"><b>{sdcard}</b></font><br>
+        <title><b>{sdcard}</b></title><br>
         مسیر حافظه خارجی، مشابه:<br>
-        <font color="#888888">/storage/emulated/0</font><br>
+        <sample>/storage/emulated/0</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Download}</b></font><br>
+        <title><b>{Download}</b></title><br>
         مشابه:<br>
-        <font color="#888888">{sdcard}/Download</font><br>
+        <sample>{sdcard}/Download</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Documents}</b></font><br>
+        <title><b>{Documents}</b></title><br>
         مشابه:<br>
-        <font color="#888888">{sdcard}/Documents</font>
+        <sample>{sdcard}/Documents</sample>
         ]]>
     </string>
     <string name="call_to_number">شماره تماس</string>
@@ -59,8 +59,8 @@
         <br>
         یک مورد استفاده متداول:<br>
         &ensp; هنگامی که اعلانی مانند:<br>
-        &emsp; عنوان: <font color="#888888">به‌روزرسانی سفارش:</font><br>
-        &emsp; متن: <font color="#888888">سفارش شما توسط راننده گرفته شده است...</font><br>
+        &emsp; عنوان: <sample>به‌روزرسانی سفارش:</sample><br>
+        &emsp; متن: <sample>سفارش شما توسط راننده گرفته شده است...</sample><br>
         &ensp; راننده ممکن است سپس با شما تماس بگیرد تا جزئیات را تأیید کند.<br>
         <br>
         <b>مجوزهای مورد نیاز:</b> <br>
@@ -69,18 +69,18 @@
         <br>
         گزینه‌ها:<br>
         <br>
-        <h6><font color="#00BFFF">- برنامه</font></h6>
+        <h6><title>- برنامه</title></h6>
         این فقط اعلان‌های این برنامه را بررسی می‌کند.<br>
         <br>
-        <h6><font color="#00BFFF">- محتوای اعلان</font></h6>
+        <h6><title>- محتوای اعلان</title></h6>
         این عبارت باقاعده <b>هم عنوان و هم متن اعلان</b> را مطابقت می‌دهد.<br>
         مثالی برای مورد استفاده بالا:<br>
-        &emsp; <font color="#03DAC5">به‌روزرسانی سفارش.*توسط راننده گرفته شده.*</font><br>
+        &emsp; <highlight>به‌روزرسانی سفارش.*توسط راننده گرفته شده.*</highlight><br>
         <br>
-        <h6><font color="#00BFFF">- مدت زمان</font></h6>
+        <h6><title>- مدت زمان</title></h6>
         تماس‌ها در طول این مدت، که بر حسب دقیقه مشخص شده است، مجاز خواهند بود.<br>
         <br>
-        <font color="#ea86ff"><b>اولویت: ۱۰</b></font>
+        <priority><b>اولویت: ۱۰</b></priority>
         ]]>
     </string>
     <string name="notification_content">محتوای اعلان</string>

@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        شماره ورودی را به‌صورت آنلاین و در لحظه استعلام بگیرید. <br>
+        شماره ورودی را به صورت آنلاین و در زمان واقعی جستجو کنید. <br>
         <br>
-        چندین نقطه پایانی API به صورت همزمان استعلام می‌شوند و اولین نتیجه دریافتی استفاده شده و نتایج بعدی نادیده گرفته می‌شوند. <br>
+        چندین نقطه انتهایی API به‌صورت همزمان پرس و جو می‌شوند، و اولین نتیجه دریافت‌شده استفاده می‌شود و تمام نتایج بعدی نادیده گرفته می‌شوند. <br>
         <br>
-        به‌طور پیش‌فرض کمترین اولویت را دارد، به این معنی که فقط زمانی فعال می‌شود که تماس از تمام قوانین دیگر عبور کند.<br>
+        به‌طور پیش‌فرض کم‌ترین اولویت را دارد، به این معنی که فقط پس از عبور تماس از تمام قوانین محلی فعال می‌شود.<br>
         <br>
-        <font color="#ea86ff"><b>اولویت پیش‌فرض: -1</b></font>
+        <priority><b>اولویت پیش‌فرض: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">پرس و جوی آنی</string>
@@ -36,23 +36,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        <font color="#00BFFF">دسته</font> و <font color="#00BFFF">نظرات</font> را
+        <title>دسته</title> و <title>نظرات</title> را
          از نتیجه بررسی استخراج کرده و در اعلان و تاریخچه نمایش می‌دهد. (اختیاری)<br>
         <br>
         برای مثال، برای این نتیجه بررسی: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - فقط <font color="#00BFFF">دسته</font> را استخراج کنید: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - فقط <title>دسته</title> را استخراج کنید: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - هم <font color="#00BFFF">دسته</font> و هم <font color="#00BFFF">نظرات</font> را استخراج کنید: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - هم <title>دسته</title> و هم <title>نظرات</title> را استخراج کنید: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">تجزیه نتیجه</string>
@@ -91,13 +91,13 @@
         این عبارت باقاعده شماره‌ها را بر این اساس فیلتر می‌کند، شماره‌های ورودی که با این عبارت باقاعده مطابقت ندارند، از بررسی حذف می‌شوند.<br>
         <br>
         - فقط بررسی <b>شماره‌های بین‌المللی</b>:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - فقط بررسی <b>شماره‌های داخلی</b>:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - بررسی <b>هر شماره</b>:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">بررسی: %s، اولویت: %s</string>

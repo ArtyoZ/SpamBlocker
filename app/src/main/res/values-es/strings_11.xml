@@ -8,7 +8,7 @@
         <br>
         Se aplica tanto a llamadas como a mensajes.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridad predeterminada: 20</b></font>
+        <priority><b>Prioridad predeterminada: 20</b></priority>
         ]]>
     </string>
     <string name="in_meeting">Modo Reunión</string>
@@ -61,11 +61,11 @@
     </string>
     <string name="auth_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{basic_auth(usuario:contraseña)}</b></font><br>
+        - <title><b>{basic_auth(usuario:contraseña)}</b></title><br>
         &ensp; Para APIs que requieren autenticación básica HTTP. Por ejemplo:<br>
-        &emsp; <font color="#888888">{basic_auth(111:222)}</font><br>
+        &emsp; <sample>{basic_auth(111:222)}</sample><br>
         &ensp; se analizará como:<br>
-        &emsp; <font color="#888888">Authorization: Basic MTExOjIyMg== </font><br>
+        &emsp; <sample>Authorization: Basic MTExOjIyMg== </sample><br>
         ]]>
     </string>
 </resources>

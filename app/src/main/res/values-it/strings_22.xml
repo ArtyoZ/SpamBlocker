@@ -4,9 +4,9 @@
     <![CDATA[
     Segnala automaticamente il numero se bloccato per i seguenti motivi: <br>
     <br>
-    &ensp; - <font color="#fa7f71">Non-Contatti</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> attestazione <br>
-    &ensp; - <font color="#fa7f71">Espressione Regolare Numero</font> <br>
+    &ensp; - <error>Non-Contatti</error>  <br>
+    &ensp; - <error>STIR/SHAKEN</error> attestazione <br>
+    &ensp; - <error>Espressione Regolare Numero</error> <br>
     <br>
     Questo non influisce sulla segnalazione manuale.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         Analizza i byte di dati CSV in un elenco di numeri. <br>
         <br>
-        La colonna contenente i numeri <b>deve</b> essere denominata <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        La colonna contenente i numeri <b>deve</b> essere denominata <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         Per i file CSV di terze parti con nomi di intestazione diversi, mappali a
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> utilizzando il <b>Mapping colonne</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> utilizzando il <b>Mapping colonne</b>. <br>
         <br>
         Ad esempio: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Nota</b></font> <br>
+        <warn><b>Nota</b></warn> <br>
         Per l\'analisi di file di testo semplice senza intestazioni di colonna, usa invece <b>Estrai Regex</b>.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        Analizza i byte di dati XML utilizzando <font color="#00BFFF">xpath</font> e genera un elenco di numeri.
+        Analizza i byte di dati XML utilizzando <title>xpath</title> e genera un elenco di numeri.
         ]]>
     </string>
     <string name="action_parse_xml">Analizza XML</string>
@@ -44,13 +44,13 @@
         Questo può essere usato anche per analizzare file di testo semplice con un numero per riga. <br>
         <br>
         Ad esempio, analizza il testo: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         con regex: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         Leggi i byte di dati da un file. <br>
         <br>
-        Tag <font color="#03DAC5">percorso</font> supportati: <br>
+        Tag <highlight>percorso</highlight> supportati: <br>
         <br>
         %s <br>
         <br>
-        Tag <font color="#03DAC5">nome file</font> supportati: <br>
+        Tag <highlight>nome file</highlight> supportati: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         Scrivi i byte di dati su un file. <br>
         <br>
-        Tag <font color="#03DAC5"><b>percorso</b></font> supportati: <br>
+        Tag <highlight><b>percorso</b></highlight> supportati: <br>
         <br>
         %s <br>
         <br>
-        Tag <font color="#03DAC5"><b>nome file</b></font> supportati: <br>
+        Tag <highlight><b>nome file</b></highlight> supportati: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         A seconda del tipo di attivatore del flusso di lavoro, le regole possono essere modificate in modo permanente o temporaneo. <br>
         <br>
         Attributi modificabili: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; La regex <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; La descrizione <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; La priorità <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Blocca, <no_translate>false</no_translate>: consenti <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Applica a: <br>
         &ensp; 1: chiamata, 2: SMS, 3: entrambi, 0: disabilita <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; La stringa ID del canale di notifica<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: rifiuta, 1: silenzia, 2: riaggancia <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… O <no_translate>null</no_translate> per qualsiasi SIM.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         Normalizza i pattern numerici da fonti di terze parti al formato regex. <br>
         <br>
         Ad esempio, per mappare <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         a <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         Aggiungi due azioni <b>Sostituisci Numero</b>: <br>
-        &ensp; - Sostituisci `<font color="#fa7f71">(\\+)</font>` con ``<br>
-        &ensp; - Sostituisci `<font color="#fa7f71">(#)</font>` con `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - Sostituisci `<error>(\\+)</error>` con ``<br>
+        &ensp; - Sostituisci `<error>(#)</error>` con `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">Sostituisci Numero</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Durata (minuti)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Tocca il pulsante <font color="#03DAC5">Test</font> per eseguire manualmente questo workflow.
+        Tocca il pulsante <highlight>Test</highlight> per eseguire manualmente questo workflow.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,9 +164,9 @@
         Automatizza l\'esecuzione dei compiti in base a pianificazioni temporizzate. <br>
         <br>
         Casi d\'uso: <br>
-        &ensp; - <font color="#888888">Scarica i numeri spam dal registro FTC-DNC ogni giorno.</font> <br>
+        &ensp; - <sample>Scarica i numeri spam dal registro FTC-DNC ogni giorno.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Backup automatico ogni giorno e conserva solo gli ultimi 7 backup.</font> <br>
+        &ensp; - <sample>Backup automatico ogni giorno e conserva solo gli ultimi 7 backup.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Attivatore</string>
@@ -174,7 +174,7 @@
     <string name="help_ringtone_delay">
         <![CDATA[
         Questa funzione cambia temporaneamente la suoneria predefinita del sistema prima che inizi a squillare e
-         poi la ripristina dopo <font color="#03DAC5">%d secondi</font>, momento in cui lo squillo dovrebbe essere iniziato. <br>
+         poi la ripristina dopo <highlight>%d secondi</highlight>, momento in cui lo squillo dovrebbe essere iniziato. <br>
         <br>
         Alcuni telefoni offrono funzioni come <b>Vibra prima poi Squilla</b> che possono ritardare lo squillo di, diciamo, 6 secondi.
          In tal caso, aumenta di conseguenza questo ritardo.

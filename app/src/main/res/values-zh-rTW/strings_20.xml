@@ -23,9 +23,9 @@
     在封鎖來電後，於一段時間內將所有繞過規則的來電一併封鎖。<br>
     <br>
     <b>使用情境：</b><br>
-    <font color="#888888">&ensp; 某些騷擾電話會使用共同前置號碼，可藉由正規表示式封鎖。第一通被擋後，對方改用隨機號碼，可能繞過所有規則。</font><br>
+    <sample>&ensp; 某些騷擾電話會使用共同前置號碼，可藉由正規表示式封鎖。第一通被擋後，對方改用隨機號碼，可能繞過所有規則。</sample><br>
     <br>
-    <font color="#ffa500"><b>注意：</b></font><br>
+    <warn><b>注意：</b></warn><br>
       可能會連帶封鎖正常來電，需要在安全性與方便性之間權衡。<br>
     <br>
     系統會同時建立<b>一條正規表示式規則</b>與<b>一個工作流程</b>，詳細行為請參考內部動作 <b>[來電節流]</b> 的提示說明。<br>
@@ -41,14 +41,14 @@
     <br>
     <b>選項：</b><br>
     <br>
-    - <font color="#00BFFF"><b>[持續時間]</b></font><br>
+    - <title><b>[持續時間]</b></title><br>
     在這段時間內封鎖來電（單位：秒）。<br>
     <br>
-    - <font color="#00BFFF"><b>[包含已封鎖]</b></font><br>
+    - <title><b>[包含已封鎖]</b></title><br>
     只要任何來電被封鎖，就會啟用此功能。<br>
     <br>
-    - <font color="#00BFFF"><b>[包含已接聽]</b></font><br>
-    - <font color="#00BFFF"><b>[最短通話時間]</b></font><br>
+    - <title><b>[包含已接聽]</b></title><br>
+    - <title><b>[最短通話時間]</b></title><br>
     若接聽的通話時間過短，也會視為垃圾來電並啟用此功能。<br>
     ]]>
     </string>
@@ -69,7 +69,7 @@
     在一段時間內靜音同一個號碼的連續簡訊通知。<br>
     <br>
     <b>使用情境：</b><br>
-    <font color="#888888">允許前 3 則通知，並在 1 分鐘內靜音其餘通知。</font><br>
+    <sample>允許前 3 則通知，並在 1 分鐘內靜音其餘通知。</sample><br>
     <br>
     系統會同時建立<b>一條正規表示式規則</b>與<b>一個工作流程</b>，詳細行為請參考內部動作 <b>[簡訊節流]</b> 的提示說明。<br>
     ]]>
@@ -84,14 +84,14 @@
     <br>
     <b>選項：</b><br>
     <br>
-    - <font color="#00BFFF"><b>持續時間</b></font><br>
+    - <title><b>持續時間</b></title><br>
     簡訊將在此期間（秒）被封鎖。<br>
     <br>
-    - <font color="#00BFFF"><b>計數限制</b></font><br>
+    - <title><b>計數限制</b></title><br>
     允許前 N 個通知。<br>
     <br>
-    - <font color="#00BFFF"><b>包含已接聽</b></font><br>
-    - <font color="#00BFFF"><b>最短通話持續時間</b></font><br>
+    - <title><b>包含已接聽</b></title><br>
+    - <title><b>最短通話持續時間</b></title><br>
     如果接聽的來電過短，它也被視為垃圾來電並將啟動此功能。<br>
     ]]>
     </string>

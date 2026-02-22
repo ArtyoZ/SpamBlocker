@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        Fragt die eingehende Nummer online in Echtzeit ab. <br>
+        Abfrage der eingehenden Nummer online in Echtzeit. <br>
         <br>
-        Mehrere API-Endpunkte werden gleichzeitig abgefragt, wobei das erste erhaltene Ergebnis verwendet und alle späteren Ergebnisse ignoriert werden. <br>
+        Mehrere API-Endpunkte werden gleichzeitig abgefragt, wobei das zuerst erhaltene Ergebnis verwendet und alle späteren Ergebnisse ignoriert werden. <br>
         <br>
-        Es hat standardmäßig die niedrigste Priorität, was bedeutet, dass es nur ausgelöst wird, wenn der Anruf alle anderen Regeln erfüllt.<br>
+        Sie hat standardmäßig die niedrigste Priorität, das heißt, sie wird erst ausgelöst, nachdem der Anruf alle lokalen Regeln durchlaufen hat.<br>
         <br>
-        <font color="#ea86ff"><b>Standardpriorität: -1</b></font>
+        <priority><b>Standardpriorität: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">Sofortige Abfrage</string>
@@ -35,23 +35,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        Extrahieren Sie die <font color="#00BFFF">Kategorie</font> und <font color="#00BFFF">Kommentare</font>
+        Extrahieren Sie die <title>Kategorie</title> und <title>Kommentare</title>
          aus dem Abfrageergebnis und zeigen Sie diese in der Benachrichtigung und dem Verlaufsprotokoll an. (optional)<br>
         <br>
         Zum Beispiel für dieses Abfrageergebnis: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - Nur die <font color="#00BFFF">Kategorie</font> extrahieren: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - Nur die <title>Kategorie</title> extrahieren: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - Sowohl die <font color="#00BFFF">Kategorie</font> als auch die <font color="#00BFFF">Kommentare</font> extrahieren: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - Sowohl die <title>Kategorie</title> als auch die <title>Kommentare</title> extrahieren: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">Ergebnis parsen</string>
@@ -89,13 +89,13 @@
         Dieser Regex filtert die Nummern entsprechend. Eingehende Nummern, die nicht mit diesem Regex übereinstimmen, werden nicht geprüft.<br>
         <br>
         - Nur <b>internationale Nummern</b> prüfen:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - Nur <b>nationale Nummern</b> prüfen:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - <b>Jede Nummer</b> prüfen:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">Prüfe: %s, Priorität: %s</string>

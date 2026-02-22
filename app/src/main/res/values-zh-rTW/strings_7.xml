@@ -22,24 +22,24 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>電話號碼</b></font>:<br>
+        <title><b>電話號碼</b></title>:<br>
         &ensp; 預設模式，正規表達式將匹配電話號碼。<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>聯絡人</b></font>:<br>
+        <title><b>聯絡人</b></title>:<br>
         &ensp; 正規表達式將匹配與來電號碼相關聯的聯絡人姓名。<br>
         &ensp;  - 使用案例：<br>
-        &emsp; <font color="#888888">在週末使用正規表達式 `.*` 阻擋所有非聯絡人。 </font><br>
+        &emsp; <sample>在週末使用正規表達式 `.*` 阻擋所有非聯絡人。 </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>聯絡人群組</b></font>:<br>
+        <title><b>聯絡人群組</b></title>:<br>
         &ensp; 正規表達式將匹配與來電號碼相關聯的聯絡人群組名稱，影響該群組中的所有聯絡人，因此您無需單獨添加他們，即使人員變動也無需更新。<br>
         &ensp;  - 使用案例：<br>
-        &emsp; <font color="#888888">在週末阻擋聯絡人群組「工作」來阻擋所有同事。 </font> <br>
+        &emsp; <sample>在週末阻擋聯絡人群組「工作」來阻擋所有同事。 </sample> <br>
         ]]>
     </string>
 </resources>

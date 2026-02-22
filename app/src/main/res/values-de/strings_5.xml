@@ -35,13 +35,13 @@
         <br>
         <b>Optionen:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Innerhalb von Tagen</font></h6>
-        Anrufe, die vor <font color="#03DAC5">%s Tagen</font> getätigt wurden, werden ignoriert.<br>
+        <h6><title>- Innerhalb von Tagen</title></h6>
+        Anrufe, die vor <highlight>%s Tagen</highlight> getätigt wurden, werden ignoriert.<br>
         <br>
-        <h6><font color="#00BFFF">- SMS einschließen</font></h6>
+        <h6><title>- SMS einschließen</title></h6>
         Wenn aktiviert, zählt auch das Senden einer SMS an diese Nummer.<br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 10</b></font>
+        <priority><b>Priorität: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -51,12 +51,12 @@
         Ein typischer Anwendungsfall:<br>
         &emsp; Sie haben gerade eine Pizza in PizzaApp bestellt, bald rufen sie Sie an, um Ihnen eine Rückerstattung anzubieten, weil sie schließen. Dieser Anruf würde durchgehen, wenn PizzaApp hier aktiviert ist. <br>
         <br>
-        Die Standardeinstellung <font color="03DAC5"><b>5 Min</b></font> bedeutet, dass jeder Anruf durchgeht, wenn eine der Apps innerhalb von 5 Minuten verwendet wurde,
+        Die Standardeinstellung <highlight><b>5 Min</b></highlight> bedeutet, dass jeder Anruf durchgeht, wenn eine der Apps innerhalb von 5 Minuten verwendet wurde,
         mit `verwendet` ist gemeint, dass sie entweder aktiviert, deaktiviert, minimiert oder beendet wurde. <br>
         <br>
         Gilt nur für Anrufe, <b>nicht</b> für Textnachrichten. <br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 10</b></font>
+        <priority><b>Priorität: 10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">Die Verzögerung, bevor der Anruf beendet wird.</string>
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Ablehnen</b></font>: <br>
+        - <title><b>Ablehnen</b></title>: <br>
          Wie das Drücken der Ablehnen-Taste. Funktioniert völlig geräuschlos, der Sperrbildschirm wird nicht eingeschaltet.<br>
         <br>
-        - <font color="#00BFFF"><b>Stummschalten</b></font>: <br>
+        - <title><b>Stummschalten</b></title>: <br>
          Es klingelt im Hintergrund lautlos, wodurch der Anrufer den Eindruck erhält, dass Sie nicht erreichbar waren und den Anruf verpasst haben. <br>
         <br>
          Es kann auch helfen, wenn Sie wiederholt Spam-Anrufe erhalten, da es die Anrufdauer verlängert und es für Spammer weniger effizient macht, was sie möglicherweise davon abhält, Sie erneut anzurufen.<br>
         <br>
-        - <font color="#00BFFF"><b>Auflegen</b></font>: <br>
+        - <title><b>Auflegen</b></title>: <br>
         Den Anruf annehmen und sofort auflegen, um zu verhindern, dass er auf die Mailbox weitergeleitet wird. <br>
         <br>
         Wird ein Spam-Anruf während eines laufenden Gesprächs empfangen, wird auf „Ablehnen“ umgeschaltet,
          um zu vermeiden, das laufende Gespräch zu beenden. <br>
         <br>
-        <font color="#FFA500">Hinweis</font> Der Sperrbildschirm kann kurz eingeschaltet werden,
+        <warn>Hinweis</warn> Der Sperrbildschirm kann kurz eingeschaltet werden,
         Sie könnten auch einen Anrufbeendigungston hören (einige Telefone bieten eine Option, diesen Ton stummzuschalten). <br>
         <br>
         - Die <b>Verzögerung</b>: <br>

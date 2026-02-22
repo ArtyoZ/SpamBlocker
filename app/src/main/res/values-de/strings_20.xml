@@ -30,14 +30,14 @@
     <br>
     <b>Optionen:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Dauer</b></font> <br>
+    - <title><b>Dauer</b></title> <br>
     Anrufe werden während dieses Zeitraums (in Sekunden) blockiert. <br>
     <br>
-    - <font color="#00BFFF"><b>Blockierte einschließen</b></font> <br>
+    - <title><b>Blockierte einschließen</b></title> <br>
     Diese Funktion wird aktiviert, nachdem ein Anruf blockiert wurde. <br>
     <br>
-    - <font color="#00BFFF"><b>Beantwortete einschließen</b></font> <br>
-    - <font color="#00BFFF"><b>Minimale Anrufdauer</b></font> <br>
+    - <title><b>Beantwortete einschließen</b></title> <br>
+    - <title><b>Minimale Anrufdauer</b></title> <br>
     Diese Funktion wird aktiviert, nachdem ein Anruf angenommen wurde, aber die Anrufdauer zu kurz ist, da ein solcher
      Anruf auch als Spam-Anruf betrachtet wird. <br>
     ]]>
@@ -47,10 +47,10 @@
     Nach dem Blockieren eines Anrufs werden auch nachfolgende Anrufe, die alle Regeln umgehen, für einen bestimmten Zeitraum blockiert. <br>
     <br>
     <b>Anwendungsfall:</b> <br>
-    <font color="#888888"> &ensp; Einige Spammer verwenden Telefonnummern mit gängigen Präfixen, die mit Regex-Regeln blockiert werden können.
-      Nachdem der erste Anruf blockiert wurde, wechseln sie zu zufälligen Telefonnummern, wodurch Anrufe getätigt werden, die möglicherweise alle Regeln umgehen. </font><br>
+    <sample> &ensp; Einige Spammer verwenden Telefonnummern mit gängigen Präfixen, die mit Regex-Regeln blockiert werden können.
+      Nachdem der erste Anruf blockiert wurde, wechseln sie zu zufälligen Telefonnummern, wodurch Anrufe getätigt werden, die möglicherweise alle Regeln umgehen. </sample><br>
     <br>
-    <font color="#ffa500"><b>Hinweis:</b></font> <br>
+    <warn><b>Hinweis:</b></warn> <br>
       Dies birgt auch das Risiko, einen gültigen Anruf zu blockieren, es ist ein Kompromiss.<br>
     <br>
     Dies erstellt sowohl <b>eine Regex-Regel</b> als auch <b>einen Workflow</b>. Eine detaillierte Erklärung finden Sie im Tooltip der inneren Aktion <b>Anrufdrosselung</b>.<br>
@@ -66,14 +66,14 @@
     <br>
     <b>Optionen:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Dauer</b></font> <br>
+    - <title><b>Dauer</b></title> <br>
     SMS-Nachrichten werden während dieses Zeitraums (in Sekunden) blockiert. <br>
     <br>
-    - <font color="#00BFFF"><b>Anzahl-Limit</b></font> <br>
+    - <title><b>Anzahl-Limit</b></title> <br>
     Erlaubt die ersten N Benachrichtigungen. <br>
     <br>
-    - <font color="#00BFFF"><b>Beantwortete einschließen</b></font> <br>
-    - <font color="#00BFFF"><b>Minimale Anrufdauer</b></font> <br>
+    - <title><b>Beantwortete einschließen</b></title> <br>
+    - <title><b>Minimale Anrufdauer</b></title> <br>
     Wenn ein beantworteter Anruf zu kurz ist, wird er ebenfalls als Spam-Anruf betrachtet und aktiviert diese Funktion. <br>
     ]]>
     </string>
@@ -82,7 +82,7 @@
     Aufeinanderfolgende SMS-Benachrichtigungen von derselben Telefonnummer für einen bestimmten Zeitraum stummschalten. <br>
     <br>
     <b>Anwendungsfälle:</b> <br>
-    <font color="#888888">Die ersten drei Benachrichtigungen von einer Telefonnummer erlauben und den Rest innerhalb einer Minute stummschalten.</font> <br>
+    <sample>Die ersten drei Benachrichtigungen von einer Telefonnummer erlauben und den Rest innerhalb einer Minute stummschalten.</sample> <br>
     <br>
     Dies erstellt sowohl <b>eine Regex-Regel</b> als auch <b>einen Workflow</b>. Eine detaillierte Erklärung finden Sie im Tooltip der inneren Aktion <b>SMS-Drosselung</b>.<br>
     ]]>

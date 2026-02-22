@@ -4,9 +4,9 @@
     <![CDATA[
     Auto report the number if it\'s blocked by following reasons: <br>
     <br>
-    &ensp; - <font color="#fa7f71">Non-Contacts</font>  <br>
-    &ensp; - <font color="#fa7f71">STIR/SHAKEN</font> attestation <br>
-    &ensp; - <font color="#fa7f71">Number Regex</font> <br>
+    &ensp; - <error>Non-Contacts</error>  <br>
+    &ensp; - <error>STIR/SHAKEN</error> attestation <br>
+    &ensp; - <error>Number Regex</error> <br>
     <br>
     This doesn\'t impact manual reporting.
     ]]>
@@ -19,23 +19,23 @@
         <![CDATA[
         Parse csv data bytes to a list of numbers. <br>
         <br>
-        The column containing the numbers <b>must</b> be named <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        The column containing the numbers <b>must</b> be named <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         For third-party csv files with different header names, map them to
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> using the <b>Column Mapping</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> using the <b>Column Mapping</b>. <br>
         <br>
         For example: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Note</b></font> <br>
+        <warn><b>Note</b></warn> <br>
         For parsing plain text files without column headers, use <b>Regex Extract</b> instead.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        Parse xml data bytes using <font color="#00BFFF">xpath</font> and generate a list of numbers.
+        Parse xml data bytes using <title>xpath</title> and generate a list of numbers.
         ]]>
     </string>
     <string name="help_action_regex_extract">
@@ -45,13 +45,13 @@
         This can also be used to parse plain text files with one number per line. <br>
         <br>
         For example, parse text: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         with regex: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -73,11 +73,11 @@
         <![CDATA[
         Read data bytes from a file. <br>
         <br>
-        Supported <font color="#03DAC5">path</font> tags: <br>
+        Supported <highlight>path</highlight> tags: <br>
         <br>
         %s <br>
         <br>
-        Supported <font color="#03DAC5">file name</font> tags: <br>
+        Supported <highlight>file name</highlight> tags: <br>
         <br>
         %s
         ]]>
@@ -86,11 +86,11 @@
         <![CDATA[
         Write data bytes to a file. <br>
         <br>
-        Supported <font color="#03DAC5"><b>path</b></font> tags: <br>
+        Supported <highlight><b>path</b></highlight> tags: <br>
         <br>
         %s <br>
         <br>
-        Supported <font color="#03DAC5"><b>filename</b></font> tags: <br>
+        Supported <highlight><b>filename</b></highlight> tags: <br>
         <br>
         %s
         ]]>
@@ -109,22 +109,22 @@
         Depending on the workflow trigger type, rules can be modified permanently or temporarily. <br>
         <br>
         Modifiable attributes: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; The regex <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; The description <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; The priority <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Block, <no_translate>false</no_translate>: allow <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Apply to: <br>
         &ensp; 1: call, 2: SMS, 3: both, 0: disable <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; The notification channel id string<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: reject, 1: silence, 2: hang-up <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… Or <no_translate>null</no_translate> for any SIM.
         ]]>
     </string>
@@ -145,19 +145,19 @@
         Normalize numeric patterns from third-party sources to regex format. <br>
         <br>
         For example, to map <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         to <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         Add two <b>Replace Number</b> actions: <br>
-        &ensp; - Replace `<font color="#fa7f71">(\\+)</font>` with ``<br>
-        &ensp; - Replace `<font color="#fa7f71">(#)</font>` with `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - Replace `<error>(\\+)</error>` with ``<br>
+        &ensp; - Replace `<error>(#)</error>` with `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="duration_in_minutes">Duration (minutes)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Tap the <font color="#03DAC5">Test</font> button to manually run this workflow.
+        Tap the <highlight>Test</highlight> button to manually run this workflow.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -165,9 +165,9 @@
         Automate task runs on time-driven schedules. <br>
         <br>
         Use cases: <br>
-        &ensp; - <font color="#888888">Download spam numbers from the FTC-DNC registry everyday.</font> <br>
+        &ensp; - <sample>Download spam numbers from the FTC-DNC registry everyday.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Auto backup everyday and only keep the last 7 backups.</font> <br>
+        &ensp; - <sample>Auto backup everyday and only keep the last 7 backups.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Trigger</string>
@@ -175,7 +175,7 @@
     <string name="help_ringtone_delay">
         <![CDATA[
         This feature temporarily changes the system default ringtone before ringing begins and
-         then reverts it after <font color="#03DAC5">%d seconds</font>, by which time the ringing is expected to have begun. <br>
+         then reverts it after <highlight>%d seconds</highlight>, by which time the ringing is expected to have begun. <br>
         <br>
         Some phones offer features like <b>Vibrate First Then Ring</b> which may defer the ringing by, say, 6 seconds.
          In that case, increase this delay accordingly.

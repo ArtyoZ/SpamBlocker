@@ -43,13 +43,13 @@
         <br>
         <b>オプション:</b><br>
         <br>
-        <h6><font color="#00BFFF">- 頻度</h6>
-        デフォルト設定の<font color="#03DAC5"><b>1 / 5分</b></font>は、5分以内に2回目の通話が許可されることを意味します。 <br>
+        <h6><title>- 頻度</title></h6>
+        デフォルト設定の<highlight><b>1 / 5分</b></highlight>は、5分以内に2回目の通話が許可されることを意味します。 <br>
         <br>
-        <h6><font color="#00BFFF">- SMSを含める</font></h6>
+        <h6><title>- SMSを含める</title></h6>
         有効にすると、その電話番号からのSMSメッセージの受信もカウントされます。<br>
         <br>
-        <font color="#ea86ff"><b>優先度: 10</b></font>
+        <priority><b>優先度: 10</b></priority>
         ]]>
     </string>
 

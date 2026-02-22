@@ -19,9 +19,9 @@
         Тег привязан к рабочему процессу и будет автоматически удалён при удалении процесса. <br>
         <br>
         <b>Сценарий использования</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; В сценариях с инкрементными обновлениями переменная‑указатель должна сохраняться и использоваться в последующих запусках.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">Загрузить тег</string>
@@ -45,13 +45,13 @@
         <br>
         <b>Опции</b> <br>
         <br>
-        <font color="#00BFFF"><b>Тип парсинга</b></font> <br>
+        <title><b>Тип парсинга</b></title> <br>
         Парсит значение тега, поддерживает регулярные выражения и xpath. <br>
         <br>
-        <font color="#00BFFF"><b>Имя тега</b></font> <br>
+        <title><b>Имя тега</b></title> <br>
         Имя генерируемого тега. <br>
-        Например, если имя тега — <font color="#03DAC5">my_token</font>,
-         то вы можете использовать <font color="#03DAC5">{my_token}</font> в последующих HTTP-запросах. <br>
+        Например, если имя тега — <highlight>my_token</highlight>,
+         то вы можете использовать <highlight>{my_token}</highlight> в последующих HTTP-запросах. <br>
     ]]>
     </string>
     <string name="max"><short>Макс</short></string>
@@ -66,15 +66,15 @@
         Подсвечивайте метку времени разными цветами в зависимости от того, насколько свежая запись. <br>
         <br>
         <b>Пример использования</b>: <br>
-        &ensp; <font color="#888888">Просматривайте сегодняшние звонки ночью, проверяя все записи с синей меткой времени. </font>
+        &ensp; <sample>Просматривайте сегодняшние звонки ночью, проверяя все записи с синей меткой времени. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        Должно быть либо <font color="#00BFFF"><no_translate>today</no_translate></font> либо
+        Должно быть либо <title><no_translate>today</no_translate></title> либо
         число, за которым следует <b><no_translate>min</no_translate></b>
-        (например <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (например <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">Недопустимое значение, см. подсказку для справки</string>
@@ -85,34 +85,34 @@
         <br>
         По умолчанию, <br>
         <br>
-        - <font color="#03DAC5">правила белого списка</font> имеют приоритет <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">Напр. Contacts, RepeatedCall, RecentApps, etc </font><br>
+        - <highlight>правила белого списка</highlight> имеют приоритет <priority>10</priority> <br>
+        &ensp; <sample>Напр. Contacts, RepeatedCall, RecentApps, etc </sample><br>
         <br>
-        - <font color="#fa7f71">правила черного списка</font> имеют приоритет <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">Напр. STIR, Database, etc </font> <br>
+        - <error>правила черного списка</error> имеют приоритет <priority>0</priority> <br>
+        &ensp; <sample>Напр. STIR, Database, etc </sample> <br>
         <br>
         Когда оба включены, правила белого списка переопределяют правила черного списка, так как 10 > 0. <br>
         <br>
-        Для правил regex приоритет можно задать любым числом от <font color="#ea86ff">-2147483648</font>
-          до <font color="#ea86ff">2147483647</font>. <br>
+        Для правил regex приоритет можно задать любым числом от <priority>-2147483648</priority>
+          до <priority>2147483647</priority>. <br>
         Разные правила могут иметь одинаковый приоритет, если они одного типа, однако
-          <font color="#ffa500"><b>никогда не назначайте одинаковый приоритет одновременно
-          правилам белого и черного списка</b></font>, это может вызвать непредсказуемое поведение. <br>
+          <warn><b>никогда не назначайте одинаковый приоритет одновременно
+          правилам белого и черного списка</b></warn>, это может вызвать непредсказуемое поведение. <br>
         <br>
-        Функция <font color="#00BFFF">Режим встречи</font> имеет приоритет <font color="#ea86ff">20</font> по умолчанию,
+        Функция <title>Режим встречи</title> имеет приоритет <priority>20</priority> по умолчанию,
           так как должна блокировать любые вызовы во время встречи. <br>
-        И <font color="#ea86ff">-1</font> для <font color="#00BFFF">Мгновенный запрос</font>,
+        И <priority>-1</priority> для <title>Мгновенный запрос</title>,
           поэтому проверяется только после того, как вызов прошёл все локальные фильтры. <br>
         <br>
         <b>Сценарии использования</b> настройки приоритета: <br>
         <br>
-        - <font color="#888888">Всегда блокировать определённый номер, независимо от повторов</font> <br>
-         &ensp; Установите правило с приоритетом > 10, чтобы переопределить <font color="#00BFFF">Повторный вызов</font>. <br>
+        - <sample>Всегда блокировать определённый номер, независимо от повторов</sample> <br>
+         &ensp; Установите правило с приоритетом > 10, чтобы переопределить <title>Повторный вызов</title>. <br>
         <br>
-        - <font color="#888888">Всегда разрешать номер</font> <br>
-         &ensp; Установите приоритет > 20, чтобы переопределить <font color="#00BFFF">Режим встречи</font>. <br>
+        - <sample>Всегда разрешать номер</sample> <br>
+         &ensp; Установите приоритет > 20, чтобы переопределить <title>Режим встречи</title>. <br>
         <br>
-        - <font color="#888888">Протестировать правило regex</font> <br>
+        - <sample>Протестировать правило regex</sample> <br>
          &ensp; Установите приоритет 999, чтобы переопределить все остальные фильтры, чтобы не отключать их временно по одному.
     ]]>
     </string>

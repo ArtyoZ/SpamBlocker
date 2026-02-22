@@ -7,9 +7,9 @@
         <br>
         Cela s\'applique aux appels et aux messages SMS. <br>
         <br>
-        <font color="#ea86ff"><b>Priorité par défaut</b></font>: <br>
-        &ensp; Autoriser: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; Bloquer: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>Priorité par défaut</b></priority>: <br>
+        &ensp; Autoriser: <priority><b>10</b></priority> <br>
+        &ensp; Bloquer: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>Options :</b> <br>
         <br>
-        <font color="#00BFFF"><b>Inclure les non vérifiés</b></font> <br>
+        <title><b>Inclure les non vérifiés</b></title> <br>
         Bloquez également les appels non vérifiés, ce qui signifie que l\'appel ne peut pas être validé, ou que l\'opérateur ou votre appareil ne prend pas en charge l\'attestation STIR. <br>
         <br>
         <b>Cas d\'utilisation</b> : <br>
-        <font color="#888888">
+        <sample>
           &ensp; Pour les pays qui imposent l\'attestation STIR, les numéros non vérifiés sont probablement du spam. <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>Priorité par défaut : 0</b></font> <br>
+        <priority><b>Priorité par défaut : 0</b></priority> <br>
         <br>
         Un <b>cas d\'utilisation</b> pour personnaliser la priorité :<br>
         <br>
         1. Autoriser toujours les contacts. <br>
-          &emsp; - Contacts, priorité <font color="#ea86ff">12</font> <br>
+          &emsp; - Contacts, priorité <priority>12</priority> <br>
         2. Bloquer les appels qui échouent STIR, même s\'ils se répètent. <br>
-          &emsp; - STIR, priorité <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR, priorité <priority>11</priority> <br>
         3. Autoriser les appels qui se répètent. <br>
-          &emsp; - Appel répété, priorité <font color="#ea86ff">10</font> <br>
+          &emsp; - Appel répété, priorité <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

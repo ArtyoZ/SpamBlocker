@@ -21,9 +21,9 @@
         - Altrament, el flux de treball finalitzarà.<br>
         <br>
         Cas d\'ús: <br>
-        <font color="#888888">
+        <sample>
         &ensp; Alternar algunes regles després de rebre SMS de guàrdia o fora de guàrdia. <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">L\'esdeveniment SMS %s s\'ha activat.</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         Permetre trucades de números de telèfon prèviament contestats.<br>
         <br>
-        <h6><font color="#ffa500">Avís</font></h6>
+        <h6><warn>Avís</warn></h6>
         %s<br>
         <br>
         <b>Opcions:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Dins de Dies</font></h6>
-        Les trucades que van tenir lloc abans de <font color="#03DAC5">%d dies</font> s\'ignoren.<br>
+        <h6><title>- Dins de Dies</title></h6>
+        Les trucades que van tenir lloc abans de <highlight>%d dies</highlight> s\'ignoren.<br>
         <br>
-        <h6><font color="#00BFFF">- Durada Mínima</font></h6>
-        Les trucades que van durar menys de <font color="#03DAC5">%d segons</font> s\'ignoren.<br>
+        <h6><title>- Durada Mínima</title></h6>
+        Les trucades que van durar menys de <highlight>%d segons</highlight> s\'ignoren.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritat: 10</b></font>
+        <priority><b>Prioritat: 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">No activeu aquesta funció per a la gent gran o qualsevol persona amb menys capacitat per identificar trucades fraudulentes, ja que això els podria exposar a trucades fraudulentes repetides.</string>
@@ -75,9 +75,9 @@
         Modifica temporalment les regles de regex basades en esdeveniments del calendari. <br>
         <br>
         <b>Cas d\'ús</b>:<br>
-        &ensp; <font color="#888888">Un treballador a torns fa el torn de dia durant dos dies,
+        &ensp; <sample>Un treballador a torns fa el torn de dia durant dos dies,
           després el torn de nit durant els dos següents.<br>
-        &ensp; Algunes regles han de ser deshabilitades o habilitades durant els horaris de treball variables.</font><br>
+        &ensp; Algunes regles han de ser deshabilitades o habilitades durant els horaris de treball variables.</sample><br>
         <br>
         Això crearà tant una regla de regex com un flux de treball, la regla s\'habilitarà sobre la marxa durant l\'esdeveniment del calendari específic. <br>
         ]]>

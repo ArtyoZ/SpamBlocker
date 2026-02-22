@@ -6,9 +6,9 @@
         Atur nada dering untuk fitur tertentu, atau bisukan. <br>
         <br>
         Misalnya, untuk mengatur nada dering untuk aturan regex: <br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         Panggilan yang diizinkan oleh aturan ini akan memutar nada dering yang ditentukan.<br>
     ]]>
@@ -54,9 +54,9 @@
         diizinkan oleh aturan ini. <br>
         <br>
         <b>Kasus penggunaan:<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; Atur nada dering berbeda untuk orang tertentu, grup kontak, atau rentang nomor telepon.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="remote_setup">Pengaturan Jarak Jauh</string>
@@ -93,8 +93,8 @@
         <br>
         Alur kerja berjalan setiap hari, mengunduh dataset lengkap 90 hari pada eksekusi pertama, kemudian hanya melakukan pembaruan inkremental pada eksekusi berikutnya. <br>
         <br>
-        <font color="#ffa500"><b>Catatan:</b></font> <br>
-        <font color="#888888">&ensp; Dataset biasanya diperbarui setiap hari kerja sekitar tengah hari waktu Timur. </font><br>
+        <warn><b>Catatan:</b></warn> <br>
+        <sample>&ensp; Dataset biasanya diperbarui setiap hari kerja sekitar tengah hari waktu Timur. </sample><br>
         <br>
         Jadi dijadwalkan pada pukul 18:00, karena dataset diharapkan tersedia pada saat itu. <br>
     ]]>

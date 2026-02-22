@@ -45,15 +45,15 @@
         <br>
         <b>選項：</b><br>
         <br>
-        <h6><font color="#00BFFF">- 次數</font></h6>
-        預設設定 <font color="#03DAC5"><b>1 次 / 5 分鐘</b></font> 表示在 5 分鐘內的第二通來電將被允許。<br>
+        <h6><title>- 次數</title></h6>
+        預設設定 <highlight><b>1 次 / 5 分鐘</b></highlight> 表示在 5 分鐘內的第二通來電將被允許。<br>
         <br>
-        <h6><font color="#00BFFF">- 包含簡訊</font></h6>
+        <h6><title>- 包含簡訊</title></h6>
         啟用時，該號碼傳來的簡訊也會計入。<br>
         <br>
         僅適用於來電，<b>不適用</b>於簡訊。<br>
         <br>
-        <font color="#ea86ff"><b>優先順序：10</b></font>
+        <priority><b>優先順序：10</b></priority>
         ]]>
     </string>
 

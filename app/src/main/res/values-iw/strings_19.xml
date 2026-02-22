@@ -8,10 +8,10 @@
         זרימת עבודה כזו תופעל אוטומטית על ידי שיחה נכנסת.<br>
         <br>
         מקרה שימוש: <br>
-        <font color="#888888">
+        <sample>
           &ensp; הסר תווים מובילים מיותרים ממספר הטלפון לפני הסינון,
           מכיוון שחלק מהספקים תומכים במספרים כפולים על כרטיס SIM יחיד. <br>
-        </font>
+        </sample>
         <br>
         הגדרה אופיינית:<br>
         - אירוע שיחה <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         שנה את מספר השיחה הנכנסת לפני שהוא נבדק על ידי הכללים.<br>
         <br>
-        <font color="#00BFFF"><b>מקרה שימוש</b>:</font><br>
+        <title><b>מקרה שימוש</b>:</title><br>
         &ensp; חלק ממפעילי הרשת הסלולרית תומכים במספרים כפולים לאותו כרטיס SIM, הם מוסיפים ספרות מובילות נוספות למספר המשני.<br>
-        &ensp;   לדוגמה: 3312345679 עשוי להפוך ל-<font color="#888888">123</font>3312345679. <br>
-        &ensp; ה-<font color="#888888">123</font> המובילים צריכים להיות מוסרים לפני הבדיקה. <br>
+        &ensp;   לדוגמה: 3312345679 עשוי להפוך ל-<sample>123</sample>3312345679. <br>
+        &ensp; ה-<sample>123</sample> המובילים צריכים להיות מוסרים לפני הבדיקה. <br>
         <br>
-        <font color="#00BFFF"><b>הגדרה טיפוסית:</b></font> <br>
+        <title><b>הגדרה טיפוסית:</b></title> <br>
         - <b>אירוע שיחה</b> <br>
         - <b>החלף מספר</b> <br>
-        &emsp; מ-: <font color="#888888">^123</font> <br>
-        &emsp; אל: <font color="#888888">השאר ריק</font> <br>
+        &emsp; מ-: <sample>^123</sample> <br>
+        &emsp; אל: <sample>השאר ריק</sample> <br>
         ]]>
     </string>
     <string name="blocked">חסום</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         ערוצי ההתראות המובנים: <br>
         <br>
-        <font color="#00BFFF"><b>ללא</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>ללא</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; ללא התראה כלל. <br>
         <br>
-        <font color="#00BFFF"><b>נמוכה</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>נמוכה</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; מופיע בשורת המצב וילון ההתראות. <br>
         <br>
-        <font color="#00BFFF"><b>בינונית</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>בינונית</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; מופיע בשורת המצב וילון ההתראות עם צליל. <br>
         <br>
-        <font color="#00BFFF"><b>גבוהה</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>גבוהה</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; מופיע בשורת המצב, וילון ההתראות, וכקופץ \"Heads-up\" עם צליל. <br>
         <br>
-        <font color="#00BFFF"><b>גבוהה מושתקת</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>גבוהה מושתקת</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; דומה ל-<b>גבוהה</b> אך משתיק את הצליל. <br>
-        &ensp; אידיאלי עבור <font color="#03DAC5"><b>צ\'אט SMS</b></font> פעיל שבו צלילים מתמשכים עלולים להיות מעצבנים. <br>
-          זה נחשב <font color="#03DAC5"><b>צ\'אט SMS</b></font> פעיל כאשר המסך פתוח ואפליקציית ה-SMS פתוחה בחזית. <br>
+        &ensp; אידיאלי עבור <highlight><b>צ\'אט SMS</b></highlight> פעיל שבו צלילים מתמשכים עלולים להיות מעצבנים. <br>
+          זה נחשב <highlight><b>צ\'אט SMS</b></highlight> פעיל כאשר המסך פתוח ואפליקציית ה-SMS פתוחה בחזית. <br>
         ]]>
     </string>
     <string name="none">ללא</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         צור ערוץ התראות חדש. <br>
         <br>
-        <font color="#03DAC5"><b>לחיצה ארוכה</b></font> על ערוץ התראות ברשימה הנפתחת הזו כדי לערוך אותו.
+        <highlight><b>לחיצה ארוכה</b></highlight> על ערוץ התראות ברשימה הנפתחת הזו כדי לערוך אותו.
         ]]>
     </string>
     <string name="warning_delete_channel">

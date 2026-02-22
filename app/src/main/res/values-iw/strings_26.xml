@@ -12,53 +12,53 @@
     <![CDATA[
         ייבוא מספרים מקבצים מקומיים או מרוחקים באמצעות זרימות עבודה. <br>
         <br>
-        <font color="#00BFFF"><b>הגדרה טיפוסית</b></font>: <br>
+        <title><b>הגדרה טיפוסית</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>קריאת קובץ</b></font> / <font color="#6ed0ff"><b>בקשת Http</b></font> <br>
+        1. <minor><b>קריאת קובץ</b></minor> / <minor><b>בקשת Http</b></minor> <br>
           &ensp; קבלת תוכן הקובץ. <br>
           <br>
-        2. <font color="#6ed0ff"><b>ניתוח CSV</b></font> / <font color="#6ed0ff"><b>ניתוח XML</b></font> / <font color="#6ed0ff"><b>חילוץ Regex</b></font> <br>
+        2. <minor><b>ניתוח CSV</b></minor> / <minor><b>ניתוח XML</b></minor> / <minor><b>חילוץ Regex</b></minor> <br>
           &ensp; ניתוח וקבלת רשימת מספרים. <br>
           <br>
-        3. <font color="#6ed0ff"><b>החלפת מספר</b></font> (אופציונלי) <br>
+        3. <minor><b>החלפת מספר</b></minor> (אופציונלי) <br>
           &ensp; שינוי פורמט המספר <br>
           &ensp; מקרה שימוש: <br>
-        <font color="#888888">
+        <sample>
             &emsp; בעת העברת מספרים מאפליקציות אחרות, המר פורמטים כמו <b>123#####</b> ל-regex <b>123.....</b> או <b>123.*</b> <br>
-        </font>
+        </sample>
           <br>
-        4. <font color="#6ed0ff"><b>ייבוא למסד נתוני ספאם</b></font> / <font color="#6ed0ff"><b>ייבוא לכלל Regex</b></font> <br>
+        4. <minor><b>ייבוא למסד נתוני ספאם</b></minor> / <minor><b>ייבוא לכלל Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>דוגמאות</b></font>: <br>
+        <title><b>דוגמאות</b></title>: <br>
           - הגדרה קבועה מראש <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         עוד דוגמאות מקוונות: <br>
           - <a href=\"%s\">טקסט פשוט</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath עדיין לא נתמך, השתמש ב-<font color="#6ed0ff"><b>חילוץ Regex</b></font> במקום.
+          - <a href=\"%s\">Json</a> - JsonPath עדיין לא נתמך, השתמש ב-<minor><b>חילוץ Regex</b></minor> במקום.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         מדריך Regex למתחילים. <br>
         <br>
-        <font color="#00BFFF"><b>רמת מתחילים - תו כללי</b></font> <br>
-        &ensp; בכל פעם שברצונך להשתמש בתו כללי <font color="#888888"><b>*</b></font>, שים נקודה <font color="#888888"><b>.</b></font> לפניו, כמו <font color="#888888">.*<b></b></font>, זה אמור לכסות את רוב מקרי השימוש. <br>
+        <title><b>רמת מתחילים - תו כללי</b></title> <br>
+        &ensp; בכל פעם שברצונך להשתמש בתו כללי <sample><b>*</b></sample>, שים נקודה <sample><b>.</b></sample> לפניו, כמו <sample><b>.*</b></sample>, זה אמור לכסות את רוב מקרי השימוש. <br>
         <br>
-        <font color="#00BFFF"><b>מתקדם - שימוש בבינה מלאכותית</b></font> <br>
+        <title><b>מתקדם - שימוש בבינה מלאכותית</b></title> <br>
         &ensp; למשל, כדי לקבל את ה-regex הבא לאימותי SMS: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         שאל בינה מלאכותית: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>נסה זאת באינטרנט</b></font> <br>
+        <highlight><b>נסה זאת באינטרנט</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>הקש כאן</big></a> כדי להעתיק את ההנחיה למעלה <br>
           &ensp; 2. <a href=\"try_it\"><big>הקש כאן</big></a> כדי להפעיל את הבינה המלאכותית המקוונת <br>
     ]]>

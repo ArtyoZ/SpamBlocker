@@ -1,13 +1,13 @@
 <resources>
     <string name="help_instant_query">
         <![CDATA[
-        בצע שאילתה על המספר הנכנס באופן מקוון בזמן אמת. <br>
+        בדוק את המספר הנכנס באינטרנט בזמן אמת. <br>
         <br>
-        מספר נקודות קצה של API יבדקו בו-זמנית, כאשר התוצאה הראשונה שתתקבל תשמש וכל התוצאות המאוחרות יותר יתעלמו. <br>
+        מספר נקודות קצה של API ייבדקו במקביל, והתוצאה הראשונה שתקבל תשמש וכל תוצאות מאוחרות יותר יתעלמו. <br>
         <br>
-        יש לו את העדיפות הנמוכה ביותר כברירת מחדל, כלומר הוא יופעל רק כאשר השיחה עוברת את כל שאר הכללים.<br>
+        לברירת מחדל יש את העדיפות הנמוכה ביותר, משמעות הדבר שהיא תופעל רק לאחר שהשיחה עברה את כל הכללים המקומיים.<br>
         <br>
-        <font color="#ea86ff"><b>עדיפות ברירת מחדל: -1</b></font>
+        <priority><b>עדיפות ברירת מחדל: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">שאילתה מיידית</string>
@@ -37,23 +37,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        חלץ את ה<font color="#00BFFF">קטגוריה</font> ואת ה<font color="#00BFFF">הערות</font>
+        חלץ את ה<title>קטגוריה</title> ואת ה<title>הערות</title>
          מתוצאת השאילתה והצג אותם בהתראה ובלוג ההיסטוריה. (אופציונלי)<br>
         <br>
         לדוגמה, עבור תוצאת שאילתה זו: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - חלץ את ה<font color="#00BFFF">קטגוריה</font> בלבד: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - חלץ את ה<title>קטגוריה</title> בלבד: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - חלץ גם את ה<font color="#00BFFF">קטגוריה</font> וגם את ה<font color="#00BFFF">הערות</font>: <br>
-        &ensp; <font color="#888888">(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</font><br>
+        - חלץ גם את ה<title>קטגוריה</title> וגם את ה<title>הערות</title>: <br>
+        &ensp; <sample>(?:\"type\":\"(.+?)\"|\"comments\":\"(.+?)\")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">ניתוח תוצאה</string>
@@ -100,13 +100,13 @@
         Regex זה מסנן מספרים בהתאם, מספרים נכנסים שאינם תואמים ל-Regex זה ידלגו על הבדיקה.<br>
         <br>
         - בדוק רק <b>מספרים בינלאומיים</b>:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - בדוק רק <b>מספרים מקומיים</b>:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - בדוק <b>כל מספר</b>:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">בודק: %s, קדימות: %s</string>

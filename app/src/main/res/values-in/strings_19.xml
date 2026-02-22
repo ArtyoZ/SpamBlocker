@@ -8,10 +8,10 @@
         Alur kerja semacam itu akan secara otomatis dipicu oleh panggilan masuk.<br>
         <br>
         Contoh kasus: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Hapus karakter awalan ekstra dari nomor telepon sebelum penyaringan,
           karena beberapa operator mendukung nomor ganda pada satu kartu SIM. <br>
-        </font>
+        </sample>
         <br>
         Pengaturan umum:<br>
         - Peristiwa Panggilan <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         Modifikasi nomor telepon panggilan masuk sebelum diperiksa oleh aturan.<br>
         <br>
-        <font color="#00BFFF"><b>Kasus penggunaan</b>:</font><br>
+        <title><b>Kasus penggunaan</b>:</title><br>
         &ensp; Beberapa operator jaringan seluler mendukung dua nomor telepon untuk kartu SIM yang sama, mereka menambahkan digit awal tambahan ke nomor telepon sekunder.<br>
-        &ensp;   Contoh: 3312345679 dapat menjadi <font color="#888888">123</font>3312345679. <br>
-        &ensp; Angka awal <font color="#888888">123</font> perlu dihapus sebelum diperiksa. <br>
+        &ensp;   Contoh: 3312345679 dapat menjadi <sample>123</sample>3312345679. <br>
+        &ensp; Angka awal <sample>123</sample> perlu dihapus sebelum diperiksa. <br>
         <br>
-        <font color="#00BFFF"><b>Pengaturan umum:</b></font> <br>
+        <title><b>Pengaturan umum:</b></title> <br>
         - <b>Peristiwa Panggilan</b> <br>
         - <b>Ganti Nomor Telepon</b> <br>
-        &emsp; dari: <font color="#888888">^123</font> <br>
-        &emsp; ke: <font color="#888888">biarkan kosong</fonts> <br>
+        &emsp; dari: <sample>^123</sample> <br>
+        &emsp; ke: <sample>biarkan kosong</sample> <br>
         ]]>
     </string>
     <string name="blocked">Diblokir</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         Saluran notifikasi bawaan: <br>
         <br>
-        <font color="#00BFFF"><b>Tidak Ada</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>Tidak Ada</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; Tidak ada notifikasi sama sekali. <br>
         <br>
-        <font color="#00BFFF"><b>Rendah</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Rendah</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; Muncul di bilah status dan tirai notifikasi. <br>
         <br>
-        <font color="#00BFFF"><b>Sedang</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Sedang</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; Muncul di bilah status dan tirai notifikasi dengan suara. <br>
         <br>
-        <font color="#00BFFF"><b>Tinggi</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Tinggi</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Muncul di bilah status, tirai notifikasi, dan sebagai pop-up heads-up dengan suara. <br>
         <br>
-        <font color="#00BFFF"><b>Tinggi Dibisukan</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Tinggi Dibisukan</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Mirip dengan <b>Tinggi</b> tetapi membisukan suara. <br>
-        &ensp; Ideal untuk <font color="#03DAC5"><b>Obrolan SMS</b></font> aktif di mana suara terus-menerus mungkin mengganggu. <br>
-          Dianggap <font color="#03DAC5"><b>Obrolan SMS</b></font> aktif saat layar tidak terkunci dan aplikasi SMS terbuka di latar depan. <br>
+        &ensp; Ideal untuk <highlight><b>Obrolan SMS</b></highlight> aktif di mana suara terus-menerus mungkin mengganggu. <br>
+          Dianggap <highlight><b>Obrolan SMS</b></highlight> aktif saat layar tidak terkunci dan aplikasi SMS terbuka di latar depan. <br>
         ]]>
     </string>
     <string name="none">Tidak Ada</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         Buat saluran notifikasi baru. <br>
         <br>
-        <font color="#03DAC5"><b>Tekan lama</b></font> saluran notifikasi di daftar dropdown ini untuk mengeditnya.
+        <highlight><b>Tekan lama</b></highlight> saluran notifikasi di daftar dropdown ini untuk mengeditnya.
         ]]>
     </string>
     <string name="warning_delete_channel">

@@ -5,9 +5,9 @@
         <br>
         Multiple API endpoints will be queried simultaneously, with the first result received being used and all later results ignored. <br>
         <br>
-        It has the lowest priority by default, meaning it will only be triggered when the call passes all other rules.<br>
+        It has the lowest priority by default, meaning it will be triggered only after the call has passed all local rules.<br>
         <br>
-        <font color="#ea86ff"><b>Default Priority: -1</b></font>
+        <priority><b>Default Priority: -1</b></priority>
         ]]>
     </string>
     <string name="instant_query">Instant Query</string>
@@ -37,23 +37,23 @@
     </string>
     <string name="help_category_identifier">
         <![CDATA[
-        Extract the <font color="#00BFFF">category</font> and <font color="#00BFFF">comments</font>
+        Extract the <title>category</title> and <title>comments</title>
          from the query result and display them in the notification and history log. (optional)<br>
         <br>
         For example, for this query result: <br>
-        <font color="#888888">
+        <sample>
         { <br>
           &ensp; \"type\": \"MARKETING\", <br>
           &ensp; \"comments\": \"Better call Saul\", <br>
           &ensp;  … <br>
         } <br>
-        </font>
+        </sample>
         <br>
-        - Extract the <font color="#00BFFF">category</font> only: <br>
-        &ensp; <font color="#888888">\"type\": \"(.+?)\"</font> <br>
+        - Extract the <title>category</title> only: <br>
+        &ensp; <sample>\"type\": \"(.+?)\"</sample> <br>
         <br>
-        - Extract both the <font color="#00BFFF">category</font> and the <font color="#00BFFF">comments</font>: <br>
-        &ensp; <font color="#888888">(?:"type":"(.+?)"|"comments":"(.+?)")</font><br>
+        - Extract both the <title>category</title> and the <title>comments</title>: <br>
+        &ensp; <sample>(?:"type":"(.+?)"|"comments":"(.+?)")</sample><br>
         ]]>
     </string>
     <string name="action_parse_query_result">Parse Result</string>
@@ -100,13 +100,13 @@
         This regex filters numbers accordingly, incoming numbers that don\'t match this regex will be skipped checking.<br>
         <br>
         - Only check <b>international numbers</b>:<br>
-        &ensp; <font color="#03DAC5"><b>\\+.*</b></font><br>
+        &ensp; <highlight><b>\\+.*</b></highlight><br>
         <br>
         - Only check <b>domestic numbers</b>:<br>
-        &ensp; <font color="#03DAC5"><b>0{1,2}.*</b></font><br>
+        &ensp; <highlight><b>0{1,2}.*</b></highlight><br>
         <br>
         - Check <b>any number</b>:<br>
-        &ensp; <font color="#03DAC5"><b>.*</b></font>
+        &ensp; <highlight><b>.*</b></highlight>
         ]]>
     </string>
     <string name="checking_template">Checking: %s, priority: %s</string>

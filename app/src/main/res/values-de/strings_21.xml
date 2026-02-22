@@ -6,9 +6,9 @@
         Stellen Sie den Klingelton für eine bestimmte Funktion ein oder schalten Sie ihn stumm. <br>
         <br>
         Zum Beispiel, um den Klingelton für eine Regex-Regel einzustellen: <br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         Anrufe, die durch diese Regel zugelassen werden, spielen den angegebenen Klingelton ab.<br>
     ]]>
@@ -54,9 +54,9 @@
         erlaubt ist. <br>
         <br>
         <b>Anwendungsfall:<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; Legen Sie unterschiedliche Klingeltöne für bestimmte Personen, Kontaktgruppen oder Rufnummernbereiche fest.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="remote_setup">Remote-Einrichtung</string>
@@ -93,8 +93,8 @@
         <br>
         Der Arbeitsablauf läuft täglich, er lädt beim ersten Durchlauf den vollständigen 90‑Tage‑Datensatz herunter und führt bei nachfolgenden Durchläufen nur inkrementelle Updates durch. <br>
         <br>
-        <font color="#ffa500"><b>Hinweis:</b></font> <br>
-        <font color="#888888">&ensp; Der Datensatz wird in der Regel an jedem Werktag gegen Mittag Eastern Time aktualisiert. </font><br>
+        <warn><b>Hinweis:</b></warn> <br>
+        <sample>&ensp; Der Datensatz wird in der Regel an jedem Werktag gegen Mittag Eastern Time aktualisiert. </sample><br>
         <br>
         Daher ist es für 18:00 Uhr geplant, da der Datensatz bis dahin voraussichtlich verfügbar sein wird. <br>
     ]]>

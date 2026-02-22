@@ -7,9 +7,9 @@
         <br>
         Це застосовується до дзвінків та SMS-повідомлень. <br>
         <br>
-        <font color="#ea86ff"><b>Пріоритет за замовчуванням</b></font>: <br>
-        &ensp; Дозволити: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; Блокувати: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>Пріоритет за замовчуванням</b></priority>: <br>
+        &ensp; Дозволити: <priority><b>10</b></priority> <br>
+        &ensp; Блокувати: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>Опції:</b> <br>
         <br>
-        <font color="#00BFFF"><b>Включити неперевірені</b></font> <br>
+        <title><b>Включити неперевірені</b></title> <br>
         Також блокуйте неперевірені дзвінки, що означає, що дзвінок не може бути підтверджений, або, оператор або ваш пристрій не підтримують атестацію STIR. <br>
         <br>
         <b>Випадок використання</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; У країнах, які впроваджують атестацію STIR, неперевірені номери, ймовірно, є спамом. <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>Пріоритет за замовчуванням: 0</b></font> <br>
+        <priority><b>Пріоритет за замовчуванням: 0</b></priority> <br>
         <br>
         Сценарій <b>використання</b> для налаштування пріоритету:<br>
         <br>
         1. Завжди дозволяти контакти. <br>
-          &emsp; - Контакти, пріоритет <font color="#ea86ff">12</font> <br>
+          &emsp; - Контакти, пріоритет <priority>12</priority> <br>
         2. Блокувати дзвінки, які не проходять STIR, навіть якщо вони повторюються. <br>
-          &emsp; - STIR, пріоритет <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR, пріоритет <priority>11</priority> <br>
         3. Дозволяти повторювані дзвінки. <br>
-          &emsp; - Повторний дзвінок, пріоритет <font color="#ea86ff">10</font> <br>
+          &emsp; - Повторний дзвінок, пріоритет <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

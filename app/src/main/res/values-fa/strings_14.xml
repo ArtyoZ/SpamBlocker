@@ -42,15 +42,15 @@
         <![CDATA[
         فقط دسته‌های تماس‌های مزاحم زیر پشتیبانی می‌شوند، هر دسته دیگری از API باید به یکی از آن‌ها نگاشت شود.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; به عنوان شماره معتبر گزارش دهید، نه یک تماس مزاحم.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; نوع تماس مزاحم پیش‌فرض، زمانی که هیچ یک از دسته‌های بالا اعمال نمی‌شوند.<br>
         ]]>
     </string>
@@ -76,16 +76,16 @@
         برخی از سرویس‌ها ابتدا به شما پیامک می‌دهند تا به شما اطلاع دهند که یک تماس قریب الوقوع است، معمولاً در عرض یک دقیقه.<br>
         <br>
         به عنوان مثال، یک پیامک مانند:<br>
-        &ensp; <font color="#888888">[سرویس]</font><br>
+        &ensp; <sample>[سرویس]</sample><br>
         <br>
         یک عبارت باقاعده برای چنین پیامی عبارت است از:<br>
-        &ensp; <font color="#03DAC5"><b><translate>.*لطفا.*پاسخ.*</translate></b></font> <br>
+        &ensp; <highlight><b><translate>.*لطفا.*پاسخ.*</translate></b></highlight> <br>
         <br>
-        تنظیم پیش‌فرض <font color="#03DAC5"><b>120 ثانیه</b></font> به این معنی است که تمام تماس‌ها در دو دقیقه آینده پس از دریافت چنین پیامی مجاز خواهند بود.<br>
+        تنظیم پیش‌فرض <highlight><b>120 ثانیه</b></highlight> به این معنی است که تمام تماس‌ها در دو دقیقه آینده پس از دریافت چنین پیامی مجاز خواهند بود.<br>
         <br>
         برای هر دو پیامک معمولی و پیامک فوری (پیامک کلاس 0) کار می‌کند.<br>
         <br>
-        <font color="#ea86ff"><b>اولویت: 10</b></font>
+        <priority><b>اولویت: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">کاراکتر وحشی `*` بدون نقطه قبل از آن استفاده شده است، آیا منظورتان `.*` است؟</string>

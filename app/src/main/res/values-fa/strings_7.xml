@@ -22,26 +22,26 @@
     </string>
     <string name="help_regex_mode_phone_number">
         <![CDATA[
-        <font color="#00BFFF"><b>شماره تلفن</b></font>:<br>
+        <title><b>شماره تلفن</b></title>:<br>
         &ensp; حالت پیش‌فرض، regex با شماره تلفن مطابقت داده می‌شود.<br>
         ]]>
     </string>
     <string name="help_regex_mode_contact">
         <![CDATA[
-        <font color="#00BFFF"><b>مخاطبین</b></font>:<br>
+        <title><b>مخاطبین</b></title>:<br>
         &ensp; regex با نام مخاطب مرتبط با شماره ورودی مطابقت داده می‌شود.<br>
         &ensp;  - مورد استفاده:<br>
-        &emsp; <font color="#888888">مسدود کردن تمام تماس‌های غیرمخاطب در آخر هفته با regex `.*`. </font><br>
+        &emsp; <sample>مسدود کردن تمام تماس‌های غیرمخاطب در آخر هفته با regex `.*`. </sample><br>
         ]]>
     </string>
     <string name="help_regex_mode_contact_group">
         <![CDATA[
-        <font color="#00BFFF"><b>گروه مخاطبین</b></font>:<br>
+        <title><b>گروه مخاطبین</b></title>:<br>
         &ensp; regex با نام گروه مخاطبین مرتبط با شماره ورودی مطابقت داده می‌شود و بر تمام مخاطبین آن گروه تأثیر می‌گذارد،
                  بنابراین نیازی به افزودن آنها به صورت جداگانه نیست
                  و حتی با تغییرات پرسنلی نیز نیازی به به‌روزرسانی آن نیست.<br>
         &ensp;  - مورد استفاده:<br>
-        &emsp; <font color="#888888">مسدود کردن تمام همکاران در آخر هفته با مسدود کردن گروه مخاطبین \"کار\". </font> <br>
+        &emsp; <sample>مسدود کردن تمام همکاران در آخر هفته با مسدود کردن گروه مخاطبین \"کار\". </sample> <br>
         ]]>
     </string>
 </resources>

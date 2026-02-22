@@ -42,15 +42,15 @@
         <![CDATA[
         Seules les catégories de spams suivantes sont prises en charge ; toute autre catégorie de l\'API doit être mappée à l\'une d\'elles.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; Signaler comme numéro valide, pas un spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; Type de spam par défaut, utilisé lorsqu\'aucune des catégories ci-dessus ne s\'applique.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         Certains services vous enverront d\'abord un SMS pour vous informer qu\'un appel est imminent, généralement dans la minute.<br>
         <br>
         Par exemple, un SMS comme :<br>
-        &ensp; <font color="#888888">[quelque service] Nous vous appelons pour vous informer…, n\'hésitez pas à répondre.</font><br>
+        &ensp; <sample>[quelque service] Nous vous appelons pour vous informer…, n\'hésitez pas à répondre.</sample><br>
         <br>
         Une expression régulière pour ce type de message serait :<br>
-        &ensp; <font color="#03DAC5"><b><translate>.*répondre.*</translate></b></font> <br>
+        &ensp; <highlight><b><translate>.*répondre.*</translate></b></highlight> <br>
         <br>
-        Le paramètre par défaut <font color="#03DAC5"><b>120 secondes</b></font> signifie que tous les appels seront
+        Le paramètre par défaut <highlight><b>120 secondes</b></highlight> signifie que tous les appels seront
         autorisés dans les deux minutes suivant la réception de ce message.<br>
         <br>
         Cela fonctionne pour les SMS réguliers et les SMS flash (SMS de classe 0).<br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 10</b></font>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Le caractère générique `*` est utilisé sans point précédent, vouliez-vous dire `.*` ?</string>

@@ -7,9 +7,9 @@
         <br>
         Aplica tanto a chamadas como a mensaxes SMS. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridade predeterminada</b></font>: <br>
-        &ensp; Permitir: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; Bloquear: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>Prioridade predeterminada</b></priority>: <br>
+        &ensp; Permitir: <priority><b>10</b></priority> <br>
+        &ensp; Bloquear: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>Opcións:</b> <br>
         <br>
-        <font color="#00BFFF"><b>Incluír non verificados</b></font> <br>
+        <title><b>Incluír non verificados</b></title> <br>
         Tamén bloquea chamadas non verificadas, o que significa que a chamada non pode validarse, ou, o operador ou o teu dispositivo non admiten a atestación STIR. <br>
         <br>
         <b>Caso de uso</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Para os países que imponen a atestación STIR, os numbers non verificados son probablemente spam. <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>Prioridade predeterminada: 0</b></font> <br>
+        <priority><b>Prioridade predeterminada: 0</b></priority> <br>
         <br>
         Un <b>caso de uso</b> para personalizar a prioridade:<br>
         <br>
         1. Permitir sempre os contactos. <br>
-          &emsp; - Contactos, prioridade <font color="#ea86ff">12</font> <br>
+          &emsp; - Contactos, prioridade <priority>12</priority> <br>
         2. Bloquear chamadas que fallan STIR, incluso se se repiten. <br>
-          &emsp; - STIR, prioridade <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR, prioridade <priority>11</priority> <br>
         3. Permitir chamadas que se repiten. <br>
-          &emsp; - Chamada repetida, prioridade <font color="#ea86ff">10</font> <br>
+          &emsp; - Chamada repetida, prioridade <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

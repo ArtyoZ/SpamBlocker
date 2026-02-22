@@ -5,7 +5,7 @@
         <br>
         Se a hora de inicio é maior que a hora de fin, por exemplo, 20:00 -> 07:00, significa o período das 20:00 da noite ás 07:00 da mañá seguinte. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Estas bandeiras cambian o comportamento de coincidencia da expresión regular. <br>
             <br>
 
-            <font color="#00BFFF"><b>Número sen formato</b></font>: <br>
-            &ensp; Cando está activado, o número non se optimizará, o <font color="#03DAC5"><b>+</b></font>
-            e os <font color="#03DAC5"><b>ceros iniciais</b></font> permanecerán, útil para diferenciar números domésticos.<br>
+            <title><b>Número sen formato</b></title>: <br>
+            &ensp; Cando está activado, o número non se optimizará, o <highlight><b>+</b></highlight>
+            e os <highlight><b>ceros iniciais</b></highlight> permanecerán, útil para diferenciar números domésticos.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ignorar Código de País</b></font>: <br>
-            &ensp; Cando está activado, o <font color="#fa7f71">+</font> inicial e o <font color="#fa7f71">código de país</font>
+            <title><b>Ignorar Código de País</b></title>: <br>
+            &ensp; Cando está activado, o <error>+</error> inicial e o <error>código de país</error>
              serán eliminados dun número internacional.<br>
             <br>
-            Por exemplo, tanto <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> como
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> converteranse en <font color="#03DAC5">12345</font>,
+            Por exemplo, tanto <error>+33</error><highlight>12345</highlight> como
+            <error>+44</error><highlight>12345</highlight> converteranse en <highlight>12345</highlight>,
             isto permite usar unha expresión regular máis sinxela `123.*` en lugar de `(33|44)*123.*` para coincidir con números internacionais.<br>
             <br>
 
-            <font color="#00BFFF"><b>Sensible ás Maiúsculas/Minúsculas</b></font>:<br>
-            &ensp; Por defecto, a coincidencia da expresión regular non distingue maiúsculas/minúsculas, unha <font color="#03DAC5"><b>a</b></font>
-              coincidiría tanto con <font color="#03DAC5"><b>a</b></font> coma con <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Sensible ás Maiúsculas/Minúsculas</b></title>:<br>
+            &ensp; Por defecto, a coincidencia da expresión regular non distingue maiúsculas/minúsculas, unha <highlight><b>a</b></highlight>
+              coincidiría tanto con <highlight><b>a</b></highlight> coma con <highlight><b>A</b></highlight>. <br>
             &ensp; Activa isto para que sexa sensible ás maiúsculas/minúsculas. <br>
         ]]>
     </string>

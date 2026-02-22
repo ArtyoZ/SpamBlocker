@@ -12,53 +12,53 @@
     <![CDATA[
         Импорт номеров из локальных или удаленных файлов с помощью рабочих процессов. <br>
         <br>
-        <font color="#00BFFF"><b>Типичная настройка</b></font>: <br>
+        <title><b>Типичная настройка</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Читать файл</b></font> / <font color="#6ed0ff"><b>HTTP-запрос</b></font> <br>
+        1. <minor><b>Читать файл</b></minor> / <minor><b>HTTP-запрос</b></minor> <br>
           &ensp; Получить содержимое файла. <br>
           <br>
-        2. <font color="#6ed0ff"><b>Парсить CSV</b></font> / <font color="#6ed0ff"><b>Парсить XML</b></font> / <font color="#6ed0ff"><b>Извлечь Regex</b></font> <br>
+        2. <minor><b>Парсить CSV</b></minor> / <minor><b>Парсить XML</b></minor> / <minor><b>Извлечь Regex</b></minor> <br>
           &ensp; Обработать и получить список номеров. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Заменить номер</b></font> (опционально) <br>
+        3. <minor><b>Заменить номер</b></minor> (опционально) <br>
           &ensp; Изменить формат номера <br>
           &ensp; Сценарий использования: <br>
-          <font color="#888888">
+          <sample>
             &emsp; При переносе номеров из других приложений конвертируйте форматы вроде <b>123#####</b> в регулярное выражение <b>123.....</b> или <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Импорт в базу спама</b></font> / <font color="#6ed0ff"><b>Импорт в правило Regex</b></font> <br>
+        4. <minor><b>Импорт в базу спама</b></minor> / <minor><b>Импорт в правило Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Примеры</b></font>: <br>
+        <title><b>Примеры</b></title>: <br>
           - Пресет <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Больше онлайн-примеров: <br>
           - <a href=\"%s\">Простой текст</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath пока не поддерживается, используйте вместо этого <font color="#6ed0ff"><b>Извлечь Regex</b></font>.
+          - <a href=\"%s\">Json</a> - JsonPath пока не поддерживается, используйте вместо этого <minor><b>Извлечь Regex</b></minor>.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Урок по регулярным выражениям для непрограммистов. <br>
         <br>
-        <font color="#00BFFF"><b>Начальный уровень - Шаблон</b></font> <br>
-        &ensp; Когда вы хотите использовать подстановочный знак <font color="#888888"><b>*</b></font>, ставьте точку <font color="#888888"><b>.</b></font> перед ним, например <font color="#888888">.*<b></b></font>, это покроет большинство сценариев. <br>
+        <title><b>Начальный уровень - Шаблон</b></title> <br>
+        &ensp; Когда вы хотите использовать подстановочный знак <sample><b>*</b></sample>, ставьте точку <sample><b>.</b></sample> перед ним, например <sample><b>.*</b></sample>, это покроет большинство сценариев. <br>
         <br>
-        <font color="#00BFFF"><b>Продвинутый уровень - Использование ИИ</b></font> <br>
+        <title><b>Продвинутый уровень - Использование ИИ</b></title> <br>
         &ensp; Например, чтобы получить следующее регулярное выражение для SMS-верификации: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Спросите ИИ: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Попробовать онлайн</b></font> <br>
+        <highlight><b>Попробовать онлайн</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Нажмите здесь</big></a>, чтобы скопировать запрос выше <br>
           &ensp; 2. <a href=\"try_it\"><big>Нажмите здесь</big></a>, чтобы запустить онлайн ИИ <br>
     ]]>

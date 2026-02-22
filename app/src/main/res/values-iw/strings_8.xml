@@ -15,7 +15,7 @@
         <br>
         זה חל גם על שיחות וגם על הודעות SMS.<br>
         <br>
-        <font color="#ea86ff"><b>עדיפות ברירת מחדל: 0</b></font>
+        <priority><b>עדיפות ברירת מחדל: 0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

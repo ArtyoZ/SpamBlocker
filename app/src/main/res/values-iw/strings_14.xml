@@ -42,15 +42,15 @@
         <![CDATA[
         רק קטגוריות הספאם הבאות נתמכות, כל קטגוריה אחרת מה-API צריכה להיות ממופה לאחת מהן.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; דווח כמספר תקין, לא כספאם.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; סוג הספאם החלופי, המשמש כאשר אף אחת מהקטגוריות הנ\"ל אינה חלה.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         שירותים מסוימים ישלחו לך הודעת טקסט תחילה כדי להודיע לך על שיחה צפויה, בדרך כלל בתוך דקה.<br>
         <br>
         לדוגמה, הודעת SMS כזו:<br>
-        &ensp; <font color="#888888">[שירות מסוים] אנו מתקשרים אליך כדי להודיע ..., אנא הרגש חופשי לענות.</font><br>
+        &ensp; <sample>[שירות מסוים] אנו מתקשרים אליך כדי להודיע ..., אנא הרגש חופשי לענות.</sample><br>
         <br>
         ביטוי רגולרי עבור הודעה כזו יהיה: <br>
-        &ensp; <font color="#03DAC5"><b>.*אנא.*ענה.*</b></font> <br>
+        &ensp; <highlight><b>.*אנא.*ענה.*</b></highlight> <br>
         <br>
-        ההגדרה הסטנדרטית <font color="#03DAC5"><b>120 שניות</b></font> פירושה שכל השיחות יאושרו
+        ההגדרה הסטנדרטית <highlight><b>120 שניות</b></highlight> פירושה שכל השיחות יאושרו
         בשתי הדקות הבאות לאחר קבלת הודעה כזו.<br>
         <br>
         זה עובד גם עבור SMS רגיל וגם עבור SMS פלאש (SMS מסוג 0).<br>
         <br>
-        <font color="#ea86ff"><b>עדיפות: 10</b></font>
+        <priority><b>עדיפות: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">תו כללי `*` משמש ללא נקודה קודמת, האם התכוונת ל-`.*` ?</string>

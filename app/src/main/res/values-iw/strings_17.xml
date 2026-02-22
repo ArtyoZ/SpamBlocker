@@ -5,30 +5,30 @@
         <![CDATA[
         לאחר חיוג למספר חירום, אפשר את כל השיחות הנכנסות למשך תקופה מסוימת.<br>
         <br>
-        <h5><font color="#00BFFF">- משך זמן</font></h5>
-        הגדרת ברירת המחדל <font color="#03DAC5"><b>120 דקות</b></font> משמעותה שכל השיחות יאושרו
+        <h5><title>- משך זמן</title></h5>
+        הגדרת ברירת המחדל <highlight><b>120 דקות</b></highlight> משמעותה שכל השיחות יאושרו
         במהלך 120 הדקות הבאות לאחר חיוג למספר חירום.<br>
         <br>
-        <h5><font color="#00BFFF">- בדיקת STIR</font></h5>
+        <h5><title>- בדיקת STIR</title></h5>
          - כשהאפשרות מושבתת, כל השיחות יאושרו.<br>
          - כשהאפשרות מופעלת, שיחות שנכשלות באימות STIR לא יאושרו, רק שיחות "תקפות" ו"לא מאומתות" יאושרו.<br>
         <br>
-        <h5><font color="#00BFFF">- מספרים נוספים</font></h5>
+        <h5><title>- מספרים נוספים</title></h5>
         חיוג לכל מספר ברשימה זו יפעיל גם הוא תכונה זו.<br>
         <br>
         אין צורך להוסיף במפורש מספרים כמו 911 כאן, מכיוון שאנדרואיד כוללת רשימת
         מספרי חירום מובנית לכל מדינה (לדוגמה: משטרה, מכבי אש, אמבולנס).<br>
         <br>
         הפרד מספרים בפסיקים, כגון:<br>
-        &ensp; <font color="#888888">111, 222, 3333</font><br>
+        &ensp; <sample>111, 222, 3333</sample><br>
         <br>
-        <h5><font color="#00BFFF">- איפוס</font></h5>
+        <h5><title>- איפוס</title></h5>
         לחץ על כפתור זה כדי לאפס תכונה זו אם היא הופעלה בטעות או במהלך בדיקה.<br>
         <br>
-        <h5><font color="#00BFFF">- בדיקה</font></h5>
+        <h5><title>- בדיקה</title></h5>
         דמה שיחה יוצאת כדי לבדוק אם המספר הזה הוא מספר חירום.<br>
         <br>
-        <font color="#ea86ff"><b>עדיפות: מקסימלי</b></font>
+        <priority><b>עדיפות: מקסימלי</b></priority>
         ]]>
     </string>
     <string name="reset">איפוס</string>
@@ -39,17 +39,17 @@
     <string name="additional_numbers">מספרים נוספים</string>
     <string name="path_tags">
         <![CDATA[
-        <font color="#00BFFF"><b>{sdcard}</b></font><br>
+        <title><b>{sdcard}</b></title><br>
         ספריית האחסון החיצוני, זהה ל: <br>
-        <font color="#888888">/storage/emulated/0</font><br>
+        <sample>/storage/emulated/0</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Download}</b></font><br>
+        <title><b>{Download}</b></title><br>
         זהה ל: <br>
-        <font color="#888888">{sdcard}/Download</font><br>
+        <sample>{sdcard}/Download</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Documents}</b></font><br>
+        <title><b>{Documents}</b></title><br>
         זהה ל: <br>
-        <font color="#888888">{sdcard}/Documents</font>
+        <sample>{sdcard}/Documents</sample>
         ]]>
     </string>
     <string name="call_to_number">למספר</string>
@@ -61,8 +61,8 @@
         <br>
         מקרה שימוש טיפוסי:<br>
         &ensp; כאשר יש התראה כמו:<br>
-        &emsp; כותרת: <font color="#888888">עדכון הזמנה:</font><br>
-        &emsp; גוף: <font color="#888888">ההזמנה שלך נלקחה על ידי נהג...</font><br>
+        &emsp; כותרת: <sample>עדכון הזמנה:</sample><br>
+        &emsp; גוף: <sample>ההזמנה שלך נלקחה על ידי נהג...</sample><br>
         &ensp; הנהג עשוי אז להתקשר אליך כדי לאשר פרטים.<br>
         <br>
         <b>הרשאות נדרשות:</b> <br>
@@ -71,18 +71,18 @@
         <br>
         אפשרויות:<br>
         <br>
-        <h6><font color="#00BFFF">- אפליקציה</font></h6>
+        <h6><title>- אפליקציה</title></h6>
         זה יבדוק התראות רק מהאפליקציה הזו.<br>
         <br>
-        <h6><font color="#00BFFF">- תוכן התראה</font></h6>
+        <h6><title>- תוכן התראה</title></h6>
         ביטוי רגולרי זה יתאים <b>גם לכותרת וגם לגוף ההתראה</b>.<br>
         דוגמה למקרה השימוש לעיל:<br>
-        &emsp; <font color="#03DAC5">עדכון הזמנה.*נלקח על ידי נהג.*</font><br>
+        &emsp; <highlight>עדכון הזמנה.*נלקח על ידי נהג.*</highlight><br>
         <br>
-        <h6><font color="#00BFFF">- משך זמן</font></h6>
+        <h6><title>- משך זמן</title></h6>
         שיחות יאושרו במהלך תקופה זו, המצוינת בדקות.<br>
         <br>
-        <font color="#ea86ff"><b>עדיפות: 10</b></font>
+        <priority><b>עדיפות: 10</b></priority>
         ]]>
     </string>
     <string name="notification_content">תוכן התראה</string>

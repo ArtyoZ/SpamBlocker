@@ -19,9 +19,9 @@
         Er ist an den Workflow gebunden und wird automatisch gelöscht, wenn der Workflow gelöscht wird. <br>
         <br>
         <b>Anwendungsfall</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; In Szenarien mit inkrementellen Updates muss eine zeigerähnliche Variable gespeichert und über aufeinanderfolgende Durchläufe hinweg wiederverwendet werden.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">Tag laden</string>
@@ -45,13 +45,13 @@
         <br>
         <b>Optionen</b> <br>
         <br>
-        <font color="#00BFFF"><b>Parsertyp</b></font> <br>
+        <title><b>Parsertyp</b></title> <br>
         Analysieren Sie den Tag-Wert, es unterstützt Regex und XPath. <br>
         <br>
-        <font color="#00BFFF"><b>Tag-Name</b></font> <br>
+        <title><b>Tag-Name</b></title> <br>
         Der zu generierende Tag-Name. <br>
-        Wenn der Tag-Name beispielsweise <font color="#03DAC5">my_token</font> ist,
-         dann können Sie <font color="#03DAC5">{my_token}</font> in nachfolgenden HTTP-Anfragen verwenden. <br>
+        Wenn der Tag-Name beispielsweise <highlight>my_token</highlight> ist,
+         dann können Sie <highlight>{my_token}</highlight> in nachfolgenden HTTP-Anfragen verwenden. <br>
     ]]>
     </string>
     <string name="max"><short>Max</short></string>
@@ -66,15 +66,15 @@
         Markieren Sie den Zeitstempel in verschiedenen Farben, basierend darauf, wie aktuell der Eintrag ist. <br>
         <br>
         <b>Anwendungsfall</b>: <br>
-        &ensp; <font color="#888888">Überprüfen Sie die heutigen Anrufe nachts, indem Sie alle Einträge mit einem blauen Zeitstempel prüfen. </font>
+        &ensp; <sample>Überprüfen Sie die heutigen Anrufe nachts, indem Sie alle Einträge mit einem blauen Zeitstempel prüfen. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        Muss entweder <font color="#00BFFF"><no_translate>today</no_translate></font> oder
+        Muss entweder <title><no_translate>today</no_translate></title> oder
         eine Zahl gefolgt von <b><no_translate>min</no_translate></b>
-        (z. B. <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        (z. B. <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">Ungültiger Wert, siehe den Tooltip für Hilfe</string>
@@ -85,31 +85,31 @@
         <br>
         Standardmäßig, <br>
         <br>
-        - <font color="#03DAC5">Whitelist-Regeln</font> haben Priorität <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">z. B. Kontakte, RepeatedCall, RecentApps, usw. </font><br>
+        - <highlight>Whitelist-Regeln</highlight> haben Priorität <priority>10</priority> <br>
+        &ensp; <sample>z. B. Kontakte, RepeatedCall, RecentApps, usw. </sample><br>
         <br>
-        - <font color="#fa7f71">Blacklist-Regeln</font> haben Priorität <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">z. B. STIR, Datenbank, usw. </font> <br>
+        - <error>Blacklist-Regeln</error> haben Priorität <priority>0</priority> <br>
+        &ensp; <sample>z. B. STIR, Datenbank, usw. </sample> <br>
         <br>
         Wenn beide aktiviert sind, überschreiben Whitelist-Regeln die Blacklist-Regeln, da 10 > 0. <br>
         <br>
-        Für Regex-Regeln kann die Priorität auf jede Zahl zwischen <font color="#ea86ff">-2147483648</font>
-          und <font color="#ea86ff">2147483647</font> gesetzt werden. <br>
-        Verschiedene Regeln können dieselbe Priorität haben, solange sie vom gleichen Typ sind, jedoch <font color="#ffa500"><b>niemals dieselbe Priorität sowohl für Whitelist- als auch für Blacklist-Regeln vergeben</b></font>, da dies zu zufälligem Verhalten führen kann. <br>
+        Für Regex-Regeln kann die Priorität auf jede Zahl zwischen <priority>-2147483648</priority>
+          und <priority>2147483647</priority> gesetzt werden. <br>
+        Verschiedene Regeln können dieselbe Priorität haben, solange sie vom gleichen Typ sind, jedoch <warn><b>niemals dieselbe Priorität sowohl für Whitelist- als auch für Blacklist-Regeln vergeben</b></warn>, da dies zu zufälligem Verhalten führen kann. <br>
         <br>
-        Die Funktion <font color="#00BFFF">Meeting Mode</font> hat standardmäßig Priorität <font color="#ea86ff">20</font>, weil sie alle Anrufe während einer Besprechung blockieren soll. <br>
-        Und <font color="#ea86ff">-1</font> für <font color="#00BFFF">Instant Query</font>,
+        Die Funktion <title>Meeting Mode</title> hat standardmäßig Priorität <priority>20</priority>, weil sie alle Anrufe während einer Besprechung blockieren soll. <br>
+        Und <priority>-1</priority> für <title>Instant Query</title>,
           sodass sie erst geprüft wird, nachdem der Anruf alle lokalen Filter durchlaufen hat. <br>
         <br>
         <b>Anwendungsfälle</b> für die Anpassung der Priorität: <br>
         <br>
-        - <font color="#888888">Immer eine bestimmte Nummer blockieren, egal ob sie wiederholt wird</font> <br>
-         &ensp; Setze eine Regel mit Priorität > 10, um <font color="#00BFFF">Repeated Call</font> zu überschreiben. <br>
+        - <sample>Immer eine bestimmte Nummer blockieren, egal ob sie wiederholt wird</sample> <br>
+         &ensp; Setze eine Regel mit Priorität > 10, um <title>Repeated Call</title> zu überschreiben. <br>
         <br>
-        - <font color="#888888">Immer eine Nummer zulassen</font> <br>
-         &ensp; Setze sie auf > 20, um <font color="#00BFFF">Meeting Mode</font> zu überschreiben. <br>
+        - <sample>Immer eine Nummer zulassen</sample> <br>
+         &ensp; Setze sie auf > 20, um <title>Meeting Mode</title> zu überschreiben. <br>
         <br>
-        - <font color="#888888">Eine Regex-Regel testen</font> <br>
+        - <sample>Eine Regex-Regel testen</sample> <br>
          &ensp; Setze sie auf 999, um alle anderen Filter zu überschreiben, damit du sie nicht einzeln temporär deaktivieren musst.
     ]]>
     </string>

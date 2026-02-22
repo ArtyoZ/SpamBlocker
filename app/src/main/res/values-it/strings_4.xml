@@ -5,7 +5,7 @@
         <br>
         Se l\'ora di inizio è maggiore dell\'ora di fine, ad esempio, 20:00 -> 07:00, significa il periodo dalle 20:00 di sera alle 07:00 del mattino seguente. <br>
         <br>
-        <font color="#ea86ff"><b>Priorità: 10</b></font>
+        <priority><b>Priorità: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Questi flag cambiano il comportamento di corrispondenza dell\'espressione regolare. <br>
             <br>
 
-            <font color="#00BFFF"><b>Numero Raw</b></font>: <br>
-            &ensp; Quando abilitato, il numero non verrà ottimizzato, <font color="#03DAC5"><b>+</b></font>
-            e gli <font color="#03DAC5"><b>zeri iniziali</b></font> rimarranno, utile per differenziare i numeri nazionali.<br>
+            <title><b>Numero Raw</b></title>: <br>
+            &ensp; Quando abilitato, il numero non verrà ottimizzato, <highlight><b>+</b></highlight>
+            e gli <highlight><b>zeri iniziali</b></highlight> rimarranno, utile per differenziare i numeri nazionali.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ignora Prefisso Internazionale</b></font>: <br>
-            &ensp; Quando abilitato, il <font color="#fa7f71">+</font> iniziale e il <font color="#fa7f71">prefisso internazionale</font>
+            <title><b>Ignora Prefisso Internazionale</b></title>: <br>
+            &ensp; Quando abilitato, il <error>+</error> iniziale e il <error>prefisso internazionale</error>
              verranno rimossi da un numero internazionale.<br>
             <br>
-            Ad esempio, sia <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> che
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> diventeranno <font color="#03DAC5">12345</font>,
+            Ad esempio, sia <error>+33</error><highlight>12345</highlight> che
+            <error>+44</error><highlight>12345</highlight> diventeranno <highlight>12345</highlight>,
             questo ti permette di usare una regex più semplice `123.*` invece di `(33|44)*123.*` per abbinare numeri internazionali.<br>
             <br>
 
-            <font color="#00BFFF"><b>Sensibile alle Maiuscole/Minuscole</b></font>:<br>
-            &ensp; Per impostazione predefinita, la corrispondenza regex è insensibile alle maiuscole/minuscole, <font color="#03DAC5"><b>a</b></font>
-              corrisponderebbe sia ad <font color="#03DAC5"><b>a</b></font> che ad <font color="#03DAC5"><b>A</b></font>. <br>
+            <title><b>Sensibile alle Maiuscole/Minuscole</b></title>:<br>
+            &ensp; Per impostazione predefinita, la corrispondenza regex è insensibile alle maiuscole/minuscole, <highlight><b>a</b></highlight>
+              corrisponderebbe sia ad <highlight><b>a</b></highlight> che ad <highlight><b>A</b></highlight>. <br>
             &ensp; Abilita questa opzione per renderla sensibile alle maiuscole/minuscole. <br>
         ]]>
     </string>

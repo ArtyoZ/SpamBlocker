@@ -30,25 +30,25 @@
         <![CDATA[
         Also known as <b>Unknown Number</b> or <b>Empty Number</b>, they are empty strings that
          can be matched by any of: <br>
-         &ensp; <font color="#fa7f71">.{0}</font> <br>
-         &ensp; <font color="#fa7f71">^$</font> <br>
-         &ensp; A <font color="#fa7f71">blank</font> regex field. <br>
+         &ensp; <error>.{0}</error> <br>
+         &ensp; <error>^$</error> <br>
+         &ensp; A <error>blank</error> regex field. <br>
         <br>
-        The <font color="#ea86ff">priority</font> is set to <font color="#ea86ff">20</font> to override other features like <b>Repeated Call</b>,
+        The <priority>priority</priority> is set to <priority>20</priority> to override other features like <b>Repeated Call</b>,
         so they are always blocked even if they repeat.
         ]]>
     </string>
     <string name="foreign_number">Foreign Number</string>
     <string name="help_foreign_number">
         <![CDATA[
-        Block all international calls except those from your own country with regex <font color="#fa7f71"><b>\\+(?!39).*</b></font>,
+        Block all international calls except those from your own country with regex <error><b>\\+(?!39).*</b></error>,
           calls pass this rule will not be immediately allowed, they will be checked by other rules. <br>
         <br>
-        <font color="#ffa500">Change</font> <b>39</b> to your country code. <br>
+        <warn>Change</warn> <b>39</b> to your country code. <br>
         <br>
         Regex breakdown: <br>
         &ensp; - The <b>Raw Number</b> regex flag preserves the leading <b>+</b>, otherwise, it will be removed before checking. <br>
-        &ensp; - <font color="#fa7f71"><b>\\+(?!39)</b></font> matches any number starting with <b>+</b> that is not followed by <b>39</b> (foreign numbers).
+        &ensp; - <error><b>\\+(?!39)</b></error> matches any number starting with <b>+</b> that is not followed by <b>39</b> (foreign numbers).
         ]]>
     </string>
     <string name="verification_code">Verification Code</string>
@@ -84,7 +84,7 @@
         <![CDATA[
         This switch is for quickly disabling the app, useful when you\'re awaiting a particular call or message. <br>
         <br>
-        You can also toggle it from the <font color="#6ed0ff"><b>Dropdown Quick Settings</b></font>. <br>
+        You can also toggle it from the <minor><b>Dropdown Quick Settings</b></minor>. <br>
         <br>
         Call and SMS screening also need to be enabled separately below, they only work when this is enabled.
         ]]>
@@ -100,8 +100,8 @@
         Requires Android 12+. <br>
         <br>
         This will add two rules for SIM 2: <br>
-        &ensp; - Allow contacts, <font color="#ea86ff">priority 12</font>. <br>
-        &ensp; - Block everything else, <font color="#ea86ff">priority 11</font>.
+        &ensp; - Allow contacts, <priority>priority 12</priority>. <br>
+        &ensp; - Block everything else, <priority>priority 11</priority>.
         This overrides settings like RepeatedCall, so they\'ll always be blocked even if they repeat.
         ]]>
     </string>
@@ -115,10 +115,10 @@
          this custom tile affects only specific rules. <br>
         <br>
         This setup involves both a regex rule and a workflow. When the tile is: <br>
-        &ensp; - <font color="#03DAC5"><b>On</b></font> <br>
+        &ensp; - <highlight><b>On</b></highlight> <br>
         &emsp;  This workflow will be executed before calls are screened, it will enable the regex rule. <br>
         <br>
-        &ensp; - <font color="#888888"><b>Off</b></font> <br>
+        &ensp; - <sample><b>Off</b></sample> <br>
         &emsp;  This workflow will never run, the rule will never work. <br>
         <br>
         In short, <b>when the tile is on, the rule is on, and vice versa</b>.

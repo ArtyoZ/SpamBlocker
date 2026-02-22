@@ -7,9 +7,9 @@
         <br>
         通話とSMSメッセージの両方に適用されます。 <br>
         <br>
-        <font color="#ea86ff"><b>デフォルト優先度</b></font>: <br>
-        &ensp; 許可: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; ブロック: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>デフォルト優先度</b></priority>: <br>
+        &ensp; 許可: <priority><b>10</b></priority> <br>
+        &ensp; ブロック: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>オプション:</b> <br>
         <br>
-        <font color="#00BFFF"><b>未検証を含む</b></font> <br>
+        <title><b>未検証を含む</b></title> <br>
         未検証の通話もブロックします。これは、通話が検証できない、またはキャリアやデバイスが STIR アテステーションをサポートしていないことを意味します。 <br>
         <br>
         <b>使用例</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; STIR アテステーションを実施している国では、未検証の電話番号はスパムである可能性が高いです。 <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>デフォルト優先度: 0</b></font> <br>
+        <priority><b>デフォルト優先度: 0</b></priority> <br>
         <br>
         優先度をカスタマイズする<b>使用例</b>：<br>
         <br>
         1. 常に連絡先を許可する。 <br>
-          &emsp; - 連絡先、優先度 <font color="#ea86ff">12</font> <br>
+          &emsp; - 連絡先、優先度 <priority>12</priority> <br>
         2. STIR に失敗した通話をブロックする（繰り返しでも）。 <br>
-          &emsp; - STIR、優先度 <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR、優先度 <priority>11</priority> <br>
         3. 繰り返しの通話を許可する。 <br>
-          &emsp; - 繰り返し通話、優先度 <font color="#ea86ff">10</font> <br>
+          &emsp; - 繰り返し通話、優先度 <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

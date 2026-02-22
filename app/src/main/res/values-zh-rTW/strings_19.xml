@@ -8,10 +8,10 @@
         此工作流程將在有來電時自動觸發。<br>
         <br>
         使用案例：<br>
-        <font color="#888888">
+        <sample>
           &ensp; 在篩選之前從電話號碼中移除額外的開頭字元，
           因為某些電信業者支援單一 SIM 卡雙號碼。<br>
-        </font>
+        </sample>
         <br>
         典型設定：<br>
         - 來電事件<br>
@@ -24,38 +24,38 @@
         <![CDATA[
         在規則檢查前先修改來電號碼。<br>
         <br>
-        <font color="#00BFFF"><b>使用情境</b>：</font><br>
+        <title><b>使用情境</b>：</title><br>
         &ensp; 部分電信商提供雙號服務，會在次要號碼前加上額外前置號碼。<br>
-        &ensp; 例如：3312345679 可能變成 <font color="#888888">123</font>3312345679。<br>
-        &ensp; 檢查前必須先移除前置號碼 <font color="#888888">123</font>。<br>
+        &ensp; 例如：3312345679 可能變成 <sample>123</sample>3312345679。<br>
+        &ensp; 檢查前必須先移除前置號碼 <sample>123</sample>。<br>
         <br>
-        <font color="#00BFFF"><b>典型設定：</b></font><br>
+        <title><b>典型設定：</b></title><br>
         - <b>[來電事件]</b> <br>
         - <b>[取代號碼]</b> <br>
-        &emsp; from: <font color="#888888">^123</font> <br>
-        &emsp; to: <font color="#888888">保留空白</font>
+        &emsp; from: <sample>^123</sample> <br>
+        &emsp; to: <sample>保留空白</sample>
         ]]>
     </string>
     <string name="help_notification">
         <![CDATA[
         內建通知頻道：<br>
         <br>
-        <font color="#00BFFF"><b>[無]</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>[無]</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; 不顯示任何通知。<br>
         <br>
-        <font color="#00BFFF"><b>[低]</b></font> &ensp; <img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>[低]</b></title> &ensp; <img src=\'ic_statusbar_shade\'/> <br>
         &ensp; 會在狀態列與通知面板顯示。<br>
         <br>
-        <font color="#00BFFF"><b>[中]</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>[中]</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; 會在狀態列與通知面板顯示，並播放音效。<br>
         <br>
-        <font color="#00BFFF"><b>[高]</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>[高]</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; 會在狀態列、通知面板與浮出通知顯示，並播放音效。<br>
         <br>
-        <font color="#00BFFF"><b>[高（靜音）]</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>[高（靜音）]</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; 與 <b>高</b> 類似，但強制靜音。<br>
-        &ensp; 很適合持續進行的 <font color="#03DAC5"><b>簡訊聊天</b></font>，避免連續的音效造成干擾。<br>
-        &ensp; 系統偵測螢幕解鎖且簡訊 App 在前景時，就會視為正在進行 <font color="#03DAC5"><b>簡訊聊天</b></font>。<br>
+        &ensp; 很適合持續進行的 <highlight><b>簡訊聊天</b></highlight>，避免連續的音效造成干擾。<br>
+        &ensp; 系統偵測螢幕解鎖且簡訊 App 在前景時，就會視為正在進行 <highlight><b>簡訊聊天</b></highlight>。<br>
         ]]>
     </string>
     <string name="none">無</string>

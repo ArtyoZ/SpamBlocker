@@ -12,53 +12,53 @@
     <![CDATA[
         استيراد الأرقام من الملفات المحلية أو البعيدة باستخدام سير العمل. <br>
         <br>
-        <font color="#00BFFF"><b>إعداد نموذجي</b></font>: <br>
+        <title><b>إعداد نموذجي</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>قراءة ملف</b></font> / <font color="#6ed0ff"><b>طلب Http</b></font> <br>
+        1. <minor><b>قراءة ملف</b></minor> / <minor><b>طلب Http</b></minor> <br>
           &ensp; الحصول على محتوى الملف. <br>
           <br>
-        2. <font color="#6ed0ff"><b>تحليل CSV</b></font> / <font color="#6ed0ff"><b>تحليل XML</b></font> / <font color="#6ed0ff"><b>استخراج Regex</b></font> <br>
+        2. <minor><b>تحليل CSV</b></minor> / <minor><b>تحليل XML</b></minor> / <minor><b>استخراج Regex</b></minor> <br>
           &ensp; تحليله والحصول على قائمة بالأرقام. <br>
           <br>
-        3. <font color="#6ed0ff"><b>استبدال الرقم</b></font> (اختياري) <br>
+        3. <minor><b>استبدال الرقم</b></minor> (اختياري) <br>
           &ensp; تعديل تنسيق الرقم <br>
           &ensp; حالة الاستخدام: <br>
-          <font color="#888888">
+          <sample>
             &emsp; عند ترحيل الأرقام من تطبيقات أخرى، قم بتحويل التنسيقات مثل <b>123#####</b> إلى regex <b>123.....</b> أو <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>استيراد إلى قاعدة بيانات المكالمات المزعجة</b></font> / <font color="#6ed0ff"><b>استيراد إلى قاعدة Regex</b></font> <br>
+        4. <minor><b>استيراد إلى قاعدة بيانات المكالمات المزعجة</b></minor> / <minor><b>استيراد إلى قاعدة Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>أمثلة</b></font>: <br>
+        <title><b>أمثلة</b></title>: <br>
           - الإعداد المسبق <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         المزيد من الأمثلة عبر الإنترنت: <br>
           - <a href=\"%s\">نص عادي</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath غير مدعوم حتى الآن، استخدم <font color="#6ed0ff"><b>استخراج Regex</b></font> بدلاً من ذلك.
+          - <a href=\"%s\">Json</a> - JsonPath غير مدعوم حتى الآن، استخدم <minor><b>استخراج Regex</b></minor> بدلاً من ذلك.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         درس Regex للمبرمجين المبتدئين. <br>
         <br>
-        <font color="#00BFFF"><b>مستوى الدخول - البدل</b></font> <br>
-        &ensp; كلما أردت استخدام حرف بدل <font color="#888888"><b>*</b></font>، ضع نقطة <font color="#888888"><b>.</b></font> قبله، مثل <font color="#888888">.*<b></b></font>، وهذا يغطي معظم حالات الاستخدام. <br>
+        <title><b>مستوى الدخول - البدل</b></title> <br>
+        &ensp; كلما أردت استخدام حرف بدل <sample><b>*</b></sample>، ضع نقطة <sample><b>.</b></sample> قبله، مثل <sample><b>.*</b></sample>، وهذا يغطي معظم حالات الاستخدام. <br>
         <br>
-        <font color="#00BFFF"><b>متقدم - استخدام الذكاء الاصطناعي</b></font> <br>
+        <title><b>متقدم - استخدام الذكاء الاصطناعي</b></title> <br>
         &ensp; على سبيل المثال، للحصول على regex التالي لرموز التحقق عبر الرسائل القصيرة: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         اسأل الذكاء الاصطناعي: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>جربه عبر الإنترنت</b></font> <br>
+        <highlight><b>جربه عبر الإنترنت</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>اضغط هنا</big></a> لنسخ الموجه أعلاه <br>
           &ensp; 2. <a href=\"try_it\"><big>اضغط هنا</big></a> لتشغيل الذكاء الاصطناعي عبر الإنترنت <br>
     ]]>

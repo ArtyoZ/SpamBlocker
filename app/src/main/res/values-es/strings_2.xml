@@ -7,9 +7,9 @@
         <br>
         Se aplica tanto a llamadas como a mensajes SMS. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridad predeterminada</b></font>: <br>
-        &ensp; Permitir: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; Bloquear: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>Prioridad predeterminada</b></priority>: <br>
+        &ensp; Permitir: <priority><b>10</b></priority> <br>
+        &ensp; Bloquear: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>Opciones:</b> <br>
         <br>
-        <font color="#00BFFF"><b>Incluir No Verificados</b></font> <br>
+        <title><b>Incluir No Verificados</b></title> <br>
         También bloquea llamadas no verificadas, lo que significa que la llamada no puede ser validada, o que el operador o tu dispositivo no soportan la atestación STIR. <br>
         <br>
         <b>Caso de uso</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Para países que aplican la atestación STIR, los números no verificados son probablemente spam. <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>Prioridad predeterminada: 0</b></font> <br>
+        <priority><b>Prioridad predeterminada: 0</b></priority> <br>
         <br>
         Un caso de uso para personalizar la prioridad:<br>
         <br>
         1. Siempre permitir contactos. <br>
-          &emsp; - Contactos, prioridad <font color="#ea86ff">12</font> <br>
+          &emsp; - Contactos, prioridad <priority>12</priority> <br>
         2. Bloquear llamadas que fallan STIR, incluso si se repiten. <br>
-          &emsp; - STIR, prioridad <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR, prioridad <priority>11</priority> <br>
         3. Permitir llamadas que se repiten. <br>
-          &emsp; - Llamada repetida, prioridad <font color="#ea86ff">10</font> <br>
+          &emsp; - Llamada repetida, prioridad <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

@@ -7,7 +7,7 @@
         <br>
         Hem aramalar hem de mesajlar için geçerlidir.<br>
         <br>
-        <font color="#ea86ff"><b>Varsayılan Öncelik: 20</b></font>
+        <priority><b>Varsayılan Öncelik: 20</b></priority>
         ]]>
     </string>
     <string name="in_meeting">Toplantı Modu</string>
@@ -60,11 +60,11 @@
     </string>
     <string name="auth_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{basic_auth(kullanıcı_adı:şifre)}</b></font><br>
+        - <title><b>{basic_auth(kullanıcı_adı:şifre)}</b></title><br>
         &ensp; HTTP temel kimlik doğrulaması gerektiren API\'ler için. Örneğin:<br>
-        &emsp; <font color="#888888">{basic_auth(111:222)}</font><br>
+        &emsp; <sample>{basic_auth(111:222)}</sample><br>
         &ensp; şu şekilde ayrıştırılır:<br>
-        &emsp; <font color="#888888">Authorization: Basic MTExOjIyMg== </font><br>
+        &emsp; <sample>Authorization: Basic MTExOjIyMg== </sample><br>
         ]]>
     </string>
 </resources>

@@ -35,7 +35,7 @@
         <br>
         D\'un coup d\'œil, vous pouvez vérifier sans effort si les enregistrements d\'historique sont couverts par les règles, vous n\'avez donc pas besoin de les tester individuellement. <br>
         <br>
-        <font color="#ffa500">Note :</font><br>
+        <warn>Note :</warn><br>
         Cela peut impacter les performances lorsqu\'il y a trop de règles d\'expression régulière. <br>
         <br>
         <b>Exemples :</b> <br>
@@ -45,7 +45,7 @@
         &ensp; - La deuxième icône rouge de SMS indique que ce contenu SMS sera bloqué par une règle de contenu. <br>
         &ensp; - La troisième icône rouge de base de données indique que ce numéro existe dans la base de données des numéros indésirables. <br>
         <br>
-        Ces icônes sont organisées par <font color="#ea86ff"><b>priorité</b></font>, la <b>première</b> icône indique
+        Ces icônes sont organisées par <priority><b>priorité</b></priority>, la <b>première</b> icône indique
         le résultat global. Cette règle de numéro a une priorité plus élevée, le message SMS sera finalement autorisé par celle-ci.<br>
         <br>
         <img src=\'ic_history_indicator_2\'/> <br>
@@ -64,7 +64,7 @@
         <![CDATA[
         Les messages MMS sont généralement des spams, il est inutile de les activer sauf si vous les utilisez réellement.<br>
         <br>
-        <font color="#ffa500">Remarque :</font><br>
+        <warn>Remarque :</warn><br>
         Les messages de groupe sont des MMS, pas des SMS.<br>
         <br>
         Les MMS seront traités comme des SMS, seul le contenu textuel sera traité,
@@ -84,28 +84,28 @@
           de vérifications OTP (mot de passe à usage unique).<br>
         <br>
         Par exemple, les messages SMS comme :<br>
-        &ensp; <font color="#888888">Votre OTP est : 1234.</font><br>
-        &ensp; <font color="#888888">Voici votre code de vérification : 1234.</font><br>
-        &ensp; <font color="#888888">1234 est votre code de validation.</font><br>
+        &ensp; <sample>Votre OTP est : 1234.</sample><br>
+        &ensp; <sample>Voici votre code de vérification : 1234.</sample><br>
+        &ensp; <sample>1234 est votre code de validation.</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Regex du contenu</font></h5>
+        <h5><title>- Regex du contenu</title></h5>
         Cette fonctionnalité s\'applique uniquement aux messages qui correspondent à cette regex, une regex typique serait : <br>
-        <font color="#fa7f71">.*(otp|code).*</font><br>
+        <error>.*(otp|code).*</error><br>
         <br>
-        <h5><font color="#00BFFF">- Intervalle</font></h5>
+        <h5><title>- Intervalle</title></h5>
         Si un message OTP ultérieur arrive dans cet intervalle de temps, il est considéré
           comme faisant partie de l\'attaque de bombardement et sera bloqué.<br>
         (par défaut : 30 secondes)<br>
         <br>
         Cela bloquera toutes les bombes suivantes, à l\'exception de la première.<br>
         <br>
-        <h5><font color="#00BFFF">- Protection de l\'écran de verrouillage</font></h5>
+        <h5><title>- Protection de l\'écran de verrouillage</title></h5>
         Activez cette option pour bloquer toutes les bombes en mode écran de verrouillage, y compris la première. <br>
         <br>
         Habituellement, votre écran devrait avoir été déverrouillé en attendant un code de vérification.
         Lorsque de tels messages arrivent alors que l\'appareil est en mode écran de verrouillage, il est probable que ce soient des bombes.<br>
         <br>
-        <font color="#ea86ff"><b>Priorité : 20</b></font>
+        <priority><b>Priorité : 20</b></priority>
         ]]>
     </string>
     <string name="lockscreen_protection"><short>Écran verrouillé</short></string>

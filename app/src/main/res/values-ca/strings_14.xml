@@ -42,15 +42,15 @@
         <![CDATA[
         Només s\'admeten les següents categories de spam, qualsevol altra categoria de l\'API s\'ha de assignar a una d\'elles.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; Informar com a número vàlid, no com a spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; El tipus de spam de reserva, que s\'utilitza quan no s\'aplica cap de les categories anteriors.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         Alguns serveis us enviaran un missatge de text primer per informar-vos que una trucada és imminent, normalment en un minut.<br>
         <br>
         Per exemple, un missatge SMS com:<br>
-        &ensp; <font color="#888888">[algun servei] Us truquem per informar …, si us plau, no dubteu a respondre.</font><br>
+        &ensp; <sample>[algun servei] Us truquem per informar …, si us plau, no dubteu a respondre.</sample><br>
         <br>
         Una expressió regular per a aquest missatge seria: <br>
-        &ensp; <font color="#03DAC5"><b>.*please.*answer.*</b></font> <br>
+        &ensp; <highlight><b>.*please.*answer.*</b></highlight> <br>
         <br>
-        La configuració predeterminada <font color="#03DAC5"><b>120 Segons</b></font> significa que totes les trucades seran
+        La configuració predeterminada <highlight><b>120 Segons</b></highlight> significa que totes les trucades seran
         permès en els propers dos minuts després de rebre aquest missatge.<br>
         <br>
         Funciona tant per a SMS normals com per a SMS flash (SMS de classe 0).<br>
         <br>
-        <font color="#ea86ff"><b>Prioritat: 10</b></font>
+        <priority><b>Prioritat: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">S\'utilitza el comodí `*` sense un punt anterior, vols dir `.*`?</string>

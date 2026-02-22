@@ -5,7 +5,7 @@
         <br>
         اگر زمان شروع بزرگتر از زمان پایان باشد، مثلا 20:00 -> 07:00، به معنی بازه زمانی از ساعت 20:00 شب تا 7:00 صبح روز بعد است. <br>
         <br>
-        <font color="#ea86ff"><b>اولویت: 10</b></font>
+        <priority><b>اولویت: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             این پرچم‌ها رفتار تطبیق‌دهنده regex را تغییر می‌دهند. <br>
             <br>
 
-            <font color="#00BFFF"><b>شماره خام</b></font>: <br>
-            &ensp; هنگامی که فعال باشد، شماره بهینه‌سازی نخواهد شد، <font color="#03DAC5"><b>+</b></font>
-            و <font color="#03DAC5"><b>صفرهای ابتدایی</b></font> باقی خواهند ماند، که برای تمایز شماره‌های داخلی مفید است.<br>
+            <title><b>شماره خام</b></title>: <br>
+            &ensp; هنگامی که فعال باشد، شماره بهینه‌سازی نخواهد شد، <highlight><b>+</b></highlight>
+            و <highlight><b>صفرهای ابتدایی</b></highlight> باقی خواهند ماند، که برای تمایز شماره‌های داخلی مفید است.<br>
             <br>
 
-            <font color="#00BFFF"><b>نادیده گرفتن کد کشور</b></font>: <br>
-            &ensp; هنگامی که فعال باشد، <font color="#fa7f71">+</font> ابتدایی و <font color="#fa7f71">کد کشور</font>
+            <title><b>نادیده گرفتن کد کشور</b></title>: <br>
+            &ensp; هنگامی که فعال باشد، <error>+</error> ابتدایی و <error>کد کشور</error>
              از یک شماره بین‌المللی حذف خواهند شد.<br>
             <br>
-            به عنوان مثال، هر دو <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> و
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> به <font color="#03DAC5">12345</font> تبدیل می‌شوند،
+            به عنوان مثال، هر دو <error>+33</error><highlight>12345</highlight> و
+            <error>+44</error><highlight>12345</highlight> به <highlight>12345</highlight> تبدیل می‌شوند،
             این به شما امکان می‌دهد تا از regex ساده‌تر `123.*` به جای `(33|44)*123.*` برای تطبیق شماره‌های بین‌المللی استفاده کنید.<br>
             <br>
 
-            <font color="#00BFFF"><b>حساس به حروف کوچک و بزرگ</b></font>:<br>
-            &ensp; به طور پیش‌فرض، تطبیق regex به حروف کوچک و بزرگ حساس نیست، <font color="#03DAC5"><b>a</b></font>
-              با هر دو <font color="#03DAC5"><b>a</b></font> و <font color="#03DAC5"><b>A</b></font> مطابقت دارد. <br>
+            <title><b>حساس به حروف کوچک و بزرگ</b></title>:<br>
+            &ensp; به طور پیش‌فرض، تطبیق regex به حروف کوچک و بزرگ حساس نیست، <highlight><b>a</b></highlight>
+              با هر دو <highlight><b>a</b></highlight> و <highlight><b>A</b></highlight> مطابقت دارد. <br>
             &ensp; این را برای حساس کردن به حروف کوچک و بزرگ فعال کنید. <br>
         ]]>
     </string>

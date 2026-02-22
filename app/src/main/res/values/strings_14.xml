@@ -42,15 +42,15 @@
         <![CDATA[
         Only the following spam categories are supported, any other category from the API should be mapped to one of them.<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; Report as valid number, not a spam.<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; The fallback spam type, used when none of the above categories apply.<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         Some services will text you first to inform you that a call is imminent, typically within a minute.<br>
         <br>
         For example, an SMS message like:<br>
-        &ensp; <font color="#888888">[some service] We are calling you to inform …, please feel free to answer.</font><br>
+        &ensp; <sample>[some service] We are calling you to inform …, please feel free to answer.</sample><br>
         <br>
         A regex for such message would be: <br>
-        &ensp; <font color="#03DAC5"><b><translate>.*please.*answer.*</translate></b></font> <br>
+        &ensp; <highlight><b><translate>.*please.*answer.*</translate></b></highlight> <br>
         <br>
-        The default setting <font color="#03DAC5"><b>120 Seconds</b></font> means all calls will be
+        The default setting <highlight><b>120 Seconds</b></highlight> means all calls will be
         allowed in the next two minutes after receiving such message.<br>
         <br>
         It works for both regular SMS and flash SMS(class 0 SMS).<br>
         <br>
-        <font color="#ea86ff"><b>Priority: 10</b></font>
+        <priority><b>Priority: 10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">Wildcard `*` is used without a preceding dot, do you mean `.*` ?</string>

@@ -5,7 +5,7 @@
         <br>
         Wenn die Startzeit größer ist als die Endzeit, z. B. 20:00 -> 07:00, bedeutet dies den Zeitraum von 20:00 Uhr abends bis 07:00 Uhr am nächsten Morgen. <br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 10</b></font>
+        <priority><b>Priorität: 10</b></priority>
         ]]>
     </string>
 
@@ -14,23 +14,23 @@
             Diese Flags ändern das Übereinstimmungsverhalten des Regex. <br>
             <br>
 
-            <font color="#00BFFF"><b>Rohe Nummer</b></font>: <br>
-            &ensp; Wenn aktiviert, wird die Nummer nicht optimiert, <font color="#03DAC5"><b>+</b></font>
-            und <font color="#03DAC5"><b>führende Nullen</b></font> bleiben erhalten, nützlich zur Unterscheidung nationaler Nummern.<br>
+            <title><b>Rohe Nummer</b></title>: <br>
+            &ensp; Wenn aktiviert, wird die Nummer nicht optimiert, <highlight><b>+</b></highlight>
+            und <highlight><b>führende Nullen</b></highlight> bleiben erhalten, nützlich zur Unterscheidung nationaler Nummern.<br>
             <br>
 
-            <font color="#00BFFF"><b>Ländervorwahl ignorieren</b></font>: <br>
-            &ensp; Wenn aktiviert, werden das führende <font color="#fa7f71">+</font> und die <font color="#fa7f71">Ländervorwahl</font>
+            <title><b>Ländervorwahl ignorieren</b></title>: <br>
+            &ensp; Wenn aktiviert, werden das führende <error>+</error> und die <error>Ländervorwahl</error>
              von einer internationalen Nummer entfernt.<br>
             <br>
-            Zum Beispiel werden sowohl <font color="#fa7f71">+33</font><font color="#03DAC5">12345</font> als auch
-            <font color="#fa7f71">+44</font><font color="#03DAC5">12345</font> zu <font color="#03DAC5">12345</font>,
+            Zum Beispiel werden sowohl <error>+33</error><highlight>12345</highlight> als auch
+            <error>+44</error><highlight>12345</highlight> zu <highlight>12345</highlight>,
             dies ermöglicht die Verwendung eines einfacheren Regex `123.*` anstelle von `(33|44)*123.*`, um internationale Nummern abzugleichen.<br>
             <br>
 
-            <font color="#00BFFF"><b>Groß-/Kleinschreibung beachten</b></font>:<br>
-            &ensp; Standardmäßig ist der Regex-Abgleich nicht zwischen Groß- und Kleinschreibung zu unterscheiden, <font color="#03DAC5"><b>a</b></font>
-              würde sowohl auf <font color="#03DAC5"><b>a</b></font> als auch auf <font color="#03DAC5"><b>A</b></font> passen. <br>
+            <title><b>Groß-/Kleinschreibung beachten</b></title>:<br>
+            &ensp; Standardmäßig ist der Regex-Abgleich nicht zwischen Groß- und Kleinschreibung zu unterscheiden, <highlight><b>a</b></highlight>
+              würde sowohl auf <highlight><b>a</b></highlight> als auch auf <highlight><b>A</b></highlight> passen. <br>
             &ensp; Aktivieren Sie dies, um die Groß-/Kleinschreibung zu beachten. <br>
         ]]>
     </string>

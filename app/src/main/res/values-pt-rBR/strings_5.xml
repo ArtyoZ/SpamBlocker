@@ -35,13 +35,13 @@
         <br>
         <b>Opções:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Em Dias</font></h6>
-        Chamadas que ocorreram antes de <font color="#03DAC5">%s dias</font> são ignoradas.<br>
+        <h6><title>- Em Dias</title></h6>
+        Chamadas que ocorreram antes de <highlight>%s dias</highlight> são ignoradas.<br>
         <br>
-        <h6><font color="#00BFFF">- Incluir SMS</font></h6>
+        <h6><title>- Incluir SMS</title></h6>
         Quando ativado, enviar SMS para esse número também conta.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
     <string name="help_recent_apps">
@@ -51,12 +51,12 @@
         Um caso de uso típico:<br>
         &emsp; Você acabou de pedir uma pizza no PizzaApp, em breve eles ligam para você para reembolsar porque estão fechando. Essa chamada seria permitida se o PizzaApp estivesse habilitado aqui. <br>
         <br>
-        A configuração padrão <font color="03DAC5"><b>5 Min</b></font> significa que qualquer chamada seria permitida se qualquer um dos aplicativos tivesse sido usado nos últimos 5 minutos,
+        A configuração padrão <highlight><b>5 Min</b></highlight> significa que qualquer chamada seria permitida se qualquer um dos aplicativos tivesse sido usado nos últimos 5 minutos,
         por `usado` significa ser ativado, desativado, minimizado ou morto. <br>
         <br>
         Aplica-se apenas a chamadas, <b>não</b> a mensagens de texto. <br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">O atraso antes que a chamada seja desligada.</string>
@@ -67,21 +67,21 @@
     </string-array>
     <string name="help_block_type">
         <![CDATA[
-        - <font color="#00BFFF"><b>Rejeitar</b></font>: <br>
+        - <title><b>Rejeitar</b></title>: <br>
          O mesmo que pressionar o botão de recusar. Funciona de forma completamente silenciosa, a tela de bloqueio não será ativada.<br>
         <br>
-        - <font color="#00BFFF"><b>Silenciar</b></font>: <br>
+        - <title><b>Silenciar</b></title>: <br>
          Tocará silenciosamente em segundo plano, dando a impressão ao chamador de que você estava indisponível e perdeu a chamada. <br>
         <br>
          Também pode ajudar se você estiver recebendo chamadas de spam repetidas; isso estenderá a duração da chamada, tornando-a menos eficiente para os spammers, potencialmente desencorajando-os a ligar novamente.<br>
         <br>
-        - <font color="#00BFFF"><b>Desligar</b></font>: <br>
+        - <title><b>Desligar</b></title>: <br>
         Atender e desligar a chamada para evitar que vá para o correio de voz. <br>
         <br>
         Quando a chamada de spam é recebida durante uma chamada em curso, ela mudará para \"Rejeitar\"
          para evitar desligar a chamada em curso. <br>
         <br>
-        <font color="#FFA500">Nota</font> A tela de bloqueio pode ser ativada por um curto período,
+        <warn>Nota</warn> A tela de bloqueio pode ser ativada por um curto período,
         você também pode ouvir um tom de fim de chamada (alguns telefones oferecem uma opção para silenciar esse som). <br>
         <br>
         - O <b>atraso</b>: <br>

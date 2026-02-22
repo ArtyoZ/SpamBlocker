@@ -3,7 +3,7 @@
         <![CDATA[
         Las APIs configuradas aquí se usarán tanto para el reporte automático como para el reporte manual.<br>
         <br>
-        <h6><font color="#00BFFF">- Privacidad</font></h6>
+        <h6><title>- Privacidad</title></h6>
         Los puntos finales de la API verán su:<br>
         <br>
          &ensp; - Dirección IP<br>
@@ -12,39 +12,39 @@
         <br>
         Nada más será reportado.<br>
         <br>
-        <h6><font color="#00BFFF">- Reporte manual</font></h6>
+        <h6><title>- Reporte manual</title></h6>
 		Si alguna API está habilitada aquí, toque un número telefónico en el historial de llamadas, y aparecerá un botón de reporte.<br>
 		<br>
 		El número telefónico será reportado a <b>todas</b> las APIs.<br>
 		<br>
-        <h6><font color="#00BFFF">- Reporte automático</font></h6>
-		<font color="#6ED0ff"><b>Retraso del reporte</b></font><br>
+        <h6><title>- Reporte automático</title></h6>
+		<minor><b>Retraso del reporte</b></minor><br>
         Cuando se bloquea una llamada, habrá un período de una hora antes de que se reporte.
         Si el número telefónico es permitido posteriormente debido a repeticiones o si se vuelve a marcar dentro de este período,
         se considerará un número telefónico no spam y el reporte será cancelado.<br>
         <br>
-		<font color="#6ED0ff"><b>Tipo de reporte</b></font><br>
-		1. <font color="#fa7f71"><b>No</b></font> reportará:<br>
+		<minor><b>Tipo de reporte</b></minor><br>
+		1. <error><b>No</b></error> reportará:<br>
         <br>
-        - <font color="#fa7f71">Números de SMS o contenido</font><br>
-        - <font color="#fa7f71">Números telefónicos permitidos</font><br>
-        - <font color="#fa7f71">Pruebas</font><br>
+        - <error>Números de SMS o contenido</error><br>
+        - <error>Números telefónicos permitidos</error><br>
+        - <error>Pruebas</error><br>
         Y los siguientes tipos bloqueados:<br>
-        - <font color="#fa7f71">Expresión regular de Contacto</font><br>
-        - <font color="#fa7f71">Expresión regular de Grupo de Contactos</font><br>
-        - <font color="#fa7f71">Base de datos</font><br>
-        - <font color="#fa7f71">Modo reunión</font><br>
-        - <font color="#fa7f71">Consulta instantánea</font> (para evitar que el número telefónico del punto final de la API se filtre a otros competidores)<br>
+        - <error>Expresión regular de Contacto</error><br>
+        - <error>Expresión regular de Grupo de Contactos</error><br>
+        - <error>Base de datos</error><br>
+        - <error>Modo reunión</error><br>
+        - <error>Consulta instantánea</error> (para evitar que el número telefónico del punto final de la API se filtre a otros competidores)<br>
         <br>
-		2. <font color="#03DAC5"><b>Sí</b></font> reportará los números telefónicos bloqueados por:<br>
+		2. <highlight><b>Sí</b></highlight> reportará los números telefónicos bloqueados por:<br>
         <br>
-        - <font color="#03DAC5">No-Contacto</font><br>
-        - <font color="#03DAC5">Atestación STIR</font><br>
-        - <font color="#03DAC5">Expresión regular de número telefónico</font><br>
+        - <highlight>No-Contacto</highlight><br>
+        - <highlight>Atestación STIR</highlight><br>
+        - <highlight>Expresión regular de número telefónico</highlight><br>
         <br>
 		3. Una excepción:<br>
 		<br>
-        Cuando sea bloqueado por <font color="#03DAC5">Base de datos</font> y el número telefónico fue añadido originalmente por una consulta de API,
+        Cuando sea bloqueado por <highlight>Base de datos</highlight> y el número telefónico fue añadido originalmente por una consulta de API,
          será reportado de vuelta a esa API para aumentar la puntuación de calificación. <br>
         <br>
          Por ejemplo, si el número telefónico fue añadido por

@@ -6,9 +6,9 @@
         为特定功能设置铃声，或将其静音。<br>
         <br>
         例如，为正则表达式规则设置铃声：<br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         此规则允许的呼叫将播放指定的铃声。<br>
     ]]>
@@ -51,9 +51,9 @@
         自定义正则表达式规则的铃声，当呼叫被此规则允许时，将播放指定的铃声。 <br>
         <br>
         <b>使用场景:<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; 为特定联系人、联系人群组或电话号码范围设置不同的铃声。
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="remote_setup">远程设置</string>
@@ -90,8 +90,8 @@
         <br>
         工作流每天运行，首次运行时下载完整的 90 天数据集，随后仅执行增量更新。 <br>
         <br>
-        <font color="#ffa500"><b>注意：</b></font> <br>
-        <font color="#888888">&ensp; 该数据集通常在每个工作日大约美国东部时间中午更新。 </font><br>
+        <warn><b>注意：</b></warn> <br>
+        <sample>&ensp; 该数据集通常在每个工作日大约美国东部时间中午更新。 </sample><br>
         <br>
         因此计划在 18:00 执行，因为预计届时数据集已可用。 <br>
     ]]>

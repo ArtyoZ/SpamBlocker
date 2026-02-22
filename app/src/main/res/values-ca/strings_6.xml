@@ -45,13 +45,13 @@
         <br>
         <b>Opcions:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Freqüència</h6>
-        La configuració predeterminada <font color="#03DAC5"><b>1 / 5 minuts</b></font> significa que es permetrà la segona trucada en 5 minuts. <br>
+        <h6><title>- Freqüència</title></h6>
+        La configuració predeterminada <highlight><b>1 / 5 minuts</b></highlight> significa que es permetrà la segona trucada en 5 minuts. <br>
         <br>
-        <h6><font color="#00BFFF">- Incloure SMS</font></h6>
+        <h6><title>- Incloure SMS</title></h6>
         Quan estigui activat, també es comptabilitzen els SMS rebuts d\'aquest número.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritat: 10</b></font>
+        <priority><b>Prioritat: 10</b></priority>
         ]]>
     </string>
 

@@ -31,14 +31,14 @@
     <br>
     <b>Opsi:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Durasi</b></font> <br>
+    - <title><b>Durasi</b></title> <br>
     Panggilan akan diblokir selama periode ini (dalam detik). <br>
     <br>
-    - <font color="#00BFFF"><b>Termasuk yang Diblokir</b></font> <br>
+    - <title><b>Termasuk yang Diblokir</b></title> <br>
     Fitur ini akan diaktifkan setelah panggilan apa pun diblokir. <br>
     <br>
-    - <font color="#00BFFF"><b>Termasuk yang Dijawab</b></font> <br>
-    - <font color="#00BFFF"><b>Durasi Panggilan Minimal</b></font> <br>
+    - <title><b>Termasuk yang Dijawab</b></title> <br>
+    - <title><b>Durasi Panggilan Minimal</b></title> <br>
     Fitur ini akan diaktifkan setelah panggilan dijawab tetapi durasi panggilan terlalu singkat, karena panggilan semacam itu juga dianggap sebagai panggilan spam. <br>
     ]]>
     </string>
@@ -47,10 +47,10 @@
     Setelah memblokir panggilan, blokir juga panggilan berikutnya yang melewati semua aturan untuk suatu periode. <br>
     <br>
     <b>Kasus penggunaan:</b> <br>
-    <font color="#888888"> &ensp; Beberapa spam menggunakan nomor dengan awalan umum, yang dapat diblokir dengan aturan regex.
-      Setelah panggilan pertama diblokir, mereka akan beralih ke nomor acak, membuat panggilan yang mungkin melewati semua aturan. </font><br>
+    <sample> &ensp; Beberapa spam menggunakan nomor dengan awalan umum, yang dapat diblokir dengan aturan regex.
+      Setelah panggilan pertama diblokir, mereka akan beralih ke nomor acak, membuat panggilan yang mungkin melewati semua aturan. </sample><br>
     <br>
-    <font color="#ffa500"><b>Catatan:</b></font> <br>
+    <warn><b>Catatan:</b></warn> <br>
       Ini juga melibatkan risiko memblokir panggilan yang valid, ini adalah kompromi.<br>
     <br>
     Ini akan membuat baik <b>aturan regex</b> maupun <b>alur kerja</b>, lihat tooltip dari aksi internal <b>Pembatasan Panggilan</b> untuk penjelasan terperinci.<br>
@@ -66,14 +66,14 @@
     <br>
     <b>Opsi:</b> <br>
     <br>
-    - <font color="#00BFFF"><b>Durasi</b></font> <br>
+    - <title><b>Durasi</b></title> <br>
     Pesan SMS akan diblokir selama periode ini (dalam detik). <br>
     <br>
-    - <font color="#00BFFF"><b>Batas Jumlah</b></font> <br>
+    - <title><b>Batas Jumlah</b></title> <br>
     Izinkan N notifikasi pertama. <br>
     <br>
-    - <font color="#00BFFF"><b>Termasuk yang Dijawab</b></font> <br>
-    - <font color="#00BFFF"><b>Durasi Panggilan Minimal</b></font> <br>
+    - <title><b>Termasuk yang Dijawab</b></title> <br>
+    - <title><b>Durasi Panggilan Minimal</b></title> <br>
     Jika panggilan yang dijawab terlalu singkat, itu juga dianggap sebagai panggilan spam dan akan mengaktifkan fitur ini. <br>
     ]]>
     </string>
@@ -82,7 +82,7 @@
     Bisukan notifikasi SMS berturut-turut dari nomor yang sama untuk suatu periode. <br>
     <br>
     <b>Kasus penggunaan:</b> <br>
-    <font color="#888888">Izinkan tiga notifikasi pertama dari sebuah nomor dan bisukan sisanya dalam satu menit.</font> <br>
+    <sample>Izinkan tiga notifikasi pertama dari sebuah nomor dan bisukan sisanya dalam satu menit.</sample> <br>
     <br>
     Ini akan membuat baik <b>aturan regex</b> maupun <b>alur kerja</b>, lihat tooltip dari aksi internal <b>Pembatasan SMS</b> untuk penjelasan terperinci.<br>
     ]]>

@@ -42,13 +42,13 @@
         <br>
         <b>选项：</b><br>
         <br>
-        <h6><font color="#00BFFF">- 频率</font></h6>
-        默认设置 <font color="#03DAC5"><b>1 次 / 5 分钟</b></font> 表示在 5 分钟内的第二次来电将被允许通过。 <br>
+        <h6><title>- 频率</title></h6>
+        默认设置 <highlight><b>1 次 / 5 分钟</b></highlight> 表示在 5 分钟内的第二次来电将被允许通过。 <br>
         <br>
-        <h6><font color="#00BFFF">- 包含短信</font></h6>
+        <h6><title>- 包含短信</title></h6>
         启用时，接收来自该电话号码的短信也将计入。<br>
         <br>
-        <font color="#ea86ff"><b>优先级：10</b></font>
+        <priority><b>优先级：10</b></priority>
         ]]>
     </string>
 

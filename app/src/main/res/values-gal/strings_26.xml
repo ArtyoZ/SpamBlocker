@@ -12,54 +12,54 @@
     <![CDATA[
         Importar números de ficheiros locais ou remotos usando fluxos de traballo. <br>
         <br>
-        <font color="#00BFFF"><b>Unha configuración típica</b></font>: <br>
+        <title><b>Unha configuración típica</b></title>: <br>
         <br>
-        1. <font color="#6ed0ff"><b>Ler Ficheiro</b></font> / <font color="#6ed0ff"><b>Petición HTTP</b></font> <br>
+        1. <minor><b>Ler Ficheiro</b></minor> / <minor><b>Petición HTTP</b></minor> <br>
           &ensp; Obter o contido do ficheiro. <br>
           <br>
-        2. <font color="#6ed0ff"><b>Analizar CSV</b></font> / <font color="#6ed0ff"><b>Analizar XML</b></font> / <font color="#6ed0ff"><b>Extracción Regex</b></font> <br>
+        2. <minor><b>Analizar CSV</b></minor> / <minor><b>Analizar XML</b></minor> / <minor><b>Extracción Regex</b></minor> <br>
           &ensp; Analícao e obtén unha lista de números. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Substituír Número</b></font> (opcional) <br>
+        3. <minor><b>Substituír Número</b></minor> (opcional) <br>
           &ensp; Modifica o formato do número <br>
           &ensp; Caso de uso: <br>
-          <font color="#888888">
+          <sample>
             &emsp; Ao migrar números doutras aplicacións, converte formatos como <b>123#####</b> a regex <b>123.....</b> ou <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Importar á Base de Datos de Spam</b></font> / <font color="#6ed0ff"><b>Importar á Regra Regex</b></font> <br>
+        4. <minor><b>Importar á Base de Datos de Spam</b></minor> / <minor><b>Importar á Regra Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Exemplos</b></font>: <br>
+        <title><b>Exemplos</b></title>: <br>
           - O predefinido <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Máis exemplos en liña: <br>
           - <a href=\"%s\">Texto plano</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath aínda non é compatíbel, usa <font color="#6ed0ff"><b>Extracción Regex</b></font> no seu lugar.
+          - <a href=\"%s\">Json</a> - JsonPath aínda non é compatíbel, usa <minor><b>Extracción Regex</b></minor> no seu lugar.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Un titorial de regex para non programadores. <br>
         <br>
-        <font color="#00BFFF"><b>Nivel de entrada - Comodín</b></font> <br>
-        &ensp; Cando queiras usar un comodín <font color="#888888"><b>*</b></font>, pon un punto <font color="#888888"><b>.</b></font>
-          antes del, como <font color="#888888">.*<b></b></font>, isto debería cubrir a maioría dos casos de uso. <br>
+        <title><b>Nivel de entrada - Comodín</b></title> <br>
+        &ensp; Cando queiras usar un comodín <sample><b>*</b></sample>, pon un punto <sample><b>.</b></sample>
+          antes del, como <sample><b>.*</b></sample>, isto debería cubrir a maioría dos casos de uso. <br>
         <br>
-        <font color="#00BFFF"><b>Avanzado - Usando IA</b></font> <br>
+        <title><b>Avanzado - Usando IA</b></title> <br>
         &ensp; Por exemplo, para obter a seguinte regex para verificacións por SMS: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Pregúntalle á IA: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Probar en liña</b></font> <br>
+        <highlight><b>Probar en liña</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Toca aquí</big></a> para copiar o prompt de arriba <br>
           &ensp; 2. <a href=\"try_it\"><big>Toca aquí</big></a> para iniciar a IA en liña <br>
     ]]>

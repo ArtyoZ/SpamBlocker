@@ -5,30 +5,30 @@
         <![CDATA[
         Nach dem Wählen einer Notrufnummer, erlaube alle eingehenden Anrufe für eine bestimmte Zeit.<br>
         <br>
-        <h5><font color="#00BFFF">- Dauer</font></h5>
-        Die Standardeinstellung <font color="#03DAC5"><b>120 Min</b></font> bedeutet, dass alle Anrufe
+        <h5><title>- Dauer</title></h5>
+        Die Standardeinstellung <highlight><b>120 Min</b></highlight> bedeutet, dass alle Anrufe
         in den nächsten 120 Minuten nach dem Wählen einer Notrufnummer erlaubt sind.<br>
         <br>
-        <h5><font color="#00BFFF">- STIR prüfen</font></h5>
+        <h5><title>- STIR prüfen</title></h5>
          - Wenn deaktiviert, werden alle Anrufe zugelassen.<br>
          - Wenn aktiviert, werden Anrufe, die die STIR-Bestätigung nicht bestehen, nicht zugelassen, nur "Valid" und "Unverified" Anrufe werden zugelassen.<br>
         <br>
-        <h5><font color="#00BFFF">- Zusätzliche Nummern</font></h5>
+        <h5><title>- Zusätzliche Nummern</title></h5>
         Das Wählen einer beliebigen Nummer in dieser Liste löst ebenfalls diese Funktion aus.<br>
         <br>
         Es ist nicht erforderlich, hier explizit Nummern wie 911 hinzuzufügen, da Android eine integrierte
         Notrufnummerliste für jedes Land enthält (z.B.: Polizei, Feuerwehr, Krankenwagen).<br>
         <br>
         Trennen Sie die Nummern durch Kommas, wie zum Beispiel:<br>
-        &ensp; <font color="#888888">111, 222, 3333</font><br>
+        &ensp; <sample>111, 222, 3333</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Zurücksetzen</font></h5>
+        <h5><title>- Zurücksetzen</title></h5>
         Drücken Sie diese Taste, um diese Funktion zurückzusetzen, wenn sie versehentlich oder während des Testens ausgelöst wurde.<br>
         <br>
-        <h5><font color="#00BFFF">- Testen</font></h5>
+        <h5><title>- Testen</title></h5>
         Simulieren Sie einen abgehenden Anruf, um zu testen, ob diese Nummer eine Notrufnummer ist.<br>
         <br>
-        <font color="#ea86ff"><b>Priorität: Max</b></font>
+        <priority><b>Priorität: Max</b></priority>
         ]]>
     </string>
     <string name="reset">Zurücksetzen</string>
@@ -39,17 +39,17 @@
     <string name="additional_numbers">Zusätzliche Nummern</string>
     <string name="path_tags">
         <![CDATA[
-        <font color="#00BFFF"><b>{sdcard}</b></font><br>
+        <title><b>{sdcard}</b></title><br>
         Das externe Speicherverzeichnis, identisch mit: <br>
-        <font color="#888888">/storage/emulated/0</font><br>
+        <sample>/storage/emulated/0</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Download}</b></font><br>
+        <title><b>{Download}</b></title><br>
         Identisch mit: <br>
-        <font color="#888888">{sdcard}/Download</font><br>
+        <sample>{sdcard}/Download</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Documents}</b></font><br>
+        <title><b>{Documents}</b></title><br>
         Identisch mit: <br>
-        <font color="#888888">{sdcard}/Documents</font>
+        <sample>{sdcard}/Documents</sample>
         ]]>
     </string>
     <string name="call_to_number">An Nummer</string>
@@ -61,8 +61,8 @@
         <br>
         Ein typischer Anwendungsfall:<br>
         &ensp; Bei einer Benachrichtigung wie:<br>
-        &emsp; Titel: <font color="#888888">Bestellaktualisierung:</font><br>
-        &emsp; Text: <font color="#888888">Ihre Bestellung wurde vom Fahrer übernommen …</font><br>
+        &emsp; Titel: <sample>Bestellaktualisierung:</sample><br>
+        &emsp; Text: <sample>Ihre Bestellung wurde vom Fahrer übernommen …</sample><br>
         &ensp; Der Fahrer könnte Sie dann anrufen, um Details zu bestätigen.<br>
         <br>
         <b>Erforderliche Berechtigungen:</b> <br>
@@ -71,18 +71,18 @@
         <br>
         Optionen:<br>
         <br>
-        <h6><font color="#00BFFF">- App</font></h6>
+        <h6><title>- App</title></h6>
         Es werden nur Benachrichtigungen dieser App geprüft.<br>
         <br>
-        <h6><font color="#00BFFF">- Benachrichtigungsinhalt</font></h6>
+        <h6><title>- Benachrichtigungsinhalt</title></h6>
         Dieser Regex gleicht <b>sowohl den Benachrichtigungstitel als auch den Text</b> ab.<br>
         Ein Beispiel für den oben genannten Anwendungsfall:<br>
-        &emsp; <font color="#03DAC5">Bestellaktualisierung.*vom Fahrer übernommen.*</font><br>
+        &emsp; <highlight>Bestellaktualisierung.*vom Fahrer übernommen.*</highlight><br>
         <br>
-        <h6><font color="#00BFFF">- Dauer</font></h6>
+        <h6><title>- Dauer</title></h6>
         Anrufe werden während dieses Zeitraums zugelassen, angegeben in Minuten.<br>
         <br>
-        <font color="#ea86ff"><b>Priorität: 10</b></font>
+        <priority><b>Priorität: 10</b></priority>
         ]]>
     </string>
     <string name="notification_content">Benachrichtigungsinhalt</string>

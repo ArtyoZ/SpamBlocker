@@ -6,9 +6,9 @@
         Set the ringtone for a particular feature, or mute it. <br>
         <br>
         For example, to set the ringtone for a regex rule: <br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         Calls permitted by this rule will play the specified ringtone.<br>
     ]]>
@@ -26,9 +26,9 @@
         allowed by this rule. <br>
         <br>
         <b>Use case:<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; Set different ringtones for particular people, contact groups, or number ranges.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="help_target_rule_desc">
@@ -93,8 +93,8 @@
         <br>
         The workflow runs daily, it downloads the full 90-day dataset on the first run, then performs only incremental updates on subsequent runs. <br>
         <br>
-        <font color="#ffa500"><b>Note:</b></font> <br>
-        <font color="#888888">&ensp; The data set is typically updated each weekday by about noon Eastern time. </font><br>
+        <warn><b>Note:</b></warn> <br>
+        <sample>&ensp; The data set is typically updated each weekday by about noon Eastern time. </sample><br>
         <br>
         So it\'s scheduled at 18:00, as the dataset is expected to be available by then. <br>
     ]]>

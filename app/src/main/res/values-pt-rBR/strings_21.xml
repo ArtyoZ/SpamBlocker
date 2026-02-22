@@ -6,9 +6,9 @@
         Defina o toque para um recurso específico, ou silencie-o. <br>
         <br>
         Por exemplo, para definir o toque para uma regra de expressão regular: <br><br>
-        <font color="#888888">
+        <sample>
         &emsp; { \"regex\": \"rule_desc\" }
-        </font>
+        </sample>
         <br><br>
         As chamadas permitidas por esta regra tocarão o toque especificado.<br>
     ]]>
@@ -52,9 +52,9 @@
         permitida por esta regra. <br>
         <br>
         <b>Caso de uso:<b> <br>
-        <font color="#888888">
+        <sample>
         &ensp; Defina toques diferentes para pessoas específicas, grupos de contatos ou intervalos de números.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="remote_setup">Configuração Remota</string>
@@ -91,8 +91,8 @@
         <br>
         O fluxo de trabalho é executado diariamente, ele baixa o conjunto de dados completo de 90 dias na primeira execução, depois realiza apenas atualizações incrementais nas execuções subsequentes. <br>
         <br>
-        <font color="#ffa500"><b>Nota:</b></font> <br>
-        <font color="#888888">&ensp; O conjunto de dados costuma ser atualizado a cada dia útil por volta do meio‑dia, horário do Leste. </font><br>
+        <warn><b>Nota:</b></warn> <br>
+        <sample>&ensp; O conjunto de dados costuma ser atualizado a cada dia útil por volta do meio‑dia, horário do Leste. </sample><br>
         <br>
         Portanto, está programado para as 18:00, pois espera‑se que o conjunto de dados esteja disponível até lá. <br>
     ]]>

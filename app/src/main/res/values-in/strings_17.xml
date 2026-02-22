@@ -5,30 +5,30 @@
         <![CDATA[
         Setelah menghubungi nomor darurat, izinkan semua panggilan masuk untuk jangka waktu tertentu.<br>
         <br>
-        <h5><font color="#00BFFF">- Durasi</font></h5>
-        Pengaturan default <font color="#03DAC5"><b>120 Menit</b></font> berarti semua panggilan akan diizinkan
+        <h5><title>- Durasi</title></h5>
+        Pengaturan default <highlight><b>120 Menit</b></highlight> berarti semua panggilan akan diizinkan
         dalam 120 menit berikutnya setelah menghubungi nomor darurat.<br>
         <br>
-        <h5><font color="#00BFFF">- Periksa STIR</font></h5>
+        <h5><title>- Periksa STIR</title></h5>
          - Jika dinonaktifkan, semua panggilan akan diizinkan.<br>
          - Jika diaktifkan, panggilan yang gagal dalam pengesahan STIR tidak akan diizinkan, hanya panggilan "Valid" dan "Unverified" yang akan diizinkan.<br>
         <br>
-        <h5><font color="#00BFFF">- Nomor Tambahan</font></h5>
+        <h5><title>- Nomor Tambahan</title></h5>
         Menghubungi nomor apa pun dalam daftar ini juga akan memicu fitur ini.<br>
         <br>
         Tidak perlu menambahkan nomor seperti 911 di sini secara eksplisit, karena Android menyertakan bawaan
         daftar nomor darurat untuk setiap negara (misalnya: polisi, pemadam kebakaran, ambulans).<br>
         <br>
         Pisahkan nomor dengan koma, seperti:<br>
-        &ensp; <font color="#888888">111, 222, 3333</font><br>
+        &ensp; <sample>111, 222, 3333</sample><br>
         <br>
-        <h5><font color="#00BFFF">- Reset</font></h5>
+        <h5><title>- Reset</title></h5>
         Tekan tombol ini untuk mengatur ulang fitur ini jika terpicu karena kesalahan atau selama pengujian.<br>
         <br>
-        <h5><font color="#00BFFF">- Uji</font></h5>
+        <h5><title>- Uji</title></h5>
         Simulasikan panggilan keluar untuk menguji apakah nomor tersebut adalah nomor darurat.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: Maks</b></font>
+        <priority><b>Prioritas: Maks</b></priority>
         ]]>
     </string>
     <string name="reset">Reset</string>
@@ -39,17 +39,17 @@
     <string name="additional_numbers">Nomor Tambahan</string>
     <string name="path_tags">
         <![CDATA[
-        <font color="#00BFFF"><b>{sdcard}</b></font><br>
+        <title><b>{sdcard}</b></title><br>
         Direktori penyimpanan eksternal, sama dengan: <br>
-        <font color="#888888">/storage/emulated/0</font><br>
+        <sample>/storage/emulated/0</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Download}</b></font><br>
+        <title><b>{Download}</b></title><br>
         Sama dengan: <br>
-        <font color="#888888">{sdcard}/Download</font><br>
+        <sample>{sdcard}/Download</sample><br>
         <br>
-        <font color="#00BFFF"><b>{Documents}</b></font><br>
+        <title><b>{Documents}</b></title><br>
         Sama dengan: <br>
-        <font color="#888888">{sdcard}/Documents</font>
+        <sample>{sdcard}/Documents</sample>
         ]]>
     </string>
     <string name="call_to_number">Ke Nomor</string>
@@ -61,8 +61,8 @@
         <br>
         Contoh kasus penggunaan umum:<br>
         &ensp; Ketika ada notifikasi seperti:<br>
-        &emsp; Judul: <font color="#888888">Pembaruan Pesanan:</font><br>
-        &emsp; Isi: <font color="#888888">Pesanan Anda telah diambil oleh pengemudi…</font><br>
+        &emsp; Judul: <sample>Pembaruan Pesanan:</sample><br>
+        &emsp; Isi: <sample>Pesanan Anda telah diambil oleh pengemudi…</sample><br>
         &ensp; Pengemudi mungkin akan menghubungi Anda untuk mengonfirmasi detail.<br>
         <br>
         <b>Izin yang diperlukan:</b> <br>
@@ -71,18 +71,18 @@
         <br>
         Opsi:<br>
         <br>
-        <h6><font color="#00BFFF">- Aplikasi</font></h6>
+        <h6><title>- Aplikasi</title></h6>
         Ini hanya akan memeriksa notifikasi dari aplikasi ini.<br>
         <br>
-        <h6><font color="#00BFFF">- Konten Notifikasi</font></h6>
+        <h6><title>- Konten Notifikasi</title></h6>
         Regex ini akan mencocokkan <b>judul dan isi notifikasi</b>.<br>
         Contoh untuk kasus penggunaan di atas:<br>
-        &emsp; <font color="#03DAC5">pembaruan pesanan.*diambil oleh pengemudi.*</font><br>
+        &emsp; <highlight>pembaruan pesanan.*diambil oleh pengemudi.*</highlight><br>
         <br>
-        <h6><font color="#00BFFF">- Durasi</font></h6>
+        <h6><title>- Durasi</title></h6>
         Panggilan akan diizinkan selama periode ini, ditentukan dalam menit.<br>
         <br>
-        <font color="#ea86ff"><b>Prioritas: 10</b></font>
+        <priority><b>Prioritas: 10</b></priority>
         ]]>
     </string>
     <string name="notification_content">Konten Notifikasi</string>

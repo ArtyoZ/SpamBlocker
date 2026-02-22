@@ -12,54 +12,54 @@
     <![CDATA[
         وارد کردن شماره‌ها از فایل‌های محلی یا راه دور با استفاده از گردش‌کارها. <br>
         <br>
-        <font color="#00BFFF"><b>یک تنظیم معمول</b></font>: <br>
+        <title><b>یک تنظیم معمول</b></title>: <br>
         <br>
-        ۱. <font color="#6ed0ff"><b>خواندن فایل</b></font> / <font color="#6ed0ff"><b>درخواست Http</b></font> <br>
+        ۱. <minor><b>خواندن فایل</b></minor> / <minor><b>درخواست Http</b></minor> <br>
           &ensp; دریافت محتوای فایل. <br>
           <br>
-        ۲. <font color="#6ed0ff"><b>تجزیه CSV</b></font> / <font color="#6ed0ff"><b>تجزیه XML</b></font> / <font color="#6ed0ff"><b>استخراج Regex</b></font> <br>
+        ۲. <minor><b>تجزیه CSV</b></minor> / <minor><b>تجزیه XML</b></minor> / <minor><b>استخراج Regex</b></minor> <br>
           &ensp; آن را تجزیه کنید و لیستی از شماره‌ها دریافت کنید. <br>
           <br>
-        ۳. <font color="#6ed0ff"><b>جایگزینی شماره</b></font> (اختیاری) <br>
+        ۳. <minor><b>جایگزینی شماره</b></minor> (اختیاری) <br>
           &ensp; تغییر فرمت شماره <br>
           &ensp; مورد استفاده: <br>
-          <font color="#888888">
+          <sample>
             &emsp; هنگام انتقال شماره‌ها از برنامه‌های دیگر، فرمت‌هایی مانند <b>123#####</b> را به رجکس <b>123.....</b> یا <b>123.*</b> تبدیل کنید <br>
-          </font>
+          </sample>
           <br>
-        ۴. <font color="#6ed0ff"><b>وارد کردن به پایگاه داده اسپم</b></font> / <font color="#6ed0ff"><b>وارد کردن به قانون Regex</b></font> <br>
+        ۴. <minor><b>وارد کردن به پایگاه داده اسپم</b></minor> / <minor><b>وارد کردن به قانون Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>نمونه‌ها</b></font>: <br>
+        <title><b>نمونه‌ها</b></title>: <br>
           - پیش‌تنظیم شده <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         نمونه‌های آنلاین بیشتر: <br>
           - <a href=\"%s\">متن ساده</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath هنوز پشتیبانی نمی‌شود، به جای آن از <font color="#6ed0ff"><b>استخراج Regex</b></font> استفاده کنید.
+          - <a href=\"%s\">Json</a> - JsonPath هنوز پشتیبانی نمی‌شود، به جای آن از <minor><b>استخراج Regex</b></minor> استفاده کنید.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         یک آموزش رجکس برای غیر برنامه‌نویسان. <br>
         <br>
-        <font color="#00BFFF"><b>سطح مقدماتی - وایلدکارد</b></font> <br>
-        &ensp; هر زمان که بخواهید از یک وایلدکارد <font color="#888888"><b>*</b></font> استفاده کنید، یک نقطه <font color="#888888"><b>.</b></font>
-          قبل از آن بگذارید، مانند <font color="#888888">.*<b></b></font>، این باید اکثر موارد استفاده را پوشش دهد. <br>
+        <title><b>سطح مقدماتی - وایلدکارد</b></title> <br>
+        &ensp; هر زمان که بخواهید از یک وایلدکارد <sample><b>*</b></sample> استفاده کنید، یک نقطه <sample><b>.</b></sample>
+          قبل از آن بگذارید، مانند <sample><b>.*</b></sample>، این باید اکثر موارد استفاده را پوشش دهد. <br>
         <br>
-        <font color="#00BFFF"><b>پیشرفته - استفاده از هوش مصنوعی</b></font> <br>
+        <title><b>پیشرفته - استفاده از هوش مصنوعی</b></title> <br>
         &ensp; برای مثال، برای دریافت رجکس زیر برای تأیید پیامک: <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         از هوش مصنوعی بپرسید: <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>آنلاین امتحان کنید</b></font> <br>
+        <highlight><b>آنلاین امتحان کنید</b></highlight> <br>
           &ensp; ۱. <a href=\"copy\"><big>اینجا ضربه بزنید</big></a> برای کپی کردن پرامپت بالا <br>
           &ensp; ۲. <a href=\"try_it\"><big>اینجا ضربه بزنید</big></a> برای اجرای هوش مصنوعی آنلاین <br>
     ]]>

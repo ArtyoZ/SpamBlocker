@@ -8,10 +8,10 @@
         Ein solcher Workflow wird automatisch durch einen eingehenden Anruf ausgelöst.<br>
         <br>
         Anwendungsfall: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Entfernt zusätzliche führende Zeichen aus der Telefonnummer vor der Überprüfung,
           da einige Anbieter Dual-Nummern auf einer einzigen SIM-Karte unterstützen. <br>
-        </font>
+        </sample>
         <br>
         Eine typische Einrichtung:<br>
         - Anrufereignis <br>
@@ -24,16 +24,16 @@
         <![CDATA[
         Ändern Sie die eingehende Anrufnummer, bevor sie von den Regeln überprüft wird.<br>
         <br>
-        <font color="#00BFFF"><b>Ein Anwendungsfall</b>:</font><br>
+        <title><b>Ein Anwendungsfall</b>:</title><br>
         &ensp; Einige Mobilfunkanbieter unterstützen Dual-Nummern für dieselbe SIM-Karte; sie fügen der sekundären Nummer zusätzliche führende Ziffern hinzu.<br>
-        &ensp;   Zum Beispiel: 3312345679 kann zu <font color="#888888">123</font>3312345679 werden. <br>
-        &ensp; Die führende <font color="#888888">123</font> muss entfernt werden, bevor sie überprüft wird. <br>
+        &ensp;   Zum Beispiel: 3312345679 kann zu <sample>123</sample>3312345679 werden. <br>
+        &ensp; Die führende <sample>123</sample> muss entfernt werden, bevor sie überprüft wird. <br>
         <br>
-        <font color="#00BFFF"><b>Ein typischer Aufbau:</b></font> <br>
+        <title><b>Ein typischer Aufbau:</b></title> <br>
         - <b>Anrufereignis</b> <br>
         - <b>Nummer ersetzen</b> <br>
-        &emsp; von: <font color="#888888">^123</font> <br>
-        &emsp; zu: <font color="#888888">leer lassen</fonts> <br>
+        &emsp; von: <sample>^123</sample> <br>
+        &emsp; zu: <sample>leer lassen</sample> <br>
         ]]>
     </string>
     <string name="blocked">Blockiert</string>
@@ -42,22 +42,22 @@
         <![CDATA[
         Die integrierten Benachrichtigungskanäle: <br>
         <br>
-        <font color="#00BFFF"><b>Keine</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>Keine</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; Überhaupt keine Benachrichtigung. <br>
         <br>
-        <font color="#00BFFF"><b>Niedrig</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Niedrig</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; Erscheint in der Statusleiste und im Benachrichtigungsbereich. <br>
         <br>
-        <font color="#00BFFF"><b>Mittel</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Mittel</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; Erscheint in der Statusleiste und im Benachrichtigungsbereich mit Ton. <br>
         <br>
-        <font color="#00BFFF"><b>Hoch</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Hoch</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Erscheint in der Statusleiste, im Benachrichtigungsbereich und als Heads-up-Pop-up mit Ton. <br>
         <br>
-        <font color="#00BFFF"><b>Hoch (stummgeschaltet)</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Hoch (stummgeschaltet)</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Es ist ähnlich wie <b>Hoch</b>, aber ohne Ton. <br>
-        &ensp; Es ist ideal für aktive <font color="#03DAC5"><b>SMS-Chats</b></font>, wo kontinuierliche Töne störend sein könnten. <br>
-          Als aktiver <font color="#03DAC5"><b>SMS-Chat</b></font> gilt es, wenn der Bildschirm entsperrt ist und die SMS-App im Vordergrund geöffnet ist. <br>
+        &ensp; Es ist ideal für aktive <highlight><b>SMS-Chats</b></highlight>, wo kontinuierliche Töne störend sein könnten. <br>
+          Als aktiver <highlight><b>SMS-Chat</b></highlight> gilt es, wenn der Bildschirm entsperrt ist und die SMS-App im Vordergrund geöffnet ist. <br>
         ]]>
     </string>
     <string name="none">Keine</string>
@@ -108,7 +108,7 @@
         <![CDATA[
         Einen neuen Benachrichtigungskanal erstellen. <br>
         <br>
-        <font color="#03DAC5"><b>Langes Tippen</b></font> einen Benachrichtigungskanal in dieser Dropdown-Liste bearbeiten.
+        <highlight><b>Langes Tippen</b></highlight> einen Benachrichtigungskanal in dieser Dropdown-Liste bearbeiten.
         ]]>
     </string>
     <string name="warning_delete_channel">

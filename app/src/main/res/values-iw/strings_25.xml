@@ -19,9 +19,9 @@
         התג קשור לזרימה ויימחק אוטומטית כאשר הזרימה נמחקת. <br>
         <br>
         <b>מקרה שימוש</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; בתרחישים הכוללים עדכונים מצטברים, יש לשמור משתנה דמוי מצביע ולשימוש חוזר בריצות רצופות.
-        </font>
+        </sample>
     ]]>
     </string>
     <string name="load_tag">טען תג</string>
@@ -45,13 +45,13 @@
         <br>
         <b>אפשרויות</b> <br>
         <br>
-        <font color="#00BFFF"><b>סוג ניתוח</b></font> <br>
+        <title><b>סוג ניתוח</b></title> <br>
         נתח את ערך התגית, הוא תומך בביטויים רגולריים וב-xpath. <br>
         <br>
-        <font color="#00BFFF"><b>שם תגית</b></font> <br>
+        <title><b>שם תגית</b></title> <br>
         שם התגית ליצירה. <br>
-        לדוגמה, אם שם התגית הוא <font color="#03DAC5">my_token</font>,
-         אז תוכל להשתמש ב- <font color="#03DAC5">{my_token}</font> בשאילתות HTTP עוקבות. <br>
+        לדוגמה, אם שם התגית הוא <highlight>my_token</highlight>,
+         אז תוכל להשתמש ב- <highlight>{my_token}</highlight> בשאילתות HTTP עוקבות. <br>
     ]]>
     </string>
     <string name="max"><short>מקס</short></string>
@@ -66,14 +66,14 @@
         הדגש את חותמת הזמן בצבעים שונים בהתאם לעדכניות הרשומה. <br>
         <br>
         <b>מקרה שימוש</b>: <br>
-        &ensp; <font color="#888888">בדוק את השיחות של היום בלילה על ידי בחינת כל הרשומות עם חותמת זמן כחולה. </font>
+        &ensp; <sample>בדוק את השיחות של היום בלילה על ידי בחינת כל הרשומות עם חותמת זמן כחולה. </sample>
     ]]>
     </string>
     <string name="help_time_color_values">
     <![CDATA[
-        חייב להיות או <font color="#00BFFF"><no_translate>today</no_translate></font> או מספר שמלווה ב-<b><no_translate>min</no_translate></b>
-        (למשל <font color="#00BFFF"><no_translate>5min</no_translate></font>,
-        <font color="#00BFFF"><no_translate>120min</no_translate></font>)
+        חייב להיות או <title><no_translate>today</no_translate></title> או מספר שמלווה ב-<b><no_translate>min</no_translate></b>
+        (למשל <title><no_translate>5min</no_translate></title>,
+        <title><no_translate>120min</no_translate></title>)
     ]]>
     </string>
     <string name="invalid_value_see_tooltip">ערך לא תקין, ראה את תיאור העזרה</string>
@@ -84,32 +84,32 @@
         <br>
         בברירת מחדל, <br>
         <br>
-        - <font color="#03DAC5">Whitelist rules</font> have priority <font color="#ea86ff">10</font> <br>
-        &ensp; <font color="#888888">לדוגמה: אנשי קשר, RepeatedCall, RecentApps, וכו\' </font><br>
+        - <highlight>Whitelist rules</highlight> have priority <priority>10</priority> <br>
+        &ensp; <sample>לדוגמה: אנשי קשר, RepeatedCall, RecentApps, וכו\' </sample><br>
         <br>
-        - <font color="#fa7f71">Blacklist rules</font> have priority <font color="#ea86ff">0</font> <br>
-        &ensp; <font color="#888888">לדוגמה: STIR, Database, וכו\' </font> <br>
+        - <error>Blacklist rules</error> have priority <priority>0</priority> <br>
+        &ensp; <sample>לדוגמה: STIR, Database, וכו\' </sample> <br>
         <br>
         כאשר שניהם מופעלים, כללי רשימת ההיתרים יעלו על כללי רשימת החסימות מכיוון ש-10 > 0. <br>
         <br>
-        לכללי regex, ניתן להגדיר את העדיפות לכל מספר בין <font color="#ea86ff">-2147483648</font>
-          ו-<font color="#ea86ff">2147483647</font>. <br>
+        לכללי regex, ניתן להגדיר את העדיפות לכל מספר בין <priority>-2147483648</priority>
+          ו-<priority>2147483647</priority>. <br>
         כללים שונים יכולים לחלוק את אותה עדיפות כל עוד הם מאותו סוג, אך לעולם אל תקצה את אותה עדיפות גם לכללי רשימת ההיתרים וגם לכללי רשימת החסימות, זה עלול לגרום להתנהגות אקראית. <br>
         <br>
-        התכונה <font color="#00BFFF">Meeting Mode</font> בעלת עדיפות <font color="#ea86ff">20</font> בברירת מחדל,
+        התכונה <title>Meeting Mode</title> בעלת עדיפות <priority>20</priority> בברירת מחדל,
           מכיוון שהיא אמורה לחסום כל שיחה במהלך פגישה. <br>
-        ו-<font color="#ea86ff">-1</font> עבור <font color="#00BFFF">Instant Query</font>,
+        ו-<priority>-1</priority> עבור <title>Instant Query</title>,
           כך שהיא נבדקת רק לאחר שהשיחה עברה את כל המסננים המקומיים. <br>
         <br>
         <b>Use cases</b> of customizing the priority: <br>
         <br>
-        - <font color="#888888">תמיד לחסום מספר מסוים, ללא קשר אם הוא חוזר</font> <br>
-         &ensp; הגדר כלל עם עדיפות > 10 כדי לדרוס <font color="#00BFFF">Repeated Call</font>. <br>
+        - <sample>תמיד לחסום מספר מסוים, ללא קשר אם הוא חוזר</sample> <br>
+         &ensp; הגדר כלל עם עדיפות > 10 כדי לדרוס <title>Repeated Call</title>. <br>
         <br>
-        - <font color="#888888">תמיד לאפשר מספר</font> <br>
-         &ensp; הגדר אותו ל- > 20 כדי לדרוס <font color="#00BFFF">Meeting Mode</font>. <br>
+        - <sample>תמיד לאפשר מספר</sample> <br>
+         &ensp; הגדר אותו ל- > 20 כדי לדרוס <title>Meeting Mode</title>. <br>
         <br>
-        - <font color="#888888">בדוק כלל regex</font> <br>
+        - <sample>בדוק כלל regex</sample> <br>
          &ensp; הגדר אותו ל-999 כדי לדרוס את כל המסננים האחרים כך שלא תצטרך להשבית אותם זמנית אחד אחרי השני.
     ]]>
     </string>

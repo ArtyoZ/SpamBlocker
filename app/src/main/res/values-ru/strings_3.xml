@@ -3,22 +3,22 @@
         <![CDATA[
         Эти правила применяются к содержанию SMS-сообщений.<br>
         <br>
-        <font color="#00BFFF"><b> - Некоторые типичные шаблоны</b></font>:<br>
-        &ensp; - Содержит \"verification\": <font color="#03DAC5"><b>.*verification.*</b></font><br>
-        &ensp; - Содержит любое из слов: <font color="#03DAC5"><b>.*(police|hospital|verification).*</b></font>
+        <title><b> - Некоторые типичные шаблоны</b></title>:<br>
+        &ensp; - Содержит \"verification\": <highlight><b>.*verification.*</b></highlight><br>
+        &ensp; - Содержит любое из слов: <highlight><b>.*(police|hospital|verification).*</b></highlight>
         ]]>
     </string>
     <string name="help_quick_copy">
         <![CDATA[
         Быстрый способ копирования содержания из SMS-сообщений или телефонных номеров, облегчающий получение кодов подтверждения или входящих номеров.<br>
         <br>
-        При совпадении в уведомлении появится кнопка, например, <font color="#00BFFF"><b>Копировать: 123456</b></font>.<br>
+        При совпадении в уведомлении появится кнопка, например, <title><b>Копировать: 123456</b></title>.<br>
         <br>
         Пример правила для извлечения кодов подтверждения:<br>
         &emsp; Использование захватывающей группы:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>code.*?(\\d+) </b></font><br>
+        &emsp;&emsp; <highlight><b>code.*?(\\d+) </b></highlight><br>
         &emsp; Другой подход с использованием оглядки:<br>
-        &emsp;&emsp; <font color="#03DAC5"><b>(?&lt;=code.{0,3})\\d+</b></font>
+        &emsp;&emsp; <highlight><b>(?&lt;=code.{0,3})\\d+</b></highlight>
         ]]>
     </string>
     <string name="help_apply_to_call_sms">
@@ -29,18 +29,18 @@
     </string>
     <string name="help_apply_to_number_and_message">
         <![CDATA[
-        Когда <font color="#00BFFF"><b>Номер</b></font> отмечен, это правило будет извлекать содержание из входящего номера.
+        Когда <title><b>Номер</b></title> отмечен, это правило будет извлекать содержание из входящего номера.
         Например, используйте <b>(.*)</b>, чтобы скопировать телефонный номер.<br>
         <br>
-        Когда <font color="#00BFFF"><b>Содержание</b></font> отмечено, это правило будет извлекать содержание из текста SMS-сообщения,
+        Когда <title><b>Содержание</b></title> отмечено, это правило будет извлекать содержание из текста SMS-сообщения,
         например, коды подтверждения.
         ]]>
     </string>
     <string name="help_apply_to_passed_and_blocked">
         <![CDATA[
-        Когда <font color="#03DAC5"><b>Пропущен</b></font> отмечен, это правило будет применяться к пропущенным вызовам и сообщениям.<br>
+        Когда <highlight><b>Пропущен</b></highlight> отмечен, это правило будет применяться к пропущенным вызовам и сообщениям.<br>
         <br>
-        Когда <font color="#fa7f71"><b>Заблокирован</b></font> отмечен, это правило будет применяться к заблокированным вызовам и сообщениям.
+        Когда <error><b>Заблокирован</b></error> отмечен, это правило будет применяться к заблокированным вызовам и сообщениям.
         ]]>
     </string>
     <string name="title_rule_testing">Тестирование правил</string>

@@ -42,15 +42,15 @@
         <![CDATA[
         僅支援以下騷擾電話類別，API 回傳的任何其他類別都應對應到其中之一。<br>
         <br>
-         - <font color="#03DAC5"><b>{valid}</b></font><br>
+         - <highlight><b>{valid}</b></highlight><br>
         &ensp; 回報為有效號碼，非騷擾電話。<br>
         <br>
-         - <font color="#fa7f71"><b>{fraud}</b></font><br>
-         - <font color="#fa7f71"><b>{marketing}</b></font><br>
-         - <font color="#fa7f71"><b>{survey}</b></font><br>
-         - <font color="#fa7f71"><b>{political}</b></font><br>
+         - <error><b>{fraud}</b></error><br>
+         - <error><b>{marketing}</b></error><br>
+         - <error><b>{survey}</b></error><br>
+         - <error><b>{political}</b></error><br>
         <br>
-         - <font color="#fa7f71"><b>{other}</b></font><br>
+         - <error><b>{other}</b></error><br>
         &ensp; 後備騷擾電話類型，當無法歸類於上述類別時使用。<br>
         ]]>
     </string>
@@ -76,17 +76,17 @@
         某些服務會先傳送簡訊通知您接下來會接到電話，通常在一分鐘內。<br>
         <br>
         例如這樣的簡訊：<br>
-        &ensp; <font color="#888888">［某服務］我們正要致電通知您……，請放心接聽。</font><br>
+        &ensp; <sample>［某服務］我們正要致電通知您……，請放心接聽。</sample><br>
         <br>
         這類訊息的正規表示式可以是：<br>
-        &ensp; <font color="#03DAC5"><b>.*請.*接聽.*</b></font><br>
+        &ensp; <highlight><b>.*請.*接聽.*</b></highlight><br>
         <br>
-        預設設定 <font color="#03DAC5"><b>120 秒</b></font> 表示在收到此類訊息後的兩分鐘內，
+        預設設定 <highlight><b>120 秒</b></highlight> 表示在收到此類訊息後的兩分鐘內，
         所有來電都會放行。<br>
         <br>
         適用於一般簡訊和快閃簡訊（Class 0 簡訊）。<br>
         <br>
-        <font color="#ea86ff"><b>優先順序：10</b></font>
+        <priority><b>優先順序：10</b></priority>
         ]]>
     </string>
     <string name="waning_using_wildcard_as_regex">使用萬用字元 `*` 時未加前置點號，您是否要使用 `.*`？</string>

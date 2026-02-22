@@ -15,7 +15,7 @@
         <br>
         它适用于电话和短信。<br>
         <br>
-        <font color="#ea86ff"><b>默认优先级：0</b></font>
+        <priority><b>默认优先级：0</b></priority>
         ]]>
     </string>
     <string name="help_spam_db_ttl">

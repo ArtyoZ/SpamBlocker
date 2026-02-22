@@ -1,7 +1,7 @@
 <resources>
     <string name="warning_double_sms">
         <![CDATA[
-        Asegúrate de <font color="#fa7f71"><b>desactivar las notificaciones de la aplicación de SMS</b></font> en la configuración del sistema
+        Asegúrate de <error><b>desactivar las notificaciones de la aplicación de SMS</b></error> en la configuración del sistema
          para evitar notificaciones duplicadas. <br>
         <br>
         Si la aplicación de SMS exige el permiso de notificación, puedes mantenerlo concedido
@@ -18,11 +18,11 @@
     </string>
     <string name="help_regex_mode_caller_name">
         <![CDATA[
-        <font color="#00BFFF"><b>Nombre de quien llama</b></font>:<br>
+        <title><b>Nombre de quien llama</b></title>:<br>
         &ensp; La expresión regular coincidirá con el nombre de visualización del llamante (CNAP). <br>
         <br>
         En el registro del historial de llamadas, el nombre de quien llama aparecerá después del número de teléfono entre paréntesis si existe, como: <br>
-        &ensp; <font color="#888888">12345 (Nombre de visualización)</font> <br>
+        &ensp; <sample>12345 (Nombre de visualización)</sample> <br>
         ]]>
     </string>
     <string name="caller_name">Nombre de quien llama</string>
@@ -46,13 +46,13 @@
     <string name="explanation_forwarded_call">
         <![CDATA[
         Esto es <b>específico del operador</b>; algunos operadores formatean las llamadas desviadas como dos números concatenados con un \"&\",
-         como <font color="#888888">222&111</font>. <br>
+         como <sample>222&111</sample>. <br>
         <br>
         En este formato: <br>
-        &ensp; - La primera parte (<font color="#888888">222</font>) es típicamente el número de desvío. <br>
-        &ensp; - La segunda parte (<font color="#888888">111</font>) es el número original. <br>
+        &ensp; - La primera parte (<sample>222</sample>) es típicamente el número de desvío. <br>
+        &ensp; - La segunda parte (<sample>111</sample>) es el número original. <br>
         <br>
-        También podría haber <font color="#888888">333&111</font> y <font color="#888888">444&111</font>,
+        También podría haber <sample>333&111</sample> y <sample>444&111</sample>,
          donde el número de origen permanece igual y el número de desvío cambia.
         ]]>
     </string>
@@ -67,14 +67,14 @@
         <br>
         <b>Opciones</b>: <br>
         <br>
-        <font color="#00BFFF"><b>Bruto</b></font> <br>
-        Consultar/informar el número bruto (<font color="#888888">222&111</font>), si la API soporta este formato. <br>
+        <title><b>Bruto</b></title> <br>
+        Consultar/informar el número bruto (<sample>222&111</sample>), si la API soporta este formato. <br>
         <br>
-        <font color="#00BFFF"><b>Original</b></font> <br>
-        Consultar/informar el número original (<font color="#888888">111</font>), esto es una solución temporal para APIs que no soportan el formato bruto. <br>
+        <title><b>Original</b></title> <br>
+        Consultar/informar el número original (<sample>111</sample>), esto es una solución temporal para APIs que no soportan el formato bruto. <br>
         <br>
-        <font color="#00BFFF"><b>Desvío</b></font> <br>
-        Consultar/informar el número de desvío (<font color="#888888">222</font>). <br>
+        <title><b>Desvío</b></title> <br>
+        Consultar/informar el número de desvío (<sample>222</sample>). <br>
         ]]>
     </string>
     <string name="forwarded_number_modified_to">Este número desviado ha sido modificado a %s.</string>
@@ -83,7 +83,7 @@
     <string name="geo_location_rule">Regla de ubicación geográfica</string>
     <string name="help_regex_mode_geo_location">
         <![CDATA[
-        <font color="#00BFFF"><b>Ubicación geográfica</b></font>:<br>
+        <title><b>Ubicación geográfica</b></title>:<br>
         &ensp; La expresión regular coincidirá con la ubicación geográfica del número. <br>
         <br>
         &ensp; Esto se basa en la biblioteca de Google <a href="https://github.com/google/libphonenumber">libphonenumber</a>,
@@ -107,8 +107,8 @@
         <br>
         Reemplaza el marcador ___ con tu región real. <br>
         <br>
-        La sintaxis <font color="#fa7f71">(?!___$).*</font> significa: <br>
-        &ensp; Coincidir cualquier texto que no sea <font color="#fa7f71">___</font>.
+        La sintaxis <error>(?!___$).*</error> significa: <br>
+        &ensp; Coincidir cualquier texto que no sea <error>___</error>.
         ]]>
     </string>
 </resources>

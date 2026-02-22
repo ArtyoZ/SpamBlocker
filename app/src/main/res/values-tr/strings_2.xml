@@ -7,9 +7,9 @@
         <br>
         Hem aramalara hem de SMS mesajlarına uygulanır. <br>
         <br>
-        <font color="#ea86ff"><b>Varsayılan Öncelik</b></font>: <br>
-        &ensp; İzin: <font color="#ea86ff"><b>10</b></font> <br>
-        &ensp; Engelle: <font color="#ea86ff"><b>0</b></font>
+        <priority><b>Varsayılan Öncelik</b></priority>: <br>
+        &ensp; İzin: <priority><b>10</b></priority> <br>
+        &ensp; Engelle: <priority><b>0</b></priority>
         ]]>
     </string>
     <string name="stir_attestation">STIR</string>
@@ -25,24 +25,24 @@
         <br>
         <b>Seçenekler:</b> <br>
         <br>
-        <font color="#00BFFF"><b>Doğrulanmamışları Dahil Et</b></font> <br>
+        <title><b>Doğrulanmamışları Dahil Et</b></title> <br>
         Ayrıca doğrulanmamış aramaları engelleyin; bu, aramanın doğrulanamadığı veya operatörünüzün ya da cihazınızın STIR doğrulamasını desteklemediği anlamına gelir. <br>
         <br>
         <b>Kullanım Durumu</b>: <br>
-        <font color="#888888">
+        <sample>
           &ensp; STIR doğrulamasını zorunlu kılan ülkelerde, doğrulanmamış numaralar büyük olasılıkla spam\'dir. <br>
-        </font>
+        </sample>
         <br>
-        <font color="#ea86ff"><b>Varsayılan Öncelik: 0</b></font> <br>
+        <priority><b>Varsayılan Öncelik: 0</b></priority> <br>
         <br>
         Önceliği özelleştirmek için bir <b>kullanım durumu</b>:<br>
         <br>
         1. Kişileri her zaman izin ver. <br>
-          &emsp; - Kişiler, öncelik <font color="#ea86ff">12</font> <br>
+          &emsp; - Kişiler, öncelik <priority>12</priority> <br>
         2. STIR\'i geçemeyen aramaları engelle, tekrarlansa bile. <br>
-          &emsp; - STIR, öncelik <font color="#ea86ff">11</font> <br>
+          &emsp; - STIR, öncelik <priority>11</priority> <br>
         3. Tekrarlanan aramalara izin ver. <br>
-          &emsp; - Tekrarlanan Arama, öncelik <font color="#ea86ff">10</font> <br>
+          &emsp; - Tekrarlanan Arama, öncelik <priority>10</priority> <br>
         ]]>
     </string>
     <string name="failed_to_import_from_csv">

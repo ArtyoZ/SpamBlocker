@@ -12,54 +12,54 @@
     <![CDATA[
         Importer des numéros depuis des fichiers locaux ou distants en utilisant des flux de travail. <br>
         <br>
-        <font color="#00BFFF"><b>Une configuration typique</b></font> : <br>
+        <title><b>Une configuration typique</b></title> : <br>
         <br>
-        1. <font color="#6ed0ff"><b>Lire le fichier</b></font> / <font color="#6ed0ff"><b>Requête Http</b></font> <br>
+        1. <minor><b>Lire le fichier</b></minor> / <minor><b>Requête Http</b></minor> <br>
           &ensp; Obtenir le contenu du fichier. <br>
           <br>
-        2. <font color="#6ed0ff"><b>Analyser CSV</b></font> / <font color="#6ed0ff"><b>Analyser XML</b></font> / <font color="#6ed0ff"><b>Extraction Regex</b></font> <br>
+        2. <minor><b>Analyser CSV</b></minor> / <minor><b>Analyser XML</b></minor> / <minor><b>Extraction Regex</b></minor> <br>
           &ensp; L\'analyser et obtenir une liste de numéros. <br>
           <br>
-        3. <font color="#6ed0ff"><b>Remplacer le numéro</b></font> (optionnel) <br>
+        3. <minor><b>Remplacer le numéro</b></minor> (optionnel) <br>
           &ensp; Modifier le format du numéro <br>
           &ensp; Cas d\'usage : <br>
-          <font color="#888888">
+          <sample>
             &emsp; Lors de la migration de numéros depuis d\'autres applications, convertir les formats comme <b>123#####</b> en regex <b>123.....</b> ou <b>123.*</b> <br>
-          </font>
+          </sample>
           <br>
-        4. <font color="#6ed0ff"><b>Importer dans la base de données Spam</b></font> / <font color="#6ed0ff"><b>Importer dans la règle Regex</b></font> <br>
+        4. <minor><b>Importer dans la base de données Spam</b></minor> / <minor><b>Importer dans la règle Regex</b></minor> <br>
         <br>
         <br>
-        <font color="#00BFFF"><b>Exemples</b></font> : <br>
+        <title><b>Exemples</b></title> : <br>
           - Le préréglage <no_translate><b>FTC-DNC</b></no_translate> <br>
         <br>
         Plus d\'exemples en ligne : <br>
           - <a href=\"%s\">Texte brut</a> <br>
           - <a href=\"%s\">CSV</a> <br>
           - <a href=\"%s\">XML</a> <br>
-          - <a href=\"%s\">Json</a> - JsonPath n\'est pas encore supporté, utilisez <font color="#6ed0ff"><b>Extraction Regex</b></font> à la place.
+          - <a href=\"%s\">Json</a> - JsonPath n\'est pas encore supporté, utilisez <minor><b>Extraction Regex</b></minor> à la place.
     ]]>
     </string>
     <string name="faq_regex">
     <![CDATA[
         Un tutoriel regex pour non-programmeurs. <br>
         <br>
-        <font color="#00BFFF"><b>Niveau Débutant - Joker</b></font> <br>
-        &ensp; Chaque fois que vous voulez utiliser un joker <font color="#888888"><b>*</b></font>, mettez un point <font color="#888888"><b>.</b></font>
-          devant, comme <font color="#888888">.*<b></b></font>, cela devrait couvrir la plupart des cas d\'usage. <br>
+        <title><b>Niveau Débutant - Joker</b></title> <br>
+        &ensp; Chaque fois que vous voulez utiliser un joker <sample><b>*</b></sample>, mettez un point <sample><b>.</b></sample>
+          devant, comme <sample><b>.*</b></sample>, cela devrait couvrir la plupart des cas d\'usage. <br>
         <br>
-        <font color="#00BFFF"><b>Avancé - Utiliser l\'IA</b></font> <br>
+        <title><b>Avancé - Utiliser l\'IA</b></title> <br>
         &ensp; Par exemple, pour obtenir la regex suivante pour les vérifications SMS : <br>
-        &ensp; <font color="#888888">.*(verification|validation).*code.*\\d{5,6}.*</font> <br>
+        &ensp; <sample>.*(verification|validation).*code.*\\d{5,6}.*</sample> <br>
         <br>
         Demander à l\'IA : <br>
-        <font color="#888888">
+        <sample>
         %s
-        </font>
+        </sample>
         <br>
         <br>
         <br>
-        <font color="#03DAC5"><b>Essayer en ligne</b></font> <br>
+        <highlight><b>Essayer en ligne</b></highlight> <br>
           &ensp; 1. <a href=\"copy\"><big>Appuyez ici</big></a> pour copier l\'invite ci-dessus <br>
           &ensp; 2. <a href=\"try_it\"><big>Appuyez ici</big></a> pour lancer l\'IA en ligne <br>
     ]]>

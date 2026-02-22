@@ -8,9 +8,9 @@
         Böyle bir iş akışı, gelen bir çağrı ile otomatik olarak tetiklenir.<br>
         <br>
         Kullanım senaryosu: <br>
-        <font color="#888888">
+        <sample>
           &ensp; Bazı operatörler tek SIM kartta çift numarayı desteklediği için, numara taranmadan önce baştaki fazladan karakterleri kaldırın. <br>
-        </font>
+        </sample>
         <br>
         Tipik bir kurulum:<br>
         - Çağrı Olayı <br>
@@ -23,16 +23,16 @@
         <![CDATA[
         Gelen çağrı telefon numarasını, kurallar tarafından kontrol edilmeden önce düzenleyin.<br>
         <br>
-        <font color="#00BFFF"><b>Bir kullanım durumu</b>:</font><br>
+        <title><b>Bir kullanım durumu</b>:</title><br>
         &ensp; Bazı mobil şebeke operatörleri aynı SIM kart için çift telefon numarasını destekler, ikincil numaraya fazladan ön ek basamakları eklerler.<br>
-        &ensp;   Örneğin: 3312345679, <font color="#888888">123</font>3312345679 olabilir. <br>
-        &ensp; Öndeki <font color="#888888">123</font>\'ün kontrol edilmeden önce kaldırılması gerekir. <br>
+        &ensp;   Örneğin: 3312345679, <sample>123</sample>3312345679 olabilir. <br>
+        &ensp; Öndeki <sample>123</sample>\'ün kontrol edilmeden önce kaldırılması gerekir. <br>
         <br>
-        <font color="#00BFFF"><b>Tipik bir kurulum:</b></font> <br>
+        <title><b>Tipik bir kurulum:</b></title> <br>
         - <b>Çağrı Olayı</b> <br>
         - <b>Numarayı Değiştir</b> <br>
-        &emsp; kaynak: <font color="#888888">^123</font> <br>
-        &emsp; hedef: <font color="#888888">boş bırakın</font> <br>
+        &emsp; kaynak: <sample>^123</sample> <br>
+        &emsp; hedef: <sample>boş bırakın</sample> <br>
         ]]>
     </string>
     <string name="blocked">Engellendi</string>
@@ -41,22 +41,22 @@
         <![CDATA[
         Dahili bildirim kanalları: <br>
         <br>
-        <font color="#00BFFF"><b>Hiçbiri</b></font> &ensp; <img src=\'ic_bell_mute\'/> <br>
+        <title><b>Hiçbiri</b></title> &ensp; <img src=\'ic_bell_mute\'/> <br>
         &ensp; Hiç bildirim yok. <br>
         <br>
-        <font color="#00BFFF"><b>Düşük</b></font> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
+        <title><b>Düşük</b></title> &ensp; <img src=\'ic_statusbar_shade\'/>  <br>
         &ensp; Durum çubuğunda ve bildirim gölgesinde görünür. <br>
         <br>
-        <font color="#00BFFF"><b>Orta</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
+        <title><b>Orta</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/> <br>
         &ensp; Durum çubuğunda ve bildirim gölgesinde bir sesle görünür. <br>
         <br>
-        <font color="#00BFFF"><b>Yüksek</b></font> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Yüksek</b></title> &ensp; <img src=\'ic_bell_ringing\'/><img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; Durum çubuğunda, bildirim gölgesinde ve sesli bir baş üstü açılır pencere olarak görünür. <br>
         <br>
-        <font color="#00BFFF"><b>Yüksek (Sessiz)</b></font> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
+        <title><b>Yüksek (Sessiz)</b></title> &ensp; <img src=\'ic_statusbar_shade\'/><img src=\'ic_heads_up\'/> <br>
         &ensp; <b>Yüksek</b>\'e benzer ancak sesi kapatır. <br>
-        &ensp; Sürekli seslerin rahatsız edici olabileceği aktif <font color="#03DAC5"><b>SMS Sohbeti</b></font> için idealdir. <br>
-          Ekranın kilidi açık olduğunda ve SMS uygulaması ön planda açık olduğunda aktif <font color="#03DAC5"><b>SMS Sohbeti</b></font> olarak kabul edilir. <br>
+        &ensp; Sürekli seslerin rahatsız edici olabileceği aktif <highlight><b>SMS Sohbeti</b></highlight> için idealdir. <br>
+          Ekranın kilidi açık olduğunda ve SMS uygulaması ön planda açık olduğunda aktif <highlight><b>SMS Sohbeti</b></highlight> olarak kabul edilir. <br>
         ]]>
     </string>
     <string name="none">Hiçbiri</string>
@@ -107,7 +107,7 @@
         <![CDATA[
         Yeni bir bildirim kanalı oluşturun. <br>
         <br>
-        <font color="#03DAC5"><b>Uzun basın</b></font> bu açılır listedeki bir bildirim kanalını düzenlemek için.
+        <highlight><b>Uzun basın</b></highlight> bu açılır listedeki bir bildirim kanalını düzenlemek için.
         ]]>
     </string>
     <string name="warning_delete_channel">

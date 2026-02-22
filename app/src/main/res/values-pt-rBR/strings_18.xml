@@ -21,9 +21,9 @@
         - Caso contrário, o fluxo de trabalho será encerrado.<br>
         <br>
         Caso de uso: <br>
-        <font color="#888888">
+        <sample>
         &ensp; Alternar algumas regras após receber SMS de plantão ou fora de plantão. <br>
-        </font>
+        </sample>
         ]]>
     </string>
     <string name="sms_event_triggered">Evento de SMS %s foi acionado.</string>
@@ -51,18 +51,18 @@
         <![CDATA[
         Permitir chamadas de números atendidos anteriormente.<br>
         <br>
-        <h6><font color="#ffa500">Aviso</font></h6>
+        <h6><warn>Aviso</warn></h6>
         %s<br>
         <br>
         <b>Opções:</b><br>
         <br>
-        <h6><font color="#00BFFF">- Dentro de Dias</font></h6>
-        Chamadas que ocorreram antes de <font color="#03DAC5">%d dias</font> são ignoradas.<br>
+        <h6><title>- Dentro de Dias</title></h6>
+        Chamadas que ocorreram antes de <highlight>%d dias</highlight> são ignoradas.<br>
         <br>
-        <h6><font color="#00BFFF">- Duração Mínima</font></h6>
-        Chamadas com duração inferior a <font color="#03DAC5">%d segundos</font> são ignoradas.<br>
+        <h6><title>- Duração Mínima</title></h6>
+        Chamadas com duração inferior a <highlight>%d segundos</highlight> são ignoradas.<br>
         <br>
-        <font color="#ea86ff"><b>Prioridade: 10</b></font>
+        <priority><b>Prioridade: 10</b></priority>
         ]]>
     </string>
     <string name="answered_warning">Não ative este recurso para idosos ou qualquer pessoa menos capaz de identificar chamadas fraudulentas, pois isso pode expô-los a chamadas fraudulentas repetidas.</string>
@@ -75,9 +75,9 @@
         Modifica temporariamente as regras de regex com base em eventos de calendário. <br>
         <br>
         <b>Caso de uso</b>:<br>
-        &ensp; <font color="#888888">Um trabalhador de turno trabalha no turno diurno por dois dias,
+        &ensp; <sample>Um trabalhador de turno trabalha no turno diurno por dois dias,
           depois no turno noturno pelos próximos dois.<br>
-        &ensp; Algumas regras precisam ser desativadas ou ativadas durante os horários de trabalho variáveis.</font><br>
+        &ensp; Algumas regras precisam ser desativadas ou ativadas durante os horários de trabalho variáveis.</sample><br>
         <br>
         Isso criará uma regra de regex e um fluxo de trabalho, a regra será ativada instantaneamente durante o evento de calendário específico. <br>
         ]]>

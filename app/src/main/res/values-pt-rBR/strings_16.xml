@@ -3,7 +3,7 @@
         <![CDATA[
         As APIs configuradas aqui serão usadas tanto para relatórios automáticos quanto manuais.<br>
         <br>
-        <h6><font color="#00BFFF">- Privacidade</font></h6>
+        <h6><title>- Privacidade</title></h6>
         Os pontos de extremidade da API verão seu(sua):<br>
         <br>
          &ensp; - Endereço IP<br>
@@ -12,39 +12,39 @@
         <br>
         Nada mais será relatado.<br>
         <br>
-        <h6><font color="#00BFFF">- Relatórios manuais</font></h6>
+        <h6><title>- Relatórios manuais</title></h6>
 		Se alguma API estiver ativada aqui, toque em um número de telefone no histórico de chamadas, e um botão de relatório aparecerá.<br>
 		<br>
 		O número de telefone será relatado a <b>todas</b> as APIs.<br>
 		<br>
-        <h6><font color="#00BFFF">- Relatórios automáticos</font></h6>
-		<font color="#6ED0ff"><b>Atraso no relatório</b></font><br>
+        <h6><title>- Relatórios automáticos</title></h6>
+		<minor><b>Atraso no relatório</b></minor><br>
         Quando uma chamada é bloqueada, haverá um período de uma hora antes de ser relatada.
         Se o número de telefone for permitido posteriormente devido a repetições ou se for discado novamente dentro desse período,
         ele será considerado um número de telefone não-spam e o relatório será cancelado.<br>
         <br>
-		<font color="#6ED0ff"><b>Tipo de relatório</b></font><br>
-		1. Ele <font color="#fa7f71"><b>não</b></font> irá relatar:<br>
+		<minor><b>Tipo de relatório</b></minor><br>
+		1. Ele <error><b>não</b></error> irá relatar:<br>
         <br>
-        - <font color="#fa7f71">Números de SMS ou conteúdo</font><br>
-        - <font color="#fa7f71">Números de telefone permitidos</font><br>
-        - <font color="#fa7f71">Teste</font><br>
+        - <error>Números de SMS ou conteúdo</error><br>
+        - <error>Números de telefone permitidos</error><br>
+        - <error>Teste</error><br>
         E os seguintes tipos bloqueados:<br>
-        - <font color="#fa7f71">Regex de Contato</font><br>
-        - <font color="#fa7f71">Regex de Grupo de Contatos</font><br>
-        - <font color="#fa7f71">Banco de Dados</font><br>
-        - <font color="#fa7f71">Modo Reunião</font><br>
-        - <font color="#fa7f71">Consulta Instantânea</font> (para evitar que o número de telefone do ponto de extremidade da API seja vazado para outros concorrentes)<br>
+        - <error>Regex de Contato</error><br>
+        - <error>Regex de Grupo de Contatos</error><br>
+        - <error>Banco de Dados</error><br>
+        - <error>Modo Reunião</error><br>
+        - <error>Consulta Instantânea</error> (para evitar que o número de telefone do ponto de extremidade da API seja vazado para outros concorrentes)<br>
         <br>
-		2. Ele <font color="#03DAC5"><b>irá</b></font> relatar números de telefone bloqueados por:<br>
+		2. Ele <highlight><b>irá</b></highlight> relatar números de telefone bloqueados por:<br>
         <br>
-        - <font color="#03DAC5">Não-Contato</font><br>
-        - <font color="#03DAC5">Atestado STIR</font><br>
-        - <font color="#03DAC5">Regex de Número de Telefone</font><br>
+        - <highlight>Não-Contato</highlight><br>
+        - <highlight>Atestado STIR</highlight><br>
+        - <highlight>Regex de Número de Telefone</highlight><br>
         <br>
 		3. Uma exceção:<br>
 		<br>
-        Quando for bloqueado pelo <font color="#03DAC5">Banco de Dados</font> e o número de telefone foi originalmente adicionado por consulta de API,
+        Quando for bloqueado pelo <highlight>Banco de Dados</highlight> e o número de telefone foi originalmente adicionado por consulta de API,
          ele será relatado de volta a essa API para aumentar a pontuação de classificação. <br>
         <br>
          Por exemplo, se o número de telefone foi adicionado por

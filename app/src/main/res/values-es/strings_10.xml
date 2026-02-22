@@ -3,39 +3,39 @@
         <![CDATA[
         Las reglas del número se aplican tanto al número de la llamada entrante como al número del SMS.<br>
         <br>
-        <h5><font color="#00BFFF"> - Ejemplos</font></h5>
+        <h5><title> - Ejemplos</title></h5>
         Hay algunos ejemplos en la <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">página de Wiki</a>.<br>
         <br>
-        <h5><font color="#00BFFF"> - Optimización de Regex</font></h5>
+        <h5><title> - Optimización de Regex</title></h5>
         Para simplificar la regex,
-          <font color="#fa7f71"><b>+</b></font> y <font color="#fa7f71"><b>los ceros iniciales</b></font>
+          <error><b>+</b></error> y <error><b>los ceros iniciales</b></error>
           se eliminan antes de la comprobación, por ejemplo:<br>
         &emsp; Todos estos formatos:<br>
         &emsp;&emsp; 123456789 &emsp;(número normal)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(con <font color="#fa7f71"><b>+</b></font> inicial)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(con prefijo de línea troncal nacional <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(dos <font color="#fa7f71"><b>0</b></font>s)<br>
-        &emsp; <b>Todos</b> se comprueban como 123456789 y pueden coincidir con <font color="#03DAC5"><b>123.*</b></font><br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(con <error><b>+</b></error> inicial)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(con prefijo de línea troncal nacional <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(dos <error><b>0</b></error>s)<br>
+        &emsp; <b>Todos</b> se comprueban como 123456789 y pueden coincidir con <highlight><b>123.*</b></highlight><br>
         Esta optimización del número se puede <b>desactivar</b> con el indicador regex `Raw Number`.<br>
         <br>
-        <h5><font color="#00BFFF"> - Algunos patrones típicos</font></h5>
-        &ensp; - Cualquier número: <font color="#03DAC5"><b>.*</b></font> (la expresión regular .* es equivalente al comodín * en otras aplicaciones) <br>
-        &ensp; - Número exacto: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - Comienza con 400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - Termina con 123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 dígitos: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - Más corto que 5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - Más largo que 10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - Número desconocido/privado/vacío: <font color="#03DAC5"><b>.{0}</b></font> o <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - Coincide con cualquiera de los patrones: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - Comienza con 400, con el código de país 11 inicial o no: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - Algunos patrones típicos</title></h5>
+        &ensp; - Cualquier número: <highlight><b>.*</b></highlight> (la expresión regular .* es equivalente al comodín * en otras aplicaciones) <br>
+        &ensp; - Número exacto: <highlight><b>12345</b></highlight> <br>
+        &ensp; - Comienza con 400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - Termina con 123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 dígitos: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - Más corto que 5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - Más largo que 10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - Número desconocido/privado/vacío: <highlight><b>.{0}</b></highlight> o <highlight><b>^$</b></highlight> <br>
+        &ensp; - Coincide con cualquiera de los patrones: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - Comienza con 400, con el código de país 11 inicial o no: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - Relacionado con la IU</font></h5>
-        Desmarque las casillas de verificación para deshabilitar la regla, <font color="#fa7f71"><b>deslice hacia la izquierda para eliminar</b></font> it.<br>
+        <h5><title> - Relacionado con la IU</title></h5>
+        Desmarque las casillas de verificación para deshabilitar la regla, <error><b>deslice hacia la izquierda para eliminar</b></error> it.<br>
         <br>
         La lista se <b>muestra</b> en orden descendente de prioridad, descripción ascendente y patrón ascendente.<br>
         <br>
-        <h5><font color="#00BFFF"> - Importar reglas desde .csv</font></h5>
+        <h5><title> - Importar reglas desde .csv</title></h5>
         Mantenga presionado el botón `Add` para importar números desde el archivo .csv.<br>
         <brg>
         ]]>

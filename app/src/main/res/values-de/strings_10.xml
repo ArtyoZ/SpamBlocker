@@ -3,39 +3,39 @@
         <![CDATA[
         Die Nummernregeln gelten sowohl für die eingehende Anrufnummer als auch für die SMS-Nummer.<br>
         <br>
-        <h5><font color="#00BFFF"> - Beispiele</font></h5>
+        <h5><title> - Beispiele</title></h5>
         Es gibt einige Beispiele auf der <a href="https://github.com/aj3423/SpamBlocker/wiki/Regex-Templates">Wiki-Seite</a>.<br>
         <br>
-        <h5><font color="#00BFFF"> - Regex Optimierung</font></h5>
+        <h5><title> - Regex Optimierung</title></h5>
         Um den Regex zu vereinfachen,
-          werden <font color="#fa7f71"><b>+</b></font> und <font color="#fa7f71"><b>führende Nullen</b></font>
+          werden <error><b>+</b></error> und <error><b>führende Nullen</b></error>
           vor der Überprüfung entfernt, zum Beispiel:<br>
         &emsp; All diese Formate:<br>
         &emsp;&emsp; 123456789 &emsp;(reguläre Nummer)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>+</b></font>123456789 &emsp;(mit führendem <font color="#fa7f71"><b>+</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>0</b></font>123456789 &emsp;(mit nationaler Vorwahl <font color="#fa7f71"><b>0</b></font>)<br>
-        &emsp;&emsp; <font color="#fa7f71"><b>00</b></font>123456789 &emsp;(zwei <font color="#fa7f71"><b>0</b></font>en)<br>
-        &emsp; Sie werden <b>alle</b> als 123456789 überprüft und können durch <font color="#03DAC5"><b>123.*</b></font> gematcht werden.<br>
+        &emsp;&emsp; <error><b>+</b></error>123456789 &emsp;(mit führendem <error><b>+</b></error>)<br>
+        &emsp;&emsp; <error><b>0</b></error>123456789 &emsp;(mit nationaler Vorwahl <error><b>0</b></error>)<br>
+        &emsp;&emsp; <error><b>00</b></error>123456789 &emsp;(zwei <error><b>0</b></error>en)<br>
+        &emsp; Sie werden <b>alle</b> als 123456789 überprüft und können durch <highlight><b>123.*</b></highlight> gematcht werden.<br>
         Diese Nummernoptimierung kann mit dem Regex-Flag `Raw Number` <b>deaktiviert</b> werden.<br>
         <br>
-        <h5><font color="#00BFFF"> - Einige typische Muster</font></h5>
-        &ensp; - Jede Nummer: <font color="#03DAC5"><b>.*</b></font> (der Regex .* entspricht dem Platzhalter * in anderen Apps) <br>
-        &ensp; - Genaue Nummer: <font color="#03DAC5"><b>12345</b></font> <br>
-        &ensp; - Beginnt mit 400: <font color="#03DAC5"><b>400.*</b></font> <br>
-        &ensp; - Endet mit 123: <font color="#03DAC5"><b>.*123</b></font> <br>
-        &ensp; - 7 Ziffern: <font color="#03DAC5"><b>.{7}</b></font> <br>
-        &ensp; - Kürzer als 5: <font color="#03DAC5"><b>.{0,4}</b></font> <br>
-        &ensp; - Länger als 10: <font color="#03DAC5"><b>.{11,}</b></font> <br>
-        &ensp; - Unbekannte/Private/Leere Nummer: <font color="#03DAC5"><b>.{0}</b></font> oder <font color="#03DAC5"><b>^$</b></font> <br>
-        &ensp; - Matche jedes der Muster: <font color="#03DAC5"><b>(12.*|.*89)</b></font> <br>
-        &ensp; - Beginnt mit 400, mit führender Ländervorwahl 11 oder nicht: <font color="#03DAC5"><b>(?:11)?400.*</b></font> <br>
+        <h5><title> - Einige typische Muster</title></h5>
+        &ensp; - Jede Nummer: <highlight><b>.*</b></highlight> (der Regex .* entspricht dem Platzhalter * in anderen Apps) <br>
+        &ensp; - Genaue Nummer: <highlight><b>12345</b></highlight> <br>
+        &ensp; - Beginnt mit 400: <highlight><b>400.*</b></highlight> <br>
+        &ensp; - Endet mit 123: <highlight><b>.*123</b></highlight> <br>
+        &ensp; - 7 Ziffern: <highlight><b>.{7}</b></highlight> <br>
+        &ensp; - Kürzer als 5: <highlight><b>.{0,4}</b></highlight> <br>
+        &ensp; - Länger als 10: <highlight><b>.{11,}</b></highlight> <br>
+        &ensp; - Unbekannte/Private/Leere Nummer: <highlight><b>.{0}</b></highlight> oder <highlight><b>^$</b></highlight> <br>
+        &ensp; - Matche jedes der Muster: <highlight><b>(12.*|.*89)</b></highlight> <br>
+        &ensp; - Beginnt mit 400, mit führender Ländervorwahl 11 oder nicht: <highlight><b>(?:11)?400.*</b></highlight> <br>
         <br>
-        <h5><font color="#00BFFF"> - UI bezogen</font></h5>
-        Deaktiviere die Checkboxen, um die Regel zu deaktivieren, <font color="#fa7f71"><b>nach links wischen zum Löschen</b></font> .<br>
+        <h5><title> - UI bezogen</title></h5>
+        Deaktiviere die Checkboxen, um die Regel zu deaktivieren, <error><b>nach links wischen zum Löschen</b></error> .<br>
         <br>
         Die Liste wird in absteigender Reihenfolge der Priorität, aufsteigender Beschreibung und aufsteigendem Muster <b>angezeigt</b>.<br>
         <br>
-        <h5><font color="#00BFFF"> - Importiere Regeln aus .csv</font></h5>
+        <h5><title> - Importiere Regeln aus .csv</title></h5>
         Langes Drücken auf den `Add`-Button, um Nummern aus der .csv-Datei zu importieren.<br>
         <brg>
         ]]>

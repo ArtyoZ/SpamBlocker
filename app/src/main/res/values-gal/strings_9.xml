@@ -11,11 +11,11 @@
 
     <string name="help_action_header">
         <![CDATA[
-        - <font color="#03DAC5"><b>Probar</b></font><br>
+        - <highlight><b>Probar</b></highlight><br>
         Estas accións executaranse inmediatamente, para comprobar se se configuraron correctamente,
         ou quizais só queiras executar manualmente este fluxo de traballo.<br>
         <br>
-        - <font color="#00BFFF"><b>Novo</b></font><br>
+        - <title><b>Novo</b></title><br>
             Crea unha nova acción, varias accións pódense encadear xuntas para completar unha tarefa complexa.<br>
             Eses puntos verdes ou vermellos entre os elementos indican se son encadenables ou non.
         ]]>
@@ -26,7 +26,7 @@
         Configuración da copia de seguridade automática. <br>
         <br>
         Soporta a programación de rotación, por exemplo: <br>
-        &ensp; <font color="#888888">Manter só as últimas sete copias de seguridade diarias. </font>
+        &ensp; <sample>Manter só as últimas sete copias de seguridade diarias. </sample>
         ]]>
     </string>
     <string name="everyday">Todos os días</string>
@@ -40,10 +40,10 @@
         <![CDATA[
         O formato do ficheiro de copia de seguridade é un json comprimido gzip, podes abrilo e editalo con calquera arquivador.<br>
         <br>
-        - <font color="#00BFFF"><b>Incluir Base de Datos de Spam</b></font><br>
+        - <title><b>Incluir Base de Datos de Spam</b></title><br>
         Presiona longamente o botón para exportar/importar tamén a base de datos de spam.<br>
         <br>
-        <font color="#ffa500">Nota:</font><br>
+        <warn>Nota:</warn><br>
         &ensp; Incluir a base de datos de spam no ficheiro de copia de seguridade aumentará significativamente o seu tamaño,
         xa que a base de datos se actualizará regularmente, isto normalmente non é necesario, a menos que queiras clonala
         a outro teléfono.<br>
@@ -57,15 +57,15 @@
     </string-array>
     <string name="help_regex_action_add_mode">
         <![CDATA[
-        -<font color="#00BFFF"><b>Crear</b></font><br>
+        -<title><b>Crear</b></title><br>
         &ensp; Sempre crea unha nova regra regex.<br>
         <br>
-        - <font color="#00BFFF"><b>Substituír</b></font><br>
+        - <title><b>Substituír</b></title><br>
         &ensp; Intentará atopar unha regra existente que teña a mesma <b>descrición</b>. <br>
         &ensp;&ensp; - Se se atopa, será substituída.<br>
         &ensp;&ensp; - Se non se atopa, crearase unha nova regra, igual que a <b>Crear</b>.<br>
         <br>
-        - <font color="#00BFFF"><b>Fusionar</b></font><br>
+        - <title><b>Fusionar</b></title><br>
         &ensp;- Se existe unha regra coa mesma descrición, os novos números fusionaranse nela,<br>
          os números duplicados serán eliminados automaticamente.<br>
         &ensp;- Se non existe, crearase unha nova regra, igual que a <b>Crear</b>.<br>

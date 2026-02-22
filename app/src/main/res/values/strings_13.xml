@@ -27,67 +27,67 @@
     <string name="auto_detect_cc_permission">The permission READ_PHONE_STATE is required for detecting country code.</string>
     <string name="number_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{cc}</no_translate></b></font><br>
+        - <title><b><no_translate>{cc}</no_translate></b></title><br>
         &ensp; The country code.<br>
-        - <font color="#00BFFF"><b><no_translate>{domestic}</no_translate></b></font><br>
+        - <title><b><no_translate>{domestic}</no_translate></b></title><br>
         &ensp; The domestic part.<br>
-        - <font color="#00BFFF"><b><no_translate>{number}</no_translate></b></font><br>
+        - <title><b><no_translate>{number}</no_translate></b></title><br>
         &ensp; The full number, including both country code and domestic part, without leading + or 0s.<br>
-        - <font color="#00BFFF"><b><no_translate>{origin_number}</no_translate></b></font><br>
+        - <title><b><no_translate>{origin_number}</no_translate></b></title><br>
         &ensp; The origin number that can contain leading + or 0s.<br>
         ]]>
     </string>
     <string name="sms_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b>{sms}</b></font><br>
+        - <title><b>{sms}</b></title><br>
         &ensp; The SMS content.<br>
         ]]>
     </string>
     <string name="escape_tags">
         <![CDATA[
-        - <font color="#00BFFF"><b><no_translate>{escape(…)}</no_translate></b></font><br>
+        - <title><b><no_translate>{escape(…)}</no_translate></b></title><br>
         &ensp; Escape the content in the brackets, used for content inside quotation marks. <br>
         ]]>
     </string>
     <string name="time_tags">
         <![CDATA[
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {year}<br>
           {month}<br>
           {day}<br>
           {hour}<br>
           {minute}<br>
           {second}<br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; Single-digit number will be padded with a leading zero, e.g.: <br>
-        &emsp; <font color="#888888"><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{year}-{month}-{day} {hour}:{minute}:{second}</no_translate></sample> <br>
         &emsp; becomes <br>
-        &emsp; <font color="#888888">2020-01-22 03:44:05</font><br>
+        &emsp; <sample>2020-01-22 03:44:05</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {month_index} <br>
           {day_index} <br>
           {hour_index} <br>
           {minute_index} <br>
           {second_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; These values will not be padded, e.g.: <br>
-        &emsp; <font color="#888888"><no_translate>{month_index}-{day_index}</no_translate></font> <br>
+        &emsp; <sample><no_translate>{month_index}-{day_index}</no_translate></sample> <br>
         &emsp; becomes <br>
-        &emsp; <font color="#888888">1-2</font><br>
+        &emsp; <sample>1-2</sample><br>
         <br>
-        <font color="#00BFFF"><b><no_translate>
+        <title><b><no_translate>
           {day_of_week} <br>
           {day_of_week_index} <br>
-        </no_translate></b></font>
+        </no_translate></b></title>
         &ensp; These can be used to simulate a rotation schedule, for instance: <br>
-        &emsp; <font color="#888888">Perform daily backups and only keep the seven most recent backups.</font> <br>
+        &emsp; <sample>Perform daily backups and only keep the seven most recent backups.</sample> <br>
         <br>
-        <font color="#ffa500"><b>Note:</b></font><br>
+        <warn><b>Note:</b></warn><br>
          These time tags support simple arithmetic operations, such as
-          <font color="#00BFFF"><b><no_translate>{day-1}</no_translate></b></font>
+          <title><b><no_translate>{day-1}</no_translate></b></title>
          and
-          <font color="#00BFFF"><b><no_translate>{hour+2}</no_translate></b></font>.
+          <title><b><no_translate>{hour+2}</no_translate></b></title>.
         ]]>
     </string>
     <string name="help_http_url">
@@ -135,10 +135,10 @@
     <string name="canceling_thread">Canceling thread.</string>>
     <string name="suggest_to_swipe">
         <![CDATA[
-        <font color="#03DAC5"><b>Swipe left</b></font> to delete it.<br>
+        <highlight><b>Swipe left</b></highlight> to delete it.<br>
         <br>
         Most card-like UI elements in this app are associated with swiping gestures,
-        some of which also support <font color="#03DAC5"><b>swiping right</b></font>, for example, the history records.
+        some of which also support <highlight><b>swiping right</b></highlight>, for example, the history records.
         ]]>
     </string>>
     <string name="bug_number">If this is a valid number, please report it on github.</string>>

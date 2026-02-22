@@ -4,9 +4,9 @@
     <![CDATA[
     Lapor otomatis nomor jika diblokir karena alasan berikut: <br>
     <br>
-    &ensp; - <font color="#fa7f71">Bukan Kontak</font>  <br>
-    &ensp; - <font color="#fa7f71">Atetasi STIR/SHAKEN</font> <br>
-    &ensp; - <font color="#fa7f71">Regex Nomor</font> <br>
+    &ensp; - <error>Bukan Kontak</error>  <br>
+    &ensp; - <error>Atetasi STIR/SHAKEN</error> <br>
+    &ensp; - <error>Regex Nomor</error> <br>
     <br>
     Ini tidak memengaruhi pelaporan manual.
     ]]>
@@ -16,23 +16,23 @@
         <![CDATA[
         Mengurai byte data CSV ke dalam daftar nomor telepon. <br>
         <br>
-        Kolom yang berisi nomor telepon <b>harus</b> dinamai <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font>. <br>
+        Kolom yang berisi nomor telepon <b>harus</b> dinamai <title><b><no_translate>pattern</no_translate></b></title>. <br>
         <br>
         Untuk file CSV pihak ketiga dengan nama header yang berbeda, petakan ke
-        <font color="#00BFFF"><b><no_translate>pattern</no_translate></b></font> menggunakan <b>Pemetaan Kolom</b>. <br>
+        <title><b><no_translate>pattern</no_translate></b></title> menggunakan <b>Pemetaan Kolom</b>. <br>
         <br>
         Contoh: <br>
         <no_translate>
-          &ensp; <font color="#888888">{ \"number_column_header\": \"pattern\" }</font>
+          &ensp; <sample>{ \"number_column_header\": \"pattern\" }</sample>
         </no_translate> <br>
         <br>
-        <font color="#ffa500"><b>Catatan</b></font> <br>
+        <warn><b>Catatan</b></warn> <br>
         Untuk mengurai file teks biasa tanpa header kolom, gunakan <b>Ekstrak Regex</b> sebagai gantinya.
         ]]>
     </string>
     <string name="help_action_parse_xml">
         <![CDATA[
-        Mengurai byte data XML menggunakan <font color="#00BFFF">xpath</font> dan menghasilkan daftar nomor telepon.
+        Mengurai byte data XML menggunakan <title>xpath</title> dan menghasilkan daftar nomor telepon.
         ]]>
     </string>
     <string name="action_parse_xml">Urai XML</string>
@@ -44,13 +44,13 @@
         Ini juga dapat digunakan untuk mengurai file teks biasa dengan satu nomor telepon per baris. <br>
         <br>
         Contoh, mengurai teks: <br>
-          <font color="#888888">
+          <sample>
             &ensp; 111<br>
             &ensp; 222<br>
             &ensp; 333<br>
-          </font>
+          </sample>
         dengan regex: <br>
-          &ensp; <font color="#888888">(\\d+)</font>
+          &ensp; <sample>(\\d+)</sample>
         ]]>
     </string>
     <string name="help_action_http_download">
@@ -72,11 +72,11 @@
         <![CDATA[
         Membaca byte data dari file. <br>
         <br>
-        Tag <font color="#03DAC5">jalur</font> yang didukung: <br>
+        Tag <highlight>jalur</highlight> yang didukung: <br>
         <br>
         %s <br>
         <br>
-        Tag <font color="#03DAC5">nama file</font> yang didukung: <br>
+        Tag <highlight>nama file</highlight> yang didukung: <br>
         <br>
         %s
         ]]>
@@ -85,11 +85,11 @@
         <![CDATA[
         Menulis byte data ke file. <br>
         <br>
-        Tag <font color="#03DAC5"><b>jalur</b></font> yang didukung: <br>
+        Tag <highlight><b>jalur</b></highlight> yang didukung: <br>
         <br>
         %s <br>
         <br>
-        Tag <font color="#03DAC5"><b>nama file</b></font> yang didukung: <br>
+        Tag <highlight><b>nama file</b></highlight> yang didukung: <br>
         <br>
         %s
         ]]>
@@ -107,22 +107,22 @@
         Tergantung pada jenis pemicu alur kerja, aturan dapat dimodifikasi secara permanen atau sementara. <br>
         <br>
         Atribut yang dapat dimodifikasi: <br>
-        - <font color="#888888"><no_translate>pattern</no_translate></font> <br>
+        - <sample><no_translate>pattern</no_translate></sample> <br>
         &ensp; Regexnya <br>
-        - <font color="#888888"><no_translate>description</no_translate></font> <br>
+        - <sample><no_translate>description</no_translate></sample> <br>
         &ensp; Deskripsinya <br>
-        - <font color="#888888"><no_translate>priority</no_translate></font> <br>
+        - <sample><no_translate>priority</no_translate></sample> <br>
         &ensp; Prioritasnya <br>
-        - <font color="#888888"><no_translate>isBlacklist</no_translate></font> <br>
+        - <sample><no_translate>isBlacklist</no_translate></sample> <br>
         &ensp; <no_translate>true</no_translate>: Blokir, <no_translate>false</no_translate>: izinkan <br>
-        - <font color="#888888"><no_translate>flags</no_translate></font> <br>
+        - <sample><no_translate>flags</no_translate></sample> <br>
         &ensp; Terapkan ke: <br>
         &ensp; 1: panggilan, 2: SMS, 3: keduanya, 0: nonaktifkan <br>
-        - <font color="#888888"><no_translate>channel</no_translate></font> <br>
+        - <sample><no_translate>channel</no_translate></sample> <br>
         &ensp; String ID saluran notifikasi<br>
-        - <font color="#888888"><no_translate>blockType</no_translate></font> <br>
+        - <sample><no_translate>blockType</no_translate></sample> <br>
         &ensp; 0: tolak, 1: diamkan, 2: tutup telepon <br>
-        - <font color="#888888"><no_translate>simSlot</no_translate></font> <br>
+        - <sample><no_translate>simSlot</no_translate></sample> <br>
         &ensp; 0, 1, 2… Atau <no_translate>null</no_translate> untuk SIM apa pun.
         ]]>
     </string>
@@ -142,13 +142,13 @@
         Normalisasi pola numerik dari sumber pihak ketiga ke format regex. <br>
         <br>
         Contoh, untuk memetakan <br>
-         &ensp; <font color="#fa7f71">+</font>12345<font color="#fa7f71">####</font> <br>
+         &ensp; <error>+</error>12345<error>####</error> <br>
         ke <br>
-         &ensp; 12345<font color="#03DAC5"><b>....</b></font><br>
+         &ensp; 12345<highlight><b>....</b></highlight><br>
         <br>
         Tambahkan dua tindakan <b>Ganti Nomor Telepon</b>: <br>
-        &ensp; - Ganti `<font color="#fa7f71">(\\+)</font>` dengan ``<br>
-        &ensp; - Ganti `<font color="#fa7f71">(#)</font>` dengan `<font color="#03DAC5"><b>.</b></font>`<br>
+        &ensp; - Ganti `<error>(\\+)</error>` dengan ``<br>
+        &ensp; - Ganti `<error>(#)</error>` dengan `<highlight><b>.</b></highlight>`<br>
         ]]>
     </string>
     <string name="action_replace_number">Ganti Nomor Telepon</string>
@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Durasi (menit)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Ketuk tombol <font color="#03DAC5">Uji</font> untuk menjalankan alur kerja ini secara manual.
+        Ketuk tombol <highlight>Uji</highlight> untuk menjalankan alur kerja ini secara manual.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -164,16 +164,16 @@
         Otomatiskan menjalankan tugas sesuai jadwal berbasis waktu. <br>
         <br>
         Kasus penggunaan: <br>
-        &ensp; - <font color="#888888">Unduh nomor spam dari registri FTC-DNC setiap hari.</font> <br>
+        &ensp; - <sample>Unduh nomor spam dari registri FTC-DNC setiap hari.</sample> <br>
         <br>
-        &ensp; - <font color="#888888">Cadangkan otomatis setiap hari dan hanya simpan 7 cadangan terakhir.</font> <br>
+        &ensp; - <sample>Cadangkan otomatis setiap hari dan hanya simpan 7 cadangan terakhir.</sample> <br>
         ]]>
     </string>
     <string name="trigger">Pemicu</string>
     <string name="delay_in_seconds">Penundaan (detik)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Fitur ini mengubah nada dering default sistem sementara sebelum dering dimulai dan kemudian mengembalikannya setelah <font color="#03DAC5">%d detik</font>, pada saat itu dering diharapkan sudah dimulai. <br>
+        Fitur ini mengubah nada dering default sistem sementara sebelum dering dimulai dan kemudian mengembalikannya setelah <highlight>%d detik</highlight>, pada saat itu dering diharapkan sudah dimulai. <br>
         <br>
         Beberapa ponsel menawarkan fitur seperti <b>Getar Dulu Lalu Dering</b> yang mungkin menunda dering selama, misalnya, 6 detik. Dalam kasus tersebut, tingkatkan penundaan ini sesuai.
         ]]>
