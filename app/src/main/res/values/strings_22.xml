@@ -157,7 +157,7 @@
     <string name="duration_in_minutes">Duration (minutes)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Tap the <font color="cyan">Test</font> button to manually run this workflow.
+        Tap the <font color="#03DAC5">Test</font> button to manually run this workflow.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -175,7 +175,7 @@
     <string name="help_ringtone_delay">
         <![CDATA[
         This feature temporarily changes the system default ringtone before ringing begins and
-         then reverts it after <font color="cyan">%d seconds</font>, by which time the ringing is expected to have begun. <br>
+         then reverts it after <font color="#03DAC5">%d seconds</font>, by which time the ringing is expected to have begun. <br>
         <br>
         Some phones offer features like <b>Vibrate First Then Ring</b> which may defer the ringing by, say, 6 seconds.
          In that case, increase this delay accordingly.

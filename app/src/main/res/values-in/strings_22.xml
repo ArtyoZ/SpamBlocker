@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Durasi (menit)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Ketuk tombol <font color="cyan">Uji</font> untuk menjalankan alur kerja ini secara manual.
+        Ketuk tombol <font color="#03DAC5">Uji</font> untuk menjalankan alur kerja ini secara manual.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -173,7 +173,7 @@
     <string name="delay_in_seconds">Penundaan (detik)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Fitur ini mengubah nada dering default sistem sementara sebelum dering dimulai dan kemudian mengembalikannya setelah <font color="cyan">%d detik</font>, pada saat itu dering diharapkan sudah dimulai. <br>
+        Fitur ini mengubah nada dering default sistem sementara sebelum dering dimulai dan kemudian mengembalikannya setelah <font color="#03DAC5">%d detik</font>, pada saat itu dering diharapkan sudah dimulai. <br>
         <br>
         Beberapa ponsel menawarkan fitur seperti <b>Getar Dulu Lalu Dering</b> yang mungkin menunda dering selama, misalnya, 6 detik. Dalam kasus tersebut, tingkatkan penundaan ini sesuai.
         ]]>

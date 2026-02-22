@@ -36,7 +36,7 @@
         <b>Opciones:</b><br>
         <br>
         <h6><font color="#00BFFF">- En Días</font></h6>
-        Se ignoran las llamadas que ocurrieron antes de <font color="cyan">%s días</font>.<br>
+        Se ignoran las llamadas que ocurrieron antes de <font color="#03DAC5">%s días</font>.<br>
         <br>
         <h6><font color="#00BFFF">- Incluir SMS</font></h6>
         Cuando está activada, enviar mensajes de texto a ese número también cuenta.<br>

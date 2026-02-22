@@ -18,7 +18,6 @@ import androidx.compose.ui.unit.sp
 import spam.blocker.G
 import spam.blocker.ui.M
 import spam.blocker.ui.slightDiff
-import spam.blocker.ui.theme.SwissCoffee
 
 @Composable
 fun Section(
@@ -27,9 +26,8 @@ fun Section(
     bgColor: Color = G.palette.background,
     content: @Composable ()->Unit,
 ) {
-    val C = G.palette
     Box(modifier = M.padding(top = 8.dp, bottom = 8.dp)) {
-        // the rectangle section border line
+        // the rectangle section border
         Box(
             modifier = M
                 .fillMaxWidth()
@@ -52,7 +50,7 @@ fun Section(
                 Text(
                     text = title,
                     fontSize = 13.sp,
-                    color = SwissCoffee,
+                    color = G.palette.textGrey,
                     lineHeight = 13.sp,
                     modifier = Modifier.padding(10.dp, 0.dp),
                 )

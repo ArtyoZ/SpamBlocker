@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Duração (minutos)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Toque no botão <font color="cyan">Testar</font> para executar manualmente este fluxo de trabalho.
+        Toque no botão <font color="#03DAC5">Testar</font> para executar manualmente este fluxo de trabalho.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -173,7 +173,7 @@
     <string name="delay_in_seconds">Atraso (segundos)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Este recurso muda temporariamente o toque padrão do sistema antes que o toque comece e, em seguida, o reverte após <font color="cyan">%d segundos</font>, momento em que o toque deve ter começado. <br>
+        Este recurso muda temporariamente o toque padrão do sistema antes que o toque comece e, em seguida, o reverte após <font color="#03DAC5">%d segundos</font>, momento em que o toque deve ter começado. <br>
         <br>
         Alguns telefones oferecem recursos como <b>Vibrar Primeiro, Depois Tocar</b>, que podem adiar o toque em, digamos, 6 segundos. Nesse caso, aumente este atraso conforme necessário.
         ]]>

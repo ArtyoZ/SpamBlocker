@@ -21,7 +21,7 @@
 		<font color="#6ED0ff"><b>Report delay</b></font><br>
         When a call is blocked, there will be a one-hour time buffer before it\'s reported.
         If the number is allowed later due to repeats or dialed back within this time buffer,
-        it\'s considered a non-spam number and the reporting will be cancelled.<br>
+        it\'s considered a non-spam number and the reporting will be canceled.<br>
         <br>
 		<font color="#6ED0ff"><b>Report type</b></font><br>
 		1. It <font color="#fa7f71"><b>will not</b></font> report:<br>

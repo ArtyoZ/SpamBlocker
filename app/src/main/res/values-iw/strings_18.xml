@@ -57,10 +57,10 @@
         <b>אפשרויות:</b><br>
         <br>
         <h6><font color="#00BFFF">- בתוך ימים</font></h6>
-        שיחות שהתרחשו לפני <font color="cyan">%d ימים</font> מתעלמים מהן.<br>
+        שיחות שהתרחשו לפני <font color="#03DAC5">%d ימים</font> מתעלמים מהן.<br>
         <br>
         <h6><font color="#00BFFF">- משך מינימלי</font></h6>
-        שיחות שנמשכו פחות מ-<font color="cyan">%d שניות</font> מתעלמים מהן.<br>
+        שיחות שנמשכו פחות מ-<font color="#03DAC5">%d שניות</font> מתעלמים מהן.<br>
         <br>
         <font color="#ea86ff"><b>עדיפות: 10</b></font>
         ]]>

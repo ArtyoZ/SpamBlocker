@@ -70,10 +70,10 @@
         <b>選項：</b><br>
         <br>
         <h6><font color="#00BFFF">- [天數範圍]</font></h6>
-        會忽略 <font color="cyan">%d 天</font>之前的來電。<br>
+        會忽略 <font color="#03DAC5">%d 天</font>之前的來電。<br>
         <br>
         <h6><font color="#00BFFF">- [最短通話時間]</font></h6>
-        會忽略通話時間少於 <font color="cyan">%d 秒</font>的通話。<br>
+        會忽略通話時間少於 <font color="#03DAC5">%d 秒</font>的通話。<br>
         <br>
         <font color="#ea86ff"><b>優先順序：10</b></font>
         ]]>

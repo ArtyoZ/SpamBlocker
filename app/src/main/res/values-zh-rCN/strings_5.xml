@@ -36,7 +36,7 @@
         <b>选项:</b><br>
         <br>
         <h6><font color="#00BFFF">- 天数内</font></h6>
-        忽略在<font color="cyan">%s 天</font>之前发生的通话。<br>
+        忽略在<font color="#03DAC5">%s 天</font>之前发生的通话。<br>
         <br>
         <h6><font color="#00BFFF">- 包括短信</font></h6>
         启用后，发送短信给该号码也算数。<br>

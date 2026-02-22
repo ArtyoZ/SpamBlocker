@@ -57,10 +57,10 @@
         <b>选项：</b><br>
         <br>
         <h6><font color="#00BFFF">- 天数范围内</font></h6>
-        发生在 <font color="cyan">%d 天</font> 之前的来电将被忽略。<br>
+        发生在 <font color="#03DAC5">%d 天</font> 之前的来电将被忽略。<br>
         <br>
         <h6><font color="#00BFFF">- 最短持续时间</font></h6>
-        持续时间少于 <font color="cyan">%d 秒</font> 的来电将被忽略。<br>
+        持续时间少于 <font color="#03DAC5">%d 秒</font> 的来电将被忽略。<br>
         <br>
         <font color="#ea86ff"><b>优先级：10</b></font>
         ]]>

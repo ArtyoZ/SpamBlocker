@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">期間 (分)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        <font color="cyan">テスト</font>ボタンをタップして、このワークフローを手動で実行します。
+        <font color="#03DAC5">テスト</font>ボタンをタップして、このワークフローを手動で実行します。
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -173,7 +173,7 @@
     <string name="delay_in_seconds">遅延（秒）</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        この機能は、着信が始まる前に一時的にシステムのデフォルト着信音を変更し、<font color="cyan">%d秒後</font>に着信が始まっていると予想される時点でもとに戻します。<br>
+        この機能は、着信が始まる前に一時的にシステムのデフォルト着信音を変更し、<font color="#03DAC5">%d秒後</font>に着信が始まっていると予想される時点でもとに戻します。<br>
         <br>
         一部の電話には、<b>まずバイブレーション、次に着信</b>のような機能があり、着信を例えば6秒遅らせる場合があります。その場合、この遅延を適切に増やしてください。
         ]]>

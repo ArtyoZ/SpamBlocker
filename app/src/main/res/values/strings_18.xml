@@ -73,10 +73,10 @@
         <b>Options:</b><br>
         <br>
         <h6><font color="#00BFFF">- Within Days</font></h6>
-        Calls that occurred before <font color="cyan">%d days</font> are ignored.<br>
+        Calls that occurred before <font color="#03DAC5">%d days</font> are ignored.<br>
         <br>
         <h6><font color="#00BFFF">- Minimal Duration</font></h6>
-        Calls lasted less than <font color="cyan">%d seconds</font> are ignored.<br>
+        Calls lasted less than <font color="#03DAC5">%d seconds</font> are ignored.<br>
         <br>
         <font color="#ea86ff"><b>Priority: 10</b></font>
         ]]>

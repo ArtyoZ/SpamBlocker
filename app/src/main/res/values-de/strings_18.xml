@@ -57,10 +57,10 @@
         <b>Optionen:</b><br>
         <br>
         <h6><font color="#00BFFF">- Innerhalb von Tagen</font></h6>
-        Anrufe, die vor <font color="cyan">%d Tagen</font> stattfanden, werden ignoriert.<br>
+        Anrufe, die vor <font color="#03DAC5">%d Tagen</font> stattfanden, werden ignoriert.<br>
         <br>
         <h6><font color="#00BFFF">- Minimale Dauer</font></h6>
-        Anrufe, die weniger als <font color="cyan">%d Sekunden</font> dauerten, werden ignoriert.<br>
+        Anrufe, die weniger als <font color="#03DAC5">%d Sekunden</font> dauerten, werden ignoriert.<br>
         <br>
         <font color="#ea86ff"><b>Priorität: 10</b></font>
         ]]>

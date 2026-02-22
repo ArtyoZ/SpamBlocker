@@ -57,10 +57,10 @@
         <b>オプション:</b><br>
         <br>
         <h6><font color="#00BFFF">- 日以内</font></h6>
-        <font color="cyan">%d日</font>より前に発生した通話は無視されます。<br>
+        <font color="#03DAC5">%d日</font>より前に発生した通話は無視されます。<br>
         <br>
         <h6><font color="#00BFFF">- 最小期間</font></h6>
-        <font color="cyan">%d秒</font>未満の通話は無視されます。<br>
+        <font color="#03DAC5">%d秒</font>未満の通話は無視されます。<br>
         <br>
         <font color="#ea86ff"><b>優先度: 10</b></font>
         ]]>

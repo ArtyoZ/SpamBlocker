@@ -57,10 +57,10 @@
         <b>الخيارات:</b><br>
         <br>
         <h6><font color="#00BFFF">- خلال أيام</font></h6>
-        يتم تجاهل المكالمات التي حدثت قبل <font color="cyan">%d أيام</font>.<br>
+        يتم تجاهل المكالمات التي حدثت قبل <font color="#03DAC5">%d أيام</font>.<br>
         <br>
         <h6><font color="#00BFFF">- المدة الدنيا</font></h6>
-        يتم تجاهل المكالمات التي استمرت أقل من <font color="cyan">%d ثانية</font>.<br>
+        يتم تجاهل المكالمات التي استمرت أقل من <font color="#03DAC5">%d ثانية</font>.<br>
         <br>
         <font color="#ea86ff"><b>الأولوية: 10</b></font>
         ]]>

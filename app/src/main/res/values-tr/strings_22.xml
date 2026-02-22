@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Süre (dakika)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        <font color="cyan">Test</font> düğmesine dokunarak bu iş akışını manuel olarak çalıştırın.
+        <font color="#03DAC5">Test</font> düğmesine dokunarak bu iş akışını manuel olarak çalıştırın.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -173,7 +173,7 @@
     <string name="delay_in_seconds">Gecikme (saniye)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Bu özellik, çalma başlamadan önce sistemin varsayılan zil sesini geçici olarak değiştirir ve çalmanın başlaması beklenen süreden sonra <font color="cyan">%d saniye</font> sonra eski haline getirir. <br>
+        Bu özellik, çalma başlamadan önce sistemin varsayılan zil sesini geçici olarak değiştirir ve çalmanın başlaması beklenen süreden sonra <font color="#03DAC5">%d saniye</font> sonra eski haline getirir. <br>
         <br>
         Bazı telefonlar, çalmayı örneğin 6 saniye erteleyebilen <b>Önce Titre Sonra Çal</b> gibi özellikler sunar.
          Bu durumda, bu gecikmeyi buna göre artırın.

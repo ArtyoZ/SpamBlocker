@@ -66,6 +66,10 @@ import spam.blocker.util.Lambda
 import spam.blocker.util.Lambda1
 import android.graphics.Color as AndroidColor
 
+// https://proandroiddev.com/color-picker-in-compose-f8c29744705
+//  +
+// AI
+
 private const val AREA_WIDTH = 260 // .dp
 
 private fun CoroutineScope.collectForPress(

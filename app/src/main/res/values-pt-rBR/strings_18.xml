@@ -57,10 +57,10 @@
         <b>Opções:</b><br>
         <br>
         <h6><font color="#00BFFF">- Dentro de Dias</font></h6>
-        Chamadas que ocorreram antes de <font color="cyan">%d dias</font> são ignoradas.<br>
+        Chamadas que ocorreram antes de <font color="#03DAC5">%d dias</font> são ignoradas.<br>
         <br>
         <h6><font color="#00BFFF">- Duração Mínima</font></h6>
-        Chamadas com duração inferior a <font color="cyan">%d segundos</font> são ignoradas.<br>
+        Chamadas com duração inferior a <font color="#03DAC5">%d segundos</font> são ignoradas.<br>
         <br>
         <font color="#ea86ff"><b>Prioridade: 10</b></font>
         ]]>

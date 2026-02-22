@@ -36,7 +36,7 @@
         <b>オプション:</b><br>
         <br>
         <h6><font color="#00BFFF">- 日以内</font></h6>
-        <font color="cyan">%s日</font>より前に発生した通話は無視されます。<br>
+        <font color="#03DAC5">%s日</font>より前に発生した通話は無視されます。<br>
         <br>
         <h6><font color="#00BFFF">- SMSを含める</font></h6>
         有効にすると、その番号へのテキストメッセージ送信も含まれます。<br>

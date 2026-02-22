@@ -57,10 +57,10 @@
         <b>Opsi:</b><br>
         <br>
         <h6><font color="#00BFFF">- Dalam Hari</font></h6>
-        Panggilan yang terjadi sebelum <font color="cyan">%d hari</font> diabaikan.<br>
+        Panggilan yang terjadi sebelum <font color="#03DAC5">%d hari</font> diabaikan.<br>
         <br>
         <h6><font color="#00BFFF">- Durasi Minimal</font></h6>
-        Panggilan yang berlangsung kurang dari <font color="cyan">%d detik</font> diabaikan.<br>
+        Panggilan yang berlangsung kurang dari <font color="#03DAC5">%d detik</font> diabaikan.<br>
         <br>
         <font color="#ea86ff"><b>Prioritas: 10</b></font>
         ]]>

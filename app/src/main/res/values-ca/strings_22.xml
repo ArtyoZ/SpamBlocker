@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Durada (minuts)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Toca el botó <font color="cyan">Prova</font> per executar manualment aquest flux de treball.
+        Toca el botó <font color="#03DAC5">Prova</font> per executar manualment aquest flux de treball.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -173,7 +173,7 @@
     <string name="delay_in_seconds">Retard (segons)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Aquesta funció canvia temporalment el to de trucada predeterminat del sistema abans que comenci a sonar i el torna a restablir després de <font color="cyan">%d segons</font>, moment en què s\'espera que hagi començat la trucada. <br>
+        Aquesta funció canvia temporalment el to de trucada predeterminat del sistema abans que comenci a sonar i el torna a restablir després de <font color="#03DAC5">%d segons</font>, moment en què s\'espera que hagi començat la trucada. <br>
         <br>
         Alguns telèfons ofereixen funcions com <b>Vibrar primer i després sonar</b> que poden endarrerir la trucada, per exemple, 6 segons. En aquest cas, augmenta aquest retard en conseqüència.
         ]]>

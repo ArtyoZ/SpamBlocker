@@ -34,6 +34,7 @@ import spam.blocker.G
 import spam.blocker.R
 import spam.blocker.ui.M
 import spam.blocker.ui.setting.LabeledRow
+import spam.blocker.ui.slightDiff
 import spam.blocker.ui.theme.SwissCoffee
 import spam.blocker.ui.widgets.DrawableImage
 import spam.blocker.ui.widgets.GreyButton
@@ -185,7 +186,7 @@ fun <T> PopupChooseApps(
 
                         // divider
                         if (index < sortedApps.lastIndex) // don't show for the last item
-                            HorizontalDivider(thickness = 1.dp, color = SwissCoffee)
+                            HorizontalDivider(thickness = 1.dp, color = C.dialogBg.slightDiff())
                     }
                 }
             }

@@ -36,7 +36,7 @@
         <b>Seçenekler:</b><br>
         <br>
         <h6><font color="#00BFFF">- Günler İçinde</font></h6>
-        <font color="cyan">%s günden</font> önce gerçekleşen çağrılar yok sayılır.<br>
+        <font color="#03DAC5">%s günden</font> önce gerçekleşen çağrılar yok sayılır.<br>
         <br>
         <h6><font color="#00BFFF">- SMS Dahil Et</font></h6>
         Etkinleştirildiğinde, o numaraya SMS göndermek de sayılır.<br>

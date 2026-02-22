@@ -36,7 +36,7 @@
         <b>Opzioni:</b><br>
         <br>
         <h6><font color="#00BFFF">- Entro Giorni</font></h6>
-        Le chiamate avvenute prima di <font color="cyan">%s giorni</font> vengono ignorate.<br>
+        Le chiamate avvenute prima di <font color="#03DAC5">%s giorni</font> vengono ignorate.<br>
         <br>
         <h6><font color="#00BFFF">- Includi SMS</font></h6>
         Se abilitato, anche l\'invio di SMS a quel numero conta.<br>

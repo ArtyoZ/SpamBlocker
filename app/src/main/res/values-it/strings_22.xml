@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Durata (minuti)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Tocca il pulsante <font color="cyan">Test</font> per eseguire manualmente questo workflow.
+        Tocca il pulsante <font color="#03DAC5">Test</font> per eseguire manualmente questo workflow.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -174,7 +174,7 @@
     <string name="help_ringtone_delay">
         <![CDATA[
         Questa funzione cambia temporaneamente la suoneria predefinita del sistema prima che inizi a squillare e
-         poi la ripristina dopo <font color="cyan">%d secondi</font>, momento in cui lo squillo dovrebbe essere iniziato. <br>
+         poi la ripristina dopo <font color="#03DAC5">%d secondi</font>, momento in cui lo squillo dovrebbe essere iniziato. <br>
         <br>
         Alcuni telefoni offrono funzioni come <b>Vibra prima poi Squilla</b> che possono ritardare lo squillo di, diciamo, 6 secondi.
          In tal caso, aumenta di conseguenza questo ritardo.

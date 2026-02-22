@@ -57,10 +57,10 @@
         <b>Seçenekler:</b><br>
         <br>
         <h6><font color="#00BFFF">- Gün İçinde</font></h6>
-        <font color="cyan">%d gün</font> öncesinde gerçekleşen çağrılar yoksayılır.<br>
+        <font color="#03DAC5">%d gün</font> öncesinde gerçekleşen çağrılar yoksayılır.<br>
         <br>
         <h6><font color="#00BFFF">- Minimum Süre</font></h6>
-        <font color="cyan">%d saniyeden</font> az süren çağrılar yoksayılır.<br>
+        <font color="#03DAC5">%d saniyeden</font> az süren çağrılar yoksayılır.<br>
         <br>
         <font color="#ea86ff"><b>Öncelik: 10</b></font>
         ]]>

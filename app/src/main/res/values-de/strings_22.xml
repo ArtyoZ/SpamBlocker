@@ -156,7 +156,7 @@
     <string name="duration_in_minutes">Dauer (Minuten)</string>
     <string name="help_trigger_manual">
         <![CDATA[
-        Tippen Sie auf die Schaltfläche <font color="cyan">Test</font>, um diesen Workflow manuell auszuführen.
+        Tippen Sie auf die Schaltfläche <font color="#03DAC5">Test</font>, um diesen Workflow manuell auszuführen.
         ]]>
     </string>
     <string name="help_trigger_schedule">
@@ -173,7 +173,7 @@
     <string name="delay_in_seconds">Verzögerung (Sekunden)</string>
     <string name="help_ringtone_delay">
         <![CDATA[
-        Diese Funktion ändert den System-Standardklingelton vorübergehend, bevor das Klingeln beginnt, und setzt ihn nach <font color="cyan">%d Sekunden</font> zurück, zu welchem Zeitpunkt das Klingeln voraussichtlich begonnen haben wird. <br>
+        Diese Funktion ändert den System-Standardklingelton vorübergehend, bevor das Klingeln beginnt, und setzt ihn nach <font color="#03DAC5">%d Sekunden</font> zurück, zu welchem Zeitpunkt das Klingeln voraussichtlich begonnen haben wird. <br>
         <br>
         Einige Telefone bieten Funktionen wie <b>Zuerst vibrieren, dann klingeln</b>, die das Klingeln um, sagen wir, 6 Sekunden verzögern können. Erhöhen Sie in diesem Fall diese Verzögerung entsprechend.
         ]]>

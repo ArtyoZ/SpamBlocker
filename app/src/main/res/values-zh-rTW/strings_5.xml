@@ -31,7 +31,7 @@
         <b>選項：</b><br>
         <br>
         <h6><font color="#00BFFF">- 指定天數內</font></h6>
-        會忽略 <font color="cyan">%s 天</font> 之前的通話紀錄。<br>
+        會忽略 <font color="#03DAC5">%s 天</font> 之前的通話紀錄。<br>
         <br>
         <h6><font color="#00BFFF">- 包含簡訊</font></h6>
         啟用後，傳送給該號碼的簡訊也會列入判斷。<br>

@@ -57,10 +57,10 @@
         <b>Opcions:</b><br>
         <br>
         <h6><font color="#00BFFF">- Dins de Dies</font></h6>
-        Les trucades que van tenir lloc abans de <font color="cyan">%d dies</font> s\'ignoren.<br>
+        Les trucades que van tenir lloc abans de <font color="#03DAC5">%d dies</font> s\'ignoren.<br>
         <br>
         <h6><font color="#00BFFF">- Durada Mínima</font></h6>
-        Les trucades que van durar menys de <font color="cyan">%d segons</font> s\'ignoren.<br>
+        Les trucades que van durar menys de <font color="#03DAC5">%d segons</font> s\'ignoren.<br>
         <br>
         <font color="#ea86ff"><b>Prioritat: 10</b></font>
         ]]>
