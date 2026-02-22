@@ -1,37 +1,49 @@
 package spam.blocker.ui.setting.misc
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.MutableState
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import spam.blocker.G
+import spam.blocker.R
+import spam.blocker.ui.setting.LabeledRow
+import spam.blocker.ui.widgets.ColorPickerButton
+import spam.blocker.ui.widgets.FlowRowSpaced
+import spam.blocker.ui.widgets.GreyButton
+import spam.blocker.ui.widgets.PopupDialog
+import spam.blocker.ui.widgets.Str
 
 
 @Composable
+fun EditThemeDialog(trigger: MutableState<Boolean>) {
+    PopupDialog(trigger, transparentBackground = true) {
+        FlowRowSpaced(10, vSpace = 20) {
+            G.palette.allColors.forEach { color ->
+
+                ColorPickerButton(
+                    color = color.state.value,
+                    text = Str(color.labelId),
+                    okLabel = Str(R.string.ok),
+                    clearLabel = Str(R.string.reset),
+                ) { newColor ->
+                    if (newColor == null)
+                        color.reset()
+                    else
+                        color.update(newColor)
+                }
+            }
+        }
+    }
+}
+
+@Composable
 fun Theme() {
-//    val ctx = LocalContext.current
-//    val spf = spf.Global(ctx)
-//
-//    val options = remember {
-//
-//        val followSystem = ctx.resources.getString(R.string.follow_system)
-//        val themes = listOf(followSystem) + ctx.resources.getStringArray(R.array.theme_list).toList()
-//
-//        themes.mapIndexed { index, label ->
-//            LabelItem(
-//                label = label,
-//                onClick = {
-//                    spf.themeType = index
-//                    G.themeType.intValue = index
-//                }
-//            )
-//        }
-//    }
-//
-//
-//    LabeledRow(
-//        R.string.theme,
-//        content = {
-//            ComboBox(
-//                options,
-//                G.themeType.intValue,
-//            )
-//        }
-//    )
+    LabeledRow(R.string.theme) {
+        val trigger = remember { mutableStateOf(false) }
+        EditThemeDialog(trigger)
+
+        GreyButton(Str(R.string.customize)) {
+            trigger.value = true
+        }
+    }
 }

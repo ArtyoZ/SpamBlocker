@@ -1,6 +1,7 @@
 package spam.blocker.ui.widgets
 
 import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.combinedClickable
 import androidx.compose.foundation.layout.Box
@@ -18,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -48,6 +50,7 @@ fun Button(
     enabled: Boolean = true,
     borderWidth: Dp = 1.dp,
     borderColor: Color = G.palette.textGrey,
+    backgroundColor: Color = Color.Unspecified,
     shape: Shape = RoundedCornerShape(BUTTON_CORNER_RADIUS.dp),
     contentPadding: PaddingValues = PaddingValues(BUTTON_H_PADDING.dp, 0.dp),
     onClick: () -> Unit,
@@ -61,6 +64,8 @@ fun Button(
                 color = if (enabled) borderColor else C.disabled,
                 shape = shape
             )
+            .clip(RoundedCornerShape(BUTTON_CORNER_RADIUS.dp))
+            .background(backgroundColor)
 
             .combinedClickable(
                 onClick = { if (enabled) onClick() },

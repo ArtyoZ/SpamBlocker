@@ -6,10 +6,6 @@
     <string name="text_too_long">文字太長，已停用編輯功能</string>
     <string name="follow_system"><short>跟隨系統</short></string>
     <string name="theme">佈景主題</string>
-    <string-array name="theme_list">
-        <item>淺色</item>
-        <item>深色</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>搜尋規則</item>
         <item>複製規則</item>

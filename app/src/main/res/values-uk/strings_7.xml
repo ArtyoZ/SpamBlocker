@@ -6,10 +6,6 @@
     <string name="text_too_long">Текст надто довгий, редагування вимкнено</string>
     <string name="follow_system"><short>Наслідувати систему</short></string>
     <string name="theme">Тема</string>
-    <string-array name="theme_list">
-        <item>Світла</item>
-        <item>Темна</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>Пошук правила</item>
         <item>Копіювати правило</item>

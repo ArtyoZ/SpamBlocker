@@ -49,6 +49,7 @@ import spam.blocker.ui.history.HistoryOptions.forceShowSIM
 import spam.blocker.ui.history.HistoryOptions.showHistoryGeoLocation
 import spam.blocker.ui.setting.api.spamCategoryNamesMap
 import spam.blocker.ui.setting.api.tagValid
+import spam.blocker.ui.slightDiff
 import spam.blocker.ui.widgets.BUTTON_CORNER_RADIUS
 import spam.blocker.ui.widgets.BUTTON_H_PADDING
 import spam.blocker.ui.widgets.Button
@@ -148,7 +149,7 @@ fun HistoryCard(
     val ctx = LocalContext.current
     OutlineCard(
         modifier = M.animateContentSize(),
-        borderColor = if (record.isTest) C.teal200 else C.cardBorder
+        borderColor = if (record.isTest) C.teal200 else C.dialogBg.slightDiff()
     ) {
         Box(
             modifier = M

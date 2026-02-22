@@ -13,6 +13,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import spam.blocker.G
 import spam.blocker.R
@@ -86,7 +87,7 @@ fun EditSingleTimeColorsDialog(
     val C = G.palette
 
     var dur by remember(initial) { mutableStateOf(initial.durationMin) }
-    var color by remember(initial) { mutableIntStateOf(initial.argb) }
+    var color by remember(initial) { mutableStateOf(Color(initial.argb)) }
 
     PopupDialog(
         trigger = trigger,
@@ -105,7 +106,7 @@ fun EditSingleTimeColorsDialog(
                 ) {
                     trigger.value = false
 
-                    val r = FreshnessColor(dur, color)
+                    val r = FreshnessColor(dur, color.toArgb())
                     if (r.isValid())
                         onResult(r, false)
                     else

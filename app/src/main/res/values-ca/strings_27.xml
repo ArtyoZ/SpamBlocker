@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">Text normal</string>
+    <string name="info_feature">Informació / Funcionalitat</string>
+    <string name="success_allow">Èxit / Permetre</string>
+    <string name="error_block">Error / Bloqueig</string>
+    <string name="highlight">Ressaltar</string>
+    <string name="disable">Desactivar</string>
+    <string name="dialog_bg">Fons del diàleg</string>
+    <string name="app_bg">Fons de l\'aplicació</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">Звичайний текст</string>
+    <string name="info_feature">Інформація / Функція</string>
+    <string name="success_allow">Успіх / Дозволити</string>
+    <string name="error_block">Помилка / Блокувати</string>
+    <string name="highlight">Виділити</string>
+    <string name="disable">Вимкнути</string>
+    <string name="dialog_bg">Фон діалогу</string>
+    <string name="app_bg">Фон додатку</string>
+</resources>

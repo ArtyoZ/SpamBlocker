@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">通常テキスト</string>
+    <string name="info_feature">情報 / 機能</string>
+    <string name="success_allow">成功 / 許可</string>
+    <string name="error_block">エラー / ブロック</string>
+    <string name="highlight">ハイライト</string>
+    <string name="disable">無効化</string>
+    <string name="dialog_bg">ダイアログ背景</string>
+    <string name="app_bg">アプリ背景</string>
+</resources>

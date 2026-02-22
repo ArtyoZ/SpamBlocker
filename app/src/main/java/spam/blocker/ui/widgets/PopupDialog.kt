@@ -15,12 +15,15 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.MutableState
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
+import androidx.compose.ui.window.DialogWindowProvider
 import spam.blocker.G
 import spam.blocker.ui.M
+import spam.blocker.ui.lighten
 import spam.blocker.ui.maxScreenHeight
 import spam.blocker.ui.screenWidthDp
 import spam.blocker.util.Lambda
@@ -62,6 +65,7 @@ fun PopupDialog(
     buttons: (@Composable RowScope.() -> Unit)? = null,
     popupSize: PopupSize? = null,
     scrollEnabled: Boolean = true,
+    transparentBackground: Boolean = false,
     content: @Composable ColumnScope.() -> Unit,
 ) {
     if (trigger.value) {
@@ -82,7 +86,8 @@ fun PopupDialog(
         ) {
             // Disable the dialog background dim effect.
             // Enable this when taking screenshots..
-//            (LocalView.current.parent as DialogWindowProvider).window.setDimAmount(0.0f)
+            if (transparentBackground)
+                (LocalView.current.parent as DialogWindowProvider).window.setDimAmount(0.0f)
 
             val C = G.palette
             val scrollState = rememberScrollState()
@@ -94,7 +99,7 @@ fun PopupDialog(
                         popupSize?.calculate()?.dp ?: Dp.Unspecified
                     ),
 
-                border = BorderStroke(1.dp, color= C.dialogBorder),
+                border = BorderStroke(1.dp, color= C.dialogBg.lighten(0.1f)),
                 colors = CardDefaults.cardColors(
                     containerColor = G.palette.dialogBg,
                 ),

@@ -172,8 +172,8 @@ class MainActivity : ComponentActivity() {
                             Snackbar(
                                 modifier = M.padding(horizontal = 10.dp),
                                 containerColor = C.infoBlue,
-                                contentColor = C.cardBorder,
-                                actionColor = C.cardBorder,
+                                contentColor = C.background,
+                                actionColor = C.background,
                                 snackbarData = it
                             )
                         }

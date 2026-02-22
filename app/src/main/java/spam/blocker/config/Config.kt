@@ -1,6 +1,8 @@
 package spam.blocker.config
 
 import android.content.Context
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.toArgb
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -300,26 +302,25 @@ class BotOptions : IConfig {
     }
 }
 
+
 @Serializable
 class Theme : IConfig {
-    var type = 0
+    var colorMap: MutableMap<String, Int> = mutableMapOf()
+
     override fun load(ctx: Context) {
-//        type = spf.Global(ctx).themeType
+        spf.Palette(ctx).allColors.forEach {
+            colorMap[it.key] = it.state.value.toArgb()
+        }
     }
 
     override fun apply(ctx: Context) {
-//        spf.Global(ctx).themeType = type
-    }
-}
-
-@Serializable
-class ColorsPalette : IConfig {
-    override fun load(ctx: Context) {
-//        type = spf.Global(ctx).themeType
-    }
-
-    override fun apply(ctx: Context) {
-//        spf.Global(ctx).themeType = type
+        // Iterate through spf.allColors
+        spf.Palette(ctx).allColors.forEach { delegate ->
+            // Apply new color if it exists in the config
+            colorMap[delegate.key]?.let {
+                delegate.update(Color(it))
+            }
+        }
     }
 }
 
@@ -742,8 +743,8 @@ class Configs {
     val historyOptions = HistoryOptions()
     val regexOptions = RegexOptions()
     val botOptions = BotOptions()
-    val theme = Theme()
     val language = Language()
+    val theme = Theme()
 
     val contacts = Contact()
     val stir = STIR()
@@ -779,8 +780,8 @@ class Configs {
             historyOptions,
             regexOptions,
             botOptions,
-            theme,
             language,
+            theme,
 
             contacts,
             stir,

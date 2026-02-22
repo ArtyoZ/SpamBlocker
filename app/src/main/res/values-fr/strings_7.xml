@@ -6,10 +6,6 @@
     <string name="text_too_long">Texte trop long, l\'édition est désactivée</string>
     <string name="follow_system"><short>Suivre le système</short></string>
     <string name="theme">Thème</string>
-    <string-array name="theme_list">
-        <item>Clair</item>
-        <item>Sombre</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>Rechercher une règle</item>
         <item>Cloner la règle</item>

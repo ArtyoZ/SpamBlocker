@@ -9,6 +9,7 @@ import androidx.compose.ui.graphics.toArgb
 import androidx.core.content.edit
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
+import spam.blocker.R
 import spam.blocker.db.Notification.CHANNEL_HIGH
 import spam.blocker.db.Notification.CHANNEL_HIGH_MUTED
 import spam.blocker.db.Notification.CHANNEL_LOW
@@ -16,10 +17,8 @@ import spam.blocker.def.Def
 import spam.blocker.def.Def.DEFAULT_HANG_UP_DELAY
 import spam.blocker.ui.theme.Black111111
 import spam.blocker.ui.theme.ColdGrey
-import spam.blocker.ui.theme.DarkGrey
 import spam.blocker.ui.theme.DarkOrange
 import spam.blocker.ui.theme.Emerald
-import spam.blocker.ui.theme.Grey383838
 import spam.blocker.ui.theme.LightMagenta
 import spam.blocker.ui.theme.MayaBlue
 import spam.blocker.ui.theme.RaisinBlack
@@ -105,55 +104,64 @@ class spf { // for namespace only
 
     // This class is instantiated once and cached in GlobalVariables.kt, it holds all colors used by the app.
     class Palette(ctx: Context) : SharedPref(ctx) {
+        var allColors = listOf<Delegate>()
+
         // Delegate attributes,
         //  - `initialized` from shared pref
         //  - `read` from the state variable
         //  - `write` to both the state variable and shared pref
-        private class Delegate(
-            private val prefs: SharedPreferences,
+        inner class Delegate(
             val key: String,
-            private val default: Color
-        ) : ReadWriteProperty<Any?, Color> {
-            private val state: MutableState<Color> = mutableStateOf(
+            val default: Color,
+            val labelId: Int,
+        )  {
+            val state: MutableState<Color> = mutableStateOf(
                 Color(prefs.getInt("color_$key", default.toArgb()))
             )
 
-            override operator fun getValue(thisRef: Any?, property: KProperty<*>): Color {
+            // These two functions for the `by` keyword
+            operator fun getValue(thisRef: Any?, property: KProperty<*>): Color {
                 return state.value
             }
-
-            override operator fun setValue(thisRef: Any?, property: KProperty<*>, value: Color) {
-                state.value = value
-                prefs.edit { putInt("color_$key", value.toArgb()) }
+            operator fun setValue(thisRef: Any?, property: KProperty<*>, value: Color) {
+                update(value)
             }
+            // This function for manually updating the instance
+            fun update(newColor: Color) {
+                state.value = newColor
+                prefs.edit { putInt("color_$key", newColor.toArgb()) }
+            }
+
+            fun reset() = update(default)
         }
 
         fun color(
             key: String,
-            default: Color
-        ): ReadWriteProperty<Any?, Color> {
-            return Delegate(prefs, key, default)
+            default: Color,
+            labelId: Int
+        ) : Delegate {
+            val d = Delegate(key, default, labelId)
+            allColors += d // add each Delegate to the `list`
+            return d
         }
 
-        var textGrey by color("text", SilverGrey)
-        var infoBlue by color("info", SkyBlue)
-        var warning by color("warning", DarkOrange)
-        var success by color("success", Emerald)
-        var error by color("error", Salmon)
+        var textGrey by color("text", SilverGrey, R.string.normal_text)
+        var infoBlue by color("info", SkyBlue, R.string.info_feature)
+        var warning by color("warning", DarkOrange, R.string.warning)
+        var success by color("success", Emerald, R.string.success_allow)
+        var error by color("error", Salmon, R.string.error_block)
 
-        var priority by color("priority", LightMagenta)
-        var regexFlags by color("regexFlags", Color.Magenta)
+        var priority by color("priority", LightMagenta, R.string.priority)
+        var regexFlags by color("regexFlags", Color.Magenta, R.string.regex_flags)
 
         // widgets
-        var teal200 by color("highlighted", Teal200)
-        var disabled by color("disabled", ColdGrey)
+        var teal200 by color("highlighted", Teal200, R.string.highlight)
+        var disabled by color("disabled", ColdGrey, R.string.disable)
 
         // popup
-        var dialogBg by color("dialogBg", RaisinBlack)
-        var dialogBorder by color("dialogBorder", Grey383838)
-        var cardBorder by color("cardBorder", DarkGrey)
+        var dialogBg by color("dialogBg", RaisinBlack, R.string.dialog_bg)
 
-        var background by color("background", Black111111)
+        var background by color("background", Black111111, R.string.app_bg)
     }
 
     class Temporary(ctx: Context) : SharedPref(ctx) {

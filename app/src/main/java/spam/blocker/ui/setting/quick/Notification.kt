@@ -20,6 +20,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.asImageBitmap
+import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.core.net.toUri
@@ -387,11 +388,11 @@ fun EditChannelDialog(
             ) {
                 RowVCenterSpaced(4) {
                     ColorPickerButton(
-                        color = iconColor,
-                        defaultText = Str(R.string.automatic),
-                        clearable = true,
+                        color = iconColor?.let { Color(it) },
+                        text = if (iconColor == null) Str(R.string.automatic) else null,
+                        clearLabel = Str(R.string.clear),
                     ) {
-                        iconColor = it
+                        iconColor = it?.toArgb()
                     }
                 }
             }
@@ -413,11 +414,11 @@ fun EditChannelDialog(
                 ) {
                     RowVCenterSpaced(6) {
                         ColorPickerButton(
-                            color = ledColor,
+                            color = Color(ledColor),
                             enabled = isCreatingNewChannel,
                         ) {
                             it?.let {
-                                ledColor = it
+                                ledColor = it.toArgb()
                             }
                         }
 

@@ -6,10 +6,6 @@
     <string name="text_too_long">النص طويل جدًا، التحرير معطل</string>
     <string name="follow_system"><short>متابعة النظام</short></string>
     <string name="theme">المظهر</string>
-    <string-array name="theme_list">
-        <item>فاتح</item>
-        <item>داكن</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>بحث عن قاعدة</item>
         <item>استنساخ قاعدة</item>

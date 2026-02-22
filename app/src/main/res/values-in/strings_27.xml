@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">Teks Normal</string>
+    <string name="info_feature">Informasi / Fitur</string>
+    <string name="success_allow">Berhasil / Izinkan</string>
+    <string name="error_block">Kesalahan / Blokir</string>
+    <string name="highlight">Sorot</string>
+    <string name="disable">Nonaktifkan</string>
+    <string name="dialog_bg">Latar Belakang Dialog</string>
+    <string name="app_bg">Latar Belakang Aplikasi</string>
+</resources>

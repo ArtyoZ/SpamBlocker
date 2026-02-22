@@ -6,10 +6,6 @@
     <string name="text_too_long">Teks terlalu panjang, pengubahan dinonaktifkan</string>
     <string name="follow_system"><short>Ikuti Sistem</short></string>
     <string name="theme">Tema</string>
-    <string-array name="theme_list">
-        <item>Terang</item>
-        <item>Gelap</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>Aturan Pencarian</item>
         <item>Aturan Penggandaan</item>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">Обычный текст</string>
+    <string name="info_feature">Информация / Функция</string>
+    <string name="success_allow">Успешно / Разрешить</string>
+    <string name="error_block">Ошибка / Блокировать</string>
+    <string name="highlight">Выделить</string>
+    <string name="disable">Отключить</string>
+    <string name="dialog_bg">Фон диалога</string>
+    <string name="app_bg">Фон приложения</string>
+</resources>

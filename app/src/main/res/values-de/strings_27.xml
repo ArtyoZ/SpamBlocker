@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">Normaler Text</string>
+    <string name="info_feature">Information / Funktion</string>
+    <string name="success_allow">Erfolg / Erlauben</string>
+    <string name="error_block">Fehler / Blockieren</string>
+    <string name="highlight">Hervorheben</string>
+    <string name="disable">Deaktivieren</string>
+    <string name="dialog_bg">Dialoghintergrund</string>
+    <string name="app_bg">App-Hintergrund</string>
+</resources>

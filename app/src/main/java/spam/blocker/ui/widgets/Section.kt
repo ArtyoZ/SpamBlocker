@@ -17,6 +17,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import spam.blocker.G
 import spam.blocker.ui.M
+import spam.blocker.ui.slightDiff
 import spam.blocker.ui.theme.SwissCoffee
 
 @Composable
@@ -33,7 +34,7 @@ fun Section(
             modifier = M
                 .fillMaxWidth()
                 .padding(horizontal = horizontalPadding.dp)
-                .border(0.5.dp, C.cardBorder, shape = RoundedCornerShape(4.dp))
+                .border(0.5.dp, bgColor.slightDiff(), shape = RoundedCornerShape(4.dp))
                 .padding(horizontal = 14.dp, vertical = 10.dp)
                 .wrapContentHeight()
         ) {

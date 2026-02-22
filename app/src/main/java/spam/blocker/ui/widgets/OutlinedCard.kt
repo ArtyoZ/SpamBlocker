@@ -9,12 +9,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import spam.blocker.G
+import spam.blocker.ui.slightDiff
 
 @Composable
 fun OutlineCard(
     modifier: Modifier = Modifier,
-    borderColor: Color = G.palette.cardBorder,
     containerBg: Color = G.palette.background,
+    borderColor: Color = containerBg.slightDiff(),
     content: @Composable () -> Unit,
 ) {
 

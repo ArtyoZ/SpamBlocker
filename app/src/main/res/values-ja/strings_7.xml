@@ -6,10 +6,6 @@
     <string name="text_too_long">テキストが長すぎるため、編集は無効になっています</string>
     <string name="follow_system"><short>システムに従う</short></string>
     <string name="theme">テーマ</string>
-    <string-array name="theme_list">
-        <item>ライト</item>
-        <item>ダーク</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>ルール検索</item>
         <item>ルール複製</item>

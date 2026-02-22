@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">普通文本</string>
+    <string name="info_feature">信息 / 功能</string>
+    <string name="success_allow">成功 / 允许</string>
+    <string name="error_block">错误 / 阻止</string>
+    <string name="highlight">高亮</string>
+    <string name="disable">禁用</string>
+    <string name="dialog_bg">对话框背景</string>
+    <string name="app_bg">应用背景</string>
+</resources>

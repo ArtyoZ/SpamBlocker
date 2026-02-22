@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">טקסט רגיל</string>
+    <string name="info_feature">מידע / תכונה</string>
+    <string name="success_allow">הצלחה / לאפשר</string>
+    <string name="error_block">שגיאה / לחסום</string>
+    <string name="highlight">הדגש</string>
+    <string name="disable">השבת</string>
+    <string name="dialog_bg">רקע תיבת דו-שיח</string>
+    <string name="app_bg">רקע האפליקציה</string>
+</resources>

@@ -6,10 +6,6 @@
     <string name="text_too_long">El text és massa llarg, l\'edició està desactivada</string>
     <string name="follow_system"><short>Sistema</short></string>
     <string name="theme">Tema</string>
-    <string-array name="theme_list">
-        <item>Clar</item>
-        <item>Fosc</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>Cerca la regla</item>
         <item>Clona la regla</item>

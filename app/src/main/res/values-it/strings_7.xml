@@ -6,10 +6,6 @@
     <string name="text_too_long">Testo troppo lungo, la modifica è disabilitata</string>
     <string name="follow_system"><short>Segui Sistema</short></string>
     <string name="theme">Tema</string>
-    <string-array name="theme_list">
-        <item>Chiaro</item>
-        <item>Scuro</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>Cerca Regola</item>
         <item>Clona Regola</item>

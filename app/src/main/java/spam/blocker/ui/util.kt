@@ -23,6 +23,37 @@ import spam.blocker.util.Lambda
 
 typealias M = Modifier
 
+
+fun String.parseColorString(): Pair<Int, Int>? {
+    if (this.length != 8) {
+        return null
+    }
+
+    val alpha = this.substring(0, 2).toIntOrNull(16)
+    if (alpha == null)
+        return null
+
+    val rgb = this.substring(2, 8).toIntOrNull(16)
+    if (rgb == null)
+        return null
+
+    return Pair(alpha, rgb)
+}
+
+fun Color.luminance(): Double {
+    // Calculate the perceptive luminance (aka luma) - human eye favors green color...
+    return (0.299 * red) + (0.587 * green) + (0.114 * blue)
+}
+
+fun Color.contrastColor(): Color {
+    val luma = luminance()
+
+    return if (luma > 0.55f)
+        Color.Black
+    else
+        Color.White
+}
+
 // light_blue.darken() -> dark_blue
 fun Color.darken(factor: Float = 0.7f): Color {
     return copy(
@@ -33,13 +64,19 @@ fun Color.darken(factor: Float = 0.7f): Color {
     )
 }
 // dark_blue.lighten() -> light_blue
-fun Color.lighten(factor: Float = 0.5f): Color {
+fun Color.lighten(factor: Float = 0.6f): Color {
     return copy(
         red   = red   + (1f - red)   * factor.coerceIn(0f, 1f),
         green = green + (1f - green) * factor.coerceIn(0f, 1f),
         blue  = blue  + (1f - blue)  * factor.coerceIn(0f, 1f),
         alpha = alpha  // usually keep original alpha
     )
+}
+fun Color.slightDiff(factor: Float = 0.2f): Color {
+    return if (luminance() > 0.55f)
+        darken(factor)
+    else
+        lighten(factor)
 }
 
 @Composable

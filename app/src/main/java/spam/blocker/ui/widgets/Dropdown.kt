@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import spam.blocker.G
 import spam.blocker.ui.M
+import spam.blocker.ui.slightDiff
 import spam.blocker.util.Lambda1
 
 // The built-in DropdownMenuItem is twice height as it should be.
@@ -155,7 +156,7 @@ fun DropdownWrapper(
             expanded = expanded.value,
             onDismissRequest = { expanded.value = false },
             containerColor = C.dialogBg,
-            border = BorderStroke(1.dp, C.dialogBorder)
+            border = BorderStroke(1.dp, C.dialogBg.slightDiff())
         ) {
             DropdownMenuItems(
                 items = items,

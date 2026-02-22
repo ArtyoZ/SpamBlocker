@@ -6,10 +6,6 @@
     <string name="text_too_long">Metin çok uzun, düzenleme devre dışı</string>
     <string name="follow_system">Sistemi Takip Et</string>
     <string name="theme">Tema</string>
-    <string-array name="theme_list">
-        <item>Aydınlık</item>
-        <item>Karanlık</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>Kural Ara</item>
         <item>Kuralı Kopyala</item>

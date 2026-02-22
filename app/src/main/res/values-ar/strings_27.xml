@@ -1,0 +1,10 @@
+<resources>
+    <string name="normal_text">نص عادي</string>
+    <string name="info_feature">معلومات / ميزة</string>
+    <string name="success_allow">نجاح / السماح</string>
+    <string name="error_block">خطأ / حظر</string>
+    <string name="highlight">تمييز</string>
+    <string name="disable">تعطيل</string>
+    <string name="dialog_bg">خلفية الحوار</string>
+    <string name="app_bg">خلفية التطبيق</string>
+</resources>

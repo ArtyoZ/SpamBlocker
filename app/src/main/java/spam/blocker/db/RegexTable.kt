@@ -33,7 +33,6 @@ import spam.blocker.db.Notification.CHANNEL_HIGH
 import spam.blocker.db.Notification.CHANNEL_LOW
 import spam.blocker.db.Notification.CHANNEL_NONE
 import spam.blocker.def.Def
-import spam.blocker.ui.lighten
 import spam.blocker.util.PermissiveJson
 import spam.blocker.util.TimeSchedule
 import spam.blocker.util.Util
@@ -167,7 +166,7 @@ data class RegexRule(
             // 1. Time schedule
             val sch = TimeSchedule.parseFromStr(schedule)
             if (sch.enabled) {
-                withStyle(style = SpanStyle(fontSize = 12.sp, color = C.infoBlue.lighten(0.5f))) {
+                withStyle(style = SpanStyle(fontSize = 12.sp, color = C.infoBlue)) {
                     append(sch.toDisplayStr(ctx))
                     append("\n")
                 }

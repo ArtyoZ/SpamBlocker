@@ -6,10 +6,6 @@
     <string name="text_too_long">Текст слишком длинный, редактирование отключено</string>
     <string name="follow_system"><short>Следовать системе</short></string>
     <string name="theme">Тема</string>
-    <string-array name="theme_list">
-        <item>Светлая</item>
-        <item>Темная</item>
-    </string-array>
     <string-array name="rule_dropdown_menu">
         <item>Найти правило</item>
         <item>Клонировать правило</item>

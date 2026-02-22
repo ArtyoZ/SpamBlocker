@@ -552,7 +552,10 @@ class ByPushAlert(
         Column {
             super.ExpandedContent(forType, record)
             if (record.expanded)
-                GreyText(detail.body)
+                ExtraInfoWithDivider(
+                    text = detail.body.A(),
+                    maxLines = 20,
+                )
         }
     }
 }
