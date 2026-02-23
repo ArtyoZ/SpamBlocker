@@ -46,15 +46,16 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        如果列表中的任何应用最近使用过，任何呼叫都将通过。<br>
+        如果列表中的任意应用最近被使用，任何来电都会通过。<br>
         <br>
-        一个典型的用例：<br>
-        &emsp; 您刚刚在 PizzaApp 中订购了披萨，很快他们打电话给您退款，因为他们要关门。如果 PizzaApp 在此处启用，该呼叫将通过。<br>
+        使用案例：<br>
+        <sample>
+          &ensp; 由于餐厅关闭，PizzaApp 订单会触发立即退款的呼叫，如果此处启用了 PizzaApp，则该呼叫会通过。 <br>
+        </sample>
         <br>
-        默认设置 <highlight><b>5 分钟</b></highlight> 表示如果任何应用在 5 分钟内使用过，任何呼叫都将通过，
-        “使用”是指被激活、停用、最小化或关闭。<br>
+        默认设置 <highlight><b>5 分钟</b></highlight> 表示如果任意应用在 5 分钟内被使用，所有来电都会通过，\"<b>使用</b>\" 指的是以下任意状态：<highlight>激活、停用、最小化或被杀死</highlight>。<br>
         <br>
-        仅适用于呼叫，<b>不</b>适用于短信。<br>
+        仅适用于来电，不适用于短信。 <br>
         <br>
         <priority><b>优先级：10</b></priority>
         ]]>

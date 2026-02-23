@@ -41,17 +41,19 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        如果清單中的任何應用程式最近被使用過，就會放行來電。<br>
+        如果清單中的任何應用程式最近有被使用，任何電話都會通過。<br>
         <br>
-        典型的使用案例：<br>
-        &emsp; 您剛在 PizzaApp 點了披薩，不久後他們打電話通知您要退款，因為他們要打烊了。如果在此啟用了 PizzaApp，這通電話就會被放行。<br>
+        使用案例：<br>
+        <sample>
+          &ensp; 由於餐廳關閉，PizzaApp 訂單會觸發立即退款電話，如果此處啟用 PizzaApp，該電話將通過。 <br>
+        </sample>
         <br>
-        預設設定 <highlight><b>5 分鐘</b></highlight> 表示如果任何應用程式在 5 分鐘內被使用過，就會放行來電，
-        「使用過」指的是啟動、停用、最小化或關閉應用程式。<br>
+        預設設定 <highlight><b>5 分鐘</b></highlight> 表示只要任何應用程式在 5 分鐘內有被使用，所有電話都會通過，
+        由「<b>使用</b>」指的是以下任一情況：<highlight>啟動、停用、最小化或被終止</highlight>。<br>
         <br>
-        僅適用於來電，<b>不適用</b>於簡訊。<br>
+        僅適用於電話，不適用於簡訊。 <br>
         <br>
-        <priority><b>優先順序：10</b></priority>
+        <priority><b>優先等級：10</b></priority>
         ]]>
     </string>
     <string-array name="block_type_list">

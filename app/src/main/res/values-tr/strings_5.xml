@@ -46,15 +46,16 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Listede yer alan herhangi bir uygulama son zamanlarda kullanıldıysa, herhangi bir arama geçecektir.<br>
+        Listede bulunan herhangi bir uygulama yakın zamanda kullanıldıysa, herhangi bir arama geçerli olur.<br>
         <br>
-        Tipik bir kullanım durumu:<br>
-        &emsp; PizzaApp\'tan bir pizza siparişi verdiniz, kısa süre sonra kapandıkları için sizi geri ödeme yapmak üzere arıyorlar. Eğer PizzaApp burada etkinse, o arama geçecektir. <br>
+        Kullanım durumu:<br>
+        <sample>
+          &ensp; Bir PizzaApp siparişi, restoran kapanışı nedeniyle anında geri ödeme aramasını tetikler, PizzaApp burada etkinleştirilmişse bu arama geçerli olur. <br>
+        </sample>
         <br>
-        Varsayılan ayar  <highlight><b>5 Dk.</b></highlight> Eğer son 5 dakika içinde uygulamalardan herhangi biri kullanıldıysa, herhangi bir aramanın geçeceği anlamına gelir.
-        \'Kullanıldı\' derken, uygulamanın etkinleştirilmesi, devre dışı bırakılması, küçültülmesi veya kapatılması anlamına gelir. <br>
+        Varsayılan ayar <highlight><b>5 Dak</b></highlight> tüm aramaların geçerli olmasını sağlar, eğer uygulamalardan herhangi biri 5 dakika içinde kullanıldıysa, \"<b>kullanıldı</b>\" ifadesi şunları kapsar: <highlight>etkinleştirildi, devre dışı bırakıldı, küçültüldü veya kapatıldı</highlight>.<br>
         <br>
-        Sadece aramalar için geçerlidir, metin mesajları için <b>değil</b>. <br>
+        Yalnızca aramalara uygulanır, mesajlara uygulanmaz. <br>
         <br>
         <priority><b>Öncelik: 10</b></priority>
         ]]>

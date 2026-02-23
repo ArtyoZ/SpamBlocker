@@ -47,15 +47,17 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Panggilan apa pun akan lolos jika ada aplikasi apa pun dalam daftar yang baru saja digunakan.<br>
+        Setiap panggilan akan diteruskan jika ada aplikasi dalam daftar yang telah digunakan baru-baru ini.<br>
         <br>
-        Kasus penggunaan yang umum:<br>
-        &emsp; Anda baru saja memesan pizza di PizzaApp, kemudian mereka menelepon Anda untuk mengembalikan uang Anda karena mereka akan tutup. Panggilan itu akan lolos jika PizzaApp diaktifkan di sini. <br>
+        Contoh penggunaan:<br>
+        <sample>
+          &ensp; Pesanan PizzaApp memicu panggilan pengembalian dana segera karena restoran tutup, panggilan ini akan diteruskan jika PizzaApp diaktifkan di sini. <br>
+        </sample>
         <br>
-        Pengaturan default <highlight><b>5 Menit</b></highlight> berarti setiap panggilan akan lolos jika salah satu aplikasi telah digunakan dalam waktu 5 menit,
-        dengan `digunakan` berarti diaktifkan, dinonaktifkan, diminimalkan, atau dimatikan. <br>
+        Pengaturan default <highlight><b>5 Menit</b></highlight> berarti semua panggilan akan diteruskan jika salah satu aplikasi telah digunakan dalam 5 menit,
+        dengan \"<b>digunakan</b>\" berarti salah satu dari: <highlight>diaktifkan, dinonaktifkan, diminimalkan, atau dihentikan</highlight>.<br>
         <br>
-        Hanya berlaku untuk panggilan, <b>tidak</b> untuk pesan teks <br>
+        Hanya berlaku untuk panggilan, tidak untuk pesan teks. <br>
         <br>
         <priority><b>Prioritas: 10</b></priority>
         ]]>

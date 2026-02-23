@@ -47,13 +47,15 @@
         <![CDATA[
         Any call would pass if any app in the list has been used recently.<br>
         <br>
-        A typical use case:<br>
-        &emsp; You just ordered a pizza in PizzaApp, soon they call you to refund because they are closing. That call would pass if PizzaApp is enabled here. <br>
+        Use case:<br>
+        <sample>
+          &ensp; A PizzaApp order triggers an immediate refund call due to the restaurant closing, this call passes if PizzaApp is enabled here. <br>
+        </sample>
         <br>
-        The default setting <highlight><b>5 Min</b></highlight> means any call would pass if any of the apps has been used within 5 minutes,
-        by `used` it means either being activated, deactivated, minimized, or killed. <br>
+        The default setting <highlight><b>5 Min</b></highlight> means all calls pass if any of the apps has been used within 5 minutes,
+        by \"<b>used</b>\" it means any of: <highlight>activated, deactivated, minimized, or killed</highlight>.<br>
         <br>
-        Only applies to calls, <b>not</b> to text messages. <br>
+        Applies only to calls, not to text messages. <br>
         <br>
         <priority><b>Priority: 10</b></priority>
         ]]>

@@ -46,15 +46,17 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Qualsiasi chiamata verrebbe accettata se qualsiasi app nell\'elenco è stata utilizzata di recente.<br>
+        Qualsiasi chiamata verrà accettata se un\'app nell\'elenco è stata usata di recente.<br>
         <br>
-        Un caso d\'uso tipico:<br>
-        &emsp; Hai appena ordinato una pizza in PizzaApp, presto ti chiamano per un rimborso perché stanno chiudendo. Quella chiamata verrebbe accettata se PizzaApp è abilitata qui. <br>
+        Caso d\'uso:<br>
+        <sample>
+          &ensp; Un ordine su PizzaApp genera una chiamata di rimborso immediata a causa della chiusura del ristorante; questa chiamata verrà accettata se PizzaApp è abilitata qui. <br>
+        </sample>
         <br>
-        L\'impostazione predefinita <highlight><b>5 Min</b></highlight> significa che qualsiasi chiamata verrebbe accettata se una delle app è stata utilizzata entro 5 minuti,
-        per `utilizzata` si intende attivata, disattivata, minimizzata o chiusa. <br>
+        L\'impostazione predefinita <highlight><b>5 Min</b></highlight> significa che tutte le chiamate verranno accettate se una delle app è stata usata entro 5 minuti,
+        per \"<b>usata</b>\" si intende una delle seguenti: <highlight>attivata, disattivata, minimizzata o terminata</highlight>.<br>
         <br>
-        Si applica solo alle chiamate, <b>non</b> ai messaggi di testo. <br>
+        Si applica solo alle chiamate, non ai messaggi di testo. <br>
         <br>
         <priority><b>Priorità: 10</b></priority>
         ]]>

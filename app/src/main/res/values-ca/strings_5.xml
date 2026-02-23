@@ -47,15 +47,17 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Qualsevol trucada passaria si s\'ha utilitzat alguna aplicació de la llista recentment.<br>
+        Qualsevol trucada passaria si alguna aplicació de la llista s\'ha utilitzat recentment.<br>
         <br>
-        Un cas d\'ús típic:<br>
-        &emsp; Acabeu de demanar una pizza a PizzaApp, aviat us truquen per reemborsar-vos perquè estan tancant. Aquesta trucada passaria si PizzaApp està habilitada aquí. <br>
+        Cas d\'ús:<br>
+        <sample>
+          &ensp; Una comanda de PizzaApp desencadena una trucada de reemborsament immediata a causa del tancament del restaurant; aquesta trucada passa si PizzaApp està habilitada aquí. <br>
+        </sample>
         <br>
-        La configuració per defecte <highlight><b>5 Min</b></highlight> significa que qualsevol trucada passaria si alguna de les aplicacions s\'ha utilitzat en 5 minuts,
-        per `utilitzat` vol dir que s\'ha activat, desactivat, minimitzat o eliminat. <br>
+        La configuració predeterminada <highlight><b>5 Min</b></highlight> significa que totes les trucades passen si alguna de les aplicacions s\'ha utilitzat en els últims 5 minuts,
+        per \"<b>utilitzada</b>\" significa qualsevol de: <highlight>activada, desactivada, minimitzada, o tancada</highlight>.<br>
         <br>
-        Només s\'aplica a les trucades, <b>no</b> als missatges de text. <br>
+        S\'aplica només a trucades, no a missatges de text. <br>
         <br>
         <priority><b>Prioritat: 10</b></priority>
         ]]>

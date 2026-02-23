@@ -46,15 +46,17 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Cualquier llamada pasaría si alguna aplicación de la lista se ha usado recientemente.<br>
+        Cualquier llamada pasará si alguna aplicación de la lista se ha usado recientemente.<br>
         <br>
-        Un caso de uso típico:<br>
-        &emsp; Acaba de pedir una pizza en PizzaApp, pronto le llaman para reembolsarle porque cierran. Esa llamada pasaría si PizzaApp está habilitada aquí.<br>
+        Caso de uso:<br>
+        <sample>
+          &ensp; Un pedido de PizzaApp desencadena una llamada de reembolso inmediato debido al cierre del restaurante, esta llamada pasa si PizzaApp está habilitada aquí. <br>
+        </sample>
         <br>
-        La configuración predeterminada <highlight><b>5 Min</b></highlight> significa que cualquier llamada pasaría si alguna de las aplicaciones se ha utilizado dentro de los 5 minutos,
-        por `utilizado` significa estar activado, desactivado, minimizado o asesinado.<br>
+        La configuración predeterminada <highlight><b>5 Min</b></highlight> significa que todas las llamadas pasan si alguna de las aplicaciones se ha usado dentro de 5 minutos,
+        por \"<b>usado</b>\" se entiende cualquiera de: <highlight>activada, desactivada, minimizada, o terminada</highlight>.<br>
         <br>
-        Solo se aplica a las llamadas, <b>no</b> a los mensajes de texto. <br>
+        Se aplica solo a llamadas, no a mensajes de texto. <br>
         <br>
         <priority><b>Prioridad: 10</b></priority>
         ]]>

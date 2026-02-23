@@ -46,15 +46,16 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Jeder Anruf würde durchgehen, wenn eine der Apps in der Liste kürzlich verwendet wurde.<br>
+        Jeder Anruf würde durchgelassen, wenn eine App in der Liste kürzlich verwendet wurde.<br>
         <br>
-        Ein typischer Anwendungsfall:<br>
-        &emsp; Sie haben gerade eine Pizza in PizzaApp bestellt, bald rufen sie Sie an, um Ihnen eine Rückerstattung anzubieten, weil sie schließen. Dieser Anruf würde durchgehen, wenn PizzaApp hier aktiviert ist. <br>
+        Anwendungsfall:<br>
+        <sample>
+          &ensp; Eine PizzaApp-Bestellung löst einen sofortigen Rückruf wegen der Schließung des Restaurants aus, dieser Anruf wird durchgelassen, wenn PizzaApp hier aktiviert ist. <br>
+        </sample>
         <br>
-        Die Standardeinstellung <highlight><b>5 Min</b></highlight> bedeutet, dass jeder Anruf durchgeht, wenn eine der Apps innerhalb von 5 Minuten verwendet wurde,
-        mit `verwendet` ist gemeint, dass sie entweder aktiviert, deaktiviert, minimiert oder beendet wurde. <br>
+        Die Standardeinstellung <highlight><b>5 Min</b></highlight> bedeutet, dass alle Anrufe durchgelassen werden, wenn eine der Apps innerhalb von 5 Minuten verwendet wurde, wobei \"verwendet\" jede der folgenden Aktionen meint: <highlight>aktiviert, deaktiviert, minimiert, oder beendet</highlight>.<br>
         <br>
-        Gilt nur für Anrufe, <b>nicht</b> für Textnachrichten. <br>
+        Gilt nur für Anrufe, nicht für Textnachrichten. <br>
         <br>
         <priority><b>Priorität: 10</b></priority>
         ]]>

@@ -46,17 +46,18 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Tout appel passera si une application de la liste a été utilisée récemment. <br>
+        Tout appel serait autorisé si une application de la liste a été utilisée récemment.<br>
         <br>
-        Cas d’utilisation typique : <br>
-        &emsp; Vous venez de commander une pizza dans PizzaApp, ils vous appellent bientôt pour un remboursement car ils ferment. Cet appel passera si PizzaApp est activé ici. <br>
+        Cas d\'utilisation :<br>
+        <sample>
+          &ensp; Une commande PizzaApp déclenche un appel de remboursement immédiat en raison de la fermeture du restaurant, cet appel passe si PizzaApp est activé ici. <br>
+        </sample>
         <br>
-        Le paramètre par défaut <highlight><b>5 min</b></highlight> signifie que tout appel passera si l’une des applications a été utilisée au cours des 5 dernières minutes,
-        par « utilisé », il faut entendre activé, désactivé, réduit au minimum ou tué. <br>
+        Le paramètre par défaut <highlight><b>5 Min</b></highlight> signifie que tous les appels passent si l\'une des applications a été utilisée dans les 5 minutes, par « <b>utilisée</b> » cela signifie : <highlight>activée, désactivée, réduite ou terminée</highlight>.<br>
         <br>
-        Ne s’applique qu’aux appels, <b>pas</b> aux messages texte. <br>
+        S\'applique uniquement aux appels, pas aux messages texte. <br>
         <br>
-        <priority><b>Priorité : 10</b></priority>
+        <priority><b>Priorité : 10</b></priority>
         ]]>
     </string>
     <string name="help_hang_up_delay">Le délai avant que l\'appel ne soit raccroché.</string>

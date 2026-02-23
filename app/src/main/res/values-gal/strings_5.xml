@@ -46,15 +46,17 @@
     </string>
     <string name="help_recent_apps">
         <![CDATA[
-        Calquera chamada pasaría se algunha aplicación da lista se usou recentemente.<br>
+        Calquera chamada pasaría se calquera aplicación da lista se usou recentemente.<br>
         <br>
-        Un caso de uso típico:<br>
-        &emsp; Acabas de pedir unha pizza en PizzaApp, pronto chámanche para devolverte o diñeiro porque están a pechar. Esa chamada pasaría se PizzaApp está habilitado aquí.<br>
+        Caso de uso:<br>
+        <sample>
+          &ensp; Un pedido de PizzaApp desencadea unha chamada de reembolso inmediata debido ao peche do restaurante; esta chamada pasa se PizzaApp está activada aquí. <br>
+        </sample>
         <br>
-        A configuración predeterminada <highlight><b>5 Min</b></highlight> significa que calquera chamada pasaría se algunha das aplicacións se usou en 5 minutos,
-        por `usado` significa que foi activada, desactivada, minimizada ou eliminada.<br>
+        A configuración predeterminada <highlight><b>5 Min</b></highlight> significa que todas as chamadas pasan se calquera das aplicacións se usou dentro de 5 minutos,
+        por \"<b>usada</b>\" enténdese calquera de: <highlight>activada, desactivada, minimizada ou terminada</highlight>.<br>
         <br>
-        Só se aplica a chamadas, <b>non</b> a mensaxes de texto.<br>
+        Aplica só ás chamadas, non ás mensaxes de texto. <br>
         <br>
         <priority><b>Prioridade: 10</b></priority>
         ]]>
